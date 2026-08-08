@@ -1,23 +1,58 @@
 # MJCompiler — MicroJava Compiler (PP1)
 
 Compiler for the **MicroJava** language. University project for *Programski prevodioci 1* (ETF
-Beograd, school year 2025/2026, Jan–Feb exam term). Builds a compiler that translates
-syntactically and semantically valid MicroJava programs into MicroJava bytecode (`.obj`) that runs
-on the MicroJava VM (MJVM).
+Beograd, school year 2025/2026). Builds a compiler that translates syntactically and semantically
+valid MicroJava programs into MicroJava bytecode (`.obj`) that runs on the MicroJava VM (MJVM).
 
-Defended project is a prerequisite for the exam. Min 20 points (full Level A) to pass.
+Defended project is a prerequisite for the exam. Min 20 points (full Level A) to pass. Target for
+this project is **Level B (30 pts)**.
 
 ## Spec sources (read these, don't guess)
 
-- `~/Desktop/Programski Prevodioci/PostavkaProjekta_jan&feb25:26.pdf` — project assignment, levels,
-  grading, error-recovery points, deliverables, sample I/O.
-- `~/Desktop/Programski Prevodioci/SpecifikacijaJezikaMikrojava.pdf` — `[MJ]` language spec:
-  grammar (A.2), semantics (A.3), context conditions (A.4), MJVM + instruction set (App. B).
+**Authoritative folder: `~/Desktop/PP1/`.** Do NOT use `~/Desktop/Programski Prevodioci/` — that's
+a stale jan-feb term copy and no longer applies.
+
+- `~/Desktop/PP1/PostavkaProjekta.pdf` — base project assignment (levels, grading, error-recovery
+  points, deliverables, sample I/O). Its own title page says "Januarsko-februarski"/date 31.12.2025;
+  ignore that label — treat it only as the baseline document that the amendments below modify.
+- `~/Desktop/PP1/IzmeneIDopuneNaPostavkuProjekta.pdf` — **amendments that change the language
+  requirements**, layered on top of the base postavka above (see "Amendments" section below). Its
+  title page says "Julski ispitni rok"; per the user this project is being done in the August term
+  as a continuation of Jul, and these amendments are the Jul→Avgust delta — apply them.
+- `~/Desktop/PP1/SpecifikacijaJezikaMikroJava.pdf` — `[MJ]` language spec: grammar (A.2), semantics
+  (A.3), context conditions (A.4), MJVM + instruction set (App. B). Note exact filename casing
+  (`MikroJava`, capital J) — differs from the stale folder's `Mikrojava`.
+- `~/Desktop/PP1/LinkoviDoSnimaka.rtf` — links to recorded lectures (intro/setup, lexical, syntax,
+  semantic, codegen) of someone else building a similar-but-not-identical MJ compiler, used by the
+  user to learn the JFlex/AST-CUP workflow. **The user is typing directly into this repo while
+  following the recordings**, then adapting each increment to this project's actual spec (below) —
+  expect the working tree to temporarily contain generic/mini-domaći-style code that gets reshaped
+  toward the real MJ grammar as we go.
 - Online `[MJ]`: http://ir4pp1.etf.rs/Domaci/mikrojava_2025_2026_jan.pdf
 - Project template `[PT]`: http://ir4pp1.etf.rs/Domaci/2017-2018/pp1lab.templateAST.zip
 
 When a grammar production, type rule, context condition, or VM instruction is involved, verify it
-against the PDFs — do not reconstruct from memory of "typical MicroJava".
+against the PDFs (base postavka + amendments + `[MJ]` spec) — do not reconstruct from memory of
+"typical MicroJava".
+
+## Amendments (Jul→Avgust) — override the base spec
+
+- **No enums.** Skip enum grammar, semantics, and codegen entirely — not required at any level,
+  despite the base `[MJ]` spec and grading tables including them.
+- **Level A adds `findAny`**:
+  `Statement := Designator "=" Designator "." "findAny" "(" Expr ")" ";"`.
+  RHS `Designator` must denote a 1-D array of a built-in type; LHS `Designator` must denote a `bool`
+  variable. Iterates the array first→last; result is `true` iff some element equals the value of
+  `Expr`, else `false`.
+- **Level B/C: `switch`/`case` is removed entirely, replaced by `map`**:
+  `Statement := Designator "=" Designator "." "map" "(" ident "=>" Expr ")" ";"`.
+  `Designator` = 1-D array of built-in type (Level B) or any type (Level C). `ident` must be a
+  local/global variable of the same type as the array's elements. Iterates first→last, binding
+  `ident` to the current element each iteration; result is a new array (same length, must already be
+  declared) built by evaluating `Expr` (which references `ident`) per element.
+
+These are hand-added productions, not in the printed `[MJ]` grammar tables — don't try to derive
+them from the base spec's `Statement` alternatives.
 
 ## Toolchain (mandatory — use only versions from the course site)
 
@@ -82,15 +117,18 @@ The grader expects these exactly. Do not rename.
    for the chosen level. Report detected symbols and semantic errors in required format.
 4. **Code gen** — visitor over AST; emit valid MJVM bytecode using `Code`/`mj-runtime`; output `.obj`.
 
-## Levels (cumulative; pick a target)
+## Levels (cumulative; targeting Level B)
 
-- **Level A (20 pts)** — basic statements, arithmetic expressions, arrays of primitive types +
-  enums, `length`, `read`/`print`, ternary with `CondFact` condition only (no `&&`/`||`). Program
-  must have `main`, globals/locals (simple, array, enum), global consts.
-- **Level B (30 pts)** — all of A + control flow (`if/else`, `switch`, `for`, `break`, `continue`,
-  `return`), conditions with `&&`/`||`/relops, global function calls.
+- **Level A (20 pts)** — basic statements, arithmetic expressions, arrays of primitive types,
+  `length`, `read`/`print`, ternary with `CondFact` condition only (no `&&`/`||`), plus `findAny`
+  (see Amendments). Program must have `main`, globals/locals (simple, array), global consts. No
+  enums (amended out).
+- **Level B (30 pts) — target** — all of A + control flow (`if/else`, `for`, `break`, `continue`,
+  `return`), conditions with `&&`/`||`/relops, global function calls, plus `map` in place of
+  `switch` (see Amendments).
 - **Level C (40 pts)** — all of B + inner classes, inheritance, substitution, polymorphism, virtual
-  method tables, object/array-of-object creation, abstract classes & abstract methods.
+  method tables, object/array-of-object creation, abstract classes & abstract methods. `map` applies
+  to arrays of any type at this level (not just built-in types).
 
 Grading is all-or-nothing per level: you're scored at level X only if **all** of X's requirements
 pass. Failing to implement all of Level A → project not considered. At defense there's an on-site
@@ -107,18 +145,20 @@ project + B-level modification = 35).
 - **B**: global function calls, array element access, formal-arg use.
 - **C**: inner-class object creation, field access, method calls.
 
-## Language quick facts (full detail in `[MJ]`)
+## Language quick facts (full detail in `[MJ]`; amendments above take priority)
 
-- Keywords: `program break enum class abstract else const if new print read return void extends
-  continue for length switch case`.
-- Types: `int`, `char` (ASCII), `bool`, enums; 1-D arrays; inner classes (abstract & concrete).
-  Arrays and classes are reference types.
+- Keywords: `program break class abstract else const if new print read return void extends
+  continue for length`. **Not needed**: `enum`, `switch`, `case` (amended out). Contextual
+  keyword-like literals from the amendments: `findAny`, `map` (used as literal tokens in their
+  productions, not general reserved words — check how the base `[MJ]` lexer spec treats similar
+  cases, e.g. `length`, before deciding whether to make them full keywords or handle them
+  contextually in the grammar).
+- Types: `int`, `char` (ASCII), `bool`; 1-D arrays; inner classes (abstract & concrete, Level C).
+  Arrays and classes are reference types. No enum type.
 - `ident = letter {letter|digit|"_"}`, `numConst = digit{digit}`, `charConst = '...'`,
   `boolConst = true|false`. Comments: `//` to end of line.
 - Predeclared: `int char bool length null eol chr ord` (and `len`). `main` must be `void` with no
   params.
-- Enum constants are `int`, unique within the enum, accessed as `EnumName.CONST`; default value =
-  previous + 1, first = 0.
 - Assignment-compatibility includes base-class ref ← derived-class ref (substitution, Level C).
 - Impl limits: ≤256 locals, ≤65536 globals, ≤65536 fields/class, source ≤8 KB.
 
@@ -145,8 +185,13 @@ mainPC + code bytes. Key instrs: `load/store(_n)`, `getstatic/putstatic`, `getfi
 
 ## Working notes
 
-- Project is currently a bare Eclipse Java project (`src` empty). First real step: unpack `[PT]`
-  template here and wire up the JFlex/AST-CUP build.
+- Workflow: user watches recorded lectures (see `LinkoviDoSnimaka.rtf` above) and types directly
+  into this repo along with them, then pings for help adapting each increment to this project's
+  actual spec/amendments. Don't get ahead of what's been asked — this is intentionally incremental
+  so the user can reproduce the mechanics solo at the on-site defense modification task (no AI
+  tools allowed there).
+- `lib/` currently has `JFlex.jar` and `cup_v10k.jar` (correct locally-extended CUP). Still need to
+  add `symboltable-1-1.jar` and `mj-runtime-1.1.jar` before semantic-analysis/codegen work starts.
 - Comms: signal over prose; lead with the answer; flag assumptions before acting (see global
   CLAUDE.md).
 - Build is generation-heavy: regenerate lexer/parser after editing `.flex`/`.cup` before compiling.
