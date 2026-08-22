@@ -98,7 +98,7 @@ import java_cup_runtime.Symbol;
 
 "'"."'" 						{return new_symbol(sym.CHARACTER, new Character(yytext().charAt(1))); }
 ("true"|"false") 				{return new_symbol(sym.BOOL, yytext().equals("true") ? 1 : 0); }
-([a-z]|[A-Z])[a-zA-Z0-9_]* 	{return new_symbol(sym.IDENT, yytext()); }
+([a-z]|[A-Z])[a-zA-Z0-9_]* 		{return new_symbol(sym.IDENT, yytext()); }
 
 . 								{ System.err.println("Leksicka greska ("+yytext()+") na liniji "+(yyline+1) + " u koloni " + (yycolumn + 1) + "\n"); }
 

@@ -19,4 +19,18 @@
 		</java>	
 	</target>
 	
+	<target name="parserGen" depends="lexerGen">
+		<java jar="lib/cup_v10k.jar" fork="true">
+			<arg value="-destdir"/>
+			<arg value="src/rs/ac/bg/etf/pp1"/>
+			<arg value="-ast"/>
+			<arg value="src/rs/ac/bg/etf/pp1"/>
+			<arg value="-parser"/>
+			<arg value="MJParser"/>
+			<arg value="-dump_states"/>
+			<arg value="-buildtree"/>
+			<arg value="spec/mjparser.cup"/>
+		</java>	
+	</target>
+	
 </project>	
