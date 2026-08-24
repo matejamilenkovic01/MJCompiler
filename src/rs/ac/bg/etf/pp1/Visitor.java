@@ -1,26 +1,30 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/7/2026 11:48:26
+// 24/7/2026 12:9:45
 
 
 package src/rs/ac/bg/etf/pp1;
 
 public interface Visitor { 
 
-    public void visit(ConstItem ConstItem);
-    public void visit(VarDeclList VarDeclList);
     public void visit(ConstVarDeclList ConstVarDeclList);
     public void visit(MethodDecl MethodDecl);
+    public void visit(VarList VarList);
     public void visit(Constant Constant);
+    public void visit(VarItem VarItem);
     public void visit(ConstList ConstList);
     public void visit(MethodDeclList MethodDeclList);
-    public void visit(MethodDeclListDerived3 MethodDeclListDerived3);
-    public void visit(MethodDeclListDerived2 MethodDeclListDerived2);
-    public void visit(MethodDeclListDerived1 MethodDeclListDerived1);
+    public void visit(MethodDeclList_epsilon MethodDeclList_epsilon);
+    public void visit(MethodDeclList_methods MethodDeclList_methods);
+    public void visit(VarItem_array VarItem_array);
+    public void visit(VarItem_var VarItem_var);
+    public void visit(VarList_single VarList_single);
+    public void visit(VarList_multiple VarList_multiple);
+    public void visit(VarDeclList VarDeclList);
     public void visit(Constant_bool Constant_bool);
     public void visit(Constant_character Constant_character);
     public void visit(Constant_number Constant_number);
-    public void visit(ConstantAssign ConstantAssign);
+    public void visit(ConstItem ConstItem);
     public void visit(ConstList_single ConstList_single);
     public void visit(ConstList_multiple ConstList_multiple);
     public void visit(Type Type);

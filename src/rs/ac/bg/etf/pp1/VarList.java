@@ -5,7 +5,7 @@
 
 package src/rs/ac/bg/etf/pp1;
 
-public abstract class Constant implements SyntaxNode {
+public abstract class VarList implements SyntaxNode {
 
     private SyntaxNode parent;
 

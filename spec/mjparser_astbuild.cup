@@ -50,7 +50,7 @@ scan with {:
 :}
 
 
-terminal PROG, CONST, SEMI, COMMA, ASSIGN, LBRACE, RBRACE;
+terminal PROG, CONST, SEMI, COMMA, ASSIGN, LBRACE, RBRACE, LBRACKET, RBRACKET;
 terminal String IDENT;
 terminal Integer NUMBER, BOOL;
 terminal Character CHARACTER;
@@ -60,6 +60,8 @@ nonterminal ProgramName ProgramName;
 nonterminal ConstVarDeclList ConstVarDeclList;
 nonterminal ConstDeclList ConstDeclList;
 nonterminal VarDeclList VarDeclList;
+nonterminal VarList VarList;
+nonterminal VarItem VarItem;
 nonterminal Type Type;
 nonterminal ConstList ConstList;
 nonterminal ConstItem ConstItem;
@@ -92,7 +94,7 @@ ConstList ::= 	(ConstList_multiple) ConstList:C1 COMMA ConstItem:C2 {: RESULT=ne
 				(ConstList_single) ConstItem:C1 {: RESULT=new ConstList_single(C1); RESULT.setLine(C1left); :}
 				;
 				
-ConstItem ::= (ConstantAssign) IDENT:I1 ASSIGN Constant:C2 {: RESULT=new ConstantAssign(I1, C2); RESULT.setLine(I1left); :};
+ConstItem ::= (ConstItem) IDENT:I1 ASSIGN Constant:C2 {: RESULT=new ConstItem(I1, C2); RESULT.setLine(I1left); :};
 				
 Constant ::= 	(Constant_number) NUMBER:N1 {: RESULT=new Constant_number(N1); RESULT.setLine(N1left); :}
 				|
@@ -101,11 +103,21 @@ Constant ::= 	(Constant_number) NUMBER:N1 {: RESULT=new Constant_number(N1); RES
 				(Constant_bool) BOOL:B1 {: RESULT=new Constant_bool(B1); RESULT.setLine(B1left); :}
 				;
 				
-MethodDeclList ::= MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclListDerived1(M1, M2); RESULT.setLine(M1left); :}
+VarDeclList ::= (VarDeclList) Type:T1 VarList:V2 SEMI {: RESULT=new VarDeclList(T1, V2); RESULT.setLine(T1left); :};
+
+VarList ::= (VarList_multiple) VarList:V1 COMMA VarItem:V2 {: RESULT=new VarList_multiple(V1, V2); RESULT.setLine(V1left); :}
+			|
+			(VarList_single) VarItem:V1 {: RESULT=new VarList_single(V1); RESULT.setLine(V1left); :}
+			;
+			
+VarItem ::= (VarItem_var) IDENT:I1 {: RESULT=new VarItem_var(I1); RESULT.setLine(I1left); :}
+			|
+			(VarItem_array) IDENT:I1 LBRACKET RBRACKET {: RESULT=new VarItem_array(I1); RESULT.setLine(I1left); :}
+			;
+				
+MethodDeclList ::=  (MethodDeclList_methods) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclList_methods(M1, M2); RESULT.setLine(M1left); :}
 					|
-					MethodDecl:M1 {: RESULT=new MethodDeclListDerived2(M1); RESULT.setLine(M1left); :}
-					| {: RESULT=new MethodDeclListDerived3(); :}
-					/* epsilon */
+					(MethodDeclList_epsilon) {: RESULT=new MethodDeclList_epsilon(); :}  /* epsilon */
 					;
 
 

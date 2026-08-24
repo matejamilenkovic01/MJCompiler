@@ -1,15 +1,38 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/7/2026 11:48:26
+// 24/7/2026 12:9:45
 
 
 package src/rs/ac/bg/etf/pp1;
 
-public abstract class ConstItem implements SyntaxNode {
+public class ConstItem implements SyntaxNode {
 
     private SyntaxNode parent;
-
     private int line;
+    private String I1;
+    private Constant Constant;
+
+    public ConstItem (String I1, Constant Constant) {
+        this.I1=I1;
+        this.Constant=Constant;
+        if(Constant!=null) Constant.setParent(this);
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
+    }
+
+    public Constant getConstant() {
+        return Constant;
+    }
+
+    public void setConstant(Constant Constant) {
+        this.Constant=Constant;
+    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -27,11 +50,40 @@ public abstract class ConstItem implements SyntaxNode {
         this.line=line;
     }
 
-    public abstract void accept(Visitor visitor);
-    public abstract void childrenAccept(Visitor visitor);
-    public abstract void traverseTopDown(Visitor visitor);
-    public abstract void traverseBottomUp(Visitor visitor);
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 
-    public String toString() { return toString(""); }
-    public abstract String toString(String tab);
+    public void childrenAccept(Visitor visitor) {
+        if(Constant!=null) Constant.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(Constant!=null) Constant.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(Constant!=null) Constant.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("ConstItem(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
+
+        if(Constant!=null)
+            buffer.append(Constant.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [ConstItem]");
+        return buffer.toString();
+    }
 }

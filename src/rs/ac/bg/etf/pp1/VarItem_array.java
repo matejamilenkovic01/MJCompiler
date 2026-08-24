@@ -5,9 +5,20 @@
 
 package src/rs/ac/bg/etf/pp1;
 
-public class ConstVarDeclList_epsilon extends ConstVarDeclList {
+public class VarItem_array extends VarItem {
 
-    public ConstVarDeclList_epsilon () {
+    private String I1;
+
+    public VarItem_array (String I1) {
+        this.I1=I1;
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +39,13 @@ public class ConstVarDeclList_epsilon extends ConstVarDeclList {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ConstVarDeclList_epsilon(\n");
+        buffer.append("VarItem_array(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [ConstVarDeclList_epsilon]");
+        buffer.append(") [VarItem_array]");
         return buffer.toString();
     }
 }

@@ -50,12 +50,12 @@ scan with {:
 :}
 
 
-terminal PROG, CONST, SEMI, COMMA, ASSIGN, LBRACE, RBRACE;
+terminal PROG, CONST, SEMI, COMMA, ASSIGN, LBRACE, RBRACE, LBRACKET, RBRACKET;
 terminal String IDENT;
 terminal Integer NUMBER, BOOL;
 terminal Character CHARACTER;
 
-nonterminal Program, ProgramName, ConstVarDeclList, ConstDeclList, VarDeclList, Type, ConstList, ConstItem, Constant;
+nonterminal Program, ProgramName, ConstVarDeclList, ConstDeclList, VarDeclList, VarList, VarItem, Type, ConstList, ConstItem, Constant;
 nonterminal MethodDeclList, MethodDecl;
 
 
@@ -83,7 +83,7 @@ ConstList ::= 	(ConstList_multiple) ConstList COMMA ConstItem
 				(ConstList_single) ConstItem
 				;
 				
-ConstItem ::= (ConstantAssign) IDENT ASSIGN Constant;
+ConstItem ::= (ConstItem) IDENT ASSIGN Constant;
 				
 Constant ::= 	(Constant_number) NUMBER
 				|
@@ -92,11 +92,21 @@ Constant ::= 	(Constant_number) NUMBER
 				(Constant_bool) BOOL
 				;
 				
-MethodDeclList ::= MethodDeclList MethodDecl
+VarDeclList ::= (VarDeclList) Type VarList SEMI;
+
+VarList ::= (VarList_multiple) VarList COMMA VarItem
+			|
+			(VarList_single) VarItem
+			;
+			
+VarItem ::= (VarItem_var) IDENT
+			|
+			(VarItem_array) IDENT LBRACKET RBRACKET
+			;
+				
+MethodDeclList ::=  (MethodDeclList_methods) MethodDeclList MethodDecl
 					|
-					MethodDecl
-					|
-					/* epsilon */
+					(MethodDeclList_epsilon)  /* epsilon */
 					;
 
 

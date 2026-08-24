@@ -1,16 +1,16 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/7/2026 11:48:26
+// 24/7/2026 12:9:45
 
 
 package src/rs/ac/bg/etf/pp1;
 
-public class MethodDeclListDerived1 extends MethodDeclList {
+public class MethodDeclList_methods extends MethodDeclList {
 
     private MethodDeclList MethodDeclList;
     private MethodDecl MethodDecl;
 
-    public MethodDeclListDerived1 (MethodDeclList MethodDeclList, MethodDecl MethodDecl) {
+    public MethodDeclList_methods (MethodDeclList MethodDeclList, MethodDecl MethodDecl) {
         this.MethodDeclList=MethodDeclList;
         if(MethodDeclList!=null) MethodDeclList.setParent(this);
         this.MethodDecl=MethodDecl;
@@ -57,7 +57,7 @@ public class MethodDeclListDerived1 extends MethodDeclList {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("MethodDeclListDerived1(\n");
+        buffer.append("MethodDeclList_methods(\n");
 
         if(MethodDeclList!=null)
             buffer.append(MethodDeclList.toString("  "+tab));
@@ -72,7 +72,7 @@ public class MethodDeclListDerived1 extends MethodDeclList {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [MethodDeclListDerived1]");
+        buffer.append(") [MethodDeclList_methods]");
         return buffer.toString();
     }
 }
