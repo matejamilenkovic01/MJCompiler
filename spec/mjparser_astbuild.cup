@@ -6,7 +6,7 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 parser code {:
 
-	Boolean errorDetected;
+	boolean errorDetected;
 
 	Logger log = Logger.getLogger(getClass());
    
@@ -50,15 +50,67 @@ scan with {:
 :}
 
 
-terminal PROG;
+terminal PROG, CONST, SEMI, COMMA, ASSIGN, LBRACE, RBRACE;
 terminal String IDENT;
+terminal Integer NUMBER, BOOL;
+terminal Character CHARACTER;
 
 nonterminal Program Program;
+nonterminal ProgramName ProgramName;
+nonterminal ConstVarDeclList ConstVarDeclList;
+nonterminal ConstDeclList ConstDeclList;
+nonterminal VarDeclList VarDeclList;
+nonterminal Type Type;
+nonterminal ConstList ConstList;
+nonterminal ConstItem ConstItem;
+nonterminal Constant Constant;
+nonterminal MethodDeclList MethodDeclList;
+nonterminal MethodDecl MethodDecl;
 
-Program ::= (Program) PROG IDENT:I1 {: RESULT=new Program(I1); RESULT.setLine(I1left); :};
+
+/* Program = "program" ident {ConstDecl | VarDecl } "{" {MethodDecl} "}". */
+
+Program ::= (Program) PROG ProgramName:P1 ConstVarDeclList:C2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(P1, C2, M3); RESULT.setLine(P1left); :};
+
+ProgramName ::= (ProgramName) IDENT:I1 {: RESULT=new ProgramName(I1); RESULT.setLine(I1left); :};
+
+ConstVarDeclList ::= 	(ConstVarDeclList_const) ConstVarDeclList:C1 ConstDeclList:C2 {: RESULT=new ConstVarDeclList_const(C1, C2); RESULT.setLine(C1left); :}
+						| 
+						(ConstVarDeclList_var) ConstVarDeclList:C1 VarDeclList:V2 {: RESULT=new ConstVarDeclList_var(C1, V2); RESULT.setLine(C1left); :}
+						|
+						(ConstVarDeclList_epsilon) {: RESULT=new ConstVarDeclList_epsilon(); :} /* epsilon */
+						;
+
+/* const int x = 1; const int y = 2, z = 3; */
+
+ConstDeclList ::= (ConstDeclList) CONST Type:T1 ConstList:C2 SEMI {: RESULT=new ConstDeclList(T1, C2); RESULT.setLine(T1left); :};
+
+Type ::= (Type) IDENT:I1 {: RESULT=new Type(I1); RESULT.setLine(I1left); :};
+
+ConstList ::= 	(ConstList_multiple) ConstList:C1 COMMA ConstItem:C2 {: RESULT=new ConstList_multiple(C1, C2); RESULT.setLine(C1left); :}
+				|
+				(ConstList_single) ConstItem:C1 {: RESULT=new ConstList_single(C1); RESULT.setLine(C1left); :}
+				;
+				
+ConstItem ::= (ConstantAssign) IDENT:I1 ASSIGN Constant:C2 {: RESULT=new ConstantAssign(I1, C2); RESULT.setLine(I1left); :};
+				
+Constant ::= 	(Constant_number) NUMBER:N1 {: RESULT=new Constant_number(N1); RESULT.setLine(N1left); :}
+				|
+				(Constant_character) CHARACTER:C1 {: RESULT=new Constant_character(C1); RESULT.setLine(C1left); :}
+				|
+				(Constant_bool) BOOL:B1 {: RESULT=new Constant_bool(B1); RESULT.setLine(B1left); :}
+				;
+				
+MethodDeclList ::= MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclListDerived1(M1, M2); RESULT.setLine(M1left); :}
+					|
+					MethodDecl:M1 {: RESULT=new MethodDeclListDerived2(M1); RESULT.setLine(M1left); :}
+					| {: RESULT=new MethodDeclListDerived3(); :}
+					/* epsilon */
+					;
 
 
-
+							
+			
 
 
 

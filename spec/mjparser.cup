@@ -6,7 +6,7 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 parser code {:
 
-	Boolean errorDetected;
+	boolean errorDetected;
 
 	Logger log = Logger.getLogger(getClass());
    
@@ -50,15 +50,58 @@ scan with {:
 :}
 
 
-terminal PROG;
+terminal PROG, CONST, SEMI, COMMA, ASSIGN, LBRACE, RBRACE;
 terminal String IDENT;
+terminal Integer NUMBER, BOOL;
+terminal Character CHARACTER;
 
-nonterminal Program;
-
-Program ::= (Program) PROG IDENT;
-
+nonterminal Program, ProgramName, ConstVarDeclList, ConstDeclList, VarDeclList, Type, ConstList, ConstItem, Constant;
+nonterminal MethodDeclList, MethodDecl;
 
 
+/* Program = "program" ident {ConstDecl | VarDecl } "{" {MethodDecl} "}". */
+
+Program ::= (Program) PROG ProgramName ConstVarDeclList LBRACE MethodDeclList RBRACE;
+
+ProgramName ::= (ProgramName) IDENT;
+
+ConstVarDeclList ::= 	(ConstVarDeclList_const) ConstVarDeclList ConstDeclList
+						| 
+						(ConstVarDeclList_var) ConstVarDeclList VarDeclList
+						|
+						(ConstVarDeclList_epsilon) /* epsilon */
+						;
+
+/* const int x = 1; const int y = 2, z = 3; */
+
+ConstDeclList ::= (ConstDeclList) CONST Type ConstList SEMI;
+
+Type ::= (Type) IDENT;
+
+ConstList ::= 	(ConstList_multiple) ConstList COMMA ConstItem
+				|
+				(ConstList_single) ConstItem
+				;
+				
+ConstItem ::= (ConstantAssign) IDENT ASSIGN Constant;
+				
+Constant ::= 	(Constant_number) NUMBER
+				|
+				(Constant_character) CHARACTER
+				|
+				(Constant_bool) BOOL
+				;
+				
+MethodDeclList ::= MethodDeclList MethodDecl
+					|
+					MethodDecl
+					|
+					/* epsilon */
+					;
+
+
+							
+			
 
 
 
