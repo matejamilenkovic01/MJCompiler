@@ -1,28 +1,20 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/7/2026 12:9:45
+// 24/7/2026 12:31:7
 
 
 package src/rs/ac/bg/etf/pp1;
 
-public class ConstList_multiple extends ConstList {
+public class ConstItemMore_comma extends ConstItemMore {
 
-    private ConstList ConstList;
     private ConstItem ConstItem;
+    private ConstItemMore ConstItemMore;
 
-    public ConstList_multiple (ConstList ConstList, ConstItem ConstItem) {
-        this.ConstList=ConstList;
-        if(ConstList!=null) ConstList.setParent(this);
+    public ConstItemMore_comma (ConstItem ConstItem, ConstItemMore ConstItemMore) {
         this.ConstItem=ConstItem;
         if(ConstItem!=null) ConstItem.setParent(this);
-    }
-
-    public ConstList getConstList() {
-        return ConstList;
-    }
-
-    public void setConstList(ConstList ConstList) {
-        this.ConstList=ConstList;
+        this.ConstItemMore=ConstItemMore;
+        if(ConstItemMore!=null) ConstItemMore.setParent(this);
     }
 
     public ConstItem getConstItem() {
@@ -33,37 +25,39 @@ public class ConstList_multiple extends ConstList {
         this.ConstItem=ConstItem;
     }
 
+    public ConstItemMore getConstItemMore() {
+        return ConstItemMore;
+    }
+
+    public void setConstItemMore(ConstItemMore ConstItemMore) {
+        this.ConstItemMore=ConstItemMore;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(ConstList!=null) ConstList.accept(visitor);
         if(ConstItem!=null) ConstItem.accept(visitor);
+        if(ConstItemMore!=null) ConstItemMore.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(ConstList!=null) ConstList.traverseTopDown(visitor);
         if(ConstItem!=null) ConstItem.traverseTopDown(visitor);
+        if(ConstItemMore!=null) ConstItemMore.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(ConstList!=null) ConstList.traverseBottomUp(visitor);
         if(ConstItem!=null) ConstItem.traverseBottomUp(visitor);
+        if(ConstItemMore!=null) ConstItemMore.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ConstList_multiple(\n");
-
-        if(ConstList!=null)
-            buffer.append(ConstList.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
+        buffer.append("ConstItemMore_comma(\n");
 
         if(ConstItem!=null)
             buffer.append(ConstItem.toString("  "+tab));
@@ -71,8 +65,14 @@ public class ConstList_multiple extends ConstList {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
+        if(ConstItemMore!=null)
+            buffer.append(ConstItemMore.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
         buffer.append(tab);
-        buffer.append(") [ConstList_multiple]");
+        buffer.append(") [ConstItemMore_comma]");
         return buffer.toString();
     }
 }

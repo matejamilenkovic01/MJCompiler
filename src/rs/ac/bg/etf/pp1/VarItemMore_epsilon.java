@@ -5,20 +5,9 @@
 
 package src/rs/ac/bg/etf/pp1;
 
-public class VarItem_var extends VarItem {
+public class VarItemMore_epsilon extends VarItemMore {
 
-    private String I1;
-
-    public VarItem_var (String I1) {
-        this.I1=I1;
-    }
-
-    public String getI1() {
-        return I1;
-    }
-
-    public void setI1(String I1) {
-        this.I1=I1;
+    public VarItemMore_epsilon () {
     }
 
     public void accept(Visitor visitor) {
@@ -39,13 +28,10 @@ public class VarItem_var extends VarItem {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("VarItem_var(\n");
-
-        buffer.append(" "+tab+I1);
-        buffer.append("\n");
+        buffer.append("VarItemMore_epsilon(\n");
 
         buffer.append(tab);
-        buffer.append(") [VarItem_var]");
+        buffer.append(") [VarItemMore_epsilon]");
         return buffer.toString();
     }
 }

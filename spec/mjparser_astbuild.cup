@@ -59,12 +59,12 @@ nonterminal Program Program;
 nonterminal ProgramName ProgramName;
 nonterminal ConstVarDeclList ConstVarDeclList;
 nonterminal ConstDeclList ConstDeclList;
-nonterminal VarDeclList VarDeclList;
-nonterminal VarList VarList;
-nonterminal VarItem VarItem;
-nonterminal Type Type;
-nonterminal ConstList ConstList;
 nonterminal ConstItem ConstItem;
+nonterminal ConstItemMore ConstItemMore;
+nonterminal VarDeclList VarDeclList;
+nonterminal VarItem VarItem;
+nonterminal VarItemMore VarItemMore;
+nonterminal Type Type;
 nonterminal Constant Constant;
 nonterminal MethodDeclList MethodDeclList;
 nonterminal MethodDecl MethodDecl;
@@ -85,16 +85,16 @@ ConstVarDeclList ::= 	(ConstVarDeclList_const) ConstVarDeclList:C1 ConstDeclList
 
 /* const int x = 1; const int y = 2, z = 3; */
 
-ConstDeclList ::= (ConstDeclList) CONST Type:T1 ConstList:C2 SEMI {: RESULT=new ConstDeclList(T1, C2); RESULT.setLine(T1left); :};
+ConstDeclList ::= (ConstDeclList) CONST Type:T1 ConstItem:C2 ConstItemMore:C3 SEMI {: RESULT=new ConstDeclList(T1, C2, C3); RESULT.setLine(T1left); :};
 
 Type ::= (Type) IDENT:I1 {: RESULT=new Type(I1); RESULT.setLine(I1left); :};
 
-ConstList ::= 	(ConstList_multiple) ConstList:C1 COMMA ConstItem:C2 {: RESULT=new ConstList_multiple(C1, C2); RESULT.setLine(C1left); :}
-				|
-				(ConstList_single) ConstItem:C1 {: RESULT=new ConstList_single(C1); RESULT.setLine(C1left); :}
-				;
-				
 ConstItem ::= (ConstItem) IDENT:I1 ASSIGN Constant:C2 {: RESULT=new ConstItem(I1, C2); RESULT.setLine(I1left); :};
+
+ConstItemMore ::= 	(ConstItemMore_comma) COMMA ConstItem:C1 ConstItemMore:C2 {: RESULT=new ConstItemMore_comma(C1, C2); RESULT.setLine(C1left); :}
+					|
+					(ConstItemMore_epsilon) {: RESULT=new ConstItemMore_epsilon(); :} /* epsilon */
+					;
 				
 Constant ::= 	(Constant_number) NUMBER:N1 {: RESULT=new Constant_number(N1); RESULT.setLine(N1left); :}
 				|
@@ -103,17 +103,17 @@ Constant ::= 	(Constant_number) NUMBER:N1 {: RESULT=new Constant_number(N1); RES
 				(Constant_bool) BOOL:B1 {: RESULT=new Constant_bool(B1); RESULT.setLine(B1left); :}
 				;
 				
-VarDeclList ::= (VarDeclList) Type:T1 VarList:V2 SEMI {: RESULT=new VarDeclList(T1, V2); RESULT.setLine(T1left); :};
+VarDeclList ::= (VarDeclList) Type:T1 VarItem:V2 VarItemMore:V3 SEMI {: RESULT=new VarDeclList(T1, V2, V3); RESULT.setLine(T1left); :};
 
-VarList ::= (VarList_multiple) VarList:V1 COMMA VarItem:V2 {: RESULT=new VarList_multiple(V1, V2); RESULT.setLine(V1left); :}
-			|
-			(VarList_single) VarItem:V1 {: RESULT=new VarList_single(V1); RESULT.setLine(V1left); :}
-			;
-			
 VarItem ::= (VarItem_var) IDENT:I1 {: RESULT=new VarItem_var(I1); RESULT.setLine(I1left); :}
 			|
 			(VarItem_array) IDENT:I1 LBRACKET RBRACKET {: RESULT=new VarItem_array(I1); RESULT.setLine(I1left); :}
 			;
+
+VarItemMore ::= (VarItemMore_comma) COMMA VarItem:V1 VarItemMore:V2 {: RESULT=new VarItemMore_comma(V1, V2); RESULT.setLine(V1left); :}
+				|
+				(VarItemMore_epsilon) {: RESULT=new VarItemMore_epsilon(); :} /* epsilon */
+				;
 				
 MethodDeclList ::=  (MethodDeclList_methods) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclList_methods(M1, M2); RESULT.setLine(M1left); :}
 					|

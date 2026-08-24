@@ -55,7 +55,7 @@ terminal String IDENT;
 terminal Integer NUMBER, BOOL;
 terminal Character CHARACTER;
 
-nonterminal Program, ProgramName, ConstVarDeclList, ConstDeclList, VarDeclList, VarList, VarItem, Type, ConstList, ConstItem, Constant;
+nonterminal Program, ProgramName, ConstVarDeclList, ConstDeclList, ConstItem, ConstItemMore, VarDeclList, VarItem, VarItemMore, Type, Constant;
 nonterminal MethodDeclList, MethodDecl;
 
 
@@ -74,16 +74,16 @@ ConstVarDeclList ::= 	(ConstVarDeclList_const) ConstVarDeclList ConstDeclList
 
 /* const int x = 1; const int y = 2, z = 3; */
 
-ConstDeclList ::= (ConstDeclList) CONST Type ConstList SEMI;
+ConstDeclList ::= (ConstDeclList) CONST Type ConstItem ConstItemMore SEMI;
 
 Type ::= (Type) IDENT;
 
-ConstList ::= 	(ConstList_multiple) ConstList COMMA ConstItem
-				|
-				(ConstList_single) ConstItem
-				;
-				
 ConstItem ::= (ConstItem) IDENT ASSIGN Constant;
+
+ConstItemMore ::= 	(ConstItemMore_comma) COMMA ConstItem ConstItemMore
+					|
+					(ConstItemMore_epsilon) /* epsilon */
+					;
 				
 Constant ::= 	(Constant_number) NUMBER
 				|
@@ -92,17 +92,17 @@ Constant ::= 	(Constant_number) NUMBER
 				(Constant_bool) BOOL
 				;
 				
-VarDeclList ::= (VarDeclList) Type VarList SEMI;
+VarDeclList ::= (VarDeclList) Type VarItem VarItemMore SEMI;
 
-VarList ::= (VarList_multiple) VarList COMMA VarItem
-			|
-			(VarList_single) VarItem
-			;
-			
 VarItem ::= (VarItem_var) IDENT
 			|
 			(VarItem_array) IDENT LBRACKET RBRACKET
 			;
+
+VarItemMore ::= (VarItemMore_comma) COMMA VarItem VarItemMore
+				|
+				(VarItemMore_epsilon) /* epsilon */
+				;
 				
 MethodDeclList ::=  (MethodDeclList_methods) MethodDeclList MethodDecl
 					|
