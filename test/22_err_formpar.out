@@ -1,0 +1,164 @@
+INFO  00:36:08,154 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/22_err_formpar.mj
+INFO  00:36:08,163 - #2 program
+INFO  00:36:08,163 - #45 GreskaFormalniParametar
+INFO  00:36:08,163 - #43 {
+INFO  00:36:08,163 - #7 void
+INFO  00:36:08,163 - #45 prva
+INFO  00:36:08,163 - #39 (
+INFO  00:36:08,164 - #45 int
+INFO  00:36:08,164 - #45 a
+INFO  00:36:08,164 - #36 ,
+INFO  00:36:08,164 - #46 5
+INFO  00:36:08,164 - #36 ,
+INFO  00:36:08,164 - #45 char
+INFO  00:36:08,164 - #45 c
+INFO  00:36:08,164 - #40 )
+INFO  00:36:08,164 - #43 {
+INFO  00:36:08,164 - #44 }
+INFO  00:36:08,165 - #7 void
+INFO  00:36:08,165 - #45 druga
+INFO  00:36:08,165 - #39 (
+INFO  00:36:08,165 - #45 int
+INFO  00:36:08,165 - #45 a
+INFO  00:36:08,165 - #36 ,
+INFO  00:36:08,165 - #45 int
+INFO  00:36:08,165 - #46 7
+INFO  00:36:08,165 - #40 )
+INFO  00:36:08,165 - #43 {
+INFO  00:36:08,165 - #44 }
+INFO  00:36:08,165 - #7 void
+INFO  00:36:08,165 - #45 ispravna
+INFO  00:36:08,165 - #39 (
+INFO  00:36:08,165 - #45 int
+INFO  00:36:08,165 - #45 a
+INFO  00:36:08,165 - #36 ,
+INFO  00:36:08,165 - #45 char
+INFO  00:36:08,165 - #45 b
+INFO  00:36:08,165 - #40 )
+INFO  00:36:08,165 - #43 {
+INFO  00:36:08,165 - #44 }
+INFO  00:36:08,166 - #7 void
+INFO  00:36:08,166 - #45 main
+INFO  00:36:08,166 - #39 (
+INFO  00:36:08,166 - #40 )
+INFO  00:36:08,166 - #43 {
+INFO  00:36:08,166 - #44 }
+INFO  00:36:08,166 - #44 }
+INFO  00:36:08,166 - Program(
+  ProgramName(
+   GreskaFormalniParametar
+  ) [ProgramName]
+  DeclList_epsilon(
+  ) [DeclList_epsilon]
+  MethodDeclList_more(
+    MethodDeclList_more(
+      MethodDeclList_more(
+        MethodDeclList_more(
+          MethodDeclList_epsilon(
+          ) [MethodDeclList_epsilon]
+          MethodDecl(
+            MethodTypeName(
+              RetType_void(
+              ) [RetType_void]
+             prva
+            ) [MethodTypeName]
+            FormParsOpt_pars(
+              FormPars_more(
+                FormPars_more(
+                  FormPars_one(
+                    FormParDecl_var(
+                      Type(
+                       int
+                      ) [Type]
+                     a
+                    ) [FormParDecl_var]
+                  ) [FormPars_one]
+                  FormParDecl_err(
+                  ) [FormParDecl_err]
+                ) [FormPars_more]
+                FormParDecl_var(
+                  Type(
+                   char
+                  ) [Type]
+                 c
+                ) [FormParDecl_var]
+              ) [FormPars_more]
+            ) [FormParsOpt_pars]
+            VarDeclListOpt_epsilon(
+            ) [VarDeclListOpt_epsilon]
+            StatementList_epsilon(
+            ) [StatementList_epsilon]
+          ) [MethodDecl]
+        ) [MethodDeclList_more]
+        MethodDecl(
+          MethodTypeName(
+            RetType_void(
+            ) [RetType_void]
+           druga
+          ) [MethodTypeName]
+          FormParsOpt_pars(
+            FormPars_more(
+              FormPars_one(
+                FormParDecl_var(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [FormParDecl_var]
+              ) [FormPars_one]
+              FormParDecl_err(
+              ) [FormParDecl_err]
+            ) [FormPars_more]
+          ) [FormParsOpt_pars]
+          VarDeclListOpt_epsilon(
+          ) [VarDeclListOpt_epsilon]
+          StatementList_epsilon(
+          ) [StatementList_epsilon]
+        ) [MethodDecl]
+      ) [MethodDeclList_more]
+      MethodDecl(
+        MethodTypeName(
+          RetType_void(
+          ) [RetType_void]
+         ispravna
+        ) [MethodTypeName]
+        FormParsOpt_pars(
+          FormPars_more(
+            FormPars_one(
+              FormParDecl_var(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParDecl_var]
+            ) [FormPars_one]
+            FormParDecl_var(
+              Type(
+               char
+              ) [Type]
+             b
+            ) [FormParDecl_var]
+          ) [FormPars_more]
+        ) [FormParsOpt_pars]
+        VarDeclListOpt_epsilon(
+        ) [VarDeclListOpt_epsilon]
+        StatementList_epsilon(
+        ) [StatementList_epsilon]
+      ) [MethodDecl]
+    ) [MethodDeclList_more]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_epsilon(
+      ) [StatementList_epsilon]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  00:36:08,166 - =================================================

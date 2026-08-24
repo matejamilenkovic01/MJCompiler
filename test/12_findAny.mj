@@ -1,0 +1,44 @@
+// EXPECT: OK
+// Amandman, Nivo A: Designator "=" Designator "." "findAny" "(" Expr ")" ";"
+// Levi Designator je promenljiva tipa bool, desni jednodimenzionalni niz
+// ugradjenog tipa.
+
+program FindAny
+
+const int trazeni = 7;
+int brojevi[];
+char slova[];
+bool zastavice[];
+bool nadjeno, nizNadjeno[];
+int i;
+
+{
+	void main()
+	{
+		brojevi = new int[5];
+		slova = new char[5];
+		zastavice = new bool[5];
+		nizNadjeno = new bool[5];
+
+		brojevi[0] = 7;
+		slova[0] = 'a';
+		zastavice[0] = true;
+
+		// prosta promenljiva kao rezultat
+		nadjeno = brojevi.findAny(7);
+
+		// razliciti oblici izraza kao argument
+		nadjeno = brojevi.findAny(trazeni);
+		nadjeno = brojevi.findAny(3 + 4);
+		nadjeno = brojevi.findAny(brojevi[0]);
+		nadjeno = brojevi.findAny(-1);
+
+		// nizovi ostalih ugradjenih tipova
+		nadjeno = slova.findAny('a');
+		nadjeno = zastavice.findAny(true);
+
+		// element niza kao rezultat
+		i = 0;
+		nizNadjeno[i] = brojevi.findAny(7);
+	}
+}

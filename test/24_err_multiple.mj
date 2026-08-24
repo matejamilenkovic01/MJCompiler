@@ -1,0 +1,29 @@
+// EXPECT: SYNTAX>=4 RECOVERY>=4
+// EXPECT-ERR: Oporavak od greske u deklaraciji promenljive
+// EXPECT-ERR: Oporavak od greske u deklaraciji formalnog parametra
+// EXPECT-ERR: Oporavak od greske u uslovu if iskaza
+// EXPECT-ERR: Oporavak od greske u iskazu
+// Vise razlicitih gresaka u istom fajlu. Ako oporavak radi ispravno,
+// parser mora prijaviti sve cetiri i stici do kraja fajla.
+
+program ViseGresaka
+
+int a, 5, b;
+int c;
+
+{
+	void metoda(int x, 9)
+	{
+	}
+
+	void main()
+	{
+		a = 1;
+
+		if (a < ) a = 0;
+
+		c = / 2;
+
+		b = 3;
+	}
+}

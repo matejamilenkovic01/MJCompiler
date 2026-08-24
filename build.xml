@@ -15,7 +15,7 @@
 		<java jar="lib/JFlex.jar" fork="true">
 			<arg value="-d"/>
 			<arg value="./src/rs/ac/bg/etf/pp1"/>
-			<arg value="spec/mjlexer.lex"/>
+			<arg value="src/spec/mjlexer.flex"/>
 		</java>	
 	</target>
 	
@@ -29,7 +29,7 @@
 			<arg value="MJParser"/>
 			<!--<arg value="-dump_states"/>-->
 			<arg value="-buildtree"/>
-			<arg value="spec/mjparser.cup"/>
+			<arg value="src/spec/mjparser.cup"/>
 		</java>	
 	</target>
 	
@@ -37,14 +37,34 @@
 		<replace dir="src" value="rs.ac.bg.etf.pp1.ast" token="src.rs.ac.bg.etf.pp1.ast" summary="true" />
 	</target>
 	
+	<!-- source/target 1.8 su eksplicitni da bi prevedene klase radile na
+	     laboratorijskim masinama i onda kada se Ant slucajno pokrene na novijem JDK-u. -->
 	<target name="compile" depends="repackage">
-		<javac srcdir="src/rs/ac/bg/etf/pp1" includeantruntime="false">
+		<javac includeantruntime="false" source="1.8" target="1.8">
+			<!-- generisani lekser, parser i AST -->
+			<src path="src/rs/ac/bg/etf/pp1"/>
+			<!-- rucno pisane klase: Compiler i TestRunner -->
+			<src path="test"/>
 			<classpath>
 				<pathelement path="lib/JFlex.jar"/>
 				<pathelement path="lib/cup_v10k.jar"/>
 				<pathelement path="lib/log4j-1.2.17.jar"/>
 			</classpath>
 		</javac>
+	</target>
+
+	<!-- Pokretanje svih testova iz test foldera. Za svaki .mj fajl pravi
+	     istoimeni .out (standardni izlaz) i .err (izlaz gresaka). -->
+	<target name="test" depends="compile">
+		<java classname="rs.ac.bg.etf.pp1.TestRunner" fork="true" failonerror="true">
+			<classpath>
+				<pathelement path="src"/>
+				<pathelement path="test"/>
+				<pathelement path="config"/>
+				<pathelement path="lib/cup_v10k.jar"/>
+				<pathelement path="lib/log4j-1.2.17.jar"/>
+			</classpath>
+		</java>
 	</target>
 	
 </project>	

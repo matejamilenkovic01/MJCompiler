@@ -1,0 +1,246 @@
+INFO  00:36:08,291 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/23_err_if_condition.mj
+INFO  00:36:08,299 - #2 program
+INFO  00:36:08,299 - #45 GreskaUslovIf
+INFO  00:36:08,299 - #45 int
+INFO  00:36:08,299 - #45 a
+INFO  00:36:08,299 - #36 ,
+INFO  00:36:08,299 - #45 b
+INFO  00:36:08,299 - #34 ;
+INFO  00:36:08,299 - #43 {
+INFO  00:36:08,299 - #7 void
+INFO  00:36:08,300 - #45 main
+INFO  00:36:08,300 - #39 (
+INFO  00:36:08,300 - #40 )
+INFO  00:36:08,300 - #43 {
+INFO  00:36:08,300 - #45 a
+INFO  00:36:08,300 - #31 =
+INFO  00:36:08,300 - #46 1
+INFO  00:36:08,300 - #34 ;
+INFO  00:36:08,300 - #45 b
+INFO  00:36:08,300 - #31 =
+INFO  00:36:08,300 - #46 2
+INFO  00:36:08,300 - #34 ;
+INFO  00:36:08,300 - #9 if
+INFO  00:36:08,301 - #39 (
+INFO  00:36:08,301 - #45 a
+INFO  00:36:08,301 - #26 <
+INFO  00:36:08,301 - #28 &&
+INFO  00:36:08,301 - #45 b
+INFO  00:36:08,301 - #40 )
+INFO  00:36:08,301 - #45 a
+INFO  00:36:08,301 - #31 =
+INFO  00:36:08,301 - #46 0
+INFO  00:36:08,301 - #34 ;
+INFO  00:36:08,301 - #9 if
+INFO  00:36:08,301 - #39 (
+INFO  00:36:08,301 - #19 *
+INFO  00:36:08,301 - #45 a
+INFO  00:36:08,301 - #19 *
+INFO  00:36:08,301 - #40 )
+INFO  00:36:08,301 - #45 a
+INFO  00:36:08,301 - #31 =
+INFO  00:36:08,302 - #46 1
+INFO  00:36:08,302 - #34 ;
+INFO  00:36:08,302 - #10 else
+INFO  00:36:08,302 - #45 b
+INFO  00:36:08,302 - #31 =
+INFO  00:36:08,302 - #46 1
+INFO  00:36:08,302 - #34 ;
+INFO  00:36:08,302 - #9 if
+INFO  00:36:08,302 - #39 (
+INFO  00:36:08,302 - #45 a
+INFO  00:36:08,302 - #26 <
+INFO  00:36:08,302 - #45 b
+INFO  00:36:08,302 - #40 )
+INFO  00:36:08,302 - #45 a
+INFO  00:36:08,302 - #31 =
+INFO  00:36:08,302 - #46 0
+INFO  00:36:08,302 - #34 ;
+INFO  00:36:08,302 - #44 }
+INFO  00:36:08,303 - #44 }
+INFO  00:36:08,303 - Program(
+  ProgramName(
+   GreskaUslovIf
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_epsilon(
+    ) [DeclList_epsilon]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_more(
+        VarItemList_one(
+          VarItem_var(
+           a
+          ) [VarItem_var]
+        ) [VarItemList_one]
+        VarItem_var(
+         b
+        ) [VarItem_var]
+      ) [VarItemList_more]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_more(
+                StatementList_epsilon(
+                ) [StatementList_epsilon]
+                Statement_designator(
+                  DesignatorStatement_assign(
+                    Designator_ident(
+                     a
+                    ) [Designator_ident]
+                    Expr_add(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_number(
+                           1
+                          ) [Factor_number]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [Expr_add]
+                  ) [DesignatorStatement_assign]
+                ) [Statement_designator]
+              ) [StatementList_more]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_ident(
+                   b
+                  ) [Designator_ident]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_number(
+                         2
+                        ) [Factor_number]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_more]
+            Statement_if(
+              IfCondition_err(
+              ) [IfCondition_err]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_ident(
+                   a
+                  ) [Designator_ident]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_number(
+                         0
+                        ) [Factor_number]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [Statement_if]
+          ) [StatementList_more]
+          Statement_ifElse(
+            IfCondition_err(
+            ) [IfCondition_err]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_ident(
+                 a
+                ) [Designator_ident]
+                Expr_add(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_number(
+                       1
+                      ) [Factor_number]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [Expr_add]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_ident(
+                 b
+                ) [Designator_ident]
+                Expr_add(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_number(
+                       1
+                      ) [Factor_number]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [Expr_add]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+          ) [Statement_ifElse]
+        ) [StatementList_more]
+        Statement_if(
+          IfCondition_cond(
+            Condition_term(
+              CondTerm_fact(
+                CondFact_relop(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_designator(
+                        Designator_ident(
+                         a
+                        ) [Designator_ident]
+                      ) [Factor_designator]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                  Relop_lt(
+                  ) [Relop_lt]
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_designator(
+                        Designator_ident(
+                         b
+                        ) [Designator_ident]
+                      ) [Factor_designator]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [CondFact_relop]
+              ) [CondTerm_fact]
+            ) [Condition_term]
+          ) [IfCondition_cond]
+          Statement_designator(
+            DesignatorStatement_assign(
+              Designator_ident(
+               a
+              ) [Designator_ident]
+              Expr_add(
+                AddExpr_term(
+                  Term_factor(
+                    Factor_number(
+                     0
+                    ) [Factor_number]
+                  ) [Term_factor]
+                ) [AddExpr_term]
+              ) [Expr_add]
+            ) [DesignatorStatement_assign]
+          ) [Statement_designator]
+        ) [Statement_if]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  00:36:08,304 - =================================================

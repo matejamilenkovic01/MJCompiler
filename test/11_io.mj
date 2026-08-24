@@ -1,0 +1,37 @@
+// EXPECT: OK
+// read i print. print prima opcionu sirinu ispisa (celobrojna konstanta).
+
+program UlazIzlaz
+
+int broj, niz[];
+char znak;
+bool zastavica;
+
+{
+	void main()
+	{
+		niz = new int[3];
+
+		read(broj);
+		read(znak);
+		read(zastavica);
+		read(niz[0]);
+
+		print(broj);
+		print(znak);
+		print(zastavica);
+		print(niz[0]);
+
+		// sa sirinom ispisa
+		print(broj, 5);
+		print(znak, 2);
+		print(niz[0], 10);
+
+		// izraz kao argument
+		print(broj + 1);
+		print(broj * 2, 3);
+		print('x');
+		print(42);
+		print(true);
+	}
+}

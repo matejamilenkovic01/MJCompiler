@@ -1,0 +1,9 @@
+// EXPECT: OK
+// Najmanji ispravan program: samo obavezna main metoda.
+
+program Minimal
+{
+	void main()
+	{
+	}
+}

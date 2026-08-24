@@ -1,0 +1,208 @@
+INFO  00:36:05,901 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/02_const_decl.mj
+INFO  00:36:05,909 - #2 program
+INFO  00:36:05,909 - #45 Konstante
+INFO  00:36:05,909 - #3 const
+INFO  00:36:05,909 - #45 int
+INFO  00:36:05,909 - #45 jedan
+INFO  00:36:05,909 - #31 =
+INFO  00:36:05,909 - #46 1
+INFO  00:36:05,909 - #34 ;
+INFO  00:36:05,909 - #3 const
+INFO  00:36:05,909 - #45 int
+INFO  00:36:05,909 - #45 a
+INFO  00:36:05,909 - #31 =
+INFO  00:36:05,909 - #46 10
+INFO  00:36:05,909 - #36 ,
+INFO  00:36:05,910 - #45 b
+INFO  00:36:05,910 - #31 =
+INFO  00:36:05,910 - #46 20
+INFO  00:36:05,910 - #36 ,
+INFO  00:36:05,910 - #45 c
+INFO  00:36:05,910 - #31 =
+INFO  00:36:05,910 - #46 30
+INFO  00:36:05,910 - #34 ;
+INFO  00:36:05,910 - #3 const
+INFO  00:36:05,910 - #45 char
+INFO  00:36:05,910 - #45 slovo
+INFO  00:36:05,910 - #31 =
+INFO  00:36:05,910 - #48 x
+INFO  00:36:05,910 - #34 ;
+INFO  00:36:05,910 - #3 const
+INFO  00:36:05,910 - #45 char
+INFO  00:36:05,910 - #45 razmak
+INFO  00:36:05,910 - #31 =
+INFO  00:36:05,910 - #48  
+INFO  00:36:05,910 - #34 ;
+INFO  00:36:05,910 - #3 const
+INFO  00:36:05,910 - #45 char
+INFO  00:36:05,910 - #45 cifraKaoZnak
+INFO  00:36:05,910 - #31 =
+INFO  00:36:05,910 - #48 7
+INFO  00:36:05,910 - #34 ;
+INFO  00:36:05,910 - #3 const
+INFO  00:36:05,910 - #45 bool
+INFO  00:36:05,910 - #45 tacno
+INFO  00:36:05,911 - #31 =
+INFO  00:36:05,911 - #47 1
+INFO  00:36:05,911 - #34 ;
+INFO  00:36:05,911 - #3 const
+INFO  00:36:05,911 - #45 bool
+INFO  00:36:05,911 - #45 netacno
+INFO  00:36:05,911 - #31 =
+INFO  00:36:05,911 - #47 0
+INFO  00:36:05,911 - #34 ;
+INFO  00:36:05,911 - #43 {
+INFO  00:36:05,911 - #7 void
+INFO  00:36:05,911 - #45 main
+INFO  00:36:05,911 - #39 (
+INFO  00:36:05,911 - #40 )
+INFO  00:36:05,911 - #43 {
+INFO  00:36:05,911 - #44 }
+INFO  00:36:05,912 - #44 }
+INFO  00:36:05,912 - Program(
+  ProgramName(
+   Konstante
+  ) [ProgramName]
+  DeclList_const(
+    DeclList_const(
+      DeclList_const(
+        DeclList_const(
+          DeclList_const(
+            DeclList_const(
+              DeclList_const(
+                DeclList_epsilon(
+                ) [DeclList_epsilon]
+                ConstDecl(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstItemList_one(
+                    ConstItem(
+                     jedan
+                      Constant_number(
+                       1
+                      ) [Constant_number]
+                    ) [ConstItem]
+                  ) [ConstItemList_one]
+                ) [ConstDecl]
+              ) [DeclList_const]
+              ConstDecl(
+                Type(
+                 int
+                ) [Type]
+                ConstItemList_more(
+                  ConstItemList_more(
+                    ConstItemList_one(
+                      ConstItem(
+                       a
+                        Constant_number(
+                         10
+                        ) [Constant_number]
+                      ) [ConstItem]
+                    ) [ConstItemList_one]
+                    ConstItem(
+                     b
+                      Constant_number(
+                       20
+                      ) [Constant_number]
+                    ) [ConstItem]
+                  ) [ConstItemList_more]
+                  ConstItem(
+                   c
+                    Constant_number(
+                     30
+                    ) [Constant_number]
+                  ) [ConstItem]
+                ) [ConstItemList_more]
+              ) [ConstDecl]
+            ) [DeclList_const]
+            ConstDecl(
+              Type(
+               char
+              ) [Type]
+              ConstItemList_one(
+                ConstItem(
+                 slovo
+                  Constant_character(
+                   x
+                  ) [Constant_character]
+                ) [ConstItem]
+              ) [ConstItemList_one]
+            ) [ConstDecl]
+          ) [DeclList_const]
+          ConstDecl(
+            Type(
+             char
+            ) [Type]
+            ConstItemList_one(
+              ConstItem(
+               razmak
+                Constant_character(
+                  
+                ) [Constant_character]
+              ) [ConstItem]
+            ) [ConstItemList_one]
+          ) [ConstDecl]
+        ) [DeclList_const]
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+          ConstItemList_one(
+            ConstItem(
+             cifraKaoZnak
+              Constant_character(
+               7
+              ) [Constant_character]
+            ) [ConstItem]
+          ) [ConstItemList_one]
+        ) [ConstDecl]
+      ) [DeclList_const]
+      ConstDecl(
+        Type(
+         bool
+        ) [Type]
+        ConstItemList_one(
+          ConstItem(
+           tacno
+            Constant_bool(
+             1
+            ) [Constant_bool]
+          ) [ConstItem]
+        ) [ConstItemList_one]
+      ) [ConstDecl]
+    ) [DeclList_const]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      ConstItemList_one(
+        ConstItem(
+         netacno
+          Constant_bool(
+           0
+          ) [Constant_bool]
+        ) [ConstItem]
+      ) [ConstItemList_one]
+    ) [ConstDecl]
+  ) [DeclList_const]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_epsilon(
+      ) [StatementList_epsilon]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  00:36:05,912 - =================================================
+INFO  00:36:05,912 - Parsiranje uspesno zavrseno!

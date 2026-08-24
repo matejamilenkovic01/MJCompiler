@@ -1,0 +1,27 @@
+// EXPECT: SYNTAX>=2 RECOVERY>=2
+// EXPECT-ERR: Oporavak od greske u deklaraciji formalnog parametra
+// Oporavak (Nivo B): deklaracija formalnog parametra funkcije -
+// ignorisati znakove do "," ili ")".
+
+program GreskaFormalniParametar
+
+{
+	// greska u sredini liste - oporavak do ","
+	void prva(int a, 5, char c)
+	{
+	}
+
+	// greska na kraju liste - oporavak do ")"
+	void druga(int a, int 7)
+	{
+	}
+
+	// posle oporavka parser mora normalno da nastavi
+	void ispravna(int a, char b)
+	{
+	}
+
+	void main()
+	{
+	}
+}

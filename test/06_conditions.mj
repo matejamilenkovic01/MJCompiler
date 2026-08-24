@@ -1,0 +1,32 @@
+// EXPECT: OK
+// Uslovni izrazi: svi relacioni operatori, && i ||, i njihovo kombinovanje.
+
+program Uslovi
+
+int a, b;
+bool p, q;
+
+{
+	void main()
+	{
+		a = 1;
+		b = 2;
+		p = true;
+		q = false;
+
+		if (a == b) a = 0;
+		if (a != b) a = 0;
+		if (a > b) a = 0;
+		if (a >= b) a = 0;
+		if (a < b) a = 0;
+		if (a <= b) a = 0;
+
+		if (p) a = 0;
+		if (p && q) a = 0;
+		if (p || q) a = 0;
+		if (p && q || a < b) a = 0;
+		if (a < b && b > a || p && q) a = 0;
+		if ((a + 1) * 2 <= b - 3) a = 0;
+		if (p && q && p || q || p) a = 0;
+	}
+}

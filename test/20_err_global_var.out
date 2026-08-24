@@ -1,0 +1,102 @@
+INFO  00:36:07,875 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/20_err_global_var.mj
+INFO  00:36:07,882 - #2 program
+INFO  00:36:07,882 - #45 GreskaGlobalnaPromenljiva
+INFO  00:36:07,882 - #45 int
+INFO  00:36:07,882 - #45 a
+INFO  00:36:07,883 - #36 ,
+INFO  00:36:07,883 - #46 5
+INFO  00:36:07,883 - #36 ,
+INFO  00:36:07,883 - #45 b
+INFO  00:36:07,883 - #34 ;
+INFO  00:36:07,883 - #45 int
+INFO  00:36:07,883 - #45 c
+INFO  00:36:07,883 - #36 ,
+INFO  00:36:07,883 - #45 d
+INFO  00:36:07,883 - #46 7
+INFO  00:36:07,883 - #46 8
+INFO  00:36:07,883 - #34 ;
+INFO  00:36:07,883 - #45 int
+INFO  00:36:07,884 - #45 ispravna
+INFO  00:36:07,884 - #34 ;
+INFO  00:36:07,884 - #43 {
+INFO  00:36:07,884 - #7 void
+INFO  00:36:07,884 - #45 main
+INFO  00:36:07,884 - #39 (
+INFO  00:36:07,884 - #40 )
+INFO  00:36:07,884 - #43 {
+INFO  00:36:07,884 - #44 }
+INFO  00:36:07,884 - #44 }
+INFO  00:36:07,885 - Program(
+  ProgramName(
+   GreskaGlobalnaPromenljiva
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_var(
+      DeclList_var(
+        DeclList_epsilon(
+        ) [DeclList_epsilon]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarItemList_more(
+            VarItemList_more(
+              VarItemList_one(
+                VarItem_var(
+                 a
+                ) [VarItem_var]
+              ) [VarItemList_one]
+              VarItem_err(
+              ) [VarItem_err]
+            ) [VarItemList_more]
+            VarItem_var(
+             b
+            ) [VarItem_var]
+          ) [VarItemList_more]
+        ) [VarDecl]
+      ) [DeclList_var]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarItemList_more(
+          VarItemList_one(
+            VarItem_var(
+             c
+            ) [VarItem_var]
+          ) [VarItemList_one]
+          VarItem_err(
+          ) [VarItem_err]
+        ) [VarItemList_more]
+      ) [VarDecl]
+    ) [DeclList_var]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_one(
+        VarItem_var(
+         ispravna
+        ) [VarItem_var]
+      ) [VarItemList_one]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_epsilon(
+      ) [StatementList_epsilon]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  00:36:07,885 - =================================================

@@ -1,0 +1,74 @@
+// EXPECT: OK
+// Deklaracije metoda: void i sa povratnim tipom, sa i bez formalnih
+// parametara, prosti i nizovni parametri, lokalne promenljive, return,
+// i pozivi globalnih funkcija.
+
+program Metode
+
+int g;
+
+{
+	void bezParametara()
+	{
+	}
+
+	void saParametrima(int a, char b, bool c)
+	{
+	}
+
+	void saNizovima(int a[], char b[], bool c[])
+	{
+	}
+
+	void mesano(int a, int b[], char c)
+	{
+	}
+
+	int vratiBroj()
+		int lokalna;
+	{
+		lokalna = 5;
+		return lokalna;
+	}
+
+	char vratiZnak()
+	{
+		return 'q';
+	}
+
+	bool vratiLogicku()
+	{
+		return true;
+	}
+
+	void praznoReturn()
+	{
+		return;
+	}
+
+	void lokalnePromenljive()
+		int a, b[];
+		char c;
+		bool d;
+	{
+	}
+
+	int saberi(int a, int b)
+	{
+		return a + b;
+	}
+
+	void main()
+		int r;
+	{
+		bezParametara();
+		saParametrima(1, 'a', true);
+		praznoReturn();
+
+		r = vratiBroj();
+		r = saberi(1, 2);
+		r = saberi(r, saberi(3, 4));
+
+		g = r;
+	}
+}

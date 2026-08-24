@@ -1,0 +1,38 @@
+// EXPECT: OK
+// Aritmeticki izrazi: svi Addop i Mulop operatori, unarni minus,
+// zagrade i visestruko ulancavanje.
+
+program Izrazi
+
+const int k = 3;
+int a, b, c, r;
+
+{
+	void main()
+	{
+		a = 1;
+		b = 2;
+		c = 3;
+
+		r = a + b;
+		r = a - b;
+		r = a * b;
+		r = a / b;
+		r = a % b;
+
+		r = -a;
+		r = -a + b;
+		r = -(a + b);
+
+		r = a + b * c;
+		r = (a + b) * c;
+		r = a * b + c * k;
+		r = a - b - c;
+		r = a / b % c;
+
+		r = ((a));
+		r = -((a + b) * (c - k)) % 7;
+
+		r = 1 + 2 - 3 * 4 / 5 % 6;
+	}
+}

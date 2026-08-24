@@ -1,0 +1,37 @@
+INFO  00:36:05,748 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/01_minimal.mj
+INFO  00:36:05,755 - #2 program
+INFO  00:36:05,755 - #45 Minimal
+INFO  00:36:05,755 - #43 {
+INFO  00:36:05,756 - #7 void
+INFO  00:36:05,756 - #45 main
+INFO  00:36:05,756 - #39 (
+INFO  00:36:05,756 - #40 )
+INFO  00:36:05,756 - #43 {
+INFO  00:36:05,756 - #44 }
+INFO  00:36:05,756 - #44 }
+INFO  00:36:05,757 - Program(
+  ProgramName(
+   Minimal
+  ) [ProgramName]
+  DeclList_epsilon(
+  ) [DeclList_epsilon]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_epsilon(
+      ) [StatementList_epsilon]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  00:36:05,757 - =================================================
+INFO  00:36:05,757 - Parsiranje uspesno zavrseno!

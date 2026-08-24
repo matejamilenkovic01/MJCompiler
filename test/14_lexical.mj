@@ -1,0 +1,41 @@
+// EXPECT: OK
+// Leksicka faza: svi oblici tokena, komentari i "beline".
+// Komentar na pocetku fajla.
+
+program Leksika    // komentar iza koda u istoj liniji
+
+// komentar u liniji za sebe
+const int nula = 0;
+const int veliki = 123456;
+const char razmak = ' ';
+const char cifraKaoZnak = '7';
+const char velikoSlovo = 'Z';
+const bool istina = true;
+const bool laz = false;
+
+// identifikatori: pocinju slovom, dalje slova, cifre i donja crta
+int a, A, aA, a1, a_1, a_b_c, duguljastoImePromenljive;
+
+{
+	void main()
+		int r;
+	{
+		r = 1 + 2 - 3 * 4 / 5 % 6;
+		r = (1);
+		r++;
+		r--;
+
+		if (1 == 1 && 2 != 3 || 4 < 5 && 6 > 7 || 8 <= 9 && 10 >= 11) r = 1;
+
+		r = 1 < 2 ? 3 : 4;
+
+		a = r;
+		A = r;
+		aA = r;
+		a1 = r;
+		a_1 = r;
+		a_b_c = r;
+		duguljastoImePromenljive = r;
+	}
+}
+// komentar na samom kraju fajla

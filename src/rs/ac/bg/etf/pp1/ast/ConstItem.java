@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/7/2026 23:4:17
+// 25/7/2026 0:36:4
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,21 +9,21 @@ public class ConstItem implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private String I1;
+    private String constName;
     private Constant Constant;
 
-    public ConstItem (String I1, Constant Constant) {
-        this.I1=I1;
+    public ConstItem (String constName, Constant Constant) {
+        this.constName=constName;
         this.Constant=Constant;
         if(Constant!=null) Constant.setParent(this);
     }
 
-    public String getI1() {
-        return I1;
+    public String getConstName() {
+        return constName;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setConstName(String constName) {
+        this.constName=constName;
     }
 
     public Constant getConstant() {
@@ -73,7 +73,7 @@ public class ConstItem implements SyntaxNode {
         buffer.append(tab);
         buffer.append("ConstItem(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+constName);
         buffer.append("\n");
 
         if(Constant!=null)

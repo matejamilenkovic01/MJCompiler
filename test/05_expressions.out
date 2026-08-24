@@ -1,0 +1,927 @@
+INFO  00:36:06,355 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/05_expressions.mj
+INFO  00:36:06,362 - #2 program
+INFO  00:36:06,362 - #45 Izrazi
+INFO  00:36:06,362 - #3 const
+INFO  00:36:06,362 - #45 int
+INFO  00:36:06,362 - #45 k
+INFO  00:36:06,362 - #31 =
+INFO  00:36:06,362 - #46 3
+INFO  00:36:06,362 - #34 ;
+INFO  00:36:06,362 - #45 int
+INFO  00:36:06,363 - #45 a
+INFO  00:36:06,363 - #36 ,
+INFO  00:36:06,363 - #45 b
+INFO  00:36:06,363 - #36 ,
+INFO  00:36:06,363 - #45 c
+INFO  00:36:06,363 - #36 ,
+INFO  00:36:06,363 - #45 r
+INFO  00:36:06,363 - #34 ;
+INFO  00:36:06,363 - #43 {
+INFO  00:36:06,363 - #7 void
+INFO  00:36:06,363 - #45 main
+INFO  00:36:06,363 - #39 (
+INFO  00:36:06,363 - #40 )
+INFO  00:36:06,364 - #43 {
+INFO  00:36:06,364 - #45 a
+INFO  00:36:06,364 - #31 =
+INFO  00:36:06,364 - #46 1
+INFO  00:36:06,364 - #34 ;
+INFO  00:36:06,364 - #45 b
+INFO  00:36:06,364 - #31 =
+INFO  00:36:06,364 - #46 2
+INFO  00:36:06,364 - #34 ;
+INFO  00:36:06,364 - #45 c
+INFO  00:36:06,364 - #31 =
+INFO  00:36:06,364 - #46 3
+INFO  00:36:06,364 - #34 ;
+INFO  00:36:06,364 - #45 r
+INFO  00:36:06,364 - #31 =
+INFO  00:36:06,364 - #45 a
+INFO  00:36:06,364 - #17 +
+INFO  00:36:06,364 - #45 b
+INFO  00:36:06,365 - #34 ;
+INFO  00:36:06,365 - #45 r
+INFO  00:36:06,365 - #31 =
+INFO  00:36:06,365 - #45 a
+INFO  00:36:06,365 - #18 -
+INFO  00:36:06,365 - #45 b
+INFO  00:36:06,365 - #34 ;
+INFO  00:36:06,365 - #45 r
+INFO  00:36:06,365 - #31 =
+INFO  00:36:06,365 - #45 a
+INFO  00:36:06,365 - #19 *
+INFO  00:36:06,365 - #45 b
+INFO  00:36:06,365 - #34 ;
+INFO  00:36:06,365 - #45 r
+INFO  00:36:06,365 - #31 =
+INFO  00:36:06,366 - #45 a
+INFO  00:36:06,366 - #20 /
+INFO  00:36:06,366 - #45 b
+INFO  00:36:06,366 - #34 ;
+INFO  00:36:06,366 - #45 r
+INFO  00:36:06,366 - #31 =
+INFO  00:36:06,366 - #45 a
+INFO  00:36:06,366 - #21 %
+INFO  00:36:06,366 - #45 b
+INFO  00:36:06,366 - #34 ;
+INFO  00:36:06,366 - #45 r
+INFO  00:36:06,366 - #31 =
+INFO  00:36:06,366 - #18 -
+INFO  00:36:06,366 - #45 a
+INFO  00:36:06,367 - #34 ;
+INFO  00:36:06,367 - #45 r
+INFO  00:36:06,367 - #31 =
+INFO  00:36:06,367 - #18 -
+INFO  00:36:06,367 - #45 a
+INFO  00:36:06,367 - #17 +
+INFO  00:36:06,367 - #45 b
+INFO  00:36:06,367 - #34 ;
+INFO  00:36:06,367 - #45 r
+INFO  00:36:06,367 - #31 =
+INFO  00:36:06,367 - #18 -
+INFO  00:36:06,367 - #39 (
+INFO  00:36:06,367 - #45 a
+INFO  00:36:06,367 - #17 +
+INFO  00:36:06,367 - #45 b
+INFO  00:36:06,367 - #40 )
+INFO  00:36:06,367 - #34 ;
+INFO  00:36:06,367 - #45 r
+INFO  00:36:06,367 - #31 =
+INFO  00:36:06,367 - #45 a
+INFO  00:36:06,367 - #17 +
+INFO  00:36:06,367 - #45 b
+INFO  00:36:06,367 - #19 *
+INFO  00:36:06,367 - #45 c
+INFO  00:36:06,367 - #34 ;
+INFO  00:36:06,367 - #45 r
+INFO  00:36:06,367 - #31 =
+INFO  00:36:06,367 - #39 (
+INFO  00:36:06,368 - #45 a
+INFO  00:36:06,368 - #17 +
+INFO  00:36:06,368 - #45 b
+INFO  00:36:06,368 - #40 )
+INFO  00:36:06,368 - #19 *
+INFO  00:36:06,368 - #45 c
+INFO  00:36:06,368 - #34 ;
+INFO  00:36:06,368 - #45 r
+INFO  00:36:06,368 - #31 =
+INFO  00:36:06,368 - #45 a
+INFO  00:36:06,368 - #19 *
+INFO  00:36:06,368 - #45 b
+INFO  00:36:06,368 - #17 +
+INFO  00:36:06,368 - #45 c
+INFO  00:36:06,368 - #19 *
+INFO  00:36:06,368 - #45 k
+INFO  00:36:06,368 - #34 ;
+INFO  00:36:06,368 - #45 r
+INFO  00:36:06,368 - #31 =
+INFO  00:36:06,368 - #45 a
+INFO  00:36:06,368 - #18 -
+INFO  00:36:06,368 - #45 b
+INFO  00:36:06,368 - #18 -
+INFO  00:36:06,368 - #45 c
+INFO  00:36:06,368 - #34 ;
+INFO  00:36:06,368 - #45 r
+INFO  00:36:06,368 - #31 =
+INFO  00:36:06,368 - #45 a
+INFO  00:36:06,368 - #20 /
+INFO  00:36:06,368 - #45 b
+INFO  00:36:06,368 - #21 %
+INFO  00:36:06,368 - #45 c
+INFO  00:36:06,368 - #34 ;
+INFO  00:36:06,368 - #45 r
+INFO  00:36:06,368 - #31 =
+INFO  00:36:06,369 - #39 (
+INFO  00:36:06,369 - #39 (
+INFO  00:36:06,369 - #45 a
+INFO  00:36:06,369 - #40 )
+INFO  00:36:06,369 - #40 )
+INFO  00:36:06,369 - #34 ;
+INFO  00:36:06,369 - #45 r
+INFO  00:36:06,369 - #31 =
+INFO  00:36:06,369 - #18 -
+INFO  00:36:06,369 - #39 (
+INFO  00:36:06,369 - #39 (
+INFO  00:36:06,369 - #45 a
+INFO  00:36:06,369 - #17 +
+INFO  00:36:06,369 - #45 b
+INFO  00:36:06,369 - #40 )
+INFO  00:36:06,369 - #19 *
+INFO  00:36:06,369 - #39 (
+INFO  00:36:06,369 - #45 c
+INFO  00:36:06,369 - #18 -
+INFO  00:36:06,369 - #45 k
+INFO  00:36:06,369 - #40 )
+INFO  00:36:06,369 - #40 )
+INFO  00:36:06,369 - #21 %
+INFO  00:36:06,369 - #46 7
+INFO  00:36:06,369 - #34 ;
+INFO  00:36:06,369 - #45 r
+INFO  00:36:06,369 - #31 =
+INFO  00:36:06,369 - #46 1
+INFO  00:36:06,369 - #17 +
+INFO  00:36:06,369 - #46 2
+INFO  00:36:06,369 - #18 -
+INFO  00:36:06,369 - #46 3
+INFO  00:36:06,369 - #19 *
+INFO  00:36:06,369 - #46 4
+INFO  00:36:06,369 - #20 /
+INFO  00:36:06,369 - #46 5
+INFO  00:36:06,369 - #21 %
+INFO  00:36:06,369 - #46 6
+INFO  00:36:06,370 - #34 ;
+INFO  00:36:06,370 - #44 }
+INFO  00:36:06,370 - #44 }
+INFO  00:36:06,371 - Program(
+  ProgramName(
+   Izrazi
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_const(
+      DeclList_epsilon(
+      ) [DeclList_epsilon]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstItemList_one(
+          ConstItem(
+           k
+            Constant_number(
+             3
+            ) [Constant_number]
+          ) [ConstItem]
+        ) [ConstItemList_one]
+      ) [ConstDecl]
+    ) [DeclList_const]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_more(
+        VarItemList_more(
+          VarItemList_more(
+            VarItemList_one(
+              VarItem_var(
+               a
+              ) [VarItem_var]
+            ) [VarItemList_one]
+            VarItem_var(
+             b
+            ) [VarItem_var]
+          ) [VarItemList_more]
+          VarItem_var(
+           c
+          ) [VarItem_var]
+        ) [VarItemList_more]
+        VarItem_var(
+         r
+        ) [VarItem_var]
+      ) [VarItemList_more]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_more(
+                StatementList_more(
+                  StatementList_more(
+                    StatementList_more(
+                      StatementList_more(
+                        StatementList_more(
+                          StatementList_more(
+                            StatementList_more(
+                              StatementList_more(
+                                StatementList_more(
+                                  StatementList_more(
+                                    StatementList_more(
+                                      StatementList_more(
+                                        StatementList_more(
+                                          StatementList_more(
+                                            StatementList_epsilon(
+                                            ) [StatementList_epsilon]
+                                            Statement_designator(
+                                              DesignatorStatement_assign(
+                                                Designator_ident(
+                                                 a
+                                                ) [Designator_ident]
+                                                Expr_add(
+                                                  AddExpr_term(
+                                                    Term_factor(
+                                                      Factor_number(
+                                                       1
+                                                      ) [Factor_number]
+                                                    ) [Term_factor]
+                                                  ) [AddExpr_term]
+                                                ) [Expr_add]
+                                              ) [DesignatorStatement_assign]
+                                            ) [Statement_designator]
+                                          ) [StatementList_more]
+                                          Statement_designator(
+                                            DesignatorStatement_assign(
+                                              Designator_ident(
+                                               b
+                                              ) [Designator_ident]
+                                              Expr_add(
+                                                AddExpr_term(
+                                                  Term_factor(
+                                                    Factor_number(
+                                                     2
+                                                    ) [Factor_number]
+                                                  ) [Term_factor]
+                                                ) [AddExpr_term]
+                                              ) [Expr_add]
+                                            ) [DesignatorStatement_assign]
+                                          ) [Statement_designator]
+                                        ) [StatementList_more]
+                                        Statement_designator(
+                                          DesignatorStatement_assign(
+                                            Designator_ident(
+                                             c
+                                            ) [Designator_ident]
+                                            Expr_add(
+                                              AddExpr_term(
+                                                Term_factor(
+                                                  Factor_number(
+                                                   3
+                                                  ) [Factor_number]
+                                                ) [Term_factor]
+                                              ) [AddExpr_term]
+                                            ) [Expr_add]
+                                          ) [DesignatorStatement_assign]
+                                        ) [Statement_designator]
+                                      ) [StatementList_more]
+                                      Statement_designator(
+                                        DesignatorStatement_assign(
+                                          Designator_ident(
+                                           r
+                                          ) [Designator_ident]
+                                          Expr_add(
+                                            AddExpr_addop(
+                                              AddExpr_term(
+                                                Term_factor(
+                                                  Factor_designator(
+                                                    Designator_ident(
+                                                     a
+                                                    ) [Designator_ident]
+                                                  ) [Factor_designator]
+                                                ) [Term_factor]
+                                              ) [AddExpr_term]
+                                              Addop_plus(
+                                              ) [Addop_plus]
+                                              Term_factor(
+                                                Factor_designator(
+                                                  Designator_ident(
+                                                   b
+                                                  ) [Designator_ident]
+                                                ) [Factor_designator]
+                                              ) [Term_factor]
+                                            ) [AddExpr_addop]
+                                          ) [Expr_add]
+                                        ) [DesignatorStatement_assign]
+                                      ) [Statement_designator]
+                                    ) [StatementList_more]
+                                    Statement_designator(
+                                      DesignatorStatement_assign(
+                                        Designator_ident(
+                                         r
+                                        ) [Designator_ident]
+                                        Expr_add(
+                                          AddExpr_addop(
+                                            AddExpr_term(
+                                              Term_factor(
+                                                Factor_designator(
+                                                  Designator_ident(
+                                                   a
+                                                  ) [Designator_ident]
+                                                ) [Factor_designator]
+                                              ) [Term_factor]
+                                            ) [AddExpr_term]
+                                            Addop_minus(
+                                            ) [Addop_minus]
+                                            Term_factor(
+                                              Factor_designator(
+                                                Designator_ident(
+                                                 b
+                                                ) [Designator_ident]
+                                              ) [Factor_designator]
+                                            ) [Term_factor]
+                                          ) [AddExpr_addop]
+                                        ) [Expr_add]
+                                      ) [DesignatorStatement_assign]
+                                    ) [Statement_designator]
+                                  ) [StatementList_more]
+                                  Statement_designator(
+                                    DesignatorStatement_assign(
+                                      Designator_ident(
+                                       r
+                                      ) [Designator_ident]
+                                      Expr_add(
+                                        AddExpr_term(
+                                          Term_mulop(
+                                            Term_factor(
+                                              Factor_designator(
+                                                Designator_ident(
+                                                 a
+                                                ) [Designator_ident]
+                                              ) [Factor_designator]
+                                            ) [Term_factor]
+                                            Mulop_mul(
+                                            ) [Mulop_mul]
+                                            Factor_designator(
+                                              Designator_ident(
+                                               b
+                                              ) [Designator_ident]
+                                            ) [Factor_designator]
+                                          ) [Term_mulop]
+                                        ) [AddExpr_term]
+                                      ) [Expr_add]
+                                    ) [DesignatorStatement_assign]
+                                  ) [Statement_designator]
+                                ) [StatementList_more]
+                                Statement_designator(
+                                  DesignatorStatement_assign(
+                                    Designator_ident(
+                                     r
+                                    ) [Designator_ident]
+                                    Expr_add(
+                                      AddExpr_term(
+                                        Term_mulop(
+                                          Term_factor(
+                                            Factor_designator(
+                                              Designator_ident(
+                                               a
+                                              ) [Designator_ident]
+                                            ) [Factor_designator]
+                                          ) [Term_factor]
+                                          Mulop_div(
+                                          ) [Mulop_div]
+                                          Factor_designator(
+                                            Designator_ident(
+                                             b
+                                            ) [Designator_ident]
+                                          ) [Factor_designator]
+                                        ) [Term_mulop]
+                                      ) [AddExpr_term]
+                                    ) [Expr_add]
+                                  ) [DesignatorStatement_assign]
+                                ) [Statement_designator]
+                              ) [StatementList_more]
+                              Statement_designator(
+                                DesignatorStatement_assign(
+                                  Designator_ident(
+                                   r
+                                  ) [Designator_ident]
+                                  Expr_add(
+                                    AddExpr_term(
+                                      Term_mulop(
+                                        Term_factor(
+                                          Factor_designator(
+                                            Designator_ident(
+                                             a
+                                            ) [Designator_ident]
+                                          ) [Factor_designator]
+                                        ) [Term_factor]
+                                        Mulop_mod(
+                                        ) [Mulop_mod]
+                                        Factor_designator(
+                                          Designator_ident(
+                                           b
+                                          ) [Designator_ident]
+                                        ) [Factor_designator]
+                                      ) [Term_mulop]
+                                    ) [AddExpr_term]
+                                  ) [Expr_add]
+                                ) [DesignatorStatement_assign]
+                              ) [Statement_designator]
+                            ) [StatementList_more]
+                            Statement_designator(
+                              DesignatorStatement_assign(
+                                Designator_ident(
+                                 r
+                                ) [Designator_ident]
+                                Expr_add(
+                                  AddExpr_neg(
+                                    Term_factor(
+                                      Factor_designator(
+                                        Designator_ident(
+                                         a
+                                        ) [Designator_ident]
+                                      ) [Factor_designator]
+                                    ) [Term_factor]
+                                  ) [AddExpr_neg]
+                                ) [Expr_add]
+                              ) [DesignatorStatement_assign]
+                            ) [Statement_designator]
+                          ) [StatementList_more]
+                          Statement_designator(
+                            DesignatorStatement_assign(
+                              Designator_ident(
+                               r
+                              ) [Designator_ident]
+                              Expr_add(
+                                AddExpr_addop(
+                                  AddExpr_neg(
+                                    Term_factor(
+                                      Factor_designator(
+                                        Designator_ident(
+                                         a
+                                        ) [Designator_ident]
+                                      ) [Factor_designator]
+                                    ) [Term_factor]
+                                  ) [AddExpr_neg]
+                                  Addop_plus(
+                                  ) [Addop_plus]
+                                  Term_factor(
+                                    Factor_designator(
+                                      Designator_ident(
+                                       b
+                                      ) [Designator_ident]
+                                    ) [Factor_designator]
+                                  ) [Term_factor]
+                                ) [AddExpr_addop]
+                              ) [Expr_add]
+                            ) [DesignatorStatement_assign]
+                          ) [Statement_designator]
+                        ) [StatementList_more]
+                        Statement_designator(
+                          DesignatorStatement_assign(
+                            Designator_ident(
+                             r
+                            ) [Designator_ident]
+                            Expr_add(
+                              AddExpr_neg(
+                                Term_factor(
+                                  Factor_expr(
+                                    Expr_add(
+                                      AddExpr_addop(
+                                        AddExpr_term(
+                                          Term_factor(
+                                            Factor_designator(
+                                              Designator_ident(
+                                               a
+                                              ) [Designator_ident]
+                                            ) [Factor_designator]
+                                          ) [Term_factor]
+                                        ) [AddExpr_term]
+                                        Addop_plus(
+                                        ) [Addop_plus]
+                                        Term_factor(
+                                          Factor_designator(
+                                            Designator_ident(
+                                             b
+                                            ) [Designator_ident]
+                                          ) [Factor_designator]
+                                        ) [Term_factor]
+                                      ) [AddExpr_addop]
+                                    ) [Expr_add]
+                                  ) [Factor_expr]
+                                ) [Term_factor]
+                              ) [AddExpr_neg]
+                            ) [Expr_add]
+                          ) [DesignatorStatement_assign]
+                        ) [Statement_designator]
+                      ) [StatementList_more]
+                      Statement_designator(
+                        DesignatorStatement_assign(
+                          Designator_ident(
+                           r
+                          ) [Designator_ident]
+                          Expr_add(
+                            AddExpr_addop(
+                              AddExpr_term(
+                                Term_factor(
+                                  Factor_designator(
+                                    Designator_ident(
+                                     a
+                                    ) [Designator_ident]
+                                  ) [Factor_designator]
+                                ) [Term_factor]
+                              ) [AddExpr_term]
+                              Addop_plus(
+                              ) [Addop_plus]
+                              Term_mulop(
+                                Term_factor(
+                                  Factor_designator(
+                                    Designator_ident(
+                                     b
+                                    ) [Designator_ident]
+                                  ) [Factor_designator]
+                                ) [Term_factor]
+                                Mulop_mul(
+                                ) [Mulop_mul]
+                                Factor_designator(
+                                  Designator_ident(
+                                   c
+                                  ) [Designator_ident]
+                                ) [Factor_designator]
+                              ) [Term_mulop]
+                            ) [AddExpr_addop]
+                          ) [Expr_add]
+                        ) [DesignatorStatement_assign]
+                      ) [Statement_designator]
+                    ) [StatementList_more]
+                    Statement_designator(
+                      DesignatorStatement_assign(
+                        Designator_ident(
+                         r
+                        ) [Designator_ident]
+                        Expr_add(
+                          AddExpr_term(
+                            Term_mulop(
+                              Term_factor(
+                                Factor_expr(
+                                  Expr_add(
+                                    AddExpr_addop(
+                                      AddExpr_term(
+                                        Term_factor(
+                                          Factor_designator(
+                                            Designator_ident(
+                                             a
+                                            ) [Designator_ident]
+                                          ) [Factor_designator]
+                                        ) [Term_factor]
+                                      ) [AddExpr_term]
+                                      Addop_plus(
+                                      ) [Addop_plus]
+                                      Term_factor(
+                                        Factor_designator(
+                                          Designator_ident(
+                                           b
+                                          ) [Designator_ident]
+                                        ) [Factor_designator]
+                                      ) [Term_factor]
+                                    ) [AddExpr_addop]
+                                  ) [Expr_add]
+                                ) [Factor_expr]
+                              ) [Term_factor]
+                              Mulop_mul(
+                              ) [Mulop_mul]
+                              Factor_designator(
+                                Designator_ident(
+                                 c
+                                ) [Designator_ident]
+                              ) [Factor_designator]
+                            ) [Term_mulop]
+                          ) [AddExpr_term]
+                        ) [Expr_add]
+                      ) [DesignatorStatement_assign]
+                    ) [Statement_designator]
+                  ) [StatementList_more]
+                  Statement_designator(
+                    DesignatorStatement_assign(
+                      Designator_ident(
+                       r
+                      ) [Designator_ident]
+                      Expr_add(
+                        AddExpr_addop(
+                          AddExpr_term(
+                            Term_mulop(
+                              Term_factor(
+                                Factor_designator(
+                                  Designator_ident(
+                                   a
+                                  ) [Designator_ident]
+                                ) [Factor_designator]
+                              ) [Term_factor]
+                              Mulop_mul(
+                              ) [Mulop_mul]
+                              Factor_designator(
+                                Designator_ident(
+                                 b
+                                ) [Designator_ident]
+                              ) [Factor_designator]
+                            ) [Term_mulop]
+                          ) [AddExpr_term]
+                          Addop_plus(
+                          ) [Addop_plus]
+                          Term_mulop(
+                            Term_factor(
+                              Factor_designator(
+                                Designator_ident(
+                                 c
+                                ) [Designator_ident]
+                              ) [Factor_designator]
+                            ) [Term_factor]
+                            Mulop_mul(
+                            ) [Mulop_mul]
+                            Factor_designator(
+                              Designator_ident(
+                               k
+                              ) [Designator_ident]
+                            ) [Factor_designator]
+                          ) [Term_mulop]
+                        ) [AddExpr_addop]
+                      ) [Expr_add]
+                    ) [DesignatorStatement_assign]
+                  ) [Statement_designator]
+                ) [StatementList_more]
+                Statement_designator(
+                  DesignatorStatement_assign(
+                    Designator_ident(
+                     r
+                    ) [Designator_ident]
+                    Expr_add(
+                      AddExpr_addop(
+                        AddExpr_addop(
+                          AddExpr_term(
+                            Term_factor(
+                              Factor_designator(
+                                Designator_ident(
+                                 a
+                                ) [Designator_ident]
+                              ) [Factor_designator]
+                            ) [Term_factor]
+                          ) [AddExpr_term]
+                          Addop_minus(
+                          ) [Addop_minus]
+                          Term_factor(
+                            Factor_designator(
+                              Designator_ident(
+                               b
+                              ) [Designator_ident]
+                            ) [Factor_designator]
+                          ) [Term_factor]
+                        ) [AddExpr_addop]
+                        Addop_minus(
+                        ) [Addop_minus]
+                        Term_factor(
+                          Factor_designator(
+                            Designator_ident(
+                             c
+                            ) [Designator_ident]
+                          ) [Factor_designator]
+                        ) [Term_factor]
+                      ) [AddExpr_addop]
+                    ) [Expr_add]
+                  ) [DesignatorStatement_assign]
+                ) [Statement_designator]
+              ) [StatementList_more]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_ident(
+                   r
+                  ) [Designator_ident]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_mulop(
+                        Term_mulop(
+                          Term_factor(
+                            Factor_designator(
+                              Designator_ident(
+                               a
+                              ) [Designator_ident]
+                            ) [Factor_designator]
+                          ) [Term_factor]
+                          Mulop_div(
+                          ) [Mulop_div]
+                          Factor_designator(
+                            Designator_ident(
+                             b
+                            ) [Designator_ident]
+                          ) [Factor_designator]
+                        ) [Term_mulop]
+                        Mulop_mod(
+                        ) [Mulop_mod]
+                        Factor_designator(
+                          Designator_ident(
+                           c
+                          ) [Designator_ident]
+                        ) [Factor_designator]
+                      ) [Term_mulop]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_more]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_ident(
+                 r
+                ) [Designator_ident]
+                Expr_add(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_expr(
+                        Expr_add(
+                          AddExpr_term(
+                            Term_factor(
+                              Factor_expr(
+                                Expr_add(
+                                  AddExpr_term(
+                                    Term_factor(
+                                      Factor_designator(
+                                        Designator_ident(
+                                         a
+                                        ) [Designator_ident]
+                                      ) [Factor_designator]
+                                    ) [Term_factor]
+                                  ) [AddExpr_term]
+                                ) [Expr_add]
+                              ) [Factor_expr]
+                            ) [Term_factor]
+                          ) [AddExpr_term]
+                        ) [Expr_add]
+                      ) [Factor_expr]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [Expr_add]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+          ) [StatementList_more]
+          Statement_designator(
+            DesignatorStatement_assign(
+              Designator_ident(
+               r
+              ) [Designator_ident]
+              Expr_add(
+                AddExpr_neg(
+                  Term_mulop(
+                    Term_factor(
+                      Factor_expr(
+                        Expr_add(
+                          AddExpr_term(
+                            Term_mulop(
+                              Term_factor(
+                                Factor_expr(
+                                  Expr_add(
+                                    AddExpr_addop(
+                                      AddExpr_term(
+                                        Term_factor(
+                                          Factor_designator(
+                                            Designator_ident(
+                                             a
+                                            ) [Designator_ident]
+                                          ) [Factor_designator]
+                                        ) [Term_factor]
+                                      ) [AddExpr_term]
+                                      Addop_plus(
+                                      ) [Addop_plus]
+                                      Term_factor(
+                                        Factor_designator(
+                                          Designator_ident(
+                                           b
+                                          ) [Designator_ident]
+                                        ) [Factor_designator]
+                                      ) [Term_factor]
+                                    ) [AddExpr_addop]
+                                  ) [Expr_add]
+                                ) [Factor_expr]
+                              ) [Term_factor]
+                              Mulop_mul(
+                              ) [Mulop_mul]
+                              Factor_expr(
+                                Expr_add(
+                                  AddExpr_addop(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_designator(
+                                          Designator_ident(
+                                           c
+                                          ) [Designator_ident]
+                                        ) [Factor_designator]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                    Addop_minus(
+                                    ) [Addop_minus]
+                                    Term_factor(
+                                      Factor_designator(
+                                        Designator_ident(
+                                         k
+                                        ) [Designator_ident]
+                                      ) [Factor_designator]
+                                    ) [Term_factor]
+                                  ) [AddExpr_addop]
+                                ) [Expr_add]
+                              ) [Factor_expr]
+                            ) [Term_mulop]
+                          ) [AddExpr_term]
+                        ) [Expr_add]
+                      ) [Factor_expr]
+                    ) [Term_factor]
+                    Mulop_mod(
+                    ) [Mulop_mod]
+                    Factor_number(
+                     7
+                    ) [Factor_number]
+                  ) [Term_mulop]
+                ) [AddExpr_neg]
+              ) [Expr_add]
+            ) [DesignatorStatement_assign]
+          ) [Statement_designator]
+        ) [StatementList_more]
+        Statement_designator(
+          DesignatorStatement_assign(
+            Designator_ident(
+             r
+            ) [Designator_ident]
+            Expr_add(
+              AddExpr_addop(
+                AddExpr_addop(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_number(
+                       1
+                      ) [Factor_number]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                  Addop_plus(
+                  ) [Addop_plus]
+                  Term_factor(
+                    Factor_number(
+                     2
+                    ) [Factor_number]
+                  ) [Term_factor]
+                ) [AddExpr_addop]
+                Addop_minus(
+                ) [Addop_minus]
+                Term_mulop(
+                  Term_mulop(
+                    Term_mulop(
+                      Term_factor(
+                        Factor_number(
+                         3
+                        ) [Factor_number]
+                      ) [Term_factor]
+                      Mulop_mul(
+                      ) [Mulop_mul]
+                      Factor_number(
+                       4
+                      ) [Factor_number]
+                    ) [Term_mulop]
+                    Mulop_div(
+                    ) [Mulop_div]
+                    Factor_number(
+                     5
+                    ) [Factor_number]
+                  ) [Term_mulop]
+                  Mulop_mod(
+                  ) [Mulop_mod]
+                  Factor_number(
+                   6
+                  ) [Factor_number]
+                ) [Term_mulop]
+              ) [AddExpr_addop]
+            ) [Expr_add]
+          ) [DesignatorStatement_assign]
+        ) [Statement_designator]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  00:36:06,372 - =================================================
+INFO  00:36:06,372 - Parsiranje uspesno zavrseno!

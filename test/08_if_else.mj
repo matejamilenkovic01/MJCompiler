@@ -1,0 +1,42 @@
+// EXPECT: OK
+// if, if-else, ugnezdeni if-ovi i "dangling else"
+// (else se vezuje za najblizi prethodni if).
+
+program Grananje
+
+int a, b;
+
+{
+	void main()
+	{
+		a = 1;
+		b = 2;
+
+		if (a < b) a = 0;
+
+		if (a < b) a = 0; else b = 0;
+
+		if (a < b) {
+			a = 0;
+			b = 1;
+		} else {
+			a = 1;
+			b = 0;
+		}
+
+		// dangling else - else pripada unutrasnjem if-u
+		if (a < b) if (b > 0) a = 1; else a = 2;
+
+		// eksplicitno vezivanje zagradama
+		if (a < b) {
+			if (b > 0) a = 1;
+		} else {
+			a = 2;
+		}
+
+		if (a == 1) a = 1;
+		else if (a == 2) a = 2;
+		else if (a == 3) a = 3;
+		else a = 0;
+	}
+}

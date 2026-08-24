@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/7/2026 23:4:17
+// 25/7/2026 0:36:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarItem_var extends VarItem {
 
-    private String I1;
+    private String varName;
 
-    public VarItem_var (String I1) {
-        this.I1=I1;
+    public VarItem_var (String varName) {
+        this.varName=varName;
     }
 
-    public String getI1() {
-        return I1;
+    public String getVarName() {
+        return varName;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setVarName(String varName) {
+        this.varName=varName;
     }
 
     public void accept(Visitor visitor) {
@@ -41,7 +41,7 @@ public class VarItem_var extends VarItem {
         buffer.append(tab);
         buffer.append("VarItem_var(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+varName);
         buffer.append("\n");
 
         buffer.append(tab);

@@ -1,0 +1,122 @@
+INFO  00:36:08,579 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/25_err_lexical.mj
+INFO  00:36:08,587 - #2 program
+INFO  00:36:08,587 - #45 LeksickaGreska
+INFO  00:36:08,587 - #45 int
+INFO  00:36:08,587 - #45 a
+INFO  00:36:08,587 - #34 ;
+INFO  00:36:08,587 - #43 {
+INFO  00:36:08,587 - #7 void
+INFO  00:36:08,587 - #45 main
+INFO  00:36:08,587 - #39 (
+INFO  00:36:08,587 - #40 )
+INFO  00:36:08,588 - #43 {
+INFO  00:36:08,588 - #45 a
+INFO  00:36:08,588 - #31 =
+INFO  00:36:08,588 - #46 1
+INFO  00:36:08,588 - #34 ;
+INFO  00:36:08,588 - #45 a
+INFO  00:36:08,588 - #31 =
+INFO  00:36:08,588 - #46 1
+INFO  00:36:08,588 - #46 2
+INFO  00:36:08,588 - #34 ;
+INFO  00:36:08,588 - #45 a
+INFO  00:36:08,588 - #31 =
+INFO  00:36:08,589 - #46 3
+INFO  00:36:08,589 - #46 4
+INFO  00:36:08,589 - #34 ;
+INFO  00:36:08,589 - #45 a
+INFO  00:36:08,589 - #31 =
+INFO  00:36:08,589 - #46 5
+INFO  00:36:08,589 - #46 6
+INFO  00:36:08,589 - #34 ;
+INFO  00:36:08,589 - #45 a
+INFO  00:36:08,589 - #31 =
+INFO  00:36:08,589 - #46 7
+INFO  00:36:08,589 - #34 ;
+INFO  00:36:08,589 - #44 }
+INFO  00:36:08,589 - #44 }
+INFO  00:36:08,590 - Program(
+  ProgramName(
+   LeksickaGreska
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_epsilon(
+    ) [DeclList_epsilon]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_one(
+        VarItem_var(
+         a
+        ) [VarItem_var]
+      ) [VarItemList_one]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_more(
+                StatementList_epsilon(
+                ) [StatementList_epsilon]
+                Statement_designator(
+                  DesignatorStatement_assign(
+                    Designator_ident(
+                     a
+                    ) [Designator_ident]
+                    Expr_add(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_number(
+                           1
+                          ) [Factor_number]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [Expr_add]
+                  ) [DesignatorStatement_assign]
+                ) [Statement_designator]
+              ) [StatementList_more]
+              Statement_err(
+              ) [Statement_err]
+            ) [StatementList_more]
+            Statement_err(
+            ) [Statement_err]
+          ) [StatementList_more]
+          Statement_err(
+          ) [Statement_err]
+        ) [StatementList_more]
+        Statement_designator(
+          DesignatorStatement_assign(
+            Designator_ident(
+             a
+            ) [Designator_ident]
+            Expr_add(
+              AddExpr_term(
+                Term_factor(
+                  Factor_number(
+                   7
+                  ) [Factor_number]
+                ) [Term_factor]
+              ) [AddExpr_term]
+            ) [Expr_add]
+          ) [DesignatorStatement_assign]
+        ) [Statement_designator]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  00:36:08,590 - =================================================

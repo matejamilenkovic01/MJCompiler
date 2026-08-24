@@ -1,0 +1,26 @@
+// EXPECT: SYNTAX>=2 RECOVERY>=2
+// EXPECT-ERR: Oporavak od greske u iskazu
+// Oporavak (Nivo A): konstrukcija iskaza dodele - ignorisati
+// karaktere do ";".
+
+program GreskaDodela
+
+int a, b;
+
+{
+	void main()
+	{
+		a = 1;
+
+		// neispravan izraz sa desne strane - oporavak do ";"
+		a = * 3;
+
+		// posle oporavka sledeci iskaz mora biti prepoznat
+		b = 2;
+
+		// nedostaje desna strana dodele
+		a = ;
+
+		b = 3;
+	}
+}

@@ -1,0 +1,42 @@
+// EXPECT: OK
+// Amandman, Nivo B: Designator "=" Designator "." "map" "(" ident "=>" Expr ")" ";"
+// Rezultat je nov niz iste duzine; ciljni niz mora biti prethodno deklarisan.
+
+program Map
+
+const int faktor = 2;
+int brojevi[], rezultat[];
+char slova[], velika[];
+bool zastavice[], negirane[];
+int x;
+char c;
+bool b;
+
+{
+	void main()
+	{
+		brojevi = new int[5];
+		rezultat = new int[5];
+		slova = new char[5];
+		velika = new char[5];
+		zastavice = new bool[5];
+		negirane = new bool[5];
+
+		// prosto preslikavanje
+		rezultat = brojevi.map(x => x);
+
+		// aritmeticki izraz nad tekucim elementom
+		rezultat = brojevi.map(x => x * 2);
+		rezultat = brojevi.map(x => x + 1);
+		rezultat = brojevi.map(x => x * faktor - 1);
+		rezultat = brojevi.map(x => -x);
+		rezultat = brojevi.map(x => (x + 1) * (x - 1));
+
+		// ternarni izraz kao telo preslikavanja
+		rezultat = brojevi.map(x => x < 0 ? 0 : x);
+
+		// nizovi ostalih ugradjenih tipova
+		velika = slova.map(c => c);
+		negirane = zastavice.map(b => b);
+	}
+}

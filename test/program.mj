@@ -1,6 +1,65 @@
-program Test {
-	a = b;
+// EXPECT: OK
+// Smoke test - pokriva najveci deo gramatike za Nivo A i Nivo B odjednom.
 
+program Test
 
+const int size = 5, max = 100;
+const char znak = 'x';
+const bool flag = true;
 
+int arr[], res[];
+int i, n, total;
+bool found;
+char ch;
+
+{
+	int sum(int a[], int len)
+		int j, s;
+	{
+		s = 0;
+		for (j = 0; j < len; j++) {
+			if (a[j] < 0) continue;
+			if (a[j] > max) break;
+			s = s + a[j];
+		}
+		return s;
+	}
+
+	void main()
+		int x;
+	{
+		arr = new int[size];
+		res = new int[size];
+
+		for (i = 0; i < arr.length; i++) {
+			read(arr[i]);
+		}
+
+		// amandman Nivo A
+		found = arr.findAny(max);
+
+		// amandman Nivo B
+		res = arr.map(x => x * 2 + 1);
+
+		total = sum(arr, arr.length);
+		print(total, 5);
+
+		// ternarni operator sa punim uslovom (&&, ||, relop)
+		n = total > 0 && found ? 1 : 0;
+
+		if (n == 1 || found) {
+			print('y');
+		} else {
+			print('n');
+		}
+
+		ch = znak;
+		i++;
+		i--;
+		n = -total + size * 2 - 3 / 1 % 2;
+
+		if (flag) print(ch);
+
+		print(eol);
+	}
 }

@@ -1,0 +1,52 @@
+// EXPECT: OK
+// Nizovi: kreiranje, indeksiranje, ugradjeno polje length,
+// nizovi kao formalni parametri.
+
+program Nizovi
+
+const int n = 5;
+int brojevi[], kopija[];
+char slova[];
+bool zastavice[];
+int i, s;
+
+{
+	int zbir(int a[])
+		int k, r;
+	{
+		r = 0;
+		for (k = 0; k < a.length; k++) {
+			r = r + a[k];
+		}
+		return r;
+	}
+
+	void main()
+		int indeksi[];
+	{
+		brojevi = new int[n];
+		kopija = new int[n * 2];
+		slova = new char[10];
+		zastavice = new bool[3];
+		indeksi = new int[n];
+
+		brojevi[0] = 1;
+		brojevi[1] = brojevi[0] + 1;
+		slova[0] = 'a';
+		zastavice[0] = true;
+
+		i = 0;
+		indeksi[i] = 2;
+
+		// ugnezdeno indeksiranje
+		brojevi[indeksi[i]] = 9;
+
+		// indeks je izraz
+		brojevi[i + 1] = brojevi[i * 2 % n];
+
+		s = brojevi.length;
+		s = zbir(brojevi);
+
+		print(brojevi.length);
+	}
+}

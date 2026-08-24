@@ -6,7 +6,7 @@
 ._*
 
 # Custom folder icons
-Icon
+Icon
 
 # Volume root files
 .DocumentRevisions-V100
@@ -29,7 +29,19 @@ Icon
 *.war
 *.ear
 
+# ...ali alati iz lib/ MORAJU biti u repou: postavka trazi da se uz resenje
+# predaju i .jar arhive alata (AST-CUP, JFlex), a build bez njih ne prolazi.
+!lib/*.jar
+
 # Virtual machine crash logs
 hs_err_pid*
 replay_pid*
 /bin/
+
+### MJCompiler
+# Log fajlovi koje pravi Log4JUtils pri svakom pokretanju
+/logs/
+# Predmetni fajlovi - rezultat faze generisanja koda
+*.obj
+# NAPOMENA: test/*.out i test/*.err se NE ignorisu - postavka projekta
+# trazi da se predaju zajedno sa .mj ulazima.

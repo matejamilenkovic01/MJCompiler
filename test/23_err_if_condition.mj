@@ -1,0 +1,25 @@
+// EXPECT: SYNTAX>=2 RECOVERY>=2
+// EXPECT-ERR: Oporavak od greske u uslovu if iskaza
+// Oporavak (Nivo B): logicki izraz unutar if konstrukcije -
+// ignorisati karaktere do ")".
+
+program GreskaUslovIf
+
+int a, b;
+
+{
+	void main()
+	{
+		a = 1;
+		b = 2;
+
+		// neispravan uslov - telo if-a se i dalje mora parsirati
+		if (a < && b) a = 0;
+
+		// oporavak mora raditi i kada postoji else grana
+		if (* a *) a = 1; else b = 1;
+
+		// posle oporavka parser nastavlja normalno
+		if (a < b) a = 0;
+	}
+}

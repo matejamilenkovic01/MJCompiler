@@ -1,0 +1,472 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected;
+
+	Logger log = Logger.getLogger(getClass());
+
+	/* Linija poslednjeg procitanog tokena. Sluzi iskljucivo za prijavu gresaka:
+	   simbol "error" nema upotrebljivu poziciju u izvornom kodu, pa se preko ovog
+	   polja prijavljuje linija do koje je oporavak stigao. */
+	int lastTokenLine = 0;
+
+	public int lastTokenLine() {
+		return lastTokenLine;
+	}
+
+
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message);
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message);
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+
+
+:}
+
+
+init with {:
+	errorDetected = false;
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null)
+		lastTokenLine = s.left;
+	if (s != null && s.value != null)
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal PROG, CONST, NEW, PRINT, READ, VOID, RETURN;
+terminal IF, ELSE, BREAK, CONTINUE, FOR, LENGTH;
+terminal FINDANY, MAP;
+
+terminal PLUS, MINUS, MUL, DIV, MOD;
+terminal EQ, NEQ, GT, GEQ, LT, LEQ;
+terminal AND, OR;
+terminal ARROW, ASSIGN, INC, DEC;
+terminal SEMI, COLON, COMMA, DOT, QUESTION;
+terminal LPAREN, RPAREN, LBRACK, RBRACK, LBRACE, RBRACE;
+
+terminal String IDENT;
+terminal Integer NUMBER, BOOL;
+terminal Character CHARACTER;
+
+
+/* ---- Deklaracije ---- */
+nonterminal Program Program;
+nonterminal ProgramName ProgramName;
+nonterminal DeclList DeclList;
+nonterminal Type Type;
+nonterminal ConstDecl ConstDecl;
+nonterminal ConstItemList ConstItemList;
+nonterminal ConstItem ConstItem;
+nonterminal Constant Constant;
+nonterminal VarDecl VarDecl;
+nonterminal VarItemList VarItemList;
+nonterminal VarItem VarItem;
+nonterminal MethodDeclList MethodDeclList;
+nonterminal MethodDecl MethodDecl;
+nonterminal MethodTypeName MethodTypeName;
+nonterminal RetType RetType;
+nonterminal FormParsOpt FormParsOpt;
+nonterminal FormPars FormPars;
+nonterminal FormParDecl FormParDecl;
+nonterminal VarDeclListOpt VarDeclListOpt;
+
+/* ---- Iskazi ---- */
+nonterminal StatementList StatementList;
+nonterminal Statement Statement;
+nonterminal DesignatorStatement DesignatorStatement;
+nonterminal IfCondition IfCondition;
+nonterminal ActParsOpt ActParsOpt;
+nonterminal ActPars ActPars;
+nonterminal ForInitOpt ForInitOpt;
+nonterminal ForCondOpt ForCondOpt;
+nonterminal ForStepOpt ForStepOpt;
+
+/* ---- Izrazi ---- */
+nonterminal Condition Condition;
+nonterminal CondTerm CondTerm;
+nonterminal CondFact CondFact;
+nonterminal Relop Relop;
+nonterminal Expr Expr;
+nonterminal AddExpr AddExpr;
+nonterminal Term Term;
+nonterminal Factor Factor;
+nonterminal Designator Designator;
+nonterminal Addop Addop;
+nonterminal Mulop Mulop;
+nonterminal PrintWidthOpt PrintWidthOpt;
+nonterminal ReturnExprOpt ReturnExprOpt;
+
+
+/* Jedina dozvoljena precedence direktiva - resava dangling-else konflikt. */
+precedence left ELSE;
+
+
+/* ============================================================
+   Program = "program" ident {ConstDecl | VarDecl} "{" {MethodDecl} "}".
+   ============================================================ */
+
+Program ::= (Program) PROG ProgramName:P1 DeclList:D2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(P1, D2, M3); RESULT.setLine(P1left); :};
+
+ProgramName ::= (ProgramName) IDENT:progName {: RESULT=new ProgramName(progName); RESULT.setLine(progNameleft); :};
+
+DeclList ::=    (DeclList_const) DeclList:D1 ConstDecl:C2 {: RESULT=new DeclList_const(D1, C2); RESULT.setLine(D1left); :}
+                |
+                (DeclList_var) DeclList:D1 VarDecl:V2 {: RESULT=new DeclList_var(D1, V2); RESULT.setLine(D1left); :}
+                |
+                (DeclList_epsilon) {: RESULT=new DeclList_epsilon(); :} /* epsilon */
+                ;
+
+/* Type = ident. */
+Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};
+
+
+/* ============================================================
+   ConstDecl = "const" Type ident "=" (numConst | charConst | boolConst)
+               {"," ident "=" (numConst | charConst | boolConst)} ";".
+   ============================================================ */
+
+ConstDecl ::= (ConstDecl) CONST Type:T1 ConstItemList:C2 SEMI {: RESULT=new ConstDecl(T1, C2); RESULT.setLine(T1left); :};
+
+ConstItemList ::=   (ConstItemList_more) ConstItemList:C1 COMMA ConstItem:C2 {: RESULT=new ConstItemList_more(C1, C2); RESULT.setLine(C1left); :}
+                    |
+                    (ConstItemList_one) ConstItem:C1 {: RESULT=new ConstItemList_one(C1); RESULT.setLine(C1left); :}
+                    ;
+
+ConstItem ::= (ConstItem) IDENT:constName ASSIGN Constant:C1 {: RESULT=new ConstItem(constName, C1); RESULT.setLine(constNameleft); :};
+
+Constant ::=    (Constant_number) NUMBER:val {: RESULT=new Constant_number(val); RESULT.setLine(valleft); :}
+                |
+                (Constant_character) CHARACTER:val {: RESULT=new Constant_character(val); RESULT.setLine(valleft); :}
+                |
+                (Constant_bool) BOOL:val {: RESULT=new Constant_bool(val); RESULT.setLine(valleft); :}
+                ;
+
+
+/* ============================================================
+   VarDecl = Type ident ["[" "]"] {"," ident ["[" "]"]} ";".
+   Oporavak (NIVO A): definicija globalne promenljive -
+   ignorisati karaktere do prvog znaka ";" ili sledeceg ","
+   ============================================================ */
+
+VarDecl ::= (VarDecl) Type:T1 VarItemList:V2 SEMI {: RESULT=new VarDecl(T1, V2); RESULT.setLine(T1left); :};
+
+VarItemList ::=     (VarItemList_more) VarItemList:V1 COMMA VarItem:V2 {: RESULT=new VarItemList_more(V1, V2); RESULT.setLine(V1left); :}
+                    |
+                    (VarItemList_one) VarItem:V1 {: RESULT=new VarItemList_one(V1); RESULT.setLine(V1left); :}
+                    ;
+
+VarItem ::=     (VarItem_var) IDENT:varName {: RESULT=new VarItem_var(varName); RESULT.setLine(varNameleft); :}
+                |
+                (VarItem_array) IDENT:varName LBRACK RBRACK {: RESULT=new VarItem_array(varName); RESULT.setLine(varNameleft); :}
+                |
+                (VarItem_err) error
+                {: parser.report_error("Oporavak od greske u deklaraciji promenljive izvrsen do linije " + parser.lastTokenLine(), null); :} {: RESULT=new VarItem_err(); :}
+                ;
+
+
+/* ============================================================
+   MethodDecl = (Type | "void") ident "(" [FormPars] ")" {VarDecl} "{" {Statement} "}".
+   ============================================================ */
+
+MethodDeclList ::=  (MethodDeclList_more) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclList_more(M1, M2); RESULT.setLine(M1left); :}
+                    |
+                    (MethodDeclList_epsilon) {: RESULT=new MethodDeclList_epsilon(); :} /* epsilon */
+                    ;
+
+MethodDecl ::= (MethodDecl) MethodTypeName:M1 LPAREN FormParsOpt:F2 RPAREN
+                            VarDeclListOpt:V3
+                            LBRACE StatementList:S4 RBRACE {: RESULT=new MethodDecl(M1, F2, V3, S4); RESULT.setLine(M1left); :};
+
+/* Ime i povratni tip su izdvojeni u zaseban neterminal da bi semanticka analiza
+   mogla da otvori opseg metode pre obrade formalnih parametara. */
+MethodTypeName ::= (MethodTypeName) RetType:R1 IDENT:methName {: RESULT=new MethodTypeName(R1, methName); RESULT.setLine(R1left); :};
+
+RetType ::=     (RetType_type) Type:T1 {: RESULT=new RetType_type(T1); RESULT.setLine(T1left); :}
+                |
+                (RetType_void) VOID {: RESULT=new RetType_void(); :}
+                ;
+
+VarDeclListOpt ::=  (VarDeclListOpt_more) VarDeclListOpt:V1 VarDecl:V2 {: RESULT=new VarDeclListOpt_more(V1, V2); RESULT.setLine(V1left); :}
+                    |
+                    (VarDeclListOpt_epsilon) {: RESULT=new VarDeclListOpt_epsilon(); :} /* epsilon */
+                    ;
+
+
+/* ============================================================
+   FormPars = Type ident ["[" "]"] {"," Type ident ["[" "]"]}.
+   Oporavak (NIVO B): deklaracija formalnog parametra funkcije -
+   ignorisati znakove do znaka "," ili ")"
+   ============================================================ */
+
+FormParsOpt ::=     (FormParsOpt_pars) FormPars:F1 {: RESULT=new FormParsOpt_pars(F1); RESULT.setLine(F1left); :}
+                    |
+                    (FormParsOpt_epsilon) {: RESULT=new FormParsOpt_epsilon(); :} /* epsilon */
+                    ;
+
+FormPars ::=    (FormPars_more) FormPars:F1 COMMA FormParDecl:F2 {: RESULT=new FormPars_more(F1, F2); RESULT.setLine(F1left); :}
+                |
+                (FormPars_one) FormParDecl:F1 {: RESULT=new FormPars_one(F1); RESULT.setLine(F1left); :}
+                ;
+
+FormParDecl ::=     (FormParDecl_var) Type:T1 IDENT:parName {: RESULT=new FormParDecl_var(T1, parName); RESULT.setLine(T1left); :}
+                    |
+                    (FormParDecl_array) Type:T1 IDENT:parName LBRACK RBRACK {: RESULT=new FormParDecl_array(T1, parName); RESULT.setLine(T1left); :}
+                    |
+                    (FormParDecl_err) error
+                    {: parser.report_error("Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije " + parser.lastTokenLine(), null); :} {: RESULT=new FormParDecl_err(); :}
+                    ;
+
+
+/* ============================================================
+   Statement
+   ============================================================ */
+
+StatementList ::=   (StatementList_more) StatementList:S1 Statement:S2 {: RESULT=new StatementList_more(S1, S2); RESULT.setLine(S1left); :}
+                    |
+                    (StatementList_epsilon) {: RESULT=new StatementList_epsilon(); :} /* epsilon */
+                    ;
+
+Statement ::=   (Statement_designator) DesignatorStatement:D1 SEMI {: RESULT=new Statement_designator(D1); RESULT.setLine(D1left); :}
+                |
+                /* Amandman (NIVO A): Designator "=" Designator "." "findAny" "(" Expr ")" ";" */
+                (Statement_findAny) Designator:D1 ASSIGN Designator:D2 DOT FINDANY LPAREN Expr:E3 RPAREN SEMI {: RESULT=new Statement_findAny(D1, D2, E3); RESULT.setLine(D1left); :}
+                |
+                /* Amandman (NIVO B): Designator "=" Designator "." "map" "(" ident "=>" Expr ")" ";" */
+                (Statement_map) Designator:D1 ASSIGN Designator:D2 DOT MAP LPAREN IDENT:iterName ARROW Expr:E3 RPAREN SEMI {: RESULT=new Statement_map(D1, D2, iterName, E3); RESULT.setLine(D1left); :}
+                |
+                (Statement_if) IF LPAREN IfCondition:I1 RPAREN Statement:S2 {: RESULT=new Statement_if(I1, S2); RESULT.setLine(I1left); :}
+                |
+                (Statement_ifElse) IF LPAREN IfCondition:I1 RPAREN Statement:S2 ELSE Statement:S3 {: RESULT=new Statement_ifElse(I1, S2, S3); RESULT.setLine(I1left); :}
+                |
+                (Statement_break) BREAK SEMI {: RESULT=new Statement_break(); :}
+                |
+                (Statement_continue) CONTINUE SEMI {: RESULT=new Statement_continue(); :}
+                |
+                (Statement_return) RETURN ReturnExprOpt:R1 SEMI {: RESULT=new Statement_return(R1); RESULT.setLine(R1left); :}
+                |
+                (Statement_read) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new Statement_read(D1); RESULT.setLine(D1left); :}
+                |
+                (Statement_print) PRINT LPAREN Expr:E1 PrintWidthOpt:P2 RPAREN SEMI {: RESULT=new Statement_print(E1, P2); RESULT.setLine(E1left); :}
+                |
+                (Statement_for) FOR LPAREN ForInitOpt:F1 SEMI ForCondOpt:F2 SEMI ForStepOpt:F3 RPAREN Statement:S4 {: RESULT=new Statement_for(F1, F2, F3, S4); RESULT.setLine(F1left); :}
+                |
+                (Statement_block) LBRACE StatementList:S1 RBRACE {: RESULT=new Statement_block(S1); RESULT.setLine(S1left); :}
+                |
+                /* Oporavak (NIVO A): konstrukcija iskaza dodele - ignorisati karaktere do ";" */
+                (Statement_err) error SEMI
+                {: parser.report_error("Oporavak od greske u iskazu izvrsen do linije " + parser.lastTokenLine(), null); :} {: RESULT=new Statement_err(); :}
+                ;
+
+/* Oporavak (NIVO B): logicki izraz unutar if konstrukcije - ignorisati do ")".
+
+   Oporavak je izdvojen u sopstveni neterminal umesto da se pise kao zasebna
+   "IF LPAREN error RPAREN Statement" smena, iz dva razloga:
+     1. AST-CUP dodaje svoju labelu (:S1, :S2) poslednjem neterminalu u smeni. Ako se
+        smena zavrsava neterminalom iza koga stoji {: :} blok, labela se generise posle
+        akcije i dobija se Java kod koji se ne kompajlira. Ovako se akcija nalazi u
+        smeni koja se zavrsava sa error:e, sto je bezbedno.
+     2. Nema potrebe za duplim smenama (sa i bez else grane) - obe if smene koriste
+        isti IfCondition, pa se posle oporavka else grana i dalje uredno parsira. */
+IfCondition ::=     (IfCondition_cond) Condition:C1 {: RESULT=new IfCondition_cond(C1); RESULT.setLine(C1left); :}
+                    |
+                    (IfCondition_err) error
+                    {: parser.report_error("Oporavak od greske u uslovu if iskaza izvrsen do linije " + parser.lastTokenLine(), null); :} {: RESULT=new IfCondition_err(); :}
+                    ;
+
+ReturnExprOpt ::=   (ReturnExprOpt_expr) Expr:E1 {: RESULT=new ReturnExprOpt_expr(E1); RESULT.setLine(E1left); :}
+                    |
+                    (ReturnExprOpt_epsilon) {: RESULT=new ReturnExprOpt_epsilon(); :} /* epsilon */
+                    ;
+
+PrintWidthOpt ::=   (PrintWidthOpt_width) COMMA NUMBER:width {: RESULT=new PrintWidthOpt_width(width); RESULT.setLine(widthleft); :}
+                    |
+                    (PrintWidthOpt_epsilon) {: RESULT=new PrintWidthOpt_epsilon(); :} /* epsilon */
+                    ;
+
+ForInitOpt ::=  (ForInitOpt_stmt) DesignatorStatement:D1 {: RESULT=new ForInitOpt_stmt(D1); RESULT.setLine(D1left); :}
+                |
+                (ForInitOpt_epsilon) {: RESULT=new ForInitOpt_epsilon(); :} /* epsilon */
+                ;
+
+ForCondOpt ::=  (ForCondOpt_cond) Condition:C1 {: RESULT=new ForCondOpt_cond(C1); RESULT.setLine(C1left); :}
+                |
+                (ForCondOpt_epsilon) {: RESULT=new ForCondOpt_epsilon(); :} /* epsilon */
+                ;
+
+ForStepOpt ::=  (ForStepOpt_stmt) DesignatorStatement:D1 {: RESULT=new ForStepOpt_stmt(D1); RESULT.setLine(D1left); :}
+                |
+                (ForStepOpt_epsilon) {: RESULT=new ForStepOpt_epsilon(); :} /* epsilon */
+                ;
+
+
+/* ============================================================
+   DesignatorStatement = Designator (Assignop Expr | "(" [ActPars] ")" | "++" | "--").
+
+   Napomena: Assignop ("=") je namerno ugradjen direktno u smenu, a ne izdvojen u
+   poseban neterminal. Kao neterminal bi u stanju posle "=" postojao istovremeno
+   reduce (Assignop ::= "=" .) i shift (za Designator iz findAny/map smena) nad
+   istim lookahead-om ident, sto rusi LALR(1) svojstvo gramatike.
+   ============================================================ */
+
+DesignatorStatement ::=     (DesignatorStatement_assign) Designator:D1 ASSIGN Expr:E2 {: RESULT=new DesignatorStatement_assign(D1, E2); RESULT.setLine(D1left); :}
+                            |
+                            (DesignatorStatement_call) Designator:D1 LPAREN ActParsOpt:A2 RPAREN {: RESULT=new DesignatorStatement_call(D1, A2); RESULT.setLine(D1left); :}
+                            |
+                            (DesignatorStatement_inc) Designator:D1 INC {: RESULT=new DesignatorStatement_inc(D1); RESULT.setLine(D1left); :}
+                            |
+                            (DesignatorStatement_dec) Designator:D1 DEC {: RESULT=new DesignatorStatement_dec(D1); RESULT.setLine(D1left); :}
+                            ;
+
+ActParsOpt ::=  (ActParsOpt_pars) ActPars:A1 {: RESULT=new ActParsOpt_pars(A1); RESULT.setLine(A1left); :}
+                |
+                (ActParsOpt_epsilon) {: RESULT=new ActParsOpt_epsilon(); :} /* epsilon */
+                ;
+
+ActPars ::=     (ActPars_more) ActPars:A1 COMMA Expr:E2 {: RESULT=new ActPars_more(A1, E2); RESULT.setLine(A1left); :}
+                |
+                (ActPars_one) Expr:E1 {: RESULT=new ActPars_one(E1); RESULT.setLine(E1left); :}
+                ;
+
+
+/* ============================================================
+   Condition = CondTerm {"||" CondTerm}.
+   CondTerm  = CondFact {"&&" CondFact}.
+   CondFact  = Expr [Relop Expr].
+   ============================================================ */
+
+Condition ::=   (Condition_or) Condition:C1 OR CondTerm:C2 {: RESULT=new Condition_or(C1, C2); RESULT.setLine(C1left); :}
+                |
+                (Condition_term) CondTerm:C1 {: RESULT=new Condition_term(C1); RESULT.setLine(C1left); :}
+                ;
+
+CondTerm ::=    (CondTerm_and) CondTerm:C1 AND CondFact:C2 {: RESULT=new CondTerm_and(C1, C2); RESULT.setLine(C1left); :}
+                |
+                (CondTerm_fact) CondFact:C1 {: RESULT=new CondTerm_fact(C1); RESULT.setLine(C1left); :}
+                ;
+
+/* Napomena: operandi CondFact-a su AddExpr, a ne Expr. Da su Expr, gramatika bi bila
+   dvosmislena - "a ? b : c ? d : e" bi se moglo parsirati i kao "(a?b:c) ? d : e" i kao
+   "a ? b : (c?d:e)", sto daje shift/reduce konflikt. Izrazajnost se ne gubi: ternarni
+   izraz u uslovu se pise sa zagradama, npr. if ((a ? b : c) == 1). */
+CondFact ::=    (CondFact_expr) AddExpr:A1 {: RESULT=new CondFact_expr(A1); RESULT.setLine(A1left); :}
+                |
+                (CondFact_relop) AddExpr:A1 Relop:R2 AddExpr:A3 {: RESULT=new CondFact_relop(A1, R2, A3); RESULT.setLine(A1left); :}
+                ;
+
+Relop ::=   (Relop_eq) EQ {: RESULT=new Relop_eq(); :}
+            |
+            (Relop_neq) NEQ {: RESULT=new Relop_neq(); :}
+            |
+            (Relop_gt) GT {: RESULT=new Relop_gt(); :}
+            |
+            (Relop_geq) GEQ {: RESULT=new Relop_geq(); :}
+            |
+            (Relop_lt) LT {: RESULT=new Relop_lt(); :}
+            |
+            (Relop_leq) LEQ {: RESULT=new Relop_leq(); :}
+            ;
+
+
+/* ============================================================
+   Expr = ["-"] Term {Addop Term} | Condition "?" Expr ":" Expr.
+
+   Napomena: aritmeticki deo je izdvojen u sopstveni neterminal AddExpr. Bez njega
+   bi vazilo Expr => CondFact => Expr (ciklus jedinicnih smena), sto gramatiku cini
+   beskonacno dvosmislenom. Ternarni oblik sa CondFact-om iz [MJ] nije naveden posebno
+   jer ga Condition vec obuhvata (Condition => CondTerm => CondFact).
+   ============================================================ */
+
+Expr ::=    (Expr_add) AddExpr:A1 {: RESULT=new Expr_add(A1); RESULT.setLine(A1left); :}
+            |
+            (Expr_ternary) Condition:C1 QUESTION Expr:E2 COLON Expr:E3 {: RESULT=new Expr_ternary(C1, E2, E3); RESULT.setLine(C1left); :}
+            ;
+
+AddExpr ::=     (AddExpr_addop) AddExpr:A1 Addop:A2 Term:T3 {: RESULT=new AddExpr_addop(A1, A2, T3); RESULT.setLine(A1left); :}
+                |
+                (AddExpr_term) Term:T1 {: RESULT=new AddExpr_term(T1); RESULT.setLine(T1left); :}
+                |
+                (AddExpr_neg) MINUS Term:T1 {: RESULT=new AddExpr_neg(T1); RESULT.setLine(T1left); :}
+                ;
+
+Addop ::=   (Addop_plus) PLUS {: RESULT=new Addop_plus(); :}
+            |
+            (Addop_minus) MINUS {: RESULT=new Addop_minus(); :}
+            ;
+
+Term ::=    (Term_mulop) Term:T1 Mulop:M2 Factor:F3 {: RESULT=new Term_mulop(T1, M2, F3); RESULT.setLine(T1left); :}
+            |
+            (Term_factor) Factor:F1 {: RESULT=new Term_factor(F1); RESULT.setLine(F1left); :}
+            ;
+
+Mulop ::=   (Mulop_mul) MUL {: RESULT=new Mulop_mul(); :}
+            |
+            (Mulop_div) DIV {: RESULT=new Mulop_div(); :}
+            |
+            (Mulop_mod) MOD {: RESULT=new Mulop_mod(); :}
+            ;
+
+/* Factor = Designator ["(" [ActPars] ")"] | numConst | charConst | boolConst
+            | "new" Type "[" Expr "]" | "(" Expr ")". */
+Factor ::=  (Factor_designator) Designator:D1 {: RESULT=new Factor_designator(D1); RESULT.setLine(D1left); :}
+            |
+            (Factor_call) Designator:D1 LPAREN ActParsOpt:A2 RPAREN {: RESULT=new Factor_call(D1, A2); RESULT.setLine(D1left); :}
+            |
+            (Factor_number) NUMBER:val {: RESULT=new Factor_number(val); RESULT.setLine(valleft); :}
+            |
+            (Factor_character) CHARACTER:val {: RESULT=new Factor_character(val); RESULT.setLine(valleft); :}
+            |
+            (Factor_bool) BOOL:val {: RESULT=new Factor_bool(val); RESULT.setLine(valleft); :}
+            |
+            (Factor_newArray) NEW Type:T1 LBRACK Expr:E2 RBRACK {: RESULT=new Factor_newArray(T1, E2); RESULT.setLine(T1left); :}
+            |
+            (Factor_expr) LPAREN Expr:E1 RPAREN {: RESULT=new Factor_expr(E1); RESULT.setLine(E1left); :}
+            ;
+
+
+/* ============================================================
+   Designator = ident {"." "length" | "[" Expr "]"}.
+   Bez unutrasnjih klasa i nabrajanja (Nivo C / amandmani), jedini clan iza tacke
+   je ugradjeno polje "length".
+   ============================================================ */
+
+Designator ::=  (Designator_ident) IDENT:name {: RESULT=new Designator_ident(name); RESULT.setLine(nameleft); :}
+                |
+                (Designator_array) Designator:D1 LBRACK Expr:E2 RBRACK {: RESULT=new Designator_array(D1, E2); RESULT.setLine(D1left); :}
+                |
+                (Designator_length) Designator:D1 DOT LENGTH {: RESULT=new Designator_length(D1); RESULT.setLine(D1left); :}
+                ;

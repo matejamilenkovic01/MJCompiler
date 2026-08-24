@@ -1,0 +1,7 @@
+ERROR 00:36:08,164 - 
+Sintaksna greska na liniji 10
+ERROR 00:36:08,164 - Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije 10
+ERROR 00:36:08,165 - 
+Sintaksna greska na liniji 15
+ERROR 00:36:08,165 - Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije 20
+ERROR 00:36:08,166 - Parsiranje NIJE uspesno zavrseno!

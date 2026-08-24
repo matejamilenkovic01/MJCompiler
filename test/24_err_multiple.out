@@ -1,0 +1,200 @@
+INFO  00:36:08,439 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/24_err_multiple.mj
+INFO  00:36:08,446 - #2 program
+INFO  00:36:08,446 - #45 ViseGresaka
+INFO  00:36:08,446 - #45 int
+INFO  00:36:08,446 - #45 a
+INFO  00:36:08,446 - #36 ,
+INFO  00:36:08,446 - #46 5
+INFO  00:36:08,447 - #36 ,
+INFO  00:36:08,447 - #45 b
+INFO  00:36:08,447 - #34 ;
+INFO  00:36:08,447 - #45 int
+INFO  00:36:08,447 - #45 c
+INFO  00:36:08,447 - #34 ;
+INFO  00:36:08,447 - #43 {
+INFO  00:36:08,447 - #7 void
+INFO  00:36:08,447 - #45 metoda
+INFO  00:36:08,447 - #39 (
+INFO  00:36:08,448 - #45 int
+INFO  00:36:08,448 - #45 x
+INFO  00:36:08,448 - #36 ,
+INFO  00:36:08,448 - #46 9
+INFO  00:36:08,448 - #40 )
+INFO  00:36:08,448 - #43 {
+INFO  00:36:08,448 - #44 }
+INFO  00:36:08,448 - #7 void
+INFO  00:36:08,448 - #45 main
+INFO  00:36:08,448 - #39 (
+INFO  00:36:08,448 - #40 )
+INFO  00:36:08,448 - #43 {
+INFO  00:36:08,449 - #45 a
+INFO  00:36:08,449 - #31 =
+INFO  00:36:08,449 - #46 1
+INFO  00:36:08,449 - #34 ;
+INFO  00:36:08,449 - #9 if
+INFO  00:36:08,449 - #39 (
+INFO  00:36:08,449 - #45 a
+INFO  00:36:08,449 - #26 <
+INFO  00:36:08,449 - #40 )
+INFO  00:36:08,449 - #45 a
+INFO  00:36:08,449 - #31 =
+INFO  00:36:08,449 - #46 0
+INFO  00:36:08,449 - #34 ;
+INFO  00:36:08,449 - #45 c
+INFO  00:36:08,449 - #31 =
+INFO  00:36:08,449 - #20 /
+INFO  00:36:08,450 - #46 2
+INFO  00:36:08,450 - #34 ;
+INFO  00:36:08,450 - #45 b
+INFO  00:36:08,450 - #31 =
+INFO  00:36:08,450 - #46 3
+INFO  00:36:08,450 - #34 ;
+INFO  00:36:08,450 - #44 }
+INFO  00:36:08,450 - #44 }
+INFO  00:36:08,450 - Program(
+  ProgramName(
+   ViseGresaka
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_var(
+      DeclList_epsilon(
+      ) [DeclList_epsilon]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarItemList_more(
+          VarItemList_more(
+            VarItemList_one(
+              VarItem_var(
+               a
+              ) [VarItem_var]
+            ) [VarItemList_one]
+            VarItem_err(
+            ) [VarItem_err]
+          ) [VarItemList_more]
+          VarItem_var(
+           b
+          ) [VarItem_var]
+        ) [VarItemList_more]
+      ) [VarDecl]
+    ) [DeclList_var]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_one(
+        VarItem_var(
+         c
+        ) [VarItem_var]
+      ) [VarItemList_one]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_more(
+      MethodDeclList_epsilon(
+      ) [MethodDeclList_epsilon]
+      MethodDecl(
+        MethodTypeName(
+          RetType_void(
+          ) [RetType_void]
+         metoda
+        ) [MethodTypeName]
+        FormParsOpt_pars(
+          FormPars_more(
+            FormPars_one(
+              FormParDecl_var(
+                Type(
+                 int
+                ) [Type]
+               x
+              ) [FormParDecl_var]
+            ) [FormPars_one]
+            FormParDecl_err(
+            ) [FormParDecl_err]
+          ) [FormPars_more]
+        ) [FormParsOpt_pars]
+        VarDeclListOpt_epsilon(
+        ) [VarDeclListOpt_epsilon]
+        StatementList_epsilon(
+        ) [StatementList_epsilon]
+      ) [MethodDecl]
+    ) [MethodDeclList_more]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_epsilon(
+              ) [StatementList_epsilon]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_ident(
+                   a
+                  ) [Designator_ident]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_number(
+                         1
+                        ) [Factor_number]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_more]
+            Statement_if(
+              IfCondition_err(
+              ) [IfCondition_err]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_ident(
+                   a
+                  ) [Designator_ident]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_number(
+                         0
+                        ) [Factor_number]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [Statement_if]
+          ) [StatementList_more]
+          Statement_err(
+          ) [Statement_err]
+        ) [StatementList_more]
+        Statement_designator(
+          DesignatorStatement_assign(
+            Designator_ident(
+             b
+            ) [Designator_ident]
+            Expr_add(
+              AddExpr_term(
+                Term_factor(
+                  Factor_number(
+                   3
+                  ) [Factor_number]
+                ) [Term_factor]
+              ) [AddExpr_term]
+            ) [Expr_add]
+          ) [DesignatorStatement_assign]
+        ) [Statement_designator]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  00:36:08,451 - =================================================

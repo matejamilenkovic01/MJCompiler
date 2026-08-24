@@ -1,0 +1,443 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected;
+
+	Logger log = Logger.getLogger(getClass());
+
+	/* Linija poslednjeg procitanog tokena. Sluzi iskljucivo za prijavu gresaka:
+	   simbol "error" nema upotrebljivu poziciju u izvornom kodu, pa se preko ovog
+	   polja prijavljuje linija do koje je oporavak stigao. */
+	int lastTokenLine = 0;
+
+	public int lastTokenLine() {
+		return lastTokenLine;
+	}
+
+
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message);
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message);
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+
+
+:}
+
+
+init with {:
+	errorDetected = false;
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null)
+		lastTokenLine = s.left;
+	if (s != null && s.value != null)
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal PROG, CONST, NEW, PRINT, READ, VOID, RETURN;
+terminal IF, ELSE, BREAK, CONTINUE, FOR, LENGTH;
+terminal FINDANY, MAP;
+
+terminal PLUS, MINUS, MUL, DIV, MOD;
+terminal EQ, NEQ, GT, GEQ, LT, LEQ;
+terminal AND, OR;
+terminal ARROW, ASSIGN, INC, DEC;
+terminal SEMI, COLON, COMMA, DOT, QUESTION;
+terminal LPAREN, RPAREN, LBRACK, RBRACK, LBRACE, RBRACE;
+
+terminal String IDENT;
+terminal Integer NUMBER, BOOL;
+terminal Character CHARACTER;
+
+
+/* ---- Deklaracije ---- */
+nonterminal Program, ProgramName, DeclList, Type;
+nonterminal ConstDecl, ConstItemList, ConstItem, Constant;
+nonterminal VarDecl, VarItemList, VarItem;
+nonterminal MethodDeclList, MethodDecl, MethodTypeName, RetType;
+nonterminal FormParsOpt, FormPars, FormParDecl;
+nonterminal VarDeclListOpt;
+
+/* ---- Iskazi ---- */
+nonterminal StatementList, Statement, DesignatorStatement, IfCondition;
+nonterminal ActParsOpt, ActPars;
+nonterminal ForInitOpt, ForCondOpt, ForStepOpt;
+
+/* ---- Izrazi ---- */
+nonterminal Condition, CondTerm, CondFact, Relop;
+nonterminal Expr, AddExpr, Term, Factor, Designator, Addop, Mulop;
+nonterminal PrintWidthOpt, ReturnExprOpt;
+
+
+/* Jedina dozvoljena precedence direktiva - resava dangling-else konflikt. */
+precedence left ELSE;
+
+
+/* ============================================================
+   Program = "program" ident {ConstDecl | VarDecl} "{" {MethodDecl} "}".
+   ============================================================ */
+
+Program ::= (Program) PROG ProgramName DeclList LBRACE MethodDeclList RBRACE;
+
+ProgramName ::= (ProgramName) IDENT:progName;
+
+DeclList ::=    (DeclList_const) DeclList ConstDecl
+                |
+                (DeclList_var) DeclList VarDecl
+                |
+                (DeclList_epsilon) /* epsilon */
+                ;
+
+/* Type = ident. */
+Type ::= (Type) IDENT:typeName;
+
+
+/* ============================================================
+   ConstDecl = "const" Type ident "=" (numConst | charConst | boolConst)
+               {"," ident "=" (numConst | charConst | boolConst)} ";".
+   ============================================================ */
+
+ConstDecl ::= (ConstDecl) CONST Type ConstItemList SEMI;
+
+ConstItemList ::=   (ConstItemList_more) ConstItemList COMMA ConstItem
+                    |
+                    (ConstItemList_one) ConstItem
+                    ;
+
+ConstItem ::= (ConstItem) IDENT:constName ASSIGN Constant;
+
+Constant ::=    (Constant_number) NUMBER:val
+                |
+                (Constant_character) CHARACTER:val
+                |
+                (Constant_bool) BOOL:val
+                ;
+
+
+/* ============================================================
+   VarDecl = Type ident ["[" "]"] {"," ident ["[" "]"]} ";".
+   Oporavak (NIVO A): definicija globalne promenljive -
+   ignorisati karaktere do prvog znaka ";" ili sledeceg ","
+   ============================================================ */
+
+VarDecl ::= (VarDecl) Type VarItemList SEMI;
+
+VarItemList ::=     (VarItemList_more) VarItemList COMMA VarItem
+                    |
+                    (VarItemList_one) VarItem
+                    ;
+
+VarItem ::=     (VarItem_var) IDENT:varName
+                |
+                (VarItem_array) IDENT:varName LBRACK RBRACK
+                |
+                (VarItem_err) error
+                {: parser.report_error("Oporavak od greske u deklaraciji promenljive izvrsen do linije " + parser.lastTokenLine(), null); :}
+                ;
+
+
+/* ============================================================
+   MethodDecl = (Type | "void") ident "(" [FormPars] ")" {VarDecl} "{" {Statement} "}".
+   ============================================================ */
+
+MethodDeclList ::=  (MethodDeclList_more) MethodDeclList MethodDecl
+                    |
+                    (MethodDeclList_epsilon) /* epsilon */
+                    ;
+
+MethodDecl ::= (MethodDecl) MethodTypeName LPAREN FormParsOpt RPAREN
+                            VarDeclListOpt
+                            LBRACE StatementList RBRACE;
+
+/* Ime i povratni tip su izdvojeni u zaseban neterminal da bi semanticka analiza
+   mogla da otvori opseg metode pre obrade formalnih parametara. */
+MethodTypeName ::= (MethodTypeName) RetType IDENT:methName;
+
+RetType ::=     (RetType_type) Type
+                |
+                (RetType_void) VOID
+                ;
+
+VarDeclListOpt ::=  (VarDeclListOpt_more) VarDeclListOpt VarDecl
+                    |
+                    (VarDeclListOpt_epsilon) /* epsilon */
+                    ;
+
+
+/* ============================================================
+   FormPars = Type ident ["[" "]"] {"," Type ident ["[" "]"]}.
+   Oporavak (NIVO B): deklaracija formalnog parametra funkcije -
+   ignorisati znakove do znaka "," ili ")"
+   ============================================================ */
+
+FormParsOpt ::=     (FormParsOpt_pars) FormPars
+                    |
+                    (FormParsOpt_epsilon) /* epsilon */
+                    ;
+
+FormPars ::=    (FormPars_more) FormPars COMMA FormParDecl
+                |
+                (FormPars_one) FormParDecl
+                ;
+
+FormParDecl ::=     (FormParDecl_var) Type IDENT:parName
+                    |
+                    (FormParDecl_array) Type IDENT:parName LBRACK RBRACK
+                    |
+                    (FormParDecl_err) error
+                    {: parser.report_error("Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije " + parser.lastTokenLine(), null); :}
+                    ;
+
+
+/* ============================================================
+   Statement
+   ============================================================ */
+
+StatementList ::=   (StatementList_more) StatementList Statement
+                    |
+                    (StatementList_epsilon) /* epsilon */
+                    ;
+
+Statement ::=   (Statement_designator) DesignatorStatement SEMI
+                |
+                /* Amandman (NIVO A): Designator "=" Designator "." "findAny" "(" Expr ")" ";" */
+                (Statement_findAny) Designator ASSIGN Designator DOT FINDANY LPAREN Expr RPAREN SEMI
+                |
+                /* Amandman (NIVO B): Designator "=" Designator "." "map" "(" ident "=>" Expr ")" ";" */
+                (Statement_map) Designator ASSIGN Designator DOT MAP LPAREN IDENT:iterName ARROW Expr RPAREN SEMI
+                |
+                (Statement_if) IF LPAREN IfCondition RPAREN Statement
+                |
+                (Statement_ifElse) IF LPAREN IfCondition RPAREN Statement ELSE Statement
+                |
+                (Statement_break) BREAK SEMI
+                |
+                (Statement_continue) CONTINUE SEMI
+                |
+                (Statement_return) RETURN ReturnExprOpt SEMI
+                |
+                (Statement_read) READ LPAREN Designator RPAREN SEMI
+                |
+                (Statement_print) PRINT LPAREN Expr PrintWidthOpt RPAREN SEMI
+                |
+                (Statement_for) FOR LPAREN ForInitOpt SEMI ForCondOpt SEMI ForStepOpt RPAREN Statement
+                |
+                (Statement_block) LBRACE StatementList RBRACE
+                |
+                /* Oporavak (NIVO A): konstrukcija iskaza dodele - ignorisati karaktere do ";" */
+                (Statement_err) error SEMI
+                {: parser.report_error("Oporavak od greske u iskazu izvrsen do linije " + parser.lastTokenLine(), null); :}
+                ;
+
+/* Oporavak (NIVO B): logicki izraz unutar if konstrukcije - ignorisati do ")".
+
+   Oporavak je izdvojen u sopstveni neterminal umesto da se pise kao zasebna
+   "IF LPAREN error RPAREN Statement" smena, iz dva razloga:
+     1. AST-CUP dodaje svoju labelu (:S1, :S2) poslednjem neterminalu u smeni. Ako se
+        smena zavrsava neterminalom iza koga stoji {: :} blok, labela se generise posle
+        akcije i dobija se Java kod koji se ne kompajlira. Ovako se akcija nalazi u
+        smeni koja se zavrsava sa error:e, sto je bezbedno.
+     2. Nema potrebe za duplim smenama (sa i bez else grane) - obe if smene koriste
+        isti IfCondition, pa se posle oporavka else grana i dalje uredno parsira. */
+IfCondition ::=     (IfCondition_cond) Condition
+                    |
+                    (IfCondition_err) error
+                    {: parser.report_error("Oporavak od greske u uslovu if iskaza izvrsen do linije " + parser.lastTokenLine(), null); :}
+                    ;
+
+ReturnExprOpt ::=   (ReturnExprOpt_expr) Expr
+                    |
+                    (ReturnExprOpt_epsilon) /* epsilon */
+                    ;
+
+PrintWidthOpt ::=   (PrintWidthOpt_width) COMMA NUMBER:width
+                    |
+                    (PrintWidthOpt_epsilon) /* epsilon */
+                    ;
+
+ForInitOpt ::=  (ForInitOpt_stmt) DesignatorStatement
+                |
+                (ForInitOpt_epsilon) /* epsilon */
+                ;
+
+ForCondOpt ::=  (ForCondOpt_cond) Condition
+                |
+                (ForCondOpt_epsilon) /* epsilon */
+                ;
+
+ForStepOpt ::=  (ForStepOpt_stmt) DesignatorStatement
+                |
+                (ForStepOpt_epsilon) /* epsilon */
+                ;
+
+
+/* ============================================================
+   DesignatorStatement = Designator (Assignop Expr | "(" [ActPars] ")" | "++" | "--").
+
+   Napomena: Assignop ("=") je namerno ugradjen direktno u smenu, a ne izdvojen u
+   poseban neterminal. Kao neterminal bi u stanju posle "=" postojao istovremeno
+   reduce (Assignop ::= "=" .) i shift (za Designator iz findAny/map smena) nad
+   istim lookahead-om ident, sto rusi LALR(1) svojstvo gramatike.
+   ============================================================ */
+
+DesignatorStatement ::=     (DesignatorStatement_assign) Designator ASSIGN Expr
+                            |
+                            (DesignatorStatement_call) Designator LPAREN ActParsOpt RPAREN
+                            |
+                            (DesignatorStatement_inc) Designator INC
+                            |
+                            (DesignatorStatement_dec) Designator DEC
+                            ;
+
+ActParsOpt ::=  (ActParsOpt_pars) ActPars
+                |
+                (ActParsOpt_epsilon) /* epsilon */
+                ;
+
+ActPars ::=     (ActPars_more) ActPars COMMA Expr
+                |
+                (ActPars_one) Expr
+                ;
+
+
+/* ============================================================
+   Condition = CondTerm {"||" CondTerm}.
+   CondTerm  = CondFact {"&&" CondFact}.
+   CondFact  = Expr [Relop Expr].
+   ============================================================ */
+
+Condition ::=   (Condition_or) Condition OR CondTerm
+                |
+                (Condition_term) CondTerm
+                ;
+
+CondTerm ::=    (CondTerm_and) CondTerm AND CondFact
+                |
+                (CondTerm_fact) CondFact
+                ;
+
+/* Napomena: operandi CondFact-a su AddExpr, a ne Expr. Da su Expr, gramatika bi bila
+   dvosmislena - "a ? b : c ? d : e" bi se moglo parsirati i kao "(a?b:c) ? d : e" i kao
+   "a ? b : (c?d:e)", sto daje shift/reduce konflikt. Izrazajnost se ne gubi: ternarni
+   izraz u uslovu se pise sa zagradama, npr. if ((a ? b : c) == 1). */
+CondFact ::=    (CondFact_expr) AddExpr
+                |
+                (CondFact_relop) AddExpr Relop AddExpr
+                ;
+
+Relop ::=   (Relop_eq) EQ
+            |
+            (Relop_neq) NEQ
+            |
+            (Relop_gt) GT
+            |
+            (Relop_geq) GEQ
+            |
+            (Relop_lt) LT
+            |
+            (Relop_leq) LEQ
+            ;
+
+
+/* ============================================================
+   Expr = ["-"] Term {Addop Term} | Condition "?" Expr ":" Expr.
+
+   Napomena: aritmeticki deo je izdvojen u sopstveni neterminal AddExpr. Bez njega
+   bi vazilo Expr => CondFact => Expr (ciklus jedinicnih smena), sto gramatiku cini
+   beskonacno dvosmislenom. Ternarni oblik sa CondFact-om iz [MJ] nije naveden posebno
+   jer ga Condition vec obuhvata (Condition => CondTerm => CondFact).
+   ============================================================ */
+
+Expr ::=    (Expr_add) AddExpr
+            |
+            (Expr_ternary) Condition QUESTION Expr COLON Expr
+            ;
+
+AddExpr ::=     (AddExpr_addop) AddExpr Addop Term
+                |
+                (AddExpr_term) Term
+                |
+                (AddExpr_neg) MINUS Term
+                ;
+
+Addop ::=   (Addop_plus) PLUS
+            |
+            (Addop_minus) MINUS
+            ;
+
+Term ::=    (Term_mulop) Term Mulop Factor
+            |
+            (Term_factor) Factor
+            ;
+
+Mulop ::=   (Mulop_mul) MUL
+            |
+            (Mulop_div) DIV
+            |
+            (Mulop_mod) MOD
+            ;
+
+/* Factor = Designator ["(" [ActPars] ")"] | numConst | charConst | boolConst
+            | "new" Type "[" Expr "]" | "(" Expr ")". */
+Factor ::=  (Factor_designator) Designator
+            |
+            (Factor_call) Designator LPAREN ActParsOpt RPAREN
+            |
+            (Factor_number) NUMBER:val
+            |
+            (Factor_character) CHARACTER:val
+            |
+            (Factor_bool) BOOL:val
+            |
+            (Factor_newArray) NEW Type LBRACK Expr RBRACK
+            |
+            (Factor_expr) LPAREN Expr RPAREN
+            ;
+
+
+/* ============================================================
+   Designator = ident {"." "length" | "[" Expr "]"}.
+   Bez unutrasnjih klasa i nabrajanja (Nivo C / amandmani), jedini clan iza tacke
+   je ugradjeno polje "length".
+   ============================================================ */
+
+Designator ::=  (Designator_ident) IDENT:name
+                |
+                (Designator_array) Designator LBRACK Expr RBRACK
+                |
+                (Designator_length) Designator DOT LENGTH
+                ;

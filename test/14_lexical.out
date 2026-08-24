@@ -1,0 +1,790 @@
+INFO  00:36:07,720 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/14_lexical.mj
+INFO  00:36:07,727 - #2 program
+INFO  00:36:07,727 - #45 Leksika
+INFO  00:36:07,727 - #3 const
+INFO  00:36:07,727 - #45 int
+INFO  00:36:07,727 - #45 nula
+INFO  00:36:07,728 - #31 =
+INFO  00:36:07,728 - #46 0
+INFO  00:36:07,728 - #34 ;
+INFO  00:36:07,728 - #3 const
+INFO  00:36:07,728 - #45 int
+INFO  00:36:07,728 - #45 veliki
+INFO  00:36:07,728 - #31 =
+INFO  00:36:07,728 - #46 123456
+INFO  00:36:07,728 - #34 ;
+INFO  00:36:07,728 - #3 const
+INFO  00:36:07,728 - #45 char
+INFO  00:36:07,728 - #45 razmak
+INFO  00:36:07,728 - #31 =
+INFO  00:36:07,728 - #48  
+INFO  00:36:07,728 - #34 ;
+INFO  00:36:07,728 - #3 const
+INFO  00:36:07,728 - #45 char
+INFO  00:36:07,728 - #45 cifraKaoZnak
+INFO  00:36:07,728 - #31 =
+INFO  00:36:07,728 - #48 7
+INFO  00:36:07,728 - #34 ;
+INFO  00:36:07,728 - #3 const
+INFO  00:36:07,728 - #45 char
+INFO  00:36:07,729 - #45 velikoSlovo
+INFO  00:36:07,729 - #31 =
+INFO  00:36:07,729 - #48 Z
+INFO  00:36:07,729 - #34 ;
+INFO  00:36:07,729 - #3 const
+INFO  00:36:07,729 - #45 bool
+INFO  00:36:07,729 - #45 istina
+INFO  00:36:07,729 - #31 =
+INFO  00:36:07,729 - #47 1
+INFO  00:36:07,729 - #34 ;
+INFO  00:36:07,729 - #3 const
+INFO  00:36:07,729 - #45 bool
+INFO  00:36:07,729 - #45 laz
+INFO  00:36:07,729 - #31 =
+INFO  00:36:07,729 - #47 0
+INFO  00:36:07,729 - #34 ;
+INFO  00:36:07,729 - #45 int
+INFO  00:36:07,729 - #45 a
+INFO  00:36:07,729 - #36 ,
+INFO  00:36:07,729 - #45 A
+INFO  00:36:07,729 - #36 ,
+INFO  00:36:07,729 - #45 aA
+INFO  00:36:07,729 - #36 ,
+INFO  00:36:07,729 - #45 a1
+INFO  00:36:07,729 - #36 ,
+INFO  00:36:07,729 - #45 a_1
+INFO  00:36:07,729 - #36 ,
+INFO  00:36:07,729 - #45 a_b_c
+INFO  00:36:07,729 - #36 ,
+INFO  00:36:07,730 - #45 duguljastoImePromenljive
+INFO  00:36:07,730 - #34 ;
+INFO  00:36:07,730 - #43 {
+INFO  00:36:07,730 - #7 void
+INFO  00:36:07,730 - #45 main
+INFO  00:36:07,730 - #39 (
+INFO  00:36:07,730 - #40 )
+INFO  00:36:07,730 - #45 int
+INFO  00:36:07,730 - #45 r
+INFO  00:36:07,730 - #34 ;
+INFO  00:36:07,730 - #43 {
+INFO  00:36:07,730 - #45 r
+INFO  00:36:07,731 - #31 =
+INFO  00:36:07,731 - #46 1
+INFO  00:36:07,731 - #17 +
+INFO  00:36:07,731 - #46 2
+INFO  00:36:07,731 - #18 -
+INFO  00:36:07,731 - #46 3
+INFO  00:36:07,731 - #19 *
+INFO  00:36:07,731 - #46 4
+INFO  00:36:07,732 - #20 /
+INFO  00:36:07,732 - #46 5
+INFO  00:36:07,732 - #21 %
+INFO  00:36:07,732 - #46 6
+INFO  00:36:07,732 - #34 ;
+INFO  00:36:07,732 - #45 r
+INFO  00:36:07,732 - #31 =
+INFO  00:36:07,732 - #39 (
+INFO  00:36:07,732 - #46 1
+INFO  00:36:07,732 - #40 )
+INFO  00:36:07,732 - #34 ;
+INFO  00:36:07,732 - #45 r
+INFO  00:36:07,732 - #32 ++
+INFO  00:36:07,732 - #34 ;
+INFO  00:36:07,733 - #45 r
+INFO  00:36:07,733 - #33 --
+INFO  00:36:07,733 - #34 ;
+INFO  00:36:07,733 - #9 if
+INFO  00:36:07,733 - #39 (
+INFO  00:36:07,733 - #46 1
+INFO  00:36:07,733 - #22 ==
+INFO  00:36:07,733 - #46 1
+INFO  00:36:07,733 - #28 &&
+INFO  00:36:07,733 - #46 2
+INFO  00:36:07,733 - #23 !=
+INFO  00:36:07,733 - #46 3
+INFO  00:36:07,734 - #29 ||
+INFO  00:36:07,734 - #46 4
+INFO  00:36:07,734 - #26 <
+INFO  00:36:07,734 - #46 5
+INFO  00:36:07,734 - #28 &&
+INFO  00:36:07,734 - #46 6
+INFO  00:36:07,734 - #24 >
+INFO  00:36:07,734 - #46 7
+INFO  00:36:07,734 - #29 ||
+INFO  00:36:07,734 - #46 8
+INFO  00:36:07,734 - #27 <=
+INFO  00:36:07,734 - #46 9
+INFO  00:36:07,734 - #28 &&
+INFO  00:36:07,734 - #46 10
+INFO  00:36:07,734 - #25 >=
+INFO  00:36:07,734 - #46 11
+INFO  00:36:07,734 - #40 )
+INFO  00:36:07,735 - #45 r
+INFO  00:36:07,735 - #31 =
+INFO  00:36:07,735 - #46 1
+INFO  00:36:07,735 - #34 ;
+INFO  00:36:07,735 - #45 r
+INFO  00:36:07,735 - #31 =
+INFO  00:36:07,735 - #46 1
+INFO  00:36:07,735 - #26 <
+INFO  00:36:07,735 - #46 2
+INFO  00:36:07,735 - #38 ?
+INFO  00:36:07,735 - #46 3
+INFO  00:36:07,735 - #35 :
+INFO  00:36:07,735 - #46 4
+INFO  00:36:07,735 - #34 ;
+INFO  00:36:07,735 - #45 a
+INFO  00:36:07,735 - #31 =
+INFO  00:36:07,735 - #45 r
+INFO  00:36:07,735 - #34 ;
+INFO  00:36:07,735 - #45 A
+INFO  00:36:07,735 - #31 =
+INFO  00:36:07,735 - #45 r
+INFO  00:36:07,735 - #34 ;
+INFO  00:36:07,735 - #45 aA
+INFO  00:36:07,735 - #31 =
+INFO  00:36:07,735 - #45 r
+INFO  00:36:07,735 - #34 ;
+INFO  00:36:07,735 - #45 a1
+INFO  00:36:07,735 - #31 =
+INFO  00:36:07,735 - #45 r
+INFO  00:36:07,735 - #34 ;
+INFO  00:36:07,735 - #45 a_1
+INFO  00:36:07,735 - #31 =
+INFO  00:36:07,736 - #45 r
+INFO  00:36:07,736 - #34 ;
+INFO  00:36:07,736 - #45 a_b_c
+INFO  00:36:07,736 - #31 =
+INFO  00:36:07,736 - #45 r
+INFO  00:36:07,736 - #34 ;
+INFO  00:36:07,736 - #45 duguljastoImePromenljive
+INFO  00:36:07,736 - #31 =
+INFO  00:36:07,736 - #45 r
+INFO  00:36:07,736 - #34 ;
+INFO  00:36:07,736 - #44 }
+INFO  00:36:07,736 - #44 }
+INFO  00:36:07,737 - Program(
+  ProgramName(
+   Leksika
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_const(
+      DeclList_const(
+        DeclList_const(
+          DeclList_const(
+            DeclList_const(
+              DeclList_const(
+                DeclList_const(
+                  DeclList_epsilon(
+                  ) [DeclList_epsilon]
+                  ConstDecl(
+                    Type(
+                     int
+                    ) [Type]
+                    ConstItemList_one(
+                      ConstItem(
+                       nula
+                        Constant_number(
+                         0
+                        ) [Constant_number]
+                      ) [ConstItem]
+                    ) [ConstItemList_one]
+                  ) [ConstDecl]
+                ) [DeclList_const]
+                ConstDecl(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstItemList_one(
+                    ConstItem(
+                     veliki
+                      Constant_number(
+                       123456
+                      ) [Constant_number]
+                    ) [ConstItem]
+                  ) [ConstItemList_one]
+                ) [ConstDecl]
+              ) [DeclList_const]
+              ConstDecl(
+                Type(
+                 char
+                ) [Type]
+                ConstItemList_one(
+                  ConstItem(
+                   razmak
+                    Constant_character(
+                      
+                    ) [Constant_character]
+                  ) [ConstItem]
+                ) [ConstItemList_one]
+              ) [ConstDecl]
+            ) [DeclList_const]
+            ConstDecl(
+              Type(
+               char
+              ) [Type]
+              ConstItemList_one(
+                ConstItem(
+                 cifraKaoZnak
+                  Constant_character(
+                   7
+                  ) [Constant_character]
+                ) [ConstItem]
+              ) [ConstItemList_one]
+            ) [ConstDecl]
+          ) [DeclList_const]
+          ConstDecl(
+            Type(
+             char
+            ) [Type]
+            ConstItemList_one(
+              ConstItem(
+               velikoSlovo
+                Constant_character(
+                 Z
+                ) [Constant_character]
+              ) [ConstItem]
+            ) [ConstItemList_one]
+          ) [ConstDecl]
+        ) [DeclList_const]
+        ConstDecl(
+          Type(
+           bool
+          ) [Type]
+          ConstItemList_one(
+            ConstItem(
+             istina
+              Constant_bool(
+               1
+              ) [Constant_bool]
+            ) [ConstItem]
+          ) [ConstItemList_one]
+        ) [ConstDecl]
+      ) [DeclList_const]
+      ConstDecl(
+        Type(
+         bool
+        ) [Type]
+        ConstItemList_one(
+          ConstItem(
+           laz
+            Constant_bool(
+             0
+            ) [Constant_bool]
+          ) [ConstItem]
+        ) [ConstItemList_one]
+      ) [ConstDecl]
+    ) [DeclList_const]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_more(
+        VarItemList_more(
+          VarItemList_more(
+            VarItemList_more(
+              VarItemList_more(
+                VarItemList_more(
+                  VarItemList_one(
+                    VarItem_var(
+                     a
+                    ) [VarItem_var]
+                  ) [VarItemList_one]
+                  VarItem_var(
+                   A
+                  ) [VarItem_var]
+                ) [VarItemList_more]
+                VarItem_var(
+                 aA
+                ) [VarItem_var]
+              ) [VarItemList_more]
+              VarItem_var(
+               a1
+              ) [VarItem_var]
+            ) [VarItemList_more]
+            VarItem_var(
+             a_1
+            ) [VarItem_var]
+          ) [VarItemList_more]
+          VarItem_var(
+           a_b_c
+          ) [VarItem_var]
+        ) [VarItemList_more]
+        VarItem_var(
+         duguljastoImePromenljive
+        ) [VarItem_var]
+      ) [VarItemList_more]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_more(
+        VarDeclListOpt_epsilon(
+        ) [VarDeclListOpt_epsilon]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarItemList_one(
+            VarItem_var(
+             r
+            ) [VarItem_var]
+          ) [VarItemList_one]
+        ) [VarDecl]
+      ) [VarDeclListOpt_more]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_more(
+                StatementList_more(
+                  StatementList_more(
+                    StatementList_more(
+                      StatementList_more(
+                        StatementList_more(
+                          StatementList_more(
+                            StatementList_more(
+                              StatementList_more(
+                                StatementList_epsilon(
+                                ) [StatementList_epsilon]
+                                Statement_designator(
+                                  DesignatorStatement_assign(
+                                    Designator_ident(
+                                     r
+                                    ) [Designator_ident]
+                                    Expr_add(
+                                      AddExpr_addop(
+                                        AddExpr_addop(
+                                          AddExpr_term(
+                                            Term_factor(
+                                              Factor_number(
+                                               1
+                                              ) [Factor_number]
+                                            ) [Term_factor]
+                                          ) [AddExpr_term]
+                                          Addop_plus(
+                                          ) [Addop_plus]
+                                          Term_factor(
+                                            Factor_number(
+                                             2
+                                            ) [Factor_number]
+                                          ) [Term_factor]
+                                        ) [AddExpr_addop]
+                                        Addop_minus(
+                                        ) [Addop_minus]
+                                        Term_mulop(
+                                          Term_mulop(
+                                            Term_mulop(
+                                              Term_factor(
+                                                Factor_number(
+                                                 3
+                                                ) [Factor_number]
+                                              ) [Term_factor]
+                                              Mulop_mul(
+                                              ) [Mulop_mul]
+                                              Factor_number(
+                                               4
+                                              ) [Factor_number]
+                                            ) [Term_mulop]
+                                            Mulop_div(
+                                            ) [Mulop_div]
+                                            Factor_number(
+                                             5
+                                            ) [Factor_number]
+                                          ) [Term_mulop]
+                                          Mulop_mod(
+                                          ) [Mulop_mod]
+                                          Factor_number(
+                                           6
+                                          ) [Factor_number]
+                                        ) [Term_mulop]
+                                      ) [AddExpr_addop]
+                                    ) [Expr_add]
+                                  ) [DesignatorStatement_assign]
+                                ) [Statement_designator]
+                              ) [StatementList_more]
+                              Statement_designator(
+                                DesignatorStatement_assign(
+                                  Designator_ident(
+                                   r
+                                  ) [Designator_ident]
+                                  Expr_add(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_expr(
+                                          Expr_add(
+                                            AddExpr_term(
+                                              Term_factor(
+                                                Factor_number(
+                                                 1
+                                                ) [Factor_number]
+                                              ) [Term_factor]
+                                            ) [AddExpr_term]
+                                          ) [Expr_add]
+                                        ) [Factor_expr]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                  ) [Expr_add]
+                                ) [DesignatorStatement_assign]
+                              ) [Statement_designator]
+                            ) [StatementList_more]
+                            Statement_designator(
+                              DesignatorStatement_inc(
+                                Designator_ident(
+                                 r
+                                ) [Designator_ident]
+                              ) [DesignatorStatement_inc]
+                            ) [Statement_designator]
+                          ) [StatementList_more]
+                          Statement_designator(
+                            DesignatorStatement_dec(
+                              Designator_ident(
+                               r
+                              ) [Designator_ident]
+                            ) [DesignatorStatement_dec]
+                          ) [Statement_designator]
+                        ) [StatementList_more]
+                        Statement_if(
+                          IfCondition_cond(
+                            Condition_or(
+                              Condition_or(
+                                Condition_term(
+                                  CondTerm_and(
+                                    CondTerm_fact(
+                                      CondFact_relop(
+                                        AddExpr_term(
+                                          Term_factor(
+                                            Factor_number(
+                                             1
+                                            ) [Factor_number]
+                                          ) [Term_factor]
+                                        ) [AddExpr_term]
+                                        Relop_eq(
+                                        ) [Relop_eq]
+                                        AddExpr_term(
+                                          Term_factor(
+                                            Factor_number(
+                                             1
+                                            ) [Factor_number]
+                                          ) [Term_factor]
+                                        ) [AddExpr_term]
+                                      ) [CondFact_relop]
+                                    ) [CondTerm_fact]
+                                    CondFact_relop(
+                                      AddExpr_term(
+                                        Term_factor(
+                                          Factor_number(
+                                           2
+                                          ) [Factor_number]
+                                        ) [Term_factor]
+                                      ) [AddExpr_term]
+                                      Relop_neq(
+                                      ) [Relop_neq]
+                                      AddExpr_term(
+                                        Term_factor(
+                                          Factor_number(
+                                           3
+                                          ) [Factor_number]
+                                        ) [Term_factor]
+                                      ) [AddExpr_term]
+                                    ) [CondFact_relop]
+                                  ) [CondTerm_and]
+                                ) [Condition_term]
+                                CondTerm_and(
+                                  CondTerm_fact(
+                                    CondFact_relop(
+                                      AddExpr_term(
+                                        Term_factor(
+                                          Factor_number(
+                                           4
+                                          ) [Factor_number]
+                                        ) [Term_factor]
+                                      ) [AddExpr_term]
+                                      Relop_lt(
+                                      ) [Relop_lt]
+                                      AddExpr_term(
+                                        Term_factor(
+                                          Factor_number(
+                                           5
+                                          ) [Factor_number]
+                                        ) [Term_factor]
+                                      ) [AddExpr_term]
+                                    ) [CondFact_relop]
+                                  ) [CondTerm_fact]
+                                  CondFact_relop(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_number(
+                                         6
+                                        ) [Factor_number]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                    Relop_gt(
+                                    ) [Relop_gt]
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_number(
+                                         7
+                                        ) [Factor_number]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                  ) [CondFact_relop]
+                                ) [CondTerm_and]
+                              ) [Condition_or]
+                              CondTerm_and(
+                                CondTerm_fact(
+                                  CondFact_relop(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_number(
+                                         8
+                                        ) [Factor_number]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                    Relop_leq(
+                                    ) [Relop_leq]
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_number(
+                                         9
+                                        ) [Factor_number]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                  ) [CondFact_relop]
+                                ) [CondTerm_fact]
+                                CondFact_relop(
+                                  AddExpr_term(
+                                    Term_factor(
+                                      Factor_number(
+                                       10
+                                      ) [Factor_number]
+                                    ) [Term_factor]
+                                  ) [AddExpr_term]
+                                  Relop_geq(
+                                  ) [Relop_geq]
+                                  AddExpr_term(
+                                    Term_factor(
+                                      Factor_number(
+                                       11
+                                      ) [Factor_number]
+                                    ) [Term_factor]
+                                  ) [AddExpr_term]
+                                ) [CondFact_relop]
+                              ) [CondTerm_and]
+                            ) [Condition_or]
+                          ) [IfCondition_cond]
+                          Statement_designator(
+                            DesignatorStatement_assign(
+                              Designator_ident(
+                               r
+                              ) [Designator_ident]
+                              Expr_add(
+                                AddExpr_term(
+                                  Term_factor(
+                                    Factor_number(
+                                     1
+                                    ) [Factor_number]
+                                  ) [Term_factor]
+                                ) [AddExpr_term]
+                              ) [Expr_add]
+                            ) [DesignatorStatement_assign]
+                          ) [Statement_designator]
+                        ) [Statement_if]
+                      ) [StatementList_more]
+                      Statement_designator(
+                        DesignatorStatement_assign(
+                          Designator_ident(
+                           r
+                          ) [Designator_ident]
+                          Expr_ternary(
+                            Condition_term(
+                              CondTerm_fact(
+                                CondFact_relop(
+                                  AddExpr_term(
+                                    Term_factor(
+                                      Factor_number(
+                                       1
+                                      ) [Factor_number]
+                                    ) [Term_factor]
+                                  ) [AddExpr_term]
+                                  Relop_lt(
+                                  ) [Relop_lt]
+                                  AddExpr_term(
+                                    Term_factor(
+                                      Factor_number(
+                                       2
+                                      ) [Factor_number]
+                                    ) [Term_factor]
+                                  ) [AddExpr_term]
+                                ) [CondFact_relop]
+                              ) [CondTerm_fact]
+                            ) [Condition_term]
+                            Expr_add(
+                              AddExpr_term(
+                                Term_factor(
+                                  Factor_number(
+                                   3
+                                  ) [Factor_number]
+                                ) [Term_factor]
+                              ) [AddExpr_term]
+                            ) [Expr_add]
+                            Expr_add(
+                              AddExpr_term(
+                                Term_factor(
+                                  Factor_number(
+                                   4
+                                  ) [Factor_number]
+                                ) [Term_factor]
+                              ) [AddExpr_term]
+                            ) [Expr_add]
+                          ) [Expr_ternary]
+                        ) [DesignatorStatement_assign]
+                      ) [Statement_designator]
+                    ) [StatementList_more]
+                    Statement_designator(
+                      DesignatorStatement_assign(
+                        Designator_ident(
+                         a
+                        ) [Designator_ident]
+                        Expr_add(
+                          AddExpr_term(
+                            Term_factor(
+                              Factor_designator(
+                                Designator_ident(
+                                 r
+                                ) [Designator_ident]
+                              ) [Factor_designator]
+                            ) [Term_factor]
+                          ) [AddExpr_term]
+                        ) [Expr_add]
+                      ) [DesignatorStatement_assign]
+                    ) [Statement_designator]
+                  ) [StatementList_more]
+                  Statement_designator(
+                    DesignatorStatement_assign(
+                      Designator_ident(
+                       A
+                      ) [Designator_ident]
+                      Expr_add(
+                        AddExpr_term(
+                          Term_factor(
+                            Factor_designator(
+                              Designator_ident(
+                               r
+                              ) [Designator_ident]
+                            ) [Factor_designator]
+                          ) [Term_factor]
+                        ) [AddExpr_term]
+                      ) [Expr_add]
+                    ) [DesignatorStatement_assign]
+                  ) [Statement_designator]
+                ) [StatementList_more]
+                Statement_designator(
+                  DesignatorStatement_assign(
+                    Designator_ident(
+                     aA
+                    ) [Designator_ident]
+                    Expr_add(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_designator(
+                            Designator_ident(
+                             r
+                            ) [Designator_ident]
+                          ) [Factor_designator]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [Expr_add]
+                  ) [DesignatorStatement_assign]
+                ) [Statement_designator]
+              ) [StatementList_more]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_ident(
+                   a1
+                  ) [Designator_ident]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_designator(
+                          Designator_ident(
+                           r
+                          ) [Designator_ident]
+                        ) [Factor_designator]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_more]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_ident(
+                 a_1
+                ) [Designator_ident]
+                Expr_add(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_designator(
+                        Designator_ident(
+                         r
+                        ) [Designator_ident]
+                      ) [Factor_designator]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [Expr_add]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+          ) [StatementList_more]
+          Statement_designator(
+            DesignatorStatement_assign(
+              Designator_ident(
+               a_b_c
+              ) [Designator_ident]
+              Expr_add(
+                AddExpr_term(
+                  Term_factor(
+                    Factor_designator(
+                      Designator_ident(
+                       r
+                      ) [Designator_ident]
+                    ) [Factor_designator]
+                  ) [Term_factor]
+                ) [AddExpr_term]
+              ) [Expr_add]
+            ) [DesignatorStatement_assign]
+          ) [Statement_designator]
+        ) [StatementList_more]
+        Statement_designator(
+          DesignatorStatement_assign(
+            Designator_ident(
+             duguljastoImePromenljive
+            ) [Designator_ident]
+            Expr_add(
+              AddExpr_term(
+                Term_factor(
+                  Factor_designator(
+                    Designator_ident(
+                     r
+                    ) [Designator_ident]
+                  ) [Factor_designator]
+                ) [Term_factor]
+              ) [AddExpr_term]
+            ) [Expr_add]
+          ) [DesignatorStatement_assign]
+        ) [Statement_designator]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  00:36:07,737 - =================================================
+INFO  00:36:07,737 - Parsiranje uspesno zavrseno!

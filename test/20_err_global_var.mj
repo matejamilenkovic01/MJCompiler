@@ -1,0 +1,21 @@
+// EXPECT: SYNTAX>=2 RECOVERY>=2
+// EXPECT-ERR: Oporavak od greske u deklaraciji promenljive
+// Oporavak (Nivo A): definicija globalne promenljive - ignorisati
+// karaktere do prvog ";" ili sledeceg ",".
+
+program GreskaGlobalnaPromenljiva
+
+// greska u sredini liste - oporavak do sledeceg ","
+int a, 5, b;
+
+// greska do kraja deklaracije - oporavak do ";"
+int c, d 7 8;
+
+// posle oporavka parser mora normalno da nastavi
+int ispravna;
+
+{
+	void main()
+	{
+	}
+}

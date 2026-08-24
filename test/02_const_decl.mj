@@ -1,0 +1,18 @@
+// EXPECT: OK
+// Konstante svih ugradjenih tipova, pojedinacno i u listi.
+
+program Konstante
+
+const int jedan = 1;
+const int a = 10, b = 20, c = 30;
+const char slovo = 'x';
+const char razmak = ' ';
+const char cifraKaoZnak = '7';
+const bool tacno = true;
+const bool netacno = false;
+
+{
+	void main()
+	{
+	}
+}

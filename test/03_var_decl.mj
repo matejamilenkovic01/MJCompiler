@@ -1,0 +1,24 @@
+// EXPECT: OK
+// Globalne promenljive: proste i nizovne, pojedinacno i u listi,
+// izmesane sa deklaracijama konstanti.
+
+program Promenljive
+
+int i;
+int x, y, z;
+int niz[];
+int a, drugiNiz[], b;
+char c;
+char slova[];
+bool zastavica;
+bool zastavice[];
+
+const int velicina = 5;
+
+int posleKonstante;
+
+{
+	void main()
+	{
+	}
+}

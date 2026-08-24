@@ -1,0 +1,21 @@
+// EXPECT: LEXICAL>=3
+// EXPECT-ERR: Leksicka greska
+// Leksicka faza: neprepoznati znakovi. Lekser mora prijaviti svaki
+// neprepoznat znak (tekst, linija, kolona) i nastaviti analizu.
+
+program LeksickaGreska
+
+int a;
+
+{
+	void main()
+	{
+		a = 1;
+
+		a = 1 @ 2;
+		a = 3 $ 4;
+		a = 5 # 6;
+
+		a = 7;
+	}
+}

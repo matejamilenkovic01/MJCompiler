@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/7/2026 23:4:17
+// 25/7/2026 0:36:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class Constant_bool extends Constant {
 
-    private Integer B1;
+    private Integer val;
 
-    public Constant_bool (Integer B1) {
-        this.B1=B1;
+    public Constant_bool (Integer val) {
+        this.val=val;
     }
 
-    public Integer getB1() {
-        return B1;
+    public Integer getVal() {
+        return val;
     }
 
-    public void setB1(Integer B1) {
-        this.B1=B1;
+    public void setVal(Integer val) {
+        this.val=val;
     }
 
     public void accept(Visitor visitor) {
@@ -41,7 +41,7 @@ public class Constant_bool extends Constant {
         buffer.append(tab);
         buffer.append("Constant_bool(\n");
 
-        buffer.append(" "+tab+B1);
+        buffer.append(" "+tab+val);
         buffer.append("\n");
 
         buffer.append(tab);

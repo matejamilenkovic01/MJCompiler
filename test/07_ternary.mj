@@ -1,0 +1,32 @@
+// EXPECT: OK
+// Ternarni operator. Uslov sme biti pun logicki izraz (relop, && , ||).
+// Ternarni izraz u ULOVU drugog ternarnog operatora mora biti u zagradama.
+
+program Ternarni
+
+int a, b, r;
+bool p;
+
+{
+	void main()
+	{
+		a = 1;
+		b = 2;
+		p = true;
+
+		r = a < b ? a : b;
+		r = p ? 1 : 0;
+		r = a == b ? a + 1 : b - 1;
+		r = a < b && p ? a : b;
+		r = a < b || p ? a * 2 : b * 2;
+
+		// ugnezdeno u granama
+		r = a < b ? (a < 0 ? 0 : a) : b;
+		r = a < b ? a < 0 ? 0 : a : b;
+
+		// ugnezdeno u uslovu - zahteva zagrade
+		r = (a < b ? a : b) > 0 ? 1 : 0;
+
+		print(a > 0 ? 'p' : 'n');
+	}
+}
