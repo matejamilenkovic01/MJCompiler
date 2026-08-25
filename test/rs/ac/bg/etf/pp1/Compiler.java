@@ -10,8 +10,11 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import java_cup.runtime.Symbol;
-import rs.ac.bg.etf.pp1.ast.Program;
+import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class Compiler {
 
@@ -63,6 +66,7 @@ public class Compiler {
 
 			Yylex lexer = new Yylex(br);
 
+			/* Formiranje AST */
 			MJParser p = new MJParser(lexer);
 			Symbol s = p.parse(); // formiranje AST
 
@@ -73,6 +77,19 @@ public class Compiler {
 				log.info(prog.toString(""));
 			}
 			log.info("=================================================");
+			
+			/* Inicijalizacija tabele simbola */
+			Tab.init();
+			Struct boolType = new Struct(Struct.Bool);
+			Obj boolObj = Tab.insert(Obj.Type, "bool", boolType);
+			boolObj.setAdr(-1);
+			boolObj.setLevel(-1);
+			
+			/* Semanticka analiza */
+			
+			/* Ispis tabele simbola */
+			log.info("=================================================");
+			Tab.dump();
 
 			if (!p.errorDetected) {
 				log.info("Parsiranje uspesno zavrseno!");
