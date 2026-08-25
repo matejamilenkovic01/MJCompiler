@@ -1,0 +1,128 @@
+// EXPECT: OK
+// Adaptacija zvanicnog testa sa sajta (test303.mj) na Nivo B.
+//
+// Original je pisan za Nivo C i pociva na apstraktnoj klasi AbsPredmet,
+// nasledjivanju (Sfera i Kvadar), implicitnom parametru this, virtuelnim
+// pozivima preko tabele virtuelnih funkcija i pravljenju niza objekata.
+// Nista od toga ne postoji na Nivou B, pa se test ne moze "prilagoditi"
+// sitnim izmenama - logika je prepisana koriscenjem sredstava Nivoa B:
+//
+//   klasa i polja        -> paralelni nizovi ugradjenih tipova
+//   virtuelni poziv      -> globalna funkcija koja grana po vrsti predmeta
+//   niz objekata         -> indeks u paralelne nizove
+//
+// Racunica, redosled obilaska i ispis su namerno ostali isti kao u originalu.
+
+program test303B
+
+const int cinilac = 4, delilac = 3;
+
+// vrsta predmeta na datom indeksu: 's' = sfera, 'k' = kvadar
+char vrsta[];
+// podaci sfere
+int poluprecnik[];
+// podaci kvadra
+int strA[], strB[], strC[];
+// zajednicko polje oba oblika
+int tezina[];
+
+int zapreminaK, zapreminaS;
+int tezinaK, tezinaS;
+int i, t;
+
+{
+
+	int zapreminaSfere(int r)
+		int z;
+	{
+		z = cinilac;
+		return z * (r / delilac);
+	}
+
+	int zapreminaKvadra(int a, int b, int c)
+	{
+		return a * b * c;
+	}
+
+	// Zamena za virtuelni poziv zapremina() iz originala.
+	int zapremina(int idx)
+	{
+		if (vrsta[idx] == 's') return zapreminaSfere(poluprecnik[idx]);
+		return zapreminaKvadra(strA[idx], strB[idx], strC[idx]);
+	}
+
+	int Q(int idx)
+	{
+		return zapremina(idx) * tezina[idx];
+	}
+
+	void ispis(int idx)
+	{
+		if (vrsta[idx] == 's') print('S');
+		else if (vrsta[idx] == 'k') print('K');
+
+		print(eol);
+		print(tezina[idx]);
+	}
+
+	void postaviSferu(int idx, int r)
+	{
+		vrsta[idx] = 's';
+		poluprecnik[idx] = r;
+	}
+
+	void postaviKvadar(int idx, int a, int b, int c)
+	{
+		vrsta[idx] = 'k';
+		strA[idx] = a;
+		strB[idx] = b;
+		strC[idx] = c;
+	}
+
+	void main()
+	{
+		vrsta = new char[6];
+		poluprecnik = new int[6];
+		strA = new int[6];
+		strB = new int[6];
+		strC = new int[6];
+		tezina = new int[6];
+
+		// sfere na parnim, kvadri na neparnim indeksima - kao u originalu
+		postaviSferu(0, 1);
+		postaviSferu(2, 2);
+		postaviSferu(4, 3);
+
+		postaviKvadar(1, 1, 2, 3);
+		postaviKvadar(3, 2, 3, 4);
+		postaviKvadar(5, 3, 4, 5);
+
+		read(t);
+		for (i = 0; i < vrsta.length; i++) {
+			tezina[i] = t;
+		}
+
+		zapreminaS = 0;
+		tezinaS = 0;
+		for (i = 1; i <= vrsta.length; i++) {
+			if (i % 2 == 0) continue;
+			zapreminaS = zapreminaS + zapremina(i - 1);
+			tezinaS = tezinaS + Q(i - 1);
+			ispis(i - 1);
+		}
+
+		zapreminaK = 0;
+		tezinaK = 0;
+		for (i = 1; i <= vrsta.length; i++) {
+			if (i % 2 == 1) continue;
+			zapreminaK = zapreminaK + zapremina(i - 1);
+			tezinaK = tezinaK + Q(i - 1);
+			ispis(i - 1);
+		}
+
+		print(zapreminaS); print(eol);
+		print(zapreminaK); print(eol);
+		print(tezinaS); print(eol);
+		print(tezinaK); print(eol);
+	}
+}

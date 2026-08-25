@@ -1,64 +1,64 @@
-INFO  00:36:06,051 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/03_var_decl.mj
-INFO  00:36:06,059 - #2 program
-INFO  00:36:06,059 - #45 Promenljive
-INFO  00:36:06,059 - #45 int
-INFO  00:36:06,059 - #45 i
-INFO  00:36:06,059 - #34 ;
-INFO  00:36:06,060 - #45 int
-INFO  00:36:06,060 - #45 x
-INFO  00:36:06,060 - #36 ,
-INFO  00:36:06,060 - #45 y
-INFO  00:36:06,060 - #36 ,
-INFO  00:36:06,060 - #45 z
-INFO  00:36:06,060 - #34 ;
-INFO  00:36:06,060 - #45 int
-INFO  00:36:06,060 - #45 niz
-INFO  00:36:06,060 - #41 [
-INFO  00:36:06,060 - #42 ]
-INFO  00:36:06,060 - #34 ;
-INFO  00:36:06,060 - #45 int
-INFO  00:36:06,060 - #45 a
-INFO  00:36:06,060 - #36 ,
-INFO  00:36:06,060 - #45 drugiNiz
-INFO  00:36:06,060 - #41 [
-INFO  00:36:06,060 - #42 ]
-INFO  00:36:06,060 - #36 ,
-INFO  00:36:06,060 - #45 b
-INFO  00:36:06,060 - #34 ;
-INFO  00:36:06,060 - #45 char
-INFO  00:36:06,060 - #45 c
-INFO  00:36:06,060 - #34 ;
-INFO  00:36:06,060 - #45 char
-INFO  00:36:06,060 - #45 slova
-INFO  00:36:06,060 - #41 [
-INFO  00:36:06,060 - #42 ]
-INFO  00:36:06,060 - #34 ;
-INFO  00:36:06,061 - #45 bool
-INFO  00:36:06,061 - #45 zastavica
-INFO  00:36:06,061 - #34 ;
-INFO  00:36:06,061 - #45 bool
-INFO  00:36:06,061 - #45 zastavice
-INFO  00:36:06,061 - #41 [
-INFO  00:36:06,061 - #42 ]
-INFO  00:36:06,061 - #34 ;
-INFO  00:36:06,061 - #3 const
-INFO  00:36:06,061 - #45 int
-INFO  00:36:06,061 - #45 velicina
-INFO  00:36:06,061 - #31 =
-INFO  00:36:06,061 - #46 5
-INFO  00:36:06,061 - #34 ;
-INFO  00:36:06,061 - #45 int
-INFO  00:36:06,062 - #45 posleKonstante
-INFO  00:36:06,062 - #34 ;
-INFO  00:36:06,062 - #43 {
-INFO  00:36:06,062 - #7 void
-INFO  00:36:06,062 - #45 main
-INFO  00:36:06,062 - #39 (
-INFO  00:36:06,062 - #40 )
-INFO  00:36:06,062 - #43 {
-INFO  00:36:06,062 - #44 }
-INFO  00:36:06,062 - #44 }
-INFO  00:36:06,063 - Program(
+INFO  11:04:16,585 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/03_var_decl.mj
+INFO  11:04:16,597 - #2 program
+INFO  11:04:16,597 - #45 Promenljive
+INFO  11:04:16,597 - #45 int
+INFO  11:04:16,597 - #45 i
+INFO  11:04:16,598 - #34 ;
+INFO  11:04:16,598 - #45 int
+INFO  11:04:16,598 - #45 x
+INFO  11:04:16,598 - #36 ,
+INFO  11:04:16,598 - #45 y
+INFO  11:04:16,598 - #36 ,
+INFO  11:04:16,598 - #45 z
+INFO  11:04:16,598 - #34 ;
+INFO  11:04:16,598 - #45 int
+INFO  11:04:16,598 - #45 niz
+INFO  11:04:16,598 - #41 [
+INFO  11:04:16,598 - #42 ]
+INFO  11:04:16,598 - #34 ;
+INFO  11:04:16,598 - #45 int
+INFO  11:04:16,598 - #45 a
+INFO  11:04:16,598 - #36 ,
+INFO  11:04:16,598 - #45 drugiNiz
+INFO  11:04:16,598 - #41 [
+INFO  11:04:16,598 - #42 ]
+INFO  11:04:16,598 - #36 ,
+INFO  11:04:16,598 - #45 b
+INFO  11:04:16,599 - #34 ;
+INFO  11:04:16,599 - #45 char
+INFO  11:04:16,599 - #45 c
+INFO  11:04:16,599 - #34 ;
+INFO  11:04:16,599 - #45 char
+INFO  11:04:16,599 - #45 slova
+INFO  11:04:16,599 - #41 [
+INFO  11:04:16,599 - #42 ]
+INFO  11:04:16,599 - #34 ;
+INFO  11:04:16,599 - #45 bool
+INFO  11:04:16,599 - #45 zastavica
+INFO  11:04:16,599 - #34 ;
+INFO  11:04:16,599 - #45 bool
+INFO  11:04:16,599 - #45 zastavice
+INFO  11:04:16,599 - #41 [
+INFO  11:04:16,599 - #42 ]
+INFO  11:04:16,599 - #34 ;
+INFO  11:04:16,599 - #3 const
+INFO  11:04:16,599 - #45 int
+INFO  11:04:16,599 - #45 velicina
+INFO  11:04:16,599 - #31 =
+INFO  11:04:16,599 - #46 5
+INFO  11:04:16,599 - #34 ;
+INFO  11:04:16,599 - #45 int
+INFO  11:04:16,600 - #45 posleKonstante
+INFO  11:04:16,600 - #34 ;
+INFO  11:04:16,600 - #43 {
+INFO  11:04:16,600 - #7 void
+INFO  11:04:16,600 - #45 main
+INFO  11:04:16,600 - #39 (
+INFO  11:04:16,600 - #40 )
+INFO  11:04:16,600 - #43 {
+INFO  11:04:16,600 - #44 }
+INFO  11:04:16,600 - #44 }
+INFO  11:04:16,601 - Program(
   ProgramName(
    Promenljive
   ) [ProgramName]
@@ -225,5 +225,5 @@ INFO  00:36:06,063 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  00:36:06,063 - =================================================
-INFO  00:36:06,063 - Parsiranje uspesno zavrseno!
+INFO  11:04:16,601 - =================================================
+INFO  11:04:16,601 - Parsiranje uspesno zavrseno!

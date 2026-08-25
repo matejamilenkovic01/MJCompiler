@@ -1,32 +1,32 @@
-INFO  00:36:07,875 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/20_err_global_var.mj
-INFO  00:36:07,882 - #2 program
-INFO  00:36:07,882 - #45 GreskaGlobalnaPromenljiva
-INFO  00:36:07,882 - #45 int
-INFO  00:36:07,882 - #45 a
-INFO  00:36:07,883 - #36 ,
-INFO  00:36:07,883 - #46 5
-INFO  00:36:07,883 - #36 ,
-INFO  00:36:07,883 - #45 b
-INFO  00:36:07,883 - #34 ;
-INFO  00:36:07,883 - #45 int
-INFO  00:36:07,883 - #45 c
-INFO  00:36:07,883 - #36 ,
-INFO  00:36:07,883 - #45 d
-INFO  00:36:07,883 - #46 7
-INFO  00:36:07,883 - #46 8
-INFO  00:36:07,883 - #34 ;
-INFO  00:36:07,883 - #45 int
-INFO  00:36:07,884 - #45 ispravna
-INFO  00:36:07,884 - #34 ;
-INFO  00:36:07,884 - #43 {
-INFO  00:36:07,884 - #7 void
-INFO  00:36:07,884 - #45 main
-INFO  00:36:07,884 - #39 (
-INFO  00:36:07,884 - #40 )
-INFO  00:36:07,884 - #43 {
-INFO  00:36:07,884 - #44 }
-INFO  00:36:07,884 - #44 }
-INFO  00:36:07,885 - Program(
+INFO  11:04:18,433 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/20_err_global_var.mj
+INFO  11:04:18,442 - #2 program
+INFO  11:04:18,442 - #45 GreskaGlobalnaPromenljiva
+INFO  11:04:18,442 - #45 int
+INFO  11:04:18,442 - #45 a
+INFO  11:04:18,442 - #36 ,
+INFO  11:04:18,442 - #46 5
+INFO  11:04:18,442 - #36 ,
+INFO  11:04:18,442 - #45 b
+INFO  11:04:18,442 - #34 ;
+INFO  11:04:18,442 - #45 int
+INFO  11:04:18,443 - #45 c
+INFO  11:04:18,443 - #36 ,
+INFO  11:04:18,443 - #45 d
+INFO  11:04:18,443 - #46 7
+INFO  11:04:18,443 - #46 8
+INFO  11:04:18,443 - #34 ;
+INFO  11:04:18,443 - #45 int
+INFO  11:04:18,443 - #45 ispravna
+INFO  11:04:18,443 - #34 ;
+INFO  11:04:18,443 - #43 {
+INFO  11:04:18,443 - #7 void
+INFO  11:04:18,443 - #45 main
+INFO  11:04:18,444 - #39 (
+INFO  11:04:18,444 - #40 )
+INFO  11:04:18,444 - #43 {
+INFO  11:04:18,444 - #44 }
+INFO  11:04:18,444 - #44 }
+INFO  11:04:18,444 - Program(
   ProgramName(
    GreskaGlobalnaPromenljiva
   ) [ProgramName]
@@ -99,4 +99,4 @@ INFO  00:36:07,885 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  00:36:07,885 - =================================================
+INFO  11:04:18,444 - =================================================

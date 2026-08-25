@@ -1,50 +1,50 @@
-INFO  00:36:08,154 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/22_err_formpar.mj
-INFO  00:36:08,163 - #2 program
-INFO  00:36:08,163 - #45 GreskaFormalniParametar
-INFO  00:36:08,163 - #43 {
-INFO  00:36:08,163 - #7 void
-INFO  00:36:08,163 - #45 prva
-INFO  00:36:08,163 - #39 (
-INFO  00:36:08,164 - #45 int
-INFO  00:36:08,164 - #45 a
-INFO  00:36:08,164 - #36 ,
-INFO  00:36:08,164 - #46 5
-INFO  00:36:08,164 - #36 ,
-INFO  00:36:08,164 - #45 char
-INFO  00:36:08,164 - #45 c
-INFO  00:36:08,164 - #40 )
-INFO  00:36:08,164 - #43 {
-INFO  00:36:08,164 - #44 }
-INFO  00:36:08,165 - #7 void
-INFO  00:36:08,165 - #45 druga
-INFO  00:36:08,165 - #39 (
-INFO  00:36:08,165 - #45 int
-INFO  00:36:08,165 - #45 a
-INFO  00:36:08,165 - #36 ,
-INFO  00:36:08,165 - #45 int
-INFO  00:36:08,165 - #46 7
-INFO  00:36:08,165 - #40 )
-INFO  00:36:08,165 - #43 {
-INFO  00:36:08,165 - #44 }
-INFO  00:36:08,165 - #7 void
-INFO  00:36:08,165 - #45 ispravna
-INFO  00:36:08,165 - #39 (
-INFO  00:36:08,165 - #45 int
-INFO  00:36:08,165 - #45 a
-INFO  00:36:08,165 - #36 ,
-INFO  00:36:08,165 - #45 char
-INFO  00:36:08,165 - #45 b
-INFO  00:36:08,165 - #40 )
-INFO  00:36:08,165 - #43 {
-INFO  00:36:08,165 - #44 }
-INFO  00:36:08,166 - #7 void
-INFO  00:36:08,166 - #45 main
-INFO  00:36:08,166 - #39 (
-INFO  00:36:08,166 - #40 )
-INFO  00:36:08,166 - #43 {
-INFO  00:36:08,166 - #44 }
-INFO  00:36:08,166 - #44 }
-INFO  00:36:08,166 - Program(
+INFO  11:04:18,712 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/22_err_formpar.mj
+INFO  11:04:18,720 - #2 program
+INFO  11:04:18,720 - #45 GreskaFormalniParametar
+INFO  11:04:18,720 - #43 {
+INFO  11:04:18,720 - #7 void
+INFO  11:04:18,720 - #45 prva
+INFO  11:04:18,720 - #39 (
+INFO  11:04:18,721 - #45 int
+INFO  11:04:18,721 - #45 a
+INFO  11:04:18,721 - #36 ,
+INFO  11:04:18,721 - #46 5
+INFO  11:04:18,721 - #36 ,
+INFO  11:04:18,721 - #45 char
+INFO  11:04:18,721 - #45 c
+INFO  11:04:18,721 - #40 )
+INFO  11:04:18,721 - #43 {
+INFO  11:04:18,721 - #44 }
+INFO  11:04:18,722 - #7 void
+INFO  11:04:18,722 - #45 druga
+INFO  11:04:18,722 - #39 (
+INFO  11:04:18,722 - #45 int
+INFO  11:04:18,722 - #45 a
+INFO  11:04:18,722 - #36 ,
+INFO  11:04:18,722 - #45 int
+INFO  11:04:18,722 - #46 7
+INFO  11:04:18,722 - #40 )
+INFO  11:04:18,722 - #43 {
+INFO  11:04:18,722 - #44 }
+INFO  11:04:18,722 - #7 void
+INFO  11:04:18,722 - #45 ispravna
+INFO  11:04:18,722 - #39 (
+INFO  11:04:18,722 - #45 int
+INFO  11:04:18,722 - #45 a
+INFO  11:04:18,722 - #36 ,
+INFO  11:04:18,722 - #45 char
+INFO  11:04:18,722 - #45 b
+INFO  11:04:18,722 - #40 )
+INFO  11:04:18,722 - #43 {
+INFO  11:04:18,722 - #44 }
+INFO  11:04:18,722 - #7 void
+INFO  11:04:18,722 - #45 main
+INFO  11:04:18,723 - #39 (
+INFO  11:04:18,723 - #40 )
+INFO  11:04:18,723 - #43 {
+INFO  11:04:18,723 - #44 }
+INFO  11:04:18,723 - #44 }
+INFO  11:04:18,723 - Program(
   ProgramName(
    GreskaFormalniParametar
   ) [ProgramName]
@@ -161,4 +161,4 @@ INFO  00:36:08,166 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  00:36:08,166 - =================================================
+INFO  11:04:18,723 - =================================================

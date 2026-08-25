@@ -1,15 +1,15 @@
-INFO  00:36:05,748 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/01_minimal.mj
-INFO  00:36:05,755 - #2 program
-INFO  00:36:05,755 - #45 Minimal
-INFO  00:36:05,755 - #43 {
-INFO  00:36:05,756 - #7 void
-INFO  00:36:05,756 - #45 main
-INFO  00:36:05,756 - #39 (
-INFO  00:36:05,756 - #40 )
-INFO  00:36:05,756 - #43 {
-INFO  00:36:05,756 - #44 }
-INFO  00:36:05,756 - #44 }
-INFO  00:36:05,757 - Program(
+INFO  11:04:16,290 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/01_minimal.mj
+INFO  11:04:16,298 - #2 program
+INFO  11:04:16,298 - #45 Minimal
+INFO  11:04:16,298 - #43 {
+INFO  11:04:16,299 - #7 void
+INFO  11:04:16,299 - #45 main
+INFO  11:04:16,299 - #39 (
+INFO  11:04:16,299 - #40 )
+INFO  11:04:16,299 - #43 {
+INFO  11:04:16,299 - #44 }
+INFO  11:04:16,299 - #44 }
+INFO  11:04:16,300 - Program(
   ProgramName(
    Minimal
   ) [ProgramName]
@@ -33,5 +33,5 @@ INFO  00:36:05,757 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  00:36:05,757 - =================================================
-INFO  00:36:05,757 - Parsiranje uspesno zavrseno!
+INFO  11:04:16,300 - =================================================
+INFO  11:04:16,300 - Parsiranje uspesno zavrseno!

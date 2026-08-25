@@ -2,6 +2,25 @@
 <project name="MJCompiler" basedir=".">
 	
 	
+	<!-- Provera koji JDK zapravo pokrece build. Postavka trazi jdk 1.8.
+	     Pokrenuti sa: ant jdkinfo -->
+	<target name="jdkinfo">
+		<echo>java.version = ${java.version}</echo>
+		<echo>java.home    = ${java.home}</echo>
+		<echo>java.vendor  = ${java.vendor}</echo>
+	</target>
+
+	<!-- Brise sve prevedene klase. Isto sto i Project -> Clean u Eclipse-u.
+	     Pokrenuti sa: ant clean   (pa zatim F5 na projektu u Eclipse-u) -->
+	<target name="clean">
+		<delete dir="bin"/>
+		<delete>
+			<fileset dir="src" includes="**/*.class"/>
+			<fileset dir="test" includes="**/*.class"/>
+			<fileset dir="config" includes="**/*.class"/>
+		</delete>
+	</target>
+
 	<target name="delete">
 		<delete>
 			<fileset dir="src/rs/ac/bg/etf/pp1">
@@ -37,10 +56,19 @@
 		<replace dir="src" value="rs.ac.bg.etf.pp1.ast" token="src.rs.ac.bg.etf.pp1.ast" summary="true" />
 	</target>
 	
-	<!-- source/target 1.8 su eksplicitni da bi prevedene klase radile na
-	     laboratorijskim masinama i onda kada se Ant slucajno pokrene na novijem JDK-u. -->
+	<!-- release="8" umesto source/target: pored sintakse i verzije bajtkoda,
+	     ogranicava i STANDARDNU BIBLIOTEKU na ono sto je postojalo u Javi 8.
+	     Time upotreba API-ja novijeg od 8 puca ovde, a ne tek na laboratorijskoj masini.
+	     Eclipse-ov Ant zahteva Javu 11+ pa se ne moze pokrenuti na samom JDK 8;
+	     ovo je nacin da se i pored toga prevodi ispravno za 8.
+	     Napomena: release i source/target se medjusobno iskljucuju. -->
 	<target name="compile" depends="repackage">
-		<javac includeantruntime="false" source="1.8" target="1.8">
+		<echo>Prevodim sa Java ${java.version} (${java.home})</echo>
+		<mkdir dir="bin"/>
+		<!-- destdir je obavezan: bez njega javac pise .class fajlove pored .java,
+		     dakle unutar Eclipse source foldera, odakle ih Eclipse kopira u bin/
+		     kao resurse. Tako stare klase prezive i "Clean" i mesaju se sa novim. -->
+		<javac includeantruntime="false" release="8" destdir="bin">
 			<!-- generisani lekser, parser i AST -->
 			<src path="src/rs/ac/bg/etf/pp1"/>
 			<!-- rucno pisane klase: Compiler i TestRunner -->
@@ -58,8 +86,9 @@
 	<target name="test" depends="compile">
 		<java classname="rs.ac.bg.etf.pp1.TestRunner" fork="true" failonerror="true">
 			<classpath>
-				<pathelement path="src"/>
-				<pathelement path="test"/>
+				<!-- prevedene klase (destdir compile targeta) -->
+				<pathelement path="bin"/>
+				<!-- log4j.xml koji Compiler trazi preko classloader-a -->
 				<pathelement path="config"/>
 				<pathelement path="lib/cup_v10k.jar"/>
 				<pathelement path="lib/log4j-1.2.17.jar"/>
