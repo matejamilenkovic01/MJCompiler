@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<!-- Bez module atributa: moduli postoje tek od Jave 9, a projekat je na 1.8.
-	     Prazan JRE_CONTAINER znaci "podrazumevani JRE radnog prostora" (zulu-8),
-	     sto je i prenosivije od tvrdog vezivanja za konkretnu instalaciju. -->
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<!-- Test podaci ostaju u test/ folderu; nema potrebe da ih Eclipse kopira u bin/.
-	     Kopije su samo zastarele duplikate - TestRunner cita iskljucivo test/. -->
 	<classpathentry excluding="**/*.mj|**/*.out|**/*.err|**/*.obj" kind="src" path="test"/>
 	<classpathentry kind="src" path="config"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="lib/JFlex.jar"/>
 	<classpathentry kind="lib" path="lib/cup_v10k.jar"/>
+	<classpathentry kind="lib" path="lib/symboltable-1-1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
