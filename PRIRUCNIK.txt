@@ -1,0 +1,343 @@
+================================================================================
+ MJCompiler - PRIRUCNIK
+ Kompajler za MikroJavu, PP1, ETF. Ciljani nivo: B (30 poena).
+ Pokriva faze 1 (leksicka) i 2 (sintaksna). Faze 3 i 4 se dopisuju kasnije.
+================================================================================
+
+
+--------------------------------------------------------------------------------
+ 1. STA PISES RUKOM, A STA SE GENERISE
+--------------------------------------------------------------------------------
+
+PISES RUKOM (samo ova cetiri mesta):
+
+  src/spec/mjlexer.flex          regularni izrazi -> tokeni
+  src/spec/mjparser.cup          gramatika jezika
+  test/rs/.../Compiler.java      glavni program, pokrece ceo lanac
+  test/rs/.../TestRunner.java    pokretac testova
+  test/*.mj                      test programi
+
+GENERISE SE (nikad ne diraj rucno, brise se pri svakom buildu):
+
+  mjlexer.flex   --[ JFlex.jar ]-->   Yylex.java
+                                       lekser; metoda next_token() vraca
+                                       po jedan token na zahtev
+
+  mjparser.cup   --[ cup_v10k.jar ]-->  MJParser.java    parser + tabele
+                                        sym.java         brojevi tokena
+                                        ast/*.java       ~139 klasa, po jedna
+                                                         za svaku produkciju
+                                        ast/Visitor.java
+                                        ast/VisitorAdaptor.java
+                                        mjparser_astbuild.cup   (obicna CUP
+                                                         specifikacija koju je
+                                                         AST-CUP izveo)
+
+VAZNO: sve u src/rs/ac/bg/etf/pp1/ osim util/Log4JUtils.java se BRISE na
+pocetku svakog builda. Zato Compiler.java i TestRunner.java zive u test/
+folderu - da ih build ne obrise.
+
+
+--------------------------------------------------------------------------------
+ 2. REDOSLED BUILD-A
+--------------------------------------------------------------------------------
+
+  ant clean       brise bin/ i sve .class          (dodato rucno)
+  ant jdkinfo     ispise na kom JDK-u Ant radi     (dodato rucno)
+  ant test        pokrene sve ispod + testove
+
+Lanac koji se izvrsi pri "ant test":
+
+  delete     -> obrise generisani kod iz src/rs/ac/bg/etf/pp1/
+  lexerGen   -> JFlex procita .flex, napravi Yylex.java
+  parserGen  -> cup_v10k procita .cup, napravi parser + AST klase
+  repackage  -> zameni "src.rs.ac.bg.etf.pp1.ast" -> "rs.ac.bg.etf.pp1.ast"
+                (posledica nacina na koji AST-CUP prima -ast argument)
+  compile    -> javac sve u bin/
+  test       -> pokrene TestRunner
+
+Ako se pojave cudne greske o klasama kojih nema ili koje se ne slazu:
+prvo probaj "ant clean". Build je generacijski, stare klase su cest uzrok.
+
+
+--------------------------------------------------------------------------------
+ 3. LEKSER (faza 1)
+--------------------------------------------------------------------------------
+
+Posao: pretvori tekst u niz tokena.
+
+  "program"        -> token PROG
+  [0-9]+           -> token NUMBER, vrednost = broj
+  ident            -> token IDENT,  vrednost = string
+  //...            -> preskace se (komentar)
+  razmak/tab/nl    -> preskace se
+
+Svaki token nosi i poziciju: new Symbol(tip, yyline+1, yycolumn, vrednost).
+Ta pozicija kasnije zavrsi kao broj linije na AST cvoru.
+
+LEKSICKA GRESKA:
+  Poslednje pravilo "." hvata sve neprepoznato. Ispise poruku (tekst, linija,
+  kolona) i NASTAVI - tako trazi postavka. Znak se tiho izbaci.
+
+  Posledice koje treba znati:
+   - lekser NE dize nikakvu zastavicu; p.errorDetected ostaje false
+   - zato prevodilac trenutno kaze "uspesno" i za program sa leksickom greskom
+   - neprepoznat znak nestaje, pa "int x@;" postane "int x;" i prodje ciste
+
+  (Otvoreno pitanje: da li leksicka greska treba da obori prevodjenje.
+   Postavka to izricito ne trazi. Kandidat za diskusionu listu.)
+
+
+--------------------------------------------------------------------------------
+ 4. PARSER (faza 2) - kako stvarno radi
+--------------------------------------------------------------------------------
+
+LEKSER I PARSER SE PREPLICU.
+Ne postoji "prvo se zavrsi leksiranje pa krene parsiranje". Parser vuce token
+po token, pozivom next_token(). Ako parser stane, lekser nikad ne procita
+ostatak fajla.
+
+LALR(1), ODOZDO NAVISE.
+Parser ne "ulazi dublje" u neterminale. On gura tokene na stek i, kad vrh
+steka odgovara desnoj strani neke produkcije, redukuje.
+
+TABELA.
+Pri buildu CUP izracuna automat i upise ga u MJParser.java kao spakovane
+nizove brojeva (_action_table, _reduce_table, _production_table).
+Za vreme izvrsavanja se nista ne racuna - samo se gleda u tabelu.
+Gramatika u vreme izvrsavanja vise ne postoji, ostali su samo brojevi.
+
+  akcija = _action_table[stanje][token]
+
+Cetiri mogucnosti:
+
+  shift    gurni token na stek, procitaj sledeci
+  reduce   skini desnu stranu, NAPRAVI AST CVOR, gurni levu stranu
+  accept   sve je redukovano do Program, lookahead je EOF -> gotovo
+  prazno   nema akcije -> SINTAKSNA GRESKA
+
+ODLUCUJE PAR (stanje, sledeci token), ne stanje samo.
+  stanje "Type ::= IDENT ."  + lookahead IDENT  -> reduce
+  stanje "Type ::= IDENT ."  + lookahead "="    -> prazno -> greska
+
+REDUCE NE TROSI TOKEN.
+Nad istim lookahead-om moze da se desi vise redukcija zaredom, pa tek onda
+shift. Tacnije: procitaj token -> izvrsavaj akcije dok neka ne bude shift ->
+procitaj sledeci.
+
+ZASTO JE KONFLIKT FATALAN ZA BUILD:
+Celija tabele drzi jednu vrednost. Shift/reduce konflikt znaci da bi u istu
+celiju trebalo upisati i shift i reduce. CUP tada odbija da generise tabelu.
+Direktiva "precedence left ELSE" ne menja gramatiku - samo kaze CUP-u koju od
+dve akcije da upise kod dangling-else. Zato je jedina dozvoljena.
+
+
+--------------------------------------------------------------------------------
+ 5. KAKO NASTAJE SINTAKSNO STABLO
+--------------------------------------------------------------------------------
+
+CVOR NASTAJE ISKLJUCIVO NA REDUCE. Shift nikad ne pravi cvor.
+Broj cvorova = broj redukcija.
+
+Svaki simbol na steku nosi vrednost:
+  - terminal    -> vrednost iz leksera ("Macko", 3, 'x')
+  - neterminal  -> AST cvor napravljen ranijom redukcijom
+
+Generisana akcija samo sastavi cvor od onoga sto je vec na steku:
+
+  RESULT = new DeclList_const(D1, C2);      D1 i C2 su gotova podstabla
+  RESULT = new Program(P1, D2, M3);         koren, nastaje POSLEDNJI
+
+LANAC OD LEKSERA DO POLJA U KLASI:
+
+  mjlexer.flex    new_symbol(sym.IDENT, yytext())
+                        value = "Macko", left = 3
+        v
+  mjparser.cup    ProgramName ::= (ProgramName) IDENT:progName
+        v
+  MJParser.java   RESULT = new ProgramName(progName);
+                  RESULT.setLine(progNameleft);
+        v
+  ast/ProgramName.java    class ProgramName { String progName; }
+        v
+  faza 3          programName.getProgName()  ->  "Macko"
+
+Iz ovoga slede dva pravila koja su vazila pri pisanju gramatike:
+  - svaka produkcija mora imati JEDINSTVENO ime -> od njega nastaje ime klase
+  - labele se stavljaju na TERMINALE (IDENT:name) -> postaju polja klase
+    koja faza 3 cita. Na neterminalima su nepotrebne.
+
+Na kraju parse() vrati Symbol cija je value koren (Program).
+Ako je parsiranje prekinuto, korena nema - zato Compiler proverava
+"instanceof Program" pre kasta.
+
+
+--------------------------------------------------------------------------------
+ 6. OPORAVAK OD GRESAKA
+--------------------------------------------------------------------------------
+
+TOK:
+
+  1. prazna celija u tabeli                  -> greska detektovana
+  2. syntax_error()                          -> "Sintaksna greska na liniji N"
+  3. SKIDA stanja sa steka dok ne nadje ono koje ima SHIFT akciju nad
+     terminalom "error"        <- ako takvog nema -> FATALNA
+  4. gurne "error" na stek
+  5. ODBACUJE ulazne tokene dok ne naidje na onaj kojim sme da nastavi
+     (CUP pritom probno parsira nekoliko tokena unapred)
+  6. redukuje error produkciju -> nastaje cvor -> izvrsi se tvoja akcija
+     -> "Oporavak od greske ... izvrsen do linije M"
+
+Zato svaka oporavljena greska daje DVE linije na stderr.
+
+"error" je TERMINAL. Shift-uje se kao token, ne redukuje se.
+
+CETIRI MESTA GDE JE OPORAVAK MOGUC (nivoi A i B, kako trazi postavka):
+
+  VarItem      ::= error          guta do "," ili ";"
+  FormParDecl  ::= error          guta do "," ili ")"
+  Statement    ::= error SEMI     guta do ";"
+  IfCondition  ::= error          guta do ")"
+
+Oporavak postoji SAMO tu. Gde nisi stavio "error", greska je fatalna.
+
+DVA NACINA DA BUDE FATALNA:
+  (a) skinuo ceo stek, nijedno stanje ne prihvata "error"
+  (b) nasao takvo stanje, ali do kraja fajla nema tokena kojim se nastavlja
+
+Primer za (a): greska u zaglavlju "program X" - tamo nema error produkcije.
+Primer za (a): "a = 1;" izmedju globalnih deklaracija. Parser protumaci "a"
+kao ime tipa (VarDecl ::= Type ...), pa pukne na "=" dok je IDENT jos
+neredukovan - stanje sa "VarItem ::= . error" nikad ne dospe na stek.
+
+POSLEDICA KORAKA 3: skidanje steka baca vec izgradjena podstabla. Posle
+oporavka stablo ima vecu rupu nego sama greska. To je normalno - oporavak
+sluzi da se parsiranje nastavi i prijave sledece greske, ne da pogodi nameru.
+
+
+--------------------------------------------------------------------------------
+ 7. TESTOVI
+--------------------------------------------------------------------------------
+
+TestRunner (jedan JVM)
+   za svaki test/*.mj:
+     - procita "// EXPECT:" zaglavlje iz samog .mj fajla
+     - pokrene NOV proces: java -cp <isti> Compiler <fajl.mj> <fajl.obj>
+           stdout -> fajl.out        stderr -> fajl.err
+     - uzme izlazni kod
+     - prebroji u .err:  "Leksicka greska" / "Sintaksna greska" /
+                         "Oporavak od greske"
+     - uporedi sa ocekivanjem
+
+Zaseban proces po testu: pravo razdvojen stdout/stderr (isto kao
+">izlaz.out 2>izlaz.err" iz postavke) i nema curenja log4j stanja izmedju
+testova.
+
+FORMAT OCEKIVANJA (pise se kao komentar u .mj fajlu):
+
+  // EXPECT: OK                        bez ijedne greske, izlazni kod 0
+  // EXPECT: SYNTAX>=2 RECOVERY>=2     minimalni brojevi
+  // EXPECT: LEXICAL>=3
+  // EXPECT-ERR: deo poruke koji se mora pojaviti na stderr
+
+Za neispravne programe glavna tvrdnja je da izlazni kod NIJE 2 - to znaci da
+je oporavak uspeo i da se stiglo do kraja fajla.
+
+IZLAZNI KODOVI Compiler-a:
+  0  cisto
+  1  greske prijavljene, ali oporavljeno
+  2  parsiranje prekinuto
+  3  los poziv / fajl ne postoji
+
+SKUP TESTOVA:
+  01-14   ispravni programi, pokrivaju sve produkcije nivoa A i B
+  20-25   neispravni: 4 mesta oporavka + kombinacija svih + leksicke greske
+  30-33   zvanicni testovi sa sajta (301, 302, 302-original, 303 prilagodjen)
+  program.mj   radna datoteka, Compiler je koristi kad nema argumenata
+
+Napomena: test302 sa sajta ima omasku "niz2[1 = 1;" (fali "]"). Verzija 31
+je ispravljena, verzija 33 je original - da se vidi da nas parser na njemu
+uredno prijavi gresku i oporavi se.
+
+
+--------------------------------------------------------------------------------
+ 8. PRAVILA KOJA GUBE POENE AKO SE PREKRSE
+--------------------------------------------------------------------------------
+
+  - u .cup NIJE dozvoljena nijedna precedence direktiva osim
+    "precedence left ELSE;"
+  - u .cup NISU dozvoljene akcije {: :} osim za prijavu i oporavak od gresaka
+  - u klasu parsera se ne smeju dodavati polja/metode koji uticu na
+    semantiku ili generisanje koda (za prijavu gresaka je dozvoljeno)
+  - svaka produkcija mora imati jedinstveno ime
+  - gramatika mora biti LALR(1)
+  - tabela simbola (jar) se ne sme raspakivati ni menjati - samo izvodjenje klasa
+  - GRESKE IDU NA stderr, sve ostalo na stdout
+
+
+--------------------------------------------------------------------------------
+ 9. ODLUKE U GRAMATICI I ZASTO (da se ne zaboravi)
+--------------------------------------------------------------------------------
+
+AddExpr kao sopstveni neterminal
+  Bez njega vazi Expr => CondFact => Expr, ciklus jedinicnih smena, sto
+  gramatiku cini beskonacno dvosmislenom.
+
+CondFact uzima AddExpr, ne Expr
+  Inace je "a ? b : c ? d : e" dvosmisleno. Izrazajnost se ne gubi:
+  ternarni izraz u uslovu se pise sa zagradama, if ((a ? b : c) == 1).
+
+Assignop nije neterminal, "=" je ugradjen direktno
+  Kao neterminal pravi shift/reduce konflikt sa findAny/map smenama
+  (u stanju posle "=" bi istovremeno trebalo reduce Assignop i shift Designator).
+
+IfCondition kao sopstveni neterminal
+  Dva razloga: AST-CUP dodaje svoju labelu poslednjem NETERMINALU u smeni, pa
+  {: :} blok iza neterminala daje kod koji se ne kompajlira. I nema potrebe za
+  duplim if smenama (sa i bez else).
+
+MethodTypeName odvojen od MethodDecl
+  Da faza 3 moze da otvori opseg metode PRE obrade formalnih parametara.
+
+Nivo C je izostavljen
+  Nema klasa, nasledjivanja, this, niza objekata. Designator zato ima samo
+  ".length", a Factor samo "new Type[Expr]".
+
+
+--------------------------------------------------------------------------------
+ 10. OKRUZENJE - zamka sa JDK 8
+--------------------------------------------------------------------------------
+
+Postoje DVA nezavisna prevodioca i oba moraju biti na 1.8:
+
+  Ant-ov javac        podeseno u build.xml preko  release="8"
+  Eclipse JDT builder podeseno u .settings/org.eclipse.jdt.core.prefs
+
+Ako se drugi zaboravi, Eclipse prevodi po pravilima Jave 21 uz biblioteku
+Jave 8 i javi:
+  "Cannot find the class file for java.lang.invoke.StringConcatFactory"
+
+ECLIPSE-OV ANT NE MOZE DA SE POKRENE NA JAVI 8 (trazi 11+).
+Zato Ant proces ostaje na JustJ 21 i to je u redu - "ant compile" ce uvek
+ispisati 21. Ne pokusavaj to da "popravis".
+
+Ispravnost se dokazuje ODSUSTVOM upozorenja:
+  "bootstrap class path not set"   <- ovo NE SME da se pojavi
+  "source/target value 8 is obsolete"  <- ovo je normalno za --release 8
+
+Zasto je release="8" bolje od source/target: ogranicava i STANDARDNU
+BIBLIOTEKU na Javu 8. Sa source/target bi "abc".isBlank() (Java 11) prosao
+kod kuce, a pukao na laboratorijskoj masini.
+
+
+--------------------------------------------------------------------------------
+ 11. STA JOS NIJE URADJENO
+--------------------------------------------------------------------------------
+
+  [ ] git add lib/          jar-ovi alata moraju biti predati uz resenje
+  [ ] MJProjekat.docx       u korenu: opis zadatka, komande, testovi, nove klase
+  [ ] ekstenzija .MJ        postavka pise velikim slovima, kod nas je .mj
+  [ ] odluka o leksickoj gresci   da li obara prevodjenje (vidi sekciju 3)
+  [ ] razmisliti: da li SemAnalyzer sme da se pokrene kad je errorDetected
+
+================================================================================

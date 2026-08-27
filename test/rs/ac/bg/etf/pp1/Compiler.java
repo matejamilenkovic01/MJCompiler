@@ -70,12 +70,19 @@ public class Compiler {
 			MJParser p = new MJParser(lexer);
 			Symbol s = p.parse(); // formiranje AST
 
-			Program prog = (Program) (s.value);
+			// Ako oporavak od greske ne uspe, parse() se prekida pre kraja fajla i na vrhu
+			// steka ostaje bilo koji cvor (npr. DeclList_const) - dakle s.value tada NIJE
+			// Program. Bez ove provere kast baca ClassCastException, ciji stack trace
+			// zamagljuje pravu, vec prijavljenu sintaksnu gresku.
+			if (s == null || !(s.value instanceof Program)) {
+				log.error("Parsiranje prekinuto pre kraja fajla - sintaksno stablo nije formirano.");
+				System.exit(EXIT_FATAL);
+			}
+
+			Program prog = (Program) s.value;
 
 			// ispis AST
-			if (prog != null) {
-				log.info(prog.toString(""));
-			}
+			log.info(prog.toString(""));
 			log.info("=================================================");
 			
 			/* Inicijalizacija tabele simbola */
@@ -86,12 +93,14 @@ public class Compiler {
 			boolObj.setLevel(-1);
 			
 			/* Semanticka analiza */
+			SemAnalyzer sa = new SemAnalyzer();
+			prog.traverseBottomUp(sa);
 			
 			/* Ispis tabele simbola */
 			log.info("=================================================");
 			Tab.dump();
 
-			if (!p.errorDetected) {
+			if (!p.errorDetected && sa.passed()) {
 				log.info("Parsiranje uspesno zavrseno!");
 				System.exit(EXIT_OK);
 			}

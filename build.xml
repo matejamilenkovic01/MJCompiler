@@ -24,8 +24,8 @@
 	<target name="delete">
 		<delete>
 			<fileset dir="src/rs/ac/bg/etf/pp1">
-				<exclude name="util/Log4JUtils.java"/>
-				<exclude/>
+				<exclude name="util/Log4JUtils.java"/><exclude/>
+				<exclude name="SemAnalyzer.java"/><exclude/>
 			</fileset>
 		</delete>
 	</target>
