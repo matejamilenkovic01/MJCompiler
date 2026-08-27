@@ -1,40 +1,40 @@
-INFO  11:04:18,568 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/21_err_assignment.mj
-INFO  11:04:18,576 - #2 program
-INFO  11:04:18,576 - #45 GreskaDodela
-INFO  11:04:18,576 - #45 int
-INFO  11:04:18,576 - #45 a
-INFO  11:04:18,577 - #36 ,
-INFO  11:04:18,577 - #45 b
-INFO  11:04:18,577 - #34 ;
-INFO  11:04:18,577 - #43 {
-INFO  11:04:18,577 - #7 void
-INFO  11:04:18,577 - #45 main
-INFO  11:04:18,577 - #39 (
-INFO  11:04:18,577 - #40 )
-INFO  11:04:18,577 - #43 {
-INFO  11:04:18,577 - #45 a
-INFO  11:04:18,578 - #31 =
-INFO  11:04:18,578 - #46 1
-INFO  11:04:18,578 - #34 ;
-INFO  11:04:18,578 - #45 a
-INFO  11:04:18,578 - #31 =
-INFO  11:04:18,578 - #19 *
-INFO  11:04:18,578 - #46 3
-INFO  11:04:18,578 - #34 ;
-INFO  11:04:18,578 - #45 b
-INFO  11:04:18,579 - #31 =
-INFO  11:04:18,579 - #46 2
-INFO  11:04:18,579 - #34 ;
-INFO  11:04:18,579 - #45 a
-INFO  11:04:18,579 - #31 =
-INFO  11:04:18,579 - #34 ;
-INFO  11:04:18,579 - #45 b
-INFO  11:04:18,579 - #31 =
-INFO  11:04:18,579 - #46 3
-INFO  11:04:18,579 - #34 ;
-INFO  11:04:18,579 - #44 }
-INFO  11:04:18,580 - #44 }
-INFO  11:04:18,580 - Program(
+INFO  16:01:03,867 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/21_err_assignment.mj
+INFO  16:01:03,875 - #2 program
+INFO  16:01:03,875 - #45 GreskaDodela
+INFO  16:01:03,875 - #45 int
+INFO  16:01:03,875 - #45 a
+INFO  16:01:03,876 - #36 ,
+INFO  16:01:03,876 - #45 b
+INFO  16:01:03,876 - #34 ;
+INFO  16:01:03,876 - #43 {
+INFO  16:01:03,876 - #7 void
+INFO  16:01:03,876 - #45 main
+INFO  16:01:03,876 - #39 (
+INFO  16:01:03,876 - #40 )
+INFO  16:01:03,876 - #43 {
+INFO  16:01:03,876 - #45 a
+INFO  16:01:03,877 - #31 =
+INFO  16:01:03,877 - #46 1
+INFO  16:01:03,877 - #34 ;
+INFO  16:01:03,877 - #45 a
+INFO  16:01:03,877 - #31 =
+INFO  16:01:03,877 - #19 *
+INFO  16:01:03,877 - #46 3
+INFO  16:01:03,877 - #34 ;
+INFO  16:01:03,877 - #45 b
+INFO  16:01:03,877 - #31 =
+INFO  16:01:03,877 - #46 2
+INFO  16:01:03,877 - #34 ;
+INFO  16:01:03,878 - #45 a
+INFO  16:01:03,878 - #31 =
+INFO  16:01:03,878 - #34 ;
+INFO  16:01:03,878 - #45 b
+INFO  16:01:03,878 - #31 =
+INFO  16:01:03,878 - #46 3
+INFO  16:01:03,878 - #34 ;
+INFO  16:01:03,878 - #44 }
+INFO  16:01:03,878 - #44 }
+INFO  16:01:03,878 - Program(
   ProgramName(
    GreskaDodela
   ) [ProgramName]
@@ -137,4 +137,27 @@ INFO  11:04:18,580 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  11:04:18,580 - =================================================
+INFO  16:01:03,878 - =================================================
+INFO  16:01:03,880 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog GreskaDodela: notype, 0, 1 
+   Var a: int, 0, 0 
+   Var b: int, 1, 0 
+   Meth main: notype, 0, 0 
+
+
+

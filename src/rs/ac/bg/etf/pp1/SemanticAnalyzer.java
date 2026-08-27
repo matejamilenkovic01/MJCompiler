@@ -7,7 +7,7 @@ import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
-public class SemAnalyzer extends VisitorAdaptor {
+public class SemanticAnalyzer extends VisitorAdaptor {
 
 	
 	private boolean errorDetected = false;
@@ -18,7 +18,9 @@ public class SemAnalyzer extends VisitorAdaptor {
 	private Struct currentType;
 	private int constant;
 	private Struct constantType;
-	private Struct boolType = Tab.find("bool").getType();
+	/* Tip "bool" nije predefinisan u Tab-u iz jara - dolazi iz MyTab-a (staticko finalno
+	   polje, pa ne zavisi od toga da li je MyTab.init() vec pozvan). */
+	private Struct boolType = MyTab.boolType;
 
 	private Struct currentMethodType;
 
@@ -152,11 +154,17 @@ public class SemAnalyzer extends VisitorAdaptor {
 		Obj methodObj = Tab.find(methodTypeName.getMethName());
 		if (methodObj != Tab.noObj) {
 			report_error("Dvostruka definicija metode: " + methodTypeName.getMethName(), methodTypeName);
+			/* Cvor se ne ubacuje u tabelu, ali se pravi odvojen Obj da currentMethod ne bi
+			   ostao null (formalni parametri ga koriste) i da se lokali druge definicije ne
+			   bi zakacili na prvu. */
+			currentMethod = new Obj(Obj.Meth, methodTypeName.getMethName(), currentType);
 		}
 		else {
 			currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethName(), currentType);
-			Tab.openScope();
 		}
+		/* Opseg se otvara i u slucaju greske: visit(MethodDecl) ga bezuslovno zatvara, pa bi
+		   preskakanje openScope() zatvorilo opseg programa. */
+		Tab.openScope();
 	}
 	
 	@Override
@@ -168,9 +176,10 @@ public class SemAnalyzer extends VisitorAdaptor {
 	public void visit(MethodDecl methodDecl) {
 		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
-		if (currentMethod.getName().equalsIgnoreCase("main")) {
+		if ("main".equals(currentMethod.getName())) {
 			mainHappened  = true;
 		}
+		currentMethod = null;
 	}
 	
 	/* FORM PARAMS DECLARATION */

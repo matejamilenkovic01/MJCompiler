@@ -1,64 +1,64 @@
-INFO  11:04:16,585 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/03_var_decl.mj
-INFO  11:04:16,597 - #2 program
-INFO  11:04:16,597 - #45 Promenljive
-INFO  11:04:16,597 - #45 int
-INFO  11:04:16,597 - #45 i
-INFO  11:04:16,598 - #34 ;
-INFO  11:04:16,598 - #45 int
-INFO  11:04:16,598 - #45 x
-INFO  11:04:16,598 - #36 ,
-INFO  11:04:16,598 - #45 y
-INFO  11:04:16,598 - #36 ,
-INFO  11:04:16,598 - #45 z
-INFO  11:04:16,598 - #34 ;
-INFO  11:04:16,598 - #45 int
-INFO  11:04:16,598 - #45 niz
-INFO  11:04:16,598 - #41 [
-INFO  11:04:16,598 - #42 ]
-INFO  11:04:16,598 - #34 ;
-INFO  11:04:16,598 - #45 int
-INFO  11:04:16,598 - #45 a
-INFO  11:04:16,598 - #36 ,
-INFO  11:04:16,598 - #45 drugiNiz
-INFO  11:04:16,598 - #41 [
-INFO  11:04:16,598 - #42 ]
-INFO  11:04:16,598 - #36 ,
-INFO  11:04:16,598 - #45 b
-INFO  11:04:16,599 - #34 ;
-INFO  11:04:16,599 - #45 char
-INFO  11:04:16,599 - #45 c
-INFO  11:04:16,599 - #34 ;
-INFO  11:04:16,599 - #45 char
-INFO  11:04:16,599 - #45 slova
-INFO  11:04:16,599 - #41 [
-INFO  11:04:16,599 - #42 ]
-INFO  11:04:16,599 - #34 ;
-INFO  11:04:16,599 - #45 bool
-INFO  11:04:16,599 - #45 zastavica
-INFO  11:04:16,599 - #34 ;
-INFO  11:04:16,599 - #45 bool
-INFO  11:04:16,599 - #45 zastavice
-INFO  11:04:16,599 - #41 [
-INFO  11:04:16,599 - #42 ]
-INFO  11:04:16,599 - #34 ;
-INFO  11:04:16,599 - #3 const
-INFO  11:04:16,599 - #45 int
-INFO  11:04:16,599 - #45 velicina
-INFO  11:04:16,599 - #31 =
-INFO  11:04:16,599 - #46 5
-INFO  11:04:16,599 - #34 ;
-INFO  11:04:16,599 - #45 int
-INFO  11:04:16,600 - #45 posleKonstante
-INFO  11:04:16,600 - #34 ;
-INFO  11:04:16,600 - #43 {
-INFO  11:04:16,600 - #7 void
-INFO  11:04:16,600 - #45 main
-INFO  11:04:16,600 - #39 (
-INFO  11:04:16,600 - #40 )
-INFO  11:04:16,600 - #43 {
-INFO  11:04:16,600 - #44 }
-INFO  11:04:16,600 - #44 }
-INFO  11:04:16,601 - Program(
+INFO  16:01:01,778 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/03_var_decl.mj
+INFO  16:01:01,787 - #2 program
+INFO  16:01:01,787 - #45 Promenljive
+INFO  16:01:01,787 - #45 int
+INFO  16:01:01,787 - #45 i
+INFO  16:01:01,787 - #34 ;
+INFO  16:01:01,787 - #45 int
+INFO  16:01:01,788 - #45 x
+INFO  16:01:01,788 - #36 ,
+INFO  16:01:01,788 - #45 y
+INFO  16:01:01,788 - #36 ,
+INFO  16:01:01,788 - #45 z
+INFO  16:01:01,788 - #34 ;
+INFO  16:01:01,788 - #45 int
+INFO  16:01:01,788 - #45 niz
+INFO  16:01:01,788 - #41 [
+INFO  16:01:01,788 - #42 ]
+INFO  16:01:01,788 - #34 ;
+INFO  16:01:01,788 - #45 int
+INFO  16:01:01,788 - #45 a
+INFO  16:01:01,788 - #36 ,
+INFO  16:01:01,788 - #45 drugiNiz
+INFO  16:01:01,788 - #41 [
+INFO  16:01:01,788 - #42 ]
+INFO  16:01:01,788 - #36 ,
+INFO  16:01:01,788 - #45 b
+INFO  16:01:01,788 - #34 ;
+INFO  16:01:01,788 - #45 char
+INFO  16:01:01,788 - #45 c
+INFO  16:01:01,788 - #34 ;
+INFO  16:01:01,788 - #45 char
+INFO  16:01:01,788 - #45 slova
+INFO  16:01:01,788 - #41 [
+INFO  16:01:01,788 - #42 ]
+INFO  16:01:01,788 - #34 ;
+INFO  16:01:01,788 - #45 bool
+INFO  16:01:01,789 - #45 zastavica
+INFO  16:01:01,789 - #34 ;
+INFO  16:01:01,789 - #45 bool
+INFO  16:01:01,789 - #45 zastavice
+INFO  16:01:01,789 - #41 [
+INFO  16:01:01,789 - #42 ]
+INFO  16:01:01,789 - #34 ;
+INFO  16:01:01,789 - #3 const
+INFO  16:01:01,789 - #45 int
+INFO  16:01:01,789 - #45 velicina
+INFO  16:01:01,789 - #31 =
+INFO  16:01:01,789 - #46 5
+INFO  16:01:01,789 - #34 ;
+INFO  16:01:01,789 - #45 int
+INFO  16:01:01,789 - #45 posleKonstante
+INFO  16:01:01,789 - #34 ;
+INFO  16:01:01,789 - #43 {
+INFO  16:01:01,789 - #7 void
+INFO  16:01:01,790 - #45 main
+INFO  16:01:01,790 - #39 (
+INFO  16:01:01,790 - #40 )
+INFO  16:01:01,790 - #43 {
+INFO  16:01:01,790 - #44 }
+INFO  16:01:01,790 - #44 }
+INFO  16:01:01,791 - Program(
   ProgramName(
    Promenljive
   ) [ProgramName]
@@ -225,5 +225,40 @@ INFO  11:04:16,601 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  11:04:16,601 - =================================================
-INFO  11:04:16,601 - Parsiranje uspesno zavrseno!
+INFO  16:01:01,791 - =================================================
+INFO  16:01:01,793 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog Promenljive: notype, 0, 1 
+   Var i: int, 0, 0 
+   Var x: int, 1, 0 
+   Var y: int, 2, 0 
+   Var z: int, 3, 0 
+   Var niz: Arr of int, 4, 0 
+   Var a: int, 5, 0 
+   Var drugiNiz: Arr of int, 6, 0 
+   Var b: int, 7, 0 
+   Var c: char, 8, 0 
+   Var slova: Arr of char, 9, 0 
+   Var zastavica: bool, 10, 0 
+   Var zastavice: Arr of bool, 11, 0 
+   Con velicina: int, 5, 0 
+   Var posleKonstante: int, 12, 0 
+   Meth main: notype, 0, 0 
+
+
+
+INFO  16:01:01,793 - Parsiranje uspesno zavrseno!

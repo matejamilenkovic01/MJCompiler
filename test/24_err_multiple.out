@@ -1,57 +1,57 @@
-INFO  11:04:18,993 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/24_err_multiple.mj
-INFO  11:04:19,002 - #2 program
-INFO  11:04:19,002 - #45 ViseGresaka
-INFO  11:04:19,002 - #45 int
-INFO  11:04:19,002 - #45 a
-INFO  11:04:19,003 - #36 ,
-INFO  11:04:19,003 - #46 5
-INFO  11:04:19,003 - #36 ,
-INFO  11:04:19,003 - #45 b
-INFO  11:04:19,003 - #34 ;
-INFO  11:04:19,003 - #45 int
-INFO  11:04:19,003 - #45 c
-INFO  11:04:19,003 - #34 ;
-INFO  11:04:19,003 - #43 {
-INFO  11:04:19,003 - #7 void
-INFO  11:04:19,004 - #45 metoda
-INFO  11:04:19,004 - #39 (
-INFO  11:04:19,004 - #45 int
-INFO  11:04:19,004 - #45 x
-INFO  11:04:19,004 - #36 ,
-INFO  11:04:19,004 - #46 9
-INFO  11:04:19,004 - #40 )
-INFO  11:04:19,004 - #43 {
-INFO  11:04:19,004 - #44 }
-INFO  11:04:19,004 - #7 void
-INFO  11:04:19,004 - #45 main
-INFO  11:04:19,004 - #39 (
-INFO  11:04:19,005 - #40 )
-INFO  11:04:19,005 - #43 {
-INFO  11:04:19,005 - #45 a
-INFO  11:04:19,005 - #31 =
-INFO  11:04:19,005 - #46 1
-INFO  11:04:19,005 - #34 ;
-INFO  11:04:19,005 - #9 if
-INFO  11:04:19,005 - #39 (
-INFO  11:04:19,005 - #45 a
-INFO  11:04:19,005 - #26 <
-INFO  11:04:19,005 - #40 )
-INFO  11:04:19,005 - #45 a
-INFO  11:04:19,005 - #31 =
-INFO  11:04:19,005 - #46 0
-INFO  11:04:19,005 - #34 ;
-INFO  11:04:19,006 - #45 c
-INFO  11:04:19,006 - #31 =
-INFO  11:04:19,006 - #20 /
-INFO  11:04:19,006 - #46 2
-INFO  11:04:19,006 - #34 ;
-INFO  11:04:19,006 - #45 b
-INFO  11:04:19,006 - #31 =
-INFO  11:04:19,006 - #46 3
-INFO  11:04:19,006 - #34 ;
-INFO  11:04:19,006 - #44 }
-INFO  11:04:19,006 - #44 }
-INFO  11:04:19,006 - Program(
+INFO  16:01:04,310 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/24_err_multiple.mj
+INFO  16:01:04,318 - #2 program
+INFO  16:01:04,318 - #45 ViseGresaka
+INFO  16:01:04,318 - #45 int
+INFO  16:01:04,318 - #45 a
+INFO  16:01:04,319 - #36 ,
+INFO  16:01:04,319 - #46 5
+INFO  16:01:04,319 - #36 ,
+INFO  16:01:04,319 - #45 b
+INFO  16:01:04,319 - #34 ;
+INFO  16:01:04,319 - #45 int
+INFO  16:01:04,319 - #45 c
+INFO  16:01:04,319 - #34 ;
+INFO  16:01:04,319 - #43 {
+INFO  16:01:04,319 - #7 void
+INFO  16:01:04,319 - #45 metoda
+INFO  16:01:04,320 - #39 (
+INFO  16:01:04,320 - #45 int
+INFO  16:01:04,320 - #45 x
+INFO  16:01:04,320 - #36 ,
+INFO  16:01:04,320 - #46 9
+INFO  16:01:04,320 - #40 )
+INFO  16:01:04,320 - #43 {
+INFO  16:01:04,320 - #44 }
+INFO  16:01:04,320 - #7 void
+INFO  16:01:04,320 - #45 main
+INFO  16:01:04,320 - #39 (
+INFO  16:01:04,320 - #40 )
+INFO  16:01:04,320 - #43 {
+INFO  16:01:04,321 - #45 a
+INFO  16:01:04,321 - #31 =
+INFO  16:01:04,321 - #46 1
+INFO  16:01:04,321 - #34 ;
+INFO  16:01:04,321 - #9 if
+INFO  16:01:04,321 - #39 (
+INFO  16:01:04,321 - #45 a
+INFO  16:01:04,321 - #26 <
+INFO  16:01:04,321 - #40 )
+INFO  16:01:04,321 - #45 a
+INFO  16:01:04,321 - #31 =
+INFO  16:01:04,321 - #46 0
+INFO  16:01:04,321 - #34 ;
+INFO  16:01:04,322 - #45 c
+INFO  16:01:04,322 - #31 =
+INFO  16:01:04,322 - #20 /
+INFO  16:01:04,322 - #46 2
+INFO  16:01:04,322 - #34 ;
+INFO  16:01:04,322 - #45 b
+INFO  16:01:04,322 - #31 =
+INFO  16:01:04,322 - #46 3
+INFO  16:01:04,322 - #34 ;
+INFO  16:01:04,322 - #44 }
+INFO  16:01:04,322 - #44 }
+INFO  16:01:04,322 - Program(
   ProgramName(
    ViseGresaka
   ) [ProgramName]
@@ -197,4 +197,31 @@ INFO  11:04:19,006 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  11:04:19,007 - =================================================
+INFO  16:01:04,323 - =================================================
+INFO  16:01:04,324 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog ViseGresaka: notype, 0, 1 
+   Var a: int, 0, 0 
+   Var b: int, 1, 0 
+   Var c: int, 2, 0 
+   Meth metoda: notype, 0, 1 
+      Var x: int, 0, 1 
+
+   Meth main: notype, 0, 0 
+
+
+

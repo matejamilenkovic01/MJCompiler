@@ -1,15 +1,15 @@
-INFO  11:04:16,290 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/01_minimal.mj
-INFO  11:04:16,298 - #2 program
-INFO  11:04:16,298 - #45 Minimal
-INFO  11:04:16,298 - #43 {
-INFO  11:04:16,299 - #7 void
-INFO  11:04:16,299 - #45 main
-INFO  11:04:16,299 - #39 (
-INFO  11:04:16,299 - #40 )
-INFO  11:04:16,299 - #43 {
-INFO  11:04:16,299 - #44 }
-INFO  11:04:16,299 - #44 }
-INFO  11:04:16,300 - Program(
+INFO  16:01:01,455 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/01_minimal.mj
+INFO  16:01:01,463 - #2 program
+INFO  16:01:01,463 - #45 Minimal
+INFO  16:01:01,463 - #43 {
+INFO  16:01:01,464 - #7 void
+INFO  16:01:01,464 - #45 main
+INFO  16:01:01,464 - #39 (
+INFO  16:01:01,464 - #40 )
+INFO  16:01:01,464 - #43 {
+INFO  16:01:01,464 - #44 }
+INFO  16:01:01,464 - #44 }
+INFO  16:01:01,465 - Program(
   ProgramName(
    Minimal
   ) [ProgramName]
@@ -33,5 +33,26 @@ INFO  11:04:16,300 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  11:04:16,300 - =================================================
-INFO  11:04:16,300 - Parsiranje uspesno zavrseno!
+INFO  16:01:01,465 - =================================================
+INFO  16:01:01,466 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog Minimal: notype, 0, 1 
+   Meth main: notype, 0, 0 
+
+
+
+INFO  16:01:01,467 - Parsiranje uspesno zavrseno!

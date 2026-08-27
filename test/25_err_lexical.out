@@ -1,41 +1,41 @@
-INFO  11:04:19,133 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/25_err_lexical.mj
-INFO  11:04:19,141 - #2 program
-INFO  11:04:19,141 - #45 LeksickaGreska
-INFO  11:04:19,141 - #45 int
-INFO  11:04:19,141 - #45 a
-INFO  11:04:19,142 - #34 ;
-INFO  11:04:19,142 - #43 {
-INFO  11:04:19,142 - #7 void
-INFO  11:04:19,142 - #45 main
-INFO  11:04:19,142 - #39 (
-INFO  11:04:19,142 - #40 )
-INFO  11:04:19,142 - #43 {
-INFO  11:04:19,142 - #45 a
-INFO  11:04:19,142 - #31 =
-INFO  11:04:19,142 - #46 1
-INFO  11:04:19,143 - #34 ;
-INFO  11:04:19,143 - #45 a
-INFO  11:04:19,143 - #31 =
-INFO  11:04:19,143 - #46 1
-INFO  11:04:19,143 - #46 2
-INFO  11:04:19,143 - #34 ;
-INFO  11:04:19,143 - #45 a
-INFO  11:04:19,143 - #31 =
-INFO  11:04:19,143 - #46 3
-INFO  11:04:19,143 - #46 4
-INFO  11:04:19,143 - #34 ;
-INFO  11:04:19,143 - #45 a
-INFO  11:04:19,143 - #31 =
-INFO  11:04:19,143 - #46 5
-INFO  11:04:19,144 - #46 6
-INFO  11:04:19,144 - #34 ;
-INFO  11:04:19,144 - #45 a
-INFO  11:04:19,144 - #31 =
-INFO  11:04:19,144 - #46 7
-INFO  11:04:19,144 - #34 ;
-INFO  11:04:19,144 - #44 }
-INFO  11:04:19,144 - #44 }
-INFO  11:04:19,144 - Program(
+INFO  16:01:04,461 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/25_err_lexical.mj
+INFO  16:01:04,470 - #2 program
+INFO  16:01:04,470 - #45 LeksickaGreska
+INFO  16:01:04,470 - #45 int
+INFO  16:01:04,471 - #45 a
+INFO  16:01:04,471 - #34 ;
+INFO  16:01:04,471 - #43 {
+INFO  16:01:04,471 - #7 void
+INFO  16:01:04,471 - #45 main
+INFO  16:01:04,471 - #39 (
+INFO  16:01:04,472 - #40 )
+INFO  16:01:04,472 - #43 {
+INFO  16:01:04,472 - #45 a
+INFO  16:01:04,472 - #31 =
+INFO  16:01:04,472 - #46 1
+INFO  16:01:04,472 - #34 ;
+INFO  16:01:04,472 - #45 a
+INFO  16:01:04,472 - #31 =
+INFO  16:01:04,472 - #46 1
+INFO  16:01:04,472 - #46 2
+INFO  16:01:04,473 - #34 ;
+INFO  16:01:04,473 - #45 a
+INFO  16:01:04,473 - #31 =
+INFO  16:01:04,473 - #46 3
+INFO  16:01:04,473 - #46 4
+INFO  16:01:04,473 - #34 ;
+INFO  16:01:04,473 - #45 a
+INFO  16:01:04,473 - #31 =
+INFO  16:01:04,473 - #46 5
+INFO  16:01:04,473 - #46 6
+INFO  16:01:04,473 - #34 ;
+INFO  16:01:04,474 - #45 a
+INFO  16:01:04,474 - #31 =
+INFO  16:01:04,474 - #46 7
+INFO  16:01:04,474 - #34 ;
+INFO  16:01:04,474 - #44 }
+INFO  16:01:04,474 - #44 }
+INFO  16:01:04,474 - Program(
   ProgramName(
    LeksickaGreska
   ) [ProgramName]
@@ -119,4 +119,26 @@ INFO  11:04:19,144 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  11:04:19,144 - =================================================
+INFO  16:01:04,474 - =================================================
+INFO  16:01:04,476 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog LeksickaGreska: notype, 0, 1 
+   Var a: int, 0, 0 
+   Meth main: notype, 0, 0 
+
+
+

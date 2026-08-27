@@ -13,8 +13,6 @@ import java_cup.runtime.Symbol;
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
 import rs.etf.pp1.symboltable.*;
-import rs.etf.pp1.symboltable.concepts.Obj;
-import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class Compiler {
 
@@ -35,6 +33,14 @@ public class Compiler {
 		DOMConfigurator.configure(Log4JUtils.instance().findLoggerConfigFile());
 		Log4JUtils.instance().prepareLogFile(Logger.getRootLogger());
 
+	}
+
+	/**
+	 * Ispis sadrzaja tabele simbola. Koristi MyDumpSymbolTableVisitor kako bi se
+	 * tip bool ispisao imenom, a ne prazno (vidi MyDumpSymbolTableVisitor).
+	 */
+	public static void tsdump() {
+		Tab.dump(new MyDumpSymbolTableVisitor());
 	}
 
 	public static void main(String[] args) {
@@ -86,19 +92,15 @@ public class Compiler {
 			log.info("=================================================");
 			
 			/* Inicijalizacija tabele simbola */
-			Tab.init();
-			Struct boolType = new Struct(Struct.Bool);
-			Obj boolObj = Tab.insert(Obj.Type, "bool", boolType);
-			boolObj.setAdr(-1);
-			boolObj.setLevel(-1);
+			MyTab.init();
 			
 			/* Semanticka analiza */
-			SemAnalyzer sa = new SemAnalyzer();
+			SemanticAnalyzer sa = new SemanticAnalyzer();
 			prog.traverseBottomUp(sa);
 			
 			/* Ispis tabele simbola */
 			log.info("=================================================");
-			Tab.dump();
+			tsdump();
 
 			if (!p.errorDetected && sa.passed()) {
 				log.info("Parsiranje uspesno zavrseno!");

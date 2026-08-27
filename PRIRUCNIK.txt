@@ -338,6 +338,6 @@ kod kuce, a pukao na laboratorijskoj masini.
   [ ] MJProjekat.docx       u korenu: opis zadatka, komande, testovi, nove klase
   [ ] ekstenzija .MJ        postavka pise velikim slovima, kod nas je .mj
   [ ] odluka o leksickoj gresci   da li obara prevodjenje (vidi sekciju 3)
-  [ ] razmisliti: da li SemAnalyzer sme da se pokrene kad je errorDetected
+  [ ] razmisliti: da li SemanticAnalyzer sme da se pokrene kad je errorDetected
 
 ================================================================================
