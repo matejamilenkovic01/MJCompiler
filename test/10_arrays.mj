@@ -2,6 +2,7 @@
 // Nizovi: kreiranje, indeksiranje, ugradjeno polje length,
 // nizovi kao formalni parametri.
 
+// OUT: 5
 program Nizovi
 
 const int n = 5;

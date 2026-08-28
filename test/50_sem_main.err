@@ -1,3 +1,3 @@
-ERROR 16:37:43,214 - Semanticka greska: Metoda main nije void, a nema iskaz return na liniji 11
-ERROR 16:37:43,214 - Semanticka greska: Metoda main mora biti deklarisana kao void na liniji 6
-ERROR 16:37:43,214 - Parsiranje NIJE uspesno zavrseno!
+ERROR 17:58:15,575 - Semanticka greska: Metoda main nije void, a nema iskaz return na liniji 11
+ERROR 17:58:15,575 - Semanticka greska: Metoda main mora biti deklarisana kao void na liniji 6
+ERROR 17:58:15,575 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,58 @@
+// EXPECT: OK
+// Amandman, nivo B: generisanje koda za map. Ciljni niz se ne alocira unapred -
+// map po amandmanu pravi nov niz iste duzine.
+// OUT: 0 20 40 60 80
+// OUT: 0 0 4 6 8
+// OUT: 100 102 104 106 108
+// OUT: abc
+// OUT: 10
+// OUT: 13579
+
+program GenMap
+
+int niz[], rez[], i;
+char slova[], velika[];
+bool zastave[], kopija[];
+int x, pomeraj;
+char c;
+bool b;
+
+{
+	void main()
+		int lokalni[];
+	{
+		niz = new int[5];
+		for (i = 0; i < 5; i++) niz[i] = i * 2;   // 0 2 4 6 8
+
+		rez = niz.map(x => x * 10);
+		for (i = 0; i < rez.length; i++) { print(rez[i]); print(' '); }
+		print(eol);                                // 0 20 40 60 80
+
+		// ternarni izraz kao telo preslikavanja
+		rez = niz.map(x => x < 4 ? 0 : x);
+		for (i = 0; i < 5; i++) { print(rez[i]); print(' '); }
+		print(eol);                                // 0 0 4 6 8
+
+		// telo koristi i globalnu promenljivu pored iteratora
+		pomeraj = 100;
+		rez = niz.map(x => x + pomeraj);
+		for (i = 0; i < 5; i++) { print(rez[i]); print(' '); }
+		print(eol);                                // 100 102 104 106 108
+
+		slova = new char[3];
+		slova[0] = 'a'; slova[1] = 'b'; slova[2] = 'c';
+		velika = slova.map(c => c);
+		for (i = 0; i < 3; i++) print(velika[i]);
+		print(eol);                                // abc
+
+		zastave = new bool[2];
+		zastave[0] = true; zastave[1] = false;
+		kopija = zastave.map(b => b);
+		print(kopija[0]); print(kopija[1]); print(eol);   // 10
+
+		// ciljni niz je lokalna promenljiva
+		lokalni = niz.map(x => x + 1);
+		for (i = 0; i < 5; i++) print(lokalni[i]);
+		print(eol);                                // 13579
+	}
+}

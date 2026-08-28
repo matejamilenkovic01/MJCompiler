@@ -2,6 +2,7 @@
 // Ternarni operator. Uslov sme biti pun logicki izraz (relop, && , ||).
 // Ternarni izraz u ULOVU drugog ternarnog operatora mora biti u zagradama.
 
+// OUT: p
 program Ternarni
 
 int a, b, r;

@@ -1,0 +1,69 @@
+// EXPECT: OK
+// Generisanje koda: pozivi sa argumentima svih tipova, niz kao argument,
+// rekurzija, poziv kao iskaz (rezultat se odbacuje), ugnezdeni pozivi.
+// OUT: 36
+// OUT: 7
+// OUT: 13
+// OUT: 2
+// OUT: 120
+// OUT: 42
+// OUT: 3
+// OUT: Q
+// OUT: 1
+// OUT: 0
+// OUT: 10
+
+program GenMetode
+
+int g;
+int niz[];
+
+{
+	int kvadrat(int x) { return x * x; }
+
+	int zbir(int a, int b) { return a + b; }
+
+	void uvecajGlobal() { g = g + 1; }
+
+	int fakt(int n)
+	{
+		if (n <= 1) return 1;
+		return n * fakt(n - 1);
+	}
+
+	int prviElement(int a[]) { return a[0]; }
+
+	int duzina(int a[]) { return a.length; }
+
+	char isti(char c) { return c; }
+
+	bool jeNula(int x) { return x == 0 ? true : false; }
+
+	void main()
+	{
+		print(kvadrat(6)); print(eol);                    // 36
+		print(zbir(3, 4)); print(eol);                    // 7
+		print(zbir(kvadrat(2), kvadrat(3))); print(eol);  // 4 + 9 = 13
+
+		g = 0;
+		uvecajGlobal();
+		uvecajGlobal();
+		print(g); print(eol);                             // 2
+
+		print(fakt(5)); print(eol);                       // 120
+
+		niz = new int[3];
+		niz[0] = 42;
+		print(prviElement(niz)); print(eol);              // 42
+		print(duzina(niz)); print(eol);                   // 3
+
+		print(isti('Q')); print(eol);                     // Q
+		print(jeNula(0)); print(eol);                     // 1
+		print(jeNula(5)); print(eol);                     // 0
+
+		// poziv funkcije kao iskaz - povratna vrednost se odbacuje
+		kvadrat(9);
+
+		print(zbir(zbir(1, 2), zbir(3, 4))); print(eol);  // 3 + 7 = 10
+	}
+}

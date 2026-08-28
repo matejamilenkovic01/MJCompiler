@@ -1,92 +1,92 @@
-INFO  16:37:43,046 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/49_sem_builtins.mj
-INFO  16:37:43,054 - #2 program
-INFO  16:37:43,054 - #45 SemBuiltins
-INFO  16:37:43,054 - #45 int
-INFO  16:37:43,055 - #45 a
-INFO  16:37:43,055 - #34 ;
-INFO  16:37:43,055 - #45 char
-INFO  16:37:43,055 - #45 c
-INFO  16:37:43,055 - #34 ;
-INFO  16:37:43,055 - #45 int
-INFO  16:37:43,055 - #45 niz
-INFO  16:37:43,055 - #41 [
-INFO  16:37:43,055 - #42 ]
-INFO  16:37:43,055 - #34 ;
-INFO  16:37:43,055 - #43 {
-INFO  16:37:43,055 - #7 void
-INFO  16:37:43,055 - #45 main
-INFO  16:37:43,055 - #39 (
-INFO  16:37:43,055 - #40 )
-INFO  16:37:43,055 - #43 {
-INFO  16:37:43,056 - #45 niz
-INFO  16:37:43,056 - #31 =
-INFO  16:37:43,056 - #4 new
-INFO  16:37:43,056 - #45 int
-INFO  16:37:43,056 - #41 [
-INFO  16:37:43,056 - #46 3
-INFO  16:37:43,056 - #42 ]
-INFO  16:37:43,056 - #34 ;
-INFO  16:37:43,056 - #45 c
-INFO  16:37:43,056 - #31 =
-INFO  16:37:43,056 - #45 chr
-INFO  16:37:43,056 - #39 (
-INFO  16:37:43,056 - #46 65
-INFO  16:37:43,056 - #40 )
-INFO  16:37:43,056 - #34 ;
-INFO  16:37:43,056 - #45 a
-INFO  16:37:43,056 - #31 =
-INFO  16:37:43,056 - #45 ord
-INFO  16:37:43,056 - #39 (
-INFO  16:37:43,056 - #48 x
-INFO  16:37:43,057 - #40 )
-INFO  16:37:43,057 - #34 ;
-INFO  16:37:43,057 - #45 a
-INFO  16:37:43,057 - #31 =
-INFO  16:37:43,057 - #45 len
-INFO  16:37:43,057 - #39 (
-INFO  16:37:43,057 - #45 niz
-INFO  16:37:43,057 - #40 )
-INFO  16:37:43,057 - #34 ;
-INFO  16:37:43,057 - #45 a
-INFO  16:37:43,057 - #31 =
-INFO  16:37:43,057 - #45 chr
-INFO  16:37:43,057 - #39 (
-INFO  16:37:43,057 - #46 65
-INFO  16:37:43,057 - #40 )
-INFO  16:37:43,057 - #34 ;
-INFO  16:37:43,057 - #45 a
-INFO  16:37:43,057 - #31 =
-INFO  16:37:43,057 - #45 chr
-INFO  16:37:43,057 - #39 (
-INFO  16:37:43,057 - #48 x
-INFO  16:37:43,057 - #36 ,
-INFO  16:37:43,057 - #46 1
-INFO  16:37:43,057 - #40 )
-INFO  16:37:43,057 - #34 ;
-INFO  16:37:43,057 - #45 c
-INFO  16:37:43,057 - #31 =
-INFO  16:37:43,057 - #45 chr
-INFO  16:37:43,057 - #39 (
-INFO  16:37:43,057 - #48 x
-INFO  16:37:43,058 - #40 )
-INFO  16:37:43,058 - #34 ;
-INFO  16:37:43,058 - #45 a
-INFO  16:37:43,058 - #31 =
-INFO  16:37:43,058 - #45 ord
-INFO  16:37:43,058 - #39 (
-INFO  16:37:43,058 - #46 1
-INFO  16:37:43,058 - #40 )
-INFO  16:37:43,058 - #34 ;
-INFO  16:37:43,058 - #45 a
-INFO  16:37:43,058 - #31 =
-INFO  16:37:43,058 - #45 len
-INFO  16:37:43,058 - #39 (
-INFO  16:37:43,058 - #45 a
-INFO  16:37:43,058 - #40 )
-INFO  16:37:43,058 - #34 ;
-INFO  16:37:43,058 - #44 }
-INFO  16:37:43,058 - #44 }
-INFO  16:37:43,059 - Program(
+INFO  17:58:15,411 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/49_sem_builtins.mj
+INFO  17:58:15,420 - #2 program
+INFO  17:58:15,420 - #45 SemBuiltins
+INFO  17:58:15,420 - #45 int
+INFO  17:58:15,420 - #45 a
+INFO  17:58:15,420 - #34 ;
+INFO  17:58:15,421 - #45 char
+INFO  17:58:15,421 - #45 c
+INFO  17:58:15,421 - #34 ;
+INFO  17:58:15,421 - #45 int
+INFO  17:58:15,421 - #45 niz
+INFO  17:58:15,421 - #41 [
+INFO  17:58:15,421 - #42 ]
+INFO  17:58:15,421 - #34 ;
+INFO  17:58:15,421 - #43 {
+INFO  17:58:15,421 - #7 void
+INFO  17:58:15,421 - #45 main
+INFO  17:58:15,421 - #39 (
+INFO  17:58:15,421 - #40 )
+INFO  17:58:15,421 - #43 {
+INFO  17:58:15,422 - #45 niz
+INFO  17:58:15,422 - #31 =
+INFO  17:58:15,422 - #4 new
+INFO  17:58:15,422 - #45 int
+INFO  17:58:15,422 - #41 [
+INFO  17:58:15,422 - #46 3
+INFO  17:58:15,422 - #42 ]
+INFO  17:58:15,422 - #34 ;
+INFO  17:58:15,422 - #45 c
+INFO  17:58:15,422 - #31 =
+INFO  17:58:15,422 - #45 chr
+INFO  17:58:15,422 - #39 (
+INFO  17:58:15,422 - #46 65
+INFO  17:58:15,422 - #40 )
+INFO  17:58:15,422 - #34 ;
+INFO  17:58:15,422 - #45 a
+INFO  17:58:15,422 - #31 =
+INFO  17:58:15,422 - #45 ord
+INFO  17:58:15,422 - #39 (
+INFO  17:58:15,422 - #48 x
+INFO  17:58:15,423 - #40 )
+INFO  17:58:15,423 - #34 ;
+INFO  17:58:15,423 - #45 a
+INFO  17:58:15,423 - #31 =
+INFO  17:58:15,423 - #45 len
+INFO  17:58:15,423 - #39 (
+INFO  17:58:15,423 - #45 niz
+INFO  17:58:15,423 - #40 )
+INFO  17:58:15,423 - #34 ;
+INFO  17:58:15,423 - #45 a
+INFO  17:58:15,423 - #31 =
+INFO  17:58:15,423 - #45 chr
+INFO  17:58:15,423 - #39 (
+INFO  17:58:15,423 - #46 65
+INFO  17:58:15,423 - #40 )
+INFO  17:58:15,423 - #34 ;
+INFO  17:58:15,423 - #45 a
+INFO  17:58:15,423 - #31 =
+INFO  17:58:15,423 - #45 chr
+INFO  17:58:15,423 - #39 (
+INFO  17:58:15,423 - #48 x
+INFO  17:58:15,423 - #36 ,
+INFO  17:58:15,424 - #46 1
+INFO  17:58:15,424 - #40 )
+INFO  17:58:15,424 - #34 ;
+INFO  17:58:15,424 - #45 c
+INFO  17:58:15,424 - #31 =
+INFO  17:58:15,424 - #45 chr
+INFO  17:58:15,424 - #39 (
+INFO  17:58:15,424 - #48 x
+INFO  17:58:15,424 - #40 )
+INFO  17:58:15,424 - #34 ;
+INFO  17:58:15,424 - #45 a
+INFO  17:58:15,424 - #31 =
+INFO  17:58:15,424 - #45 ord
+INFO  17:58:15,424 - #39 (
+INFO  17:58:15,424 - #46 1
+INFO  17:58:15,424 - #40 )
+INFO  17:58:15,424 - #34 ;
+INFO  17:58:15,424 - #45 a
+INFO  17:58:15,424 - #31 =
+INFO  17:58:15,424 - #45 len
+INFO  17:58:15,424 - #39 (
+INFO  17:58:15,424 - #45 a
+INFO  17:58:15,424 - #40 )
+INFO  17:58:15,424 - #34 ;
+INFO  17:58:15,424 - #44 }
+INFO  17:58:15,424 - #44 }
+INFO  17:58:15,425 - Program(
   ProgramName(
    SemBuiltins
   ) [ProgramName]
@@ -492,35 +492,35 @@ INFO  16:37:43,059 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:37:43,059 - =================================================
-INFO  16:37:43,060 - Pretraga na 20(niz), nadjeno Var niz: Arr of int, 2, 0
-INFO  16:37:43,060 - Pretraga na 22(c), nadjeno Var c: char, 1, 0
-INFO  16:37:43,061 - Pretraga na 22(chr), nadjeno Meth chr: char, 0, 1 
+INFO  17:58:15,425 - =================================================
+INFO  17:58:15,427 - Pretraga na 20(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  17:58:15,427 - Pretraga na 22(c), nadjeno Var c: char, 1, 0
+INFO  17:58:15,427 - Pretraga na 22(chr), nadjeno Meth chr: char, 0, 1 
    Var i: int, 0, 1
-INFO  16:37:43,061 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
-INFO  16:37:43,061 - Pretraga na 23(ord), nadjeno Meth ord: int, 0, 1 
+INFO  17:58:15,427 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,427 - Pretraga na 23(ord), nadjeno Meth ord: int, 0, 1 
    Var ch: char, 0, 1
-INFO  16:37:43,061 - Pretraga na 24(a), nadjeno Var a: int, 0, 0
-INFO  16:37:43,061 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 2, 0
-INFO  16:37:43,061 - Pretraga na 24(len), nadjeno Meth len: int, 0, 1 
+INFO  17:58:15,427 - Pretraga na 24(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,427 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  17:58:15,427 - Pretraga na 24(len), nadjeno Meth len: int, 0, 1 
    Var arr: Arr of notype, 0, 1
-INFO  16:37:43,061 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
-INFO  16:37:43,061 - Pretraga na 26(chr), nadjeno Meth chr: char, 0, 1 
+INFO  17:58:15,427 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,427 - Pretraga na 26(chr), nadjeno Meth chr: char, 0, 1 
    Var i: int, 0, 1
-INFO  16:37:43,061 - Pretraga na 27(a), nadjeno Var a: int, 0, 0
-INFO  16:37:43,061 - Pretraga na 27(chr), nadjeno Meth chr: char, 0, 1 
+INFO  17:58:15,427 - Pretraga na 27(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,427 - Pretraga na 27(chr), nadjeno Meth chr: char, 0, 1 
    Var i: int, 0, 1
-INFO  16:37:43,061 - Pretraga na 32(c), nadjeno Var c: char, 1, 0
-INFO  16:37:43,061 - Pretraga na 32(chr), nadjeno Meth chr: char, 0, 1 
+INFO  17:58:15,427 - Pretraga na 32(c), nadjeno Var c: char, 1, 0
+INFO  17:58:15,428 - Pretraga na 32(chr), nadjeno Meth chr: char, 0, 1 
    Var i: int, 0, 1
-INFO  16:37:43,061 - Pretraga na 33(a), nadjeno Var a: int, 0, 0
-INFO  16:37:43,061 - Pretraga na 33(ord), nadjeno Meth ord: int, 0, 1 
+INFO  17:58:15,428 - Pretraga na 33(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,428 - Pretraga na 33(ord), nadjeno Meth ord: int, 0, 1 
    Var ch: char, 0, 1
-INFO  16:37:43,061 - Pretraga na 34(a), nadjeno Var a: int, 0, 0
-INFO  16:37:43,061 - Pretraga na 34(a), nadjeno Var a: int, 0, 0
-INFO  16:37:43,061 - Pretraga na 34(len), nadjeno Meth len: int, 0, 1 
+INFO  17:58:15,428 - Pretraga na 34(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,428 - Pretraga na 34(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,428 - Pretraga na 34(len), nadjeno Meth len: int, 0, 1 
    Var arr: Arr of notype, 0, 1
-INFO  16:37:43,061 - =================================================
+INFO  17:58:15,428 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

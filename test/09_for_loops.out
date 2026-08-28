@@ -1,227 +1,227 @@
-INFO  16:37:39,287 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/09_for_loops.mj
-INFO  16:37:39,295 - #2 program
-INFO  16:37:39,295 - #45 Petlje
-INFO  16:37:39,295 - #45 int
-INFO  16:37:39,295 - #45 i
-INFO  16:37:39,295 - #36 ,
-INFO  16:37:39,295 - #45 j
-INFO  16:37:39,295 - #36 ,
-INFO  16:37:39,295 - #45 s
-INFO  16:37:39,295 - #34 ;
-INFO  16:37:39,295 - #43 {
-INFO  16:37:39,296 - #7 void
-INFO  16:37:39,296 - #45 main
-INFO  16:37:39,296 - #39 (
-INFO  16:37:39,296 - #40 )
-INFO  16:37:39,296 - #43 {
-INFO  16:37:39,296 - #45 s
-INFO  16:37:39,296 - #31 =
-INFO  16:37:39,296 - #46 0
-INFO  16:37:39,296 - #34 ;
-INFO  16:37:39,296 - #13 for
-INFO  16:37:39,297 - #39 (
-INFO  16:37:39,297 - #45 i
-INFO  16:37:39,297 - #31 =
-INFO  16:37:39,297 - #46 0
-INFO  16:37:39,297 - #34 ;
-INFO  16:37:39,297 - #45 i
-INFO  16:37:39,297 - #26 <
-INFO  16:37:39,297 - #46 10
-INFO  16:37:39,297 - #34 ;
-INFO  16:37:39,297 - #45 i
-INFO  16:37:39,297 - #32 ++
-INFO  16:37:39,297 - #40 )
-INFO  16:37:39,297 - #45 s
-INFO  16:37:39,297 - #31 =
-INFO  16:37:39,297 - #45 s
-INFO  16:37:39,298 - #17 +
-INFO  16:37:39,298 - #45 i
-INFO  16:37:39,298 - #34 ;
-INFO  16:37:39,298 - #13 for
-INFO  16:37:39,298 - #39 (
-INFO  16:37:39,298 - #45 i
-INFO  16:37:39,298 - #31 =
-INFO  16:37:39,298 - #46 0
-INFO  16:37:39,298 - #34 ;
-INFO  16:37:39,298 - #45 i
-INFO  16:37:39,298 - #26 <
-INFO  16:37:39,298 - #46 10
-INFO  16:37:39,298 - #34 ;
-INFO  16:37:39,298 - #45 i
-INFO  16:37:39,298 - #32 ++
-INFO  16:37:39,298 - #40 )
-INFO  16:37:39,298 - #43 {
-INFO  16:37:39,298 - #45 s
-INFO  16:37:39,298 - #31 =
-INFO  16:37:39,298 - #45 s
-INFO  16:37:39,298 - #17 +
-INFO  16:37:39,298 - #45 i
-INFO  16:37:39,298 - #34 ;
-INFO  16:37:39,298 - #44 }
-INFO  16:37:39,298 - #13 for
-INFO  16:37:39,298 - #39 (
-INFO  16:37:39,299 - #34 ;
-INFO  16:37:39,299 - #45 i
-INFO  16:37:39,299 - #26 <
-INFO  16:37:39,299 - #46 10
-INFO  16:37:39,299 - #34 ;
-INFO  16:37:39,299 - #45 i
-INFO  16:37:39,299 - #32 ++
-INFO  16:37:39,299 - #40 )
-INFO  16:37:39,299 - #45 s
-INFO  16:37:39,299 - #31 =
-INFO  16:37:39,299 - #45 s
-INFO  16:37:39,299 - #17 +
-INFO  16:37:39,299 - #46 1
-INFO  16:37:39,299 - #34 ;
-INFO  16:37:39,299 - #13 for
-INFO  16:37:39,299 - #39 (
-INFO  16:37:39,299 - #45 i
-INFO  16:37:39,299 - #31 =
-INFO  16:37:39,299 - #46 0
-INFO  16:37:39,299 - #34 ;
-INFO  16:37:39,299 - #34 ;
-INFO  16:37:39,299 - #45 i
-INFO  16:37:39,299 - #32 ++
-INFO  16:37:39,299 - #40 )
-INFO  16:37:39,299 - #43 {
-INFO  16:37:39,299 - #9 if
-INFO  16:37:39,299 - #39 (
-INFO  16:37:39,299 - #45 i
-INFO  16:37:39,299 - #24 >
-INFO  16:37:39,300 - #46 5
-INFO  16:37:39,300 - #40 )
-INFO  16:37:39,300 - #11 break
-INFO  16:37:39,300 - #34 ;
-INFO  16:37:39,300 - #44 }
-INFO  16:37:39,300 - #13 for
-INFO  16:37:39,300 - #39 (
-INFO  16:37:39,300 - #45 i
-INFO  16:37:39,300 - #31 =
-INFO  16:37:39,300 - #46 0
-INFO  16:37:39,300 - #34 ;
-INFO  16:37:39,300 - #45 i
-INFO  16:37:39,300 - #26 <
-INFO  16:37:39,300 - #46 10
-INFO  16:37:39,300 - #34 ;
-INFO  16:37:39,300 - #40 )
-INFO  16:37:39,300 - #43 {
-INFO  16:37:39,300 - #45 i
-INFO  16:37:39,300 - #32 ++
-INFO  16:37:39,300 - #34 ;
-INFO  16:37:39,300 - #44 }
-INFO  16:37:39,300 - #13 for
-INFO  16:37:39,300 - #39 (
-INFO  16:37:39,300 - #34 ;
-INFO  16:37:39,300 - #34 ;
-INFO  16:37:39,300 - #40 )
-INFO  16:37:39,300 - #43 {
-INFO  16:37:39,300 - #11 break
-INFO  16:37:39,301 - #34 ;
-INFO  16:37:39,301 - #44 }
-INFO  16:37:39,301 - #13 for
-INFO  16:37:39,301 - #39 (
-INFO  16:37:39,301 - #45 i
-INFO  16:37:39,301 - #31 =
-INFO  16:37:39,301 - #46 0
-INFO  16:37:39,301 - #34 ;
-INFO  16:37:39,301 - #45 i
-INFO  16:37:39,301 - #26 <
-INFO  16:37:39,301 - #46 10
-INFO  16:37:39,301 - #34 ;
-INFO  16:37:39,301 - #45 i
-INFO  16:37:39,301 - #32 ++
-INFO  16:37:39,301 - #40 )
-INFO  16:37:39,301 - #43 {
-INFO  16:37:39,301 - #9 if
-INFO  16:37:39,301 - #39 (
-INFO  16:37:39,301 - #45 i
-INFO  16:37:39,301 - #22 ==
-INFO  16:37:39,301 - #46 3
-INFO  16:37:39,301 - #40 )
-INFO  16:37:39,301 - #12 continue
-INFO  16:37:39,301 - #34 ;
-INFO  16:37:39,301 - #9 if
-INFO  16:37:39,301 - #39 (
-INFO  16:37:39,301 - #45 i
-INFO  16:37:39,301 - #22 ==
-INFO  16:37:39,301 - #46 7
-INFO  16:37:39,301 - #40 )
-INFO  16:37:39,301 - #11 break
-INFO  16:37:39,301 - #34 ;
-INFO  16:37:39,301 - #45 s
-INFO  16:37:39,301 - #31 =
-INFO  16:37:39,301 - #45 s
-INFO  16:37:39,301 - #17 +
-INFO  16:37:39,301 - #45 i
-INFO  16:37:39,301 - #34 ;
-INFO  16:37:39,302 - #44 }
-INFO  16:37:39,302 - #13 for
-INFO  16:37:39,302 - #39 (
-INFO  16:37:39,302 - #45 i
-INFO  16:37:39,302 - #31 =
-INFO  16:37:39,302 - #46 0
-INFO  16:37:39,302 - #34 ;
-INFO  16:37:39,302 - #45 i
-INFO  16:37:39,302 - #26 <
-INFO  16:37:39,302 - #46 3
-INFO  16:37:39,302 - #34 ;
-INFO  16:37:39,302 - #45 i
-INFO  16:37:39,302 - #32 ++
-INFO  16:37:39,302 - #40 )
-INFO  16:37:39,302 - #43 {
-INFO  16:37:39,302 - #13 for
-INFO  16:37:39,302 - #39 (
-INFO  16:37:39,302 - #45 j
-INFO  16:37:39,302 - #31 =
-INFO  16:37:39,302 - #46 0
-INFO  16:37:39,302 - #34 ;
-INFO  16:37:39,302 - #45 j
-INFO  16:37:39,302 - #26 <
-INFO  16:37:39,302 - #46 3
-INFO  16:37:39,302 - #34 ;
-INFO  16:37:39,302 - #45 j
-INFO  16:37:39,302 - #32 ++
-INFO  16:37:39,302 - #40 )
-INFO  16:37:39,302 - #43 {
-INFO  16:37:39,302 - #9 if
-INFO  16:37:39,302 - #39 (
-INFO  16:37:39,302 - #45 j
-INFO  16:37:39,302 - #22 ==
-INFO  16:37:39,302 - #46 1
-INFO  16:37:39,302 - #40 )
-INFO  16:37:39,302 - #12 continue
-INFO  16:37:39,302 - #34 ;
-INFO  16:37:39,302 - #45 s
-INFO  16:37:39,302 - #31 =
-INFO  16:37:39,302 - #45 s
-INFO  16:37:39,302 - #17 +
-INFO  16:37:39,302 - #46 1
-INFO  16:37:39,302 - #34 ;
-INFO  16:37:39,302 - #44 }
-INFO  16:37:39,302 - #44 }
-INFO  16:37:39,302 - #13 for
-INFO  16:37:39,302 - #39 (
-INFO  16:37:39,302 - #45 i
-INFO  16:37:39,302 - #31 =
-INFO  16:37:39,302 - #46 10
-INFO  16:37:39,303 - #34 ;
-INFO  16:37:39,303 - #45 i
-INFO  16:37:39,303 - #24 >
-INFO  16:37:39,303 - #46 0
-INFO  16:37:39,303 - #34 ;
-INFO  16:37:39,303 - #45 i
-INFO  16:37:39,303 - #33 --
-INFO  16:37:39,303 - #40 )
-INFO  16:37:39,303 - #45 s
-INFO  16:37:39,303 - #31 =
-INFO  16:37:39,303 - #45 s
-INFO  16:37:39,303 - #18 -
-INFO  16:37:39,303 - #46 1
-INFO  16:37:39,303 - #34 ;
-INFO  16:37:39,303 - #44 }
-INFO  16:37:39,303 - #44 }
-INFO  16:37:39,304 - Program(
+INFO  17:58:11,488 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/09_for_loops.mj
+INFO  17:58:11,496 - #2 program
+INFO  17:58:11,496 - #45 Petlje
+INFO  17:58:11,496 - #45 int
+INFO  17:58:11,497 - #45 i
+INFO  17:58:11,497 - #36 ,
+INFO  17:58:11,497 - #45 j
+INFO  17:58:11,497 - #36 ,
+INFO  17:58:11,497 - #45 s
+INFO  17:58:11,497 - #34 ;
+INFO  17:58:11,497 - #43 {
+INFO  17:58:11,497 - #7 void
+INFO  17:58:11,497 - #45 main
+INFO  17:58:11,497 - #39 (
+INFO  17:58:11,497 - #40 )
+INFO  17:58:11,498 - #43 {
+INFO  17:58:11,498 - #45 s
+INFO  17:58:11,498 - #31 =
+INFO  17:58:11,498 - #46 0
+INFO  17:58:11,498 - #34 ;
+INFO  17:58:11,498 - #13 for
+INFO  17:58:11,498 - #39 (
+INFO  17:58:11,498 - #45 i
+INFO  17:58:11,498 - #31 =
+INFO  17:58:11,498 - #46 0
+INFO  17:58:11,498 - #34 ;
+INFO  17:58:11,498 - #45 i
+INFO  17:58:11,498 - #26 <
+INFO  17:58:11,498 - #46 10
+INFO  17:58:11,499 - #34 ;
+INFO  17:58:11,499 - #45 i
+INFO  17:58:11,499 - #32 ++
+INFO  17:58:11,499 - #40 )
+INFO  17:58:11,499 - #45 s
+INFO  17:58:11,499 - #31 =
+INFO  17:58:11,499 - #45 s
+INFO  17:58:11,499 - #17 +
+INFO  17:58:11,499 - #45 i
+INFO  17:58:11,499 - #34 ;
+INFO  17:58:11,499 - #13 for
+INFO  17:58:11,499 - #39 (
+INFO  17:58:11,499 - #45 i
+INFO  17:58:11,499 - #31 =
+INFO  17:58:11,499 - #46 0
+INFO  17:58:11,499 - #34 ;
+INFO  17:58:11,499 - #45 i
+INFO  17:58:11,499 - #26 <
+INFO  17:58:11,499 - #46 10
+INFO  17:58:11,499 - #34 ;
+INFO  17:58:11,499 - #45 i
+INFO  17:58:11,500 - #32 ++
+INFO  17:58:11,500 - #40 )
+INFO  17:58:11,500 - #43 {
+INFO  17:58:11,500 - #45 s
+INFO  17:58:11,500 - #31 =
+INFO  17:58:11,500 - #45 s
+INFO  17:58:11,500 - #17 +
+INFO  17:58:11,500 - #45 i
+INFO  17:58:11,500 - #34 ;
+INFO  17:58:11,500 - #44 }
+INFO  17:58:11,500 - #13 for
+INFO  17:58:11,500 - #39 (
+INFO  17:58:11,500 - #34 ;
+INFO  17:58:11,500 - #45 i
+INFO  17:58:11,500 - #26 <
+INFO  17:58:11,500 - #46 10
+INFO  17:58:11,500 - #34 ;
+INFO  17:58:11,500 - #45 i
+INFO  17:58:11,500 - #32 ++
+INFO  17:58:11,500 - #40 )
+INFO  17:58:11,500 - #45 s
+INFO  17:58:11,500 - #31 =
+INFO  17:58:11,500 - #45 s
+INFO  17:58:11,500 - #17 +
+INFO  17:58:11,500 - #46 1
+INFO  17:58:11,500 - #34 ;
+INFO  17:58:11,500 - #13 for
+INFO  17:58:11,500 - #39 (
+INFO  17:58:11,500 - #45 i
+INFO  17:58:11,500 - #31 =
+INFO  17:58:11,501 - #46 0
+INFO  17:58:11,501 - #34 ;
+INFO  17:58:11,501 - #34 ;
+INFO  17:58:11,501 - #45 i
+INFO  17:58:11,501 - #32 ++
+INFO  17:58:11,501 - #40 )
+INFO  17:58:11,501 - #43 {
+INFO  17:58:11,501 - #9 if
+INFO  17:58:11,501 - #39 (
+INFO  17:58:11,501 - #45 i
+INFO  17:58:11,501 - #24 >
+INFO  17:58:11,501 - #46 5
+INFO  17:58:11,501 - #40 )
+INFO  17:58:11,501 - #11 break
+INFO  17:58:11,501 - #34 ;
+INFO  17:58:11,501 - #44 }
+INFO  17:58:11,501 - #13 for
+INFO  17:58:11,501 - #39 (
+INFO  17:58:11,501 - #45 i
+INFO  17:58:11,501 - #31 =
+INFO  17:58:11,501 - #46 0
+INFO  17:58:11,501 - #34 ;
+INFO  17:58:11,501 - #45 i
+INFO  17:58:11,501 - #26 <
+INFO  17:58:11,501 - #46 10
+INFO  17:58:11,501 - #34 ;
+INFO  17:58:11,501 - #40 )
+INFO  17:58:11,502 - #43 {
+INFO  17:58:11,502 - #45 i
+INFO  17:58:11,502 - #32 ++
+INFO  17:58:11,502 - #34 ;
+INFO  17:58:11,502 - #44 }
+INFO  17:58:11,502 - #13 for
+INFO  17:58:11,502 - #39 (
+INFO  17:58:11,502 - #34 ;
+INFO  17:58:11,502 - #34 ;
+INFO  17:58:11,502 - #40 )
+INFO  17:58:11,502 - #43 {
+INFO  17:58:11,502 - #11 break
+INFO  17:58:11,502 - #34 ;
+INFO  17:58:11,502 - #44 }
+INFO  17:58:11,502 - #13 for
+INFO  17:58:11,502 - #39 (
+INFO  17:58:11,502 - #45 i
+INFO  17:58:11,502 - #31 =
+INFO  17:58:11,502 - #46 0
+INFO  17:58:11,502 - #34 ;
+INFO  17:58:11,502 - #45 i
+INFO  17:58:11,502 - #26 <
+INFO  17:58:11,502 - #46 10
+INFO  17:58:11,502 - #34 ;
+INFO  17:58:11,502 - #45 i
+INFO  17:58:11,502 - #32 ++
+INFO  17:58:11,502 - #40 )
+INFO  17:58:11,502 - #43 {
+INFO  17:58:11,502 - #9 if
+INFO  17:58:11,502 - #39 (
+INFO  17:58:11,502 - #45 i
+INFO  17:58:11,502 - #22 ==
+INFO  17:58:11,502 - #46 3
+INFO  17:58:11,502 - #40 )
+INFO  17:58:11,503 - #12 continue
+INFO  17:58:11,503 - #34 ;
+INFO  17:58:11,503 - #9 if
+INFO  17:58:11,503 - #39 (
+INFO  17:58:11,503 - #45 i
+INFO  17:58:11,503 - #22 ==
+INFO  17:58:11,503 - #46 7
+INFO  17:58:11,503 - #40 )
+INFO  17:58:11,503 - #11 break
+INFO  17:58:11,503 - #34 ;
+INFO  17:58:11,503 - #45 s
+INFO  17:58:11,503 - #31 =
+INFO  17:58:11,503 - #45 s
+INFO  17:58:11,503 - #17 +
+INFO  17:58:11,503 - #45 i
+INFO  17:58:11,503 - #34 ;
+INFO  17:58:11,503 - #44 }
+INFO  17:58:11,503 - #13 for
+INFO  17:58:11,503 - #39 (
+INFO  17:58:11,503 - #45 i
+INFO  17:58:11,503 - #31 =
+INFO  17:58:11,503 - #46 0
+INFO  17:58:11,503 - #34 ;
+INFO  17:58:11,503 - #45 i
+INFO  17:58:11,503 - #26 <
+INFO  17:58:11,503 - #46 3
+INFO  17:58:11,503 - #34 ;
+INFO  17:58:11,503 - #45 i
+INFO  17:58:11,503 - #32 ++
+INFO  17:58:11,503 - #40 )
+INFO  17:58:11,503 - #43 {
+INFO  17:58:11,503 - #13 for
+INFO  17:58:11,503 - #39 (
+INFO  17:58:11,503 - #45 j
+INFO  17:58:11,503 - #31 =
+INFO  17:58:11,503 - #46 0
+INFO  17:58:11,503 - #34 ;
+INFO  17:58:11,503 - #45 j
+INFO  17:58:11,503 - #26 <
+INFO  17:58:11,503 - #46 3
+INFO  17:58:11,504 - #34 ;
+INFO  17:58:11,504 - #45 j
+INFO  17:58:11,504 - #32 ++
+INFO  17:58:11,504 - #40 )
+INFO  17:58:11,504 - #43 {
+INFO  17:58:11,504 - #9 if
+INFO  17:58:11,504 - #39 (
+INFO  17:58:11,504 - #45 j
+INFO  17:58:11,504 - #22 ==
+INFO  17:58:11,504 - #46 1
+INFO  17:58:11,504 - #40 )
+INFO  17:58:11,504 - #12 continue
+INFO  17:58:11,504 - #34 ;
+INFO  17:58:11,504 - #45 s
+INFO  17:58:11,504 - #31 =
+INFO  17:58:11,504 - #45 s
+INFO  17:58:11,504 - #17 +
+INFO  17:58:11,504 - #46 1
+INFO  17:58:11,504 - #34 ;
+INFO  17:58:11,504 - #44 }
+INFO  17:58:11,504 - #44 }
+INFO  17:58:11,504 - #13 for
+INFO  17:58:11,504 - #39 (
+INFO  17:58:11,504 - #45 i
+INFO  17:58:11,504 - #31 =
+INFO  17:58:11,504 - #46 10
+INFO  17:58:11,504 - #34 ;
+INFO  17:58:11,504 - #45 i
+INFO  17:58:11,504 - #24 >
+INFO  17:58:11,504 - #46 0
+INFO  17:58:11,504 - #34 ;
+INFO  17:58:11,504 - #45 i
+INFO  17:58:11,504 - #33 --
+INFO  17:58:11,504 - #40 )
+INFO  17:58:11,504 - #45 s
+INFO  17:58:11,504 - #31 =
+INFO  17:58:11,504 - #45 s
+INFO  17:58:11,504 - #18 -
+INFO  17:58:11,504 - #46 1
+INFO  17:58:11,504 - #34 ;
+INFO  17:58:11,504 - #44 }
+INFO  17:58:11,504 - #44 }
+INFO  17:58:11,505 - Program(
   ProgramName(
    Petlje
   ) [ProgramName]
@@ -1182,53 +1182,53 @@ INFO  16:37:39,304 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:37:39,304 - =================================================
-INFO  16:37:39,306 - Pretraga na 12(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,306 - Pretraga na 14(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 14(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 14(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 14(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,306 - Pretraga na 14(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,306 - Pretraga na 14(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 16(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 16(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 16(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 17(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,306 - Pretraga na 17(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,306 - Pretraga na 17(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 21(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 21(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 21(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,306 - Pretraga na 21(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,306 - Pretraga na 24(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 24(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 25(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 29(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 29(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 30(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 39(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 39(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 39(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,306 - Pretraga na 40(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,307 - Pretraga na 41(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,307 - Pretraga na 42(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,307 - Pretraga na 42(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,307 - Pretraga na 42(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,307 - Pretraga na 46(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,307 - Pretraga na 46(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,307 - Pretraga na 46(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,307 - Pretraga na 47(j), nadjeno Var j: int, 1, 0
-INFO  16:37:39,307 - Pretraga na 47(j), nadjeno Var j: int, 1, 0
-INFO  16:37:39,307 - Pretraga na 47(j), nadjeno Var j: int, 1, 0
-INFO  16:37:39,307 - Pretraga na 48(j), nadjeno Var j: int, 1, 0
-INFO  16:37:39,307 - Pretraga na 49(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,307 - Pretraga na 49(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,307 - Pretraga na 54(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,307 - Pretraga na 54(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,307 - Pretraga na 54(i), nadjeno Var i: int, 0, 0
-INFO  16:37:39,307 - Pretraga na 54(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,307 - Pretraga na 54(s), nadjeno Var s: int, 2, 0
-INFO  16:37:39,307 - =================================================
+INFO  17:58:11,506 - =================================================
+INFO  17:58:11,508 - Pretraga na 12(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 14(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 14(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 14(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 14(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 14(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 14(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 16(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 16(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 16(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 17(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 17(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 17(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 21(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 21(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 21(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 21(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 24(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 24(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 25(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 29(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 29(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 30(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 39(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 39(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 39(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 40(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 41(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 42(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 42(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 42(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 46(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 46(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 46(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,508 - Pretraga na 47(j), nadjeno Var j: int, 1, 0
+INFO  17:58:11,508 - Pretraga na 47(j), nadjeno Var j: int, 1, 0
+INFO  17:58:11,508 - Pretraga na 47(j), nadjeno Var j: int, 1, 0
+INFO  17:58:11,508 - Pretraga na 48(j), nadjeno Var j: int, 1, 0
+INFO  17:58:11,508 - Pretraga na 49(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 49(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,508 - Pretraga na 54(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,509 - Pretraga na 54(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,509 - Pretraga na 54(i), nadjeno Var i: int, 0, 0
+INFO  17:58:11,509 - Pretraga na 54(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,509 - Pretraga na 54(s), nadjeno Var s: int, 2, 0
+INFO  17:58:11,509 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -1252,4 +1252,4 @@ Prog Petlje: notype, 0, 1
 
 
 
-INFO  16:37:39,308 - Generisanje uspesno zavrseno!
+INFO  17:58:11,510 - Generisanje uspesno zavrseno: test/09_for_loops.obj

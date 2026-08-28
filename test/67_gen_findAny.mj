@@ -1,0 +1,49 @@
+// EXPECT: OK
+// Amandman, nivo A: generisanje koda za findAny nad nizovima svih ugradjenih tipova,
+// sa prostom promenljivom i sa elementom niza kao odredistem.
+// OUT: 1
+// OUT: 0
+// OUT: 1
+// OUT: 1
+// OUT: 1
+// OUT: 0
+// OUT: 1
+// OUT: 0
+
+program GenFindAny
+
+int niz[], i;
+char slova[];
+bool zastave[];
+bool naso, nasoNiz[];
+
+{
+	void main()
+		bool lokalni;
+	{
+		niz = new int[5];
+		for (i = 0; i < 5; i++) niz[i] = i * 2;   // 0 2 4 6 8
+
+		naso = niz.findAny(6); print(naso); print(eol);   // 1
+		naso = niz.findAny(7); print(naso); print(eol);   // 0
+		naso = niz.findAny(0); print(naso); print(eol);   // 1 prvi element
+		naso = niz.findAny(8); print(naso); print(eol);   // 1 poslednji element
+
+		slova = new char[3];
+		slova[0] = 'a'; slova[1] = 'b'; slova[2] = 'c';
+		naso = slova.findAny('b'); print(naso); print(eol);   // 1
+		naso = slova.findAny('z'); print(naso); print(eol);   // 0
+
+		// odrediste je element niza
+		nasoNiz = new bool[2];
+		i = 1;
+		nasoNiz[i] = niz.findAny(4);
+		print(nasoNiz[1]); print(eol);                        // 1
+
+		// odrediste je lokalna promenljiva, niz logickih vrednosti
+		zastave = new bool[2];
+		zastave[0] = false; zastave[1] = false;
+		lokalni = zastave.findAny(true);
+		print(lokalni); print(eol);                           // 0
+	}
+}

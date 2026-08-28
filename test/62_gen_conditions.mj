@@ -1,0 +1,49 @@
+// EXPECT: OK
+// Generisanje koda: svi relacioni operatori, && i ||, i dokaz kratkog spajanja -
+// funkcije jesteT i jesteF ispisuju slovo kada budu stvarno pozvane.
+// OUT: 1
+// OUT: 0
+// OUT: 1
+// OUT: 1
+// OUT: 1
+// OUT: 0
+// OUT: 1
+// OUT: 1
+// OUT: F0
+// OUT: T1
+// OUT: TF0
+// OUT: FT1
+// OUT: 1
+
+program GenUslovi
+
+bool b;
+
+{
+	bool jesteT() { print('T'); return true; }
+
+	bool jesteF() { print('F'); return false; }
+
+	void main()
+	{
+		if (1 == 1) print(1); else print(0);   print(eol);   // 1
+		if (1 != 1) print(1); else print(0);   print(eol);   // 0
+		if (1 < 2)  print(1); else print(0);   print(eol);   // 1
+		if (2 <= 2) print(1); else print(0);   print(eol);   // 1
+		if (3 > 2)  print(1); else print(0);   print(eol);   // 1
+		if (2 >= 3) print(1); else print(0);   print(eol);   // 0
+		if ('a' == 'a') print(1); else print(0); print(eol); // 1
+
+		b = true;
+		if (b) print(1); else print(0);        print(eol);   // 1
+
+		// kratko spajanje: desni operand se ne izracunava kada je rezultat vec poznat
+		if (jesteF() && jesteT()) print(1); else print(0);  print(eol);  // F0
+		if (jesteT() || jesteF()) print(1); else print(0);  print(eol);  // T1
+		if (jesteT() && jesteF()) print(1); else print(0);  print(eol);  // TF0
+		if (jesteF() || jesteT()) print(1); else print(0);  print(eol);  // FT1
+
+		// && vezuje jace od ||
+		if (1 > 2 && 3 > 4 || 5 < 6) print(1); else print(0); print(eol); // 1
+	}
+}

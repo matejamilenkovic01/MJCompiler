@@ -1,6 +1,6 @@
-ERROR 16:37:42,309 - Semanticka greska: Metoda f ocekuje 2 argumenata, a pozvana je sa 1 na liniji 24
-ERROR 16:37:42,309 - Semanticka greska: Tip 2. argumenta u pozivu metode f nije kompatibilan sa formalnim argumentom y na liniji 25
-ERROR 16:37:42,309 - Semanticka greska: Poziva se a, sto nije metoda na liniji 26
-ERROR 16:37:42,309 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 26
-ERROR 16:37:42,309 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 28
-ERROR 16:37:42,309 - Parsiranje NIJE uspesno zavrseno!
+ERROR 17:58:14,623 - Semanticka greska: Metoda f ocekuje 2 argumenata, a pozvana je sa 1 na liniji 24
+ERROR 17:58:14,623 - Semanticka greska: Tip 2. argumenta u pozivu metode f nije kompatibilan sa formalnim argumentom y na liniji 25
+ERROR 17:58:14,623 - Semanticka greska: Poziva se a, sto nije metoda na liniji 26
+ERROR 17:58:14,623 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 26
+ERROR 17:58:14,624 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 28
+ERROR 17:58:14,624 - Parsiranje NIJE uspesno zavrseno!

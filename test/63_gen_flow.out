@@ -1,0 +1,2114 @@
+INFO  17:58:16,587 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/63_gen_flow.mj
+INFO  17:58:16,596 - #2 program
+INFO  17:58:16,596 - #45 GenTok
+INFO  17:58:16,596 - #45 int
+INFO  17:58:16,596 - #45 i
+INFO  17:58:16,596 - #36 ,
+INFO  17:58:16,596 - #45 j
+INFO  17:58:16,596 - #36 ,
+INFO  17:58:16,596 - #45 s
+INFO  17:58:16,596 - #34 ;
+INFO  17:58:16,596 - #43 {
+INFO  17:58:16,596 - #7 void
+INFO  17:58:16,597 - #45 main
+INFO  17:58:16,597 - #39 (
+INFO  17:58:16,597 - #40 )
+INFO  17:58:16,597 - #43 {
+INFO  17:58:16,597 - #45 i
+INFO  17:58:16,597 - #31 =
+INFO  17:58:16,597 - #46 5
+INFO  17:58:16,597 - #34 ;
+INFO  17:58:16,597 - #9 if
+INFO  17:58:16,597 - #39 (
+INFO  17:58:16,597 - #45 i
+INFO  17:58:16,597 - #26 <
+INFO  17:58:16,597 - #46 3
+INFO  17:58:16,598 - #40 )
+INFO  17:58:16,598 - #5 print
+INFO  17:58:16,598 - #39 (
+INFO  17:58:16,598 - #46 1
+INFO  17:58:16,598 - #40 )
+INFO  17:58:16,598 - #34 ;
+INFO  17:58:16,598 - #10 else
+INFO  17:58:16,598 - #9 if
+INFO  17:58:16,598 - #39 (
+INFO  17:58:16,598 - #45 i
+INFO  17:58:16,598 - #26 <
+INFO  17:58:16,598 - #46 7
+INFO  17:58:16,598 - #40 )
+INFO  17:58:16,598 - #5 print
+INFO  17:58:16,598 - #39 (
+INFO  17:58:16,598 - #46 2
+INFO  17:58:16,598 - #40 )
+INFO  17:58:16,598 - #34 ;
+INFO  17:58:16,598 - #10 else
+INFO  17:58:16,599 - #5 print
+INFO  17:58:16,599 - #39 (
+INFO  17:58:16,599 - #46 3
+INFO  17:58:16,599 - #40 )
+INFO  17:58:16,599 - #34 ;
+INFO  17:58:16,599 - #5 print
+INFO  17:58:16,599 - #39 (
+INFO  17:58:16,599 - #45 eol
+INFO  17:58:16,599 - #40 )
+INFO  17:58:16,599 - #34 ;
+INFO  17:58:16,599 - #9 if
+INFO  17:58:16,599 - #39 (
+INFO  17:58:16,599 - #45 i
+INFO  17:58:16,599 - #24 >
+INFO  17:58:16,599 - #46 0
+INFO  17:58:16,599 - #40 )
+INFO  17:58:16,599 - #9 if
+INFO  17:58:16,599 - #39 (
+INFO  17:58:16,599 - #45 i
+INFO  17:58:16,599 - #24 >
+INFO  17:58:16,599 - #46 10
+INFO  17:58:16,600 - #40 )
+INFO  17:58:16,600 - #5 print
+INFO  17:58:16,600 - #39 (
+INFO  17:58:16,600 - #46 8
+INFO  17:58:16,600 - #40 )
+INFO  17:58:16,600 - #34 ;
+INFO  17:58:16,600 - #10 else
+INFO  17:58:16,600 - #5 print
+INFO  17:58:16,600 - #39 (
+INFO  17:58:16,600 - #46 9
+INFO  17:58:16,600 - #40 )
+INFO  17:58:16,600 - #34 ;
+INFO  17:58:16,600 - #5 print
+INFO  17:58:16,600 - #39 (
+INFO  17:58:16,600 - #45 eol
+INFO  17:58:16,600 - #40 )
+INFO  17:58:16,600 - #34 ;
+INFO  17:58:16,600 - #45 s
+INFO  17:58:16,600 - #31 =
+INFO  17:58:16,600 - #46 0
+INFO  17:58:16,600 - #34 ;
+INFO  17:58:16,600 - #13 for
+INFO  17:58:16,600 - #39 (
+INFO  17:58:16,600 - #45 i
+INFO  17:58:16,600 - #31 =
+INFO  17:58:16,600 - #46 0
+INFO  17:58:16,600 - #34 ;
+INFO  17:58:16,600 - #45 i
+INFO  17:58:16,600 - #26 <
+INFO  17:58:16,600 - #46 5
+INFO  17:58:16,601 - #34 ;
+INFO  17:58:16,601 - #45 i
+INFO  17:58:16,601 - #32 ++
+INFO  17:58:16,601 - #40 )
+INFO  17:58:16,601 - #45 s
+INFO  17:58:16,601 - #31 =
+INFO  17:58:16,601 - #45 s
+INFO  17:58:16,601 - #17 +
+INFO  17:58:16,601 - #45 i
+INFO  17:58:16,601 - #34 ;
+INFO  17:58:16,601 - #5 print
+INFO  17:58:16,601 - #39 (
+INFO  17:58:16,601 - #45 s
+INFO  17:58:16,601 - #40 )
+INFO  17:58:16,601 - #34 ;
+INFO  17:58:16,601 - #5 print
+INFO  17:58:16,601 - #39 (
+INFO  17:58:16,601 - #45 eol
+INFO  17:58:16,601 - #40 )
+INFO  17:58:16,601 - #34 ;
+INFO  17:58:16,601 - #45 s
+INFO  17:58:16,601 - #31 =
+INFO  17:58:16,601 - #46 0
+INFO  17:58:16,601 - #34 ;
+INFO  17:58:16,601 - #45 i
+INFO  17:58:16,601 - #31 =
+INFO  17:58:16,601 - #46 0
+INFO  17:58:16,601 - #34 ;
+INFO  17:58:16,602 - #13 for
+INFO  17:58:16,602 - #39 (
+INFO  17:58:16,602 - #34 ;
+INFO  17:58:16,602 - #45 i
+INFO  17:58:16,602 - #26 <
+INFO  17:58:16,602 - #46 5
+INFO  17:58:16,602 - #34 ;
+INFO  17:58:16,602 - #45 i
+INFO  17:58:16,602 - #32 ++
+INFO  17:58:16,602 - #40 )
+INFO  17:58:16,602 - #45 s
+INFO  17:58:16,602 - #31 =
+INFO  17:58:16,602 - #45 s
+INFO  17:58:16,602 - #17 +
+INFO  17:58:16,602 - #46 1
+INFO  17:58:16,602 - #34 ;
+INFO  17:58:16,602 - #5 print
+INFO  17:58:16,602 - #39 (
+INFO  17:58:16,602 - #45 s
+INFO  17:58:16,602 - #40 )
+INFO  17:58:16,602 - #34 ;
+INFO  17:58:16,602 - #5 print
+INFO  17:58:16,602 - #39 (
+INFO  17:58:16,602 - #45 eol
+INFO  17:58:16,602 - #40 )
+INFO  17:58:16,602 - #34 ;
+INFO  17:58:16,602 - #45 s
+INFO  17:58:16,602 - #31 =
+INFO  17:58:16,602 - #46 0
+INFO  17:58:16,602 - #34 ;
+INFO  17:58:16,602 - #13 for
+INFO  17:58:16,602 - #39 (
+INFO  17:58:16,602 - #45 i
+INFO  17:58:16,602 - #31 =
+INFO  17:58:16,602 - #46 0
+INFO  17:58:16,602 - #34 ;
+INFO  17:58:16,602 - #45 i
+INFO  17:58:16,602 - #26 <
+INFO  17:58:16,602 - #46 5
+INFO  17:58:16,602 - #34 ;
+INFO  17:58:16,603 - #40 )
+INFO  17:58:16,603 - #43 {
+INFO  17:58:16,603 - #45 s
+INFO  17:58:16,603 - #31 =
+INFO  17:58:16,603 - #45 s
+INFO  17:58:16,603 - #17 +
+INFO  17:58:16,603 - #46 2
+INFO  17:58:16,603 - #34 ;
+INFO  17:58:16,603 - #45 i
+INFO  17:58:16,603 - #32 ++
+INFO  17:58:16,603 - #34 ;
+INFO  17:58:16,603 - #44 }
+INFO  17:58:16,603 - #5 print
+INFO  17:58:16,603 - #39 (
+INFO  17:58:16,603 - #45 s
+INFO  17:58:16,603 - #40 )
+INFO  17:58:16,603 - #34 ;
+INFO  17:58:16,603 - #5 print
+INFO  17:58:16,603 - #39 (
+INFO  17:58:16,603 - #45 eol
+INFO  17:58:16,603 - #40 )
+INFO  17:58:16,603 - #34 ;
+INFO  17:58:16,603 - #45 i
+INFO  17:58:16,603 - #31 =
+INFO  17:58:16,603 - #46 0
+INFO  17:58:16,603 - #34 ;
+INFO  17:58:16,603 - #13 for
+INFO  17:58:16,603 - #39 (
+INFO  17:58:16,603 - #34 ;
+INFO  17:58:16,603 - #34 ;
+INFO  17:58:16,603 - #40 )
+INFO  17:58:16,603 - #43 {
+INFO  17:58:16,603 - #45 i
+INFO  17:58:16,603 - #32 ++
+INFO  17:58:16,603 - #34 ;
+INFO  17:58:16,603 - #9 if
+INFO  17:58:16,603 - #39 (
+INFO  17:58:16,603 - #45 i
+INFO  17:58:16,604 - #22 ==
+INFO  17:58:16,604 - #46 4
+INFO  17:58:16,604 - #40 )
+INFO  17:58:16,604 - #11 break
+INFO  17:58:16,604 - #34 ;
+INFO  17:58:16,604 - #44 }
+INFO  17:58:16,604 - #5 print
+INFO  17:58:16,604 - #39 (
+INFO  17:58:16,604 - #45 i
+INFO  17:58:16,604 - #40 )
+INFO  17:58:16,604 - #34 ;
+INFO  17:58:16,604 - #5 print
+INFO  17:58:16,604 - #39 (
+INFO  17:58:16,604 - #45 eol
+INFO  17:58:16,604 - #40 )
+INFO  17:58:16,604 - #34 ;
+INFO  17:58:16,604 - #45 s
+INFO  17:58:16,604 - #31 =
+INFO  17:58:16,604 - #46 0
+INFO  17:58:16,604 - #34 ;
+INFO  17:58:16,604 - #13 for
+INFO  17:58:16,604 - #39 (
+INFO  17:58:16,604 - #45 i
+INFO  17:58:16,604 - #31 =
+INFO  17:58:16,604 - #46 0
+INFO  17:58:16,604 - #34 ;
+INFO  17:58:16,604 - #45 i
+INFO  17:58:16,604 - #26 <
+INFO  17:58:16,604 - #46 10
+INFO  17:58:16,604 - #34 ;
+INFO  17:58:16,604 - #45 i
+INFO  17:58:16,604 - #32 ++
+INFO  17:58:16,604 - #40 )
+INFO  17:58:16,604 - #43 {
+INFO  17:58:16,604 - #9 if
+INFO  17:58:16,604 - #39 (
+INFO  17:58:16,604 - #45 i
+INFO  17:58:16,604 - #22 ==
+INFO  17:58:16,604 - #46 3
+INFO  17:58:16,604 - #40 )
+INFO  17:58:16,604 - #12 continue
+INFO  17:58:16,604 - #34 ;
+INFO  17:58:16,604 - #9 if
+INFO  17:58:16,605 - #39 (
+INFO  17:58:16,605 - #45 i
+INFO  17:58:16,605 - #22 ==
+INFO  17:58:16,605 - #46 7
+INFO  17:58:16,605 - #40 )
+INFO  17:58:16,605 - #11 break
+INFO  17:58:16,605 - #34 ;
+INFO  17:58:16,605 - #45 s
+INFO  17:58:16,605 - #31 =
+INFO  17:58:16,605 - #45 s
+INFO  17:58:16,605 - #17 +
+INFO  17:58:16,605 - #45 i
+INFO  17:58:16,605 - #34 ;
+INFO  17:58:16,605 - #44 }
+INFO  17:58:16,605 - #5 print
+INFO  17:58:16,605 - #39 (
+INFO  17:58:16,605 - #45 s
+INFO  17:58:16,605 - #40 )
+INFO  17:58:16,605 - #34 ;
+INFO  17:58:16,605 - #5 print
+INFO  17:58:16,605 - #39 (
+INFO  17:58:16,605 - #45 eol
+INFO  17:58:16,605 - #40 )
+INFO  17:58:16,606 - #34 ;
+INFO  17:58:16,606 - #45 s
+INFO  17:58:16,606 - #31 =
+INFO  17:58:16,606 - #46 0
+INFO  17:58:16,606 - #34 ;
+INFO  17:58:16,606 - #13 for
+INFO  17:58:16,606 - #39 (
+INFO  17:58:16,606 - #45 i
+INFO  17:58:16,606 - #31 =
+INFO  17:58:16,606 - #46 0
+INFO  17:58:16,606 - #34 ;
+INFO  17:58:16,606 - #45 i
+INFO  17:58:16,606 - #26 <
+INFO  17:58:16,606 - #46 3
+INFO  17:58:16,606 - #34 ;
+INFO  17:58:16,606 - #45 i
+INFO  17:58:16,606 - #32 ++
+INFO  17:58:16,606 - #40 )
+INFO  17:58:16,606 - #13 for
+INFO  17:58:16,606 - #39 (
+INFO  17:58:16,606 - #45 j
+INFO  17:58:16,606 - #31 =
+INFO  17:58:16,606 - #46 0
+INFO  17:58:16,606 - #34 ;
+INFO  17:58:16,606 - #45 j
+INFO  17:58:16,606 - #26 <
+INFO  17:58:16,606 - #46 3
+INFO  17:58:16,606 - #34 ;
+INFO  17:58:16,606 - #45 j
+INFO  17:58:16,606 - #32 ++
+INFO  17:58:16,606 - #40 )
+INFO  17:58:16,606 - #43 {
+INFO  17:58:16,606 - #9 if
+INFO  17:58:16,606 - #39 (
+INFO  17:58:16,606 - #45 j
+INFO  17:58:16,606 - #22 ==
+INFO  17:58:16,606 - #46 1
+INFO  17:58:16,606 - #40 )
+INFO  17:58:16,606 - #12 continue
+INFO  17:58:16,606 - #34 ;
+INFO  17:58:16,606 - #45 s
+INFO  17:58:16,606 - #31 =
+INFO  17:58:16,606 - #45 s
+INFO  17:58:16,606 - #17 +
+INFO  17:58:16,606 - #46 1
+INFO  17:58:16,606 - #34 ;
+INFO  17:58:16,606 - #44 }
+INFO  17:58:16,606 - #5 print
+INFO  17:58:16,607 - #39 (
+INFO  17:58:16,607 - #45 s
+INFO  17:58:16,607 - #40 )
+INFO  17:58:16,607 - #34 ;
+INFO  17:58:16,607 - #5 print
+INFO  17:58:16,607 - #39 (
+INFO  17:58:16,607 - #45 eol
+INFO  17:58:16,607 - #40 )
+INFO  17:58:16,607 - #34 ;
+INFO  17:58:16,607 - #45 s
+INFO  17:58:16,607 - #31 =
+INFO  17:58:16,607 - #46 0
+INFO  17:58:16,607 - #34 ;
+INFO  17:58:16,607 - #13 for
+INFO  17:58:16,607 - #39 (
+INFO  17:58:16,607 - #45 i
+INFO  17:58:16,607 - #31 =
+INFO  17:58:16,607 - #46 0
+INFO  17:58:16,607 - #34 ;
+INFO  17:58:16,607 - #45 i
+INFO  17:58:16,607 - #26 <
+INFO  17:58:16,607 - #46 3
+INFO  17:58:16,607 - #34 ;
+INFO  17:58:16,607 - #45 i
+INFO  17:58:16,607 - #32 ++
+INFO  17:58:16,607 - #40 )
+INFO  17:58:16,607 - #13 for
+INFO  17:58:16,607 - #39 (
+INFO  17:58:16,607 - #45 j
+INFO  17:58:16,607 - #31 =
+INFO  17:58:16,607 - #46 0
+INFO  17:58:16,607 - #34 ;
+INFO  17:58:16,607 - #45 j
+INFO  17:58:16,607 - #26 <
+INFO  17:58:16,607 - #46 5
+INFO  17:58:16,607 - #34 ;
+INFO  17:58:16,607 - #45 j
+INFO  17:58:16,607 - #32 ++
+INFO  17:58:16,607 - #40 )
+INFO  17:58:16,607 - #43 {
+INFO  17:58:16,607 - #9 if
+INFO  17:58:16,607 - #39 (
+INFO  17:58:16,607 - #45 j
+INFO  17:58:16,607 - #22 ==
+INFO  17:58:16,607 - #46 2
+INFO  17:58:16,607 - #40 )
+INFO  17:58:16,608 - #11 break
+INFO  17:58:16,608 - #34 ;
+INFO  17:58:16,608 - #45 s
+INFO  17:58:16,608 - #31 =
+INFO  17:58:16,608 - #45 s
+INFO  17:58:16,608 - #17 +
+INFO  17:58:16,608 - #46 1
+INFO  17:58:16,608 - #34 ;
+INFO  17:58:16,608 - #44 }
+INFO  17:58:16,608 - #5 print
+INFO  17:58:16,608 - #39 (
+INFO  17:58:16,608 - #45 s
+INFO  17:58:16,608 - #40 )
+INFO  17:58:16,608 - #34 ;
+INFO  17:58:16,608 - #5 print
+INFO  17:58:16,608 - #39 (
+INFO  17:58:16,608 - #45 eol
+INFO  17:58:16,608 - #40 )
+INFO  17:58:16,608 - #34 ;
+INFO  17:58:16,608 - #44 }
+INFO  17:58:16,608 - #44 }
+INFO  17:58:16,610 - Program(
+  ProgramName(
+   GenTok
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_epsilon(
+    ) [DeclList_epsilon]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_more(
+        VarItemList_more(
+          VarItemList_one(
+            VarItem_var(
+             i
+            ) [VarItem_var]
+          ) [VarItemList_one]
+          VarItem_var(
+           j
+          ) [VarItem_var]
+        ) [VarItemList_more]
+        VarItem_var(
+         s
+        ) [VarItem_var]
+      ) [VarItemList_more]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_more(
+                StatementList_more(
+                  StatementList_more(
+                    StatementList_more(
+                      StatementList_more(
+                        StatementList_more(
+                          StatementList_more(
+                            StatementList_more(
+                              StatementList_more(
+                                StatementList_more(
+                                  StatementList_more(
+                                    StatementList_more(
+                                      StatementList_more(
+                                        StatementList_more(
+                                          StatementList_more(
+                                            StatementList_more(
+                                              StatementList_more(
+                                                StatementList_more(
+                                                  StatementList_more(
+                                                    StatementList_more(
+                                                      StatementList_more(
+                                                        StatementList_more(
+                                                          StatementList_more(
+                                                            StatementList_more(
+                                                              StatementList_more(
+                                                                StatementList_more(
+                                                                  StatementList_more(
+                                                                    StatementList_more(
+                                                                      StatementList_more(
+                                                                        StatementList_more(
+                                                                          StatementList_epsilon(
+                                                                          ) [StatementList_epsilon]
+                                                                          Statement_designator(
+                                                                            DesignatorStatement_assign(
+                                                                              Designator_var(
+                                                                               i
+                                                                              ) [Designator_var]
+                                                                              Expr_add(
+                                                                                AddExpr_term(
+                                                                                  Term_factor(
+                                                                                    Factor_sub(
+                                                                                      FactorSub_number(
+                                                                                       5
+                                                                                      ) [FactorSub_number]
+                                                                                    ) [Factor_sub]
+                                                                                  ) [Term_factor]
+                                                                                ) [AddExpr_term]
+                                                                              ) [Expr_add]
+                                                                            ) [DesignatorStatement_assign]
+                                                                          ) [Statement_designator]
+                                                                        ) [StatementList_more]
+                                                                        Statement_ifElse(
+                                                                          IfCondition_cond(
+                                                                            Condition_term(
+                                                                              CondTerm_fact(
+                                                                                CondFact_relop(
+                                                                                  AddExpr_term(
+                                                                                    Term_factor(
+                                                                                      Factor_sub(
+                                                                                        FactorSub_designator(
+                                                                                          Designator_var(
+                                                                                           i
+                                                                                          ) [Designator_var]
+                                                                                        ) [FactorSub_designator]
+                                                                                      ) [Factor_sub]
+                                                                                    ) [Term_factor]
+                                                                                  ) [AddExpr_term]
+                                                                                  Relop_lt(
+                                                                                  ) [Relop_lt]
+                                                                                  AddExpr_term(
+                                                                                    Term_factor(
+                                                                                      Factor_sub(
+                                                                                        FactorSub_number(
+                                                                                         3
+                                                                                        ) [FactorSub_number]
+                                                                                      ) [Factor_sub]
+                                                                                    ) [Term_factor]
+                                                                                  ) [AddExpr_term]
+                                                                                ) [CondFact_relop]
+                                                                              ) [CondTerm_fact]
+                                                                            ) [Condition_term]
+                                                                          ) [IfCondition_cond]
+                                                                          Statement_print(
+                                                                            Expr_add(
+                                                                              AddExpr_term(
+                                                                                Term_factor(
+                                                                                  Factor_sub(
+                                                                                    FactorSub_number(
+                                                                                     1
+                                                                                    ) [FactorSub_number]
+                                                                                  ) [Factor_sub]
+                                                                                ) [Term_factor]
+                                                                              ) [AddExpr_term]
+                                                                            ) [Expr_add]
+                                                                            PrintWidthOpt_epsilon(
+                                                                            ) [PrintWidthOpt_epsilon]
+                                                                          ) [Statement_print]
+                                                                          ElseMark(
+                                                                          ) [ElseMark]
+                                                                          Statement_ifElse(
+                                                                            IfCondition_cond(
+                                                                              Condition_term(
+                                                                                CondTerm_fact(
+                                                                                  CondFact_relop(
+                                                                                    AddExpr_term(
+                                                                                      Term_factor(
+                                                                                        Factor_sub(
+                                                                                          FactorSub_designator(
+                                                                                            Designator_var(
+                                                                                             i
+                                                                                            ) [Designator_var]
+                                                                                          ) [FactorSub_designator]
+                                                                                        ) [Factor_sub]
+                                                                                      ) [Term_factor]
+                                                                                    ) [AddExpr_term]
+                                                                                    Relop_lt(
+                                                                                    ) [Relop_lt]
+                                                                                    AddExpr_term(
+                                                                                      Term_factor(
+                                                                                        Factor_sub(
+                                                                                          FactorSub_number(
+                                                                                           7
+                                                                                          ) [FactorSub_number]
+                                                                                        ) [Factor_sub]
+                                                                                      ) [Term_factor]
+                                                                                    ) [AddExpr_term]
+                                                                                  ) [CondFact_relop]
+                                                                                ) [CondTerm_fact]
+                                                                              ) [Condition_term]
+                                                                            ) [IfCondition_cond]
+                                                                            Statement_print(
+                                                                              Expr_add(
+                                                                                AddExpr_term(
+                                                                                  Term_factor(
+                                                                                    Factor_sub(
+                                                                                      FactorSub_number(
+                                                                                       2
+                                                                                      ) [FactorSub_number]
+                                                                                    ) [Factor_sub]
+                                                                                  ) [Term_factor]
+                                                                                ) [AddExpr_term]
+                                                                              ) [Expr_add]
+                                                                              PrintWidthOpt_epsilon(
+                                                                              ) [PrintWidthOpt_epsilon]
+                                                                            ) [Statement_print]
+                                                                            ElseMark(
+                                                                            ) [ElseMark]
+                                                                            Statement_print(
+                                                                              Expr_add(
+                                                                                AddExpr_term(
+                                                                                  Term_factor(
+                                                                                    Factor_sub(
+                                                                                      FactorSub_number(
+                                                                                       3
+                                                                                      ) [FactorSub_number]
+                                                                                    ) [Factor_sub]
+                                                                                  ) [Term_factor]
+                                                                                ) [AddExpr_term]
+                                                                              ) [Expr_add]
+                                                                              PrintWidthOpt_epsilon(
+                                                                              ) [PrintWidthOpt_epsilon]
+                                                                            ) [Statement_print]
+                                                                          ) [Statement_ifElse]
+                                                                        ) [Statement_ifElse]
+                                                                      ) [StatementList_more]
+                                                                      Statement_print(
+                                                                        Expr_add(
+                                                                          AddExpr_term(
+                                                                            Term_factor(
+                                                                              Factor_sub(
+                                                                                FactorSub_designator(
+                                                                                  Designator_var(
+                                                                                   eol
+                                                                                  ) [Designator_var]
+                                                                                ) [FactorSub_designator]
+                                                                              ) [Factor_sub]
+                                                                            ) [Term_factor]
+                                                                          ) [AddExpr_term]
+                                                                        ) [Expr_add]
+                                                                        PrintWidthOpt_epsilon(
+                                                                        ) [PrintWidthOpt_epsilon]
+                                                                      ) [Statement_print]
+                                                                    ) [StatementList_more]
+                                                                    Statement_if(
+                                                                      IfCondition_cond(
+                                                                        Condition_term(
+                                                                          CondTerm_fact(
+                                                                            CondFact_relop(
+                                                                              AddExpr_term(
+                                                                                Term_factor(
+                                                                                  Factor_sub(
+                                                                                    FactorSub_designator(
+                                                                                      Designator_var(
+                                                                                       i
+                                                                                      ) [Designator_var]
+                                                                                    ) [FactorSub_designator]
+                                                                                  ) [Factor_sub]
+                                                                                ) [Term_factor]
+                                                                              ) [AddExpr_term]
+                                                                              Relop_gt(
+                                                                              ) [Relop_gt]
+                                                                              AddExpr_term(
+                                                                                Term_factor(
+                                                                                  Factor_sub(
+                                                                                    FactorSub_number(
+                                                                                     0
+                                                                                    ) [FactorSub_number]
+                                                                                  ) [Factor_sub]
+                                                                                ) [Term_factor]
+                                                                              ) [AddExpr_term]
+                                                                            ) [CondFact_relop]
+                                                                          ) [CondTerm_fact]
+                                                                        ) [Condition_term]
+                                                                      ) [IfCondition_cond]
+                                                                      Statement_ifElse(
+                                                                        IfCondition_cond(
+                                                                          Condition_term(
+                                                                            CondTerm_fact(
+                                                                              CondFact_relop(
+                                                                                AddExpr_term(
+                                                                                  Term_factor(
+                                                                                    Factor_sub(
+                                                                                      FactorSub_designator(
+                                                                                        Designator_var(
+                                                                                         i
+                                                                                        ) [Designator_var]
+                                                                                      ) [FactorSub_designator]
+                                                                                    ) [Factor_sub]
+                                                                                  ) [Term_factor]
+                                                                                ) [AddExpr_term]
+                                                                                Relop_gt(
+                                                                                ) [Relop_gt]
+                                                                                AddExpr_term(
+                                                                                  Term_factor(
+                                                                                    Factor_sub(
+                                                                                      FactorSub_number(
+                                                                                       10
+                                                                                      ) [FactorSub_number]
+                                                                                    ) [Factor_sub]
+                                                                                  ) [Term_factor]
+                                                                                ) [AddExpr_term]
+                                                                              ) [CondFact_relop]
+                                                                            ) [CondTerm_fact]
+                                                                          ) [Condition_term]
+                                                                        ) [IfCondition_cond]
+                                                                        Statement_print(
+                                                                          Expr_add(
+                                                                            AddExpr_term(
+                                                                              Term_factor(
+                                                                                Factor_sub(
+                                                                                  FactorSub_number(
+                                                                                   8
+                                                                                  ) [FactorSub_number]
+                                                                                ) [Factor_sub]
+                                                                              ) [Term_factor]
+                                                                            ) [AddExpr_term]
+                                                                          ) [Expr_add]
+                                                                          PrintWidthOpt_epsilon(
+                                                                          ) [PrintWidthOpt_epsilon]
+                                                                        ) [Statement_print]
+                                                                        ElseMark(
+                                                                        ) [ElseMark]
+                                                                        Statement_print(
+                                                                          Expr_add(
+                                                                            AddExpr_term(
+                                                                              Term_factor(
+                                                                                Factor_sub(
+                                                                                  FactorSub_number(
+                                                                                   9
+                                                                                  ) [FactorSub_number]
+                                                                                ) [Factor_sub]
+                                                                              ) [Term_factor]
+                                                                            ) [AddExpr_term]
+                                                                          ) [Expr_add]
+                                                                          PrintWidthOpt_epsilon(
+                                                                          ) [PrintWidthOpt_epsilon]
+                                                                        ) [Statement_print]
+                                                                      ) [Statement_ifElse]
+                                                                    ) [Statement_if]
+                                                                  ) [StatementList_more]
+                                                                  Statement_print(
+                                                                    Expr_add(
+                                                                      AddExpr_term(
+                                                                        Term_factor(
+                                                                          Factor_sub(
+                                                                            FactorSub_designator(
+                                                                              Designator_var(
+                                                                               eol
+                                                                              ) [Designator_var]
+                                                                            ) [FactorSub_designator]
+                                                                          ) [Factor_sub]
+                                                                        ) [Term_factor]
+                                                                      ) [AddExpr_term]
+                                                                    ) [Expr_add]
+                                                                    PrintWidthOpt_epsilon(
+                                                                    ) [PrintWidthOpt_epsilon]
+                                                                  ) [Statement_print]
+                                                                ) [StatementList_more]
+                                                                Statement_designator(
+                                                                  DesignatorStatement_assign(
+                                                                    Designator_var(
+                                                                     s
+                                                                    ) [Designator_var]
+                                                                    Expr_add(
+                                                                      AddExpr_term(
+                                                                        Term_factor(
+                                                                          Factor_sub(
+                                                                            FactorSub_number(
+                                                                             0
+                                                                            ) [FactorSub_number]
+                                                                          ) [Factor_sub]
+                                                                        ) [Term_factor]
+                                                                      ) [AddExpr_term]
+                                                                    ) [Expr_add]
+                                                                  ) [DesignatorStatement_assign]
+                                                                ) [Statement_designator]
+                                                              ) [StatementList_more]
+                                                              Statement_for(
+                                                                ForStart(
+                                                                ) [ForStart]
+                                                                ForInitOpt_stmt(
+                                                                  DesignatorStatement_assign(
+                                                                    Designator_var(
+                                                                     i
+                                                                    ) [Designator_var]
+                                                                    Expr_add(
+                                                                      AddExpr_term(
+                                                                        Term_factor(
+                                                                          Factor_sub(
+                                                                            FactorSub_number(
+                                                                             0
+                                                                            ) [FactorSub_number]
+                                                                          ) [Factor_sub]
+                                                                        ) [Term_factor]
+                                                                      ) [AddExpr_term]
+                                                                    ) [Expr_add]
+                                                                  ) [DesignatorStatement_assign]
+                                                                ) [ForInitOpt_stmt]
+                                                                ForCondOpt_cond(
+                                                                  Condition_term(
+                                                                    CondTerm_fact(
+                                                                      CondFact_relop(
+                                                                        AddExpr_term(
+                                                                          Term_factor(
+                                                                            Factor_sub(
+                                                                              FactorSub_designator(
+                                                                                Designator_var(
+                                                                                 i
+                                                                                ) [Designator_var]
+                                                                              ) [FactorSub_designator]
+                                                                            ) [Factor_sub]
+                                                                          ) [Term_factor]
+                                                                        ) [AddExpr_term]
+                                                                        Relop_lt(
+                                                                        ) [Relop_lt]
+                                                                        AddExpr_term(
+                                                                          Term_factor(
+                                                                            Factor_sub(
+                                                                              FactorSub_number(
+                                                                               5
+                                                                              ) [FactorSub_number]
+                                                                            ) [Factor_sub]
+                                                                          ) [Term_factor]
+                                                                        ) [AddExpr_term]
+                                                                      ) [CondFact_relop]
+                                                                    ) [CondTerm_fact]
+                                                                  ) [Condition_term]
+                                                                ) [ForCondOpt_cond]
+                                                                ForStepOpt_stmt(
+                                                                  DesignatorStatement_inc(
+                                                                    Designator_var(
+                                                                     i
+                                                                    ) [Designator_var]
+                                                                  ) [DesignatorStatement_inc]
+                                                                ) [ForStepOpt_stmt]
+                                                                Statement_designator(
+                                                                  DesignatorStatement_assign(
+                                                                    Designator_var(
+                                                                     s
+                                                                    ) [Designator_var]
+                                                                    Expr_add(
+                                                                      AddExpr_addop(
+                                                                        AddExpr_term(
+                                                                          Term_factor(
+                                                                            Factor_sub(
+                                                                              FactorSub_designator(
+                                                                                Designator_var(
+                                                                                 s
+                                                                                ) [Designator_var]
+                                                                              ) [FactorSub_designator]
+                                                                            ) [Factor_sub]
+                                                                          ) [Term_factor]
+                                                                        ) [AddExpr_term]
+                                                                        Addop_plus(
+                                                                        ) [Addop_plus]
+                                                                        Term_factor(
+                                                                          Factor_sub(
+                                                                            FactorSub_designator(
+                                                                              Designator_var(
+                                                                               i
+                                                                              ) [Designator_var]
+                                                                            ) [FactorSub_designator]
+                                                                          ) [Factor_sub]
+                                                                        ) [Term_factor]
+                                                                      ) [AddExpr_addop]
+                                                                    ) [Expr_add]
+                                                                  ) [DesignatorStatement_assign]
+                                                                ) [Statement_designator]
+                                                              ) [Statement_for]
+                                                            ) [StatementList_more]
+                                                            Statement_print(
+                                                              Expr_add(
+                                                                AddExpr_term(
+                                                                  Term_factor(
+                                                                    Factor_sub(
+                                                                      FactorSub_designator(
+                                                                        Designator_var(
+                                                                         s
+                                                                        ) [Designator_var]
+                                                                      ) [FactorSub_designator]
+                                                                    ) [Factor_sub]
+                                                                  ) [Term_factor]
+                                                                ) [AddExpr_term]
+                                                              ) [Expr_add]
+                                                              PrintWidthOpt_epsilon(
+                                                              ) [PrintWidthOpt_epsilon]
+                                                            ) [Statement_print]
+                                                          ) [StatementList_more]
+                                                          Statement_print(
+                                                            Expr_add(
+                                                              AddExpr_term(
+                                                                Term_factor(
+                                                                  Factor_sub(
+                                                                    FactorSub_designator(
+                                                                      Designator_var(
+                                                                       eol
+                                                                      ) [Designator_var]
+                                                                    ) [FactorSub_designator]
+                                                                  ) [Factor_sub]
+                                                                ) [Term_factor]
+                                                              ) [AddExpr_term]
+                                                            ) [Expr_add]
+                                                            PrintWidthOpt_epsilon(
+                                                            ) [PrintWidthOpt_epsilon]
+                                                          ) [Statement_print]
+                                                        ) [StatementList_more]
+                                                        Statement_designator(
+                                                          DesignatorStatement_assign(
+                                                            Designator_var(
+                                                             s
+                                                            ) [Designator_var]
+                                                            Expr_add(
+                                                              AddExpr_term(
+                                                                Term_factor(
+                                                                  Factor_sub(
+                                                                    FactorSub_number(
+                                                                     0
+                                                                    ) [FactorSub_number]
+                                                                  ) [Factor_sub]
+                                                                ) [Term_factor]
+                                                              ) [AddExpr_term]
+                                                            ) [Expr_add]
+                                                          ) [DesignatorStatement_assign]
+                                                        ) [Statement_designator]
+                                                      ) [StatementList_more]
+                                                      Statement_designator(
+                                                        DesignatorStatement_assign(
+                                                          Designator_var(
+                                                           i
+                                                          ) [Designator_var]
+                                                          Expr_add(
+                                                            AddExpr_term(
+                                                              Term_factor(
+                                                                Factor_sub(
+                                                                  FactorSub_number(
+                                                                   0
+                                                                  ) [FactorSub_number]
+                                                                ) [Factor_sub]
+                                                              ) [Term_factor]
+                                                            ) [AddExpr_term]
+                                                          ) [Expr_add]
+                                                        ) [DesignatorStatement_assign]
+                                                      ) [Statement_designator]
+                                                    ) [StatementList_more]
+                                                    Statement_for(
+                                                      ForStart(
+                                                      ) [ForStart]
+                                                      ForInitOpt_epsilon(
+                                                      ) [ForInitOpt_epsilon]
+                                                      ForCondOpt_cond(
+                                                        Condition_term(
+                                                          CondTerm_fact(
+                                                            CondFact_relop(
+                                                              AddExpr_term(
+                                                                Term_factor(
+                                                                  Factor_sub(
+                                                                    FactorSub_designator(
+                                                                      Designator_var(
+                                                                       i
+                                                                      ) [Designator_var]
+                                                                    ) [FactorSub_designator]
+                                                                  ) [Factor_sub]
+                                                                ) [Term_factor]
+                                                              ) [AddExpr_term]
+                                                              Relop_lt(
+                                                              ) [Relop_lt]
+                                                              AddExpr_term(
+                                                                Term_factor(
+                                                                  Factor_sub(
+                                                                    FactorSub_number(
+                                                                     5
+                                                                    ) [FactorSub_number]
+                                                                  ) [Factor_sub]
+                                                                ) [Term_factor]
+                                                              ) [AddExpr_term]
+                                                            ) [CondFact_relop]
+                                                          ) [CondTerm_fact]
+                                                        ) [Condition_term]
+                                                      ) [ForCondOpt_cond]
+                                                      ForStepOpt_stmt(
+                                                        DesignatorStatement_inc(
+                                                          Designator_var(
+                                                           i
+                                                          ) [Designator_var]
+                                                        ) [DesignatorStatement_inc]
+                                                      ) [ForStepOpt_stmt]
+                                                      Statement_designator(
+                                                        DesignatorStatement_assign(
+                                                          Designator_var(
+                                                           s
+                                                          ) [Designator_var]
+                                                          Expr_add(
+                                                            AddExpr_addop(
+                                                              AddExpr_term(
+                                                                Term_factor(
+                                                                  Factor_sub(
+                                                                    FactorSub_designator(
+                                                                      Designator_var(
+                                                                       s
+                                                                      ) [Designator_var]
+                                                                    ) [FactorSub_designator]
+                                                                  ) [Factor_sub]
+                                                                ) [Term_factor]
+                                                              ) [AddExpr_term]
+                                                              Addop_plus(
+                                                              ) [Addop_plus]
+                                                              Term_factor(
+                                                                Factor_sub(
+                                                                  FactorSub_number(
+                                                                   1
+                                                                  ) [FactorSub_number]
+                                                                ) [Factor_sub]
+                                                              ) [Term_factor]
+                                                            ) [AddExpr_addop]
+                                                          ) [Expr_add]
+                                                        ) [DesignatorStatement_assign]
+                                                      ) [Statement_designator]
+                                                    ) [Statement_for]
+                                                  ) [StatementList_more]
+                                                  Statement_print(
+                                                    Expr_add(
+                                                      AddExpr_term(
+                                                        Term_factor(
+                                                          Factor_sub(
+                                                            FactorSub_designator(
+                                                              Designator_var(
+                                                               s
+                                                              ) [Designator_var]
+                                                            ) [FactorSub_designator]
+                                                          ) [Factor_sub]
+                                                        ) [Term_factor]
+                                                      ) [AddExpr_term]
+                                                    ) [Expr_add]
+                                                    PrintWidthOpt_epsilon(
+                                                    ) [PrintWidthOpt_epsilon]
+                                                  ) [Statement_print]
+                                                ) [StatementList_more]
+                                                Statement_print(
+                                                  Expr_add(
+                                                    AddExpr_term(
+                                                      Term_factor(
+                                                        Factor_sub(
+                                                          FactorSub_designator(
+                                                            Designator_var(
+                                                             eol
+                                                            ) [Designator_var]
+                                                          ) [FactorSub_designator]
+                                                        ) [Factor_sub]
+                                                      ) [Term_factor]
+                                                    ) [AddExpr_term]
+                                                  ) [Expr_add]
+                                                  PrintWidthOpt_epsilon(
+                                                  ) [PrintWidthOpt_epsilon]
+                                                ) [Statement_print]
+                                              ) [StatementList_more]
+                                              Statement_designator(
+                                                DesignatorStatement_assign(
+                                                  Designator_var(
+                                                   s
+                                                  ) [Designator_var]
+                                                  Expr_add(
+                                                    AddExpr_term(
+                                                      Term_factor(
+                                                        Factor_sub(
+                                                          FactorSub_number(
+                                                           0
+                                                          ) [FactorSub_number]
+                                                        ) [Factor_sub]
+                                                      ) [Term_factor]
+                                                    ) [AddExpr_term]
+                                                  ) [Expr_add]
+                                                ) [DesignatorStatement_assign]
+                                              ) [Statement_designator]
+                                            ) [StatementList_more]
+                                            Statement_for(
+                                              ForStart(
+                                              ) [ForStart]
+                                              ForInitOpt_stmt(
+                                                DesignatorStatement_assign(
+                                                  Designator_var(
+                                                   i
+                                                  ) [Designator_var]
+                                                  Expr_add(
+                                                    AddExpr_term(
+                                                      Term_factor(
+                                                        Factor_sub(
+                                                          FactorSub_number(
+                                                           0
+                                                          ) [FactorSub_number]
+                                                        ) [Factor_sub]
+                                                      ) [Term_factor]
+                                                    ) [AddExpr_term]
+                                                  ) [Expr_add]
+                                                ) [DesignatorStatement_assign]
+                                              ) [ForInitOpt_stmt]
+                                              ForCondOpt_cond(
+                                                Condition_term(
+                                                  CondTerm_fact(
+                                                    CondFact_relop(
+                                                      AddExpr_term(
+                                                        Term_factor(
+                                                          Factor_sub(
+                                                            FactorSub_designator(
+                                                              Designator_var(
+                                                               i
+                                                              ) [Designator_var]
+                                                            ) [FactorSub_designator]
+                                                          ) [Factor_sub]
+                                                        ) [Term_factor]
+                                                      ) [AddExpr_term]
+                                                      Relop_lt(
+                                                      ) [Relop_lt]
+                                                      AddExpr_term(
+                                                        Term_factor(
+                                                          Factor_sub(
+                                                            FactorSub_number(
+                                                             5
+                                                            ) [FactorSub_number]
+                                                          ) [Factor_sub]
+                                                        ) [Term_factor]
+                                                      ) [AddExpr_term]
+                                                    ) [CondFact_relop]
+                                                  ) [CondTerm_fact]
+                                                ) [Condition_term]
+                                              ) [ForCondOpt_cond]
+                                              ForStepOpt_epsilon(
+                                              ) [ForStepOpt_epsilon]
+                                              Statement_block(
+                                                StatementList_more(
+                                                  StatementList_more(
+                                                    StatementList_epsilon(
+                                                    ) [StatementList_epsilon]
+                                                    Statement_designator(
+                                                      DesignatorStatement_assign(
+                                                        Designator_var(
+                                                         s
+                                                        ) [Designator_var]
+                                                        Expr_add(
+                                                          AddExpr_addop(
+                                                            AddExpr_term(
+                                                              Term_factor(
+                                                                Factor_sub(
+                                                                  FactorSub_designator(
+                                                                    Designator_var(
+                                                                     s
+                                                                    ) [Designator_var]
+                                                                  ) [FactorSub_designator]
+                                                                ) [Factor_sub]
+                                                              ) [Term_factor]
+                                                            ) [AddExpr_term]
+                                                            Addop_plus(
+                                                            ) [Addop_plus]
+                                                            Term_factor(
+                                                              Factor_sub(
+                                                                FactorSub_number(
+                                                                 2
+                                                                ) [FactorSub_number]
+                                                              ) [Factor_sub]
+                                                            ) [Term_factor]
+                                                          ) [AddExpr_addop]
+                                                        ) [Expr_add]
+                                                      ) [DesignatorStatement_assign]
+                                                    ) [Statement_designator]
+                                                  ) [StatementList_more]
+                                                  Statement_designator(
+                                                    DesignatorStatement_inc(
+                                                      Designator_var(
+                                                       i
+                                                      ) [Designator_var]
+                                                    ) [DesignatorStatement_inc]
+                                                  ) [Statement_designator]
+                                                ) [StatementList_more]
+                                              ) [Statement_block]
+                                            ) [Statement_for]
+                                          ) [StatementList_more]
+                                          Statement_print(
+                                            Expr_add(
+                                              AddExpr_term(
+                                                Term_factor(
+                                                  Factor_sub(
+                                                    FactorSub_designator(
+                                                      Designator_var(
+                                                       s
+                                                      ) [Designator_var]
+                                                    ) [FactorSub_designator]
+                                                  ) [Factor_sub]
+                                                ) [Term_factor]
+                                              ) [AddExpr_term]
+                                            ) [Expr_add]
+                                            PrintWidthOpt_epsilon(
+                                            ) [PrintWidthOpt_epsilon]
+                                          ) [Statement_print]
+                                        ) [StatementList_more]
+                                        Statement_print(
+                                          Expr_add(
+                                            AddExpr_term(
+                                              Term_factor(
+                                                Factor_sub(
+                                                  FactorSub_designator(
+                                                    Designator_var(
+                                                     eol
+                                                    ) [Designator_var]
+                                                  ) [FactorSub_designator]
+                                                ) [Factor_sub]
+                                              ) [Term_factor]
+                                            ) [AddExpr_term]
+                                          ) [Expr_add]
+                                          PrintWidthOpt_epsilon(
+                                          ) [PrintWidthOpt_epsilon]
+                                        ) [Statement_print]
+                                      ) [StatementList_more]
+                                      Statement_designator(
+                                        DesignatorStatement_assign(
+                                          Designator_var(
+                                           i
+                                          ) [Designator_var]
+                                          Expr_add(
+                                            AddExpr_term(
+                                              Term_factor(
+                                                Factor_sub(
+                                                  FactorSub_number(
+                                                   0
+                                                  ) [FactorSub_number]
+                                                ) [Factor_sub]
+                                              ) [Term_factor]
+                                            ) [AddExpr_term]
+                                          ) [Expr_add]
+                                        ) [DesignatorStatement_assign]
+                                      ) [Statement_designator]
+                                    ) [StatementList_more]
+                                    Statement_for(
+                                      ForStart(
+                                      ) [ForStart]
+                                      ForInitOpt_epsilon(
+                                      ) [ForInitOpt_epsilon]
+                                      ForCondOpt_epsilon(
+                                      ) [ForCondOpt_epsilon]
+                                      ForStepOpt_epsilon(
+                                      ) [ForStepOpt_epsilon]
+                                      Statement_block(
+                                        StatementList_more(
+                                          StatementList_more(
+                                            StatementList_epsilon(
+                                            ) [StatementList_epsilon]
+                                            Statement_designator(
+                                              DesignatorStatement_inc(
+                                                Designator_var(
+                                                 i
+                                                ) [Designator_var]
+                                              ) [DesignatorStatement_inc]
+                                            ) [Statement_designator]
+                                          ) [StatementList_more]
+                                          Statement_if(
+                                            IfCondition_cond(
+                                              Condition_term(
+                                                CondTerm_fact(
+                                                  CondFact_relop(
+                                                    AddExpr_term(
+                                                      Term_factor(
+                                                        Factor_sub(
+                                                          FactorSub_designator(
+                                                            Designator_var(
+                                                             i
+                                                            ) [Designator_var]
+                                                          ) [FactorSub_designator]
+                                                        ) [Factor_sub]
+                                                      ) [Term_factor]
+                                                    ) [AddExpr_term]
+                                                    Relop_eq(
+                                                    ) [Relop_eq]
+                                                    AddExpr_term(
+                                                      Term_factor(
+                                                        Factor_sub(
+                                                          FactorSub_number(
+                                                           4
+                                                          ) [FactorSub_number]
+                                                        ) [Factor_sub]
+                                                      ) [Term_factor]
+                                                    ) [AddExpr_term]
+                                                  ) [CondFact_relop]
+                                                ) [CondTerm_fact]
+                                              ) [Condition_term]
+                                            ) [IfCondition_cond]
+                                            Statement_break(
+                                            ) [Statement_break]
+                                          ) [Statement_if]
+                                        ) [StatementList_more]
+                                      ) [Statement_block]
+                                    ) [Statement_for]
+                                  ) [StatementList_more]
+                                  Statement_print(
+                                    Expr_add(
+                                      AddExpr_term(
+                                        Term_factor(
+                                          Factor_sub(
+                                            FactorSub_designator(
+                                              Designator_var(
+                                               i
+                                              ) [Designator_var]
+                                            ) [FactorSub_designator]
+                                          ) [Factor_sub]
+                                        ) [Term_factor]
+                                      ) [AddExpr_term]
+                                    ) [Expr_add]
+                                    PrintWidthOpt_epsilon(
+                                    ) [PrintWidthOpt_epsilon]
+                                  ) [Statement_print]
+                                ) [StatementList_more]
+                                Statement_print(
+                                  Expr_add(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_sub(
+                                          FactorSub_designator(
+                                            Designator_var(
+                                             eol
+                                            ) [Designator_var]
+                                          ) [FactorSub_designator]
+                                        ) [Factor_sub]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                  ) [Expr_add]
+                                  PrintWidthOpt_epsilon(
+                                  ) [PrintWidthOpt_epsilon]
+                                ) [Statement_print]
+                              ) [StatementList_more]
+                              Statement_designator(
+                                DesignatorStatement_assign(
+                                  Designator_var(
+                                   s
+                                  ) [Designator_var]
+                                  Expr_add(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_sub(
+                                          FactorSub_number(
+                                           0
+                                          ) [FactorSub_number]
+                                        ) [Factor_sub]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                  ) [Expr_add]
+                                ) [DesignatorStatement_assign]
+                              ) [Statement_designator]
+                            ) [StatementList_more]
+                            Statement_for(
+                              ForStart(
+                              ) [ForStart]
+                              ForInitOpt_stmt(
+                                DesignatorStatement_assign(
+                                  Designator_var(
+                                   i
+                                  ) [Designator_var]
+                                  Expr_add(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_sub(
+                                          FactorSub_number(
+                                           0
+                                          ) [FactorSub_number]
+                                        ) [Factor_sub]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                  ) [Expr_add]
+                                ) [DesignatorStatement_assign]
+                              ) [ForInitOpt_stmt]
+                              ForCondOpt_cond(
+                                Condition_term(
+                                  CondTerm_fact(
+                                    CondFact_relop(
+                                      AddExpr_term(
+                                        Term_factor(
+                                          Factor_sub(
+                                            FactorSub_designator(
+                                              Designator_var(
+                                               i
+                                              ) [Designator_var]
+                                            ) [FactorSub_designator]
+                                          ) [Factor_sub]
+                                        ) [Term_factor]
+                                      ) [AddExpr_term]
+                                      Relop_lt(
+                                      ) [Relop_lt]
+                                      AddExpr_term(
+                                        Term_factor(
+                                          Factor_sub(
+                                            FactorSub_number(
+                                             10
+                                            ) [FactorSub_number]
+                                          ) [Factor_sub]
+                                        ) [Term_factor]
+                                      ) [AddExpr_term]
+                                    ) [CondFact_relop]
+                                  ) [CondTerm_fact]
+                                ) [Condition_term]
+                              ) [ForCondOpt_cond]
+                              ForStepOpt_stmt(
+                                DesignatorStatement_inc(
+                                  Designator_var(
+                                   i
+                                  ) [Designator_var]
+                                ) [DesignatorStatement_inc]
+                              ) [ForStepOpt_stmt]
+                              Statement_block(
+                                StatementList_more(
+                                  StatementList_more(
+                                    StatementList_more(
+                                      StatementList_epsilon(
+                                      ) [StatementList_epsilon]
+                                      Statement_if(
+                                        IfCondition_cond(
+                                          Condition_term(
+                                            CondTerm_fact(
+                                              CondFact_relop(
+                                                AddExpr_term(
+                                                  Term_factor(
+                                                    Factor_sub(
+                                                      FactorSub_designator(
+                                                        Designator_var(
+                                                         i
+                                                        ) [Designator_var]
+                                                      ) [FactorSub_designator]
+                                                    ) [Factor_sub]
+                                                  ) [Term_factor]
+                                                ) [AddExpr_term]
+                                                Relop_eq(
+                                                ) [Relop_eq]
+                                                AddExpr_term(
+                                                  Term_factor(
+                                                    Factor_sub(
+                                                      FactorSub_number(
+                                                       3
+                                                      ) [FactorSub_number]
+                                                    ) [Factor_sub]
+                                                  ) [Term_factor]
+                                                ) [AddExpr_term]
+                                              ) [CondFact_relop]
+                                            ) [CondTerm_fact]
+                                          ) [Condition_term]
+                                        ) [IfCondition_cond]
+                                        Statement_continue(
+                                        ) [Statement_continue]
+                                      ) [Statement_if]
+                                    ) [StatementList_more]
+                                    Statement_if(
+                                      IfCondition_cond(
+                                        Condition_term(
+                                          CondTerm_fact(
+                                            CondFact_relop(
+                                              AddExpr_term(
+                                                Term_factor(
+                                                  Factor_sub(
+                                                    FactorSub_designator(
+                                                      Designator_var(
+                                                       i
+                                                      ) [Designator_var]
+                                                    ) [FactorSub_designator]
+                                                  ) [Factor_sub]
+                                                ) [Term_factor]
+                                              ) [AddExpr_term]
+                                              Relop_eq(
+                                              ) [Relop_eq]
+                                              AddExpr_term(
+                                                Term_factor(
+                                                  Factor_sub(
+                                                    FactorSub_number(
+                                                     7
+                                                    ) [FactorSub_number]
+                                                  ) [Factor_sub]
+                                                ) [Term_factor]
+                                              ) [AddExpr_term]
+                                            ) [CondFact_relop]
+                                          ) [CondTerm_fact]
+                                        ) [Condition_term]
+                                      ) [IfCondition_cond]
+                                      Statement_break(
+                                      ) [Statement_break]
+                                    ) [Statement_if]
+                                  ) [StatementList_more]
+                                  Statement_designator(
+                                    DesignatorStatement_assign(
+                                      Designator_var(
+                                       s
+                                      ) [Designator_var]
+                                      Expr_add(
+                                        AddExpr_addop(
+                                          AddExpr_term(
+                                            Term_factor(
+                                              Factor_sub(
+                                                FactorSub_designator(
+                                                  Designator_var(
+                                                   s
+                                                  ) [Designator_var]
+                                                ) [FactorSub_designator]
+                                              ) [Factor_sub]
+                                            ) [Term_factor]
+                                          ) [AddExpr_term]
+                                          Addop_plus(
+                                          ) [Addop_plus]
+                                          Term_factor(
+                                            Factor_sub(
+                                              FactorSub_designator(
+                                                Designator_var(
+                                                 i
+                                                ) [Designator_var]
+                                              ) [FactorSub_designator]
+                                            ) [Factor_sub]
+                                          ) [Term_factor]
+                                        ) [AddExpr_addop]
+                                      ) [Expr_add]
+                                    ) [DesignatorStatement_assign]
+                                  ) [Statement_designator]
+                                ) [StatementList_more]
+                              ) [Statement_block]
+                            ) [Statement_for]
+                          ) [StatementList_more]
+                          Statement_print(
+                            Expr_add(
+                              AddExpr_term(
+                                Term_factor(
+                                  Factor_sub(
+                                    FactorSub_designator(
+                                      Designator_var(
+                                       s
+                                      ) [Designator_var]
+                                    ) [FactorSub_designator]
+                                  ) [Factor_sub]
+                                ) [Term_factor]
+                              ) [AddExpr_term]
+                            ) [Expr_add]
+                            PrintWidthOpt_epsilon(
+                            ) [PrintWidthOpt_epsilon]
+                          ) [Statement_print]
+                        ) [StatementList_more]
+                        Statement_print(
+                          Expr_add(
+                            AddExpr_term(
+                              Term_factor(
+                                Factor_sub(
+                                  FactorSub_designator(
+                                    Designator_var(
+                                     eol
+                                    ) [Designator_var]
+                                  ) [FactorSub_designator]
+                                ) [Factor_sub]
+                              ) [Term_factor]
+                            ) [AddExpr_term]
+                          ) [Expr_add]
+                          PrintWidthOpt_epsilon(
+                          ) [PrintWidthOpt_epsilon]
+                        ) [Statement_print]
+                      ) [StatementList_more]
+                      Statement_designator(
+                        DesignatorStatement_assign(
+                          Designator_var(
+                           s
+                          ) [Designator_var]
+                          Expr_add(
+                            AddExpr_term(
+                              Term_factor(
+                                Factor_sub(
+                                  FactorSub_number(
+                                   0
+                                  ) [FactorSub_number]
+                                ) [Factor_sub]
+                              ) [Term_factor]
+                            ) [AddExpr_term]
+                          ) [Expr_add]
+                        ) [DesignatorStatement_assign]
+                      ) [Statement_designator]
+                    ) [StatementList_more]
+                    Statement_for(
+                      ForStart(
+                      ) [ForStart]
+                      ForInitOpt_stmt(
+                        DesignatorStatement_assign(
+                          Designator_var(
+                           i
+                          ) [Designator_var]
+                          Expr_add(
+                            AddExpr_term(
+                              Term_factor(
+                                Factor_sub(
+                                  FactorSub_number(
+                                   0
+                                  ) [FactorSub_number]
+                                ) [Factor_sub]
+                              ) [Term_factor]
+                            ) [AddExpr_term]
+                          ) [Expr_add]
+                        ) [DesignatorStatement_assign]
+                      ) [ForInitOpt_stmt]
+                      ForCondOpt_cond(
+                        Condition_term(
+                          CondTerm_fact(
+                            CondFact_relop(
+                              AddExpr_term(
+                                Term_factor(
+                                  Factor_sub(
+                                    FactorSub_designator(
+                                      Designator_var(
+                                       i
+                                      ) [Designator_var]
+                                    ) [FactorSub_designator]
+                                  ) [Factor_sub]
+                                ) [Term_factor]
+                              ) [AddExpr_term]
+                              Relop_lt(
+                              ) [Relop_lt]
+                              AddExpr_term(
+                                Term_factor(
+                                  Factor_sub(
+                                    FactorSub_number(
+                                     3
+                                    ) [FactorSub_number]
+                                  ) [Factor_sub]
+                                ) [Term_factor]
+                              ) [AddExpr_term]
+                            ) [CondFact_relop]
+                          ) [CondTerm_fact]
+                        ) [Condition_term]
+                      ) [ForCondOpt_cond]
+                      ForStepOpt_stmt(
+                        DesignatorStatement_inc(
+                          Designator_var(
+                           i
+                          ) [Designator_var]
+                        ) [DesignatorStatement_inc]
+                      ) [ForStepOpt_stmt]
+                      Statement_for(
+                        ForStart(
+                        ) [ForStart]
+                        ForInitOpt_stmt(
+                          DesignatorStatement_assign(
+                            Designator_var(
+                             j
+                            ) [Designator_var]
+                            Expr_add(
+                              AddExpr_term(
+                                Term_factor(
+                                  Factor_sub(
+                                    FactorSub_number(
+                                     0
+                                    ) [FactorSub_number]
+                                  ) [Factor_sub]
+                                ) [Term_factor]
+                              ) [AddExpr_term]
+                            ) [Expr_add]
+                          ) [DesignatorStatement_assign]
+                        ) [ForInitOpt_stmt]
+                        ForCondOpt_cond(
+                          Condition_term(
+                            CondTerm_fact(
+                              CondFact_relop(
+                                AddExpr_term(
+                                  Term_factor(
+                                    Factor_sub(
+                                      FactorSub_designator(
+                                        Designator_var(
+                                         j
+                                        ) [Designator_var]
+                                      ) [FactorSub_designator]
+                                    ) [Factor_sub]
+                                  ) [Term_factor]
+                                ) [AddExpr_term]
+                                Relop_lt(
+                                ) [Relop_lt]
+                                AddExpr_term(
+                                  Term_factor(
+                                    Factor_sub(
+                                      FactorSub_number(
+                                       3
+                                      ) [FactorSub_number]
+                                    ) [Factor_sub]
+                                  ) [Term_factor]
+                                ) [AddExpr_term]
+                              ) [CondFact_relop]
+                            ) [CondTerm_fact]
+                          ) [Condition_term]
+                        ) [ForCondOpt_cond]
+                        ForStepOpt_stmt(
+                          DesignatorStatement_inc(
+                            Designator_var(
+                             j
+                            ) [Designator_var]
+                          ) [DesignatorStatement_inc]
+                        ) [ForStepOpt_stmt]
+                        Statement_block(
+                          StatementList_more(
+                            StatementList_more(
+                              StatementList_epsilon(
+                              ) [StatementList_epsilon]
+                              Statement_if(
+                                IfCondition_cond(
+                                  Condition_term(
+                                    CondTerm_fact(
+                                      CondFact_relop(
+                                        AddExpr_term(
+                                          Term_factor(
+                                            Factor_sub(
+                                              FactorSub_designator(
+                                                Designator_var(
+                                                 j
+                                                ) [Designator_var]
+                                              ) [FactorSub_designator]
+                                            ) [Factor_sub]
+                                          ) [Term_factor]
+                                        ) [AddExpr_term]
+                                        Relop_eq(
+                                        ) [Relop_eq]
+                                        AddExpr_term(
+                                          Term_factor(
+                                            Factor_sub(
+                                              FactorSub_number(
+                                               1
+                                              ) [FactorSub_number]
+                                            ) [Factor_sub]
+                                          ) [Term_factor]
+                                        ) [AddExpr_term]
+                                      ) [CondFact_relop]
+                                    ) [CondTerm_fact]
+                                  ) [Condition_term]
+                                ) [IfCondition_cond]
+                                Statement_continue(
+                                ) [Statement_continue]
+                              ) [Statement_if]
+                            ) [StatementList_more]
+                            Statement_designator(
+                              DesignatorStatement_assign(
+                                Designator_var(
+                                 s
+                                ) [Designator_var]
+                                Expr_add(
+                                  AddExpr_addop(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_sub(
+                                          FactorSub_designator(
+                                            Designator_var(
+                                             s
+                                            ) [Designator_var]
+                                          ) [FactorSub_designator]
+                                        ) [Factor_sub]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                    Addop_plus(
+                                    ) [Addop_plus]
+                                    Term_factor(
+                                      Factor_sub(
+                                        FactorSub_number(
+                                         1
+                                        ) [FactorSub_number]
+                                      ) [Factor_sub]
+                                    ) [Term_factor]
+                                  ) [AddExpr_addop]
+                                ) [Expr_add]
+                              ) [DesignatorStatement_assign]
+                            ) [Statement_designator]
+                          ) [StatementList_more]
+                        ) [Statement_block]
+                      ) [Statement_for]
+                    ) [Statement_for]
+                  ) [StatementList_more]
+                  Statement_print(
+                    Expr_add(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_designator(
+                              Designator_var(
+                               s
+                              ) [Designator_var]
+                            ) [FactorSub_designator]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [Expr_add]
+                    PrintWidthOpt_epsilon(
+                    ) [PrintWidthOpt_epsilon]
+                  ) [Statement_print]
+                ) [StatementList_more]
+                Statement_print(
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_designator(
+                            Designator_var(
+                             eol
+                            ) [Designator_var]
+                          ) [FactorSub_designator]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                  PrintWidthOpt_epsilon(
+                  ) [PrintWidthOpt_epsilon]
+                ) [Statement_print]
+              ) [StatementList_more]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_var(
+                   s
+                  ) [Designator_var]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_number(
+                           0
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_more]
+            Statement_for(
+              ForStart(
+              ) [ForStart]
+              ForInitOpt_stmt(
+                DesignatorStatement_assign(
+                  Designator_var(
+                   i
+                  ) [Designator_var]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_number(
+                           0
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [ForInitOpt_stmt]
+              ForCondOpt_cond(
+                Condition_term(
+                  CondTerm_fact(
+                    CondFact_relop(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_designator(
+                              Designator_var(
+                               i
+                              ) [Designator_var]
+                            ) [FactorSub_designator]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                      Relop_lt(
+                      ) [Relop_lt]
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_number(
+                             3
+                            ) [FactorSub_number]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [CondFact_relop]
+                  ) [CondTerm_fact]
+                ) [Condition_term]
+              ) [ForCondOpt_cond]
+              ForStepOpt_stmt(
+                DesignatorStatement_inc(
+                  Designator_var(
+                   i
+                  ) [Designator_var]
+                ) [DesignatorStatement_inc]
+              ) [ForStepOpt_stmt]
+              Statement_for(
+                ForStart(
+                ) [ForStart]
+                ForInitOpt_stmt(
+                  DesignatorStatement_assign(
+                    Designator_var(
+                     j
+                    ) [Designator_var]
+                    Expr_add(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_number(
+                             0
+                            ) [FactorSub_number]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [Expr_add]
+                  ) [DesignatorStatement_assign]
+                ) [ForInitOpt_stmt]
+                ForCondOpt_cond(
+                  Condition_term(
+                    CondTerm_fact(
+                      CondFact_relop(
+                        AddExpr_term(
+                          Term_factor(
+                            Factor_sub(
+                              FactorSub_designator(
+                                Designator_var(
+                                 j
+                                ) [Designator_var]
+                              ) [FactorSub_designator]
+                            ) [Factor_sub]
+                          ) [Term_factor]
+                        ) [AddExpr_term]
+                        Relop_lt(
+                        ) [Relop_lt]
+                        AddExpr_term(
+                          Term_factor(
+                            Factor_sub(
+                              FactorSub_number(
+                               5
+                              ) [FactorSub_number]
+                            ) [Factor_sub]
+                          ) [Term_factor]
+                        ) [AddExpr_term]
+                      ) [CondFact_relop]
+                    ) [CondTerm_fact]
+                  ) [Condition_term]
+                ) [ForCondOpt_cond]
+                ForStepOpt_stmt(
+                  DesignatorStatement_inc(
+                    Designator_var(
+                     j
+                    ) [Designator_var]
+                  ) [DesignatorStatement_inc]
+                ) [ForStepOpt_stmt]
+                Statement_block(
+                  StatementList_more(
+                    StatementList_more(
+                      StatementList_epsilon(
+                      ) [StatementList_epsilon]
+                      Statement_if(
+                        IfCondition_cond(
+                          Condition_term(
+                            CondTerm_fact(
+                              CondFact_relop(
+                                AddExpr_term(
+                                  Term_factor(
+                                    Factor_sub(
+                                      FactorSub_designator(
+                                        Designator_var(
+                                         j
+                                        ) [Designator_var]
+                                      ) [FactorSub_designator]
+                                    ) [Factor_sub]
+                                  ) [Term_factor]
+                                ) [AddExpr_term]
+                                Relop_eq(
+                                ) [Relop_eq]
+                                AddExpr_term(
+                                  Term_factor(
+                                    Factor_sub(
+                                      FactorSub_number(
+                                       2
+                                      ) [FactorSub_number]
+                                    ) [Factor_sub]
+                                  ) [Term_factor]
+                                ) [AddExpr_term]
+                              ) [CondFact_relop]
+                            ) [CondTerm_fact]
+                          ) [Condition_term]
+                        ) [IfCondition_cond]
+                        Statement_break(
+                        ) [Statement_break]
+                      ) [Statement_if]
+                    ) [StatementList_more]
+                    Statement_designator(
+                      DesignatorStatement_assign(
+                        Designator_var(
+                         s
+                        ) [Designator_var]
+                        Expr_add(
+                          AddExpr_addop(
+                            AddExpr_term(
+                              Term_factor(
+                                Factor_sub(
+                                  FactorSub_designator(
+                                    Designator_var(
+                                     s
+                                    ) [Designator_var]
+                                  ) [FactorSub_designator]
+                                ) [Factor_sub]
+                              ) [Term_factor]
+                            ) [AddExpr_term]
+                            Addop_plus(
+                            ) [Addop_plus]
+                            Term_factor(
+                              Factor_sub(
+                                FactorSub_number(
+                                 1
+                                ) [FactorSub_number]
+                              ) [Factor_sub]
+                            ) [Term_factor]
+                          ) [AddExpr_addop]
+                        ) [Expr_add]
+                      ) [DesignatorStatement_assign]
+                    ) [Statement_designator]
+                  ) [StatementList_more]
+                ) [Statement_block]
+              ) [Statement_for]
+            ) [Statement_for]
+          ) [StatementList_more]
+          Statement_print(
+            Expr_add(
+              AddExpr_term(
+                Term_factor(
+                  Factor_sub(
+                    FactorSub_designator(
+                      Designator_var(
+                       s
+                      ) [Designator_var]
+                    ) [FactorSub_designator]
+                  ) [Factor_sub]
+                ) [Term_factor]
+              ) [AddExpr_term]
+            ) [Expr_add]
+            PrintWidthOpt_epsilon(
+            ) [PrintWidthOpt_epsilon]
+          ) [Statement_print]
+        ) [StatementList_more]
+        Statement_print(
+          Expr_add(
+            AddExpr_term(
+              Term_factor(
+                Factor_sub(
+                  FactorSub_designator(
+                    Designator_var(
+                     eol
+                    ) [Designator_var]
+                  ) [FactorSub_designator]
+                ) [Factor_sub]
+              ) [Term_factor]
+            ) [AddExpr_term]
+          ) [Expr_add]
+          PrintWidthOpt_epsilon(
+          ) [PrintWidthOpt_epsilon]
+        ) [Statement_print]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  17:58:16,612 - =================================================
+INFO  17:58:16,613 - Pretraga na 21(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 22(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 23(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 25(eol), nadjeno Con eol: char, 10, 0
+INFO  17:58:16,614 - Pretraga na 28(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 29(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 30(eol), nadjeno Con eol: char, 10, 0
+INFO  17:58:16,614 - Pretraga na 32(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 33(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 33(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 33(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 33(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 33(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 33(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 34(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 34(eol), nadjeno Con eol: char, 10, 0
+INFO  17:58:16,614 - Pretraga na 37(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 37(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 38(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 38(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 38(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 38(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 39(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 39(eol), nadjeno Con eol: char, 10, 0
+INFO  17:58:16,614 - Pretraga na 42(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 43(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 43(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 43(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 43(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 43(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 44(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 44(eol), nadjeno Con eol: char, 10, 0
+INFO  17:58:16,614 - Pretraga na 47(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 48(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 48(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 49(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 49(eol), nadjeno Con eol: char, 10, 0
+INFO  17:58:16,614 - Pretraga na 52(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 53(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 53(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 53(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 54(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 55(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 56(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 56(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 56(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 58(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 58(eol), nadjeno Con eol: char, 10, 0
+INFO  17:58:16,614 - Pretraga na 61(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 62(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 62(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 62(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,614 - Pretraga na 63(j), nadjeno Var j: int, 1, 0
+INFO  17:58:16,614 - Pretraga na 63(j), nadjeno Var j: int, 1, 0
+INFO  17:58:16,614 - Pretraga na 63(j), nadjeno Var j: int, 1, 0
+INFO  17:58:16,614 - Pretraga na 64(j), nadjeno Var j: int, 1, 0
+INFO  17:58:16,614 - Pretraga na 65(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 65(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,614 - Pretraga na 67(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,615 - Pretraga na 67(eol), nadjeno Con eol: char, 10, 0
+INFO  17:58:16,615 - Pretraga na 70(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,615 - Pretraga na 71(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,615 - Pretraga na 71(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,615 - Pretraga na 71(i), nadjeno Var i: int, 0, 0
+INFO  17:58:16,615 - Pretraga na 72(j), nadjeno Var j: int, 1, 0
+INFO  17:58:16,615 - Pretraga na 72(j), nadjeno Var j: int, 1, 0
+INFO  17:58:16,615 - Pretraga na 72(j), nadjeno Var j: int, 1, 0
+INFO  17:58:16,615 - Pretraga na 73(j), nadjeno Var j: int, 1, 0
+INFO  17:58:16,615 - Pretraga na 74(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,615 - Pretraga na 74(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,615 - Pretraga na 76(s), nadjeno Var s: int, 2, 0
+INFO  17:58:16,615 - Pretraga na 76(eol), nadjeno Con eol: char, 10, 0
+INFO  17:58:16,615 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog GenTok: notype, 0, 1 
+   Var i: int, 0, 0 
+   Var j: int, 1, 0 
+   Var s: int, 2, 0 
+   Meth main: notype, 0, 0 
+
+
+
+INFO  17:58:16,616 - Generisanje uspesno zavrseno: test/63_gen_flow.obj

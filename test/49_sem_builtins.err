@@ -1,7 +1,7 @@
-ERROR 16:37:43,061 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 26
-ERROR 16:37:43,061 - Semanticka greska: Metoda chr ocekuje 1 argumenata, a pozvana je sa 2 na liniji 27
-ERROR 16:37:43,061 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 27
-ERROR 16:37:43,061 - Semanticka greska: Tip 1. argumenta u pozivu metode chr nije kompatibilan sa formalnim argumentom i na liniji 32
-ERROR 16:37:43,061 - Semanticka greska: Tip 1. argumenta u pozivu metode ord nije kompatibilan sa formalnim argumentom ch na liniji 33
-ERROR 16:37:43,061 - Semanticka greska: Tip 1. argumenta u pozivu metode len nije kompatibilan sa formalnim argumentom arr na liniji 34
-ERROR 16:37:43,061 - Parsiranje NIJE uspesno zavrseno!
+ERROR 17:58:15,427 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 26
+ERROR 17:58:15,427 - Semanticka greska: Metoda chr ocekuje 1 argumenata, a pozvana je sa 2 na liniji 27
+ERROR 17:58:15,427 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 27
+ERROR 17:58:15,428 - Semanticka greska: Tip 1. argumenta u pozivu metode chr nije kompatibilan sa formalnim argumentom i na liniji 32
+ERROR 17:58:15,428 - Semanticka greska: Tip 1. argumenta u pozivu metode ord nije kompatibilan sa formalnim argumentom ch na liniji 33
+ERROR 17:58:15,428 - Semanticka greska: Tip 1. argumenta u pozivu metode len nije kompatibilan sa formalnim argumentom arr na liniji 34
+ERROR 17:58:15,428 - Parsiranje NIJE uspesno zavrseno!

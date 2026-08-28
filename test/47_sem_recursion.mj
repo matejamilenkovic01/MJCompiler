@@ -3,6 +3,7 @@
 // formalni argumenti pri proveri poziva iz sopstvenog tela moraju citati iz otvorenog
 // opsega. Ovaj test cuva to ponasanje.
 
+// OUT: 120
 program SemRecursion
 
 int a;

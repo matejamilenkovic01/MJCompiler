@@ -1,7 +1,7 @@
-ERROR 16:37:40,522 - 
+ERROR 17:58:12,722 - 
 Sintaksna greska na liniji 10
-ERROR 16:37:40,522 - Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije 10
-ERROR 16:37:40,523 - 
+ERROR 17:58:12,722 - Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije 10
+ERROR 17:58:12,723 - 
 Sintaksna greska na liniji 15
-ERROR 16:37:40,523 - Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije 20
-ERROR 16:37:40,526 - Parsiranje NIJE uspesno zavrseno!
+ERROR 17:58:12,723 - Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije 20
+ERROR 17:58:12,726 - Parsiranje NIJE uspesno zavrseno!

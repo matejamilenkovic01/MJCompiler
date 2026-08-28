@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/7/2026 16:37:36
+// 28/7/2026 17:58:9
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,13 +9,16 @@ public class Statement_ifElse extends Statement {
 
     private IfCondition IfCondition;
     private Statement Statement;
+    private ElseMark ElseMark;
     private Statement Statement1;
 
-    public Statement_ifElse (IfCondition IfCondition, Statement Statement, Statement Statement1) {
+    public Statement_ifElse (IfCondition IfCondition, Statement Statement, ElseMark ElseMark, Statement Statement1) {
         this.IfCondition=IfCondition;
         if(IfCondition!=null) IfCondition.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
+        this.ElseMark=ElseMark;
+        if(ElseMark!=null) ElseMark.setParent(this);
         this.Statement1=Statement1;
         if(Statement1!=null) Statement1.setParent(this);
     }
@@ -36,6 +39,14 @@ public class Statement_ifElse extends Statement {
         this.Statement=Statement;
     }
 
+    public ElseMark getElseMark() {
+        return ElseMark;
+    }
+
+    public void setElseMark(ElseMark ElseMark) {
+        this.ElseMark=ElseMark;
+    }
+
     public Statement getStatement1() {
         return Statement1;
     }
@@ -51,6 +62,7 @@ public class Statement_ifElse extends Statement {
     public void childrenAccept(Visitor visitor) {
         if(IfCondition!=null) IfCondition.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
+        if(ElseMark!=null) ElseMark.accept(visitor);
         if(Statement1!=null) Statement1.accept(visitor);
     }
 
@@ -58,12 +70,14 @@ public class Statement_ifElse extends Statement {
         accept(visitor);
         if(IfCondition!=null) IfCondition.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
+        if(ElseMark!=null) ElseMark.traverseTopDown(visitor);
         if(Statement1!=null) Statement1.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(IfCondition!=null) IfCondition.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
+        if(ElseMark!=null) ElseMark.traverseBottomUp(visitor);
         if(Statement1!=null) Statement1.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -81,6 +95,12 @@ public class Statement_ifElse extends Statement {
 
         if(Statement!=null)
             buffer.append(Statement.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(ElseMark!=null)
+            buffer.append(ElseMark.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

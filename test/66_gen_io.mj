@@ -1,0 +1,43 @@
+// EXPECT: OK
+// Generisanje koda: read za sva tri ugradjena tipa i print sa zadatom sirinom.
+// Ulaz: dva cela broja, pa jedan znak, pa logicka vrednost (cita se kao ceo broj).
+// IN: 12 34
+// IN: Q
+// IN: 1
+// OUT: 12
+// OUT: 34
+// OUT: 46
+// OUT: Q
+// OUT: 1
+// OUT:    7|
+// OUT:   z|
+// OUT: 123|
+
+program GenIO
+
+int a, b;
+char c;
+bool bo;
+
+{
+	void main()
+	{
+		read(a);
+		read(b);
+		print(a); print(eol);          // 12
+		print(b); print(eol);          // 34
+		print(a + b); print(eol);      // 46
+
+		read(c);
+		print(c); print(eol);          // Q
+
+		read(bo);
+		print(bo); print(eol);         // 1
+
+		// print sa sirinom: vrednost se dopunjava razmacima sa leve strane
+		print(7, 4);   print('|'); print(eol);   //    7|
+		print('z', 3); print('|'); print(eol);   //   z|
+		// sirina manja od duzine vrednosti ne skracuje ispis
+		print(123, 2); print('|'); print(eol);   // 123|
+	}
+}

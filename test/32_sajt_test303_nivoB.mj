@@ -13,6 +13,17 @@
 //
 // Racunica, redosled obilaska i ispis su namerno ostali isti kao u originalu.
 
+// IN: 1
+// OUT: S
+// OUT: 1S
+// OUT: 1S
+// OUT: 1K
+// OUT: 1K
+// OUT: 1K
+// OUT: 14
+// OUT: 90
+// OUT: 4
+// OUT: 90
 program test303B
 
 const int cinilac = 4, delilac = 3;

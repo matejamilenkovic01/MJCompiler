@@ -101,6 +101,9 @@ nonterminal StatementList, Statement, DesignatorStatement;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct IfCondition;
 /* Marker za kontekst petlje - vidi ForStart smenu nize. */
 nonterminal ForStart;
+/* Marker neterminali za generisanje koda - vidi objasnjenje uz ForStart i uz
+   svaku od smena nize. Svi su oblika "X ::= TERMINAL", nikad epsilon. */
+nonterminal ElseMark, TernQ, TernC, MapArrow;
 nonterminal ActParsOpt, ActPars;
 nonterminal ForInitOpt, ForCondOpt, ForStepOpt;
 
@@ -248,11 +251,11 @@ Statement ::=   (Statement_designator) DesignatorStatement SEMI
                 (Statement_findAny) Designator ASSIGN Designator DOT FINDANY LPAREN Expr RPAREN SEMI
                 |
                 /* Amandman (NIVO B): Designator "=" Designator "." "map" "(" ident "=>" Expr ")" ";" */
-                (Statement_map) Designator ASSIGN Designator DOT MAP LPAREN IDENT:iterName ARROW Expr RPAREN SEMI
+                (Statement_map) Designator ASSIGN Designator DOT MAP LPAREN IDENT:iterName MapArrow Expr RPAREN SEMI
                 |
                 (Statement_if) IF LPAREN IfCondition RPAREN Statement
                 |
-                (Statement_ifElse) IF LPAREN IfCondition RPAREN Statement ELSE Statement
+                (Statement_ifElse) IF LPAREN IfCondition RPAREN Statement ElseMark Statement
                 |
                 (Statement_break) BREAK SEMI
                 |
@@ -297,6 +300,31 @@ IfCondition ::=     (IfCondition_cond) Condition
    Namerno BEZ epsilon smene (npr. "ForStart ::= | FOR"): epsilon je vec jednom oborio
    LALR(1) svojstvo kod Unary/Factor pokusaja. Ovako se samo siftuje FOR, bez odluke. */
 ForStart ::= (ForStart) FOR;
+
+/* Marker neterminali za fazu 4 (generisanje koda).
+
+   Generisanje koda ide istim bottom-up obilaskom kao semanticka analiza, pa se kod
+   nekog cvora emituje tek POSLE koda sve njegove dece. Za konstrukcije sa skokovima to
+   je prekasno: kod then i else grane bi se nasao jedan za drugim, bez skoka izmedju.
+   Zato se na svakom mestu gde skok mora da se emituje "u sredini" smene ubacuje marker
+   neterminal - on se poseti tacno tu, izmedju dva podstabla.
+
+   Svi su oblika "X ::= TERMINAL" a ne epsilon: epsilon smena bi trazila redukciju pre
+   nego sto parser vidi sledeci token, sto je vec jednom oborilo LALR(1) svojstvo (vidi
+   komentar uz ForStart i uz Factor). Ovako se terminal prosto siftuje.
+
+   ElseMark - izmedju then i else grane: emituje skok preko else grane
+   TernQ    - izmedju uslova i prve grane ternarnog operatora
+   TernC    - izmedju prve i druge grane ternarnog operatora
+   MapArrow - izmedju imena iteratora i tela map-a: otvara telo petlje */
+
+ElseMark ::= (ElseMark) ELSE;
+
+TernQ ::= (TernQ) QUESTION;
+
+TernC ::= (TernC) COLON;
+
+MapArrow ::= (MapArrow) ARROW;
 
 ReturnExprOpt ::=   (ReturnExprOpt_expr) Expr
                     |
@@ -404,7 +432,7 @@ Relop ::=   (Relop_eq) EQ
 
 Expr ::=    (Expr_add) AddExpr
             |
-            (Expr_ternary) Condition QUESTION Expr COLON Expr
+            (Expr_ternary) Condition TernQ Expr TernC Expr
             ;
 
 AddExpr ::=     (AddExpr_addop) AddExpr Addop Term

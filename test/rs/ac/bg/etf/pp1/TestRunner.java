@@ -25,7 +25,15 @@ import java.util.concurrent.TimeUnit;
  *   // EXPECT: SYNTAX&gt;=2 RECOVERY&gt;=1 LEXICAL&gt;=0
  *   // EXPECT: SEMANTIC&gt;=1
  *   // EXPECT-ERR: deo poruke koji se mora pojaviti na stderr
+ *   // IN: 5 12
+ *   // OUT: 9
+ *   // OUT: 6
  * </pre>
+ *
+ * Ako test ima bar jedan red "// OUT:", posle uspesnog prevodjenja se generisani .obj
+ * pokrece na MikroJava virtuelnoj masini i njegov standardni izlaz se poredi sa spojenim
+ * "// OUT:" redovima. Redovi "// IN:" se pri tome salju programu na standardni ulaz
+ * (potrebno za read). Stvarni ispis se uvek snima u istoimeni .run fajl.
  *
  * OK znaci: nijedna greska, i prevodilac se zavrsio sa izlaznim kodom 0.
  * U suprotnom se trazi da parser NIJE prekinuo rad (oporavak je uspeo) i da su
@@ -154,6 +162,35 @@ public class TestRunner {
 				r.reason = "ocekivan ispravan program, ali su prijavljene greske (" + summary + ")";
 				return r;
 			}
+
+			if (exp.output == null) {
+				// nema "// OUT:" zaglavlja - test proverava samo prevodjenje
+				r.passed = true;
+				return r;
+			}
+
+			if (!objFile.isFile()) {
+				r.passed = false;
+				r.reason = "prevodjenje je proslo, ali .obj fajl nije generisan";
+				return r;
+			}
+
+			String rawOutput = runObj(objFile, exp.input);
+			Files.write(new File(base + ".run").toPath(), rawOutput.getBytes(CS));
+
+			List<String> actual = normalize(stripVmTrailer(rawOutput));
+			List<String> expected = normalize(join(exp.output));
+
+			int diff = firstDifference(expected, actual);
+			if (diff >= 0) {
+				r.summary = summary + " izvrsen=NE";
+				r.passed = false;
+				r.reason = "ispis programa se razlikuje u redu " + (diff + 1)
+						+ ": ocekivano <" + at(expected, diff) + ">, dobijeno <" + at(actual, diff) + ">";
+				return r;
+			}
+
+			r.summary = summary + " izvrsen=" + actual.size() + "L";
 			r.passed = true;
 			return r;
 		}
@@ -229,6 +266,101 @@ public class TestRunner {
 		return p.exitValue();
 	}
 
+	/**
+	 * Pokrece generisani .obj na MikroJava virtuelnoj masini, u zasebnom procesu (sveza
+	 * staticka stanja i cist standardni ulaz po testu). Izlaz gresaka se spaja sa standardnim
+	 * izlazom, da bi se prijave gresaka virtuelne masine videle u poredjenju.
+	 */
+	private static String runObj(File obj, List<String> input) throws Exception {
+
+		String javaBin = System.getProperty("java.home")
+				+ File.separator + "bin" + File.separator + "java";
+		String classpath = System.getProperty("java.class.path");
+
+		ProcessBuilder pb = new ProcessBuilder(
+				javaBin, "-cp", classpath,
+				"rs.etf.pp1.mj.runtime.Run",
+				obj.getPath());
+		pb.redirectErrorStream(true);
+
+		Process p = pb.start();
+
+		java.io.OutputStream stdin = p.getOutputStream();
+		for (String line : input) {
+			stdin.write((line + "\n").getBytes(CS));
+		}
+		stdin.flush();
+		stdin.close();
+
+		java.io.ByteArrayOutputStream captured = new java.io.ByteArrayOutputStream();
+		java.io.InputStream stdout = p.getInputStream();
+		byte[] chunk = new byte[4096];
+		int read;
+		while ((read = stdout.read(chunk)) > 0) {
+			captured.write(chunk, 0, read);
+		}
+
+		if (!p.waitFor(TIMEOUT_SECONDS, TimeUnit.SECONDS)) {
+			p.destroyForcibly();
+			throw new IllegalStateException("Program se nije zavrsio u "
+					+ TIMEOUT_SECONDS + " s: " + obj.getName());
+		}
+
+		return new String(captured.toByteArray(), CS);
+	}
+
+	/** Virtuelna masina na kraju rada dopisuje "Completion took N ms" - to nije ispis programa. */
+	private static String stripVmTrailer(String output) {
+		int i = output.lastIndexOf("\nCompletion took ");
+		return i >= 0 ? output.substring(0, i) : output;
+	}
+
+	private static String join(List<String> lines) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < lines.size(); i++) {
+			if (i > 0) {
+				sb.append('\n');
+			}
+			sb.append(lines.get(i));
+		}
+		return sb.toString();
+	}
+
+	/**
+	 * Deli tekst na redove, skida prazan prostor s desne strane svakog reda i odbacuje prazne
+	 * redove na kraju. Time se poredjenje ne lomi o nevidljive razlike, a znacajni vodeci
+	 * razmaci (npr. iz "print(x, 5)") ostaju sacuvani.
+	 */
+	private static List<String> normalize(String text) {
+		List<String> lines = new ArrayList<String>();
+		for (String line : text.split("\n", -1)) {
+			int end = line.length();
+			while (end > 0 && Character.isWhitespace(line.charAt(end - 1))) {
+				end--;
+			}
+			lines.add(line.substring(0, end));
+		}
+		while (!lines.isEmpty() && lines.get(lines.size() - 1).isEmpty()) {
+			lines.remove(lines.size() - 1);
+		}
+		return lines;
+	}
+
+	/** Indeks prvog reda u kome se liste razlikuju, ili -1 ako su iste. */
+	private static int firstDifference(List<String> expected, List<String> actual) {
+		int n = Math.max(expected.size(), actual.size());
+		for (int i = 0; i < n; i++) {
+			if (!at(expected, i).equals(at(actual, i))) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	private static String at(List<String> lines, int i) {
+		return i < lines.size() ? lines.get(i) : "<nema reda>";
+	}
+
 	private static String readFile(File f) {
 		if (!f.isFile()) {
 			return "";
@@ -265,6 +397,19 @@ public class TestRunner {
 		int minRecovery;
 		int minSemantic;
 		List<String> mustContain = new ArrayList<String>();
+		/** Redovi koji se salju programu na standardni ulaz. */
+		List<String> input = new ArrayList<String>();
+		/** Ocekivani ispis programa; null znaci da se program uopste ne pokrece. */
+		List<String> output = null;
+
+		/**
+		 * Uklanja direktivu i tacno jedan razmak iza nje. Ostatak reda se NE trimuje s desne
+		 * strane, jer ispis moze legitimno da se zavrsi razmakom.
+		 */
+		private static String stripDirective(String line, String directive) {
+			String rest = line.substring(directive.length());
+			return rest.startsWith(" ") ? rest.substring(1) : rest;
+		}
 
 		static Expectation parse(File mj) throws IOException {
 
@@ -280,6 +425,19 @@ public class TestRunner {
 					if (!s.isEmpty()) {
 						e.mustContain.add(s);
 					}
+					continue;
+				}
+
+				if (t.startsWith("// IN:")) {
+					e.input.add(stripDirective(t, "// IN:"));
+					continue;
+				}
+
+				if (t.startsWith("// OUT:")) {
+					if (e.output == null) {
+						e.output = new ArrayList<String>();
+					}
+					e.output.add(stripDirective(t, "// OUT:"));
 					continue;
 				}
 

@@ -5,6 +5,16 @@
 
 // Test301
 
+// IN: 5 12
+// OUT: 9
+// OUT: 6
+// OUT: 12
+// OUT: b
+// OUT: c
+// OUT: 973351242+
+// OUT: 1
+// OUT: 1
+// OUT: 1
 program test301
 
 const int nula = 0;

@@ -3,6 +3,7 @@
 // ugnezdeni pozivi, niz kao formalni argument, length, ternarni izraz, ugnezdene
 // petlje sa break i continue, i amandmane findAny i map.
 
+// OUT: x   15351
 program SemOkFull
 
 const int velicina = 5;

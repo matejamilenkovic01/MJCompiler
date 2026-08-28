@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/7/2026 16:37:36
+// 28/7/2026 17:58:9
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,14 +10,17 @@ public class Statement_map extends Statement {
     private Designator Designator;
     private Designator Designator1;
     private String iterName;
+    private MapArrow MapArrow;
     private Expr Expr;
 
-    public Statement_map (Designator Designator, Designator Designator1, String iterName, Expr Expr) {
+    public Statement_map (Designator Designator, Designator Designator1, String iterName, MapArrow MapArrow, Expr Expr) {
         this.Designator=Designator;
         if(Designator!=null) Designator.setParent(this);
         this.Designator1=Designator1;
         if(Designator1!=null) Designator1.setParent(this);
         this.iterName=iterName;
+        this.MapArrow=MapArrow;
+        if(MapArrow!=null) MapArrow.setParent(this);
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
     }
@@ -46,6 +49,14 @@ public class Statement_map extends Statement {
         this.iterName=iterName;
     }
 
+    public MapArrow getMapArrow() {
+        return MapArrow;
+    }
+
+    public void setMapArrow(MapArrow MapArrow) {
+        this.MapArrow=MapArrow;
+    }
+
     public Expr getExpr() {
         return Expr;
     }
@@ -61,6 +72,7 @@ public class Statement_map extends Statement {
     public void childrenAccept(Visitor visitor) {
         if(Designator!=null) Designator.accept(visitor);
         if(Designator1!=null) Designator1.accept(visitor);
+        if(MapArrow!=null) MapArrow.accept(visitor);
         if(Expr!=null) Expr.accept(visitor);
     }
 
@@ -68,12 +80,14 @@ public class Statement_map extends Statement {
         accept(visitor);
         if(Designator!=null) Designator.traverseTopDown(visitor);
         if(Designator1!=null) Designator1.traverseTopDown(visitor);
+        if(MapArrow!=null) MapArrow.traverseTopDown(visitor);
         if(Expr!=null) Expr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Designator!=null) Designator.traverseBottomUp(visitor);
         if(Designator1!=null) Designator1.traverseBottomUp(visitor);
+        if(MapArrow!=null) MapArrow.traverseBottomUp(visitor);
         if(Expr!=null) Expr.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -96,6 +110,12 @@ public class Statement_map extends Statement {
         buffer.append("\n");
 
         buffer.append(" "+tab+iterName);
+        buffer.append("\n");
+
+        if(MapArrow!=null)
+            buffer.append(MapArrow.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(Expr!=null)

@@ -19,6 +19,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	Logger log = Logger.getLogger(getClass());
 
 	private Obj currentProgram;
+
+	/* Cvor programa ostaje dostupan i posle zatvaranja opsega: na njemu su ulancani svi
+	   globalni simboli. Faza 4 ih odatle cita, jer Tab.find posle closeScope() vidi samo
+	   univerzalni opseg. */
+	public Obj getProgramObj() {
+		return currentProgram;
+	}
 	private Struct currentType;
 	private int constant;
 	private Struct constantType;

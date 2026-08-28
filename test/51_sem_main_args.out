@@ -1,24 +1,24 @@
-INFO  16:37:43,353 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/51_sem_main_args.mj
-INFO  16:37:43,362 - #2 program
-INFO  16:37:43,362 - #45 SemMainSaArgumentima
-INFO  16:37:43,362 - #45 int
-INFO  16:37:43,362 - #45 a
-INFO  16:37:43,362 - #34 ;
-INFO  16:37:43,362 - #43 {
-INFO  16:37:43,362 - #7 void
-INFO  16:37:43,363 - #45 main
-INFO  16:37:43,363 - #39 (
-INFO  16:37:43,363 - #45 int
-INFO  16:37:43,363 - #45 x
-INFO  16:37:43,363 - #40 )
-INFO  16:37:43,363 - #43 {
-INFO  16:37:43,363 - #45 a
-INFO  16:37:43,363 - #31 =
-INFO  16:37:43,363 - #45 x
-INFO  16:37:43,363 - #34 ;
-INFO  16:37:43,363 - #44 }
-INFO  16:37:43,363 - #44 }
-INFO  16:37:43,364 - Program(
+INFO  17:58:15,708 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/51_sem_main_args.mj
+INFO  17:58:15,718 - #2 program
+INFO  17:58:15,718 - #45 SemMainSaArgumentima
+INFO  17:58:15,718 - #45 int
+INFO  17:58:15,718 - #45 a
+INFO  17:58:15,718 - #34 ;
+INFO  17:58:15,718 - #43 {
+INFO  17:58:15,718 - #7 void
+INFO  17:58:15,718 - #45 main
+INFO  17:58:15,718 - #39 (
+INFO  17:58:15,718 - #45 int
+INFO  17:58:15,719 - #45 x
+INFO  17:58:15,719 - #40 )
+INFO  17:58:15,719 - #43 {
+INFO  17:58:15,719 - #45 a
+INFO  17:58:15,719 - #31 =
+INFO  17:58:15,719 - #45 x
+INFO  17:58:15,719 - #34 ;
+INFO  17:58:15,719 - #44 }
+INFO  17:58:15,719 - #44 }
+INFO  17:58:15,720 - Program(
   ProgramName(
    SemMainSaArgumentima
   ) [ProgramName]
@@ -84,10 +84,10 @@ INFO  16:37:43,364 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:37:43,364 - =================================================
-INFO  16:37:43,365 - Pretraga na 12(a), nadjeno Var a: int, 0, 0
-INFO  16:37:43,365 - Pretraga na 12(x), nadjeno Var x: int, 0, 1
-INFO  16:37:43,366 - =================================================
+INFO  17:58:15,720 - =================================================
+INFO  17:58:15,721 - Pretraga na 12(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,721 - Pretraga na 12(x), nadjeno Var x: int, 0, 1
+INFO  17:58:15,721 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

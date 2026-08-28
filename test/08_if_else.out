@@ -1,163 +1,163 @@
-INFO  16:37:39,134 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/08_if_else.mj
-INFO  16:37:39,142 - #2 program
-INFO  16:37:39,142 - #45 Grananje
-INFO  16:37:39,142 - #45 int
-INFO  16:37:39,142 - #45 a
-INFO  16:37:39,143 - #36 ,
-INFO  16:37:39,143 - #45 b
-INFO  16:37:39,143 - #34 ;
-INFO  16:37:39,143 - #43 {
-INFO  16:37:39,143 - #7 void
-INFO  16:37:39,143 - #45 main
-INFO  16:37:39,143 - #39 (
-INFO  16:37:39,143 - #40 )
-INFO  16:37:39,143 - #43 {
-INFO  16:37:39,143 - #45 a
-INFO  16:37:39,143 - #31 =
-INFO  16:37:39,144 - #46 1
-INFO  16:37:39,144 - #34 ;
-INFO  16:37:39,144 - #45 b
-INFO  16:37:39,144 - #31 =
-INFO  16:37:39,144 - #46 2
-INFO  16:37:39,144 - #34 ;
-INFO  16:37:39,144 - #9 if
-INFO  16:37:39,144 - #39 (
-INFO  16:37:39,144 - #45 a
-INFO  16:37:39,144 - #26 <
-INFO  16:37:39,144 - #45 b
-INFO  16:37:39,144 - #40 )
-INFO  16:37:39,144 - #45 a
-INFO  16:37:39,144 - #31 =
-INFO  16:37:39,144 - #46 0
-INFO  16:37:39,144 - #34 ;
-INFO  16:37:39,144 - #9 if
-INFO  16:37:39,144 - #39 (
-INFO  16:37:39,145 - #45 a
-INFO  16:37:39,145 - #26 <
-INFO  16:37:39,145 - #45 b
-INFO  16:37:39,145 - #40 )
-INFO  16:37:39,145 - #45 a
-INFO  16:37:39,145 - #31 =
-INFO  16:37:39,145 - #46 0
-INFO  16:37:39,145 - #34 ;
-INFO  16:37:39,145 - #10 else
-INFO  16:37:39,145 - #45 b
-INFO  16:37:39,145 - #31 =
-INFO  16:37:39,145 - #46 0
-INFO  16:37:39,145 - #34 ;
-INFO  16:37:39,145 - #9 if
-INFO  16:37:39,145 - #39 (
-INFO  16:37:39,145 - #45 a
-INFO  16:37:39,145 - #26 <
-INFO  16:37:39,145 - #45 b
-INFO  16:37:39,145 - #40 )
-INFO  16:37:39,145 - #43 {
-INFO  16:37:39,145 - #45 a
-INFO  16:37:39,145 - #31 =
-INFO  16:37:39,145 - #46 0
-INFO  16:37:39,145 - #34 ;
-INFO  16:37:39,145 - #45 b
-INFO  16:37:39,145 - #31 =
-INFO  16:37:39,145 - #46 1
-INFO  16:37:39,145 - #34 ;
-INFO  16:37:39,145 - #44 }
-INFO  16:37:39,146 - #10 else
-INFO  16:37:39,146 - #43 {
-INFO  16:37:39,146 - #45 a
-INFO  16:37:39,146 - #31 =
-INFO  16:37:39,146 - #46 1
-INFO  16:37:39,146 - #34 ;
-INFO  16:37:39,146 - #45 b
-INFO  16:37:39,146 - #31 =
-INFO  16:37:39,146 - #46 0
-INFO  16:37:39,146 - #34 ;
-INFO  16:37:39,146 - #44 }
-INFO  16:37:39,146 - #9 if
-INFO  16:37:39,146 - #39 (
-INFO  16:37:39,146 - #45 a
-INFO  16:37:39,146 - #26 <
-INFO  16:37:39,146 - #45 b
-INFO  16:37:39,146 - #40 )
-INFO  16:37:39,146 - #9 if
-INFO  16:37:39,146 - #39 (
-INFO  16:37:39,146 - #45 b
-INFO  16:37:39,146 - #24 >
-INFO  16:37:39,146 - #46 0
-INFO  16:37:39,146 - #40 )
-INFO  16:37:39,146 - #45 a
-INFO  16:37:39,146 - #31 =
-INFO  16:37:39,146 - #46 1
-INFO  16:37:39,146 - #34 ;
-INFO  16:37:39,146 - #10 else
-INFO  16:37:39,147 - #45 a
-INFO  16:37:39,147 - #31 =
-INFO  16:37:39,147 - #46 2
-INFO  16:37:39,147 - #34 ;
-INFO  16:37:39,147 - #9 if
-INFO  16:37:39,147 - #39 (
-INFO  16:37:39,147 - #45 a
-INFO  16:37:39,147 - #26 <
-INFO  16:37:39,147 - #45 b
-INFO  16:37:39,147 - #40 )
-INFO  16:37:39,147 - #43 {
-INFO  16:37:39,147 - #9 if
-INFO  16:37:39,147 - #39 (
-INFO  16:37:39,147 - #45 b
-INFO  16:37:39,147 - #24 >
-INFO  16:37:39,147 - #46 0
-INFO  16:37:39,147 - #40 )
-INFO  16:37:39,147 - #45 a
-INFO  16:37:39,147 - #31 =
-INFO  16:37:39,147 - #46 1
-INFO  16:37:39,147 - #34 ;
-INFO  16:37:39,147 - #44 }
-INFO  16:37:39,147 - #10 else
-INFO  16:37:39,147 - #43 {
-INFO  16:37:39,147 - #45 a
-INFO  16:37:39,147 - #31 =
-INFO  16:37:39,147 - #46 2
-INFO  16:37:39,147 - #34 ;
-INFO  16:37:39,147 - #44 }
-INFO  16:37:39,147 - #9 if
-INFO  16:37:39,147 - #39 (
-INFO  16:37:39,147 - #45 a
-INFO  16:37:39,147 - #22 ==
-INFO  16:37:39,147 - #46 1
-INFO  16:37:39,147 - #40 )
-INFO  16:37:39,147 - #45 a
-INFO  16:37:39,148 - #31 =
-INFO  16:37:39,148 - #46 1
-INFO  16:37:39,148 - #34 ;
-INFO  16:37:39,148 - #10 else
-INFO  16:37:39,148 - #9 if
-INFO  16:37:39,148 - #39 (
-INFO  16:37:39,148 - #45 a
-INFO  16:37:39,148 - #22 ==
-INFO  16:37:39,148 - #46 2
-INFO  16:37:39,148 - #40 )
-INFO  16:37:39,148 - #45 a
-INFO  16:37:39,148 - #31 =
-INFO  16:37:39,148 - #46 2
-INFO  16:37:39,148 - #34 ;
-INFO  16:37:39,148 - #10 else
-INFO  16:37:39,148 - #9 if
-INFO  16:37:39,148 - #39 (
-INFO  16:37:39,148 - #45 a
-INFO  16:37:39,148 - #22 ==
-INFO  16:37:39,148 - #46 3
-INFO  16:37:39,148 - #40 )
-INFO  16:37:39,148 - #45 a
-INFO  16:37:39,148 - #31 =
-INFO  16:37:39,148 - #46 3
-INFO  16:37:39,148 - #34 ;
-INFO  16:37:39,148 - #10 else
-INFO  16:37:39,148 - #45 a
-INFO  16:37:39,148 - #31 =
-INFO  16:37:39,148 - #46 0
-INFO  16:37:39,148 - #34 ;
-INFO  16:37:39,148 - #44 }
-INFO  16:37:39,148 - #44 }
-INFO  16:37:39,149 - Program(
+INFO  17:58:11,328 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/08_if_else.mj
+INFO  17:58:11,337 - #2 program
+INFO  17:58:11,337 - #45 Grananje
+INFO  17:58:11,337 - #45 int
+INFO  17:58:11,337 - #45 a
+INFO  17:58:11,337 - #36 ,
+INFO  17:58:11,337 - #45 b
+INFO  17:58:11,337 - #34 ;
+INFO  17:58:11,337 - #43 {
+INFO  17:58:11,337 - #7 void
+INFO  17:58:11,338 - #45 main
+INFO  17:58:11,338 - #39 (
+INFO  17:58:11,338 - #40 )
+INFO  17:58:11,338 - #43 {
+INFO  17:58:11,338 - #45 a
+INFO  17:58:11,338 - #31 =
+INFO  17:58:11,338 - #46 1
+INFO  17:58:11,338 - #34 ;
+INFO  17:58:11,338 - #45 b
+INFO  17:58:11,339 - #31 =
+INFO  17:58:11,339 - #46 2
+INFO  17:58:11,339 - #34 ;
+INFO  17:58:11,339 - #9 if
+INFO  17:58:11,339 - #39 (
+INFO  17:58:11,339 - #45 a
+INFO  17:58:11,339 - #26 <
+INFO  17:58:11,339 - #45 b
+INFO  17:58:11,339 - #40 )
+INFO  17:58:11,339 - #45 a
+INFO  17:58:11,339 - #31 =
+INFO  17:58:11,339 - #46 0
+INFO  17:58:11,339 - #34 ;
+INFO  17:58:11,339 - #9 if
+INFO  17:58:11,339 - #39 (
+INFO  17:58:11,339 - #45 a
+INFO  17:58:11,339 - #26 <
+INFO  17:58:11,339 - #45 b
+INFO  17:58:11,339 - #40 )
+INFO  17:58:11,339 - #45 a
+INFO  17:58:11,340 - #31 =
+INFO  17:58:11,340 - #46 0
+INFO  17:58:11,340 - #34 ;
+INFO  17:58:11,340 - #10 else
+INFO  17:58:11,340 - #45 b
+INFO  17:58:11,340 - #31 =
+INFO  17:58:11,340 - #46 0
+INFO  17:58:11,340 - #34 ;
+INFO  17:58:11,340 - #9 if
+INFO  17:58:11,340 - #39 (
+INFO  17:58:11,340 - #45 a
+INFO  17:58:11,340 - #26 <
+INFO  17:58:11,340 - #45 b
+INFO  17:58:11,340 - #40 )
+INFO  17:58:11,340 - #43 {
+INFO  17:58:11,340 - #45 a
+INFO  17:58:11,340 - #31 =
+INFO  17:58:11,340 - #46 0
+INFO  17:58:11,340 - #34 ;
+INFO  17:58:11,340 - #45 b
+INFO  17:58:11,340 - #31 =
+INFO  17:58:11,340 - #46 1
+INFO  17:58:11,340 - #34 ;
+INFO  17:58:11,340 - #44 }
+INFO  17:58:11,340 - #10 else
+INFO  17:58:11,341 - #43 {
+INFO  17:58:11,341 - #45 a
+INFO  17:58:11,341 - #31 =
+INFO  17:58:11,341 - #46 1
+INFO  17:58:11,341 - #34 ;
+INFO  17:58:11,341 - #45 b
+INFO  17:58:11,341 - #31 =
+INFO  17:58:11,341 - #46 0
+INFO  17:58:11,341 - #34 ;
+INFO  17:58:11,341 - #44 }
+INFO  17:58:11,341 - #9 if
+INFO  17:58:11,341 - #39 (
+INFO  17:58:11,341 - #45 a
+INFO  17:58:11,341 - #26 <
+INFO  17:58:11,341 - #45 b
+INFO  17:58:11,341 - #40 )
+INFO  17:58:11,341 - #9 if
+INFO  17:58:11,341 - #39 (
+INFO  17:58:11,341 - #45 b
+INFO  17:58:11,341 - #24 >
+INFO  17:58:11,341 - #46 0
+INFO  17:58:11,341 - #40 )
+INFO  17:58:11,341 - #45 a
+INFO  17:58:11,341 - #31 =
+INFO  17:58:11,341 - #46 1
+INFO  17:58:11,341 - #34 ;
+INFO  17:58:11,341 - #10 else
+INFO  17:58:11,341 - #45 a
+INFO  17:58:11,341 - #31 =
+INFO  17:58:11,341 - #46 2
+INFO  17:58:11,341 - #34 ;
+INFO  17:58:11,342 - #9 if
+INFO  17:58:11,342 - #39 (
+INFO  17:58:11,342 - #45 a
+INFO  17:58:11,342 - #26 <
+INFO  17:58:11,342 - #45 b
+INFO  17:58:11,342 - #40 )
+INFO  17:58:11,342 - #43 {
+INFO  17:58:11,342 - #9 if
+INFO  17:58:11,342 - #39 (
+INFO  17:58:11,342 - #45 b
+INFO  17:58:11,342 - #24 >
+INFO  17:58:11,342 - #46 0
+INFO  17:58:11,342 - #40 )
+INFO  17:58:11,342 - #45 a
+INFO  17:58:11,342 - #31 =
+INFO  17:58:11,342 - #46 1
+INFO  17:58:11,342 - #34 ;
+INFO  17:58:11,342 - #44 }
+INFO  17:58:11,342 - #10 else
+INFO  17:58:11,342 - #43 {
+INFO  17:58:11,342 - #45 a
+INFO  17:58:11,342 - #31 =
+INFO  17:58:11,342 - #46 2
+INFO  17:58:11,342 - #34 ;
+INFO  17:58:11,342 - #44 }
+INFO  17:58:11,342 - #9 if
+INFO  17:58:11,342 - #39 (
+INFO  17:58:11,342 - #45 a
+INFO  17:58:11,342 - #22 ==
+INFO  17:58:11,342 - #46 1
+INFO  17:58:11,343 - #40 )
+INFO  17:58:11,343 - #45 a
+INFO  17:58:11,343 - #31 =
+INFO  17:58:11,343 - #46 1
+INFO  17:58:11,343 - #34 ;
+INFO  17:58:11,343 - #10 else
+INFO  17:58:11,343 - #9 if
+INFO  17:58:11,343 - #39 (
+INFO  17:58:11,343 - #45 a
+INFO  17:58:11,343 - #22 ==
+INFO  17:58:11,343 - #46 2
+INFO  17:58:11,343 - #40 )
+INFO  17:58:11,343 - #45 a
+INFO  17:58:11,343 - #31 =
+INFO  17:58:11,343 - #46 2
+INFO  17:58:11,343 - #34 ;
+INFO  17:58:11,343 - #10 else
+INFO  17:58:11,343 - #9 if
+INFO  17:58:11,343 - #39 (
+INFO  17:58:11,343 - #45 a
+INFO  17:58:11,343 - #22 ==
+INFO  17:58:11,343 - #46 3
+INFO  17:58:11,343 - #40 )
+INFO  17:58:11,343 - #45 a
+INFO  17:58:11,343 - #31 =
+INFO  17:58:11,343 - #46 3
+INFO  17:58:11,343 - #34 ;
+INFO  17:58:11,343 - #10 else
+INFO  17:58:11,343 - #45 a
+INFO  17:58:11,343 - #31 =
+INFO  17:58:11,343 - #46 0
+INFO  17:58:11,343 - #34 ;
+INFO  17:58:11,343 - #44 }
+INFO  17:58:11,343 - #44 }
+INFO  17:58:11,344 - Program(
   ProgramName(
    Grananje
   ) [ProgramName]
@@ -345,6 +345,8 @@ INFO  16:37:39,149 - Program(
                       ) [Expr_add]
                     ) [DesignatorStatement_assign]
                   ) [Statement_designator]
+                  ElseMark(
+                  ) [ElseMark]
                   Statement_designator(
                     DesignatorStatement_assign(
                       Designator_var(
@@ -442,6 +444,8 @@ INFO  16:37:39,149 - Program(
                     ) [Statement_designator]
                   ) [StatementList_more]
                 ) [Statement_block]
+                ElseMark(
+                ) [ElseMark]
                 Statement_block(
                   StatementList_more(
                     StatementList_more(
@@ -570,6 +574,8 @@ INFO  16:37:39,149 - Program(
                     ) [Expr_add]
                   ) [DesignatorStatement_assign]
                 ) [Statement_designator]
+                ElseMark(
+                ) [ElseMark]
                 Statement_designator(
                   DesignatorStatement_assign(
                     Designator_var(
@@ -680,6 +686,8 @@ INFO  16:37:39,149 - Program(
                 ) [Statement_if]
               ) [StatementList_more]
             ) [Statement_block]
+            ElseMark(
+            ) [ElseMark]
             Statement_block(
               StatementList_more(
                 StatementList_epsilon(
@@ -755,6 +763,8 @@ INFO  16:37:39,149 - Program(
               ) [Expr_add]
             ) [DesignatorStatement_assign]
           ) [Statement_designator]
+          ElseMark(
+          ) [ElseMark]
           Statement_ifElse(
             IfCondition_cond(
               Condition_term(
@@ -804,6 +814,8 @@ INFO  16:37:39,149 - Program(
                 ) [Expr_add]
               ) [DesignatorStatement_assign]
             ) [Statement_designator]
+            ElseMark(
+            ) [ElseMark]
             Statement_ifElse(
               IfCondition_cond(
                 Condition_term(
@@ -853,6 +865,8 @@ INFO  16:37:39,149 - Program(
                   ) [Expr_add]
                 ) [DesignatorStatement_assign]
               ) [Statement_designator]
+              ElseMark(
+              ) [ElseMark]
               Statement_designator(
                 DesignatorStatement_assign(
                   Designator_var(
@@ -878,40 +892,40 @@ INFO  16:37:39,149 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:37:39,149 - =================================================
-INFO  16:37:39,151 - Pretraga na 12(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 13(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,151 - Pretraga na 15(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 15(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,151 - Pretraga na 15(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 17(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,151 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 17(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,151 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 19(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,151 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 21(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,151 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 24(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,151 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,151 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,151 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,151 - Pretraga na 31(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - Pretraga na 31(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,152 - Pretraga na 32(b), nadjeno Var b: int, 1, 0
-INFO  16:37:39,152 - Pretraga na 32(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - Pretraga na 34(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - Pretraga na 37(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - Pretraga na 37(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - Pretraga na 38(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - Pretraga na 38(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - Pretraga na 39(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - Pretraga na 39(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - Pretraga na 40(a), nadjeno Var a: int, 0, 0
-INFO  16:37:39,152 - =================================================
+INFO  17:58:11,344 - =================================================
+INFO  17:58:11,346 - Pretraga na 12(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,346 - Pretraga na 13(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,346 - Pretraga na 15(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,346 - Pretraga na 15(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,346 - Pretraga na 15(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,346 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,346 - Pretraga na 17(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,346 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,346 - Pretraga na 17(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,346 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,346 - Pretraga na 19(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,346 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,346 - Pretraga na 21(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,347 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 24(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,347 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,347 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,347 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 31(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 31(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,347 - Pretraga na 32(b), nadjeno Var b: int, 1, 0
+INFO  17:58:11,347 - Pretraga na 32(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 34(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 37(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 37(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 38(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 38(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 39(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 39(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - Pretraga na 40(a), nadjeno Var a: int, 0, 0
+INFO  17:58:11,347 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -934,4 +948,4 @@ Prog Grananje: notype, 0, 1
 
 
 
-INFO  16:37:39,153 - Generisanje uspesno zavrseno!
+INFO  17:58:11,348 - Generisanje uspesno zavrseno: test/08_if_else.obj

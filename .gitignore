@@ -43,5 +43,9 @@ replay_pid*
 /logs/
 # Predmetni fajlovi - rezultat faze generisanja koda
 *.obj
+# Stvarni ispis programa na virtuelnoj masini, koji TestRunner snima radi uporedjivanja.
+# Ocekivani ispis se cuva u samom .mj fajlu (redovi "// OUT:"), pa je ovo samo pomoc pri
+# trazenju greske i ne ide u repo.
+*.run
 # NAPOMENA: test/*.out i test/*.err se NE ignorisu - postavka projekta
 # trazi da se predaju zajedno sa .mj ulazima.

@@ -114,6 +114,12 @@ nonterminal DesignatorStatement DesignatorStatement;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct IfCondition;
 /* Marker za kontekst petlje - vidi ForStart smenu nize. */
 nonterminal ForStart ForStart;
+/* Marker neterminali za generisanje koda - vidi objasnjenje uz ForStart i uz
+   svaku od smena nize. Svi su oblika "X ::= TERMINAL", nikad epsilon. */
+nonterminal ElseMark ElseMark;
+nonterminal TernQ TernQ;
+nonterminal TernC TernC;
+nonterminal MapArrow MapArrow;
 nonterminal ActParsOpt ActParsOpt;
 nonterminal ActPars ActPars;
 nonterminal ForInitOpt ForInitOpt;
@@ -266,11 +272,11 @@ Statement ::=   (Statement_designator) DesignatorStatement:D1 SEMI {: RESULT=new
                 (Statement_findAny) Designator:D1 ASSIGN Designator:D2 DOT FINDANY LPAREN Expr:E3 RPAREN SEMI {: RESULT=new Statement_findAny(D1, D2, E3); RESULT.setLine(D1left); :}
                 |
                 /* Amandman (NIVO B): Designator "=" Designator "." "map" "(" ident "=>" Expr ")" ";" */
-                (Statement_map) Designator:D1 ASSIGN Designator:D2 DOT MAP LPAREN IDENT:iterName ARROW Expr:E3 RPAREN SEMI {: RESULT=new Statement_map(D1, D2, iterName, E3); RESULT.setLine(D1left); :}
+                (Statement_map) Designator:D1 ASSIGN Designator:D2 DOT MAP LPAREN IDENT:iterName MapArrow:M3 Expr:E4 RPAREN SEMI {: RESULT=new Statement_map(D1, D2, iterName, M3, E4); RESULT.setLine(D1left); :}
                 |
                 (Statement_if) IF LPAREN IfCondition:I1 RPAREN Statement:S2 {: RESULT=new Statement_if(I1, S2); RESULT.setLine(I1left); :}
                 |
-                (Statement_ifElse) IF LPAREN IfCondition:I1 RPAREN Statement:S2 ELSE Statement:S3 {: RESULT=new Statement_ifElse(I1, S2, S3); RESULT.setLine(I1left); :}
+                (Statement_ifElse) IF LPAREN IfCondition:I1 RPAREN Statement:S2 ElseMark:E3 Statement:S4 {: RESULT=new Statement_ifElse(I1, S2, E3, S4); RESULT.setLine(I1left); :}
                 |
                 (Statement_break) BREAK SEMI {: RESULT=new Statement_break(); :}
                 |
@@ -315,6 +321,31 @@ IfCondition ::=     (IfCondition_cond) Condition:C1 {: RESULT=new IfCondition_co
    Namerno BEZ epsilon smene (npr. "ForStart ::= | FOR"): epsilon je vec jednom oborio
    LALR(1) svojstvo kod Unary/Factor pokusaja. Ovako se samo siftuje FOR, bez odluke. */
 ForStart ::= (ForStart) FOR {: RESULT=new ForStart(); :};
+
+/* Marker neterminali za fazu 4 (generisanje koda).
+
+   Generisanje koda ide istim bottom-up obilaskom kao semanticka analiza, pa se kod
+   nekog cvora emituje tek POSLE koda sve njegove dece. Za konstrukcije sa skokovima to
+   je prekasno: kod then i else grane bi se nasao jedan za drugim, bez skoka izmedju.
+   Zato se na svakom mestu gde skok mora da se emituje "u sredini" smene ubacuje marker
+   neterminal - on se poseti tacno tu, izmedju dva podstabla.
+
+   Svi su oblika "X ::= TERMINAL" a ne epsilon: epsilon smena bi trazila redukciju pre
+   nego sto parser vidi sledeci token, sto je vec jednom oborilo LALR(1) svojstvo (vidi
+   komentar uz ForStart i uz Factor). Ovako se terminal prosto siftuje.
+
+   ElseMark - izmedju then i else grane: emituje skok preko else grane
+   TernQ    - izmedju uslova i prve grane ternarnog operatora
+   TernC    - izmedju prve i druge grane ternarnog operatora
+   MapArrow - izmedju imena iteratora i tela map-a: otvara telo petlje */
+
+ElseMark ::= (ElseMark) ELSE {: RESULT=new ElseMark(); :};
+
+TernQ ::= (TernQ) QUESTION {: RESULT=new TernQ(); :};
+
+TernC ::= (TernC) COLON {: RESULT=new TernC(); :};
+
+MapArrow ::= (MapArrow) ARROW {: RESULT=new MapArrow(); :};
 
 ReturnExprOpt ::=   (ReturnExprOpt_expr) Expr:E1 {: RESULT=new ReturnExprOpt_expr(E1); RESULT.setLine(E1left); :}
                     |
@@ -422,7 +453,7 @@ Relop ::=   (Relop_eq) EQ {: RESULT=new Relop_eq(); :}
 
 Expr ::=    (Expr_add) AddExpr:A1 {: RESULT=new Expr_add(A1); RESULT.setLine(A1left); :}
             |
-            (Expr_ternary) Condition:C1 QUESTION Expr:E2 COLON Expr:E3 {: RESULT=new Expr_ternary(C1, E2, E3); RESULT.setLine(C1left); :}
+            (Expr_ternary) Condition:C1 TernQ:T2 Expr:E3 TernC:T4 Expr:E5 {: RESULT=new Expr_ternary(C1, T2, E3, T4, E5); RESULT.setLine(C1left); :}
             ;
 
 AddExpr ::=     (AddExpr_addop) AddExpr:A1 Addop:A2 Term:T3 {: RESULT=new AddExpr_addop(A1, A2, T3); RESULT.setLine(A1left); :}

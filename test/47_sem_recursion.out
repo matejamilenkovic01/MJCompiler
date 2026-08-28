@@ -1,64 +1,64 @@
-INFO  16:37:42,739 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/47_sem_recursion.mj
-INFO  16:37:42,747 - #2 program
-INFO  16:37:42,747 - #45 SemRecursion
-INFO  16:37:42,747 - #45 int
-INFO  16:37:42,747 - #45 a
-INFO  16:37:42,747 - #34 ;
-INFO  16:37:42,747 - #43 {
-INFO  16:37:42,747 - #45 int
-INFO  16:37:42,748 - #45 fact
-INFO  16:37:42,748 - #39 (
-INFO  16:37:42,748 - #45 int
-INFO  16:37:42,748 - #45 n
-INFO  16:37:42,748 - #40 )
-INFO  16:37:42,748 - #45 int
-INFO  16:37:42,748 - #45 r
-INFO  16:37:42,748 - #34 ;
-INFO  16:37:42,748 - #43 {
-INFO  16:37:42,748 - #9 if
-INFO  16:37:42,748 - #39 (
-INFO  16:37:42,748 - #45 n
-INFO  16:37:42,748 - #27 <=
-INFO  16:37:42,748 - #46 1
-INFO  16:37:42,749 - #40 )
-INFO  16:37:42,749 - #8 return
-INFO  16:37:42,749 - #46 1
-INFO  16:37:42,749 - #34 ;
-INFO  16:37:42,749 - #45 r
-INFO  16:37:42,749 - #31 =
-INFO  16:37:42,749 - #45 fact
-INFO  16:37:42,749 - #39 (
-INFO  16:37:42,749 - #45 n
-INFO  16:37:42,749 - #18 -
-INFO  16:37:42,749 - #46 1
-INFO  16:37:42,749 - #40 )
-INFO  16:37:42,749 - #34 ;
-INFO  16:37:42,749 - #8 return
-INFO  16:37:42,749 - #45 n
-INFO  16:37:42,749 - #19 *
-INFO  16:37:42,750 - #45 r
-INFO  16:37:42,750 - #34 ;
-INFO  16:37:42,750 - #44 }
-INFO  16:37:42,750 - #7 void
-INFO  16:37:42,750 - #45 main
-INFO  16:37:42,750 - #39 (
-INFO  16:37:42,750 - #40 )
-INFO  16:37:42,750 - #43 {
-INFO  16:37:42,750 - #45 a
-INFO  16:37:42,750 - #31 =
-INFO  16:37:42,750 - #45 fact
-INFO  16:37:42,750 - #39 (
-INFO  16:37:42,750 - #46 5
-INFO  16:37:42,751 - #40 )
-INFO  16:37:42,751 - #34 ;
-INFO  16:37:42,751 - #5 print
-INFO  16:37:42,751 - #39 (
-INFO  16:37:42,751 - #45 a
-INFO  16:37:42,751 - #40 )
-INFO  16:37:42,751 - #34 ;
-INFO  16:37:42,751 - #44 }
-INFO  16:37:42,751 - #44 }
-INFO  16:37:42,751 - Program(
+INFO  17:58:15,045 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/47_sem_recursion.mj
+INFO  17:58:15,053 - #2 program
+INFO  17:58:15,053 - #45 SemRecursion
+INFO  17:58:15,053 - #45 int
+INFO  17:58:15,053 - #45 a
+INFO  17:58:15,053 - #34 ;
+INFO  17:58:15,053 - #43 {
+INFO  17:58:15,053 - #45 int
+INFO  17:58:15,054 - #45 fact
+INFO  17:58:15,054 - #39 (
+INFO  17:58:15,054 - #45 int
+INFO  17:58:15,054 - #45 n
+INFO  17:58:15,054 - #40 )
+INFO  17:58:15,054 - #45 int
+INFO  17:58:15,054 - #45 r
+INFO  17:58:15,054 - #34 ;
+INFO  17:58:15,054 - #43 {
+INFO  17:58:15,054 - #9 if
+INFO  17:58:15,054 - #39 (
+INFO  17:58:15,054 - #45 n
+INFO  17:58:15,054 - #27 <=
+INFO  17:58:15,054 - #46 1
+INFO  17:58:15,055 - #40 )
+INFO  17:58:15,055 - #8 return
+INFO  17:58:15,055 - #46 1
+INFO  17:58:15,055 - #34 ;
+INFO  17:58:15,055 - #45 r
+INFO  17:58:15,055 - #31 =
+INFO  17:58:15,055 - #45 fact
+INFO  17:58:15,055 - #39 (
+INFO  17:58:15,055 - #45 n
+INFO  17:58:15,055 - #18 -
+INFO  17:58:15,055 - #46 1
+INFO  17:58:15,055 - #40 )
+INFO  17:58:15,055 - #34 ;
+INFO  17:58:15,056 - #8 return
+INFO  17:58:15,056 - #45 n
+INFO  17:58:15,056 - #19 *
+INFO  17:58:15,056 - #45 r
+INFO  17:58:15,056 - #34 ;
+INFO  17:58:15,056 - #44 }
+INFO  17:58:15,056 - #7 void
+INFO  17:58:15,056 - #45 main
+INFO  17:58:15,056 - #39 (
+INFO  17:58:15,056 - #40 )
+INFO  17:58:15,056 - #43 {
+INFO  17:58:15,056 - #45 a
+INFO  17:58:15,056 - #31 =
+INFO  17:58:15,056 - #45 fact
+INFO  17:58:15,056 - #39 (
+INFO  17:58:15,056 - #46 5
+INFO  17:58:15,057 - #40 )
+INFO  17:58:15,057 - #34 ;
+INFO  17:58:15,057 - #5 print
+INFO  17:58:15,057 - #39 (
+INFO  17:58:15,057 - #45 a
+INFO  17:58:15,057 - #40 )
+INFO  17:58:15,057 - #34 ;
+INFO  17:58:15,057 - #44 }
+INFO  17:58:15,057 - #44 }
+INFO  17:58:15,057 - Program(
   ProgramName(
    SemRecursion
   ) [ProgramName]
@@ -317,19 +317,19 @@ INFO  16:37:42,751 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:37:42,752 - =================================================
-INFO  16:37:42,753 - Pretraga na 14(n), nadjeno Var n: int, 0, 1
-INFO  16:37:42,753 - Pretraga na 15(r), nadjeno Var r: int, 1, 1
-INFO  16:37:42,753 - Pretraga na 15(n), nadjeno Var n: int, 0, 1
-INFO  16:37:42,753 - Pretraga na 15(fact), nadjeno Meth fact: int, 0, 1
-INFO  16:37:42,754 - Pretraga na 16(n), nadjeno Var n: int, 0, 1
-INFO  16:37:42,754 - Pretraga na 16(r), nadjeno Var r: int, 1, 1
-INFO  16:37:42,754 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,754 - Pretraga na 21(fact), nadjeno Meth fact: int, 0, 1 
+INFO  17:58:15,057 - =================================================
+INFO  17:58:15,059 - Pretraga na 15(n), nadjeno Var n: int, 0, 1
+INFO  17:58:15,059 - Pretraga na 16(r), nadjeno Var r: int, 1, 1
+INFO  17:58:15,059 - Pretraga na 16(n), nadjeno Var n: int, 0, 1
+INFO  17:58:15,059 - Pretraga na 16(fact), nadjeno Meth fact: int, 0, 1
+INFO  17:58:15,059 - Pretraga na 17(n), nadjeno Var n: int, 0, 1
+INFO  17:58:15,059 - Pretraga na 17(r), nadjeno Var r: int, 1, 1
+INFO  17:58:15,059 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,060 - Pretraga na 22(fact), nadjeno Meth fact: int, 0, 1 
    Var n: int, 0, 1 
    Var r: int, 1, 1
-INFO  16:37:42,754 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,754 - =================================================
+INFO  17:58:15,060 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
+INFO  17:58:15,060 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -355,4 +355,4 @@ Prog SemRecursion: notype, 0, 1
 
 
 
-INFO  16:37:42,754 - Generisanje uspesno zavrseno!
+INFO  17:58:15,061 - Generisanje uspesno zavrseno: test/47_sem_recursion.obj

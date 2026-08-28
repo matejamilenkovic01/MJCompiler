@@ -1,9 +1,9 @@
-ERROR 16:37:41,732 - Semanticka greska: Pristup nedefinisanom simbolu: nepostojeci na liniji 17
-ERROR 16:37:41,732 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 17
-ERROR 16:37:41,732 - Semanticka greska: Indeksira se a, sto nije niz na liniji 18
-ERROR 16:37:41,732 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 18
-ERROR 16:37:41,732 - Semanticka greska: Indeks niza niz nije tipa int na liniji 19
-ERROR 16:37:41,733 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 19
-ERROR 16:37:41,733 - Semanticka greska: Polje length se trazi nad a, sto nije niz na liniji 20
-ERROR 16:37:41,733 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 20
-ERROR 16:37:41,733 - Parsiranje NIJE uspesno zavrseno!
+ERROR 17:58:14,032 - Semanticka greska: Pristup nedefinisanom simbolu: nepostojeci na liniji 17
+ERROR 17:58:14,032 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 17
+ERROR 17:58:14,032 - Semanticka greska: Indeksira se a, sto nije niz na liniji 18
+ERROR 17:58:14,032 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 18
+ERROR 17:58:14,033 - Semanticka greska: Indeks niza niz nije tipa int na liniji 19
+ERROR 17:58:14,033 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 19
+ERROR 17:58:14,033 - Semanticka greska: Polje length se trazi nad a, sto nije niz na liniji 20
+ERROR 17:58:14,033 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 20
+ERROR 17:58:14,033 - Parsiranje NIJE uspesno zavrseno!

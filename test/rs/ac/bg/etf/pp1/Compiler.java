@@ -27,8 +27,9 @@ public class Compiler {
 	/** Pogresan poziv ili ulazni fajl nije citljiv. */
 	public static final int EXIT_USAGE = 3;
 
-	/** Koristi se kada je program pozvan bez argumenata (zgodno pri pokretanju iz Eclipse-a). */
+	/** Koriste se kada je program pozvan bez argumenata (zgodno pri pokretanju iz Eclipse-a). */
 	private static final String DEFAULT_SOURCE = "test/program.mj";
+	private static final String DEFAULT_TARGET = "test/program.obj";
 
 	static {
 
@@ -50,8 +51,8 @@ public class Compiler {
 		Logger log = Logger.getLogger(Compiler.class);
 
 		// arg1 = putanja do ulaznog .mj fajla, arg2 = putanja do izlaznog .obj fajla.
-		// Drugi argument se koristi tek u fazi generisanja koda.
 		String sourcePath = args.length > 0 ? args[0] : DEFAULT_SOURCE;
+		String targetPath = args.length > 1 ? args[1] : DEFAULT_TARGET;
 
 		if (args.length == 0) {
 			log.info("Nije zadat ulazni fajl, koristi se podrazumevani: " + DEFAULT_SOURCE);
@@ -117,17 +118,28 @@ public class Compiler {
 				
 				/* Generisanje koda */
 				
-				File objFile = new File("test/program.obj");
-				if (objFile.exists()) objFile.delete();
-				
-				CodeGenerator cg = new CodeGenerator();
+				File objFile = new File(targetPath);
+				if (objFile.exists()) {
+					objFile.delete();
+				}
+
+				CodeGenerator cg = new CodeGenerator(sa.getProgramObj());
 				prog.traverseBottomUp(cg);
+
+				/* Broj reci koje MJVM rezervise u statickoj zoni = broj globalnih promenljivih.
+				   Semanticka analiza ga je zapamtila pre zatvaranja opsega programa; posle
+				   closeScope() taj podatak vise nije dostupan. */
 				Code.dataSize = sa.nVars;
 				Code.mainPc = cg.getMainPc();
-				Code.write(new FileOutputStream(objFile));
-				
-				
-				log.info("Generisanje uspesno zavrseno!");
+
+				FileOutputStream objOut = new FileOutputStream(objFile);
+				try {
+					Code.write(objOut);
+				} finally {
+					objOut.close();
+				}
+
+				log.info("Generisanje uspesno zavrseno: " + objFile.getPath());
 				System.exit(EXIT_OK);
 			}
 

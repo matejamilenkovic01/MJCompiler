@@ -1,229 +1,229 @@
-INFO  16:37:39,916 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/13_map.mj
-INFO  16:37:39,924 - #2 program
-INFO  16:37:39,924 - #45 Map
-INFO  16:37:39,924 - #3 const
-INFO  16:37:39,924 - #45 int
-INFO  16:37:39,924 - #45 faktor
-INFO  16:37:39,924 - #31 =
-INFO  16:37:39,925 - #46 2
-INFO  16:37:39,925 - #34 ;
-INFO  16:37:39,925 - #45 int
-INFO  16:37:39,925 - #45 brojevi
-INFO  16:37:39,925 - #41 [
-INFO  16:37:39,925 - #42 ]
-INFO  16:37:39,925 - #36 ,
-INFO  16:37:39,925 - #45 rezultat
-INFO  16:37:39,925 - #41 [
-INFO  16:37:39,925 - #42 ]
-INFO  16:37:39,925 - #34 ;
-INFO  16:37:39,925 - #45 char
-INFO  16:37:39,925 - #45 slova
-INFO  16:37:39,925 - #41 [
-INFO  16:37:39,925 - #42 ]
-INFO  16:37:39,925 - #36 ,
-INFO  16:37:39,925 - #45 velika
-INFO  16:37:39,925 - #41 [
-INFO  16:37:39,925 - #42 ]
-INFO  16:37:39,925 - #34 ;
-INFO  16:37:39,926 - #45 bool
-INFO  16:37:39,926 - #45 zastavice
-INFO  16:37:39,926 - #41 [
-INFO  16:37:39,926 - #42 ]
-INFO  16:37:39,926 - #36 ,
-INFO  16:37:39,926 - #45 negirane
-INFO  16:37:39,926 - #41 [
-INFO  16:37:39,926 - #42 ]
-INFO  16:37:39,926 - #34 ;
-INFO  16:37:39,926 - #45 int
-INFO  16:37:39,926 - #45 x
-INFO  16:37:39,926 - #34 ;
-INFO  16:37:39,926 - #45 char
-INFO  16:37:39,926 - #45 c
-INFO  16:37:39,926 - #34 ;
-INFO  16:37:39,926 - #45 bool
-INFO  16:37:39,926 - #45 b
-INFO  16:37:39,926 - #34 ;
-INFO  16:37:39,926 - #43 {
-INFO  16:37:39,926 - #7 void
-INFO  16:37:39,926 - #45 main
-INFO  16:37:39,926 - #39 (
-INFO  16:37:39,926 - #40 )
-INFO  16:37:39,927 - #43 {
-INFO  16:37:39,927 - #45 brojevi
-INFO  16:37:39,927 - #31 =
-INFO  16:37:39,927 - #4 new
-INFO  16:37:39,927 - #45 int
-INFO  16:37:39,927 - #41 [
-INFO  16:37:39,927 - #46 5
-INFO  16:37:39,927 - #42 ]
-INFO  16:37:39,927 - #34 ;
-INFO  16:37:39,927 - #45 rezultat
-INFO  16:37:39,927 - #31 =
-INFO  16:37:39,927 - #4 new
-INFO  16:37:39,927 - #45 int
-INFO  16:37:39,927 - #41 [
-INFO  16:37:39,927 - #46 5
-INFO  16:37:39,927 - #42 ]
-INFO  16:37:39,927 - #34 ;
-INFO  16:37:39,927 - #45 slova
-INFO  16:37:39,927 - #31 =
-INFO  16:37:39,928 - #4 new
-INFO  16:37:39,928 - #45 char
-INFO  16:37:39,928 - #41 [
-INFO  16:37:39,928 - #46 5
-INFO  16:37:39,928 - #42 ]
-INFO  16:37:39,928 - #34 ;
-INFO  16:37:39,928 - #45 velika
-INFO  16:37:39,928 - #31 =
-INFO  16:37:39,928 - #4 new
-INFO  16:37:39,928 - #45 char
-INFO  16:37:39,928 - #41 [
-INFO  16:37:39,928 - #46 5
-INFO  16:37:39,928 - #42 ]
-INFO  16:37:39,928 - #34 ;
-INFO  16:37:39,928 - #45 zastavice
-INFO  16:37:39,928 - #31 =
-INFO  16:37:39,928 - #4 new
-INFO  16:37:39,928 - #45 bool
-INFO  16:37:39,928 - #41 [
-INFO  16:37:39,928 - #46 5
-INFO  16:37:39,928 - #42 ]
-INFO  16:37:39,928 - #34 ;
-INFO  16:37:39,928 - #45 negirane
-INFO  16:37:39,928 - #31 =
-INFO  16:37:39,928 - #4 new
-INFO  16:37:39,928 - #45 bool
-INFO  16:37:39,928 - #41 [
-INFO  16:37:39,928 - #46 5
-INFO  16:37:39,928 - #42 ]
-INFO  16:37:39,928 - #34 ;
-INFO  16:37:39,928 - #45 rezultat
-INFO  16:37:39,928 - #31 =
-INFO  16:37:39,928 - #45 brojevi
-INFO  16:37:39,928 - #37 .
-INFO  16:37:39,928 - #16 map
-INFO  16:37:39,928 - #39 (
-INFO  16:37:39,928 - #45 x
-INFO  16:37:39,928 - #30 =>
-INFO  16:37:39,928 - #45 x
-INFO  16:37:39,928 - #40 )
-INFO  16:37:39,929 - #34 ;
-INFO  16:37:39,929 - #45 rezultat
-INFO  16:37:39,929 - #31 =
-INFO  16:37:39,929 - #45 brojevi
-INFO  16:37:39,929 - #37 .
-INFO  16:37:39,929 - #16 map
-INFO  16:37:39,929 - #39 (
-INFO  16:37:39,929 - #45 x
-INFO  16:37:39,929 - #30 =>
-INFO  16:37:39,929 - #45 x
-INFO  16:37:39,929 - #19 *
-INFO  16:37:39,929 - #46 2
-INFO  16:37:39,929 - #40 )
-INFO  16:37:39,929 - #34 ;
-INFO  16:37:39,929 - #45 rezultat
-INFO  16:37:39,929 - #31 =
-INFO  16:37:39,929 - #45 brojevi
-INFO  16:37:39,929 - #37 .
-INFO  16:37:39,929 - #16 map
-INFO  16:37:39,929 - #39 (
-INFO  16:37:39,929 - #45 x
-INFO  16:37:39,929 - #30 =>
-INFO  16:37:39,929 - #45 x
-INFO  16:37:39,929 - #17 +
-INFO  16:37:39,929 - #46 1
-INFO  16:37:39,929 - #40 )
-INFO  16:37:39,930 - #34 ;
-INFO  16:37:39,930 - #45 rezultat
-INFO  16:37:39,930 - #31 =
-INFO  16:37:39,930 - #45 brojevi
-INFO  16:37:39,930 - #37 .
-INFO  16:37:39,930 - #16 map
-INFO  16:37:39,930 - #39 (
-INFO  16:37:39,930 - #45 x
-INFO  16:37:39,930 - #30 =>
-INFO  16:37:39,930 - #45 x
-INFO  16:37:39,930 - #19 *
-INFO  16:37:39,930 - #45 faktor
-INFO  16:37:39,930 - #18 -
-INFO  16:37:39,930 - #46 1
-INFO  16:37:39,930 - #40 )
-INFO  16:37:39,930 - #34 ;
-INFO  16:37:39,930 - #45 rezultat
-INFO  16:37:39,930 - #31 =
-INFO  16:37:39,930 - #45 brojevi
-INFO  16:37:39,930 - #37 .
-INFO  16:37:39,930 - #16 map
-INFO  16:37:39,930 - #39 (
-INFO  16:37:39,930 - #45 x
-INFO  16:37:39,930 - #30 =>
-INFO  16:37:39,930 - #18 -
-INFO  16:37:39,930 - #45 x
-INFO  16:37:39,930 - #40 )
-INFO  16:37:39,930 - #34 ;
-INFO  16:37:39,930 - #45 rezultat
-INFO  16:37:39,930 - #31 =
-INFO  16:37:39,930 - #45 brojevi
-INFO  16:37:39,930 - #37 .
-INFO  16:37:39,930 - #16 map
-INFO  16:37:39,930 - #39 (
-INFO  16:37:39,930 - #45 x
-INFO  16:37:39,930 - #30 =>
-INFO  16:37:39,930 - #39 (
-INFO  16:37:39,930 - #45 x
-INFO  16:37:39,930 - #17 +
-INFO  16:37:39,930 - #46 1
-INFO  16:37:39,930 - #40 )
-INFO  16:37:39,930 - #19 *
-INFO  16:37:39,930 - #39 (
-INFO  16:37:39,930 - #45 x
-INFO  16:37:39,930 - #18 -
-INFO  16:37:39,931 - #46 1
-INFO  16:37:39,931 - #40 )
-INFO  16:37:39,931 - #40 )
-INFO  16:37:39,931 - #34 ;
-INFO  16:37:39,931 - #45 rezultat
-INFO  16:37:39,931 - #31 =
-INFO  16:37:39,931 - #45 brojevi
-INFO  16:37:39,931 - #37 .
-INFO  16:37:39,931 - #16 map
-INFO  16:37:39,931 - #39 (
-INFO  16:37:39,931 - #45 x
-INFO  16:37:39,931 - #30 =>
-INFO  16:37:39,931 - #45 x
-INFO  16:37:39,931 - #26 <
-INFO  16:37:39,931 - #46 0
-INFO  16:37:39,931 - #38 ?
-INFO  16:37:39,931 - #46 0
-INFO  16:37:39,931 - #35 :
-INFO  16:37:39,931 - #45 x
-INFO  16:37:39,931 - #40 )
-INFO  16:37:39,931 - #34 ;
-INFO  16:37:39,931 - #45 velika
-INFO  16:37:39,931 - #31 =
-INFO  16:37:39,931 - #45 slova
-INFO  16:37:39,931 - #37 .
-INFO  16:37:39,932 - #16 map
-INFO  16:37:39,932 - #39 (
-INFO  16:37:39,932 - #45 c
-INFO  16:37:39,932 - #30 =>
-INFO  16:37:39,932 - #45 c
-INFO  16:37:39,932 - #40 )
-INFO  16:37:39,932 - #34 ;
-INFO  16:37:39,932 - #45 negirane
-INFO  16:37:39,932 - #31 =
-INFO  16:37:39,932 - #45 zastavice
-INFO  16:37:39,932 - #37 .
-INFO  16:37:39,932 - #16 map
-INFO  16:37:39,932 - #39 (
-INFO  16:37:39,932 - #45 b
-INFO  16:37:39,932 - #30 =>
-INFO  16:37:39,932 - #45 b
-INFO  16:37:39,932 - #40 )
-INFO  16:37:39,932 - #34 ;
-INFO  16:37:39,932 - #44 }
-INFO  16:37:39,932 - #44 }
-INFO  16:37:39,933 - Program(
+INFO  17:58:12,124 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/13_map.mj
+INFO  17:58:12,132 - #2 program
+INFO  17:58:12,133 - #45 Map
+INFO  17:58:12,133 - #3 const
+INFO  17:58:12,133 - #45 int
+INFO  17:58:12,133 - #45 faktor
+INFO  17:58:12,133 - #31 =
+INFO  17:58:12,133 - #46 2
+INFO  17:58:12,133 - #34 ;
+INFO  17:58:12,133 - #45 int
+INFO  17:58:12,133 - #45 brojevi
+INFO  17:58:12,133 - #41 [
+INFO  17:58:12,133 - #42 ]
+INFO  17:58:12,133 - #36 ,
+INFO  17:58:12,133 - #45 rezultat
+INFO  17:58:12,133 - #41 [
+INFO  17:58:12,134 - #42 ]
+INFO  17:58:12,134 - #34 ;
+INFO  17:58:12,134 - #45 char
+INFO  17:58:12,134 - #45 slova
+INFO  17:58:12,134 - #41 [
+INFO  17:58:12,134 - #42 ]
+INFO  17:58:12,134 - #36 ,
+INFO  17:58:12,134 - #45 velika
+INFO  17:58:12,134 - #41 [
+INFO  17:58:12,134 - #42 ]
+INFO  17:58:12,134 - #34 ;
+INFO  17:58:12,134 - #45 bool
+INFO  17:58:12,134 - #45 zastavice
+INFO  17:58:12,134 - #41 [
+INFO  17:58:12,134 - #42 ]
+INFO  17:58:12,134 - #36 ,
+INFO  17:58:12,134 - #45 negirane
+INFO  17:58:12,134 - #41 [
+INFO  17:58:12,134 - #42 ]
+INFO  17:58:12,134 - #34 ;
+INFO  17:58:12,134 - #45 int
+INFO  17:58:12,134 - #45 x
+INFO  17:58:12,134 - #34 ;
+INFO  17:58:12,134 - #45 char
+INFO  17:58:12,134 - #45 c
+INFO  17:58:12,134 - #34 ;
+INFO  17:58:12,134 - #45 bool
+INFO  17:58:12,134 - #45 b
+INFO  17:58:12,134 - #34 ;
+INFO  17:58:12,134 - #43 {
+INFO  17:58:12,135 - #7 void
+INFO  17:58:12,135 - #45 main
+INFO  17:58:12,135 - #39 (
+INFO  17:58:12,135 - #40 )
+INFO  17:58:12,135 - #43 {
+INFO  17:58:12,135 - #45 brojevi
+INFO  17:58:12,135 - #31 =
+INFO  17:58:12,135 - #4 new
+INFO  17:58:12,135 - #45 int
+INFO  17:58:12,135 - #41 [
+INFO  17:58:12,135 - #46 5
+INFO  17:58:12,135 - #42 ]
+INFO  17:58:12,135 - #34 ;
+INFO  17:58:12,136 - #45 rezultat
+INFO  17:58:12,136 - #31 =
+INFO  17:58:12,136 - #4 new
+INFO  17:58:12,136 - #45 int
+INFO  17:58:12,136 - #41 [
+INFO  17:58:12,136 - #46 5
+INFO  17:58:12,136 - #42 ]
+INFO  17:58:12,136 - #34 ;
+INFO  17:58:12,136 - #45 slova
+INFO  17:58:12,136 - #31 =
+INFO  17:58:12,136 - #4 new
+INFO  17:58:12,136 - #45 char
+INFO  17:58:12,136 - #41 [
+INFO  17:58:12,136 - #46 5
+INFO  17:58:12,136 - #42 ]
+INFO  17:58:12,136 - #34 ;
+INFO  17:58:12,136 - #45 velika
+INFO  17:58:12,136 - #31 =
+INFO  17:58:12,136 - #4 new
+INFO  17:58:12,136 - #45 char
+INFO  17:58:12,136 - #41 [
+INFO  17:58:12,136 - #46 5
+INFO  17:58:12,136 - #42 ]
+INFO  17:58:12,136 - #34 ;
+INFO  17:58:12,136 - #45 zastavice
+INFO  17:58:12,136 - #31 =
+INFO  17:58:12,136 - #4 new
+INFO  17:58:12,136 - #45 bool
+INFO  17:58:12,136 - #41 [
+INFO  17:58:12,136 - #46 5
+INFO  17:58:12,136 - #42 ]
+INFO  17:58:12,136 - #34 ;
+INFO  17:58:12,136 - #45 negirane
+INFO  17:58:12,137 - #31 =
+INFO  17:58:12,137 - #4 new
+INFO  17:58:12,137 - #45 bool
+INFO  17:58:12,137 - #41 [
+INFO  17:58:12,137 - #46 5
+INFO  17:58:12,137 - #42 ]
+INFO  17:58:12,137 - #34 ;
+INFO  17:58:12,137 - #45 rezultat
+INFO  17:58:12,137 - #31 =
+INFO  17:58:12,137 - #45 brojevi
+INFO  17:58:12,137 - #37 .
+INFO  17:58:12,137 - #16 map
+INFO  17:58:12,137 - #39 (
+INFO  17:58:12,137 - #45 x
+INFO  17:58:12,137 - #30 =>
+INFO  17:58:12,137 - #45 x
+INFO  17:58:12,137 - #40 )
+INFO  17:58:12,137 - #34 ;
+INFO  17:58:12,137 - #45 rezultat
+INFO  17:58:12,137 - #31 =
+INFO  17:58:12,137 - #45 brojevi
+INFO  17:58:12,137 - #37 .
+INFO  17:58:12,137 - #16 map
+INFO  17:58:12,137 - #39 (
+INFO  17:58:12,137 - #45 x
+INFO  17:58:12,137 - #30 =>
+INFO  17:58:12,137 - #45 x
+INFO  17:58:12,137 - #19 *
+INFO  17:58:12,137 - #46 2
+INFO  17:58:12,137 - #40 )
+INFO  17:58:12,138 - #34 ;
+INFO  17:58:12,138 - #45 rezultat
+INFO  17:58:12,138 - #31 =
+INFO  17:58:12,138 - #45 brojevi
+INFO  17:58:12,138 - #37 .
+INFO  17:58:12,138 - #16 map
+INFO  17:58:12,138 - #39 (
+INFO  17:58:12,138 - #45 x
+INFO  17:58:12,138 - #30 =>
+INFO  17:58:12,138 - #45 x
+INFO  17:58:12,138 - #17 +
+INFO  17:58:12,138 - #46 1
+INFO  17:58:12,138 - #40 )
+INFO  17:58:12,138 - #34 ;
+INFO  17:58:12,138 - #45 rezultat
+INFO  17:58:12,138 - #31 =
+INFO  17:58:12,138 - #45 brojevi
+INFO  17:58:12,138 - #37 .
+INFO  17:58:12,138 - #16 map
+INFO  17:58:12,138 - #39 (
+INFO  17:58:12,138 - #45 x
+INFO  17:58:12,138 - #30 =>
+INFO  17:58:12,138 - #45 x
+INFO  17:58:12,138 - #19 *
+INFO  17:58:12,138 - #45 faktor
+INFO  17:58:12,138 - #18 -
+INFO  17:58:12,138 - #46 1
+INFO  17:58:12,138 - #40 )
+INFO  17:58:12,138 - #34 ;
+INFO  17:58:12,138 - #45 rezultat
+INFO  17:58:12,138 - #31 =
+INFO  17:58:12,138 - #45 brojevi
+INFO  17:58:12,138 - #37 .
+INFO  17:58:12,139 - #16 map
+INFO  17:58:12,139 - #39 (
+INFO  17:58:12,139 - #45 x
+INFO  17:58:12,139 - #30 =>
+INFO  17:58:12,139 - #18 -
+INFO  17:58:12,139 - #45 x
+INFO  17:58:12,139 - #40 )
+INFO  17:58:12,139 - #34 ;
+INFO  17:58:12,139 - #45 rezultat
+INFO  17:58:12,139 - #31 =
+INFO  17:58:12,139 - #45 brojevi
+INFO  17:58:12,139 - #37 .
+INFO  17:58:12,139 - #16 map
+INFO  17:58:12,139 - #39 (
+INFO  17:58:12,139 - #45 x
+INFO  17:58:12,139 - #30 =>
+INFO  17:58:12,139 - #39 (
+INFO  17:58:12,139 - #45 x
+INFO  17:58:12,139 - #17 +
+INFO  17:58:12,139 - #46 1
+INFO  17:58:12,139 - #40 )
+INFO  17:58:12,139 - #19 *
+INFO  17:58:12,139 - #39 (
+INFO  17:58:12,139 - #45 x
+INFO  17:58:12,139 - #18 -
+INFO  17:58:12,139 - #46 1
+INFO  17:58:12,139 - #40 )
+INFO  17:58:12,139 - #40 )
+INFO  17:58:12,139 - #34 ;
+INFO  17:58:12,139 - #45 rezultat
+INFO  17:58:12,139 - #31 =
+INFO  17:58:12,139 - #45 brojevi
+INFO  17:58:12,139 - #37 .
+INFO  17:58:12,139 - #16 map
+INFO  17:58:12,139 - #39 (
+INFO  17:58:12,139 - #45 x
+INFO  17:58:12,139 - #30 =>
+INFO  17:58:12,139 - #45 x
+INFO  17:58:12,139 - #26 <
+INFO  17:58:12,139 - #46 0
+INFO  17:58:12,139 - #38 ?
+INFO  17:58:12,140 - #46 0
+INFO  17:58:12,140 - #35 :
+INFO  17:58:12,140 - #45 x
+INFO  17:58:12,140 - #40 )
+INFO  17:58:12,140 - #34 ;
+INFO  17:58:12,140 - #45 velika
+INFO  17:58:12,140 - #31 =
+INFO  17:58:12,140 - #45 slova
+INFO  17:58:12,140 - #37 .
+INFO  17:58:12,140 - #16 map
+INFO  17:58:12,140 - #39 (
+INFO  17:58:12,140 - #45 c
+INFO  17:58:12,140 - #30 =>
+INFO  17:58:12,140 - #45 c
+INFO  17:58:12,140 - #40 )
+INFO  17:58:12,140 - #34 ;
+INFO  17:58:12,140 - #45 negirane
+INFO  17:58:12,140 - #31 =
+INFO  17:58:12,140 - #45 zastavice
+INFO  17:58:12,140 - #37 .
+INFO  17:58:12,140 - #16 map
+INFO  17:58:12,140 - #39 (
+INFO  17:58:12,140 - #45 b
+INFO  17:58:12,140 - #30 =>
+INFO  17:58:12,140 - #45 b
+INFO  17:58:12,140 - #40 )
+INFO  17:58:12,140 - #34 ;
+INFO  17:58:12,140 - #44 }
+INFO  17:58:12,140 - #44 }
+INFO  17:58:12,141 - Program(
   ProgramName(
    Map
   ) [ProgramName]
@@ -561,6 +561,8 @@ INFO  16:37:39,933 - Program(
                            brojevi
                           ) [Designator_var]
                          x
+                          MapArrow(
+                          ) [MapArrow]
                           Expr_add(
                             AddExpr_term(
                               Term_factor(
@@ -584,6 +586,8 @@ INFO  16:37:39,933 - Program(
                          brojevi
                         ) [Designator_var]
                        x
+                        MapArrow(
+                        ) [MapArrow]
                         Expr_add(
                           AddExpr_term(
                             Term_mulop(
@@ -616,6 +620,8 @@ INFO  16:37:39,933 - Program(
                        brojevi
                       ) [Designator_var]
                      x
+                      MapArrow(
+                      ) [MapArrow]
                       Expr_add(
                         AddExpr_addop(
                           AddExpr_term(
@@ -650,6 +656,8 @@ INFO  16:37:39,933 - Program(
                      brojevi
                     ) [Designator_var]
                    x
+                    MapArrow(
+                    ) [MapArrow]
                     Expr_add(
                       AddExpr_addop(
                         AddExpr_term(
@@ -695,6 +703,8 @@ INFO  16:37:39,933 - Program(
                    brojevi
                   ) [Designator_var]
                  x
+                  MapArrow(
+                  ) [MapArrow]
                   Expr_add(
                     AddExpr_term(
                       Term_factor(
@@ -718,6 +728,8 @@ INFO  16:37:39,933 - Program(
                  brojevi
                 ) [Designator_var]
                x
+                MapArrow(
+                ) [MapArrow]
                 Expr_add(
                   AddExpr_term(
                     Term_mulop(
@@ -794,6 +806,8 @@ INFO  16:37:39,933 - Program(
                brojevi
               ) [Designator_var]
              x
+              MapArrow(
+              ) [MapArrow]
               Expr_ternary(
                 Condition_term(
                   CondTerm_fact(
@@ -823,6 +837,8 @@ INFO  16:37:39,933 - Program(
                     ) [CondFact_relop]
                   ) [CondTerm_fact]
                 ) [Condition_term]
+                TernQ(
+                ) [TernQ]
                 Expr_add(
                   AddExpr_term(
                     Term_factor(
@@ -834,6 +850,8 @@ INFO  16:37:39,933 - Program(
                     ) [Term_factor]
                   ) [AddExpr_term]
                 ) [Expr_add]
+                TernC(
+                ) [TernC]
                 Expr_add(
                   AddExpr_term(
                     Term_factor(
@@ -858,6 +876,8 @@ INFO  16:37:39,933 - Program(
              slova
             ) [Designator_var]
            c
+            MapArrow(
+            ) [MapArrow]
             Expr_add(
               AddExpr_term(
                 Term_factor(
@@ -881,6 +901,8 @@ INFO  16:37:39,933 - Program(
            zastavice
           ) [Designator_var]
          b
+          MapArrow(
+          ) [MapArrow]
           Expr_add(
             AddExpr_term(
               Term_factor(
@@ -899,44 +921,44 @@ INFO  16:37:39,933 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:37:39,933 - =================================================
-INFO  16:37:39,935 - Pretraga na 18(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  16:37:39,935 - Pretraga na 19(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
-INFO  16:37:39,935 - Pretraga na 20(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  16:37:39,935 - Pretraga na 21(velika), nadjeno Var velika: Arr of char, 3, 0
-INFO  16:37:39,935 - Pretraga na 22(zastavice), nadjeno Var zastavice: Arr of bool, 4, 0
-INFO  16:37:39,935 - Pretraga na 23(negirane), nadjeno Var negirane: Arr of bool, 5, 0
-INFO  16:37:39,935 - Pretraga na 26(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
-INFO  16:37:39,935 - Pretraga na 26(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  16:37:39,935 - Pretraga na 26(x), nadjeno Var x: int, 6, 0
-INFO  16:37:39,935 - Pretraga na 29(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
-INFO  16:37:39,935 - Pretraga na 29(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  16:37:39,935 - Pretraga na 29(x), nadjeno Var x: int, 6, 0
-INFO  16:37:39,935 - Pretraga na 30(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
-INFO  16:37:39,935 - Pretraga na 30(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  16:37:39,935 - Pretraga na 30(x), nadjeno Var x: int, 6, 0
-INFO  16:37:39,935 - Pretraga na 31(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
-INFO  16:37:39,935 - Pretraga na 31(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  16:37:39,935 - Pretraga na 31(x), nadjeno Var x: int, 6, 0
-INFO  16:37:39,935 - Pretraga na 31(faktor), nadjeno Con faktor: int, 2, 0
-INFO  16:37:39,935 - Pretraga na 32(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
-INFO  16:37:39,935 - Pretraga na 32(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  16:37:39,935 - Pretraga na 32(x), nadjeno Var x: int, 6, 0
-INFO  16:37:39,935 - Pretraga na 33(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
-INFO  16:37:39,936 - Pretraga na 33(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  16:37:39,936 - Pretraga na 33(x), nadjeno Var x: int, 6, 0
-INFO  16:37:39,936 - Pretraga na 33(x), nadjeno Var x: int, 6, 0
-INFO  16:37:39,936 - Pretraga na 36(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
-INFO  16:37:39,936 - Pretraga na 36(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  16:37:39,936 - Pretraga na 36(x), nadjeno Var x: int, 6, 0
-INFO  16:37:39,936 - Pretraga na 36(x), nadjeno Var x: int, 6, 0
-INFO  16:37:39,936 - Pretraga na 39(velika), nadjeno Var velika: Arr of char, 3, 0
-INFO  16:37:39,936 - Pretraga na 39(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  16:37:39,936 - Pretraga na 39(c), nadjeno Var c: char, 7, 0
-INFO  16:37:39,936 - Pretraga na 40(negirane), nadjeno Var negirane: Arr of bool, 5, 0
-INFO  16:37:39,936 - Pretraga na 40(zastavice), nadjeno Var zastavice: Arr of bool, 4, 0
-INFO  16:37:39,936 - Pretraga na 40(b), nadjeno Var b: bool, 8, 0
-INFO  16:37:39,936 - =================================================
+INFO  17:58:12,142 - =================================================
+INFO  17:58:12,143 - Pretraga na 18(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  17:58:12,143 - Pretraga na 19(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
+INFO  17:58:12,143 - Pretraga na 20(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:58:12,143 - Pretraga na 21(velika), nadjeno Var velika: Arr of char, 3, 0
+INFO  17:58:12,143 - Pretraga na 22(zastavice), nadjeno Var zastavice: Arr of bool, 4, 0
+INFO  17:58:12,143 - Pretraga na 23(negirane), nadjeno Var negirane: Arr of bool, 5, 0
+INFO  17:58:12,143 - Pretraga na 26(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
+INFO  17:58:12,143 - Pretraga na 26(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  17:58:12,143 - Pretraga na 26(x), nadjeno Var x: int, 6, 0
+INFO  17:58:12,143 - Pretraga na 29(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
+INFO  17:58:12,144 - Pretraga na 29(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  17:58:12,144 - Pretraga na 29(x), nadjeno Var x: int, 6, 0
+INFO  17:58:12,144 - Pretraga na 30(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
+INFO  17:58:12,144 - Pretraga na 30(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  17:58:12,144 - Pretraga na 30(x), nadjeno Var x: int, 6, 0
+INFO  17:58:12,144 - Pretraga na 31(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
+INFO  17:58:12,144 - Pretraga na 31(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  17:58:12,144 - Pretraga na 31(x), nadjeno Var x: int, 6, 0
+INFO  17:58:12,144 - Pretraga na 31(faktor), nadjeno Con faktor: int, 2, 0
+INFO  17:58:12,144 - Pretraga na 32(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
+INFO  17:58:12,144 - Pretraga na 32(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  17:58:12,144 - Pretraga na 32(x), nadjeno Var x: int, 6, 0
+INFO  17:58:12,144 - Pretraga na 33(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
+INFO  17:58:12,144 - Pretraga na 33(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  17:58:12,144 - Pretraga na 33(x), nadjeno Var x: int, 6, 0
+INFO  17:58:12,144 - Pretraga na 33(x), nadjeno Var x: int, 6, 0
+INFO  17:58:12,144 - Pretraga na 36(rezultat), nadjeno Var rezultat: Arr of int, 1, 0
+INFO  17:58:12,144 - Pretraga na 36(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  17:58:12,144 - Pretraga na 36(x), nadjeno Var x: int, 6, 0
+INFO  17:58:12,144 - Pretraga na 36(x), nadjeno Var x: int, 6, 0
+INFO  17:58:12,144 - Pretraga na 39(velika), nadjeno Var velika: Arr of char, 3, 0
+INFO  17:58:12,144 - Pretraga na 39(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:58:12,144 - Pretraga na 39(c), nadjeno Var c: char, 7, 0
+INFO  17:58:12,144 - Pretraga na 40(negirane), nadjeno Var negirane: Arr of bool, 5, 0
+INFO  17:58:12,144 - Pretraga na 40(zastavice), nadjeno Var zastavice: Arr of bool, 4, 0
+INFO  17:58:12,144 - Pretraga na 40(b), nadjeno Var b: bool, 8, 0
+INFO  17:58:12,144 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -967,4 +989,4 @@ Prog Map: notype, 0, 1
 
 
 
-INFO  16:37:39,937 - Generisanje uspesno zavrseno!
+INFO  17:58:12,146 - Generisanje uspesno zavrseno: test/13_map.obj

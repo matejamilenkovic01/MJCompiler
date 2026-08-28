@@ -1,0 +1,67 @@
+// EXPECT: OK
+// Generisanje koda: radni lokali koje koriste findAny i map.
+//
+// Metode ovde imaju dovoljno argumenata i lokala da radni lokali dobiju indeks veci od 3,
+// cime se proverava duzi oblik instrukcija load i store. Ispis zbira lokala posle map-a
+// potvrdjuje da radni lokali nisu pregazili prave lokale metode.
+// OUT: 1
+// OUT: 0
+// OUT: 15
+// OUT: 3 5 7 9
+// OUT: 111
+// OUT: 7
+
+program GenRadniLokali
+
+int niz[], rez[];
+int i, x;
+bool nasao;
+
+{
+	bool trazi(int a[], int trazeno)
+		int p, q, r, s, t;
+		bool naso;
+	{
+		p = 1; q = 2; r = 3; s = 4; t = 5;
+		naso = a.findAny(trazeno);
+		return naso && p + q + r + s + t == 15 ? true : false;
+	}
+
+	void preslikaj(int a[])
+		int d1, d2, d3, d4, d5;
+	{
+		d1 = 1; d2 = 2; d3 = 3; d4 = 4; d5 = 5;
+		rez = a.map(x => x * 2 + d1);
+		print(d1 + d2 + d3 + d4 + d5); print(eol);   // 15
+	}
+
+	void mozdaIzadji(int k)
+	{
+		if (k < 0) return;
+		print(k); print(eol);
+	}
+
+	void main()
+	{
+		niz = new int[4];
+		for (i = 0; i < 4; i++) niz[i] = i + 1;       // 1 2 3 4
+
+		print(trazi(niz, 3)); print(eol);             // 1
+		print(trazi(niz, 9)); print(eol);             // 0
+
+		preslikaj(niz);
+		for (i = 0; i < rez.length; i++) { print(rez[i]); print(' '); }
+		print(eol);                                    // 3 5 7 9
+
+		// findAny unutar petlje - radni lokali se ponovo koriste u svakoj iteraciji
+		for (i = 0; i < 3; i++) {
+			nasao = niz.findAny(i + 1);
+			print(nasao);
+		}
+		print(eol);                                    // 111
+
+		// return bez izraza u void metodi
+		mozdaIzadji(0 - 1);                            // ne ispisuje nista
+		mozdaIzadji(7);                                // 7
+	}
+}

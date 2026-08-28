@@ -1,79 +1,79 @@
-INFO  16:37:42,006 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/42_sem_cond.mj
-INFO  16:37:42,014 - #2 program
-INFO  16:37:42,014 - #45 SemCond
-INFO  16:37:42,014 - #45 int
-INFO  16:37:42,014 - #45 a
-INFO  16:37:42,014 - #34 ;
-INFO  16:37:42,014 - #45 bool
-INFO  16:37:42,014 - #45 b
-INFO  16:37:42,014 - #34 ;
-INFO  16:37:42,014 - #45 int
-INFO  16:37:42,014 - #45 niz
-INFO  16:37:42,014 - #41 [
-INFO  16:37:42,015 - #42 ]
-INFO  16:37:42,015 - #34 ;
-INFO  16:37:42,015 - #45 int
-INFO  16:37:42,015 - #45 niz2
-INFO  16:37:42,015 - #41 [
-INFO  16:37:42,015 - #42 ]
-INFO  16:37:42,015 - #34 ;
-INFO  16:37:42,015 - #43 {
-INFO  16:37:42,015 - #7 void
-INFO  16:37:42,015 - #45 main
-INFO  16:37:42,015 - #39 (
-INFO  16:37:42,015 - #40 )
-INFO  16:37:42,015 - #43 {
-INFO  16:37:42,015 - #9 if
-INFO  16:37:42,015 - #39 (
-INFO  16:37:42,015 - #45 a
-INFO  16:37:42,016 - #40 )
-INFO  16:37:42,016 - #45 a
-INFO  16:37:42,016 - #31 =
-INFO  16:37:42,016 - #46 1
-INFO  16:37:42,016 - #34 ;
-INFO  16:37:42,016 - #9 if
-INFO  16:37:42,016 - #39 (
-INFO  16:37:42,016 - #45 b
-INFO  16:37:42,016 - #28 &&
-INFO  16:37:42,016 - #45 a
-INFO  16:37:42,016 - #40 )
-INFO  16:37:42,016 - #45 a
-INFO  16:37:42,016 - #31 =
-INFO  16:37:42,016 - #46 1
-INFO  16:37:42,016 - #34 ;
-INFO  16:37:42,016 - #9 if
-INFO  16:37:42,016 - #39 (
-INFO  16:37:42,016 - #45 a
-INFO  16:37:42,016 - #22 ==
-INFO  16:37:42,016 - #45 b
-INFO  16:37:42,017 - #40 )
-INFO  16:37:42,017 - #45 a
-INFO  16:37:42,017 - #31 =
-INFO  16:37:42,017 - #46 1
-INFO  16:37:42,017 - #34 ;
-INFO  16:37:42,017 - #9 if
-INFO  16:37:42,017 - #39 (
-INFO  16:37:42,017 - #45 niz
-INFO  16:37:42,017 - #26 <
-INFO  16:37:42,017 - #45 niz2
-INFO  16:37:42,017 - #40 )
-INFO  16:37:42,017 - #45 a
-INFO  16:37:42,017 - #31 =
-INFO  16:37:42,017 - #46 1
-INFO  16:37:42,017 - #34 ;
-INFO  16:37:42,017 - #13 for
-INFO  16:37:42,017 - #39 (
-INFO  16:37:42,017 - #34 ;
-INFO  16:37:42,018 - #45 a
-INFO  16:37:42,018 - #34 ;
-INFO  16:37:42,018 - #40 )
-INFO  16:37:42,018 - #45 a
-INFO  16:37:42,018 - #31 =
-INFO  16:37:42,018 - #46 1
-INFO  16:37:42,018 - #34 ;
-INFO  16:37:42,018 - #44 }
-INFO  16:37:42,018 - #44 }
-INFO  16:37:42,018 - Program(
+INFO  17:58:14,312 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/42_sem_cond.mj
+INFO  17:58:14,321 - #2 program
+INFO  17:58:14,321 - #45 SemCond
+INFO  17:58:14,321 - #45 int
+INFO  17:58:14,321 - #45 a
+INFO  17:58:14,321 - #34 ;
+INFO  17:58:14,321 - #45 bool
+INFO  17:58:14,321 - #45 b
+INFO  17:58:14,321 - #34 ;
+INFO  17:58:14,321 - #45 int
+INFO  17:58:14,321 - #45 niz
+INFO  17:58:14,322 - #41 [
+INFO  17:58:14,322 - #42 ]
+INFO  17:58:14,322 - #34 ;
+INFO  17:58:14,322 - #45 int
+INFO  17:58:14,322 - #45 niz2
+INFO  17:58:14,322 - #41 [
+INFO  17:58:14,322 - #42 ]
+INFO  17:58:14,322 - #34 ;
+INFO  17:58:14,322 - #43 {
+INFO  17:58:14,322 - #7 void
+INFO  17:58:14,322 - #45 main
+INFO  17:58:14,322 - #39 (
+INFO  17:58:14,322 - #40 )
+INFO  17:58:14,322 - #43 {
+INFO  17:58:14,322 - #9 if
+INFO  17:58:14,322 - #39 (
+INFO  17:58:14,323 - #45 a
+INFO  17:58:14,323 - #40 )
+INFO  17:58:14,323 - #45 a
+INFO  17:58:14,323 - #31 =
+INFO  17:58:14,323 - #46 1
+INFO  17:58:14,323 - #34 ;
+INFO  17:58:14,323 - #9 if
+INFO  17:58:14,323 - #39 (
+INFO  17:58:14,323 - #45 b
+INFO  17:58:14,323 - #28 &&
+INFO  17:58:14,323 - #45 a
+INFO  17:58:14,323 - #40 )
+INFO  17:58:14,323 - #45 a
+INFO  17:58:14,323 - #31 =
+INFO  17:58:14,323 - #46 1
+INFO  17:58:14,323 - #34 ;
+INFO  17:58:14,323 - #9 if
+INFO  17:58:14,323 - #39 (
+INFO  17:58:14,323 - #45 a
+INFO  17:58:14,323 - #22 ==
+INFO  17:58:14,323 - #45 b
+INFO  17:58:14,324 - #40 )
+INFO  17:58:14,324 - #45 a
+INFO  17:58:14,324 - #31 =
+INFO  17:58:14,324 - #46 1
+INFO  17:58:14,324 - #34 ;
+INFO  17:58:14,324 - #9 if
+INFO  17:58:14,324 - #39 (
+INFO  17:58:14,324 - #45 niz
+INFO  17:58:14,324 - #26 <
+INFO  17:58:14,324 - #45 niz2
+INFO  17:58:14,324 - #40 )
+INFO  17:58:14,324 - #45 a
+INFO  17:58:14,324 - #31 =
+INFO  17:58:14,324 - #46 1
+INFO  17:58:14,324 - #34 ;
+INFO  17:58:14,324 - #13 for
+INFO  17:58:14,324 - #39 (
+INFO  17:58:14,324 - #34 ;
+INFO  17:58:14,325 - #45 a
+INFO  17:58:14,325 - #34 ;
+INFO  17:58:14,325 - #40 )
+INFO  17:58:14,325 - #45 a
+INFO  17:58:14,325 - #31 =
+INFO  17:58:14,325 - #46 1
+INFO  17:58:14,325 - #34 ;
+INFO  17:58:14,325 - #44 }
+INFO  17:58:14,325 - #44 }
+INFO  17:58:14,325 - Program(
   ProgramName(
    SemCond
   ) [ProgramName]
@@ -397,21 +397,21 @@ INFO  16:37:42,018 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:37:42,019 - =================================================
-INFO  16:37:42,020 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,020 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,020 - Pretraga na 20(b), nadjeno Var b: bool, 1, 0
-INFO  16:37:42,020 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,020 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,021 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,021 - Pretraga na 21(b), nadjeno Var b: bool, 1, 0
-INFO  16:37:42,021 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,021 - Pretraga na 22(niz), nadjeno Var niz: Arr of int, 2, 0
-INFO  16:37:42,021 - Pretraga na 22(niz2), nadjeno Var niz2: Arr of int, 3, 0
-INFO  16:37:42,021 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,021 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,021 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,021 - =================================================
+INFO  17:58:14,326 - =================================================
+INFO  17:58:14,327 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,327 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,327 - Pretraga na 20(b), nadjeno Var b: bool, 1, 0
+INFO  17:58:14,327 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,327 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,328 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,328 - Pretraga na 21(b), nadjeno Var b: bool, 1, 0
+INFO  17:58:14,328 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,328 - Pretraga na 22(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  17:58:14,328 - Pretraga na 22(niz2), nadjeno Var niz2: Arr of int, 3, 0
+INFO  17:58:14,328 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,328 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,328 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,328 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

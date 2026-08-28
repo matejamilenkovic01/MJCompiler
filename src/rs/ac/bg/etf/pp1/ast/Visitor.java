@@ -1,14 +1,14 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/7/2026 16:37:36
+// 28/7/2026 17:58:9
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public interface Visitor { 
 
-    public void visit(VarDeclListOpt VarDeclListOpt);
     public void visit(Mulop Mulop);
+    public void visit(VarDeclListOpt VarDeclListOpt);
     public void visit(FormParsOpt FormParsOpt);
     public void visit(Constant Constant);
     public void visit(AddExpr AddExpr);
@@ -94,6 +94,10 @@ public interface Visitor {
     public void visit(PrintWidthOpt_width PrintWidthOpt_width);
     public void visit(ReturnExprOpt_epsilon ReturnExprOpt_epsilon);
     public void visit(ReturnExprOpt_expr ReturnExprOpt_expr);
+    public void visit(MapArrow MapArrow);
+    public void visit(TernC TernC);
+    public void visit(TernQ TernQ);
+    public void visit(ElseMark ElseMark);
     public void visit(ForStart ForStart);
     public void visit(IfCondition_err IfCondition_err);
     public void visit(IfCondition_cond IfCondition_cond);

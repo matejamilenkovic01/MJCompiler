@@ -1,7 +1,7 @@
 ================================================================================
  MJCompiler - PRIRUCNIK
  Kompajler za MikroJavu, PP1, ETF. Ciljani nivo: B (30 poena).
- Pokriva faze 1 (leksicka) i 2 (sintaksna). Faze 3 i 4 se dopisuju kasnije.
+ Pokriva faze 1 (leksicka), 2 (sintaksna) i 4 (generisanje koda).
 ================================================================================
 
 
@@ -339,5 +339,147 @@ kod kuce, a pukao na laboratorijskoj masini.
   [ ] ekstenzija .MJ        postavka pise velikim slovima, kod nas je .mj
   [ ] odluka o leksickoj gresci   da li obara prevodjenje (vidi sekciju 3)
   [ ] razmisliti: da li SemanticAnalyzer sme da se pokrene kad je errorDetected
+
+--------------------------------------------------------------------------------
+ 12. GENERISANJE KODA (faza 4)
+--------------------------------------------------------------------------------
+
+DVE PREPREKE, DVA ALATA
+
+Obilazak je bottom-up: kod nekog cvora se emituje POSLE koda sve njegove dece.
+Odatle sve tesko u ovoj fazi:
+
+  prepreka 1: kod treba emitovati IZMEDJU dva podstabla
+              (npr. skok preko else grane stoji izmedju then i else)
+       alat:  MARKER NETERMINAL - "X ::= TERMINAL" u .cup, koji se poseti tacno tu
+
+  prepreka 2: skok se emituje pre nego sto se zna adresa odredista
+       alat:  BACKPATCHING - upisi nulu, zapamti Code.pc-2, kasnije Code.fixup
+
+Marker neterminali u ovom projektu (svi bez epsilona, da ne obore LALR(1)):
+
+  ForStart  ::= FOR         pre zaglavlja petlje (jos iz faze 3, za break/continue)
+  ElseMark  ::= ELSE        izmedju then i else grane
+  TernQ     ::= QUESTION    izmedju uslova i prve grane ternarnog
+  TernC     ::= COLON       izmedju prve i druge grane ternarnog
+  MapArrow  ::= ARROW       pre tela map-a, otvara telo petlje
+
+Kada TREBA marker: ako izmedju dva dela smene mora da stoji kod, a tu nema cvora.
+Kada NE TREBA: ako vec postoji cvor na tom mestu. Zato for petlja NE trazi marker -
+ForInitOpt, ForCondOpt i ForStepOpt su pravi cvorovi (i njihove epsilon varijante),
+pa daju hook na sve cetiri granice zaglavlja.
+
+
+BACKPATCHING - tacna semantika
+
+  Code.putJump(adr)          skok na POZNATU adresu (unazad)
+  Code.putFalseJump(op, 0)   uslovni skok sa rupom; skace kada op NIJE ispunjen
+  Code.pc - 2                adresa operanda, odmah posle emitovanja skoka
+  Code.fixup(adr)            operand na adresi adr -> skoci na tekuci Code.pc
+  Code.put2(adr, vrednost)   rucni upis operanda (koristi se za krpljenje poziva)
+
+Pravilo: posle svakog "putJump(0)" ili "putFalseJump(op, 0)" odmah zapamti
+Code.pc - 2, inace je skok izgubljen.
+
+
+SEMA ZA USLOVE (kratko spajanje)
+
+  svaki CondFact:   emituje skok koji se izvrsava kada je fact NETACAN
+                    (propadanje = fact je tacan)
+  kraj CondTerm-a:  propadanje znaci da je ceo term tacan -> skok na TACNO,
+                    a netacni skokovi tog terma se krpe OVDE = pocetak sledeceg terma
+  kraj Condition:   propadanje znaci da su svi termovi netacni -> skok na NETACNO,
+                    a tacni skokovi se krpe OVDE = pocetak grane za tacan slucaj
+
+"Kraj CondTerm-a" se prepoznaje po roditelju: CondTerm je zavrsen samo ako NIJE levi
+operand nekog &&, tj. ako mu roditelj nije CondTerm_and. Isti trik (gledanje roditelja)
+koristi se i kod Designator_var, da bi se referenca na niz ucitala pre indeksa.
+
+Liste skokova se drze u mapama kljucevanim AST cvorom, a ne u jednom deljivom steku.
+Razlog: ternarni operator moze da se ugnezdi unutar uslova ("a && (b ? c : d) > 0"),
+pa bi unutrasnja Condition potrosila skokove spoljasnje.
+
+
+RASPOREDI KOJE VREDI ZNATI NAPAMET
+
+  if (C) S                       if (C) S1 else S2
+    <C>   netacno -> kraj          <C>   netacno -> else
+    <S>                            <S1>
+  kraj:                            jmp kraj
+                                 else:
+                                   <S2>
+                                 kraj:
+
+  C ? E1 : E2                    for (I; C; K) S
+    <C>   netacno -> else          <I>
+    <E1>                         uslov: <C>   netacno -> kraj
+    jmp kraj                             jmp telo
+  else:                          korak: <K>
+    <E2>                                jmp uslov
+  kraj:                          telo:  <S>
+                                        jmp korak
+                                 kraj:
+
+For petlja je "izvrnuta" zato sto se korak u izvornom kodu pise PRE tela, a izvrsava
+se POSLE njega. continue skace na "korak" (adresa poznata pre tela, pa ide direktno),
+break na "kraj" (nije poznat, pa ide u listu za krpljenje).
+
+
+STEK OPERANADA - ko sta ostavlja
+
+  Designator_var          ne emituje nista sam po sebi; onaj ko ga koristi bira
+                          Code.load (citanje) ili Code.store (upis)
+  a[i]                    referenca na niz i indeks moraju na stek PRE vrednosti;
+                          Code.load/store nad Obj.Elem daju aload/astore
+  a.length                Designator_var ucita niz, Designator_length doda arraylength;
+                          FactorSub_designator tada NE sme jos jednom da ucitava
+  a[i]++                  dup2 pre citanja, jer i citanje i upis trose par (niz, indeks)
+  print(E)                sirina ide na stek POSLE vrednosti izraza
+  poziv kao iskaz         ako metoda nije void, rezultat se odbacuje sa pop
+
+RADNI LOKALI
+
+findAny i map traze medjurezultate koji zive kroz iteraciju (brojac, trazena vrednost,
+rezultat). U svakoj metodi se zato u instrukciji "enter" rezervise SCRATCH_SLOTS reci
+iznad pravih lokala; prvi slobodan indeks je scratchBase = broj lokala metode.
+Za indekse 0-3 postoji kraci oblik instrukcije (load_n + i), za vece dugi (load, i) -
+oba oblika pokriva test 70_gen_scratch.mj.
+
+Zasto radni lokali, a ne cisto zongliranje stekom: findAny sme da zatekne referencu i
+indeks odredista vec na steku (kod "nadjeno[i] = niz.findAny(x)"), pa petlja ne sme da
+dira ono sto je ispod nje.
+
+
+POZIVI METODA
+
+  int pomeraj = adresaMetode - adresaInstrukcijeCall
+
+Adresa metode se upisuje u tabelu simbola u visit(MethodTypeName). Svi pozivi se ipak
+pamte i krpe zajedno u visit(Program): tako radi i kada bi metoda bila pozvana pre
+svoje definicije. Predefinisane ord, chr i len se generisu prve, u konstruktoru
+generatora, i njihove adrese se upisuju u tabelu simbola isto tako.
+
+VAZNO: u fazi 4 se Tab.find NE sme koristiti za korisnicke simbole - semanticka analiza
+je zatvorila sve opsege, pa Tab.find vraca noObj. Simboli se citaju iz ulancanih lista
+(Obj.getLocalSymbols) metode i programa. Ovo je vec jednom bilo uzrok tihoj gresci kod
+map iteratora.
+
+
+KAKO SE POKRECE I TRAZI GRESKA
+
+  ant test                                    svi testovi (prevodjenje + izvrsavanje)
+  ant runOne -Dmj=test/68_gen_map.mj          jedan program, prevedi pa pokreni
+  ant runOne -Dmj=test/66_gen_io.mj -Dstdin="12 34
+  Q
+  1"                                          isto, sa ulazom za read
+  ant disasmOne -Dmj=test/63_gen_flow.mj      prevedi pa ispisi bajtkod
+
+Kada test padne, TestRunner javlja broj reda u kome se ispis razlikuje i obe vrednosti.
+Stvarni ispis programa ostaje u test/<ime>.run.
+
+Testovi 60-70 su namenjeni bas ovoj fazi: svaki ima "// OUT:" redove sa ocekivanim
+ispisom, a 30-32 su zvanicni testovi sa sajta, takodje sa proverenim ispisom. Ako oni
+prolaze, generisani kod se stvarno izvrsava i daje tacan rezultat - prevodjenje bez
+gresaka samo po sebi nista ne dokazuje.
 
 ================================================================================

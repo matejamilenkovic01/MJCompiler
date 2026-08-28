@@ -1,0 +1,30 @@
+// EXPECT: OK
+// Generisanje koda za predefinisane metode ord, chr i len, i za konstantu eol.
+// OUT: 65
+// OUT: B
+// OUT: 4
+// OUT: 4
+// OUT: 67
+// OUT: 97
+// OUT: a
+
+program GenUgradjene
+
+int niz[];
+char c;
+
+{
+	void main()
+	{
+		niz = new int[4];
+
+		print(ord('A')); print(eol);           // 65
+		print(chr(66)); print(eol);            // B
+		print(len(niz)); print(eol);           // 4
+		print(niz.length); print(eol);         // 4 - isto sto i len
+		print(ord(chr(67))); print(eol);       // 67
+		c = 'a';
+		print(ord(c)); print(eol);             // 97
+		print(chr(ord(c))); print(eol);        // a
+	}
+}

@@ -1,0 +1,70 @@
+// EXPECT: OK
+// Generisanje koda: aritmetika, prioritet operatora, unarni minus, konstante.
+// OUT: 10
+// OUT: 4
+// OUT: 21
+// OUT: 2
+// OUT: 1
+// OUT: -7
+// OUT: 13
+// OUT: 20
+// OUT: 3
+// OUT: 1
+// OUT: -10
+// OUT: -21
+// OUT: 11
+// OUT: k
+// OUT: 1
+// OUT: 17
+// OUT: -100
+// OUT: A
+// OUT: 0
+
+program GenIzrazi
+
+const int deset = 10;
+const char slovo = 'k';
+const bool tacno = true;
+
+int a, b, c;
+char ch;
+bool bo;
+
+{
+	void main()
+		int t;
+	{
+		a = 7;
+		b = 3;
+
+		print(a + b); print(eol);         // 10
+		print(a - b); print(eol);         // 4
+		print(a * b); print(eol);         // 21
+		print(a / b); print(eol);         // 2   celobrojno deljenje
+		print(a % b); print(eol);         // 1
+		print(-a); print(eol);            // -7
+
+		// prioritet i zagrade
+		print(a + b * 2); print(eol);     // 13
+		print((a + b) * 2); print(eol);   // 20
+		print(a - b - 1); print(eol);     // 3   levo asocijativno
+		print(20 / 4 / 5); print(eol);    // 1   levo asocijativno
+		print(-(a + b)); print(eol);      // -10
+		print(a * -b); print(eol);        // -21 unarni minus na faktoru
+
+		// konstante
+		print(deset + 1); print(eol);     // 11
+		print(slovo); print(eol);         // k
+		print(tacno); print(eol);         // 1
+
+		t = deset * 2 - a % 4;
+		print(t); print(eol);             // 17
+
+		c = 0 - 100;
+		print(c); print(eol);             // -100
+		ch = 'A';
+		print(ch); print(eol);            // A
+		bo = false;
+		print(bo); print(eol);            // 0
+	}
+}

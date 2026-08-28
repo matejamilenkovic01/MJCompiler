@@ -1,0 +1,46 @@
+// EXPECT: OK
+// Generisanje koda: ternarni operator u raznim polozajima, ugnezdavanje u obe grane.
+// OUT: 10
+// OUT: 20
+// OUT: y
+// OUT: 1
+// OUT: 6
+// OUT: 1
+// OUT: 9
+// OUT: 4
+// OUT: 7
+// OUT: v
+
+program GenTernarni
+
+int a, b;
+char c;
+int niz[];
+
+{
+	void main()
+	{
+		print(1 < 2 ? 10 : 20); print(eol);              // 10
+		print(1 > 2 ? 10 : 20); print(eol);              // 20
+
+		c = 'a' < 'b' ? 'y' : 'n';
+		print(c); print(eol);                            // y
+
+		// ugnezden u then granu
+		print(1 < 2 ? (3 < 4 ? 1 : 2) : 3); print(eol);  // 1
+		// ugnezden u else granu
+		print(1 > 2 ? 5 : 3 < 4 ? 6 : 7); print(eol);    // 6
+
+		a = 3;
+		print(a > 0 && a < 10 ? 1 : 0); print(eol);      // 1
+
+		b = a > 5 ? a * 2 : a * 3;
+		print(b); print(eol);                            // 9
+		print(a == 3 ? a + 1 : a - 1); print(eol);       // 4
+
+		niz = new int[2];
+		niz[0] = 1 < 2 ? 7 : 8;
+		print(niz[0]); print(eol);                       // 7
+		print(niz[0] > 5 ? 'v' : 'm'); print(eol);       // v
+	}
+}

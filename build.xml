@@ -101,6 +101,69 @@
 		</java>
 	</target>
 	
+	<!-- Prevodi i odmah pokrece jedan program, sa ispisom rezultata na konzoli.
+
+	     ant runOne -Dmj=test/68_gen_map.mj
+
+	     Ispis prevodioca (stablo i tabela simbola) ide u test/<ime>.out, a prijave gresaka
+	     na konzolu. Ako program cita sa standardnog ulaza, ulaz se zadaje kroz -Dstdin:
+
+	     ant runOne -Dmj=test/66_gen_io.mj -Dstdin="12 34
+	     Q
+	     1"                                                                              -->
+	<target name="runOne" depends="compile">
+		<property name="mj" value="test/program.mj"/>
+		<property name="stdin" value=""/>
+		<basename property="mjbase" file="${mj}" suffix=".mj"/>
+		<property name="obj" value="test/${mjbase}.obj"/>
+
+		<echo>--- prevodim ${mj} ---</echo>
+		<java classname="rs.ac.bg.etf.pp1.Compiler" fork="true" failonerror="true"
+		      dir="${basedir}" output="test/${mjbase}.out" logError="true">
+			<arg value="${mj}"/>
+			<arg value="${obj}"/>
+			<classpath>
+				<pathelement path="bin"/>
+				<pathelement path="config"/>
+				<path refid="project.classpath"/>
+			</classpath>
+		</java>
+
+		<echo>--- izvrsavam ${obj} ---</echo>
+		<java classname="rs.etf.pp1.mj.runtime.Run" fork="true" failonerror="true"
+		      dir="${basedir}" inputstring="${stdin}">
+			<arg value="${obj}"/>
+			<classpath>
+				<pathelement location="lib/mj-runtime-1.1.jar"/>
+			</classpath>
+		</java>
+	</target>
+
+	<!-- Disasembler nad proizvoljnim programom:  ant disasmOne -Dmj=test/68_gen_map.mj -->
+	<target name="disasmOne" depends="compile">
+		<property name="mj" value="test/program.mj"/>
+		<basename property="mjbase" file="${mj}" suffix=".mj"/>
+		<property name="obj" value="test/${mjbase}.obj"/>
+
+		<java classname="rs.ac.bg.etf.pp1.Compiler" fork="true" failonerror="true"
+		      dir="${basedir}" output="test/${mjbase}.out" logError="true">
+			<arg value="${mj}"/>
+			<arg value="${obj}"/>
+			<classpath>
+				<pathelement path="bin"/>
+				<pathelement path="config"/>
+				<path refid="project.classpath"/>
+			</classpath>
+		</java>
+
+		<java classname="rs.etf.pp1.mj.runtime.disasm" fork="true" dir="${basedir}">
+			<arg value="${obj}"/>
+			<classpath>
+				<pathelement location="lib/mj-runtime-1.1.jar"/>
+			</classpath>
+		</java>
+	</target>
+
 	<target name="disasm">
 		<java classname="rs.etf.pp1.mj.runtime.disasm" fork="true" dir="${basedir}">
 			<arg value="test/program.obj"/>

@@ -1,56 +1,56 @@
-INFO  16:37:42,155 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/43_sem_assign.mj
-INFO  16:37:42,164 - #2 program
-INFO  16:37:42,164 - #45 SemAssign
-INFO  16:37:42,164 - #3 const
-INFO  16:37:42,164 - #45 int
-INFO  16:37:42,164 - #45 k
-INFO  16:37:42,164 - #31 =
-INFO  16:37:42,164 - #46 5
-INFO  16:37:42,164 - #34 ;
-INFO  16:37:42,164 - #45 int
-INFO  16:37:42,164 - #45 a
-INFO  16:37:42,165 - #34 ;
-INFO  16:37:42,165 - #45 char
-INFO  16:37:42,165 - #45 c
-INFO  16:37:42,165 - #34 ;
-INFO  16:37:42,165 - #45 int
-INFO  16:37:42,165 - #45 niz
-INFO  16:37:42,165 - #41 [
-INFO  16:37:42,165 - #42 ]
-INFO  16:37:42,165 - #34 ;
-INFO  16:37:42,165 - #43 {
-INFO  16:37:42,165 - #7 void
-INFO  16:37:42,165 - #45 main
-INFO  16:37:42,165 - #39 (
-INFO  16:37:42,165 - #40 )
-INFO  16:37:42,165 - #43 {
-INFO  16:37:42,166 - #45 k
-INFO  16:37:42,166 - #31 =
-INFO  16:37:42,166 - #46 1
-INFO  16:37:42,166 - #34 ;
-INFO  16:37:42,166 - #45 a
-INFO  16:37:42,166 - #31 =
-INFO  16:37:42,166 - #45 c
-INFO  16:37:42,166 - #34 ;
-INFO  16:37:42,166 - #45 c
-INFO  16:37:42,166 - #32 ++
-INFO  16:37:42,166 - #34 ;
-INFO  16:37:42,166 - #45 niz
-INFO  16:37:42,166 - #32 ++
-INFO  16:37:42,166 - #34 ;
-INFO  16:37:42,166 - #6 read
-INFO  16:37:42,166 - #39 (
-INFO  16:37:42,166 - #45 niz
-INFO  16:37:42,166 - #40 )
-INFO  16:37:42,166 - #34 ;
-INFO  16:37:42,167 - #5 print
-INFO  16:37:42,167 - #39 (
-INFO  16:37:42,167 - #45 niz
-INFO  16:37:42,167 - #40 )
-INFO  16:37:42,167 - #34 ;
-INFO  16:37:42,167 - #44 }
-INFO  16:37:42,167 - #44 }
-INFO  16:37:42,168 - Program(
+INFO  17:58:14,467 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/43_sem_assign.mj
+INFO  17:58:14,476 - #2 program
+INFO  17:58:14,476 - #45 SemAssign
+INFO  17:58:14,476 - #3 const
+INFO  17:58:14,476 - #45 int
+INFO  17:58:14,477 - #45 k
+INFO  17:58:14,477 - #31 =
+INFO  17:58:14,477 - #46 5
+INFO  17:58:14,477 - #34 ;
+INFO  17:58:14,477 - #45 int
+INFO  17:58:14,477 - #45 a
+INFO  17:58:14,477 - #34 ;
+INFO  17:58:14,477 - #45 char
+INFO  17:58:14,477 - #45 c
+INFO  17:58:14,477 - #34 ;
+INFO  17:58:14,477 - #45 int
+INFO  17:58:14,477 - #45 niz
+INFO  17:58:14,477 - #41 [
+INFO  17:58:14,477 - #42 ]
+INFO  17:58:14,477 - #34 ;
+INFO  17:58:14,477 - #43 {
+INFO  17:58:14,478 - #7 void
+INFO  17:58:14,478 - #45 main
+INFO  17:58:14,478 - #39 (
+INFO  17:58:14,478 - #40 )
+INFO  17:58:14,478 - #43 {
+INFO  17:58:14,478 - #45 k
+INFO  17:58:14,478 - #31 =
+INFO  17:58:14,478 - #46 1
+INFO  17:58:14,478 - #34 ;
+INFO  17:58:14,478 - #45 a
+INFO  17:58:14,479 - #31 =
+INFO  17:58:14,479 - #45 c
+INFO  17:58:14,479 - #34 ;
+INFO  17:58:14,479 - #45 c
+INFO  17:58:14,479 - #32 ++
+INFO  17:58:14,479 - #34 ;
+INFO  17:58:14,479 - #45 niz
+INFO  17:58:14,479 - #32 ++
+INFO  17:58:14,479 - #34 ;
+INFO  17:58:14,479 - #6 read
+INFO  17:58:14,479 - #39 (
+INFO  17:58:14,479 - #45 niz
+INFO  17:58:14,479 - #40 )
+INFO  17:58:14,479 - #34 ;
+INFO  17:58:14,479 - #5 print
+INFO  17:58:14,479 - #39 (
+INFO  17:58:14,479 - #45 niz
+INFO  17:58:14,479 - #40 )
+INFO  17:58:14,479 - #34 ;
+INFO  17:58:14,479 - #44 }
+INFO  17:58:14,479 - #44 }
+INFO  17:58:14,480 - Program(
   ProgramName(
    SemAssign
   ) [ProgramName]
@@ -211,15 +211,15 @@ INFO  16:37:42,168 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:37:42,168 - =================================================
-INFO  16:37:42,169 - Pretraga na 21(k), nadjeno Con k: int, 5, 0
-INFO  16:37:42,169 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
-INFO  16:37:42,170 - Pretraga na 22(c), nadjeno Var c: char, 1, 0
-INFO  16:37:42,170 - Pretraga na 23(c), nadjeno Var c: char, 1, 0
-INFO  16:37:42,170 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 2, 0
-INFO  16:37:42,170 - Pretraga na 25(niz), nadjeno Var niz: Arr of int, 2, 0
-INFO  16:37:42,170 - Pretraga na 26(niz), nadjeno Var niz: Arr of int, 2, 0
-INFO  16:37:42,170 - =================================================
+INFO  17:58:14,480 - =================================================
+INFO  17:58:14,482 - Pretraga na 21(k), nadjeno Con k: int, 5, 0
+INFO  17:58:14,482 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  17:58:14,482 - Pretraga na 22(c), nadjeno Var c: char, 1, 0
+INFO  17:58:14,482 - Pretraga na 23(c), nadjeno Var c: char, 1, 0
+INFO  17:58:14,482 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  17:58:14,482 - Pretraga na 25(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  17:58:14,482 - Pretraga na 26(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  17:58:14,482 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
