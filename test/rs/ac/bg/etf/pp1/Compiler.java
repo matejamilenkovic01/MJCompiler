@@ -94,9 +94,18 @@ public class Compiler {
 			/* Inicijalizacija tabele simbola */
 			MyTab.init();
 			
-			/* Semanticka analiza */
+			/* Semanticka analiza.
+
+			   Pokrece se samo ako sintaksna analiza nije prijavila greske. Postavka to ne
+			   trazi izricito, ali oporavak od greske ostavlja nepotpuna podstabla (npr.
+			   IfCondition_err nema Condition, VarItem_err nema ime), pa bi semanticke
+			   provere ili pucale na null ili prijavljivale lavinu lazenih gresaka.
+			   Isti obrazac vazi i dalje u lancu: generisanje koda se po postavci pokrece
+			   tek nad stablom koje je "zadovoljilo uslove semanticke provere". */
 			SemanticAnalyzer sa = new SemanticAnalyzer();
-			prog.traverseBottomUp(sa);
+			if (!p.errorDetected) {
+				prog.traverseBottomUp(sa);
+			}
 			
 			/* Ispis tabele simbola */
 			log.info("=================================================");

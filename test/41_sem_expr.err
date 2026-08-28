@@ -1,0 +1,11 @@
+ERROR 19:17:32,053 - Semanticka greska: Operandi operatora * / % moraju biti tipa int na liniji 18
+ERROR 19:17:32,053 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 18
+ERROR 19:17:32,053 - Semanticka greska: Operandi operatora + i - moraju biti tipa int na liniji 19
+ERROR 19:17:32,053 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 19
+ERROR 19:17:32,053 - Semanticka greska: Operand unarnog minusa nije tipa int na liniji 20
+ERROR 19:17:32,053 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 20
+ERROR 19:17:32,053 - Semanticka greska: Grane ternarnog operatora nisu istog tipa na liniji 21
+ERROR 19:17:32,053 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 21
+ERROR 19:17:32,053 - Semanticka greska: Uslovni izraz bez relacionog operatora mora biti tipa bool na liniji 22
+ERROR 19:17:32,053 - Semanticka greska: Uslov ternarnog operatora nije tipa bool na liniji 22
+ERROR 19:17:32,053 - Parsiranje NIJE uspesno zavrseno!

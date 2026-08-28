@@ -1,184 +1,184 @@
-INFO  16:01:03,240 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/12_findAny.mj
-INFO  16:01:03,248 - #2 program
-INFO  16:01:03,248 - #45 FindAny
-INFO  16:01:03,248 - #3 const
-INFO  16:01:03,249 - #45 int
-INFO  16:01:03,249 - #45 trazeni
-INFO  16:01:03,249 - #31 =
-INFO  16:01:03,249 - #46 7
-INFO  16:01:03,249 - #34 ;
-INFO  16:01:03,249 - #45 int
-INFO  16:01:03,249 - #45 brojevi
-INFO  16:01:03,249 - #41 [
-INFO  16:01:03,249 - #42 ]
-INFO  16:01:03,249 - #34 ;
-INFO  16:01:03,249 - #45 char
-INFO  16:01:03,249 - #45 slova
-INFO  16:01:03,249 - #41 [
-INFO  16:01:03,249 - #42 ]
-INFO  16:01:03,249 - #34 ;
-INFO  16:01:03,250 - #45 bool
-INFO  16:01:03,250 - #45 zastavice
-INFO  16:01:03,250 - #41 [
-INFO  16:01:03,250 - #42 ]
-INFO  16:01:03,250 - #34 ;
-INFO  16:01:03,250 - #45 bool
-INFO  16:01:03,250 - #45 nadjeno
-INFO  16:01:03,250 - #36 ,
-INFO  16:01:03,250 - #45 nizNadjeno
-INFO  16:01:03,250 - #41 [
-INFO  16:01:03,250 - #42 ]
-INFO  16:01:03,250 - #34 ;
-INFO  16:01:03,250 - #45 int
-INFO  16:01:03,250 - #45 i
-INFO  16:01:03,250 - #34 ;
-INFO  16:01:03,250 - #43 {
-INFO  16:01:03,250 - #7 void
-INFO  16:01:03,250 - #45 main
-INFO  16:01:03,250 - #39 (
-INFO  16:01:03,250 - #40 )
-INFO  16:01:03,250 - #43 {
-INFO  16:01:03,251 - #45 brojevi
-INFO  16:01:03,251 - #31 =
-INFO  16:01:03,251 - #4 new
-INFO  16:01:03,251 - #45 int
-INFO  16:01:03,251 - #41 [
-INFO  16:01:03,251 - #46 5
-INFO  16:01:03,251 - #42 ]
-INFO  16:01:03,251 - #34 ;
-INFO  16:01:03,251 - #45 slova
-INFO  16:01:03,251 - #31 =
-INFO  16:01:03,251 - #4 new
-INFO  16:01:03,251 - #45 char
-INFO  16:01:03,251 - #41 [
-INFO  16:01:03,251 - #46 5
-INFO  16:01:03,251 - #42 ]
-INFO  16:01:03,251 - #34 ;
-INFO  16:01:03,251 - #45 zastavice
-INFO  16:01:03,251 - #31 =
-INFO  16:01:03,251 - #4 new
-INFO  16:01:03,251 - #45 bool
-INFO  16:01:03,251 - #41 [
-INFO  16:01:03,252 - #46 5
-INFO  16:01:03,252 - #42 ]
-INFO  16:01:03,252 - #34 ;
-INFO  16:01:03,252 - #45 nizNadjeno
-INFO  16:01:03,252 - #31 =
-INFO  16:01:03,252 - #4 new
-INFO  16:01:03,252 - #45 bool
-INFO  16:01:03,252 - #41 [
-INFO  16:01:03,252 - #46 5
-INFO  16:01:03,252 - #42 ]
-INFO  16:01:03,252 - #34 ;
-INFO  16:01:03,252 - #45 brojevi
-INFO  16:01:03,252 - #41 [
-INFO  16:01:03,252 - #46 0
-INFO  16:01:03,252 - #42 ]
-INFO  16:01:03,252 - #31 =
-INFO  16:01:03,252 - #46 7
-INFO  16:01:03,252 - #34 ;
-INFO  16:01:03,252 - #45 slova
-INFO  16:01:03,252 - #41 [
-INFO  16:01:03,252 - #46 0
-INFO  16:01:03,252 - #42 ]
-INFO  16:01:03,252 - #31 =
-INFO  16:01:03,252 - #48 a
-INFO  16:01:03,252 - #34 ;
-INFO  16:01:03,252 - #45 zastavice
-INFO  16:01:03,252 - #41 [
-INFO  16:01:03,252 - #46 0
-INFO  16:01:03,252 - #42 ]
-INFO  16:01:03,252 - #31 =
-INFO  16:01:03,253 - #47 1
-INFO  16:01:03,253 - #34 ;
-INFO  16:01:03,253 - #45 nadjeno
-INFO  16:01:03,253 - #31 =
-INFO  16:01:03,253 - #45 brojevi
-INFO  16:01:03,253 - #37 .
-INFO  16:01:03,253 - #15 findAny
-INFO  16:01:03,253 - #39 (
-INFO  16:01:03,253 - #46 7
-INFO  16:01:03,253 - #40 )
-INFO  16:01:03,253 - #34 ;
-INFO  16:01:03,253 - #45 nadjeno
-INFO  16:01:03,253 - #31 =
-INFO  16:01:03,253 - #45 brojevi
-INFO  16:01:03,253 - #37 .
-INFO  16:01:03,253 - #15 findAny
-INFO  16:01:03,253 - #39 (
-INFO  16:01:03,253 - #45 trazeni
-INFO  16:01:03,253 - #40 )
-INFO  16:01:03,253 - #34 ;
-INFO  16:01:03,253 - #45 nadjeno
-INFO  16:01:03,253 - #31 =
-INFO  16:01:03,253 - #45 brojevi
-INFO  16:01:03,253 - #37 .
-INFO  16:01:03,253 - #15 findAny
-INFO  16:01:03,253 - #39 (
-INFO  16:01:03,253 - #46 3
-INFO  16:01:03,253 - #17 +
-INFO  16:01:03,253 - #46 4
-INFO  16:01:03,254 - #40 )
-INFO  16:01:03,254 - #34 ;
-INFO  16:01:03,254 - #45 nadjeno
-INFO  16:01:03,254 - #31 =
-INFO  16:01:03,254 - #45 brojevi
-INFO  16:01:03,254 - #37 .
-INFO  16:01:03,254 - #15 findAny
-INFO  16:01:03,254 - #39 (
-INFO  16:01:03,254 - #45 brojevi
-INFO  16:01:03,254 - #41 [
-INFO  16:01:03,254 - #46 0
-INFO  16:01:03,254 - #42 ]
-INFO  16:01:03,254 - #40 )
-INFO  16:01:03,254 - #34 ;
-INFO  16:01:03,254 - #45 nadjeno
-INFO  16:01:03,254 - #31 =
-INFO  16:01:03,254 - #45 brojevi
-INFO  16:01:03,254 - #37 .
-INFO  16:01:03,254 - #15 findAny
-INFO  16:01:03,254 - #39 (
-INFO  16:01:03,254 - #18 -
-INFO  16:01:03,254 - #46 1
-INFO  16:01:03,254 - #40 )
-INFO  16:01:03,254 - #34 ;
-INFO  16:01:03,254 - #45 nadjeno
-INFO  16:01:03,255 - #31 =
-INFO  16:01:03,255 - #45 slova
-INFO  16:01:03,255 - #37 .
-INFO  16:01:03,255 - #15 findAny
-INFO  16:01:03,255 - #39 (
-INFO  16:01:03,255 - #48 a
-INFO  16:01:03,255 - #40 )
-INFO  16:01:03,255 - #34 ;
-INFO  16:01:03,255 - #45 nadjeno
-INFO  16:01:03,255 - #31 =
-INFO  16:01:03,255 - #45 zastavice
-INFO  16:01:03,255 - #37 .
-INFO  16:01:03,255 - #15 findAny
-INFO  16:01:03,255 - #39 (
-INFO  16:01:03,255 - #47 1
-INFO  16:01:03,255 - #40 )
-INFO  16:01:03,255 - #34 ;
-INFO  16:01:03,255 - #45 i
-INFO  16:01:03,255 - #31 =
-INFO  16:01:03,255 - #46 0
-INFO  16:01:03,255 - #34 ;
-INFO  16:01:03,255 - #45 nizNadjeno
-INFO  16:01:03,255 - #41 [
-INFO  16:01:03,255 - #45 i
-INFO  16:01:03,255 - #42 ]
-INFO  16:01:03,255 - #31 =
-INFO  16:01:03,255 - #45 brojevi
-INFO  16:01:03,255 - #37 .
-INFO  16:01:03,255 - #15 findAny
-INFO  16:01:03,255 - #39 (
-INFO  16:01:03,255 - #46 7
-INFO  16:01:03,255 - #40 )
-INFO  16:01:03,255 - #34 ;
-INFO  16:01:03,255 - #44 }
-INFO  16:01:03,255 - #44 }
-INFO  16:01:03,256 - Program(
+INFO  19:17:29,813 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/12_findAny.mj
+INFO  19:17:29,822 - #2 program
+INFO  19:17:29,822 - #45 FindAny
+INFO  19:17:29,822 - #3 const
+INFO  19:17:29,822 - #45 int
+INFO  19:17:29,822 - #45 trazeni
+INFO  19:17:29,823 - #31 =
+INFO  19:17:29,823 - #46 7
+INFO  19:17:29,823 - #34 ;
+INFO  19:17:29,823 - #45 int
+INFO  19:17:29,823 - #45 brojevi
+INFO  19:17:29,823 - #41 [
+INFO  19:17:29,823 - #42 ]
+INFO  19:17:29,823 - #34 ;
+INFO  19:17:29,823 - #45 char
+INFO  19:17:29,823 - #45 slova
+INFO  19:17:29,823 - #41 [
+INFO  19:17:29,823 - #42 ]
+INFO  19:17:29,823 - #34 ;
+INFO  19:17:29,823 - #45 bool
+INFO  19:17:29,823 - #45 zastavice
+INFO  19:17:29,823 - #41 [
+INFO  19:17:29,823 - #42 ]
+INFO  19:17:29,823 - #34 ;
+INFO  19:17:29,824 - #45 bool
+INFO  19:17:29,824 - #45 nadjeno
+INFO  19:17:29,824 - #36 ,
+INFO  19:17:29,824 - #45 nizNadjeno
+INFO  19:17:29,824 - #41 [
+INFO  19:17:29,824 - #42 ]
+INFO  19:17:29,824 - #34 ;
+INFO  19:17:29,824 - #45 int
+INFO  19:17:29,824 - #45 i
+INFO  19:17:29,824 - #34 ;
+INFO  19:17:29,824 - #43 {
+INFO  19:17:29,824 - #7 void
+INFO  19:17:29,824 - #45 main
+INFO  19:17:29,824 - #39 (
+INFO  19:17:29,825 - #40 )
+INFO  19:17:29,825 - #43 {
+INFO  19:17:29,825 - #45 brojevi
+INFO  19:17:29,825 - #31 =
+INFO  19:17:29,825 - #4 new
+INFO  19:17:29,825 - #45 int
+INFO  19:17:29,825 - #41 [
+INFO  19:17:29,825 - #46 5
+INFO  19:17:29,825 - #42 ]
+INFO  19:17:29,825 - #34 ;
+INFO  19:17:29,825 - #45 slova
+INFO  19:17:29,825 - #31 =
+INFO  19:17:29,825 - #4 new
+INFO  19:17:29,825 - #45 char
+INFO  19:17:29,826 - #41 [
+INFO  19:17:29,826 - #46 5
+INFO  19:17:29,826 - #42 ]
+INFO  19:17:29,826 - #34 ;
+INFO  19:17:29,826 - #45 zastavice
+INFO  19:17:29,826 - #31 =
+INFO  19:17:29,826 - #4 new
+INFO  19:17:29,826 - #45 bool
+INFO  19:17:29,826 - #41 [
+INFO  19:17:29,826 - #46 5
+INFO  19:17:29,826 - #42 ]
+INFO  19:17:29,826 - #34 ;
+INFO  19:17:29,826 - #45 nizNadjeno
+INFO  19:17:29,826 - #31 =
+INFO  19:17:29,826 - #4 new
+INFO  19:17:29,826 - #45 bool
+INFO  19:17:29,826 - #41 [
+INFO  19:17:29,826 - #46 5
+INFO  19:17:29,826 - #42 ]
+INFO  19:17:29,826 - #34 ;
+INFO  19:17:29,826 - #45 brojevi
+INFO  19:17:29,826 - #41 [
+INFO  19:17:29,826 - #46 0
+INFO  19:17:29,826 - #42 ]
+INFO  19:17:29,826 - #31 =
+INFO  19:17:29,826 - #46 7
+INFO  19:17:29,826 - #34 ;
+INFO  19:17:29,826 - #45 slova
+INFO  19:17:29,826 - #41 [
+INFO  19:17:29,827 - #46 0
+INFO  19:17:29,827 - #42 ]
+INFO  19:17:29,827 - #31 =
+INFO  19:17:29,827 - #48 a
+INFO  19:17:29,827 - #34 ;
+INFO  19:17:29,827 - #45 zastavice
+INFO  19:17:29,827 - #41 [
+INFO  19:17:29,827 - #46 0
+INFO  19:17:29,827 - #42 ]
+INFO  19:17:29,827 - #31 =
+INFO  19:17:29,827 - #47 1
+INFO  19:17:29,827 - #34 ;
+INFO  19:17:29,827 - #45 nadjeno
+INFO  19:17:29,827 - #31 =
+INFO  19:17:29,827 - #45 brojevi
+INFO  19:17:29,827 - #37 .
+INFO  19:17:29,827 - #15 findAny
+INFO  19:17:29,827 - #39 (
+INFO  19:17:29,827 - #46 7
+INFO  19:17:29,827 - #40 )
+INFO  19:17:29,827 - #34 ;
+INFO  19:17:29,827 - #45 nadjeno
+INFO  19:17:29,827 - #31 =
+INFO  19:17:29,827 - #45 brojevi
+INFO  19:17:29,827 - #37 .
+INFO  19:17:29,827 - #15 findAny
+INFO  19:17:29,827 - #39 (
+INFO  19:17:29,827 - #45 trazeni
+INFO  19:17:29,827 - #40 )
+INFO  19:17:29,827 - #34 ;
+INFO  19:17:29,828 - #45 nadjeno
+INFO  19:17:29,828 - #31 =
+INFO  19:17:29,828 - #45 brojevi
+INFO  19:17:29,828 - #37 .
+INFO  19:17:29,828 - #15 findAny
+INFO  19:17:29,828 - #39 (
+INFO  19:17:29,828 - #46 3
+INFO  19:17:29,828 - #17 +
+INFO  19:17:29,828 - #46 4
+INFO  19:17:29,828 - #40 )
+INFO  19:17:29,828 - #34 ;
+INFO  19:17:29,828 - #45 nadjeno
+INFO  19:17:29,828 - #31 =
+INFO  19:17:29,828 - #45 brojevi
+INFO  19:17:29,828 - #37 .
+INFO  19:17:29,828 - #15 findAny
+INFO  19:17:29,828 - #39 (
+INFO  19:17:29,828 - #45 brojevi
+INFO  19:17:29,828 - #41 [
+INFO  19:17:29,828 - #46 0
+INFO  19:17:29,828 - #42 ]
+INFO  19:17:29,828 - #40 )
+INFO  19:17:29,828 - #34 ;
+INFO  19:17:29,828 - #45 nadjeno
+INFO  19:17:29,828 - #31 =
+INFO  19:17:29,828 - #45 brojevi
+INFO  19:17:29,828 - #37 .
+INFO  19:17:29,828 - #15 findAny
+INFO  19:17:29,828 - #39 (
+INFO  19:17:29,828 - #18 -
+INFO  19:17:29,829 - #46 1
+INFO  19:17:29,829 - #40 )
+INFO  19:17:29,829 - #34 ;
+INFO  19:17:29,829 - #45 nadjeno
+INFO  19:17:29,829 - #31 =
+INFO  19:17:29,829 - #45 slova
+INFO  19:17:29,829 - #37 .
+INFO  19:17:29,829 - #15 findAny
+INFO  19:17:29,829 - #39 (
+INFO  19:17:29,829 - #48 a
+INFO  19:17:29,829 - #40 )
+INFO  19:17:29,829 - #34 ;
+INFO  19:17:29,829 - #45 nadjeno
+INFO  19:17:29,829 - #31 =
+INFO  19:17:29,829 - #45 zastavice
+INFO  19:17:29,829 - #37 .
+INFO  19:17:29,829 - #15 findAny
+INFO  19:17:29,829 - #39 (
+INFO  19:17:29,829 - #47 1
+INFO  19:17:29,829 - #40 )
+INFO  19:17:29,829 - #34 ;
+INFO  19:17:29,829 - #45 i
+INFO  19:17:29,829 - #31 =
+INFO  19:17:29,829 - #46 0
+INFO  19:17:29,829 - #34 ;
+INFO  19:17:29,829 - #45 nizNadjeno
+INFO  19:17:29,829 - #41 [
+INFO  19:17:29,829 - #45 i
+INFO  19:17:29,829 - #42 ]
+INFO  19:17:29,829 - #31 =
+INFO  19:17:29,829 - #45 brojevi
+INFO  19:17:29,829 - #37 .
+INFO  19:17:29,829 - #15 findAny
+INFO  19:17:29,829 - #39 (
+INFO  19:17:29,829 - #46 7
+INFO  19:17:29,829 - #40 )
+INFO  19:17:29,829 - #34 ;
+INFO  19:17:29,829 - #44 }
+INFO  19:17:29,829 - #44 }
+INFO  19:17:29,830 - Program(
   ProgramName(
    FindAny
   ) [ProgramName]
@@ -297,26 +297,30 @@ INFO  16:01:03,256 - Program(
                                       ) [StatementList_epsilon]
                                       Statement_designator(
                                         DesignatorStatement_assign(
-                                          Designator_ident(
+                                          Designator_var(
                                            brojevi
-                                          ) [Designator_ident]
+                                          ) [Designator_var]
                                           Expr_add(
                                             AddExpr_term(
                                               Term_factor(
-                                                Factor_newArray(
-                                                  Type(
-                                                   int
-                                                  ) [Type]
-                                                  Expr_add(
-                                                    AddExpr_term(
-                                                      Term_factor(
-                                                        Factor_number(
-                                                         5
-                                                        ) [Factor_number]
-                                                      ) [Term_factor]
-                                                    ) [AddExpr_term]
-                                                  ) [Expr_add]
-                                                ) [Factor_newArray]
+                                                Factor_sub(
+                                                  FactorSub_newArray(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    Expr_add(
+                                                      AddExpr_term(
+                                                        Term_factor(
+                                                          Factor_sub(
+                                                            FactorSub_number(
+                                                             5
+                                                            ) [FactorSub_number]
+                                                          ) [Factor_sub]
+                                                        ) [Term_factor]
+                                                      ) [AddExpr_term]
+                                                    ) [Expr_add]
+                                                  ) [FactorSub_newArray]
+                                                ) [Factor_sub]
                                               ) [Term_factor]
                                             ) [AddExpr_term]
                                           ) [Expr_add]
@@ -325,26 +329,30 @@ INFO  16:01:03,256 - Program(
                                     ) [StatementList_more]
                                     Statement_designator(
                                       DesignatorStatement_assign(
-                                        Designator_ident(
+                                        Designator_var(
                                          slova
-                                        ) [Designator_ident]
+                                        ) [Designator_var]
                                         Expr_add(
                                           AddExpr_term(
                                             Term_factor(
-                                              Factor_newArray(
-                                                Type(
-                                                 char
-                                                ) [Type]
-                                                Expr_add(
-                                                  AddExpr_term(
-                                                    Term_factor(
-                                                      Factor_number(
-                                                       5
-                                                      ) [Factor_number]
-                                                    ) [Term_factor]
-                                                  ) [AddExpr_term]
-                                                ) [Expr_add]
-                                              ) [Factor_newArray]
+                                              Factor_sub(
+                                                FactorSub_newArray(
+                                                  Type(
+                                                   char
+                                                  ) [Type]
+                                                  Expr_add(
+                                                    AddExpr_term(
+                                                      Term_factor(
+                                                        Factor_sub(
+                                                          FactorSub_number(
+                                                           5
+                                                          ) [FactorSub_number]
+                                                        ) [Factor_sub]
+                                                      ) [Term_factor]
+                                                    ) [AddExpr_term]
+                                                  ) [Expr_add]
+                                                ) [FactorSub_newArray]
+                                              ) [Factor_sub]
                                             ) [Term_factor]
                                           ) [AddExpr_term]
                                         ) [Expr_add]
@@ -353,26 +361,30 @@ INFO  16:01:03,256 - Program(
                                   ) [StatementList_more]
                                   Statement_designator(
                                     DesignatorStatement_assign(
-                                      Designator_ident(
+                                      Designator_var(
                                        zastavice
-                                      ) [Designator_ident]
+                                      ) [Designator_var]
                                       Expr_add(
                                         AddExpr_term(
                                           Term_factor(
-                                            Factor_newArray(
-                                              Type(
-                                               bool
-                                              ) [Type]
-                                              Expr_add(
-                                                AddExpr_term(
-                                                  Term_factor(
-                                                    Factor_number(
-                                                     5
-                                                    ) [Factor_number]
-                                                  ) [Term_factor]
-                                                ) [AddExpr_term]
-                                              ) [Expr_add]
-                                            ) [Factor_newArray]
+                                            Factor_sub(
+                                              FactorSub_newArray(
+                                                Type(
+                                                 bool
+                                                ) [Type]
+                                                Expr_add(
+                                                  AddExpr_term(
+                                                    Term_factor(
+                                                      Factor_sub(
+                                                        FactorSub_number(
+                                                         5
+                                                        ) [FactorSub_number]
+                                                      ) [Factor_sub]
+                                                    ) [Term_factor]
+                                                  ) [AddExpr_term]
+                                                ) [Expr_add]
+                                              ) [FactorSub_newArray]
+                                            ) [Factor_sub]
                                           ) [Term_factor]
                                         ) [AddExpr_term]
                                       ) [Expr_add]
@@ -381,26 +393,30 @@ INFO  16:01:03,256 - Program(
                                 ) [StatementList_more]
                                 Statement_designator(
                                   DesignatorStatement_assign(
-                                    Designator_ident(
+                                    Designator_var(
                                      nizNadjeno
-                                    ) [Designator_ident]
+                                    ) [Designator_var]
                                     Expr_add(
                                       AddExpr_term(
                                         Term_factor(
-                                          Factor_newArray(
-                                            Type(
-                                             bool
-                                            ) [Type]
-                                            Expr_add(
-                                              AddExpr_term(
-                                                Term_factor(
-                                                  Factor_number(
-                                                   5
-                                                  ) [Factor_number]
-                                                ) [Term_factor]
-                                              ) [AddExpr_term]
-                                            ) [Expr_add]
-                                          ) [Factor_newArray]
+                                          Factor_sub(
+                                            FactorSub_newArray(
+                                              Type(
+                                               bool
+                                              ) [Type]
+                                              Expr_add(
+                                                AddExpr_term(
+                                                  Term_factor(
+                                                    Factor_sub(
+                                                      FactorSub_number(
+                                                       5
+                                                      ) [FactorSub_number]
+                                                    ) [Factor_sub]
+                                                  ) [Term_factor]
+                                                ) [AddExpr_term]
+                                              ) [Expr_add]
+                                            ) [FactorSub_newArray]
+                                          ) [Factor_sub]
                                         ) [Term_factor]
                                       ) [AddExpr_term]
                                     ) [Expr_add]
@@ -410,15 +426,17 @@ INFO  16:01:03,256 - Program(
                               Statement_designator(
                                 DesignatorStatement_assign(
                                   Designator_array(
-                                    Designator_ident(
+                                    Designator_var(
                                      brojevi
-                                    ) [Designator_ident]
+                                    ) [Designator_var]
                                     Expr_add(
                                       AddExpr_term(
                                         Term_factor(
-                                          Factor_number(
-                                           0
-                                          ) [Factor_number]
+                                          Factor_sub(
+                                            FactorSub_number(
+                                             0
+                                            ) [FactorSub_number]
+                                          ) [Factor_sub]
                                         ) [Term_factor]
                                       ) [AddExpr_term]
                                     ) [Expr_add]
@@ -426,9 +444,11 @@ INFO  16:01:03,256 - Program(
                                   Expr_add(
                                     AddExpr_term(
                                       Term_factor(
-                                        Factor_number(
-                                         7
-                                        ) [Factor_number]
+                                        Factor_sub(
+                                          FactorSub_number(
+                                           7
+                                          ) [FactorSub_number]
+                                        ) [Factor_sub]
                                       ) [Term_factor]
                                     ) [AddExpr_term]
                                   ) [Expr_add]
@@ -438,15 +458,17 @@ INFO  16:01:03,256 - Program(
                             Statement_designator(
                               DesignatorStatement_assign(
                                 Designator_array(
-                                  Designator_ident(
+                                  Designator_var(
                                    slova
-                                  ) [Designator_ident]
+                                  ) [Designator_var]
                                   Expr_add(
                                     AddExpr_term(
                                       Term_factor(
-                                        Factor_number(
-                                         0
-                                        ) [Factor_number]
+                                        Factor_sub(
+                                          FactorSub_number(
+                                           0
+                                          ) [FactorSub_number]
+                                        ) [Factor_sub]
                                       ) [Term_factor]
                                     ) [AddExpr_term]
                                   ) [Expr_add]
@@ -454,9 +476,11 @@ INFO  16:01:03,256 - Program(
                                 Expr_add(
                                   AddExpr_term(
                                     Term_factor(
-                                      Factor_character(
-                                       a
-                                      ) [Factor_character]
+                                      Factor_sub(
+                                        FactorSub_character(
+                                         a
+                                        ) [FactorSub_character]
+                                      ) [Factor_sub]
                                     ) [Term_factor]
                                   ) [AddExpr_term]
                                 ) [Expr_add]
@@ -466,15 +490,17 @@ INFO  16:01:03,256 - Program(
                           Statement_designator(
                             DesignatorStatement_assign(
                               Designator_array(
-                                Designator_ident(
+                                Designator_var(
                                  zastavice
-                                ) [Designator_ident]
+                                ) [Designator_var]
                                 Expr_add(
                                   AddExpr_term(
                                     Term_factor(
-                                      Factor_number(
-                                       0
-                                      ) [Factor_number]
+                                      Factor_sub(
+                                        FactorSub_number(
+                                         0
+                                        ) [FactorSub_number]
+                                      ) [Factor_sub]
                                     ) [Term_factor]
                                   ) [AddExpr_term]
                                 ) [Expr_add]
@@ -482,9 +508,11 @@ INFO  16:01:03,256 - Program(
                               Expr_add(
                                 AddExpr_term(
                                   Term_factor(
-                                    Factor_bool(
-                                     1
-                                    ) [Factor_bool]
+                                    Factor_sub(
+                                      FactorSub_bool(
+                                       1
+                                      ) [FactorSub_bool]
+                                    ) [Factor_sub]
                                   ) [Term_factor]
                                 ) [AddExpr_term]
                               ) [Expr_add]
@@ -492,150 +520,168 @@ INFO  16:01:03,256 - Program(
                           ) [Statement_designator]
                         ) [StatementList_more]
                         Statement_findAny(
-                          Designator_ident(
+                          Designator_var(
                            nadjeno
-                          ) [Designator_ident]
-                          Designator_ident(
+                          ) [Designator_var]
+                          Designator_var(
                            brojevi
-                          ) [Designator_ident]
+                          ) [Designator_var]
                           Expr_add(
                             AddExpr_term(
                               Term_factor(
-                                Factor_number(
-                                 7
-                                ) [Factor_number]
+                                Factor_sub(
+                                  FactorSub_number(
+                                   7
+                                  ) [FactorSub_number]
+                                ) [Factor_sub]
                               ) [Term_factor]
                             ) [AddExpr_term]
                           ) [Expr_add]
                         ) [Statement_findAny]
                       ) [StatementList_more]
                       Statement_findAny(
-                        Designator_ident(
+                        Designator_var(
                          nadjeno
-                        ) [Designator_ident]
-                        Designator_ident(
+                        ) [Designator_var]
+                        Designator_var(
                          brojevi
-                        ) [Designator_ident]
+                        ) [Designator_var]
                         Expr_add(
                           AddExpr_term(
                             Term_factor(
-                              Factor_designator(
-                                Designator_ident(
-                                 trazeni
-                                ) [Designator_ident]
-                              ) [Factor_designator]
+                              Factor_sub(
+                                FactorSub_designator(
+                                  Designator_var(
+                                   trazeni
+                                  ) [Designator_var]
+                                ) [FactorSub_designator]
+                              ) [Factor_sub]
                             ) [Term_factor]
                           ) [AddExpr_term]
                         ) [Expr_add]
                       ) [Statement_findAny]
                     ) [StatementList_more]
                     Statement_findAny(
-                      Designator_ident(
+                      Designator_var(
                        nadjeno
-                      ) [Designator_ident]
-                      Designator_ident(
+                      ) [Designator_var]
+                      Designator_var(
                        brojevi
-                      ) [Designator_ident]
+                      ) [Designator_var]
                       Expr_add(
                         AddExpr_addop(
                           AddExpr_term(
                             Term_factor(
-                              Factor_number(
-                               3
-                              ) [Factor_number]
+                              Factor_sub(
+                                FactorSub_number(
+                                 3
+                                ) [FactorSub_number]
+                              ) [Factor_sub]
                             ) [Term_factor]
                           ) [AddExpr_term]
                           Addop_plus(
                           ) [Addop_plus]
                           Term_factor(
-                            Factor_number(
-                             4
-                            ) [Factor_number]
+                            Factor_sub(
+                              FactorSub_number(
+                               4
+                              ) [FactorSub_number]
+                            ) [Factor_sub]
                           ) [Term_factor]
                         ) [AddExpr_addop]
                       ) [Expr_add]
                     ) [Statement_findAny]
                   ) [StatementList_more]
                   Statement_findAny(
-                    Designator_ident(
+                    Designator_var(
                      nadjeno
-                    ) [Designator_ident]
-                    Designator_ident(
+                    ) [Designator_var]
+                    Designator_var(
                      brojevi
-                    ) [Designator_ident]
+                    ) [Designator_var]
                     Expr_add(
                       AddExpr_term(
                         Term_factor(
-                          Factor_designator(
-                            Designator_array(
-                              Designator_ident(
-                               brojevi
-                              ) [Designator_ident]
-                              Expr_add(
-                                AddExpr_term(
-                                  Term_factor(
-                                    Factor_number(
-                                     0
-                                    ) [Factor_number]
-                                  ) [Term_factor]
-                                ) [AddExpr_term]
-                              ) [Expr_add]
-                            ) [Designator_array]
-                          ) [Factor_designator]
+                          Factor_sub(
+                            FactorSub_designator(
+                              Designator_array(
+                                Designator_var(
+                                 brojevi
+                                ) [Designator_var]
+                                Expr_add(
+                                  AddExpr_term(
+                                    Term_factor(
+                                      Factor_sub(
+                                        FactorSub_number(
+                                         0
+                                        ) [FactorSub_number]
+                                      ) [Factor_sub]
+                                    ) [Term_factor]
+                                  ) [AddExpr_term]
+                                ) [Expr_add]
+                              ) [Designator_array]
+                            ) [FactorSub_designator]
+                          ) [Factor_sub]
                         ) [Term_factor]
                       ) [AddExpr_term]
                     ) [Expr_add]
                   ) [Statement_findAny]
                 ) [StatementList_more]
                 Statement_findAny(
-                  Designator_ident(
+                  Designator_var(
                    nadjeno
-                  ) [Designator_ident]
-                  Designator_ident(
+                  ) [Designator_var]
+                  Designator_var(
                    brojevi
-                  ) [Designator_ident]
+                  ) [Designator_var]
                   Expr_add(
-                    AddExpr_neg(
+                    AddExpr_term(
                       Term_factor(
-                        Factor_number(
-                         1
-                        ) [Factor_number]
+                        Factor_neg(
+                          FactorSub_number(
+                           1
+                          ) [FactorSub_number]
+                        ) [Factor_neg]
                       ) [Term_factor]
-                    ) [AddExpr_neg]
+                    ) [AddExpr_term]
                   ) [Expr_add]
                 ) [Statement_findAny]
               ) [StatementList_more]
               Statement_findAny(
-                Designator_ident(
+                Designator_var(
                  nadjeno
-                ) [Designator_ident]
-                Designator_ident(
+                ) [Designator_var]
+                Designator_var(
                  slova
-                ) [Designator_ident]
+                ) [Designator_var]
                 Expr_add(
                   AddExpr_term(
                     Term_factor(
-                      Factor_character(
-                       a
-                      ) [Factor_character]
+                      Factor_sub(
+                        FactorSub_character(
+                         a
+                        ) [FactorSub_character]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                 ) [Expr_add]
               ) [Statement_findAny]
             ) [StatementList_more]
             Statement_findAny(
-              Designator_ident(
+              Designator_var(
                nadjeno
-              ) [Designator_ident]
-              Designator_ident(
+              ) [Designator_var]
+              Designator_var(
                zastavice
-              ) [Designator_ident]
+              ) [Designator_var]
               Expr_add(
                 AddExpr_term(
                   Term_factor(
-                    Factor_bool(
-                     1
-                    ) [Factor_bool]
+                    Factor_sub(
+                      FactorSub_bool(
+                       1
+                      ) [FactorSub_bool]
+                    ) [Factor_sub]
                   ) [Term_factor]
                 ) [AddExpr_term]
               ) [Expr_add]
@@ -643,15 +689,17 @@ INFO  16:01:03,256 - Program(
           ) [StatementList_more]
           Statement_designator(
             DesignatorStatement_assign(
-              Designator_ident(
+              Designator_var(
                i
-              ) [Designator_ident]
+              ) [Designator_var]
               Expr_add(
                 AddExpr_term(
                   Term_factor(
-                    Factor_number(
-                     0
-                    ) [Factor_number]
+                    Factor_sub(
+                      FactorSub_number(
+                       0
+                      ) [FactorSub_number]
+                    ) [Factor_sub]
                   ) [Term_factor]
                 ) [AddExpr_term]
               ) [Expr_add]
@@ -660,30 +708,34 @@ INFO  16:01:03,256 - Program(
         ) [StatementList_more]
         Statement_findAny(
           Designator_array(
-            Designator_ident(
+            Designator_var(
              nizNadjeno
-            ) [Designator_ident]
+            ) [Designator_var]
             Expr_add(
               AddExpr_term(
                 Term_factor(
-                  Factor_designator(
-                    Designator_ident(
-                     i
-                    ) [Designator_ident]
-                  ) [Factor_designator]
+                  Factor_sub(
+                    FactorSub_designator(
+                      Designator_var(
+                       i
+                      ) [Designator_var]
+                    ) [FactorSub_designator]
+                  ) [Factor_sub]
                 ) [Term_factor]
               ) [AddExpr_term]
             ) [Expr_add]
           ) [Designator_array]
-          Designator_ident(
+          Designator_var(
            brojevi
-          ) [Designator_ident]
+          ) [Designator_var]
           Expr_add(
             AddExpr_term(
               Term_factor(
-                Factor_number(
-                 7
-                ) [Factor_number]
+                Factor_sub(
+                  FactorSub_number(
+                   7
+                  ) [FactorSub_number]
+                ) [Factor_sub]
               ) [Term_factor]
             ) [AddExpr_term]
           ) [Expr_add]
@@ -692,8 +744,40 @@ INFO  16:01:03,256 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:01:03,256 - =================================================
-INFO  16:01:03,258 - =================================================
+INFO  19:17:29,831 - =================================================
+INFO  19:17:29,832 - Pretraga na 18(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,832 - Pretraga na 19(slova), nadjeno Var slova: Arr of char, 1, 0
+INFO  19:17:29,833 - Pretraga na 20(zastavice), nadjeno Var zastavice: Arr of bool, 2, 0
+INFO  19:17:29,833 - Pretraga na 21(nizNadjeno), nadjeno Var nizNadjeno: Arr of bool, 4, 0
+INFO  19:17:29,833 - Pretraga na 23(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - Pretraga na 23(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - Pretraga na 24(slova), nadjeno Var slova: Arr of char, 1, 0
+INFO  19:17:29,833 - Pretraga na 24(slova), nadjeno Var slova: Arr of char, 1, 0
+INFO  19:17:29,833 - Pretraga na 25(zastavice), nadjeno Var zastavice: Arr of bool, 2, 0
+INFO  19:17:29,833 - Pretraga na 25(zastavice), nadjeno Var zastavice: Arr of bool, 2, 0
+INFO  19:17:29,833 - Pretraga na 28(nadjeno), nadjeno Var nadjeno: bool, 3, 0
+INFO  19:17:29,833 - Pretraga na 28(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - Pretraga na 31(nadjeno), nadjeno Var nadjeno: bool, 3, 0
+INFO  19:17:29,833 - Pretraga na 31(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - Pretraga na 31(trazeni), nadjeno Con trazeni: int, 7, 0
+INFO  19:17:29,833 - Pretraga na 32(nadjeno), nadjeno Var nadjeno: bool, 3, 0
+INFO  19:17:29,833 - Pretraga na 32(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - Pretraga na 33(nadjeno), nadjeno Var nadjeno: bool, 3, 0
+INFO  19:17:29,833 - Pretraga na 33(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - Pretraga na 33(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - Pretraga na 33(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - Pretraga na 34(nadjeno), nadjeno Var nadjeno: bool, 3, 0
+INFO  19:17:29,833 - Pretraga na 34(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - Pretraga na 37(nadjeno), nadjeno Var nadjeno: bool, 3, 0
+INFO  19:17:29,833 - Pretraga na 37(slova), nadjeno Var slova: Arr of char, 1, 0
+INFO  19:17:29,833 - Pretraga na 38(nadjeno), nadjeno Var nadjeno: bool, 3, 0
+INFO  19:17:29,833 - Pretraga na 38(zastavice), nadjeno Var zastavice: Arr of bool, 2, 0
+INFO  19:17:29,833 - Pretraga na 41(i), nadjeno Var i: int, 5, 0
+INFO  19:17:29,833 - Pretraga na 42(nizNadjeno), nadjeno Var nizNadjeno: Arr of bool, 4, 0
+INFO  19:17:29,833 - Pretraga na 42(i), nadjeno Var i: int, 5, 0
+INFO  19:17:29,833 - Pretraga na 42(nizNadjeno), nadjeno Var nizNadjeno: Arr of bool, 4, 0
+INFO  19:17:29,833 - Pretraga na 42(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  19:17:29,833 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -721,4 +805,4 @@ Prog FindAny: notype, 0, 1
 
 
 
-INFO  16:01:03,258 - Parsiranje uspesno zavrseno!
+INFO  19:17:29,833 - Parsiranje uspesno zavrseno!

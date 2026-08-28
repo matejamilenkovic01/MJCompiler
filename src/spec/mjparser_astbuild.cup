@@ -88,7 +88,10 @@ terminal Character CHARACTER;
 nonterminal Program Program;
 nonterminal ProgramName ProgramName;
 nonterminal DeclList DeclList;
-nonterminal Type Type;
+/* Type nosi Struct da bi "new Type [ Expr ]" citao tip sa svog cvora, a ne iz
+   deljivog polja currentType. Bez toga ugnezdeno "new int[ new char[2].length ]"
+   procita tip unutrasnjeg new-a, jer se deca posecuju pre roditelja. */
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 nonterminal ConstDecl ConstDecl;
 nonterminal ConstItemList ConstItemList;
 nonterminal ConstItem ConstItem;
@@ -109,7 +112,9 @@ nonterminal VarDeclListOpt VarDeclListOpt;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
 nonterminal DesignatorStatement DesignatorStatement;
-nonterminal IfCondition IfCondition;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct IfCondition;
+/* Marker za kontekst petlje - vidi ForStart smenu nize. */
+nonterminal ForStart ForStart;
 nonterminal ActParsOpt ActParsOpt;
 nonterminal ActPars ActPars;
 nonterminal ForInitOpt ForInitOpt;
@@ -117,19 +122,14 @@ nonterminal ForCondOpt ForCondOpt;
 nonterminal ForStepOpt ForStepOpt;
 
 /* ---- Izrazi ---- */
-nonterminal Condition Condition;
-nonterminal CondTerm CondTerm;
-nonterminal CondFact CondFact;
 nonterminal Relop Relop;
-nonterminal Expr Expr;
-nonterminal AddExpr AddExpr;
-nonterminal Term Term;
-nonterminal Factor Factor;
-nonterminal Designator Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, CondTerm, CondFact;
 nonterminal Addop Addop;
 nonterminal Mulop Mulop;
 nonterminal PrintWidthOpt PrintWidthOpt;
 nonterminal ReturnExprOpt ReturnExprOpt;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorSub, Term, AddExpr, Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
 
 
 /* Jedina dozvoljena precedence direktiva - resava dangling-else konflikt. */
@@ -283,7 +283,7 @@ Statement ::=   (Statement_designator) DesignatorStatement:D1 SEMI {: RESULT=new
                 |
                 (Statement_print) PRINT LPAREN Expr:E1 PrintWidthOpt:P2 RPAREN SEMI {: RESULT=new Statement_print(E1, P2); RESULT.setLine(E1left); :}
                 |
-                (Statement_for) FOR LPAREN ForInitOpt:F1 SEMI ForCondOpt:F2 SEMI ForStepOpt:F3 RPAREN Statement:S4 {: RESULT=new Statement_for(F1, F2, F3, S4); RESULT.setLine(F1left); :}
+                (Statement_for) ForStart:F1 LPAREN ForInitOpt:F2 SEMI ForCondOpt:F3 SEMI ForStepOpt:F4 RPAREN Statement:S5 {: RESULT=new Statement_for(F1, F2, F3, F4, S5); RESULT.setLine(F1left); :}
                 |
                 (Statement_block) LBRACE StatementList:S1 RBRACE {: RESULT=new Statement_block(S1); RESULT.setLine(S1left); :}
                 |
@@ -307,6 +307,15 @@ IfCondition ::=     (IfCondition_cond) Condition:C1 {: RESULT=new IfCondition_co
                     (IfCondition_err) error
                     {: parser.report_error("Oporavak od greske u uslovu if iskaza izvrsen do linije " + parser.lastTokenLine(), null); :} {: RESULT=new IfCondition_err(); :}
                     ;
+
+/* Marker neterminal: nosi samo kljucnu rec "for", da bi semanticka analiza imala cvor
+   koji se poseti PRE tela petlje. Obilazak je bottom-up, pa se deca posecuju s leva na
+   desno - visit(ForStart) puca pre tela, visit(Statement_for) posle njega. Time brojac
+   ugnezdenosti petlji radi, sto je uslov za proveru break/continue.
+
+   Namerno BEZ epsilon smene (npr. "ForStart ::= | FOR"): epsilon je vec jednom oborio
+   LALR(1) svojstvo kod Unary/Factor pokusaja. Ovako se samo siftuje FOR, bez odluke. */
+ForStart ::= (ForStart) FOR {: RESULT=new ForStart(); :};
 
 ReturnExprOpt ::=   (ReturnExprOpt_expr) Expr:E1 {: RESULT=new ReturnExprOpt_expr(E1); RESULT.setLine(E1left); :}
                     |
@@ -403,7 +412,8 @@ Relop ::=   (Relop_eq) EQ {: RESULT=new Relop_eq(); :}
 
 
 /* ============================================================
-   Expr = ["-"] Term {Addop Term} | Condition "?" Expr ":" Expr.
+   Expr = Term {Addop Term} | Condition "?" Expr ":" Expr.
+   Unarni minus je spusten na nivo Faktora (vidi Factor/FactorSub nize).
 
    Napomena: aritmeticki deo je izdvojen u sopstveni neterminal AddExpr. Bez njega
    bi vazilo Expr => CondFact => Expr (ciklus jedinicnih smena), sto gramatiku cini
@@ -419,8 +429,6 @@ Expr ::=    (Expr_add) AddExpr:A1 {: RESULT=new Expr_add(A1); RESULT.setLine(A1l
 AddExpr ::=     (AddExpr_addop) AddExpr:A1 Addop:A2 Term:T3 {: RESULT=new AddExpr_addop(A1, A2, T3); RESULT.setLine(A1left); :}
                 |
                 (AddExpr_term) Term:T1 {: RESULT=new AddExpr_term(T1); RESULT.setLine(T1left); :}
-                |
-                (AddExpr_neg) MINUS Term:T1 {: RESULT=new AddExpr_neg(T1); RESULT.setLine(T1left); :}
                 ;
 
 Addop ::=   (Addop_plus) PLUS {: RESULT=new Addop_plus(); :}
@@ -440,22 +448,43 @@ Mulop ::=   (Mulop_mul) MUL {: RESULT=new Mulop_mul(); :}
             (Mulop_mod) MOD {: RESULT=new Mulop_mod(); :}
             ;
 
-/* Factor = Designator ["(" [ActPars] ")"] | numConst | charConst | boolConst
-            | "new" Type "[" Expr "]" | "(" Expr ")". */
-Factor ::=  (Factor_designator) Designator:D1 {: RESULT=new Factor_designator(D1); RESULT.setLine(D1left); :}
+/* Factor = ["-"] FactorSub.
+   FactorSub = Designator ["(" [ActPars] ")"] | numConst | charConst | boolConst
+             | "new" Type "[" Expr "]" | "(" Expr ")".
+
+   Unarni minus stoji ovde, a ne kao ["-"] ispred prvog Term-a u Expr-u. Razlog je
+   citljivost stabla: uz "MINUS Term" izraz "-3 * 2" daje AddExpr_neg(Term_mulop(...)),
+   dakle -(3*2), pa negacija obuhvata ceo proizvod. Ovako se odnosi na tacno jedan
+   faktor, sto je i ocekivano ponasanje.
+
+   Zasto NE "Factor ::= Unary FactorSub" sa "Unary ::= MINUS | epsilon": epsilon smena
+   bi morala da se redukuje pre nego sto se vidi IDENT, a u stanju posle
+   "Designator ASSIGN" parser tada jos ne zna da li sledi Expr (dodela) ili Designator
+   (findAny / map). CUP prijavljuje shift/reduce konflikt:
+       between Unary ::= (*)  and  Designator ::= (*) IDENT  under symbol IDENT
+   Bez epsilona odluke nema - IDENT se prosto siftuje - pa je gramatika i dalje LALR(1).
+
+   Napomena: ovo prihvata i "a + -b" i "3 * -2", sto je nadskup onoga sto [MJ] navodi
+   kao Expr = ["-"] Term {Addop Term}. Nijedan ispravan program se ne odbija. */
+Factor ::=  (Factor_sub) FactorSub:F1 {: RESULT=new Factor_sub(F1); RESULT.setLine(F1left); :}
             |
-            (Factor_call) Designator:D1 LPAREN ActParsOpt:A2 RPAREN {: RESULT=new Factor_call(D1, A2); RESULT.setLine(D1left); :}
-            |
-            (Factor_number) NUMBER:val {: RESULT=new Factor_number(val); RESULT.setLine(valleft); :}
-            |
-            (Factor_character) CHARACTER:val {: RESULT=new Factor_character(val); RESULT.setLine(valleft); :}
-            |
-            (Factor_bool) BOOL:val {: RESULT=new Factor_bool(val); RESULT.setLine(valleft); :}
-            |
-            (Factor_newArray) NEW Type:T1 LBRACK Expr:E2 RBRACK {: RESULT=new Factor_newArray(T1, E2); RESULT.setLine(T1left); :}
-            |
-            (Factor_expr) LPAREN Expr:E1 RPAREN {: RESULT=new Factor_expr(E1); RESULT.setLine(E1left); :}
+            (Factor_neg) MINUS FactorSub:F1 {: RESULT=new Factor_neg(F1); RESULT.setLine(F1left); :}
             ;
+
+FactorSub ::=   (FactorSub_designator) Designator:D1 {: RESULT=new FactorSub_designator(D1); RESULT.setLine(D1left); :}
+                |
+                (FactorSub_call) Designator:D1 LPAREN ActParsOpt:A2 RPAREN {: RESULT=new FactorSub_call(D1, A2); RESULT.setLine(D1left); :}
+                |
+                (FactorSub_number) NUMBER:val {: RESULT=new FactorSub_number(val); RESULT.setLine(valleft); :}
+                |
+                (FactorSub_character) CHARACTER:val {: RESULT=new FactorSub_character(val); RESULT.setLine(valleft); :}
+                |
+                (FactorSub_bool) BOOL:val {: RESULT=new FactorSub_bool(val); RESULT.setLine(valleft); :}
+                |
+                (FactorSub_newArray) NEW Type:T1 LBRACK Expr:E2 RBRACK {: RESULT=new FactorSub_newArray(T1, E2); RESULT.setLine(T1left); :}
+                |
+                (FactorSub_expr) LPAREN Expr:E1 RPAREN {: RESULT=new FactorSub_expr(E1); RESULT.setLine(E1left); :}
+                ;
 
 
 /* ============================================================
@@ -464,7 +493,7 @@ Factor ::=  (Factor_designator) Designator:D1 {: RESULT=new Factor_designator(D1
    je ugradjeno polje "length".
    ============================================================ */
 
-Designator ::=  (Designator_ident) IDENT:name {: RESULT=new Designator_ident(name); RESULT.setLine(nameleft); :}
+Designator ::=  (Designator_var) IDENT:name {: RESULT=new Designator_var(name); RESULT.setLine(nameleft); :}
                 |
                 (Designator_array) Designator:D1 LBRACK Expr:E2 RBRACK {: RESULT=new Designator_array(D1, E2); RESULT.setLine(D1left); :}
                 |

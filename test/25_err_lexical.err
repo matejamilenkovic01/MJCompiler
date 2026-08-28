@@ -1,16 +1,16 @@
 Leksicka greska (@) na liniji 15 u koloni 9
 
-ERROR 16:01:04,473 - 
+ERROR 19:17:31,095 - 
 Sintaksna greska na liniji 15
-ERROR 16:01:04,473 - Oporavak od greske u iskazu izvrsen do linije 16
+ERROR 19:17:31,095 - Oporavak od greske u iskazu izvrsen do linije 16
 Leksicka greska ($) na liniji 16 u koloni 9
 
-ERROR 16:01:04,473 - 
+ERROR 19:17:31,096 - 
 Sintaksna greska na liniji 16
-ERROR 16:01:04,473 - Oporavak od greske u iskazu izvrsen do linije 17
+ERROR 19:17:31,096 - Oporavak od greske u iskazu izvrsen do linije 17
 Leksicka greska (#) na liniji 17 u koloni 9
 
-ERROR 16:01:04,473 - 
+ERROR 19:17:31,096 - 
 Sintaksna greska na liniji 17
-ERROR 16:01:04,474 - Oporavak od greske u iskazu izvrsen do linije 19
-ERROR 16:01:04,476 - Parsiranje NIJE uspesno zavrseno!
+ERROR 19:17:31,096 - Oporavak od greske u iskazu izvrsen do linije 19
+ERROR 19:17:31,099 - Parsiranje NIJE uspesno zavrseno!

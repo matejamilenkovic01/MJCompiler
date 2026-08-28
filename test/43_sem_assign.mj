@@ -1,0 +1,28 @@
+// EXPECT: SEMANTIC>=6
+// EXPECT-ERR: U k se ne moze upisivati
+// EXPECT-ERR: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a
+// EXPECT-ERR: Inkrement zahteva simbol tipa int, a c to nije
+// EXPECT-ERR: Inkrement zahteva simbol tipa int, a niz to nije
+// EXPECT-ERR: read zahteva simbol tipa int, char ili bool, a niz to nije
+// EXPECT-ERR: print zahteva izraz tipa int, char ili bool
+// Kontekstni uslovi za dodelu, inkrement, read i print.
+
+program SemAssign
+
+const int k = 5;
+
+int a;
+char c;
+int niz[];
+
+{
+	void main()
+	{
+		k = 1;
+		a = c;
+		c++;
+		niz++;
+		read(niz);
+		print(niz);
+	}
+}

@@ -1,0 +1,25 @@
+// EXPECT: SEMANTIC>=5
+// EXPECT-ERR: Uslov if iskaza nije tipa bool
+// EXPECT-ERR: Operandi operatora && moraju biti tipa bool
+// EXPECT-ERR: Operandi relacionog operatora nisu kompatibilni
+// EXPECT-ERR: Uz referentne tipove dozvoljeni su samo operatori == i !=
+// EXPECT-ERR: Uslov for petlje nije tipa bool
+// Kontekstni uslovi za uslovne izraze.
+
+program SemCond
+
+int a;
+bool b;
+int niz[];
+int niz2[];
+
+{
+	void main()
+	{
+		if (a) a = 1;
+		if (b && a) a = 1;
+		if (a == b) a = 1;
+		if (niz < niz2) a = 1;
+		for (; a; ) a = 1;
+	}
+}

@@ -1,0 +1,15 @@
+// EXPECT: SEMANTIC>=2
+// EXPECT-ERR: Metoda main mora biti deklarisana kao void
+// EXPECT-ERR: Metoda main nije void, a nema iskaz return
+// [MJ] A.4, opsti kontekstni uslovi: main mora biti void metoda bez argumenata.
+
+program SemMainNijeVoid
+
+int a;
+
+{
+	int main()
+	{
+		a = 1;
+	}
+}

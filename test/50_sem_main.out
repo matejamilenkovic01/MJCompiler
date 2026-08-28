@@ -1,0 +1,101 @@
+INFO  19:17:33,407 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/50_sem_main.mj
+INFO  19:17:33,416 - #2 program
+INFO  19:17:33,416 - #45 SemMainNijeVoid
+INFO  19:17:33,416 - #45 int
+INFO  19:17:33,417 - #45 a
+INFO  19:17:33,417 - #34 ;
+INFO  19:17:33,417 - #43 {
+INFO  19:17:33,417 - #45 int
+INFO  19:17:33,417 - #45 main
+INFO  19:17:33,417 - #39 (
+INFO  19:17:33,417 - #40 )
+INFO  19:17:33,417 - #43 {
+INFO  19:17:33,417 - #45 a
+INFO  19:17:33,417 - #31 =
+INFO  19:17:33,417 - #46 1
+INFO  19:17:33,417 - #34 ;
+INFO  19:17:33,418 - #44 }
+INFO  19:17:33,418 - #44 }
+INFO  19:17:33,418 - Program(
+  ProgramName(
+   SemMainNijeVoid
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_epsilon(
+    ) [DeclList_epsilon]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_one(
+        VarItem_var(
+         a
+        ) [VarItem_var]
+      ) [VarItemList_one]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_type(
+          Type(
+           int
+          ) [Type]
+        ) [RetType_type]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_epsilon(
+        ) [StatementList_epsilon]
+        Statement_designator(
+          DesignatorStatement_assign(
+            Designator_var(
+             a
+            ) [Designator_var]
+            Expr_add(
+              AddExpr_term(
+                Term_factor(
+                  Factor_sub(
+                    FactorSub_number(
+                     1
+                    ) [FactorSub_number]
+                  ) [Factor_sub]
+                ) [Term_factor]
+              ) [AddExpr_term]
+            ) [Expr_add]
+          ) [DesignatorStatement_assign]
+        ) [Statement_designator]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  19:17:33,418 - =================================================
+INFO  19:17:33,420 - Pretraga na 13(a), nadjeno Var a: int, 0, 0
+INFO  19:17:33,420 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog SemMainNijeVoid: notype, 0, 1 
+   Var a: int, 0, 0 
+   Meth main: int, 0, 0 
+
+
+

@@ -1,16 +1,16 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/7/2026 16:1:0
+// 27/7/2026 19:17:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Factor_newArray extends Factor {
+public class FactorSub_newArray extends FactorSub {
 
     private Type Type;
     private Expr Expr;
 
-    public Factor_newArray (Type Type, Expr Expr) {
+    public FactorSub_newArray (Type Type, Expr Expr) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
         this.Expr=Expr;
@@ -57,7 +57,7 @@ public class Factor_newArray extends Factor {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("Factor_newArray(\n");
+        buffer.append("FactorSub_newArray(\n");
 
         if(Type!=null)
             buffer.append(Type.toString("  "+tab));
@@ -72,7 +72,7 @@ public class Factor_newArray extends Factor {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [Factor_newArray]");
+        buffer.append(") [FactorSub_newArray]");
         return buffer.toString();
     }
 }

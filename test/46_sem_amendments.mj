@@ -1,0 +1,28 @@
+// EXPECT: SEMANTIC>=5
+// EXPECT-ERR: Rezultat funkcije findAny se dodeljuje simbolu a, koji nije promenljiva tipa bool
+// EXPECT-ERR: Funkcija findAny se primenjuje na a, sto nije niz
+// EXPECT-ERR: Izraz u findAny nije uporediv sa tipom elemenata niza niz
+// EXPECT-ERR: Iterator c u map nije istog tipa kao elementi niza niz
+// EXPECT-ERR: Funkcija map se primenjuje na a, sto nije niz
+// Kontekstni uslovi za amandmane findAny i map.
+
+program SemAmendments
+
+int niz[];
+int rez[];
+bool b;
+int a;
+char c;
+
+{
+	void main()
+	{
+		b = niz.findAny(1);
+		a = niz.findAny(1);
+		b = a.findAny(1);
+		b = niz.findAny('c');
+		rez = niz.map(a => a * 2);
+		rez = niz.map(c => a * 2);
+		rez = a.map(a => a);
+	}
+}

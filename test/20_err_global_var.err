@@ -1,7 +1,7 @@
-ERROR 16:01:03,720 - 
+ERROR 19:17:30,311 - 
 Sintaksna greska na liniji 9
-ERROR 16:01:03,721 - Oporavak od greske u deklaraciji promenljive izvrsen do linije 12
-ERROR 16:01:03,721 - 
+ERROR 19:17:30,311 - Oporavak od greske u deklaraciji promenljive izvrsen do linije 12
+ERROR 19:17:30,312 - 
 Sintaksna greska na liniji 12
-ERROR 16:01:03,721 - Oporavak od greske u deklaraciji promenljive izvrsen do linije 15
-ERROR 16:01:03,725 - Parsiranje NIJE uspesno zavrseno!
+ERROR 19:17:30,312 - Oporavak od greske u deklaraciji promenljive izvrsen do linije 15
+ERROR 19:17:30,315 - Parsiranje NIJE uspesno zavrseno!

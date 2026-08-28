@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/7/2026 16:1:0
+// 27/7/2026 19:17:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Factor_bool extends Factor {
+public class Designator_var extends Designator {
 
-    private Integer val;
+    private String name;
 
-    public Factor_bool (Integer val) {
-        this.val=val;
+    public Designator_var (String name) {
+        this.name=name;
     }
 
-    public Integer getVal() {
-        return val;
+    public String getName() {
+        return name;
     }
 
-    public void setVal(Integer val) {
-        this.val=val;
+    public void setName(String name) {
+        this.name=name;
     }
 
     public void accept(Visitor visitor) {
@@ -39,13 +39,13 @@ public class Factor_bool extends Factor {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("Factor_bool(\n");
+        buffer.append("Designator_var(\n");
 
-        buffer.append(" "+tab+val);
+        buffer.append(" "+tab+name);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [Factor_bool]");
+        buffer.append(") [Designator_var]");
         return buffer.toString();
     }
 }

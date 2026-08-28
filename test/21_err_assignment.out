@@ -1,40 +1,40 @@
-INFO  16:01:03,867 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/21_err_assignment.mj
-INFO  16:01:03,875 - #2 program
-INFO  16:01:03,875 - #45 GreskaDodela
-INFO  16:01:03,875 - #45 int
-INFO  16:01:03,875 - #45 a
-INFO  16:01:03,876 - #36 ,
-INFO  16:01:03,876 - #45 b
-INFO  16:01:03,876 - #34 ;
-INFO  16:01:03,876 - #43 {
-INFO  16:01:03,876 - #7 void
-INFO  16:01:03,876 - #45 main
-INFO  16:01:03,876 - #39 (
-INFO  16:01:03,876 - #40 )
-INFO  16:01:03,876 - #43 {
-INFO  16:01:03,876 - #45 a
-INFO  16:01:03,877 - #31 =
-INFO  16:01:03,877 - #46 1
-INFO  16:01:03,877 - #34 ;
-INFO  16:01:03,877 - #45 a
-INFO  16:01:03,877 - #31 =
-INFO  16:01:03,877 - #19 *
-INFO  16:01:03,877 - #46 3
-INFO  16:01:03,877 - #34 ;
-INFO  16:01:03,877 - #45 b
-INFO  16:01:03,877 - #31 =
-INFO  16:01:03,877 - #46 2
-INFO  16:01:03,877 - #34 ;
-INFO  16:01:03,878 - #45 a
-INFO  16:01:03,878 - #31 =
-INFO  16:01:03,878 - #34 ;
-INFO  16:01:03,878 - #45 b
-INFO  16:01:03,878 - #31 =
-INFO  16:01:03,878 - #46 3
-INFO  16:01:03,878 - #34 ;
-INFO  16:01:03,878 - #44 }
-INFO  16:01:03,878 - #44 }
-INFO  16:01:03,878 - Program(
+INFO  19:17:30,457 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/21_err_assignment.mj
+INFO  19:17:30,467 - #2 program
+INFO  19:17:30,467 - #45 GreskaDodela
+INFO  19:17:30,467 - #45 int
+INFO  19:17:30,467 - #45 a
+INFO  19:17:30,467 - #36 ,
+INFO  19:17:30,467 - #45 b
+INFO  19:17:30,467 - #34 ;
+INFO  19:17:30,467 - #43 {
+INFO  19:17:30,467 - #7 void
+INFO  19:17:30,467 - #45 main
+INFO  19:17:30,468 - #39 (
+INFO  19:17:30,468 - #40 )
+INFO  19:17:30,468 - #43 {
+INFO  19:17:30,468 - #45 a
+INFO  19:17:30,468 - #31 =
+INFO  19:17:30,468 - #46 1
+INFO  19:17:30,468 - #34 ;
+INFO  19:17:30,468 - #45 a
+INFO  19:17:30,468 - #31 =
+INFO  19:17:30,468 - #19 *
+INFO  19:17:30,469 - #46 3
+INFO  19:17:30,469 - #34 ;
+INFO  19:17:30,469 - #45 b
+INFO  19:17:30,469 - #31 =
+INFO  19:17:30,469 - #46 2
+INFO  19:17:30,469 - #34 ;
+INFO  19:17:30,469 - #45 a
+INFO  19:17:30,469 - #31 =
+INFO  19:17:30,469 - #34 ;
+INFO  19:17:30,469 - #45 b
+INFO  19:17:30,470 - #31 =
+INFO  19:17:30,470 - #46 3
+INFO  19:17:30,470 - #34 ;
+INFO  19:17:30,470 - #44 }
+INFO  19:17:30,470 - #44 }
+INFO  19:17:30,470 - Program(
   ProgramName(
    GreskaDodela
   ) [ProgramName]
@@ -79,15 +79,17 @@ INFO  16:01:03,878 - Program(
                 ) [StatementList_epsilon]
                 Statement_designator(
                   DesignatorStatement_assign(
-                    Designator_ident(
+                    Designator_var(
                      a
-                    ) [Designator_ident]
+                    ) [Designator_var]
                     Expr_add(
                       AddExpr_term(
                         Term_factor(
-                          Factor_number(
-                           1
-                          ) [Factor_number]
+                          Factor_sub(
+                            FactorSub_number(
+                             1
+                            ) [FactorSub_number]
+                          ) [Factor_sub]
                         ) [Term_factor]
                       ) [AddExpr_term]
                     ) [Expr_add]
@@ -99,15 +101,17 @@ INFO  16:01:03,878 - Program(
             ) [StatementList_more]
             Statement_designator(
               DesignatorStatement_assign(
-                Designator_ident(
+                Designator_var(
                  b
-                ) [Designator_ident]
+                ) [Designator_var]
                 Expr_add(
                   AddExpr_term(
                     Term_factor(
-                      Factor_number(
-                       2
-                      ) [Factor_number]
+                      Factor_sub(
+                        FactorSub_number(
+                         2
+                        ) [FactorSub_number]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                 ) [Expr_add]
@@ -119,15 +123,17 @@ INFO  16:01:03,878 - Program(
         ) [StatementList_more]
         Statement_designator(
           DesignatorStatement_assign(
-            Designator_ident(
+            Designator_var(
              b
-            ) [Designator_ident]
+            ) [Designator_var]
             Expr_add(
               AddExpr_term(
                 Term_factor(
-                  Factor_number(
-                   3
-                  ) [Factor_number]
+                  Factor_sub(
+                    FactorSub_number(
+                     3
+                    ) [FactorSub_number]
+                  ) [Factor_sub]
                 ) [Term_factor]
               ) [AddExpr_term]
             ) [Expr_add]
@@ -137,8 +143,8 @@ INFO  16:01:03,878 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:01:03,878 - =================================================
-INFO  16:01:03,880 - =================================================
+INFO  19:17:30,471 - =================================================
+INFO  19:17:30,472 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -154,10 +160,4 @@ Meth len: int, 0, 1
    Var arr: Arr of notype, 0, 1 
 
 Type bool: bool, -1, -1 
-Prog GreskaDodela: notype, 0, 1 
-   Var a: int, 0, 0 
-   Var b: int, 1, 0 
-   Meth main: notype, 0, 0 
-
-
 

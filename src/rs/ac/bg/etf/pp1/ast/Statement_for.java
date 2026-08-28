@@ -1,18 +1,21 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/7/2026 16:1:0
+// 27/7/2026 19:17:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class Statement_for extends Statement {
 
+    private ForStart ForStart;
     private ForInitOpt ForInitOpt;
     private ForCondOpt ForCondOpt;
     private ForStepOpt ForStepOpt;
     private Statement Statement;
 
-    public Statement_for (ForInitOpt ForInitOpt, ForCondOpt ForCondOpt, ForStepOpt ForStepOpt, Statement Statement) {
+    public Statement_for (ForStart ForStart, ForInitOpt ForInitOpt, ForCondOpt ForCondOpt, ForStepOpt ForStepOpt, Statement Statement) {
+        this.ForStart=ForStart;
+        if(ForStart!=null) ForStart.setParent(this);
         this.ForInitOpt=ForInitOpt;
         if(ForInitOpt!=null) ForInitOpt.setParent(this);
         this.ForCondOpt=ForCondOpt;
@@ -21,6 +24,14 @@ public class Statement_for extends Statement {
         if(ForStepOpt!=null) ForStepOpt.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
+    }
+
+    public ForStart getForStart() {
+        return ForStart;
+    }
+
+    public void setForStart(ForStart ForStart) {
+        this.ForStart=ForStart;
     }
 
     public ForInitOpt getForInitOpt() {
@@ -60,6 +71,7 @@ public class Statement_for extends Statement {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(ForStart!=null) ForStart.accept(visitor);
         if(ForInitOpt!=null) ForInitOpt.accept(visitor);
         if(ForCondOpt!=null) ForCondOpt.accept(visitor);
         if(ForStepOpt!=null) ForStepOpt.accept(visitor);
@@ -68,6 +80,7 @@ public class Statement_for extends Statement {
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(ForStart!=null) ForStart.traverseTopDown(visitor);
         if(ForInitOpt!=null) ForInitOpt.traverseTopDown(visitor);
         if(ForCondOpt!=null) ForCondOpt.traverseTopDown(visitor);
         if(ForStepOpt!=null) ForStepOpt.traverseTopDown(visitor);
@@ -75,6 +88,7 @@ public class Statement_for extends Statement {
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(ForStart!=null) ForStart.traverseBottomUp(visitor);
         if(ForInitOpt!=null) ForInitOpt.traverseBottomUp(visitor);
         if(ForCondOpt!=null) ForCondOpt.traverseBottomUp(visitor);
         if(ForStepOpt!=null) ForStepOpt.traverseBottomUp(visitor);
@@ -86,6 +100,12 @@ public class Statement_for extends Statement {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("Statement_for(\n");
+
+        if(ForStart!=null)
+            buffer.append(ForStart.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(ForInitOpt!=null)
             buffer.append(ForInitOpt.toString("  "+tab));

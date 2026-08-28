@@ -1,0 +1,35 @@
+// EXPECT: SEMANTIC>=5
+// EXPECT-ERR: Metoda noReturn nije void, a nema iskaz return
+// EXPECT-ERR: Metoda voidWithValue je void, pa return ne sme imati izraz
+// EXPECT-ERR: Tip izraza u return-u ne odgovara povratnom tipu metode wrongType
+// EXPECT-ERR: Iskaz break se ne nalazi unutar for petlje
+// EXPECT-ERR: Iskaz continue se ne nalazi unutar for petlje
+// Kontekstni uslovi za return, break i continue.
+
+program SemFlow
+
+int a;
+
+{
+	int noReturn()
+	{
+		a = 1;
+	}
+
+	void voidWithValue()
+	{
+		return 1;
+	}
+
+	int wrongType()
+	{
+		return 'c';
+	}
+
+	void main()
+	{
+		break;
+		continue;
+		for (; ; ) break;
+	}
+}

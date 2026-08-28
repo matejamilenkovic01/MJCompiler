@@ -1,41 +1,41 @@
-INFO  16:01:04,461 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/25_err_lexical.mj
-INFO  16:01:04,470 - #2 program
-INFO  16:01:04,470 - #45 LeksickaGreska
-INFO  16:01:04,470 - #45 int
-INFO  16:01:04,471 - #45 a
-INFO  16:01:04,471 - #34 ;
-INFO  16:01:04,471 - #43 {
-INFO  16:01:04,471 - #7 void
-INFO  16:01:04,471 - #45 main
-INFO  16:01:04,471 - #39 (
-INFO  16:01:04,472 - #40 )
-INFO  16:01:04,472 - #43 {
-INFO  16:01:04,472 - #45 a
-INFO  16:01:04,472 - #31 =
-INFO  16:01:04,472 - #46 1
-INFO  16:01:04,472 - #34 ;
-INFO  16:01:04,472 - #45 a
-INFO  16:01:04,472 - #31 =
-INFO  16:01:04,472 - #46 1
-INFO  16:01:04,472 - #46 2
-INFO  16:01:04,473 - #34 ;
-INFO  16:01:04,473 - #45 a
-INFO  16:01:04,473 - #31 =
-INFO  16:01:04,473 - #46 3
-INFO  16:01:04,473 - #46 4
-INFO  16:01:04,473 - #34 ;
-INFO  16:01:04,473 - #45 a
-INFO  16:01:04,473 - #31 =
-INFO  16:01:04,473 - #46 5
-INFO  16:01:04,473 - #46 6
-INFO  16:01:04,473 - #34 ;
-INFO  16:01:04,474 - #45 a
-INFO  16:01:04,474 - #31 =
-INFO  16:01:04,474 - #46 7
-INFO  16:01:04,474 - #34 ;
-INFO  16:01:04,474 - #44 }
-INFO  16:01:04,474 - #44 }
-INFO  16:01:04,474 - Program(
+INFO  19:17:31,085 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/25_err_lexical.mj
+INFO  19:17:31,093 - #2 program
+INFO  19:17:31,093 - #45 LeksickaGreska
+INFO  19:17:31,093 - #45 int
+INFO  19:17:31,093 - #45 a
+INFO  19:17:31,093 - #34 ;
+INFO  19:17:31,094 - #43 {
+INFO  19:17:31,094 - #7 void
+INFO  19:17:31,094 - #45 main
+INFO  19:17:31,094 - #39 (
+INFO  19:17:31,094 - #40 )
+INFO  19:17:31,094 - #43 {
+INFO  19:17:31,094 - #45 a
+INFO  19:17:31,094 - #31 =
+INFO  19:17:31,094 - #46 1
+INFO  19:17:31,094 - #34 ;
+INFO  19:17:31,095 - #45 a
+INFO  19:17:31,095 - #31 =
+INFO  19:17:31,095 - #46 1
+INFO  19:17:31,095 - #46 2
+INFO  19:17:31,095 - #34 ;
+INFO  19:17:31,095 - #45 a
+INFO  19:17:31,095 - #31 =
+INFO  19:17:31,095 - #46 3
+INFO  19:17:31,095 - #46 4
+INFO  19:17:31,096 - #34 ;
+INFO  19:17:31,096 - #45 a
+INFO  19:17:31,096 - #31 =
+INFO  19:17:31,096 - #46 5
+INFO  19:17:31,096 - #46 6
+INFO  19:17:31,096 - #34 ;
+INFO  19:17:31,096 - #45 a
+INFO  19:17:31,096 - #31 =
+INFO  19:17:31,096 - #46 7
+INFO  19:17:31,096 - #34 ;
+INFO  19:17:31,096 - #44 }
+INFO  19:17:31,096 - #44 }
+INFO  19:17:31,097 - Program(
   ProgramName(
    LeksickaGreska
   ) [ProgramName]
@@ -75,15 +75,17 @@ INFO  16:01:04,474 - Program(
                 ) [StatementList_epsilon]
                 Statement_designator(
                   DesignatorStatement_assign(
-                    Designator_ident(
+                    Designator_var(
                      a
-                    ) [Designator_ident]
+                    ) [Designator_var]
                     Expr_add(
                       AddExpr_term(
                         Term_factor(
-                          Factor_number(
-                           1
-                          ) [Factor_number]
+                          Factor_sub(
+                            FactorSub_number(
+                             1
+                            ) [FactorSub_number]
+                          ) [Factor_sub]
                         ) [Term_factor]
                       ) [AddExpr_term]
                     ) [Expr_add]
@@ -101,15 +103,17 @@ INFO  16:01:04,474 - Program(
         ) [StatementList_more]
         Statement_designator(
           DesignatorStatement_assign(
-            Designator_ident(
+            Designator_var(
              a
-            ) [Designator_ident]
+            ) [Designator_var]
             Expr_add(
               AddExpr_term(
                 Term_factor(
-                  Factor_number(
-                   7
-                  ) [Factor_number]
+                  Factor_sub(
+                    FactorSub_number(
+                     7
+                    ) [FactorSub_number]
+                  ) [Factor_sub]
                 ) [Term_factor]
               ) [AddExpr_term]
             ) [Expr_add]
@@ -119,8 +123,8 @@ INFO  16:01:04,474 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:01:04,474 - =================================================
-INFO  16:01:04,476 - =================================================
+INFO  19:17:31,097 - =================================================
+INFO  19:17:31,099 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -136,9 +140,4 @@ Meth len: int, 0, 1
    Var arr: Arr of notype, 0, 1 
 
 Type bool: bool, -1, -1 
-Prog LeksickaGreska: notype, 0, 1 
-   Var a: int, 0, 0 
-   Meth main: notype, 0, 0 
-
-
 

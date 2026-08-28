@@ -1,0 +1,246 @@
+INFO  19:17:32,343 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/43_sem_assign.mj
+INFO  19:17:32,351 - #2 program
+INFO  19:17:32,351 - #45 SemAssign
+INFO  19:17:32,351 - #3 const
+INFO  19:17:32,351 - #45 int
+INFO  19:17:32,351 - #45 k
+INFO  19:17:32,351 - #31 =
+INFO  19:17:32,351 - #46 5
+INFO  19:17:32,351 - #34 ;
+INFO  19:17:32,351 - #45 int
+INFO  19:17:32,351 - #45 a
+INFO  19:17:32,351 - #34 ;
+INFO  19:17:32,352 - #45 char
+INFO  19:17:32,352 - #45 c
+INFO  19:17:32,352 - #34 ;
+INFO  19:17:32,352 - #45 int
+INFO  19:17:32,352 - #45 niz
+INFO  19:17:32,352 - #41 [
+INFO  19:17:32,352 - #42 ]
+INFO  19:17:32,352 - #34 ;
+INFO  19:17:32,352 - #43 {
+INFO  19:17:32,352 - #7 void
+INFO  19:17:32,352 - #45 main
+INFO  19:17:32,352 - #39 (
+INFO  19:17:32,352 - #40 )
+INFO  19:17:32,352 - #43 {
+INFO  19:17:32,353 - #45 k
+INFO  19:17:32,353 - #31 =
+INFO  19:17:32,353 - #46 1
+INFO  19:17:32,353 - #34 ;
+INFO  19:17:32,353 - #45 a
+INFO  19:17:32,353 - #31 =
+INFO  19:17:32,353 - #45 c
+INFO  19:17:32,353 - #34 ;
+INFO  19:17:32,353 - #45 c
+INFO  19:17:32,353 - #32 ++
+INFO  19:17:32,353 - #34 ;
+INFO  19:17:32,353 - #45 niz
+INFO  19:17:32,353 - #32 ++
+INFO  19:17:32,353 - #34 ;
+INFO  19:17:32,353 - #6 read
+INFO  19:17:32,353 - #39 (
+INFO  19:17:32,353 - #45 niz
+INFO  19:17:32,353 - #40 )
+INFO  19:17:32,353 - #34 ;
+INFO  19:17:32,353 - #5 print
+INFO  19:17:32,353 - #39 (
+INFO  19:17:32,354 - #45 niz
+INFO  19:17:32,354 - #40 )
+INFO  19:17:32,354 - #34 ;
+INFO  19:17:32,354 - #44 }
+INFO  19:17:32,354 - #44 }
+INFO  19:17:32,354 - Program(
+  ProgramName(
+   SemAssign
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_var(
+      DeclList_var(
+        DeclList_const(
+          DeclList_epsilon(
+          ) [DeclList_epsilon]
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            ConstItemList_one(
+              ConstItem(
+               k
+                Constant_number(
+                 5
+                ) [Constant_number]
+              ) [ConstItem]
+            ) [ConstItemList_one]
+          ) [ConstDecl]
+        ) [DeclList_const]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarItemList_one(
+            VarItem_var(
+             a
+            ) [VarItem_var]
+          ) [VarItemList_one]
+        ) [VarDecl]
+      ) [DeclList_var]
+      VarDecl(
+        Type(
+         char
+        ) [Type]
+        VarItemList_one(
+          VarItem_var(
+           c
+          ) [VarItem_var]
+        ) [VarItemList_one]
+      ) [VarDecl]
+    ) [DeclList_var]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_one(
+        VarItem_array(
+         niz
+        ) [VarItem_array]
+      ) [VarItemList_one]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_more(
+                StatementList_more(
+                  StatementList_epsilon(
+                  ) [StatementList_epsilon]
+                  Statement_designator(
+                    DesignatorStatement_assign(
+                      Designator_var(
+                       k
+                      ) [Designator_var]
+                      Expr_add(
+                        AddExpr_term(
+                          Term_factor(
+                            Factor_sub(
+                              FactorSub_number(
+                               1
+                              ) [FactorSub_number]
+                            ) [Factor_sub]
+                          ) [Term_factor]
+                        ) [AddExpr_term]
+                      ) [Expr_add]
+                    ) [DesignatorStatement_assign]
+                  ) [Statement_designator]
+                ) [StatementList_more]
+                Statement_designator(
+                  DesignatorStatement_assign(
+                    Designator_var(
+                     a
+                    ) [Designator_var]
+                    Expr_add(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_designator(
+                              Designator_var(
+                               c
+                              ) [Designator_var]
+                            ) [FactorSub_designator]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [Expr_add]
+                  ) [DesignatorStatement_assign]
+                ) [Statement_designator]
+              ) [StatementList_more]
+              Statement_designator(
+                DesignatorStatement_inc(
+                  Designator_var(
+                   c
+                  ) [Designator_var]
+                ) [DesignatorStatement_inc]
+              ) [Statement_designator]
+            ) [StatementList_more]
+            Statement_designator(
+              DesignatorStatement_inc(
+                Designator_var(
+                 niz
+                ) [Designator_var]
+              ) [DesignatorStatement_inc]
+            ) [Statement_designator]
+          ) [StatementList_more]
+          Statement_read(
+            Designator_var(
+             niz
+            ) [Designator_var]
+          ) [Statement_read]
+        ) [StatementList_more]
+        Statement_print(
+          Expr_add(
+            AddExpr_term(
+              Term_factor(
+                Factor_sub(
+                  FactorSub_designator(
+                    Designator_var(
+                     niz
+                    ) [Designator_var]
+                  ) [FactorSub_designator]
+                ) [Factor_sub]
+              ) [Term_factor]
+            ) [AddExpr_term]
+          ) [Expr_add]
+          PrintWidthOpt_epsilon(
+          ) [PrintWidthOpt_epsilon]
+        ) [Statement_print]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  19:17:32,354 - =================================================
+INFO  19:17:32,356 - Pretraga na 21(k), nadjeno Con k: int, 5, 0
+INFO  19:17:32,356 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,356 - Pretraga na 22(c), nadjeno Var c: char, 1, 0
+INFO  19:17:32,356 - Pretraga na 23(c), nadjeno Var c: char, 1, 0
+INFO  19:17:32,356 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  19:17:32,356 - Pretraga na 25(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  19:17:32,357 - Pretraga na 26(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  19:17:32,357 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog SemAssign: notype, 0, 1 
+   Con k: int, 5, 0 
+   Var a: int, 0, 0 
+   Var c: char, 1, 0 
+   Var niz: Arr of int, 2, 0 
+   Meth main: notype, 0, 0 
+
+
+

@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/7/2026 16:1:0
+// 27/7/2026 19:17:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Designator_ident extends Designator {
+public class FactorSub_number extends FactorSub {
 
-    private String name;
+    private Integer val;
 
-    public Designator_ident (String name) {
-        this.name=name;
+    public FactorSub_number (Integer val) {
+        this.val=val;
     }
 
-    public String getName() {
-        return name;
+    public Integer getVal() {
+        return val;
     }
 
-    public void setName(String name) {
-        this.name=name;
+    public void setVal(Integer val) {
+        this.val=val;
     }
 
     public void accept(Visitor visitor) {
@@ -39,13 +39,13 @@ public class Designator_ident extends Designator {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("Designator_ident(\n");
+        buffer.append("FactorSub_number(\n");
 
-        buffer.append(" "+tab+name);
+        buffer.append(" "+tab+val);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [Designator_ident]");
+        buffer.append(") [FactorSub_number]");
         return buffer.toString();
     }
 }

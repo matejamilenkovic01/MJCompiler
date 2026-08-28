@@ -1,0 +1,246 @@
+INFO  19:17:32,645 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/45_sem_flow.mj
+INFO  19:17:32,654 - #2 program
+INFO  19:17:32,654 - #45 SemFlow
+INFO  19:17:32,654 - #45 int
+INFO  19:17:32,654 - #45 a
+INFO  19:17:32,654 - #34 ;
+INFO  19:17:32,654 - #43 {
+INFO  19:17:32,655 - #45 int
+INFO  19:17:32,655 - #45 noReturn
+INFO  19:17:32,655 - #39 (
+INFO  19:17:32,655 - #40 )
+INFO  19:17:32,655 - #43 {
+INFO  19:17:32,655 - #45 a
+INFO  19:17:32,655 - #31 =
+INFO  19:17:32,655 - #46 1
+INFO  19:17:32,655 - #34 ;
+INFO  19:17:32,655 - #44 }
+INFO  19:17:32,656 - #7 void
+INFO  19:17:32,656 - #45 voidWithValue
+INFO  19:17:32,656 - #39 (
+INFO  19:17:32,656 - #40 )
+INFO  19:17:32,656 - #43 {
+INFO  19:17:32,656 - #8 return
+INFO  19:17:32,656 - #46 1
+INFO  19:17:32,656 - #34 ;
+INFO  19:17:32,656 - #44 }
+INFO  19:17:32,656 - #45 int
+INFO  19:17:32,656 - #45 wrongType
+INFO  19:17:32,656 - #39 (
+INFO  19:17:32,656 - #40 )
+INFO  19:17:32,656 - #43 {
+INFO  19:17:32,656 - #8 return
+INFO  19:17:32,656 - #48 c
+INFO  19:17:32,656 - #34 ;
+INFO  19:17:32,656 - #44 }
+INFO  19:17:32,656 - #7 void
+INFO  19:17:32,656 - #45 main
+INFO  19:17:32,657 - #39 (
+INFO  19:17:32,657 - #40 )
+INFO  19:17:32,657 - #43 {
+INFO  19:17:32,657 - #11 break
+INFO  19:17:32,657 - #34 ;
+INFO  19:17:32,657 - #12 continue
+INFO  19:17:32,657 - #34 ;
+INFO  19:17:32,657 - #13 for
+INFO  19:17:32,657 - #39 (
+INFO  19:17:32,657 - #34 ;
+INFO  19:17:32,657 - #34 ;
+INFO  19:17:32,657 - #40 )
+INFO  19:17:32,657 - #11 break
+INFO  19:17:32,657 - #34 ;
+INFO  19:17:32,657 - #44 }
+INFO  19:17:32,657 - #44 }
+INFO  19:17:32,658 - Program(
+  ProgramName(
+   SemFlow
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_epsilon(
+    ) [DeclList_epsilon]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_one(
+        VarItem_var(
+         a
+        ) [VarItem_var]
+      ) [VarItemList_one]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_more(
+      MethodDeclList_more(
+        MethodDeclList_more(
+          MethodDeclList_epsilon(
+          ) [MethodDeclList_epsilon]
+          MethodDecl(
+            MethodTypeName(
+              RetType_type(
+                Type(
+                 int
+                ) [Type]
+              ) [RetType_type]
+             noReturn
+            ) [MethodTypeName]
+            FormParsOpt_epsilon(
+            ) [FormParsOpt_epsilon]
+            VarDeclListOpt_epsilon(
+            ) [VarDeclListOpt_epsilon]
+            StatementList_more(
+              StatementList_epsilon(
+              ) [StatementList_epsilon]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_var(
+                   a
+                  ) [Designator_var]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_number(
+                           1
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_more]
+          ) [MethodDecl]
+        ) [MethodDeclList_more]
+        MethodDecl(
+          MethodTypeName(
+            RetType_void(
+            ) [RetType_void]
+           voidWithValue
+          ) [MethodTypeName]
+          FormParsOpt_epsilon(
+          ) [FormParsOpt_epsilon]
+          VarDeclListOpt_epsilon(
+          ) [VarDeclListOpt_epsilon]
+          StatementList_more(
+            StatementList_epsilon(
+            ) [StatementList_epsilon]
+            Statement_return(
+              ReturnExprOpt_expr(
+                Expr_add(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_sub(
+                        FactorSub_number(
+                         1
+                        ) [FactorSub_number]
+                      ) [Factor_sub]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [Expr_add]
+              ) [ReturnExprOpt_expr]
+            ) [Statement_return]
+          ) [StatementList_more]
+        ) [MethodDecl]
+      ) [MethodDeclList_more]
+      MethodDecl(
+        MethodTypeName(
+          RetType_type(
+            Type(
+             int
+            ) [Type]
+          ) [RetType_type]
+         wrongType
+        ) [MethodTypeName]
+        FormParsOpt_epsilon(
+        ) [FormParsOpt_epsilon]
+        VarDeclListOpt_epsilon(
+        ) [VarDeclListOpt_epsilon]
+        StatementList_more(
+          StatementList_epsilon(
+          ) [StatementList_epsilon]
+          Statement_return(
+            ReturnExprOpt_expr(
+              Expr_add(
+                AddExpr_term(
+                  Term_factor(
+                    Factor_sub(
+                      FactorSub_character(
+                       c
+                      ) [FactorSub_character]
+                    ) [Factor_sub]
+                  ) [Term_factor]
+                ) [AddExpr_term]
+              ) [Expr_add]
+            ) [ReturnExprOpt_expr]
+          ) [Statement_return]
+        ) [StatementList_more]
+      ) [MethodDecl]
+    ) [MethodDeclList_more]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_epsilon(
+            ) [StatementList_epsilon]
+            Statement_break(
+            ) [Statement_break]
+          ) [StatementList_more]
+          Statement_continue(
+          ) [Statement_continue]
+        ) [StatementList_more]
+        Statement_for(
+          ForStart(
+          ) [ForStart]
+          ForInitOpt_epsilon(
+          ) [ForInitOpt_epsilon]
+          ForCondOpt_epsilon(
+          ) [ForCondOpt_epsilon]
+          ForStepOpt_epsilon(
+          ) [ForStepOpt_epsilon]
+          Statement_break(
+          ) [Statement_break]
+        ) [Statement_for]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  19:17:32,658 - =================================================
+INFO  19:17:32,660 - Pretraga na 16(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,660 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog SemFlow: notype, 0, 1 
+   Var a: int, 0, 0 
+   Meth noReturn: int, 0, 0 
+
+   Meth voidWithValue: notype, 0, 0 
+
+   Meth wrongType: int, 0, 0 
+
+   Meth main: notype, 0, 0 
+
+
+

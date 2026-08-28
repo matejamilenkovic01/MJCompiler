@@ -1,0 +1,22 @@
+// EXPECT: SEMANTIC>=4
+// EXPECT-ERR: Pristup nedefinisanom simbolu: nepostojeci
+// EXPECT-ERR: Indeksira se a, sto nije niz
+// EXPECT-ERR: Indeks niza niz nije tipa int
+// EXPECT-ERR: Polje length se trazi nad a, sto nije niz
+// Kontekstni uslovi za Designator.
+
+program SemDesignator
+
+int a;
+int niz[];
+char c;
+
+{
+	void main()
+	{
+		a = nepostojeci;
+		a = a[1];
+		a = niz[c];
+		a = a.length;
+	}
+}

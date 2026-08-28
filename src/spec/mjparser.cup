@@ -85,7 +85,11 @@ terminal Character CHARACTER;
 
 
 /* ---- Deklaracije ---- */
-nonterminal Program, ProgramName, DeclList, Type;
+nonterminal Program, ProgramName, DeclList;
+/* Type nosi Struct da bi "new Type [ Expr ]" citao tip sa svog cvora, a ne iz
+   deljivog polja currentType. Bez toga ugnezdeno "new int[ new char[2].length ]"
+   procita tip unutrasnjeg new-a, jer se deca posecuju pre roditelja. */
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 nonterminal ConstDecl, ConstItemList, ConstItem, Constant;
 nonterminal VarDecl, VarItemList, VarItem;
 nonterminal MethodDeclList, MethodDecl, MethodTypeName, RetType;
@@ -93,14 +97,20 @@ nonterminal FormParsOpt, FormPars, FormParDecl;
 nonterminal VarDeclListOpt;
 
 /* ---- Iskazi ---- */
-nonterminal StatementList, Statement, DesignatorStatement, IfCondition;
+nonterminal StatementList, Statement, DesignatorStatement;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct IfCondition;
+/* Marker za kontekst petlje - vidi ForStart smenu nize. */
+nonterminal ForStart;
 nonterminal ActParsOpt, ActPars;
 nonterminal ForInitOpt, ForCondOpt, ForStepOpt;
 
 /* ---- Izrazi ---- */
-nonterminal Condition, CondTerm, CondFact, Relop;
-nonterminal Expr, AddExpr, Term, Factor, Designator, Addop, Mulop;
+nonterminal Relop;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, CondTerm, CondFact;
+nonterminal Addop, Mulop;
 nonterminal PrintWidthOpt, ReturnExprOpt;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorSub, Term, AddExpr, Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
 
 
 /* Jedina dozvoljena precedence direktiva - resava dangling-else konflikt. */
@@ -254,7 +264,7 @@ Statement ::=   (Statement_designator) DesignatorStatement SEMI
                 |
                 (Statement_print) PRINT LPAREN Expr PrintWidthOpt RPAREN SEMI
                 |
-                (Statement_for) FOR LPAREN ForInitOpt SEMI ForCondOpt SEMI ForStepOpt RPAREN Statement
+                (Statement_for) ForStart LPAREN ForInitOpt SEMI ForCondOpt SEMI ForStepOpt RPAREN Statement
                 |
                 (Statement_block) LBRACE StatementList RBRACE
                 |
@@ -278,6 +288,15 @@ IfCondition ::=     (IfCondition_cond) Condition
                     (IfCondition_err) error
                     {: parser.report_error("Oporavak od greske u uslovu if iskaza izvrsen do linije " + parser.lastTokenLine(), null); :}
                     ;
+
+/* Marker neterminal: nosi samo kljucnu rec "for", da bi semanticka analiza imala cvor
+   koji se poseti PRE tela petlje. Obilazak je bottom-up, pa se deca posecuju s leva na
+   desno - visit(ForStart) puca pre tela, visit(Statement_for) posle njega. Time brojac
+   ugnezdenosti petlji radi, sto je uslov za proveru break/continue.
+
+   Namerno BEZ epsilon smene (npr. "ForStart ::= | FOR"): epsilon je vec jednom oborio
+   LALR(1) svojstvo kod Unary/Factor pokusaja. Ovako se samo siftuje FOR, bez odluke. */
+ForStart ::= (ForStart) FOR;
 
 ReturnExprOpt ::=   (ReturnExprOpt_expr) Expr
                     |
@@ -374,7 +393,8 @@ Relop ::=   (Relop_eq) EQ
 
 
 /* ============================================================
-   Expr = ["-"] Term {Addop Term} | Condition "?" Expr ":" Expr.
+   Expr = Term {Addop Term} | Condition "?" Expr ":" Expr.
+   Unarni minus je spusten na nivo Faktora (vidi Factor/FactorSub nize).
 
    Napomena: aritmeticki deo je izdvojen u sopstveni neterminal AddExpr. Bez njega
    bi vazilo Expr => CondFact => Expr (ciklus jedinicnih smena), sto gramatiku cini
@@ -390,8 +410,6 @@ Expr ::=    (Expr_add) AddExpr
 AddExpr ::=     (AddExpr_addop) AddExpr Addop Term
                 |
                 (AddExpr_term) Term
-                |
-                (AddExpr_neg) MINUS Term
                 ;
 
 Addop ::=   (Addop_plus) PLUS
@@ -411,22 +429,43 @@ Mulop ::=   (Mulop_mul) MUL
             (Mulop_mod) MOD
             ;
 
-/* Factor = Designator ["(" [ActPars] ")"] | numConst | charConst | boolConst
-            | "new" Type "[" Expr "]" | "(" Expr ")". */
-Factor ::=  (Factor_designator) Designator
+/* Factor = ["-"] FactorSub.
+   FactorSub = Designator ["(" [ActPars] ")"] | numConst | charConst | boolConst
+             | "new" Type "[" Expr "]" | "(" Expr ")".
+
+   Unarni minus stoji ovde, a ne kao ["-"] ispred prvog Term-a u Expr-u. Razlog je
+   citljivost stabla: uz "MINUS Term" izraz "-3 * 2" daje AddExpr_neg(Term_mulop(...)),
+   dakle -(3*2), pa negacija obuhvata ceo proizvod. Ovako se odnosi na tacno jedan
+   faktor, sto je i ocekivano ponasanje.
+
+   Zasto NE "Factor ::= Unary FactorSub" sa "Unary ::= MINUS | epsilon": epsilon smena
+   bi morala da se redukuje pre nego sto se vidi IDENT, a u stanju posle
+   "Designator ASSIGN" parser tada jos ne zna da li sledi Expr (dodela) ili Designator
+   (findAny / map). CUP prijavljuje shift/reduce konflikt:
+       between Unary ::= (*)  and  Designator ::= (*) IDENT  under symbol IDENT
+   Bez epsilona odluke nema - IDENT se prosto siftuje - pa je gramatika i dalje LALR(1).
+
+   Napomena: ovo prihvata i "a + -b" i "3 * -2", sto je nadskup onoga sto [MJ] navodi
+   kao Expr = ["-"] Term {Addop Term}. Nijedan ispravan program se ne odbija. */
+Factor ::=  (Factor_sub) FactorSub
             |
-            (Factor_call) Designator LPAREN ActParsOpt RPAREN
-            |
-            (Factor_number) NUMBER:val
-            |
-            (Factor_character) CHARACTER:val
-            |
-            (Factor_bool) BOOL:val
-            |
-            (Factor_newArray) NEW Type LBRACK Expr RBRACK
-            |
-            (Factor_expr) LPAREN Expr RPAREN
+            (Factor_neg) MINUS FactorSub
             ;
+
+FactorSub ::=   (FactorSub_designator) Designator
+                |
+                (FactorSub_call) Designator LPAREN ActParsOpt RPAREN
+                |
+                (FactorSub_number) NUMBER:val
+                |
+                (FactorSub_character) CHARACTER:val
+                |
+                (FactorSub_bool) BOOL:val
+                |
+                (FactorSub_newArray) NEW Type LBRACK Expr RBRACK
+                |
+                (FactorSub_expr) LPAREN Expr RPAREN
+                ;
 
 
 /* ============================================================
@@ -435,7 +474,7 @@ Factor ::=  (Factor_designator) Designator
    je ugradjeno polje "length".
    ============================================================ */
 
-Designator ::=  (Designator_ident) IDENT:name
+Designator ::=  (Designator_var) IDENT:name
                 |
                 (Designator_array) Designator LBRACK Expr RBRACK
                 |

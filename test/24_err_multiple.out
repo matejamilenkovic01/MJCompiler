@@ -1,57 +1,57 @@
-INFO  16:01:04,310 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/24_err_multiple.mj
-INFO  16:01:04,318 - #2 program
-INFO  16:01:04,318 - #45 ViseGresaka
-INFO  16:01:04,318 - #45 int
-INFO  16:01:04,318 - #45 a
-INFO  16:01:04,319 - #36 ,
-INFO  16:01:04,319 - #46 5
-INFO  16:01:04,319 - #36 ,
-INFO  16:01:04,319 - #45 b
-INFO  16:01:04,319 - #34 ;
-INFO  16:01:04,319 - #45 int
-INFO  16:01:04,319 - #45 c
-INFO  16:01:04,319 - #34 ;
-INFO  16:01:04,319 - #43 {
-INFO  16:01:04,319 - #7 void
-INFO  16:01:04,319 - #45 metoda
-INFO  16:01:04,320 - #39 (
-INFO  16:01:04,320 - #45 int
-INFO  16:01:04,320 - #45 x
-INFO  16:01:04,320 - #36 ,
-INFO  16:01:04,320 - #46 9
-INFO  16:01:04,320 - #40 )
-INFO  16:01:04,320 - #43 {
-INFO  16:01:04,320 - #44 }
-INFO  16:01:04,320 - #7 void
-INFO  16:01:04,320 - #45 main
-INFO  16:01:04,320 - #39 (
-INFO  16:01:04,320 - #40 )
-INFO  16:01:04,320 - #43 {
-INFO  16:01:04,321 - #45 a
-INFO  16:01:04,321 - #31 =
-INFO  16:01:04,321 - #46 1
-INFO  16:01:04,321 - #34 ;
-INFO  16:01:04,321 - #9 if
-INFO  16:01:04,321 - #39 (
-INFO  16:01:04,321 - #45 a
-INFO  16:01:04,321 - #26 <
-INFO  16:01:04,321 - #40 )
-INFO  16:01:04,321 - #45 a
-INFO  16:01:04,321 - #31 =
-INFO  16:01:04,321 - #46 0
-INFO  16:01:04,321 - #34 ;
-INFO  16:01:04,322 - #45 c
-INFO  16:01:04,322 - #31 =
-INFO  16:01:04,322 - #20 /
-INFO  16:01:04,322 - #46 2
-INFO  16:01:04,322 - #34 ;
-INFO  16:01:04,322 - #45 b
-INFO  16:01:04,322 - #31 =
-INFO  16:01:04,322 - #46 3
-INFO  16:01:04,322 - #34 ;
-INFO  16:01:04,322 - #44 }
-INFO  16:01:04,322 - #44 }
-INFO  16:01:04,322 - Program(
+INFO  19:17:30,930 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/24_err_multiple.mj
+INFO  19:17:30,939 - #2 program
+INFO  19:17:30,939 - #45 ViseGresaka
+INFO  19:17:30,939 - #45 int
+INFO  19:17:30,939 - #45 a
+INFO  19:17:30,939 - #36 ,
+INFO  19:17:30,939 - #46 5
+INFO  19:17:30,939 - #36 ,
+INFO  19:17:30,939 - #45 b
+INFO  19:17:30,939 - #34 ;
+INFO  19:17:30,940 - #45 int
+INFO  19:17:30,940 - #45 c
+INFO  19:17:30,940 - #34 ;
+INFO  19:17:30,940 - #43 {
+INFO  19:17:30,940 - #7 void
+INFO  19:17:30,940 - #45 metoda
+INFO  19:17:30,940 - #39 (
+INFO  19:17:30,940 - #45 int
+INFO  19:17:30,940 - #45 x
+INFO  19:17:30,940 - #36 ,
+INFO  19:17:30,940 - #46 9
+INFO  19:17:30,941 - #40 )
+INFO  19:17:30,941 - #43 {
+INFO  19:17:30,941 - #44 }
+INFO  19:17:30,941 - #7 void
+INFO  19:17:30,941 - #45 main
+INFO  19:17:30,941 - #39 (
+INFO  19:17:30,941 - #40 )
+INFO  19:17:30,942 - #43 {
+INFO  19:17:30,942 - #45 a
+INFO  19:17:30,942 - #31 =
+INFO  19:17:30,942 - #46 1
+INFO  19:17:30,942 - #34 ;
+INFO  19:17:30,942 - #9 if
+INFO  19:17:30,942 - #39 (
+INFO  19:17:30,942 - #45 a
+INFO  19:17:30,942 - #26 <
+INFO  19:17:30,942 - #40 )
+INFO  19:17:30,942 - #45 a
+INFO  19:17:30,942 - #31 =
+INFO  19:17:30,942 - #46 0
+INFO  19:17:30,942 - #34 ;
+INFO  19:17:30,943 - #45 c
+INFO  19:17:30,943 - #31 =
+INFO  19:17:30,943 - #20 /
+INFO  19:17:30,943 - #46 2
+INFO  19:17:30,943 - #34 ;
+INFO  19:17:30,943 - #45 b
+INFO  19:17:30,943 - #31 =
+INFO  19:17:30,943 - #46 3
+INFO  19:17:30,943 - #34 ;
+INFO  19:17:30,943 - #44 }
+INFO  19:17:30,943 - #44 }
+INFO  19:17:30,943 - Program(
   ProgramName(
    ViseGresaka
   ) [ProgramName]
@@ -138,15 +138,17 @@ INFO  16:01:04,322 - Program(
               ) [StatementList_epsilon]
               Statement_designator(
                 DesignatorStatement_assign(
-                  Designator_ident(
+                  Designator_var(
                    a
-                  ) [Designator_ident]
+                  ) [Designator_var]
                   Expr_add(
                     AddExpr_term(
                       Term_factor(
-                        Factor_number(
-                         1
-                        ) [Factor_number]
+                        Factor_sub(
+                          FactorSub_number(
+                           1
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
                       ) [Term_factor]
                     ) [AddExpr_term]
                   ) [Expr_add]
@@ -158,15 +160,17 @@ INFO  16:01:04,322 - Program(
               ) [IfCondition_err]
               Statement_designator(
                 DesignatorStatement_assign(
-                  Designator_ident(
+                  Designator_var(
                    a
-                  ) [Designator_ident]
+                  ) [Designator_var]
                   Expr_add(
                     AddExpr_term(
                       Term_factor(
-                        Factor_number(
-                         0
-                        ) [Factor_number]
+                        Factor_sub(
+                          FactorSub_number(
+                           0
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
                       ) [Term_factor]
                     ) [AddExpr_term]
                   ) [Expr_add]
@@ -179,15 +183,17 @@ INFO  16:01:04,322 - Program(
         ) [StatementList_more]
         Statement_designator(
           DesignatorStatement_assign(
-            Designator_ident(
+            Designator_var(
              b
-            ) [Designator_ident]
+            ) [Designator_var]
             Expr_add(
               AddExpr_term(
                 Term_factor(
-                  Factor_number(
-                   3
-                  ) [Factor_number]
+                  Factor_sub(
+                    FactorSub_number(
+                     3
+                    ) [FactorSub_number]
+                  ) [Factor_sub]
                 ) [Term_factor]
               ) [AddExpr_term]
             ) [Expr_add]
@@ -197,8 +203,8 @@ INFO  16:01:04,322 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:01:04,323 - =================================================
-INFO  16:01:04,324 - =================================================
+INFO  19:17:30,944 - =================================================
+INFO  19:17:30,945 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -214,14 +220,4 @@ Meth len: int, 0, 1
    Var arr: Arr of notype, 0, 1 
 
 Type bool: bool, -1, -1 
-Prog ViseGresaka: notype, 0, 1 
-   Var a: int, 0, 0 
-   Var b: int, 1, 0 
-   Var c: int, 2, 0 
-   Meth metoda: notype, 0, 1 
-      Var x: int, 0, 1 
-
-   Meth main: notype, 0, 0 
-
-
 

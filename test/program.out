@@ -1,63 +1,69 @@
-INFO  16:01:05,291 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/program.mj
-INFO  16:01:05,299 - #2 program
-INFO  16:01:05,299 - #45 Macko
-INFO  16:01:05,299 - #45 int
-INFO  16:01:05,299 - #45 a
-INFO  16:01:05,299 - #36 ,
-INFO  16:01:05,299 - #45 b
-INFO  16:01:05,300 - #36 ,
-INFO  16:01:05,300 - #45 c
-INFO  16:01:05,300 - #34 ;
-INFO  16:01:05,300 - #43 {
-INFO  16:01:05,300 - #7 void
-INFO  16:01:05,300 - #45 main
-INFO  16:01:05,300 - #39 (
-INFO  16:01:05,300 - #40 )
-INFO  16:01:05,300 - #45 int
-INFO  16:01:05,300 - #45 a
-INFO  16:01:05,300 - #36 ,
-INFO  16:01:05,300 - #45 b
-INFO  16:01:05,300 - #41 [
-INFO  16:01:05,300 - #42 ]
-INFO  16:01:05,300 - #34 ;
-INFO  16:01:05,300 - #45 char
-INFO  16:01:05,301 - #45 eol
-INFO  16:01:05,301 - #34 ;
-INFO  16:01:05,301 - #43 {
-INFO  16:01:05,301 - #44 }
-INFO  16:01:05,301 - #7 void
-INFO  16:01:05,301 - #45 m1
-INFO  16:01:05,301 - #39 (
-INFO  16:01:05,301 - #45 int
-INFO  16:01:05,301 - #45 fp1
-INFO  16:01:05,301 - #36 ,
-INFO  16:01:05,301 - #45 char
-INFO  16:01:05,301 - #45 fp2
-INFO  16:01:05,301 - #36 ,
-INFO  16:01:05,301 - #45 bool
-INFO  16:01:05,301 - #45 fp3
-INFO  16:01:05,301 - #40 )
-INFO  16:01:05,302 - #45 int
-INFO  16:01:05,302 - #45 a
-INFO  16:01:05,302 - #36 ,
-INFO  16:01:05,302 - #45 b
-INFO  16:01:05,302 - #41 [
-INFO  16:01:05,302 - #42 ]
-INFO  16:01:05,302 - #34 ;
-INFO  16:01:05,302 - #45 int
-INFO  16:01:05,302 - #45 x
-INFO  16:01:05,302 - #41 [
-INFO  16:01:05,302 - #42 ]
-INFO  16:01:05,302 - #36 ,
-INFO  16:01:05,302 - #45 y
-INFO  16:01:05,302 - #34 ;
-INFO  16:01:05,302 - #45 char
-INFO  16:01:05,302 - #45 eol
-INFO  16:01:05,302 - #34 ;
-INFO  16:01:05,302 - #43 {
-INFO  16:01:05,302 - #44 }
-INFO  16:01:05,302 - #44 }
-INFO  16:01:05,303 - Program(
+INFO  19:17:33,853 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/program.mj
+INFO  19:17:33,861 - #2 program
+INFO  19:17:33,861 - #45 Macko
+INFO  19:17:33,861 - #45 int
+INFO  19:17:33,861 - #45 a
+INFO  19:17:33,861 - #36 ,
+INFO  19:17:33,861 - #45 b
+INFO  19:17:33,861 - #36 ,
+INFO  19:17:33,862 - #45 c
+INFO  19:17:33,862 - #34 ;
+INFO  19:17:33,862 - #43 {
+INFO  19:17:33,862 - #7 void
+INFO  19:17:33,862 - #45 main
+INFO  19:17:33,862 - #39 (
+INFO  19:17:33,862 - #40 )
+INFO  19:17:33,862 - #45 int
+INFO  19:17:33,862 - #45 a
+INFO  19:17:33,862 - #36 ,
+INFO  19:17:33,862 - #45 b
+INFO  19:17:33,862 - #41 [
+INFO  19:17:33,862 - #42 ]
+INFO  19:17:33,862 - #34 ;
+INFO  19:17:33,862 - #45 char
+INFO  19:17:33,862 - #45 eol
+INFO  19:17:33,862 - #34 ;
+INFO  19:17:33,863 - #43 {
+INFO  19:17:33,863 - #5 print
+INFO  19:17:33,863 - #39 (
+INFO  19:17:33,863 - #18 -
+INFO  19:17:33,863 - #46 3
+INFO  19:17:33,863 - #40 )
+INFO  19:17:33,863 - #34 ;
+INFO  19:17:33,863 - #44 }
+INFO  19:17:33,863 - #7 void
+INFO  19:17:33,863 - #45 m1
+INFO  19:17:33,863 - #39 (
+INFO  19:17:33,863 - #45 int
+INFO  19:17:33,863 - #45 fp1
+INFO  19:17:33,863 - #36 ,
+INFO  19:17:33,863 - #45 char
+INFO  19:17:33,863 - #45 fp2
+INFO  19:17:33,864 - #36 ,
+INFO  19:17:33,864 - #45 bool
+INFO  19:17:33,864 - #45 fp3
+INFO  19:17:33,864 - #40 )
+INFO  19:17:33,864 - #45 int
+INFO  19:17:33,864 - #45 a
+INFO  19:17:33,864 - #36 ,
+INFO  19:17:33,864 - #45 b
+INFO  19:17:33,864 - #41 [
+INFO  19:17:33,864 - #42 ]
+INFO  19:17:33,864 - #34 ;
+INFO  19:17:33,864 - #45 int
+INFO  19:17:33,864 - #45 x
+INFO  19:17:33,864 - #41 [
+INFO  19:17:33,864 - #42 ]
+INFO  19:17:33,864 - #36 ,
+INFO  19:17:33,864 - #45 y
+INFO  19:17:33,864 - #34 ;
+INFO  19:17:33,864 - #45 char
+INFO  19:17:33,864 - #45 eol
+INFO  19:17:33,864 - #34 ;
+INFO  19:17:33,864 - #43 {
+INFO  19:17:33,864 - #44 }
+INFO  19:17:33,864 - #44 }
+INFO  19:17:33,865 - Program(
   ProgramName(
    Macko
   ) [ProgramName]
@@ -128,8 +134,25 @@ INFO  16:01:05,303 - Program(
             ) [VarItemList_one]
           ) [VarDecl]
         ) [VarDeclListOpt_more]
-        StatementList_epsilon(
-        ) [StatementList_epsilon]
+        StatementList_more(
+          StatementList_epsilon(
+          ) [StatementList_epsilon]
+          Statement_print(
+            Expr_add(
+              AddExpr_term(
+                Term_factor(
+                  Factor_neg(
+                    FactorSub_number(
+                     3
+                    ) [FactorSub_number]
+                  ) [Factor_neg]
+                ) [Term_factor]
+              ) [AddExpr_term]
+            ) [Expr_add]
+            PrintWidthOpt_epsilon(
+            ) [PrintWidthOpt_epsilon]
+          ) [Statement_print]
+        ) [StatementList_more]
       ) [MethodDecl]
     ) [MethodDeclList_more]
     MethodDecl(
@@ -217,8 +240,8 @@ INFO  16:01:05,303 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:01:05,303 - =================================================
-INFO  16:01:05,304 - =================================================
+INFO  19:17:33,865 - =================================================
+INFO  19:17:33,867 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -255,4 +278,4 @@ Prog Macko: notype, 0, 1
 
 
 
-INFO  16:01:05,305 - Parsiranje uspesno zavrseno!
+INFO  19:17:33,867 - Parsiranje uspesno zavrseno!

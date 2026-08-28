@@ -1,0 +1,409 @@
+INFO  19:17:32,494 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/44_sem_call.mj
+INFO  19:17:32,502 - #2 program
+INFO  19:17:32,503 - #45 SemCall
+INFO  19:17:32,503 - #45 int
+INFO  19:17:32,503 - #45 a
+INFO  19:17:32,503 - #34 ;
+INFO  19:17:32,503 - #43 {
+INFO  19:17:32,503 - #45 int
+INFO  19:17:32,503 - #45 f
+INFO  19:17:32,503 - #39 (
+INFO  19:17:32,503 - #45 int
+INFO  19:17:32,504 - #45 x
+INFO  19:17:32,504 - #36 ,
+INFO  19:17:32,504 - #45 char
+INFO  19:17:32,504 - #45 y
+INFO  19:17:32,504 - #40 )
+INFO  19:17:32,504 - #43 {
+INFO  19:17:32,504 - #8 return
+INFO  19:17:32,504 - #46 1
+INFO  19:17:32,504 - #34 ;
+INFO  19:17:32,504 - #44 }
+INFO  19:17:32,504 - #7 void
+INFO  19:17:32,504 - #45 g
+INFO  19:17:32,505 - #39 (
+INFO  19:17:32,505 - #40 )
+INFO  19:17:32,505 - #43 {
+INFO  19:17:32,505 - #8 return
+INFO  19:17:32,505 - #34 ;
+INFO  19:17:32,505 - #44 }
+INFO  19:17:32,505 - #7 void
+INFO  19:17:32,505 - #45 main
+INFO  19:17:32,505 - #39 (
+INFO  19:17:32,505 - #40 )
+INFO  19:17:32,505 - #43 {
+INFO  19:17:32,505 - #45 a
+INFO  19:17:32,505 - #31 =
+INFO  19:17:32,505 - #45 f
+INFO  19:17:32,505 - #39 (
+INFO  19:17:32,505 - #46 1
+INFO  19:17:32,505 - #40 )
+INFO  19:17:32,505 - #34 ;
+INFO  19:17:32,505 - #45 a
+INFO  19:17:32,505 - #31 =
+INFO  19:17:32,505 - #45 f
+INFO  19:17:32,506 - #39 (
+INFO  19:17:32,506 - #46 1
+INFO  19:17:32,506 - #36 ,
+INFO  19:17:32,506 - #46 2
+INFO  19:17:32,506 - #40 )
+INFO  19:17:32,506 - #34 ;
+INFO  19:17:32,506 - #45 a
+INFO  19:17:32,506 - #31 =
+INFO  19:17:32,506 - #45 a
+INFO  19:17:32,506 - #39 (
+INFO  19:17:32,506 - #46 1
+INFO  19:17:32,506 - #40 )
+INFO  19:17:32,506 - #34 ;
+INFO  19:17:32,506 - #45 f
+INFO  19:17:32,506 - #39 (
+INFO  19:17:32,506 - #46 1
+INFO  19:17:32,506 - #36 ,
+INFO  19:17:32,506 - #48 c
+INFO  19:17:32,506 - #40 )
+INFO  19:17:32,506 - #34 ;
+INFO  19:17:32,506 - #45 a
+INFO  19:17:32,506 - #31 =
+INFO  19:17:32,506 - #45 g
+INFO  19:17:32,506 - #39 (
+INFO  19:17:32,506 - #40 )
+INFO  19:17:32,506 - #34 ;
+INFO  19:17:32,507 - #44 }
+INFO  19:17:32,507 - #44 }
+INFO  19:17:32,507 - Program(
+  ProgramName(
+   SemCall
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_epsilon(
+    ) [DeclList_epsilon]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_one(
+        VarItem_var(
+         a
+        ) [VarItem_var]
+      ) [VarItemList_one]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_more(
+      MethodDeclList_more(
+        MethodDeclList_epsilon(
+        ) [MethodDeclList_epsilon]
+        MethodDecl(
+          MethodTypeName(
+            RetType_type(
+              Type(
+               int
+              ) [Type]
+            ) [RetType_type]
+           f
+          ) [MethodTypeName]
+          FormParsOpt_pars(
+            FormPars_more(
+              FormPars_one(
+                FormParDecl_var(
+                  Type(
+                   int
+                  ) [Type]
+                 x
+                ) [FormParDecl_var]
+              ) [FormPars_one]
+              FormParDecl_var(
+                Type(
+                 char
+                ) [Type]
+               y
+              ) [FormParDecl_var]
+            ) [FormPars_more]
+          ) [FormParsOpt_pars]
+          VarDeclListOpt_epsilon(
+          ) [VarDeclListOpt_epsilon]
+          StatementList_more(
+            StatementList_epsilon(
+            ) [StatementList_epsilon]
+            Statement_return(
+              ReturnExprOpt_expr(
+                Expr_add(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_sub(
+                        FactorSub_number(
+                         1
+                        ) [FactorSub_number]
+                      ) [Factor_sub]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [Expr_add]
+              ) [ReturnExprOpt_expr]
+            ) [Statement_return]
+          ) [StatementList_more]
+        ) [MethodDecl]
+      ) [MethodDeclList_more]
+      MethodDecl(
+        MethodTypeName(
+          RetType_void(
+          ) [RetType_void]
+         g
+        ) [MethodTypeName]
+        FormParsOpt_epsilon(
+        ) [FormParsOpt_epsilon]
+        VarDeclListOpt_epsilon(
+        ) [VarDeclListOpt_epsilon]
+        StatementList_more(
+          StatementList_epsilon(
+          ) [StatementList_epsilon]
+          Statement_return(
+            ReturnExprOpt_epsilon(
+            ) [ReturnExprOpt_epsilon]
+          ) [Statement_return]
+        ) [StatementList_more]
+      ) [MethodDecl]
+    ) [MethodDeclList_more]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_more(
+                StatementList_epsilon(
+                ) [StatementList_epsilon]
+                Statement_designator(
+                  DesignatorStatement_assign(
+                    Designator_var(
+                     a
+                    ) [Designator_var]
+                    Expr_add(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_call(
+                              Designator_var(
+                               f
+                              ) [Designator_var]
+                              ActParsOpt_pars(
+                                ActPars_one(
+                                  Expr_add(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_sub(
+                                          FactorSub_number(
+                                           1
+                                          ) [FactorSub_number]
+                                        ) [Factor_sub]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                  ) [Expr_add]
+                                ) [ActPars_one]
+                              ) [ActParsOpt_pars]
+                            ) [FactorSub_call]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [Expr_add]
+                  ) [DesignatorStatement_assign]
+                ) [Statement_designator]
+              ) [StatementList_more]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_var(
+                   a
+                  ) [Designator_var]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_call(
+                            Designator_var(
+                             f
+                            ) [Designator_var]
+                            ActParsOpt_pars(
+                              ActPars_more(
+                                ActPars_one(
+                                  Expr_add(
+                                    AddExpr_term(
+                                      Term_factor(
+                                        Factor_sub(
+                                          FactorSub_number(
+                                           1
+                                          ) [FactorSub_number]
+                                        ) [Factor_sub]
+                                      ) [Term_factor]
+                                    ) [AddExpr_term]
+                                  ) [Expr_add]
+                                ) [ActPars_one]
+                                Expr_add(
+                                  AddExpr_term(
+                                    Term_factor(
+                                      Factor_sub(
+                                        FactorSub_number(
+                                         2
+                                        ) [FactorSub_number]
+                                      ) [Factor_sub]
+                                    ) [Term_factor]
+                                  ) [AddExpr_term]
+                                ) [Expr_add]
+                              ) [ActPars_more]
+                            ) [ActParsOpt_pars]
+                          ) [FactorSub_call]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_more]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_var(
+                 a
+                ) [Designator_var]
+                Expr_add(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_sub(
+                        FactorSub_call(
+                          Designator_var(
+                           a
+                          ) [Designator_var]
+                          ActParsOpt_pars(
+                            ActPars_one(
+                              Expr_add(
+                                AddExpr_term(
+                                  Term_factor(
+                                    Factor_sub(
+                                      FactorSub_number(
+                                       1
+                                      ) [FactorSub_number]
+                                    ) [Factor_sub]
+                                  ) [Term_factor]
+                                ) [AddExpr_term]
+                              ) [Expr_add]
+                            ) [ActPars_one]
+                          ) [ActParsOpt_pars]
+                        ) [FactorSub_call]
+                      ) [Factor_sub]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [Expr_add]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+          ) [StatementList_more]
+          Statement_designator(
+            DesignatorStatement_call(
+              Designator_var(
+               f
+              ) [Designator_var]
+              ActParsOpt_pars(
+                ActPars_more(
+                  ActPars_one(
+                    Expr_add(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_number(
+                             1
+                            ) [FactorSub_number]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [Expr_add]
+                  ) [ActPars_one]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_character(
+                           c
+                          ) [FactorSub_character]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [ActPars_more]
+              ) [ActParsOpt_pars]
+            ) [DesignatorStatement_call]
+          ) [Statement_designator]
+        ) [StatementList_more]
+        Statement_designator(
+          DesignatorStatement_assign(
+            Designator_var(
+             a
+            ) [Designator_var]
+            Expr_add(
+              AddExpr_term(
+                Term_factor(
+                  Factor_sub(
+                    FactorSub_call(
+                      Designator_var(
+                       g
+                      ) [Designator_var]
+                      ActParsOpt_epsilon(
+                      ) [ActParsOpt_epsilon]
+                    ) [FactorSub_call]
+                  ) [Factor_sub]
+                ) [Term_factor]
+              ) [AddExpr_term]
+            ) [Expr_add]
+          ) [DesignatorStatement_assign]
+        ) [Statement_designator]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  19:17:32,507 - =================================================
+INFO  19:17:32,509 - Pretraga na 24(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,509 - Pretraga na 24(f), nadjeno Meth f: int, 0, 2 
+   Var x: int, 0, 1 
+   Var y: char, 1, 1
+INFO  19:17:32,509 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,509 - Pretraga na 25(f), nadjeno Meth f: int, 0, 2 
+   Var x: int, 0, 1 
+   Var y: char, 1, 1
+INFO  19:17:32,509 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,509 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,509 - Pretraga na 27(f), nadjeno Meth f: int, 0, 2 
+   Var x: int, 0, 1 
+   Var y: char, 1, 1
+INFO  19:17:32,509 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,509 - Pretraga na 28(g), nadjeno Meth g: notype, 0, 0
+INFO  19:17:32,509 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog SemCall: notype, 0, 1 
+   Var a: int, 0, 0 
+   Meth f: int, 0, 2 
+      Var x: int, 0, 1 
+      Var y: char, 1, 1 
+
+   Meth g: notype, 0, 0 
+
+   Meth main: notype, 0, 0 
+
+
+

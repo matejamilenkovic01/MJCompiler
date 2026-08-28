@@ -1,0 +1,30 @@
+// EXPECT: SEMANTIC>=4
+// EXPECT-ERR: Metoda f ocekuje 2 argumenata, a pozvana je sa 1
+// EXPECT-ERR: Tip 2. argumenta u pozivu metode f nije kompatibilan sa formalnim argumentom y
+// EXPECT-ERR: Poziva se a, sto nije metoda
+// Kontekstni uslovi za pozive i stvarne argumente.
+
+program SemCall
+
+int a;
+
+{
+	int f(int x, char y)
+	{
+		return 1;
+	}
+
+	void g()
+	{
+		return;
+	}
+
+	void main()
+	{
+		a = f(1);
+		a = f(1, 2);
+		a = a(1);
+		f(1, 'c');
+		a = g();
+	}
+}

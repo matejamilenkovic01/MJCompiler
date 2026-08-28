@@ -1,0 +1,24 @@
+// EXPECT: SEMANTIC>=5
+// EXPECT-ERR: Operandi operatora * / % moraju biti tipa int
+// EXPECT-ERR: Operandi operatora + i - moraju biti tipa int
+// EXPECT-ERR: Operand unarnog minusa nije tipa int
+// EXPECT-ERR: Grane ternarnog operatora nisu istog tipa
+// EXPECT-ERR: Uslov ternarnog operatora nije tipa bool
+// Kontekstni uslovi za aritmeticke i ternarne izraze.
+
+program SemExpr
+
+int a;
+char c;
+bool b;
+
+{
+	void main()
+	{
+		a = c * 2;
+		a = b + 1;
+		a = -c;
+		a = b ? 1 : c;
+		a = a ? 1 : 2;
+	}
+}

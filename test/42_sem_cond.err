@@ -1,0 +1,12 @@
+ERROR 19:17:32,208 - Semanticka greska: Uslovni izraz bez relacionog operatora mora biti tipa bool na liniji 19
+ERROR 19:17:32,208 - Semanticka greska: Uslov if iskaza nije tipa bool na liniji 19
+ERROR 19:17:32,208 - Semanticka greska: Uslovni izraz bez relacionog operatora mora biti tipa bool na liniji 20
+ERROR 19:17:32,208 - Semanticka greska: Operandi operatora && moraju biti tipa bool na liniji 20
+ERROR 19:17:32,208 - Semanticka greska: Uslov if iskaza nije tipa bool na liniji 20
+ERROR 19:17:32,208 - Semanticka greska: Operandi relacionog operatora nisu kompatibilni na liniji 21
+ERROR 19:17:32,208 - Semanticka greska: Uslov if iskaza nije tipa bool na liniji 21
+ERROR 19:17:32,209 - Semanticka greska: Uz referentne tipove dozvoljeni su samo operatori == i != na liniji 22
+ERROR 19:17:32,209 - Semanticka greska: Uslov if iskaza nije tipa bool na liniji 22
+ERROR 19:17:32,209 - Semanticka greska: Uslovni izraz bez relacionog operatora mora biti tipa bool na liniji 23
+ERROR 19:17:32,209 - Semanticka greska: Uslov for petlje nije tipa bool na liniji 23
+ERROR 19:17:32,209 - Parsiranje NIJE uspesno zavrseno!

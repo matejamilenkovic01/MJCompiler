@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/7/2026 16:1:0
+// 27/7/2026 19:17:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Factor_character extends Factor {
+public class FactorSub_character extends FactorSub {
 
     private Character val;
 
-    public Factor_character (Character val) {
+    public FactorSub_character (Character val) {
         this.val=val;
     }
 
@@ -39,13 +39,13 @@ public class Factor_character extends Factor {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("Factor_character(\n");
+        buffer.append("FactorSub_character(\n");
 
         buffer.append(" "+tab+val);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [Factor_character]");
+        buffer.append(") [FactorSub_character]");
         return buffer.toString();
     }
 }

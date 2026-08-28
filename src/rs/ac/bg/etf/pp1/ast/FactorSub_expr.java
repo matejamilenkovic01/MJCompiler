@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/7/2026 16:1:0
+// 27/7/2026 19:17:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Factor_expr extends Factor {
+public class FactorSub_expr extends FactorSub {
 
     private Expr Expr;
 
-    public Factor_expr (Expr Expr) {
+    public FactorSub_expr (Expr Expr) {
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
     }
@@ -43,7 +43,7 @@ public class Factor_expr extends Factor {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("Factor_expr(\n");
+        buffer.append("FactorSub_expr(\n");
 
         if(Expr!=null)
             buffer.append(Expr.toString("  "+tab));
@@ -52,7 +52,7 @@ public class Factor_expr extends Factor {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [Factor_expr]");
+        buffer.append(") [FactorSub_expr]");
         return buffer.toString();
     }
 }

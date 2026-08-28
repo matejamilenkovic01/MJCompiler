@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/7/2026 16:1:0
+// 27/7/2026 19:17:26
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -14,6 +14,7 @@ public interface Visitor {
     public void visit(AddExpr AddExpr);
     public void visit(Relop Relop);
     public void visit(ActParsOpt ActParsOpt);
+    public void visit(FactorSub FactorSub);
     public void visit(ForCondOpt ForCondOpt);
     public void visit(ForStepOpt ForStepOpt);
     public void visit(StatementList StatementList);
@@ -31,8 +32,8 @@ public interface Visitor {
     public void visit(IfCondition IfCondition);
     public void visit(FormParDecl FormParDecl);
     public void visit(ForInitOpt ForInitOpt);
-    public void visit(ConstItemList ConstItemList);
     public void visit(Expr Expr);
+    public void visit(ConstItemList ConstItemList);
     public void visit(ActPars ActPars);
     public void visit(DesignatorStatement DesignatorStatement);
     public void visit(Statement Statement);
@@ -42,14 +43,16 @@ public interface Visitor {
     public void visit(FormPars FormPars);
     public void visit(Designator_length Designator_length);
     public void visit(Designator_array Designator_array);
-    public void visit(Designator_ident Designator_ident);
-    public void visit(Factor_expr Factor_expr);
-    public void visit(Factor_newArray Factor_newArray);
-    public void visit(Factor_bool Factor_bool);
-    public void visit(Factor_character Factor_character);
-    public void visit(Factor_number Factor_number);
-    public void visit(Factor_call Factor_call);
-    public void visit(Factor_designator Factor_designator);
+    public void visit(Designator_var Designator_var);
+    public void visit(FactorSub_expr FactorSub_expr);
+    public void visit(FactorSub_newArray FactorSub_newArray);
+    public void visit(FactorSub_bool FactorSub_bool);
+    public void visit(FactorSub_character FactorSub_character);
+    public void visit(FactorSub_number FactorSub_number);
+    public void visit(FactorSub_call FactorSub_call);
+    public void visit(FactorSub_designator FactorSub_designator);
+    public void visit(Factor_neg Factor_neg);
+    public void visit(Factor_sub Factor_sub);
     public void visit(Mulop_mod Mulop_mod);
     public void visit(Mulop_div Mulop_div);
     public void visit(Mulop_mul Mulop_mul);
@@ -57,7 +60,6 @@ public interface Visitor {
     public void visit(Term_mulop Term_mulop);
     public void visit(Addop_minus Addop_minus);
     public void visit(Addop_plus Addop_plus);
-    public void visit(AddExpr_neg AddExpr_neg);
     public void visit(AddExpr_term AddExpr_term);
     public void visit(AddExpr_addop AddExpr_addop);
     public void visit(Expr_ternary Expr_ternary);
@@ -92,6 +94,7 @@ public interface Visitor {
     public void visit(PrintWidthOpt_width PrintWidthOpt_width);
     public void visit(ReturnExprOpt_epsilon ReturnExprOpt_epsilon);
     public void visit(ReturnExprOpt_expr ReturnExprOpt_expr);
+    public void visit(ForStart ForStart);
     public void visit(IfCondition_err IfCondition_err);
     public void visit(IfCondition_cond IfCondition_cond);
     public void visit(Statement_err Statement_err);

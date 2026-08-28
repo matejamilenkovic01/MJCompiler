@@ -1,0 +1,24 @@
+// EXPECT: OK
+// Rekurzivni poziv: lokali metode se ulancavaju tek po zavrsetku njenog tela, pa se
+// formalni argumenti pri proveri poziva iz sopstvenog tela moraju citati iz otvorenog
+// opsega. Ovaj test cuva to ponasanje.
+
+program SemRecursion
+
+int a;
+
+{
+	int fact(int n)
+		int r;
+	{
+		if (n <= 1) return 1;
+		r = fact(n - 1);
+		return n * r;
+	}
+
+	void main()
+	{
+		a = fact(5);
+		print(a);
+	}
+}

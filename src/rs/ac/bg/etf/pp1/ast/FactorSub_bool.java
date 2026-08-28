@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/7/2026 16:1:0
+// 27/7/2026 19:17:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Factor_number extends Factor {
+public class FactorSub_bool extends FactorSub {
 
     private Integer val;
 
-    public Factor_number (Integer val) {
+    public FactorSub_bool (Integer val) {
         this.val=val;
     }
 
@@ -39,13 +39,13 @@ public class Factor_number extends Factor {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("Factor_number(\n");
+        buffer.append("FactorSub_bool(\n");
 
         buffer.append(" "+tab+val);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [Factor_number]");
+        buffer.append(") [FactorSub_bool]");
         return buffer.toString();
     }
 }

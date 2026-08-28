@@ -1,0 +1,7 @@
+ERROR 19:17:32,356 - Semanticka greska: U k se ne moze upisivati na liniji 21
+ERROR 19:17:32,356 - Semanticka greska: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a na liniji 22
+ERROR 19:17:32,356 - Semanticka greska: Inkrement zahteva simbol tipa int, a c to nije na liniji 23
+ERROR 19:17:32,356 - Semanticka greska: Inkrement zahteva simbol tipa int, a niz to nije na liniji 24
+ERROR 19:17:32,357 - Semanticka greska: read zahteva simbol tipa int, char ili bool, a niz to nije na liniji 25
+ERROR 19:17:32,357 - Semanticka greska: print zahteva izraz tipa int, char ili bool na liniji 26
+ERROR 19:17:32,357 - Parsiranje NIJE uspesno zavrseno!

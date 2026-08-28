@@ -1,0 +1,438 @@
+INFO  19:17:32,193 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/42_sem_cond.mj
+INFO  19:17:32,201 - #2 program
+INFO  19:17:32,201 - #45 SemCond
+INFO  19:17:32,201 - #45 int
+INFO  19:17:32,201 - #45 a
+INFO  19:17:32,201 - #34 ;
+INFO  19:17:32,201 - #45 bool
+INFO  19:17:32,202 - #45 b
+INFO  19:17:32,202 - #34 ;
+INFO  19:17:32,202 - #45 int
+INFO  19:17:32,202 - #45 niz
+INFO  19:17:32,202 - #41 [
+INFO  19:17:32,202 - #42 ]
+INFO  19:17:32,202 - #34 ;
+INFO  19:17:32,202 - #45 int
+INFO  19:17:32,202 - #45 niz2
+INFO  19:17:32,202 - #41 [
+INFO  19:17:32,202 - #42 ]
+INFO  19:17:32,202 - #34 ;
+INFO  19:17:32,202 - #43 {
+INFO  19:17:32,202 - #7 void
+INFO  19:17:32,202 - #45 main
+INFO  19:17:32,202 - #39 (
+INFO  19:17:32,202 - #40 )
+INFO  19:17:32,202 - #43 {
+INFO  19:17:32,203 - #9 if
+INFO  19:17:32,203 - #39 (
+INFO  19:17:32,203 - #45 a
+INFO  19:17:32,203 - #40 )
+INFO  19:17:32,203 - #45 a
+INFO  19:17:32,203 - #31 =
+INFO  19:17:32,203 - #46 1
+INFO  19:17:32,203 - #34 ;
+INFO  19:17:32,203 - #9 if
+INFO  19:17:32,203 - #39 (
+INFO  19:17:32,203 - #45 b
+INFO  19:17:32,203 - #28 &&
+INFO  19:17:32,203 - #45 a
+INFO  19:17:32,203 - #40 )
+INFO  19:17:32,204 - #45 a
+INFO  19:17:32,204 - #31 =
+INFO  19:17:32,204 - #46 1
+INFO  19:17:32,204 - #34 ;
+INFO  19:17:32,204 - #9 if
+INFO  19:17:32,204 - #39 (
+INFO  19:17:32,204 - #45 a
+INFO  19:17:32,204 - #22 ==
+INFO  19:17:32,204 - #45 b
+INFO  19:17:32,204 - #40 )
+INFO  19:17:32,204 - #45 a
+INFO  19:17:32,204 - #31 =
+INFO  19:17:32,204 - #46 1
+INFO  19:17:32,204 - #34 ;
+INFO  19:17:32,204 - #9 if
+INFO  19:17:32,204 - #39 (
+INFO  19:17:32,204 - #45 niz
+INFO  19:17:32,204 - #26 <
+INFO  19:17:32,204 - #45 niz2
+INFO  19:17:32,205 - #40 )
+INFO  19:17:32,205 - #45 a
+INFO  19:17:32,205 - #31 =
+INFO  19:17:32,205 - #46 1
+INFO  19:17:32,205 - #34 ;
+INFO  19:17:32,205 - #13 for
+INFO  19:17:32,205 - #39 (
+INFO  19:17:32,205 - #34 ;
+INFO  19:17:32,205 - #45 a
+INFO  19:17:32,205 - #34 ;
+INFO  19:17:32,205 - #40 )
+INFO  19:17:32,205 - #45 a
+INFO  19:17:32,205 - #31 =
+INFO  19:17:32,205 - #46 1
+INFO  19:17:32,205 - #34 ;
+INFO  19:17:32,205 - #44 }
+INFO  19:17:32,205 - #44 }
+INFO  19:17:32,206 - Program(
+  ProgramName(
+   SemCond
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_var(
+      DeclList_var(
+        DeclList_var(
+          DeclList_epsilon(
+          ) [DeclList_epsilon]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarItemList_one(
+              VarItem_var(
+               a
+              ) [VarItem_var]
+            ) [VarItemList_one]
+          ) [VarDecl]
+        ) [DeclList_var]
+        VarDecl(
+          Type(
+           bool
+          ) [Type]
+          VarItemList_one(
+            VarItem_var(
+             b
+            ) [VarItem_var]
+          ) [VarItemList_one]
+        ) [VarDecl]
+      ) [DeclList_var]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarItemList_one(
+          VarItem_array(
+           niz
+          ) [VarItem_array]
+        ) [VarItemList_one]
+      ) [VarDecl]
+    ) [DeclList_var]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarItemList_one(
+        VarItem_array(
+         niz2
+        ) [VarItem_array]
+      ) [VarItemList_one]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_more(
+                StatementList_epsilon(
+                ) [StatementList_epsilon]
+                Statement_if(
+                  IfCondition_cond(
+                    Condition_term(
+                      CondTerm_fact(
+                        CondFact_expr(
+                          AddExpr_term(
+                            Term_factor(
+                              Factor_sub(
+                                FactorSub_designator(
+                                  Designator_var(
+                                   a
+                                  ) [Designator_var]
+                                ) [FactorSub_designator]
+                              ) [Factor_sub]
+                            ) [Term_factor]
+                          ) [AddExpr_term]
+                        ) [CondFact_expr]
+                      ) [CondTerm_fact]
+                    ) [Condition_term]
+                  ) [IfCondition_cond]
+                  Statement_designator(
+                    DesignatorStatement_assign(
+                      Designator_var(
+                       a
+                      ) [Designator_var]
+                      Expr_add(
+                        AddExpr_term(
+                          Term_factor(
+                            Factor_sub(
+                              FactorSub_number(
+                               1
+                              ) [FactorSub_number]
+                            ) [Factor_sub]
+                          ) [Term_factor]
+                        ) [AddExpr_term]
+                      ) [Expr_add]
+                    ) [DesignatorStatement_assign]
+                  ) [Statement_designator]
+                ) [Statement_if]
+              ) [StatementList_more]
+              Statement_if(
+                IfCondition_cond(
+                  Condition_term(
+                    CondTerm_and(
+                      CondTerm_fact(
+                        CondFact_expr(
+                          AddExpr_term(
+                            Term_factor(
+                              Factor_sub(
+                                FactorSub_designator(
+                                  Designator_var(
+                                   b
+                                  ) [Designator_var]
+                                ) [FactorSub_designator]
+                              ) [Factor_sub]
+                            ) [Term_factor]
+                          ) [AddExpr_term]
+                        ) [CondFact_expr]
+                      ) [CondTerm_fact]
+                      CondFact_expr(
+                        AddExpr_term(
+                          Term_factor(
+                            Factor_sub(
+                              FactorSub_designator(
+                                Designator_var(
+                                 a
+                                ) [Designator_var]
+                              ) [FactorSub_designator]
+                            ) [Factor_sub]
+                          ) [Term_factor]
+                        ) [AddExpr_term]
+                      ) [CondFact_expr]
+                    ) [CondTerm_and]
+                  ) [Condition_term]
+                ) [IfCondition_cond]
+                Statement_designator(
+                  DesignatorStatement_assign(
+                    Designator_var(
+                     a
+                    ) [Designator_var]
+                    Expr_add(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_number(
+                             1
+                            ) [FactorSub_number]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [Expr_add]
+                  ) [DesignatorStatement_assign]
+                ) [Statement_designator]
+              ) [Statement_if]
+            ) [StatementList_more]
+            Statement_if(
+              IfCondition_cond(
+                Condition_term(
+                  CondTerm_fact(
+                    CondFact_relop(
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_designator(
+                              Designator_var(
+                               a
+                              ) [Designator_var]
+                            ) [FactorSub_designator]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                      Relop_eq(
+                      ) [Relop_eq]
+                      AddExpr_term(
+                        Term_factor(
+                          Factor_sub(
+                            FactorSub_designator(
+                              Designator_var(
+                               b
+                              ) [Designator_var]
+                            ) [FactorSub_designator]
+                          ) [Factor_sub]
+                        ) [Term_factor]
+                      ) [AddExpr_term]
+                    ) [CondFact_relop]
+                  ) [CondTerm_fact]
+                ) [Condition_term]
+              ) [IfCondition_cond]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_var(
+                   a
+                  ) [Designator_var]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_number(
+                           1
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [Statement_if]
+          ) [StatementList_more]
+          Statement_if(
+            IfCondition_cond(
+              Condition_term(
+                CondTerm_fact(
+                  CondFact_relop(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_designator(
+                            Designator_var(
+                             niz
+                            ) [Designator_var]
+                          ) [FactorSub_designator]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                    Relop_lt(
+                    ) [Relop_lt]
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_designator(
+                            Designator_var(
+                             niz2
+                            ) [Designator_var]
+                          ) [FactorSub_designator]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [CondFact_relop]
+                ) [CondTerm_fact]
+              ) [Condition_term]
+            ) [IfCondition_cond]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_var(
+                 a
+                ) [Designator_var]
+                Expr_add(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_sub(
+                        FactorSub_number(
+                         1
+                        ) [FactorSub_number]
+                      ) [Factor_sub]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [Expr_add]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+          ) [Statement_if]
+        ) [StatementList_more]
+        Statement_for(
+          ForStart(
+          ) [ForStart]
+          ForInitOpt_epsilon(
+          ) [ForInitOpt_epsilon]
+          ForCondOpt_cond(
+            Condition_term(
+              CondTerm_fact(
+                CondFact_expr(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_sub(
+                        FactorSub_designator(
+                          Designator_var(
+                           a
+                          ) [Designator_var]
+                        ) [FactorSub_designator]
+                      ) [Factor_sub]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [CondFact_expr]
+              ) [CondTerm_fact]
+            ) [Condition_term]
+          ) [ForCondOpt_cond]
+          ForStepOpt_epsilon(
+          ) [ForStepOpt_epsilon]
+          Statement_designator(
+            DesignatorStatement_assign(
+              Designator_var(
+               a
+              ) [Designator_var]
+              Expr_add(
+                AddExpr_term(
+                  Term_factor(
+                    Factor_sub(
+                      FactorSub_number(
+                       1
+                      ) [FactorSub_number]
+                    ) [Factor_sub]
+                  ) [Term_factor]
+                ) [AddExpr_term]
+              ) [Expr_add]
+            ) [DesignatorStatement_assign]
+          ) [Statement_designator]
+        ) [Statement_for]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  19:17:32,206 - =================================================
+INFO  19:17:32,208 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,208 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,208 - Pretraga na 20(b), nadjeno Var b: bool, 1, 0
+INFO  19:17:32,208 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,208 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,208 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,208 - Pretraga na 21(b), nadjeno Var b: bool, 1, 0
+INFO  19:17:32,208 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,208 - Pretraga na 22(niz), nadjeno Var niz: Arr of int, 2, 0
+INFO  19:17:32,208 - Pretraga na 22(niz2), nadjeno Var niz2: Arr of int, 3, 0
+INFO  19:17:32,209 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,209 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,209 - Pretraga na 23(a), nadjeno Var a: int, 0, 0
+INFO  19:17:32,209 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog SemCond: notype, 0, 1 
+   Var a: int, 0, 0 
+   Var b: bool, 1, 0 
+   Var niz: Arr of int, 2, 0 
+   Var niz2: Arr of int, 3, 0 
+   Meth main: notype, 0, 0 
+
+
+

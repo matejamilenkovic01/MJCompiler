@@ -1,0 +1,78 @@
+// EXPECT: OK
+// Pozitivan test: pokriva mesta na kojima bi provere mogle da daju laznu gresku -
+// ugnezdeni pozivi, niz kao formalni argument, length, ternarni izraz, ugnezdene
+// petlje sa break i continue, i amandmane findAny i map.
+
+program SemOkFull
+
+const int velicina = 5;
+const char znak = 'x';
+const bool istina = true;
+
+int globalni;
+int brojevi[];
+int rezultat[];
+bool nadjeno;
+char slovo;
+
+{
+	int dvostruko(int x)
+	{
+		return x * 2;
+	}
+
+	int zbir(int niz[], int duzina)
+		int i, s;
+	{
+		s = 0;
+		for (i = 0; i < duzina; i++)
+			s = s + niz[i];
+		return s;
+	}
+
+	void ispisi(int vrednost, char oznaka)
+	{
+		print(oznaka);
+		print(vrednost, 5);
+	}
+
+	void main()
+		int i, j;
+	{
+		brojevi = new int[velicina];
+		rezultat = new int[velicina];
+
+		for (i = 0; i < brojevi.length; i++)
+			brojevi[i] = i + 1;
+
+		// ugnezdeni poziv: rezultat unutrasnjeg poziva je argument spoljasnjeg
+		globalni = dvostruko(dvostruko(3));
+
+		// niz kao stvarni argument
+		globalni = zbir(brojevi, brojevi.length);
+
+		// ternarni izraz sa slozenim uslovom.
+		// Napomena: uslov se NE sme staviti u zagrade - po [MJ] je Factor = "(" Expr ")",
+		// a Expr ne sadrzi relacione ni logicke operatore, pa "(a > 0 && b)" nije validno.
+		globalni = globalni > 0 && istina || false ? globalni : -globalni;
+
+		slovo = znak;
+		ispisi(globalni, slovo);
+
+		// ugnezdene petlje sa break i continue
+		for (i = 0; i < velicina; i++) {
+			for (j = 0; j < velicina; j++) {
+				if (j == 2) continue;
+				if (j == 4) break;
+				globalni = globalni + j;
+			}
+		}
+
+		// amandmani
+		nadjeno = brojevi.findAny(3);
+		rezultat = brojevi.map(i => i * i);
+
+		print(globalni);
+		print(nadjeno);
+	}
+}

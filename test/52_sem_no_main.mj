@@ -1,0 +1,14 @@
+// EXPECT: SEMANTIC>=1
+// EXPECT-ERR: Program nema metodu main
+// [MJ] A.4, opsti kontekstni uslovi: u programu mora postojati metoda main.
+
+program SemBezMaina
+
+int a;
+
+{
+	void nijeMain()
+	{
+		a = 1;
+	}
+}

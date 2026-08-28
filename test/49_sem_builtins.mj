@@ -1,0 +1,36 @@
+// EXPECT: SEMANTIC>=5
+// EXPECT-ERR: Metoda chr ocekuje 1 argumenata, a pozvana je sa 2
+// EXPECT-ERR: Tip izraza nije kompatibilan pri dodeli sa tipom simbola a
+// EXPECT-ERR: Tip 1. argumenta u pozivu metode chr nije kompatibilan sa formalnim argumentom i
+// EXPECT-ERR: Tip 1. argumenta u pozivu metode ord nije kompatibilan sa formalnim argumentom ch
+// EXPECT-ERR: Tip 1. argumenta u pozivu metode len nije kompatibilan sa formalnim argumentom arr
+// Ugradjene metode chr, ord i len prolaze kroz istu proveru stvarnih argumenata kao i
+// korisnicke, jer su u tabeli simbola obicni Obj.Meth cvorovi sa svojim formalnim
+// argumentima. Za len je bitno da se Arr of int poklapa sa formalnim Arr of notype.
+
+program SemBuiltins
+
+int a;
+char c;
+int niz[];
+
+{
+	void main()
+	{
+		niz = new int[3];
+
+		c = chr(65);
+		a = ord('x');
+		a = len(niz);
+
+		a = chr(65);
+		a = chr('x', 1);
+
+		// [MJ] A.4, kontekstni uslovi za standardne metode: chr(e) trazi int,
+		// ord(c) trazi char, len(a) trazi niz. Nema posebnog koda za njih - hvata ih
+		// ista provera stvarnih argumenata kao i za korisnicke metode.
+		c = chr('x');
+		a = ord(1);
+		a = len(a);
+	}
+}

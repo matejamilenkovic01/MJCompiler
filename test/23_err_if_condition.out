@@ -1,64 +1,64 @@
-INFO  16:01:04,156 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/23_err_if_condition.mj
-INFO  16:01:04,164 - #2 program
-INFO  16:01:04,164 - #45 GreskaUslovIf
-INFO  16:01:04,164 - #45 int
-INFO  16:01:04,164 - #45 a
-INFO  16:01:04,165 - #36 ,
-INFO  16:01:04,165 - #45 b
-INFO  16:01:04,165 - #34 ;
-INFO  16:01:04,165 - #43 {
-INFO  16:01:04,165 - #7 void
-INFO  16:01:04,165 - #45 main
-INFO  16:01:04,165 - #39 (
-INFO  16:01:04,165 - #40 )
-INFO  16:01:04,165 - #43 {
-INFO  16:01:04,165 - #45 a
-INFO  16:01:04,165 - #31 =
-INFO  16:01:04,166 - #46 1
-INFO  16:01:04,166 - #34 ;
-INFO  16:01:04,166 - #45 b
-INFO  16:01:04,166 - #31 =
-INFO  16:01:04,166 - #46 2
-INFO  16:01:04,166 - #34 ;
-INFO  16:01:04,166 - #9 if
-INFO  16:01:04,166 - #39 (
-INFO  16:01:04,166 - #45 a
-INFO  16:01:04,166 - #26 <
-INFO  16:01:04,166 - #28 &&
-INFO  16:01:04,166 - #45 b
-INFO  16:01:04,166 - #40 )
-INFO  16:01:04,166 - #45 a
-INFO  16:01:04,166 - #31 =
-INFO  16:01:04,166 - #46 0
-INFO  16:01:04,167 - #34 ;
-INFO  16:01:04,167 - #9 if
-INFO  16:01:04,167 - #39 (
-INFO  16:01:04,167 - #19 *
-INFO  16:01:04,167 - #45 a
-INFO  16:01:04,167 - #19 *
-INFO  16:01:04,167 - #40 )
-INFO  16:01:04,167 - #45 a
-INFO  16:01:04,167 - #31 =
-INFO  16:01:04,167 - #46 1
-INFO  16:01:04,167 - #34 ;
-INFO  16:01:04,167 - #10 else
-INFO  16:01:04,167 - #45 b
-INFO  16:01:04,167 - #31 =
-INFO  16:01:04,167 - #46 1
-INFO  16:01:04,167 - #34 ;
-INFO  16:01:04,167 - #9 if
-INFO  16:01:04,167 - #39 (
-INFO  16:01:04,167 - #45 a
-INFO  16:01:04,167 - #26 <
-INFO  16:01:04,167 - #45 b
-INFO  16:01:04,168 - #40 )
-INFO  16:01:04,168 - #45 a
-INFO  16:01:04,168 - #31 =
-INFO  16:01:04,168 - #46 0
-INFO  16:01:04,168 - #34 ;
-INFO  16:01:04,168 - #44 }
-INFO  16:01:04,168 - #44 }
-INFO  16:01:04,169 - Program(
+INFO  19:17:30,772 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/23_err_if_condition.mj
+INFO  19:17:30,780 - #2 program
+INFO  19:17:30,780 - #45 GreskaUslovIf
+INFO  19:17:30,780 - #45 int
+INFO  19:17:30,781 - #45 a
+INFO  19:17:30,781 - #36 ,
+INFO  19:17:30,781 - #45 b
+INFO  19:17:30,781 - #34 ;
+INFO  19:17:30,781 - #43 {
+INFO  19:17:30,781 - #7 void
+INFO  19:17:30,781 - #45 main
+INFO  19:17:30,781 - #39 (
+INFO  19:17:30,782 - #40 )
+INFO  19:17:30,782 - #43 {
+INFO  19:17:30,782 - #45 a
+INFO  19:17:30,782 - #31 =
+INFO  19:17:30,782 - #46 1
+INFO  19:17:30,782 - #34 ;
+INFO  19:17:30,782 - #45 b
+INFO  19:17:30,782 - #31 =
+INFO  19:17:30,782 - #46 2
+INFO  19:17:30,782 - #34 ;
+INFO  19:17:30,782 - #9 if
+INFO  19:17:30,782 - #39 (
+INFO  19:17:30,782 - #45 a
+INFO  19:17:30,783 - #26 <
+INFO  19:17:30,783 - #28 &&
+INFO  19:17:30,783 - #45 b
+INFO  19:17:30,783 - #40 )
+INFO  19:17:30,783 - #45 a
+INFO  19:17:30,783 - #31 =
+INFO  19:17:30,783 - #46 0
+INFO  19:17:30,784 - #34 ;
+INFO  19:17:30,784 - #9 if
+INFO  19:17:30,784 - #39 (
+INFO  19:17:30,784 - #19 *
+INFO  19:17:30,784 - #45 a
+INFO  19:17:30,784 - #19 *
+INFO  19:17:30,784 - #40 )
+INFO  19:17:30,784 - #45 a
+INFO  19:17:30,784 - #31 =
+INFO  19:17:30,784 - #46 1
+INFO  19:17:30,784 - #34 ;
+INFO  19:17:30,784 - #10 else
+INFO  19:17:30,784 - #45 b
+INFO  19:17:30,784 - #31 =
+INFO  19:17:30,784 - #46 1
+INFO  19:17:30,784 - #34 ;
+INFO  19:17:30,784 - #9 if
+INFO  19:17:30,784 - #39 (
+INFO  19:17:30,784 - #45 a
+INFO  19:17:30,784 - #26 <
+INFO  19:17:30,784 - #45 b
+INFO  19:17:30,785 - #40 )
+INFO  19:17:30,785 - #45 a
+INFO  19:17:30,785 - #31 =
+INFO  19:17:30,785 - #46 0
+INFO  19:17:30,785 - #34 ;
+INFO  19:17:30,785 - #44 }
+INFO  19:17:30,785 - #44 }
+INFO  19:17:30,786 - Program(
   ProgramName(
    GreskaUslovIf
   ) [ProgramName]
@@ -103,15 +103,17 @@ INFO  16:01:04,169 - Program(
                 ) [StatementList_epsilon]
                 Statement_designator(
                   DesignatorStatement_assign(
-                    Designator_ident(
+                    Designator_var(
                      a
-                    ) [Designator_ident]
+                    ) [Designator_var]
                     Expr_add(
                       AddExpr_term(
                         Term_factor(
-                          Factor_number(
-                           1
-                          ) [Factor_number]
+                          Factor_sub(
+                            FactorSub_number(
+                             1
+                            ) [FactorSub_number]
+                          ) [Factor_sub]
                         ) [Term_factor]
                       ) [AddExpr_term]
                     ) [Expr_add]
@@ -120,15 +122,17 @@ INFO  16:01:04,169 - Program(
               ) [StatementList_more]
               Statement_designator(
                 DesignatorStatement_assign(
-                  Designator_ident(
+                  Designator_var(
                    b
-                  ) [Designator_ident]
+                  ) [Designator_var]
                   Expr_add(
                     AddExpr_term(
                       Term_factor(
-                        Factor_number(
-                         2
-                        ) [Factor_number]
+                        Factor_sub(
+                          FactorSub_number(
+                           2
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
                       ) [Term_factor]
                     ) [AddExpr_term]
                   ) [Expr_add]
@@ -140,15 +144,17 @@ INFO  16:01:04,169 - Program(
               ) [IfCondition_err]
               Statement_designator(
                 DesignatorStatement_assign(
-                  Designator_ident(
+                  Designator_var(
                    a
-                  ) [Designator_ident]
+                  ) [Designator_var]
                   Expr_add(
                     AddExpr_term(
                       Term_factor(
-                        Factor_number(
-                         0
-                        ) [Factor_number]
+                        Factor_sub(
+                          FactorSub_number(
+                           0
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
                       ) [Term_factor]
                     ) [AddExpr_term]
                   ) [Expr_add]
@@ -161,15 +167,17 @@ INFO  16:01:04,169 - Program(
             ) [IfCondition_err]
             Statement_designator(
               DesignatorStatement_assign(
-                Designator_ident(
+                Designator_var(
                  a
-                ) [Designator_ident]
+                ) [Designator_var]
                 Expr_add(
                   AddExpr_term(
                     Term_factor(
-                      Factor_number(
-                       1
-                      ) [Factor_number]
+                      Factor_sub(
+                        FactorSub_number(
+                         1
+                        ) [FactorSub_number]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                 ) [Expr_add]
@@ -177,15 +185,17 @@ INFO  16:01:04,169 - Program(
             ) [Statement_designator]
             Statement_designator(
               DesignatorStatement_assign(
-                Designator_ident(
+                Designator_var(
                  b
-                ) [Designator_ident]
+                ) [Designator_var]
                 Expr_add(
                   AddExpr_term(
                     Term_factor(
-                      Factor_number(
-                       1
-                      ) [Factor_number]
+                      Factor_sub(
+                        FactorSub_number(
+                         1
+                        ) [FactorSub_number]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                 ) [Expr_add]
@@ -200,22 +210,26 @@ INFO  16:01:04,169 - Program(
                 CondFact_relop(
                   AddExpr_term(
                     Term_factor(
-                      Factor_designator(
-                        Designator_ident(
-                         a
-                        ) [Designator_ident]
-                      ) [Factor_designator]
+                      Factor_sub(
+                        FactorSub_designator(
+                          Designator_var(
+                           a
+                          ) [Designator_var]
+                        ) [FactorSub_designator]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                   Relop_lt(
                   ) [Relop_lt]
                   AddExpr_term(
                     Term_factor(
-                      Factor_designator(
-                        Designator_ident(
-                         b
-                        ) [Designator_ident]
-                      ) [Factor_designator]
+                      Factor_sub(
+                        FactorSub_designator(
+                          Designator_var(
+                           b
+                          ) [Designator_var]
+                        ) [FactorSub_designator]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                 ) [CondFact_relop]
@@ -224,15 +238,17 @@ INFO  16:01:04,169 - Program(
           ) [IfCondition_cond]
           Statement_designator(
             DesignatorStatement_assign(
-              Designator_ident(
+              Designator_var(
                a
-              ) [Designator_ident]
+              ) [Designator_var]
               Expr_add(
                 AddExpr_term(
                   Term_factor(
-                    Factor_number(
-                     0
-                    ) [Factor_number]
+                    Factor_sub(
+                      FactorSub_number(
+                       0
+                      ) [FactorSub_number]
+                    ) [Factor_sub]
                   ) [Term_factor]
                 ) [AddExpr_term]
               ) [Expr_add]
@@ -243,8 +259,8 @@ INFO  16:01:04,169 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:01:04,169 - =================================================
-INFO  16:01:04,170 - =================================================
+INFO  19:17:30,786 - =================================================
+INFO  19:17:30,787 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -260,10 +276,4 @@ Meth len: int, 0, 1
    Var arr: Arr of notype, 0, 1 
 
 Type bool: bool, -1, -1 
-Prog GreskaUslovIf: notype, 0, 1 
-   Var a: int, 0, 0 
-   Var b: int, 1, 0 
-   Meth main: notype, 0, 0 
-
-
 

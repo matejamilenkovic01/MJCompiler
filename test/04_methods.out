@@ -1,204 +1,204 @@
-INFO  16:01:01,932 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/04_methods.mj
-INFO  16:01:01,941 - #2 program
-INFO  16:01:01,941 - #45 Metode
-INFO  16:01:01,941 - #45 int
-INFO  16:01:01,941 - #45 g
-INFO  16:01:01,941 - #34 ;
-INFO  16:01:01,941 - #43 {
-INFO  16:01:01,942 - #7 void
-INFO  16:01:01,942 - #45 bezParametara
-INFO  16:01:01,942 - #39 (
-INFO  16:01:01,942 - #40 )
-INFO  16:01:01,943 - #43 {
-INFO  16:01:01,943 - #44 }
-INFO  16:01:01,943 - #7 void
-INFO  16:01:01,943 - #45 saParametrima
-INFO  16:01:01,943 - #39 (
-INFO  16:01:01,943 - #45 int
-INFO  16:01:01,943 - #45 a
-INFO  16:01:01,943 - #36 ,
-INFO  16:01:01,943 - #45 char
-INFO  16:01:01,943 - #45 b
-INFO  16:01:01,944 - #36 ,
-INFO  16:01:01,944 - #45 bool
-INFO  16:01:01,944 - #45 c
-INFO  16:01:01,944 - #40 )
-INFO  16:01:01,944 - #43 {
-INFO  16:01:01,944 - #44 }
-INFO  16:01:01,944 - #7 void
-INFO  16:01:01,944 - #45 saNizovima
-INFO  16:01:01,944 - #39 (
-INFO  16:01:01,944 - #45 int
-INFO  16:01:01,944 - #45 a
-INFO  16:01:01,944 - #41 [
-INFO  16:01:01,944 - #42 ]
-INFO  16:01:01,944 - #36 ,
-INFO  16:01:01,944 - #45 char
-INFO  16:01:01,944 - #45 b
-INFO  16:01:01,944 - #41 [
-INFO  16:01:01,944 - #42 ]
-INFO  16:01:01,944 - #36 ,
-INFO  16:01:01,944 - #45 bool
-INFO  16:01:01,944 - #45 c
-INFO  16:01:01,944 - #41 [
-INFO  16:01:01,944 - #42 ]
-INFO  16:01:01,944 - #40 )
-INFO  16:01:01,944 - #43 {
-INFO  16:01:01,944 - #44 }
-INFO  16:01:01,944 - #7 void
-INFO  16:01:01,944 - #45 mesano
-INFO  16:01:01,944 - #39 (
-INFO  16:01:01,945 - #45 int
-INFO  16:01:01,945 - #45 a
-INFO  16:01:01,945 - #36 ,
-INFO  16:01:01,945 - #45 int
-INFO  16:01:01,945 - #45 b
-INFO  16:01:01,945 - #41 [
-INFO  16:01:01,945 - #42 ]
-INFO  16:01:01,945 - #36 ,
-INFO  16:01:01,945 - #45 char
-INFO  16:01:01,945 - #45 c
-INFO  16:01:01,945 - #40 )
-INFO  16:01:01,945 - #43 {
-INFO  16:01:01,945 - #44 }
-INFO  16:01:01,945 - #45 int
-INFO  16:01:01,945 - #45 vratiBroj
-INFO  16:01:01,945 - #39 (
-INFO  16:01:01,945 - #40 )
-INFO  16:01:01,945 - #45 int
-INFO  16:01:01,945 - #45 lokalna
-INFO  16:01:01,945 - #34 ;
-INFO  16:01:01,945 - #43 {
-INFO  16:01:01,945 - #45 lokalna
-INFO  16:01:01,945 - #31 =
-INFO  16:01:01,945 - #46 5
-INFO  16:01:01,945 - #34 ;
-INFO  16:01:01,945 - #8 return
-INFO  16:01:01,946 - #45 lokalna
-INFO  16:01:01,946 - #34 ;
-INFO  16:01:01,946 - #44 }
-INFO  16:01:01,946 - #45 char
-INFO  16:01:01,946 - #45 vratiZnak
-INFO  16:01:01,946 - #39 (
-INFO  16:01:01,946 - #40 )
-INFO  16:01:01,946 - #43 {
-INFO  16:01:01,946 - #8 return
-INFO  16:01:01,946 - #48 q
-INFO  16:01:01,946 - #34 ;
-INFO  16:01:01,946 - #44 }
-INFO  16:01:01,946 - #45 bool
-INFO  16:01:01,946 - #45 vratiLogicku
-INFO  16:01:01,946 - #39 (
-INFO  16:01:01,946 - #40 )
-INFO  16:01:01,946 - #43 {
-INFO  16:01:01,946 - #8 return
-INFO  16:01:01,946 - #47 1
-INFO  16:01:01,946 - #34 ;
-INFO  16:01:01,946 - #44 }
-INFO  16:01:01,946 - #7 void
-INFO  16:01:01,946 - #45 praznoReturn
-INFO  16:01:01,946 - #39 (
-INFO  16:01:01,946 - #40 )
-INFO  16:01:01,947 - #43 {
-INFO  16:01:01,947 - #8 return
-INFO  16:01:01,947 - #34 ;
-INFO  16:01:01,947 - #44 }
-INFO  16:01:01,947 - #7 void
-INFO  16:01:01,947 - #45 lokalnePromenljive
-INFO  16:01:01,947 - #39 (
-INFO  16:01:01,947 - #40 )
-INFO  16:01:01,947 - #45 int
-INFO  16:01:01,947 - #45 a
-INFO  16:01:01,947 - #36 ,
-INFO  16:01:01,947 - #45 b
-INFO  16:01:01,947 - #41 [
-INFO  16:01:01,947 - #42 ]
-INFO  16:01:01,947 - #34 ;
-INFO  16:01:01,948 - #45 char
-INFO  16:01:01,948 - #45 c
-INFO  16:01:01,948 - #34 ;
-INFO  16:01:01,948 - #45 bool
-INFO  16:01:01,948 - #45 d
-INFO  16:01:01,948 - #34 ;
-INFO  16:01:01,948 - #43 {
-INFO  16:01:01,948 - #44 }
-INFO  16:01:01,948 - #45 int
-INFO  16:01:01,948 - #45 saberi
-INFO  16:01:01,948 - #39 (
-INFO  16:01:01,948 - #45 int
-INFO  16:01:01,948 - #45 a
-INFO  16:01:01,948 - #36 ,
-INFO  16:01:01,948 - #45 int
-INFO  16:01:01,948 - #45 b
-INFO  16:01:01,948 - #40 )
-INFO  16:01:01,948 - #43 {
-INFO  16:01:01,948 - #8 return
-INFO  16:01:01,948 - #45 a
-INFO  16:01:01,948 - #17 +
-INFO  16:01:01,948 - #45 b
-INFO  16:01:01,948 - #34 ;
-INFO  16:01:01,948 - #44 }
-INFO  16:01:01,948 - #7 void
-INFO  16:01:01,949 - #45 main
-INFO  16:01:01,949 - #39 (
-INFO  16:01:01,949 - #40 )
-INFO  16:01:01,949 - #45 int
-INFO  16:01:01,949 - #45 r
-INFO  16:01:01,949 - #34 ;
-INFO  16:01:01,949 - #43 {
-INFO  16:01:01,949 - #45 bezParametara
-INFO  16:01:01,949 - #39 (
-INFO  16:01:01,949 - #40 )
-INFO  16:01:01,949 - #34 ;
-INFO  16:01:01,949 - #45 saParametrima
-INFO  16:01:01,949 - #39 (
-INFO  16:01:01,949 - #46 1
-INFO  16:01:01,949 - #36 ,
-INFO  16:01:01,949 - #48 a
-INFO  16:01:01,949 - #36 ,
-INFO  16:01:01,949 - #47 1
-INFO  16:01:01,949 - #40 )
-INFO  16:01:01,949 - #34 ;
-INFO  16:01:01,949 - #45 praznoReturn
-INFO  16:01:01,949 - #39 (
-INFO  16:01:01,949 - #40 )
-INFO  16:01:01,949 - #34 ;
-INFO  16:01:01,949 - #45 r
-INFO  16:01:01,949 - #31 =
-INFO  16:01:01,949 - #45 vratiBroj
-INFO  16:01:01,949 - #39 (
-INFO  16:01:01,949 - #40 )
-INFO  16:01:01,949 - #34 ;
-INFO  16:01:01,949 - #45 r
-INFO  16:01:01,949 - #31 =
-INFO  16:01:01,949 - #45 saberi
-INFO  16:01:01,949 - #39 (
-INFO  16:01:01,949 - #46 1
-INFO  16:01:01,949 - #36 ,
-INFO  16:01:01,949 - #46 2
-INFO  16:01:01,949 - #40 )
-INFO  16:01:01,950 - #34 ;
-INFO  16:01:01,950 - #45 r
-INFO  16:01:01,950 - #31 =
-INFO  16:01:01,950 - #45 saberi
-INFO  16:01:01,950 - #39 (
-INFO  16:01:01,950 - #45 r
-INFO  16:01:01,950 - #36 ,
-INFO  16:01:01,950 - #45 saberi
-INFO  16:01:01,950 - #39 (
-INFO  16:01:01,950 - #46 3
-INFO  16:01:01,950 - #36 ,
-INFO  16:01:01,950 - #46 4
-INFO  16:01:01,950 - #40 )
-INFO  16:01:01,950 - #40 )
-INFO  16:01:01,950 - #34 ;
-INFO  16:01:01,950 - #45 g
-INFO  16:01:01,950 - #31 =
-INFO  16:01:01,950 - #45 r
-INFO  16:01:01,950 - #34 ;
-INFO  16:01:01,950 - #44 }
-INFO  16:01:01,950 - #44 }
-INFO  16:01:01,951 - Program(
+INFO  19:17:28,451 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/04_methods.mj
+INFO  19:17:28,459 - #2 program
+INFO  19:17:28,459 - #45 Metode
+INFO  19:17:28,459 - #45 int
+INFO  19:17:28,459 - #45 g
+INFO  19:17:28,459 - #34 ;
+INFO  19:17:28,460 - #43 {
+INFO  19:17:28,460 - #7 void
+INFO  19:17:28,460 - #45 bezParametara
+INFO  19:17:28,460 - #39 (
+INFO  19:17:28,460 - #40 )
+INFO  19:17:28,460 - #43 {
+INFO  19:17:28,460 - #44 }
+INFO  19:17:28,461 - #7 void
+INFO  19:17:28,461 - #45 saParametrima
+INFO  19:17:28,461 - #39 (
+INFO  19:17:28,461 - #45 int
+INFO  19:17:28,461 - #45 a
+INFO  19:17:28,461 - #36 ,
+INFO  19:17:28,461 - #45 char
+INFO  19:17:28,461 - #45 b
+INFO  19:17:28,461 - #36 ,
+INFO  19:17:28,461 - #45 bool
+INFO  19:17:28,461 - #45 c
+INFO  19:17:28,461 - #40 )
+INFO  19:17:28,461 - #43 {
+INFO  19:17:28,461 - #44 }
+INFO  19:17:28,461 - #7 void
+INFO  19:17:28,461 - #45 saNizovima
+INFO  19:17:28,461 - #39 (
+INFO  19:17:28,461 - #45 int
+INFO  19:17:28,461 - #45 a
+INFO  19:17:28,461 - #41 [
+INFO  19:17:28,461 - #42 ]
+INFO  19:17:28,461 - #36 ,
+INFO  19:17:28,461 - #45 char
+INFO  19:17:28,462 - #45 b
+INFO  19:17:28,462 - #41 [
+INFO  19:17:28,462 - #42 ]
+INFO  19:17:28,462 - #36 ,
+INFO  19:17:28,462 - #45 bool
+INFO  19:17:28,462 - #45 c
+INFO  19:17:28,462 - #41 [
+INFO  19:17:28,462 - #42 ]
+INFO  19:17:28,462 - #40 )
+INFO  19:17:28,462 - #43 {
+INFO  19:17:28,462 - #44 }
+INFO  19:17:28,462 - #7 void
+INFO  19:17:28,462 - #45 mesano
+INFO  19:17:28,462 - #39 (
+INFO  19:17:28,462 - #45 int
+INFO  19:17:28,462 - #45 a
+INFO  19:17:28,462 - #36 ,
+INFO  19:17:28,462 - #45 int
+INFO  19:17:28,462 - #45 b
+INFO  19:17:28,462 - #41 [
+INFO  19:17:28,462 - #42 ]
+INFO  19:17:28,462 - #36 ,
+INFO  19:17:28,462 - #45 char
+INFO  19:17:28,462 - #45 c
+INFO  19:17:28,462 - #40 )
+INFO  19:17:28,462 - #43 {
+INFO  19:17:28,462 - #44 }
+INFO  19:17:28,462 - #45 int
+INFO  19:17:28,462 - #45 vratiBroj
+INFO  19:17:28,463 - #39 (
+INFO  19:17:28,463 - #40 )
+INFO  19:17:28,463 - #45 int
+INFO  19:17:28,463 - #45 lokalna
+INFO  19:17:28,463 - #34 ;
+INFO  19:17:28,463 - #43 {
+INFO  19:17:28,463 - #45 lokalna
+INFO  19:17:28,463 - #31 =
+INFO  19:17:28,463 - #46 5
+INFO  19:17:28,463 - #34 ;
+INFO  19:17:28,463 - #8 return
+INFO  19:17:28,463 - #45 lokalna
+INFO  19:17:28,463 - #34 ;
+INFO  19:17:28,463 - #44 }
+INFO  19:17:28,463 - #45 char
+INFO  19:17:28,463 - #45 vratiZnak
+INFO  19:17:28,463 - #39 (
+INFO  19:17:28,463 - #40 )
+INFO  19:17:28,463 - #43 {
+INFO  19:17:28,463 - #8 return
+INFO  19:17:28,463 - #48 q
+INFO  19:17:28,464 - #34 ;
+INFO  19:17:28,464 - #44 }
+INFO  19:17:28,464 - #45 bool
+INFO  19:17:28,464 - #45 vratiLogicku
+INFO  19:17:28,464 - #39 (
+INFO  19:17:28,464 - #40 )
+INFO  19:17:28,464 - #43 {
+INFO  19:17:28,464 - #8 return
+INFO  19:17:28,464 - #47 1
+INFO  19:17:28,464 - #34 ;
+INFO  19:17:28,464 - #44 }
+INFO  19:17:28,464 - #7 void
+INFO  19:17:28,464 - #45 praznoReturn
+INFO  19:17:28,464 - #39 (
+INFO  19:17:28,464 - #40 )
+INFO  19:17:28,464 - #43 {
+INFO  19:17:28,464 - #8 return
+INFO  19:17:28,464 - #34 ;
+INFO  19:17:28,464 - #44 }
+INFO  19:17:28,465 - #7 void
+INFO  19:17:28,465 - #45 lokalnePromenljive
+INFO  19:17:28,465 - #39 (
+INFO  19:17:28,465 - #40 )
+INFO  19:17:28,465 - #45 int
+INFO  19:17:28,465 - #45 a
+INFO  19:17:28,465 - #36 ,
+INFO  19:17:28,465 - #45 b
+INFO  19:17:28,465 - #41 [
+INFO  19:17:28,465 - #42 ]
+INFO  19:17:28,465 - #34 ;
+INFO  19:17:28,465 - #45 char
+INFO  19:17:28,465 - #45 c
+INFO  19:17:28,465 - #34 ;
+INFO  19:17:28,465 - #45 bool
+INFO  19:17:28,465 - #45 d
+INFO  19:17:28,465 - #34 ;
+INFO  19:17:28,465 - #43 {
+INFO  19:17:28,465 - #44 }
+INFO  19:17:28,465 - #45 int
+INFO  19:17:28,465 - #45 saberi
+INFO  19:17:28,465 - #39 (
+INFO  19:17:28,465 - #45 int
+INFO  19:17:28,465 - #45 a
+INFO  19:17:28,465 - #36 ,
+INFO  19:17:28,465 - #45 int
+INFO  19:17:28,465 - #45 b
+INFO  19:17:28,466 - #40 )
+INFO  19:17:28,466 - #43 {
+INFO  19:17:28,466 - #8 return
+INFO  19:17:28,466 - #45 a
+INFO  19:17:28,466 - #17 +
+INFO  19:17:28,466 - #45 b
+INFO  19:17:28,466 - #34 ;
+INFO  19:17:28,466 - #44 }
+INFO  19:17:28,466 - #7 void
+INFO  19:17:28,466 - #45 main
+INFO  19:17:28,466 - #39 (
+INFO  19:17:28,466 - #40 )
+INFO  19:17:28,466 - #45 int
+INFO  19:17:28,466 - #45 r
+INFO  19:17:28,466 - #34 ;
+INFO  19:17:28,466 - #43 {
+INFO  19:17:28,466 - #45 bezParametara
+INFO  19:17:28,466 - #39 (
+INFO  19:17:28,466 - #40 )
+INFO  19:17:28,466 - #34 ;
+INFO  19:17:28,466 - #45 saParametrima
+INFO  19:17:28,466 - #39 (
+INFO  19:17:28,467 - #46 1
+INFO  19:17:28,467 - #36 ,
+INFO  19:17:28,467 - #48 a
+INFO  19:17:28,467 - #36 ,
+INFO  19:17:28,467 - #47 1
+INFO  19:17:28,467 - #40 )
+INFO  19:17:28,467 - #34 ;
+INFO  19:17:28,467 - #45 praznoReturn
+INFO  19:17:28,467 - #39 (
+INFO  19:17:28,467 - #40 )
+INFO  19:17:28,467 - #34 ;
+INFO  19:17:28,467 - #45 r
+INFO  19:17:28,467 - #31 =
+INFO  19:17:28,467 - #45 vratiBroj
+INFO  19:17:28,467 - #39 (
+INFO  19:17:28,467 - #40 )
+INFO  19:17:28,467 - #34 ;
+INFO  19:17:28,467 - #45 r
+INFO  19:17:28,467 - #31 =
+INFO  19:17:28,467 - #45 saberi
+INFO  19:17:28,467 - #39 (
+INFO  19:17:28,467 - #46 1
+INFO  19:17:28,467 - #36 ,
+INFO  19:17:28,467 - #46 2
+INFO  19:17:28,467 - #40 )
+INFO  19:17:28,467 - #34 ;
+INFO  19:17:28,467 - #45 r
+INFO  19:17:28,467 - #31 =
+INFO  19:17:28,467 - #45 saberi
+INFO  19:17:28,467 - #39 (
+INFO  19:17:28,467 - #45 r
+INFO  19:17:28,467 - #36 ,
+INFO  19:17:28,467 - #45 saberi
+INFO  19:17:28,467 - #39 (
+INFO  19:17:28,467 - #46 3
+INFO  19:17:28,467 - #36 ,
+INFO  19:17:28,467 - #46 4
+INFO  19:17:28,468 - #40 )
+INFO  19:17:28,468 - #40 )
+INFO  19:17:28,468 - #34 ;
+INFO  19:17:28,468 - #45 g
+INFO  19:17:28,468 - #31 =
+INFO  19:17:28,468 - #45 r
+INFO  19:17:28,468 - #34 ;
+INFO  19:17:28,468 - #44 }
+INFO  19:17:28,468 - #44 }
+INFO  19:17:28,468 - Program(
   ProgramName(
    Metode
   ) [ProgramName]
@@ -388,15 +388,17 @@ INFO  16:01:01,951 - Program(
                       ) [StatementList_epsilon]
                       Statement_designator(
                         DesignatorStatement_assign(
-                          Designator_ident(
+                          Designator_var(
                            lokalna
-                          ) [Designator_ident]
+                          ) [Designator_var]
                           Expr_add(
                             AddExpr_term(
                               Term_factor(
-                                Factor_number(
-                                 5
-                                ) [Factor_number]
+                                Factor_sub(
+                                  FactorSub_number(
+                                   5
+                                  ) [FactorSub_number]
+                                ) [Factor_sub]
                               ) [Term_factor]
                             ) [AddExpr_term]
                           ) [Expr_add]
@@ -408,11 +410,13 @@ INFO  16:01:01,951 - Program(
                         Expr_add(
                           AddExpr_term(
                             Term_factor(
-                              Factor_designator(
-                                Designator_ident(
-                                 lokalna
-                                ) [Designator_ident]
-                              ) [Factor_designator]
+                              Factor_sub(
+                                FactorSub_designator(
+                                  Designator_var(
+                                   lokalna
+                                  ) [Designator_var]
+                                ) [FactorSub_designator]
+                              ) [Factor_sub]
                             ) [Term_factor]
                           ) [AddExpr_term]
                         ) [Expr_add]
@@ -442,9 +446,11 @@ INFO  16:01:01,951 - Program(
                       Expr_add(
                         AddExpr_term(
                           Term_factor(
-                            Factor_character(
-                             q
-                            ) [Factor_character]
+                            Factor_sub(
+                              FactorSub_character(
+                               q
+                              ) [FactorSub_character]
+                            ) [Factor_sub]
                           ) [Term_factor]
                         ) [AddExpr_term]
                       ) [Expr_add]
@@ -474,9 +480,11 @@ INFO  16:01:01,951 - Program(
                     Expr_add(
                       AddExpr_term(
                         Term_factor(
-                          Factor_bool(
-                           1
-                          ) [Factor_bool]
+                          Factor_sub(
+                            FactorSub_bool(
+                             1
+                            ) [FactorSub_bool]
+                          ) [Factor_sub]
                         ) [Term_factor]
                       ) [AddExpr_term]
                     ) [Expr_add]
@@ -598,21 +606,25 @@ INFO  16:01:01,951 - Program(
                 AddExpr_addop(
                   AddExpr_term(
                     Term_factor(
-                      Factor_designator(
-                        Designator_ident(
-                         a
-                        ) [Designator_ident]
-                      ) [Factor_designator]
+                      Factor_sub(
+                        FactorSub_designator(
+                          Designator_var(
+                           a
+                          ) [Designator_var]
+                        ) [FactorSub_designator]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                   Addop_plus(
                   ) [Addop_plus]
                   Term_factor(
-                    Factor_designator(
-                      Designator_ident(
-                       b
-                      ) [Designator_ident]
-                    ) [Factor_designator]
+                    Factor_sub(
+                      FactorSub_designator(
+                        Designator_var(
+                         b
+                        ) [Designator_var]
+                      ) [FactorSub_designator]
+                    ) [Factor_sub]
                   ) [Term_factor]
                 ) [AddExpr_addop]
               ) [Expr_add]
@@ -654,9 +666,9 @@ INFO  16:01:01,951 - Program(
                     ) [StatementList_epsilon]
                     Statement_designator(
                       DesignatorStatement_call(
-                        Designator_ident(
+                        Designator_var(
                          bezParametara
-                        ) [Designator_ident]
+                        ) [Designator_var]
                         ActParsOpt_epsilon(
                         ) [ActParsOpt_epsilon]
                       ) [DesignatorStatement_call]
@@ -664,9 +676,9 @@ INFO  16:01:01,951 - Program(
                   ) [StatementList_more]
                   Statement_designator(
                     DesignatorStatement_call(
-                      Designator_ident(
+                      Designator_var(
                        saParametrima
-                      ) [Designator_ident]
+                      ) [Designator_var]
                       ActParsOpt_pars(
                         ActPars_more(
                           ActPars_more(
@@ -674,9 +686,11 @@ INFO  16:01:01,951 - Program(
                               Expr_add(
                                 AddExpr_term(
                                   Term_factor(
-                                    Factor_number(
-                                     1
-                                    ) [Factor_number]
+                                    Factor_sub(
+                                      FactorSub_number(
+                                       1
+                                      ) [FactorSub_number]
+                                    ) [Factor_sub]
                                   ) [Term_factor]
                                 ) [AddExpr_term]
                               ) [Expr_add]
@@ -684,9 +698,11 @@ INFO  16:01:01,951 - Program(
                             Expr_add(
                               AddExpr_term(
                                 Term_factor(
-                                  Factor_character(
-                                   a
-                                  ) [Factor_character]
+                                  Factor_sub(
+                                    FactorSub_character(
+                                     a
+                                    ) [FactorSub_character]
+                                  ) [Factor_sub]
                                 ) [Term_factor]
                               ) [AddExpr_term]
                             ) [Expr_add]
@@ -694,9 +710,11 @@ INFO  16:01:01,951 - Program(
                           Expr_add(
                             AddExpr_term(
                               Term_factor(
-                                Factor_bool(
-                                 1
-                                ) [Factor_bool]
+                                Factor_sub(
+                                  FactorSub_bool(
+                                   1
+                                  ) [FactorSub_bool]
+                                ) [Factor_sub]
                               ) [Term_factor]
                             ) [AddExpr_term]
                           ) [Expr_add]
@@ -707,9 +725,9 @@ INFO  16:01:01,951 - Program(
                 ) [StatementList_more]
                 Statement_designator(
                   DesignatorStatement_call(
-                    Designator_ident(
+                    Designator_var(
                      praznoReturn
-                    ) [Designator_ident]
+                    ) [Designator_var]
                     ActParsOpt_epsilon(
                     ) [ActParsOpt_epsilon]
                   ) [DesignatorStatement_call]
@@ -717,19 +735,21 @@ INFO  16:01:01,951 - Program(
               ) [StatementList_more]
               Statement_designator(
                 DesignatorStatement_assign(
-                  Designator_ident(
+                  Designator_var(
                    r
-                  ) [Designator_ident]
+                  ) [Designator_var]
                   Expr_add(
                     AddExpr_term(
                       Term_factor(
-                        Factor_call(
-                          Designator_ident(
-                           vratiBroj
-                          ) [Designator_ident]
-                          ActParsOpt_epsilon(
-                          ) [ActParsOpt_epsilon]
-                        ) [Factor_call]
+                        Factor_sub(
+                          FactorSub_call(
+                            Designator_var(
+                             vratiBroj
+                            ) [Designator_var]
+                            ActParsOpt_epsilon(
+                            ) [ActParsOpt_epsilon]
+                          ) [FactorSub_call]
+                        ) [Factor_sub]
                       ) [Term_factor]
                     ) [AddExpr_term]
                   ) [Expr_add]
@@ -738,41 +758,47 @@ INFO  16:01:01,951 - Program(
             ) [StatementList_more]
             Statement_designator(
               DesignatorStatement_assign(
-                Designator_ident(
+                Designator_var(
                  r
-                ) [Designator_ident]
+                ) [Designator_var]
                 Expr_add(
                   AddExpr_term(
                     Term_factor(
-                      Factor_call(
-                        Designator_ident(
-                         saberi
-                        ) [Designator_ident]
-                        ActParsOpt_pars(
-                          ActPars_more(
-                            ActPars_one(
+                      Factor_sub(
+                        FactorSub_call(
+                          Designator_var(
+                           saberi
+                          ) [Designator_var]
+                          ActParsOpt_pars(
+                            ActPars_more(
+                              ActPars_one(
+                                Expr_add(
+                                  AddExpr_term(
+                                    Term_factor(
+                                      Factor_sub(
+                                        FactorSub_number(
+                                         1
+                                        ) [FactorSub_number]
+                                      ) [Factor_sub]
+                                    ) [Term_factor]
+                                  ) [AddExpr_term]
+                                ) [Expr_add]
+                              ) [ActPars_one]
                               Expr_add(
                                 AddExpr_term(
                                   Term_factor(
-                                    Factor_number(
-                                     1
-                                    ) [Factor_number]
+                                    Factor_sub(
+                                      FactorSub_number(
+                                       2
+                                      ) [FactorSub_number]
+                                    ) [Factor_sub]
                                   ) [Term_factor]
                                 ) [AddExpr_term]
                               ) [Expr_add]
-                            ) [ActPars_one]
-                            Expr_add(
-                              AddExpr_term(
-                                Term_factor(
-                                  Factor_number(
-                                   2
-                                  ) [Factor_number]
-                                ) [Term_factor]
-                              ) [AddExpr_term]
-                            ) [Expr_add]
-                          ) [ActPars_more]
-                        ) [ActParsOpt_pars]
-                      ) [Factor_call]
+                            ) [ActPars_more]
+                          ) [ActParsOpt_pars]
+                        ) [FactorSub_call]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                 ) [Expr_add]
@@ -781,69 +807,79 @@ INFO  16:01:01,951 - Program(
           ) [StatementList_more]
           Statement_designator(
             DesignatorStatement_assign(
-              Designator_ident(
+              Designator_var(
                r
-              ) [Designator_ident]
+              ) [Designator_var]
               Expr_add(
                 AddExpr_term(
                   Term_factor(
-                    Factor_call(
-                      Designator_ident(
-                       saberi
-                      ) [Designator_ident]
-                      ActParsOpt_pars(
-                        ActPars_more(
-                          ActPars_one(
+                    Factor_sub(
+                      FactorSub_call(
+                        Designator_var(
+                         saberi
+                        ) [Designator_var]
+                        ActParsOpt_pars(
+                          ActPars_more(
+                            ActPars_one(
+                              Expr_add(
+                                AddExpr_term(
+                                  Term_factor(
+                                    Factor_sub(
+                                      FactorSub_designator(
+                                        Designator_var(
+                                         r
+                                        ) [Designator_var]
+                                      ) [FactorSub_designator]
+                                    ) [Factor_sub]
+                                  ) [Term_factor]
+                                ) [AddExpr_term]
+                              ) [Expr_add]
+                            ) [ActPars_one]
                             Expr_add(
                               AddExpr_term(
                                 Term_factor(
-                                  Factor_designator(
-                                    Designator_ident(
-                                     r
-                                    ) [Designator_ident]
-                                  ) [Factor_designator]
+                                  Factor_sub(
+                                    FactorSub_call(
+                                      Designator_var(
+                                       saberi
+                                      ) [Designator_var]
+                                      ActParsOpt_pars(
+                                        ActPars_more(
+                                          ActPars_one(
+                                            Expr_add(
+                                              AddExpr_term(
+                                                Term_factor(
+                                                  Factor_sub(
+                                                    FactorSub_number(
+                                                     3
+                                                    ) [FactorSub_number]
+                                                  ) [Factor_sub]
+                                                ) [Term_factor]
+                                              ) [AddExpr_term]
+                                            ) [Expr_add]
+                                          ) [ActPars_one]
+                                          Expr_add(
+                                            AddExpr_term(
+                                              Term_factor(
+                                                Factor_sub(
+                                                  FactorSub_number(
+                                                   4
+                                                  ) [FactorSub_number]
+                                                ) [Factor_sub]
+                                              ) [Term_factor]
+                                            ) [AddExpr_term]
+                                          ) [Expr_add]
+                                        ) [ActPars_more]
+                                      ) [ActParsOpt_pars]
+                                    ) [FactorSub_call]
+                                  ) [Factor_sub]
                                 ) [Term_factor]
                               ) [AddExpr_term]
                             ) [Expr_add]
-                          ) [ActPars_one]
-                          Expr_add(
-                            AddExpr_term(
-                              Term_factor(
-                                Factor_call(
-                                  Designator_ident(
-                                   saberi
-                                  ) [Designator_ident]
-                                  ActParsOpt_pars(
-                                    ActPars_more(
-                                      ActPars_one(
-                                        Expr_add(
-                                          AddExpr_term(
-                                            Term_factor(
-                                              Factor_number(
-                                               3
-                                              ) [Factor_number]
-                                            ) [Term_factor]
-                                          ) [AddExpr_term]
-                                        ) [Expr_add]
-                                      ) [ActPars_one]
-                                      Expr_add(
-                                        AddExpr_term(
-                                          Term_factor(
-                                            Factor_number(
-                                             4
-                                            ) [Factor_number]
-                                          ) [Term_factor]
-                                        ) [AddExpr_term]
-                                      ) [Expr_add]
-                                    ) [ActPars_more]
-                                  ) [ActParsOpt_pars]
-                                ) [Factor_call]
-                              ) [Term_factor]
-                            ) [AddExpr_term]
-                          ) [Expr_add]
-                        ) [ActPars_more]
-                      ) [ActParsOpt_pars]
-                    ) [Factor_call]
+                          ) [ActPars_more]
+                        ) [ActParsOpt_pars]
+                      ) [FactorSub_call]
+                    ) [Factor_sub]
                   ) [Term_factor]
                 ) [AddExpr_term]
               ) [Expr_add]
@@ -852,17 +888,19 @@ INFO  16:01:01,951 - Program(
         ) [StatementList_more]
         Statement_designator(
           DesignatorStatement_assign(
-            Designator_ident(
+            Designator_var(
              g
-            ) [Designator_ident]
+            ) [Designator_var]
             Expr_add(
               AddExpr_term(
                 Term_factor(
-                  Factor_designator(
-                    Designator_ident(
-                     r
-                    ) [Designator_ident]
-                  ) [Factor_designator]
+                  Factor_sub(
+                    FactorSub_designator(
+                      Designator_var(
+                       r
+                      ) [Designator_var]
+                    ) [FactorSub_designator]
+                  ) [Factor_sub]
                 ) [Term_factor]
               ) [AddExpr_term]
             ) [Expr_add]
@@ -872,8 +910,35 @@ INFO  16:01:01,951 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:01:01,951 - =================================================
-INFO  16:01:01,953 - =================================================
+INFO  19:17:28,469 - =================================================
+INFO  19:17:28,471 - Pretraga na 30(lokalna), nadjeno Var lokalna: int, 0, 1
+INFO  19:17:28,471 - Pretraga na 31(lokalna), nadjeno Var lokalna: int, 0, 1
+INFO  19:17:28,471 - Pretraga na 58(a), nadjeno Var a: int, 0, 1
+INFO  19:17:28,471 - Pretraga na 58(b), nadjeno Var b: int, 1, 1
+INFO  19:17:28,471 - Pretraga na 64(bezParametara), nadjeno Meth bezParametara: notype, 0, 0
+INFO  19:17:28,471 - Pretraga na 65(saParametrima), nadjeno Meth saParametrima: notype, 0, 3 
+   Var a: int, 0, 1 
+   Var b: char, 1, 1 
+   Var c: bool, 2, 1
+INFO  19:17:28,471 - Pretraga na 66(praznoReturn), nadjeno Meth praznoReturn: notype, 0, 0
+INFO  19:17:28,471 - Pretraga na 68(r), nadjeno Var r: int, 0, 1
+INFO  19:17:28,471 - Pretraga na 68(vratiBroj), nadjeno Meth vratiBroj: int, 0, 0 
+   Var lokalna: int, 0, 1
+INFO  19:17:28,471 - Pretraga na 69(r), nadjeno Var r: int, 0, 1
+INFO  19:17:28,471 - Pretraga na 69(saberi), nadjeno Meth saberi: int, 0, 2 
+   Var a: int, 0, 1 
+   Var b: int, 1, 1
+INFO  19:17:28,471 - Pretraga na 70(r), nadjeno Var r: int, 0, 1
+INFO  19:17:28,471 - Pretraga na 70(r), nadjeno Var r: int, 0, 1
+INFO  19:17:28,471 - Pretraga na 70(saberi), nadjeno Meth saberi: int, 0, 2 
+   Var a: int, 0, 1 
+   Var b: int, 1, 1
+INFO  19:17:28,471 - Pretraga na 70(saberi), nadjeno Meth saberi: int, 0, 2 
+   Var a: int, 0, 1 
+   Var b: int, 1, 1
+INFO  19:17:28,471 - Pretraga na 72(g), nadjeno Var g: int, 0, 0
+INFO  19:17:28,471 - Pretraga na 72(r), nadjeno Var r: int, 0, 1
+INFO  19:17:28,471 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -932,4 +997,4 @@ Prog Metode: notype, 0, 1
 
 
 
-INFO  16:01:01,954 - Parsiranje uspesno zavrseno!
+INFO  19:17:28,472 - Parsiranje uspesno zavrseno!

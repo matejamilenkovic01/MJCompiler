@@ -1,195 +1,195 @@
-INFO  16:01:02,289 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/06_conditions.mj
-INFO  16:01:02,299 - #2 program
-INFO  16:01:02,299 - #45 Uslovi
-INFO  16:01:02,299 - #45 int
-INFO  16:01:02,299 - #45 a
-INFO  16:01:02,299 - #36 ,
-INFO  16:01:02,299 - #45 b
-INFO  16:01:02,299 - #34 ;
-INFO  16:01:02,299 - #45 bool
-INFO  16:01:02,299 - #45 p
-INFO  16:01:02,299 - #36 ,
-INFO  16:01:02,299 - #45 q
-INFO  16:01:02,300 - #34 ;
-INFO  16:01:02,300 - #43 {
-INFO  16:01:02,300 - #7 void
-INFO  16:01:02,300 - #45 main
-INFO  16:01:02,300 - #39 (
-INFO  16:01:02,300 - #40 )
-INFO  16:01:02,300 - #43 {
-INFO  16:01:02,300 - #45 a
-INFO  16:01:02,300 - #31 =
-INFO  16:01:02,300 - #46 1
-INFO  16:01:02,300 - #34 ;
-INFO  16:01:02,301 - #45 b
-INFO  16:01:02,301 - #31 =
-INFO  16:01:02,301 - #46 2
-INFO  16:01:02,301 - #34 ;
-INFO  16:01:02,301 - #45 p
-INFO  16:01:02,301 - #31 =
-INFO  16:01:02,301 - #47 1
-INFO  16:01:02,301 - #34 ;
-INFO  16:01:02,301 - #45 q
-INFO  16:01:02,301 - #31 =
-INFO  16:01:02,301 - #47 0
-INFO  16:01:02,301 - #34 ;
-INFO  16:01:02,301 - #9 if
-INFO  16:01:02,301 - #39 (
-INFO  16:01:02,301 - #45 a
-INFO  16:01:02,301 - #22 ==
-INFO  16:01:02,301 - #45 b
-INFO  16:01:02,302 - #40 )
-INFO  16:01:02,302 - #45 a
-INFO  16:01:02,302 - #31 =
-INFO  16:01:02,302 - #46 0
-INFO  16:01:02,302 - #34 ;
-INFO  16:01:02,302 - #9 if
-INFO  16:01:02,302 - #39 (
-INFO  16:01:02,302 - #45 a
-INFO  16:01:02,302 - #23 !=
-INFO  16:01:02,302 - #45 b
-INFO  16:01:02,302 - #40 )
-INFO  16:01:02,303 - #45 a
-INFO  16:01:02,303 - #31 =
-INFO  16:01:02,303 - #46 0
-INFO  16:01:02,303 - #34 ;
-INFO  16:01:02,303 - #9 if
-INFO  16:01:02,303 - #39 (
-INFO  16:01:02,303 - #45 a
-INFO  16:01:02,303 - #24 >
-INFO  16:01:02,303 - #45 b
-INFO  16:01:02,303 - #40 )
-INFO  16:01:02,303 - #45 a
-INFO  16:01:02,303 - #31 =
-INFO  16:01:02,303 - #46 0
-INFO  16:01:02,303 - #34 ;
-INFO  16:01:02,303 - #9 if
-INFO  16:01:02,303 - #39 (
-INFO  16:01:02,303 - #45 a
-INFO  16:01:02,303 - #25 >=
-INFO  16:01:02,303 - #45 b
-INFO  16:01:02,304 - #40 )
-INFO  16:01:02,304 - #45 a
-INFO  16:01:02,304 - #31 =
-INFO  16:01:02,304 - #46 0
-INFO  16:01:02,304 - #34 ;
-INFO  16:01:02,304 - #9 if
-INFO  16:01:02,304 - #39 (
-INFO  16:01:02,304 - #45 a
-INFO  16:01:02,304 - #26 <
-INFO  16:01:02,304 - #45 b
-INFO  16:01:02,304 - #40 )
-INFO  16:01:02,304 - #45 a
-INFO  16:01:02,304 - #31 =
-INFO  16:01:02,304 - #46 0
-INFO  16:01:02,304 - #34 ;
-INFO  16:01:02,304 - #9 if
-INFO  16:01:02,304 - #39 (
-INFO  16:01:02,304 - #45 a
-INFO  16:01:02,304 - #27 <=
-INFO  16:01:02,304 - #45 b
-INFO  16:01:02,304 - #40 )
-INFO  16:01:02,304 - #45 a
-INFO  16:01:02,304 - #31 =
-INFO  16:01:02,304 - #46 0
-INFO  16:01:02,304 - #34 ;
-INFO  16:01:02,304 - #9 if
-INFO  16:01:02,304 - #39 (
-INFO  16:01:02,304 - #45 p
-INFO  16:01:02,305 - #40 )
-INFO  16:01:02,305 - #45 a
-INFO  16:01:02,305 - #31 =
-INFO  16:01:02,305 - #46 0
-INFO  16:01:02,305 - #34 ;
-INFO  16:01:02,305 - #9 if
-INFO  16:01:02,305 - #39 (
-INFO  16:01:02,305 - #45 p
-INFO  16:01:02,305 - #28 &&
-INFO  16:01:02,305 - #45 q
-INFO  16:01:02,305 - #40 )
-INFO  16:01:02,305 - #45 a
-INFO  16:01:02,305 - #31 =
-INFO  16:01:02,305 - #46 0
-INFO  16:01:02,305 - #34 ;
-INFO  16:01:02,305 - #9 if
-INFO  16:01:02,305 - #39 (
-INFO  16:01:02,305 - #45 p
-INFO  16:01:02,305 - #29 ||
-INFO  16:01:02,305 - #45 q
-INFO  16:01:02,305 - #40 )
-INFO  16:01:02,305 - #45 a
-INFO  16:01:02,305 - #31 =
-INFO  16:01:02,305 - #46 0
-INFO  16:01:02,305 - #34 ;
-INFO  16:01:02,305 - #9 if
-INFO  16:01:02,305 - #39 (
-INFO  16:01:02,305 - #45 p
-INFO  16:01:02,305 - #28 &&
-INFO  16:01:02,305 - #45 q
-INFO  16:01:02,306 - #29 ||
-INFO  16:01:02,306 - #45 a
-INFO  16:01:02,306 - #26 <
-INFO  16:01:02,306 - #45 b
-INFO  16:01:02,306 - #40 )
-INFO  16:01:02,306 - #45 a
-INFO  16:01:02,306 - #31 =
-INFO  16:01:02,306 - #46 0
-INFO  16:01:02,306 - #34 ;
-INFO  16:01:02,306 - #9 if
-INFO  16:01:02,306 - #39 (
-INFO  16:01:02,306 - #45 a
-INFO  16:01:02,306 - #26 <
-INFO  16:01:02,306 - #45 b
-INFO  16:01:02,306 - #28 &&
-INFO  16:01:02,306 - #45 b
-INFO  16:01:02,306 - #24 >
-INFO  16:01:02,306 - #45 a
-INFO  16:01:02,306 - #29 ||
-INFO  16:01:02,306 - #45 p
-INFO  16:01:02,306 - #28 &&
-INFO  16:01:02,306 - #45 q
-INFO  16:01:02,306 - #40 )
-INFO  16:01:02,306 - #45 a
-INFO  16:01:02,306 - #31 =
-INFO  16:01:02,306 - #46 0
-INFO  16:01:02,306 - #34 ;
-INFO  16:01:02,306 - #9 if
-INFO  16:01:02,306 - #39 (
-INFO  16:01:02,306 - #39 (
-INFO  16:01:02,306 - #45 a
-INFO  16:01:02,306 - #17 +
-INFO  16:01:02,306 - #46 1
-INFO  16:01:02,306 - #40 )
-INFO  16:01:02,307 - #19 *
-INFO  16:01:02,307 - #46 2
-INFO  16:01:02,307 - #27 <=
-INFO  16:01:02,307 - #45 b
-INFO  16:01:02,307 - #18 -
-INFO  16:01:02,307 - #46 3
-INFO  16:01:02,307 - #40 )
-INFO  16:01:02,307 - #45 a
-INFO  16:01:02,307 - #31 =
-INFO  16:01:02,307 - #46 0
-INFO  16:01:02,307 - #34 ;
-INFO  16:01:02,307 - #9 if
-INFO  16:01:02,307 - #39 (
-INFO  16:01:02,307 - #45 p
-INFO  16:01:02,307 - #28 &&
-INFO  16:01:02,307 - #45 q
-INFO  16:01:02,307 - #28 &&
-INFO  16:01:02,307 - #45 p
-INFO  16:01:02,307 - #29 ||
-INFO  16:01:02,307 - #45 q
-INFO  16:01:02,307 - #29 ||
-INFO  16:01:02,307 - #45 p
-INFO  16:01:02,307 - #40 )
-INFO  16:01:02,307 - #45 a
-INFO  16:01:02,307 - #31 =
-INFO  16:01:02,307 - #46 0
-INFO  16:01:02,307 - #34 ;
-INFO  16:01:02,307 - #44 }
-INFO  16:01:02,307 - #44 }
-INFO  16:01:02,309 - Program(
+INFO  19:17:28,779 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/06_conditions.mj
+INFO  19:17:28,789 - #2 program
+INFO  19:17:28,789 - #45 Uslovi
+INFO  19:17:28,789 - #45 int
+INFO  19:17:28,790 - #45 a
+INFO  19:17:28,790 - #36 ,
+INFO  19:17:28,790 - #45 b
+INFO  19:17:28,790 - #34 ;
+INFO  19:17:28,790 - #45 bool
+INFO  19:17:28,790 - #45 p
+INFO  19:17:28,790 - #36 ,
+INFO  19:17:28,790 - #45 q
+INFO  19:17:28,790 - #34 ;
+INFO  19:17:28,790 - #43 {
+INFO  19:17:28,790 - #7 void
+INFO  19:17:28,790 - #45 main
+INFO  19:17:28,791 - #39 (
+INFO  19:17:28,791 - #40 )
+INFO  19:17:28,791 - #43 {
+INFO  19:17:28,791 - #45 a
+INFO  19:17:28,791 - #31 =
+INFO  19:17:28,791 - #46 1
+INFO  19:17:28,791 - #34 ;
+INFO  19:17:28,791 - #45 b
+INFO  19:17:28,792 - #31 =
+INFO  19:17:28,792 - #46 2
+INFO  19:17:28,792 - #34 ;
+INFO  19:17:28,792 - #45 p
+INFO  19:17:28,792 - #31 =
+INFO  19:17:28,792 - #47 1
+INFO  19:17:28,792 - #34 ;
+INFO  19:17:28,792 - #45 q
+INFO  19:17:28,792 - #31 =
+INFO  19:17:28,792 - #47 0
+INFO  19:17:28,792 - #34 ;
+INFO  19:17:28,792 - #9 if
+INFO  19:17:28,792 - #39 (
+INFO  19:17:28,792 - #45 a
+INFO  19:17:28,792 - #22 ==
+INFO  19:17:28,792 - #45 b
+INFO  19:17:28,792 - #40 )
+INFO  19:17:28,792 - #45 a
+INFO  19:17:28,793 - #31 =
+INFO  19:17:28,793 - #46 0
+INFO  19:17:28,793 - #34 ;
+INFO  19:17:28,793 - #9 if
+INFO  19:17:28,793 - #39 (
+INFO  19:17:28,793 - #45 a
+INFO  19:17:28,793 - #23 !=
+INFO  19:17:28,793 - #45 b
+INFO  19:17:28,793 - #40 )
+INFO  19:17:28,793 - #45 a
+INFO  19:17:28,793 - #31 =
+INFO  19:17:28,793 - #46 0
+INFO  19:17:28,793 - #34 ;
+INFO  19:17:28,793 - #9 if
+INFO  19:17:28,793 - #39 (
+INFO  19:17:28,793 - #45 a
+INFO  19:17:28,793 - #24 >
+INFO  19:17:28,793 - #45 b
+INFO  19:17:28,793 - #40 )
+INFO  19:17:28,794 - #45 a
+INFO  19:17:28,794 - #31 =
+INFO  19:17:28,794 - #46 0
+INFO  19:17:28,794 - #34 ;
+INFO  19:17:28,794 - #9 if
+INFO  19:17:28,794 - #39 (
+INFO  19:17:28,794 - #45 a
+INFO  19:17:28,794 - #25 >=
+INFO  19:17:28,794 - #45 b
+INFO  19:17:28,794 - #40 )
+INFO  19:17:28,794 - #45 a
+INFO  19:17:28,794 - #31 =
+INFO  19:17:28,794 - #46 0
+INFO  19:17:28,794 - #34 ;
+INFO  19:17:28,794 - #9 if
+INFO  19:17:28,794 - #39 (
+INFO  19:17:28,794 - #45 a
+INFO  19:17:28,794 - #26 <
+INFO  19:17:28,794 - #45 b
+INFO  19:17:28,794 - #40 )
+INFO  19:17:28,794 - #45 a
+INFO  19:17:28,794 - #31 =
+INFO  19:17:28,794 - #46 0
+INFO  19:17:28,794 - #34 ;
+INFO  19:17:28,794 - #9 if
+INFO  19:17:28,794 - #39 (
+INFO  19:17:28,794 - #45 a
+INFO  19:17:28,795 - #27 <=
+INFO  19:17:28,795 - #45 b
+INFO  19:17:28,795 - #40 )
+INFO  19:17:28,795 - #45 a
+INFO  19:17:28,795 - #31 =
+INFO  19:17:28,795 - #46 0
+INFO  19:17:28,795 - #34 ;
+INFO  19:17:28,795 - #9 if
+INFO  19:17:28,795 - #39 (
+INFO  19:17:28,795 - #45 p
+INFO  19:17:28,795 - #40 )
+INFO  19:17:28,795 - #45 a
+INFO  19:17:28,795 - #31 =
+INFO  19:17:28,795 - #46 0
+INFO  19:17:28,795 - #34 ;
+INFO  19:17:28,795 - #9 if
+INFO  19:17:28,795 - #39 (
+INFO  19:17:28,795 - #45 p
+INFO  19:17:28,795 - #28 &&
+INFO  19:17:28,795 - #45 q
+INFO  19:17:28,795 - #40 )
+INFO  19:17:28,795 - #45 a
+INFO  19:17:28,795 - #31 =
+INFO  19:17:28,795 - #46 0
+INFO  19:17:28,795 - #34 ;
+INFO  19:17:28,795 - #9 if
+INFO  19:17:28,795 - #39 (
+INFO  19:17:28,795 - #45 p
+INFO  19:17:28,795 - #29 ||
+INFO  19:17:28,795 - #45 q
+INFO  19:17:28,795 - #40 )
+INFO  19:17:28,796 - #45 a
+INFO  19:17:28,796 - #31 =
+INFO  19:17:28,796 - #46 0
+INFO  19:17:28,796 - #34 ;
+INFO  19:17:28,796 - #9 if
+INFO  19:17:28,796 - #39 (
+INFO  19:17:28,796 - #45 p
+INFO  19:17:28,796 - #28 &&
+INFO  19:17:28,796 - #45 q
+INFO  19:17:28,796 - #29 ||
+INFO  19:17:28,796 - #45 a
+INFO  19:17:28,796 - #26 <
+INFO  19:17:28,796 - #45 b
+INFO  19:17:28,796 - #40 )
+INFO  19:17:28,796 - #45 a
+INFO  19:17:28,796 - #31 =
+INFO  19:17:28,796 - #46 0
+INFO  19:17:28,796 - #34 ;
+INFO  19:17:28,796 - #9 if
+INFO  19:17:28,796 - #39 (
+INFO  19:17:28,796 - #45 a
+INFO  19:17:28,796 - #26 <
+INFO  19:17:28,796 - #45 b
+INFO  19:17:28,796 - #28 &&
+INFO  19:17:28,796 - #45 b
+INFO  19:17:28,796 - #24 >
+INFO  19:17:28,796 - #45 a
+INFO  19:17:28,796 - #29 ||
+INFO  19:17:28,796 - #45 p
+INFO  19:17:28,796 - #28 &&
+INFO  19:17:28,796 - #45 q
+INFO  19:17:28,796 - #40 )
+INFO  19:17:28,796 - #45 a
+INFO  19:17:28,796 - #31 =
+INFO  19:17:28,796 - #46 0
+INFO  19:17:28,796 - #34 ;
+INFO  19:17:28,796 - #9 if
+INFO  19:17:28,796 - #39 (
+INFO  19:17:28,796 - #39 (
+INFO  19:17:28,796 - #45 a
+INFO  19:17:28,796 - #17 +
+INFO  19:17:28,796 - #46 1
+INFO  19:17:28,797 - #40 )
+INFO  19:17:28,797 - #19 *
+INFO  19:17:28,797 - #46 2
+INFO  19:17:28,797 - #27 <=
+INFO  19:17:28,797 - #45 b
+INFO  19:17:28,797 - #18 -
+INFO  19:17:28,797 - #46 3
+INFO  19:17:28,797 - #40 )
+INFO  19:17:28,797 - #45 a
+INFO  19:17:28,797 - #31 =
+INFO  19:17:28,797 - #46 0
+INFO  19:17:28,797 - #34 ;
+INFO  19:17:28,797 - #9 if
+INFO  19:17:28,797 - #39 (
+INFO  19:17:28,797 - #45 p
+INFO  19:17:28,797 - #28 &&
+INFO  19:17:28,797 - #45 q
+INFO  19:17:28,797 - #28 &&
+INFO  19:17:28,797 - #45 p
+INFO  19:17:28,797 - #29 ||
+INFO  19:17:28,797 - #45 q
+INFO  19:17:28,797 - #29 ||
+INFO  19:17:28,797 - #45 p
+INFO  19:17:28,797 - #40 )
+INFO  19:17:28,797 - #45 a
+INFO  19:17:28,798 - #31 =
+INFO  19:17:28,798 - #46 0
+INFO  19:17:28,798 - #34 ;
+INFO  19:17:28,798 - #44 }
+INFO  19:17:28,798 - #44 }
+INFO  19:17:28,799 - Program(
   ProgramName(
    Uslovi
   ) [ProgramName]
@@ -263,15 +263,17 @@ INFO  16:01:02,309 - Program(
                                         ) [StatementList_epsilon]
                                         Statement_designator(
                                           DesignatorStatement_assign(
-                                            Designator_ident(
+                                            Designator_var(
                                              a
-                                            ) [Designator_ident]
+                                            ) [Designator_var]
                                             Expr_add(
                                               AddExpr_term(
                                                 Term_factor(
-                                                  Factor_number(
-                                                   1
-                                                  ) [Factor_number]
+                                                  Factor_sub(
+                                                    FactorSub_number(
+                                                     1
+                                                    ) [FactorSub_number]
+                                                  ) [Factor_sub]
                                                 ) [Term_factor]
                                               ) [AddExpr_term]
                                             ) [Expr_add]
@@ -280,15 +282,17 @@ INFO  16:01:02,309 - Program(
                                       ) [StatementList_more]
                                       Statement_designator(
                                         DesignatorStatement_assign(
-                                          Designator_ident(
+                                          Designator_var(
                                            b
-                                          ) [Designator_ident]
+                                          ) [Designator_var]
                                           Expr_add(
                                             AddExpr_term(
                                               Term_factor(
-                                                Factor_number(
-                                                 2
-                                                ) [Factor_number]
+                                                Factor_sub(
+                                                  FactorSub_number(
+                                                   2
+                                                  ) [FactorSub_number]
+                                                ) [Factor_sub]
                                               ) [Term_factor]
                                             ) [AddExpr_term]
                                           ) [Expr_add]
@@ -297,15 +301,17 @@ INFO  16:01:02,309 - Program(
                                     ) [StatementList_more]
                                     Statement_designator(
                                       DesignatorStatement_assign(
-                                        Designator_ident(
+                                        Designator_var(
                                          p
-                                        ) [Designator_ident]
+                                        ) [Designator_var]
                                         Expr_add(
                                           AddExpr_term(
                                             Term_factor(
-                                              Factor_bool(
-                                               1
-                                              ) [Factor_bool]
+                                              Factor_sub(
+                                                FactorSub_bool(
+                                                 1
+                                                ) [FactorSub_bool]
+                                              ) [Factor_sub]
                                             ) [Term_factor]
                                           ) [AddExpr_term]
                                         ) [Expr_add]
@@ -314,15 +320,17 @@ INFO  16:01:02,309 - Program(
                                   ) [StatementList_more]
                                   Statement_designator(
                                     DesignatorStatement_assign(
-                                      Designator_ident(
+                                      Designator_var(
                                        q
-                                      ) [Designator_ident]
+                                      ) [Designator_var]
                                       Expr_add(
                                         AddExpr_term(
                                           Term_factor(
-                                            Factor_bool(
-                                             0
-                                            ) [Factor_bool]
+                                            Factor_sub(
+                                              FactorSub_bool(
+                                               0
+                                              ) [FactorSub_bool]
+                                            ) [Factor_sub]
                                           ) [Term_factor]
                                         ) [AddExpr_term]
                                       ) [Expr_add]
@@ -336,22 +344,26 @@ INFO  16:01:02,309 - Program(
                                         CondFact_relop(
                                           AddExpr_term(
                                             Term_factor(
-                                              Factor_designator(
-                                                Designator_ident(
-                                                 a
-                                                ) [Designator_ident]
-                                              ) [Factor_designator]
+                                              Factor_sub(
+                                                FactorSub_designator(
+                                                  Designator_var(
+                                                   a
+                                                  ) [Designator_var]
+                                                ) [FactorSub_designator]
+                                              ) [Factor_sub]
                                             ) [Term_factor]
                                           ) [AddExpr_term]
                                           Relop_eq(
                                           ) [Relop_eq]
                                           AddExpr_term(
                                             Term_factor(
-                                              Factor_designator(
-                                                Designator_ident(
-                                                 b
-                                                ) [Designator_ident]
-                                              ) [Factor_designator]
+                                              Factor_sub(
+                                                FactorSub_designator(
+                                                  Designator_var(
+                                                   b
+                                                  ) [Designator_var]
+                                                ) [FactorSub_designator]
+                                              ) [Factor_sub]
                                             ) [Term_factor]
                                           ) [AddExpr_term]
                                         ) [CondFact_relop]
@@ -360,15 +372,17 @@ INFO  16:01:02,309 - Program(
                                   ) [IfCondition_cond]
                                   Statement_designator(
                                     DesignatorStatement_assign(
-                                      Designator_ident(
+                                      Designator_var(
                                        a
-                                      ) [Designator_ident]
+                                      ) [Designator_var]
                                       Expr_add(
                                         AddExpr_term(
                                           Term_factor(
-                                            Factor_number(
-                                             0
-                                            ) [Factor_number]
+                                            Factor_sub(
+                                              FactorSub_number(
+                                               0
+                                              ) [FactorSub_number]
+                                            ) [Factor_sub]
                                           ) [Term_factor]
                                         ) [AddExpr_term]
                                       ) [Expr_add]
@@ -383,22 +397,26 @@ INFO  16:01:02,309 - Program(
                                       CondFact_relop(
                                         AddExpr_term(
                                           Term_factor(
-                                            Factor_designator(
-                                              Designator_ident(
-                                               a
-                                              ) [Designator_ident]
-                                            ) [Factor_designator]
+                                            Factor_sub(
+                                              FactorSub_designator(
+                                                Designator_var(
+                                                 a
+                                                ) [Designator_var]
+                                              ) [FactorSub_designator]
+                                            ) [Factor_sub]
                                           ) [Term_factor]
                                         ) [AddExpr_term]
                                         Relop_neq(
                                         ) [Relop_neq]
                                         AddExpr_term(
                                           Term_factor(
-                                            Factor_designator(
-                                              Designator_ident(
-                                               b
-                                              ) [Designator_ident]
-                                            ) [Factor_designator]
+                                            Factor_sub(
+                                              FactorSub_designator(
+                                                Designator_var(
+                                                 b
+                                                ) [Designator_var]
+                                              ) [FactorSub_designator]
+                                            ) [Factor_sub]
                                           ) [Term_factor]
                                         ) [AddExpr_term]
                                       ) [CondFact_relop]
@@ -407,15 +425,17 @@ INFO  16:01:02,309 - Program(
                                 ) [IfCondition_cond]
                                 Statement_designator(
                                   DesignatorStatement_assign(
-                                    Designator_ident(
+                                    Designator_var(
                                      a
-                                    ) [Designator_ident]
+                                    ) [Designator_var]
                                     Expr_add(
                                       AddExpr_term(
                                         Term_factor(
-                                          Factor_number(
-                                           0
-                                          ) [Factor_number]
+                                          Factor_sub(
+                                            FactorSub_number(
+                                             0
+                                            ) [FactorSub_number]
+                                          ) [Factor_sub]
                                         ) [Term_factor]
                                       ) [AddExpr_term]
                                     ) [Expr_add]
@@ -430,22 +450,26 @@ INFO  16:01:02,309 - Program(
                                     CondFact_relop(
                                       AddExpr_term(
                                         Term_factor(
-                                          Factor_designator(
-                                            Designator_ident(
-                                             a
-                                            ) [Designator_ident]
-                                          ) [Factor_designator]
+                                          Factor_sub(
+                                            FactorSub_designator(
+                                              Designator_var(
+                                               a
+                                              ) [Designator_var]
+                                            ) [FactorSub_designator]
+                                          ) [Factor_sub]
                                         ) [Term_factor]
                                       ) [AddExpr_term]
                                       Relop_gt(
                                       ) [Relop_gt]
                                       AddExpr_term(
                                         Term_factor(
-                                          Factor_designator(
-                                            Designator_ident(
-                                             b
-                                            ) [Designator_ident]
-                                          ) [Factor_designator]
+                                          Factor_sub(
+                                            FactorSub_designator(
+                                              Designator_var(
+                                               b
+                                              ) [Designator_var]
+                                            ) [FactorSub_designator]
+                                          ) [Factor_sub]
                                         ) [Term_factor]
                                       ) [AddExpr_term]
                                     ) [CondFact_relop]
@@ -454,15 +478,17 @@ INFO  16:01:02,309 - Program(
                               ) [IfCondition_cond]
                               Statement_designator(
                                 DesignatorStatement_assign(
-                                  Designator_ident(
+                                  Designator_var(
                                    a
-                                  ) [Designator_ident]
+                                  ) [Designator_var]
                                   Expr_add(
                                     AddExpr_term(
                                       Term_factor(
-                                        Factor_number(
-                                         0
-                                        ) [Factor_number]
+                                        Factor_sub(
+                                          FactorSub_number(
+                                           0
+                                          ) [FactorSub_number]
+                                        ) [Factor_sub]
                                       ) [Term_factor]
                                     ) [AddExpr_term]
                                   ) [Expr_add]
@@ -477,22 +503,26 @@ INFO  16:01:02,309 - Program(
                                   CondFact_relop(
                                     AddExpr_term(
                                       Term_factor(
-                                        Factor_designator(
-                                          Designator_ident(
-                                           a
-                                          ) [Designator_ident]
-                                        ) [Factor_designator]
+                                        Factor_sub(
+                                          FactorSub_designator(
+                                            Designator_var(
+                                             a
+                                            ) [Designator_var]
+                                          ) [FactorSub_designator]
+                                        ) [Factor_sub]
                                       ) [Term_factor]
                                     ) [AddExpr_term]
                                     Relop_geq(
                                     ) [Relop_geq]
                                     AddExpr_term(
                                       Term_factor(
-                                        Factor_designator(
-                                          Designator_ident(
-                                           b
-                                          ) [Designator_ident]
-                                        ) [Factor_designator]
+                                        Factor_sub(
+                                          FactorSub_designator(
+                                            Designator_var(
+                                             b
+                                            ) [Designator_var]
+                                          ) [FactorSub_designator]
+                                        ) [Factor_sub]
                                       ) [Term_factor]
                                     ) [AddExpr_term]
                                   ) [CondFact_relop]
@@ -501,15 +531,17 @@ INFO  16:01:02,309 - Program(
                             ) [IfCondition_cond]
                             Statement_designator(
                               DesignatorStatement_assign(
-                                Designator_ident(
+                                Designator_var(
                                  a
-                                ) [Designator_ident]
+                                ) [Designator_var]
                                 Expr_add(
                                   AddExpr_term(
                                     Term_factor(
-                                      Factor_number(
-                                       0
-                                      ) [Factor_number]
+                                      Factor_sub(
+                                        FactorSub_number(
+                                         0
+                                        ) [FactorSub_number]
+                                      ) [Factor_sub]
                                     ) [Term_factor]
                                   ) [AddExpr_term]
                                 ) [Expr_add]
@@ -524,22 +556,26 @@ INFO  16:01:02,309 - Program(
                                 CondFact_relop(
                                   AddExpr_term(
                                     Term_factor(
-                                      Factor_designator(
-                                        Designator_ident(
-                                         a
-                                        ) [Designator_ident]
-                                      ) [Factor_designator]
+                                      Factor_sub(
+                                        FactorSub_designator(
+                                          Designator_var(
+                                           a
+                                          ) [Designator_var]
+                                        ) [FactorSub_designator]
+                                      ) [Factor_sub]
                                     ) [Term_factor]
                                   ) [AddExpr_term]
                                   Relop_lt(
                                   ) [Relop_lt]
                                   AddExpr_term(
                                     Term_factor(
-                                      Factor_designator(
-                                        Designator_ident(
-                                         b
-                                        ) [Designator_ident]
-                                      ) [Factor_designator]
+                                      Factor_sub(
+                                        FactorSub_designator(
+                                          Designator_var(
+                                           b
+                                          ) [Designator_var]
+                                        ) [FactorSub_designator]
+                                      ) [Factor_sub]
                                     ) [Term_factor]
                                   ) [AddExpr_term]
                                 ) [CondFact_relop]
@@ -548,15 +584,17 @@ INFO  16:01:02,309 - Program(
                           ) [IfCondition_cond]
                           Statement_designator(
                             DesignatorStatement_assign(
-                              Designator_ident(
+                              Designator_var(
                                a
-                              ) [Designator_ident]
+                              ) [Designator_var]
                               Expr_add(
                                 AddExpr_term(
                                   Term_factor(
-                                    Factor_number(
-                                     0
-                                    ) [Factor_number]
+                                    Factor_sub(
+                                      FactorSub_number(
+                                       0
+                                      ) [FactorSub_number]
+                                    ) [Factor_sub]
                                   ) [Term_factor]
                                 ) [AddExpr_term]
                               ) [Expr_add]
@@ -571,22 +609,26 @@ INFO  16:01:02,309 - Program(
                               CondFact_relop(
                                 AddExpr_term(
                                   Term_factor(
-                                    Factor_designator(
-                                      Designator_ident(
-                                       a
-                                      ) [Designator_ident]
-                                    ) [Factor_designator]
+                                    Factor_sub(
+                                      FactorSub_designator(
+                                        Designator_var(
+                                         a
+                                        ) [Designator_var]
+                                      ) [FactorSub_designator]
+                                    ) [Factor_sub]
                                   ) [Term_factor]
                                 ) [AddExpr_term]
                                 Relop_leq(
                                 ) [Relop_leq]
                                 AddExpr_term(
                                   Term_factor(
-                                    Factor_designator(
-                                      Designator_ident(
-                                       b
-                                      ) [Designator_ident]
-                                    ) [Factor_designator]
+                                    Factor_sub(
+                                      FactorSub_designator(
+                                        Designator_var(
+                                         b
+                                        ) [Designator_var]
+                                      ) [FactorSub_designator]
+                                    ) [Factor_sub]
                                   ) [Term_factor]
                                 ) [AddExpr_term]
                               ) [CondFact_relop]
@@ -595,15 +637,17 @@ INFO  16:01:02,309 - Program(
                         ) [IfCondition_cond]
                         Statement_designator(
                           DesignatorStatement_assign(
-                            Designator_ident(
+                            Designator_var(
                              a
-                            ) [Designator_ident]
+                            ) [Designator_var]
                             Expr_add(
                               AddExpr_term(
                                 Term_factor(
-                                  Factor_number(
-                                   0
-                                  ) [Factor_number]
+                                  Factor_sub(
+                                    FactorSub_number(
+                                     0
+                                    ) [FactorSub_number]
+                                  ) [Factor_sub]
                                 ) [Term_factor]
                               ) [AddExpr_term]
                             ) [Expr_add]
@@ -618,11 +662,13 @@ INFO  16:01:02,309 - Program(
                             CondFact_expr(
                               AddExpr_term(
                                 Term_factor(
-                                  Factor_designator(
-                                    Designator_ident(
-                                     p
-                                    ) [Designator_ident]
-                                  ) [Factor_designator]
+                                  Factor_sub(
+                                    FactorSub_designator(
+                                      Designator_var(
+                                       p
+                                      ) [Designator_var]
+                                    ) [FactorSub_designator]
+                                  ) [Factor_sub]
                                 ) [Term_factor]
                               ) [AddExpr_term]
                             ) [CondFact_expr]
@@ -631,15 +677,17 @@ INFO  16:01:02,309 - Program(
                       ) [IfCondition_cond]
                       Statement_designator(
                         DesignatorStatement_assign(
-                          Designator_ident(
+                          Designator_var(
                            a
-                          ) [Designator_ident]
+                          ) [Designator_var]
                           Expr_add(
                             AddExpr_term(
                               Term_factor(
-                                Factor_number(
-                                 0
-                                ) [Factor_number]
+                                Factor_sub(
+                                  FactorSub_number(
+                                   0
+                                  ) [FactorSub_number]
+                                ) [Factor_sub]
                               ) [Term_factor]
                             ) [AddExpr_term]
                           ) [Expr_add]
@@ -655,11 +703,13 @@ INFO  16:01:02,309 - Program(
                             CondFact_expr(
                               AddExpr_term(
                                 Term_factor(
-                                  Factor_designator(
-                                    Designator_ident(
-                                     p
-                                    ) [Designator_ident]
-                                  ) [Factor_designator]
+                                  Factor_sub(
+                                    FactorSub_designator(
+                                      Designator_var(
+                                       p
+                                      ) [Designator_var]
+                                    ) [FactorSub_designator]
+                                  ) [Factor_sub]
                                 ) [Term_factor]
                               ) [AddExpr_term]
                             ) [CondFact_expr]
@@ -667,11 +717,13 @@ INFO  16:01:02,309 - Program(
                           CondFact_expr(
                             AddExpr_term(
                               Term_factor(
-                                Factor_designator(
-                                  Designator_ident(
-                                   q
-                                  ) [Designator_ident]
-                                ) [Factor_designator]
+                                Factor_sub(
+                                  FactorSub_designator(
+                                    Designator_var(
+                                     q
+                                    ) [Designator_var]
+                                  ) [FactorSub_designator]
+                                ) [Factor_sub]
                               ) [Term_factor]
                             ) [AddExpr_term]
                           ) [CondFact_expr]
@@ -680,15 +732,17 @@ INFO  16:01:02,309 - Program(
                     ) [IfCondition_cond]
                     Statement_designator(
                       DesignatorStatement_assign(
-                        Designator_ident(
+                        Designator_var(
                          a
-                        ) [Designator_ident]
+                        ) [Designator_var]
                         Expr_add(
                           AddExpr_term(
                             Term_factor(
-                              Factor_number(
-                               0
-                              ) [Factor_number]
+                              Factor_sub(
+                                FactorSub_number(
+                                 0
+                                ) [FactorSub_number]
+                              ) [Factor_sub]
                             ) [Term_factor]
                           ) [AddExpr_term]
                         ) [Expr_add]
@@ -704,11 +758,13 @@ INFO  16:01:02,309 - Program(
                           CondFact_expr(
                             AddExpr_term(
                               Term_factor(
-                                Factor_designator(
-                                  Designator_ident(
-                                   p
-                                  ) [Designator_ident]
-                                ) [Factor_designator]
+                                Factor_sub(
+                                  FactorSub_designator(
+                                    Designator_var(
+                                     p
+                                    ) [Designator_var]
+                                  ) [FactorSub_designator]
+                                ) [Factor_sub]
                               ) [Term_factor]
                             ) [AddExpr_term]
                           ) [CondFact_expr]
@@ -718,11 +774,13 @@ INFO  16:01:02,309 - Program(
                         CondFact_expr(
                           AddExpr_term(
                             Term_factor(
-                              Factor_designator(
-                                Designator_ident(
-                                 q
-                                ) [Designator_ident]
-                              ) [Factor_designator]
+                              Factor_sub(
+                                FactorSub_designator(
+                                  Designator_var(
+                                   q
+                                  ) [Designator_var]
+                                ) [FactorSub_designator]
+                              ) [Factor_sub]
                             ) [Term_factor]
                           ) [AddExpr_term]
                         ) [CondFact_expr]
@@ -731,15 +789,17 @@ INFO  16:01:02,309 - Program(
                   ) [IfCondition_cond]
                   Statement_designator(
                     DesignatorStatement_assign(
-                      Designator_ident(
+                      Designator_var(
                        a
-                      ) [Designator_ident]
+                      ) [Designator_var]
                       Expr_add(
                         AddExpr_term(
                           Term_factor(
-                            Factor_number(
-                             0
-                            ) [Factor_number]
+                            Factor_sub(
+                              FactorSub_number(
+                               0
+                              ) [FactorSub_number]
+                            ) [Factor_sub]
                           ) [Term_factor]
                         ) [AddExpr_term]
                       ) [Expr_add]
@@ -756,11 +816,13 @@ INFO  16:01:02,309 - Program(
                           CondFact_expr(
                             AddExpr_term(
                               Term_factor(
-                                Factor_designator(
-                                  Designator_ident(
-                                   p
-                                  ) [Designator_ident]
-                                ) [Factor_designator]
+                                Factor_sub(
+                                  FactorSub_designator(
+                                    Designator_var(
+                                     p
+                                    ) [Designator_var]
+                                  ) [FactorSub_designator]
+                                ) [Factor_sub]
                               ) [Term_factor]
                             ) [AddExpr_term]
                           ) [CondFact_expr]
@@ -768,11 +830,13 @@ INFO  16:01:02,309 - Program(
                         CondFact_expr(
                           AddExpr_term(
                             Term_factor(
-                              Factor_designator(
-                                Designator_ident(
-                                 q
-                                ) [Designator_ident]
-                              ) [Factor_designator]
+                              Factor_sub(
+                                FactorSub_designator(
+                                  Designator_var(
+                                   q
+                                  ) [Designator_var]
+                                ) [FactorSub_designator]
+                              ) [Factor_sub]
                             ) [Term_factor]
                           ) [AddExpr_term]
                         ) [CondFact_expr]
@@ -782,22 +846,26 @@ INFO  16:01:02,309 - Program(
                       CondFact_relop(
                         AddExpr_term(
                           Term_factor(
-                            Factor_designator(
-                              Designator_ident(
-                               a
-                              ) [Designator_ident]
-                            ) [Factor_designator]
+                            Factor_sub(
+                              FactorSub_designator(
+                                Designator_var(
+                                 a
+                                ) [Designator_var]
+                              ) [FactorSub_designator]
+                            ) [Factor_sub]
                           ) [Term_factor]
                         ) [AddExpr_term]
                         Relop_lt(
                         ) [Relop_lt]
                         AddExpr_term(
                           Term_factor(
-                            Factor_designator(
-                              Designator_ident(
-                               b
-                              ) [Designator_ident]
-                            ) [Factor_designator]
+                            Factor_sub(
+                              FactorSub_designator(
+                                Designator_var(
+                                 b
+                                ) [Designator_var]
+                              ) [FactorSub_designator]
+                            ) [Factor_sub]
                           ) [Term_factor]
                         ) [AddExpr_term]
                       ) [CondFact_relop]
@@ -806,15 +874,17 @@ INFO  16:01:02,309 - Program(
                 ) [IfCondition_cond]
                 Statement_designator(
                   DesignatorStatement_assign(
-                    Designator_ident(
+                    Designator_var(
                      a
-                    ) [Designator_ident]
+                    ) [Designator_var]
                     Expr_add(
                       AddExpr_term(
                         Term_factor(
-                          Factor_number(
-                           0
-                          ) [Factor_number]
+                          Factor_sub(
+                            FactorSub_number(
+                             0
+                            ) [FactorSub_number]
+                          ) [Factor_sub]
                         ) [Term_factor]
                       ) [AddExpr_term]
                     ) [Expr_add]
@@ -831,22 +901,26 @@ INFO  16:01:02,309 - Program(
                         CondFact_relop(
                           AddExpr_term(
                             Term_factor(
-                              Factor_designator(
-                                Designator_ident(
-                                 a
-                                ) [Designator_ident]
-                              ) [Factor_designator]
+                              Factor_sub(
+                                FactorSub_designator(
+                                  Designator_var(
+                                   a
+                                  ) [Designator_var]
+                                ) [FactorSub_designator]
+                              ) [Factor_sub]
                             ) [Term_factor]
                           ) [AddExpr_term]
                           Relop_lt(
                           ) [Relop_lt]
                           AddExpr_term(
                             Term_factor(
-                              Factor_designator(
-                                Designator_ident(
-                                 b
-                                ) [Designator_ident]
-                              ) [Factor_designator]
+                              Factor_sub(
+                                FactorSub_designator(
+                                  Designator_var(
+                                   b
+                                  ) [Designator_var]
+                                ) [FactorSub_designator]
+                              ) [Factor_sub]
                             ) [Term_factor]
                           ) [AddExpr_term]
                         ) [CondFact_relop]
@@ -854,22 +928,26 @@ INFO  16:01:02,309 - Program(
                       CondFact_relop(
                         AddExpr_term(
                           Term_factor(
-                            Factor_designator(
-                              Designator_ident(
-                               b
-                              ) [Designator_ident]
-                            ) [Factor_designator]
+                            Factor_sub(
+                              FactorSub_designator(
+                                Designator_var(
+                                 b
+                                ) [Designator_var]
+                              ) [FactorSub_designator]
+                            ) [Factor_sub]
                           ) [Term_factor]
                         ) [AddExpr_term]
                         Relop_gt(
                         ) [Relop_gt]
                         AddExpr_term(
                           Term_factor(
-                            Factor_designator(
-                              Designator_ident(
-                               a
-                              ) [Designator_ident]
-                            ) [Factor_designator]
+                            Factor_sub(
+                              FactorSub_designator(
+                                Designator_var(
+                                 a
+                                ) [Designator_var]
+                              ) [FactorSub_designator]
+                            ) [Factor_sub]
                           ) [Term_factor]
                         ) [AddExpr_term]
                       ) [CondFact_relop]
@@ -880,11 +958,13 @@ INFO  16:01:02,309 - Program(
                       CondFact_expr(
                         AddExpr_term(
                           Term_factor(
-                            Factor_designator(
-                              Designator_ident(
-                               p
-                              ) [Designator_ident]
-                            ) [Factor_designator]
+                            Factor_sub(
+                              FactorSub_designator(
+                                Designator_var(
+                                 p
+                                ) [Designator_var]
+                              ) [FactorSub_designator]
+                            ) [Factor_sub]
                           ) [Term_factor]
                         ) [AddExpr_term]
                       ) [CondFact_expr]
@@ -892,11 +972,13 @@ INFO  16:01:02,309 - Program(
                     CondFact_expr(
                       AddExpr_term(
                         Term_factor(
-                          Factor_designator(
-                            Designator_ident(
-                             q
-                            ) [Designator_ident]
-                          ) [Factor_designator]
+                          Factor_sub(
+                            FactorSub_designator(
+                              Designator_var(
+                               q
+                              ) [Designator_var]
+                            ) [FactorSub_designator]
+                          ) [Factor_sub]
                         ) [Term_factor]
                       ) [AddExpr_term]
                     ) [CondFact_expr]
@@ -905,15 +987,17 @@ INFO  16:01:02,309 - Program(
               ) [IfCondition_cond]
               Statement_designator(
                 DesignatorStatement_assign(
-                  Designator_ident(
+                  Designator_var(
                    a
-                  ) [Designator_ident]
+                  ) [Designator_var]
                   Expr_add(
                     AddExpr_term(
                       Term_factor(
-                        Factor_number(
-                         0
-                        ) [Factor_number]
+                        Factor_sub(
+                          FactorSub_number(
+                           0
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
                       ) [Term_factor]
                     ) [AddExpr_term]
                   ) [Expr_add]
@@ -929,34 +1013,42 @@ INFO  16:01:02,309 - Program(
                     AddExpr_term(
                       Term_mulop(
                         Term_factor(
-                          Factor_expr(
-                            Expr_add(
-                              AddExpr_addop(
-                                AddExpr_term(
+                          Factor_sub(
+                            FactorSub_expr(
+                              Expr_add(
+                                AddExpr_addop(
+                                  AddExpr_term(
+                                    Term_factor(
+                                      Factor_sub(
+                                        FactorSub_designator(
+                                          Designator_var(
+                                           a
+                                          ) [Designator_var]
+                                        ) [FactorSub_designator]
+                                      ) [Factor_sub]
+                                    ) [Term_factor]
+                                  ) [AddExpr_term]
+                                  Addop_plus(
+                                  ) [Addop_plus]
                                   Term_factor(
-                                    Factor_designator(
-                                      Designator_ident(
-                                       a
-                                      ) [Designator_ident]
-                                    ) [Factor_designator]
+                                    Factor_sub(
+                                      FactorSub_number(
+                                       1
+                                      ) [FactorSub_number]
+                                    ) [Factor_sub]
                                   ) [Term_factor]
-                                ) [AddExpr_term]
-                                Addop_plus(
-                                ) [Addop_plus]
-                                Term_factor(
-                                  Factor_number(
-                                   1
-                                  ) [Factor_number]
-                                ) [Term_factor]
-                              ) [AddExpr_addop]
-                            ) [Expr_add]
-                          ) [Factor_expr]
+                                ) [AddExpr_addop]
+                              ) [Expr_add]
+                            ) [FactorSub_expr]
+                          ) [Factor_sub]
                         ) [Term_factor]
                         Mulop_mul(
                         ) [Mulop_mul]
-                        Factor_number(
-                         2
-                        ) [Factor_number]
+                        Factor_sub(
+                          FactorSub_number(
+                           2
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
                       ) [Term_mulop]
                     ) [AddExpr_term]
                     Relop_leq(
@@ -964,19 +1056,23 @@ INFO  16:01:02,309 - Program(
                     AddExpr_addop(
                       AddExpr_term(
                         Term_factor(
-                          Factor_designator(
-                            Designator_ident(
-                             b
-                            ) [Designator_ident]
-                          ) [Factor_designator]
+                          Factor_sub(
+                            FactorSub_designator(
+                              Designator_var(
+                               b
+                              ) [Designator_var]
+                            ) [FactorSub_designator]
+                          ) [Factor_sub]
                         ) [Term_factor]
                       ) [AddExpr_term]
                       Addop_minus(
                       ) [Addop_minus]
                       Term_factor(
-                        Factor_number(
-                         3
-                        ) [Factor_number]
+                        Factor_sub(
+                          FactorSub_number(
+                           3
+                          ) [FactorSub_number]
+                        ) [Factor_sub]
                       ) [Term_factor]
                     ) [AddExpr_addop]
                   ) [CondFact_relop]
@@ -985,15 +1081,17 @@ INFO  16:01:02,309 - Program(
             ) [IfCondition_cond]
             Statement_designator(
               DesignatorStatement_assign(
-                Designator_ident(
+                Designator_var(
                  a
-                ) [Designator_ident]
+                ) [Designator_var]
                 Expr_add(
                   AddExpr_term(
                     Term_factor(
-                      Factor_number(
-                       0
-                      ) [Factor_number]
+                      Factor_sub(
+                        FactorSub_number(
+                         0
+                        ) [FactorSub_number]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                 ) [Expr_add]
@@ -1012,11 +1110,13 @@ INFO  16:01:02,309 - Program(
                         CondFact_expr(
                           AddExpr_term(
                             Term_factor(
-                              Factor_designator(
-                                Designator_ident(
-                                 p
-                                ) [Designator_ident]
-                              ) [Factor_designator]
+                              Factor_sub(
+                                FactorSub_designator(
+                                  Designator_var(
+                                   p
+                                  ) [Designator_var]
+                                ) [FactorSub_designator]
+                              ) [Factor_sub]
                             ) [Term_factor]
                           ) [AddExpr_term]
                         ) [CondFact_expr]
@@ -1024,11 +1124,13 @@ INFO  16:01:02,309 - Program(
                       CondFact_expr(
                         AddExpr_term(
                           Term_factor(
-                            Factor_designator(
-                              Designator_ident(
-                               q
-                              ) [Designator_ident]
-                            ) [Factor_designator]
+                            Factor_sub(
+                              FactorSub_designator(
+                                Designator_var(
+                                 q
+                                ) [Designator_var]
+                              ) [FactorSub_designator]
+                            ) [Factor_sub]
                           ) [Term_factor]
                         ) [AddExpr_term]
                       ) [CondFact_expr]
@@ -1036,11 +1138,13 @@ INFO  16:01:02,309 - Program(
                     CondFact_expr(
                       AddExpr_term(
                         Term_factor(
-                          Factor_designator(
-                            Designator_ident(
-                             p
-                            ) [Designator_ident]
-                          ) [Factor_designator]
+                          Factor_sub(
+                            FactorSub_designator(
+                              Designator_var(
+                               p
+                              ) [Designator_var]
+                            ) [FactorSub_designator]
+                          ) [Factor_sub]
                         ) [Term_factor]
                       ) [AddExpr_term]
                     ) [CondFact_expr]
@@ -1050,11 +1154,13 @@ INFO  16:01:02,309 - Program(
                   CondFact_expr(
                     AddExpr_term(
                       Term_factor(
-                        Factor_designator(
-                          Designator_ident(
-                           q
-                          ) [Designator_ident]
-                        ) [Factor_designator]
+                        Factor_sub(
+                          FactorSub_designator(
+                            Designator_var(
+                             q
+                            ) [Designator_var]
+                          ) [FactorSub_designator]
+                        ) [Factor_sub]
                       ) [Term_factor]
                     ) [AddExpr_term]
                   ) [CondFact_expr]
@@ -1064,11 +1170,13 @@ INFO  16:01:02,309 - Program(
                 CondFact_expr(
                   AddExpr_term(
                     Term_factor(
-                      Factor_designator(
-                        Designator_ident(
-                         p
-                        ) [Designator_ident]
-                      ) [Factor_designator]
+                      Factor_sub(
+                        FactorSub_designator(
+                          Designator_var(
+                           p
+                          ) [Designator_var]
+                        ) [FactorSub_designator]
+                      ) [Factor_sub]
                     ) [Term_factor]
                   ) [AddExpr_term]
                 ) [CondFact_expr]
@@ -1077,15 +1185,17 @@ INFO  16:01:02,309 - Program(
           ) [IfCondition_cond]
           Statement_designator(
             DesignatorStatement_assign(
-              Designator_ident(
+              Designator_var(
                a
-              ) [Designator_ident]
+              ) [Designator_var]
               Expr_add(
                 AddExpr_term(
                   Term_factor(
-                    Factor_number(
-                     0
-                    ) [Factor_number]
+                    Factor_sub(
+                      FactorSub_number(
+                       0
+                      ) [FactorSub_number]
+                    ) [Factor_sub]
                   ) [Term_factor]
                 ) [AddExpr_term]
               ) [Expr_add]
@@ -1096,8 +1206,59 @@ INFO  16:01:02,309 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  16:01:02,310 - =================================================
-INFO  16:01:02,312 - =================================================
+INFO  19:17:28,799 - =================================================
+INFO  19:17:28,801 - Pretraga na 12(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,801 - Pretraga na 13(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,801 - Pretraga na 14(p), nadjeno Var p: bool, 2, 0
+INFO  19:17:28,801 - Pretraga na 15(q), nadjeno Var q: bool, 3, 0
+INFO  19:17:28,801 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,801 - Pretraga na 17(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,801 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,801 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,801 - Pretraga na 18(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,801 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,801 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,801 - Pretraga na 19(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,801 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 20(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,802 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 21(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,802 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 22(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,802 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 24(p), nadjeno Var p: bool, 2, 0
+INFO  19:17:28,802 - Pretraga na 24(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 25(p), nadjeno Var p: bool, 2, 0
+INFO  19:17:28,802 - Pretraga na 25(q), nadjeno Var q: bool, 3, 0
+INFO  19:17:28,802 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 26(p), nadjeno Var p: bool, 2, 0
+INFO  19:17:28,802 - Pretraga na 26(q), nadjeno Var q: bool, 3, 0
+INFO  19:17:28,802 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 27(p), nadjeno Var p: bool, 2, 0
+INFO  19:17:28,802 - Pretraga na 27(q), nadjeno Var q: bool, 3, 0
+INFO  19:17:28,802 - Pretraga na 27(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 27(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,802 - Pretraga na 27(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,802 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,802 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 28(p), nadjeno Var p: bool, 2, 0
+INFO  19:17:28,802 - Pretraga na 28(q), nadjeno Var q: bool, 3, 0
+INFO  19:17:28,802 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 29(b), nadjeno Var b: int, 1, 0
+INFO  19:17:28,802 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - Pretraga na 30(p), nadjeno Var p: bool, 2, 0
+INFO  19:17:28,802 - Pretraga na 30(q), nadjeno Var q: bool, 3, 0
+INFO  19:17:28,802 - Pretraga na 30(p), nadjeno Var p: bool, 2, 0
+INFO  19:17:28,802 - Pretraga na 30(q), nadjeno Var q: bool, 3, 0
+INFO  19:17:28,802 - Pretraga na 30(p), nadjeno Var p: bool, 2, 0
+INFO  19:17:28,802 - Pretraga na 30(a), nadjeno Var a: int, 0, 0
+INFO  19:17:28,802 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -1122,4 +1283,4 @@ Prog Uslovi: notype, 0, 1
 
 
 
-INFO  16:01:02,312 - Parsiranje uspesno zavrseno!
+INFO  19:17:28,802 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,14 @@
+// EXPECT: SEMANTIC>=1
+// EXPECT-ERR: Metoda main ne sme imati formalne argumente
+// [MJ] A.4, opsti kontekstni uslovi: main mora biti void metoda bez argumenata.
+
+program SemMainSaArgumentima
+
+int a;
+
+{
+	void main(int x)
+	{
+		a = x;
+	}
+}

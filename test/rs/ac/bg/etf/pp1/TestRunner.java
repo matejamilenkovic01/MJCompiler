@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
  * <pre>
  *   // EXPECT: OK
  *   // EXPECT: SYNTAX&gt;=2 RECOVERY&gt;=1 LEXICAL&gt;=0
+ *   // EXPECT: SEMANTIC&gt;=1
  *   // EXPECT-ERR: deo poruke koji se mora pojaviti na stderr
  * </pre>
  *
@@ -43,6 +44,7 @@ public class TestRunner {
 	private static final String MARK_LEXICAL = "Leksicka greska";
 	private static final String MARK_SYNTAX = "Sintaksna greska";
 	private static final String MARK_RECOVERY = "Oporavak od greske";
+	private static final String MARK_SEMANTIC = "Semanticka greska";
 
 	public static void main(String[] args) throws Exception {
 
@@ -121,9 +123,10 @@ public class TestRunner {
 		int lexical = count(err, MARK_LEXICAL);
 		int syntax = count(err, MARK_SYNTAX);
 		int recovery = count(err, MARK_RECOVERY);
+		int semantic = count(err, MARK_SEMANTIC);
 
 		String summary = "izlaz=" + exitCode + " leks=" + lexical
-				+ " sint=" + syntax + " oporavak=" + recovery;
+				+ " sint=" + syntax + " oporavak=" + recovery + " sem=" + semantic;
 
 		Result r = new Result();
 		r.summary = summary;
@@ -146,7 +149,7 @@ public class TestRunner {
 				r.reason = "ocekivan ispravan program, ali je izlazni kod " + exitCode;
 				return r;
 			}
-			if (lexical + syntax + recovery > 0) {
+			if (lexical + syntax + recovery + semantic > 0) {
 				r.passed = false;
 				r.reason = "ocekivan ispravan program, ali su prijavljene greske (" + summary + ")";
 				return r;
@@ -175,6 +178,11 @@ public class TestRunner {
 		if (recovery < exp.minRecovery) {
 			r.passed = false;
 			r.reason = "ocekivano najmanje " + exp.minRecovery + " oporavaka, a ima " + recovery;
+			return r;
+		}
+		if (semantic < exp.minSemantic) {
+			r.passed = false;
+			r.reason = "ocekivano najmanje " + exp.minSemantic + " semantickih gresaka, a ima " + semantic;
 			return r;
 		}
 
@@ -255,6 +263,7 @@ public class TestRunner {
 		int minLexical;
 		int minSyntax;
 		int minRecovery;
+		int minSemantic;
 		List<String> mustContain = new ArrayList<String>();
 
 		static Expectation parse(File mj) throws IOException {
@@ -306,6 +315,8 @@ public class TestRunner {
 						e.minSyntax = value;
 					} else if ("RECOVERY".equals(key)) {
 						e.minRecovery = value;
+					} else if ("SEMANTIC".equals(key)) {
+						e.minSemantic = value;
 					}
 				}
 			}

@@ -1,0 +1,257 @@
+INFO  19:17:31,889 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/40_sem_designator.mj
+INFO  19:17:31,897 - #2 program
+INFO  19:17:31,897 - #45 SemDesignator
+INFO  19:17:31,897 - #45 int
+INFO  19:17:31,897 - #45 a
+INFO  19:17:31,897 - #34 ;
+INFO  19:17:31,897 - #45 int
+INFO  19:17:31,897 - #45 niz
+INFO  19:17:31,897 - #41 [
+INFO  19:17:31,898 - #42 ]
+INFO  19:17:31,898 - #34 ;
+INFO  19:17:31,898 - #45 char
+INFO  19:17:31,898 - #45 c
+INFO  19:17:31,898 - #34 ;
+INFO  19:17:31,898 - #43 {
+INFO  19:17:31,898 - #7 void
+INFO  19:17:31,898 - #45 main
+INFO  19:17:31,898 - #39 (
+INFO  19:17:31,898 - #40 )
+INFO  19:17:31,898 - #43 {
+INFO  19:17:31,898 - #45 a
+INFO  19:17:31,898 - #31 =
+INFO  19:17:31,898 - #45 nepostojeci
+INFO  19:17:31,898 - #34 ;
+INFO  19:17:31,899 - #45 a
+INFO  19:17:31,899 - #31 =
+INFO  19:17:31,899 - #45 a
+INFO  19:17:31,899 - #41 [
+INFO  19:17:31,899 - #46 1
+INFO  19:17:31,899 - #42 ]
+INFO  19:17:31,899 - #34 ;
+INFO  19:17:31,899 - #45 a
+INFO  19:17:31,899 - #31 =
+INFO  19:17:31,899 - #45 niz
+INFO  19:17:31,899 - #41 [
+INFO  19:17:31,899 - #45 c
+INFO  19:17:31,899 - #42 ]
+INFO  19:17:31,899 - #34 ;
+INFO  19:17:31,899 - #45 a
+INFO  19:17:31,899 - #31 =
+INFO  19:17:31,899 - #45 a
+INFO  19:17:31,899 - #37 .
+INFO  19:17:31,899 - #14 length
+INFO  19:17:31,899 - #34 ;
+INFO  19:17:31,899 - #44 }
+INFO  19:17:31,899 - #44 }
+INFO  19:17:31,900 - Program(
+  ProgramName(
+   SemDesignator
+  ) [ProgramName]
+  DeclList_var(
+    DeclList_var(
+      DeclList_var(
+        DeclList_epsilon(
+        ) [DeclList_epsilon]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarItemList_one(
+            VarItem_var(
+             a
+            ) [VarItem_var]
+          ) [VarItemList_one]
+        ) [VarDecl]
+      ) [DeclList_var]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarItemList_one(
+          VarItem_array(
+           niz
+          ) [VarItem_array]
+        ) [VarItemList_one]
+      ) [VarDecl]
+    ) [DeclList_var]
+    VarDecl(
+      Type(
+       char
+      ) [Type]
+      VarItemList_one(
+        VarItem_var(
+         c
+        ) [VarItem_var]
+      ) [VarItemList_one]
+    ) [VarDecl]
+  ) [DeclList_var]
+  MethodDeclList_more(
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
+    MethodDecl(
+      MethodTypeName(
+        RetType_void(
+        ) [RetType_void]
+       main
+      ) [MethodTypeName]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_more(
+          StatementList_more(
+            StatementList_more(
+              StatementList_epsilon(
+              ) [StatementList_epsilon]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_var(
+                   a
+                  ) [Designator_var]
+                  Expr_add(
+                    AddExpr_term(
+                      Term_factor(
+                        Factor_sub(
+                          FactorSub_designator(
+                            Designator_var(
+                             nepostojeci
+                            ) [Designator_var]
+                          ) [FactorSub_designator]
+                        ) [Factor_sub]
+                      ) [Term_factor]
+                    ) [AddExpr_term]
+                  ) [Expr_add]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_more]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_var(
+                 a
+                ) [Designator_var]
+                Expr_add(
+                  AddExpr_term(
+                    Term_factor(
+                      Factor_sub(
+                        FactorSub_designator(
+                          Designator_array(
+                            Designator_var(
+                             a
+                            ) [Designator_var]
+                            Expr_add(
+                              AddExpr_term(
+                                Term_factor(
+                                  Factor_sub(
+                                    FactorSub_number(
+                                     1
+                                    ) [FactorSub_number]
+                                  ) [Factor_sub]
+                                ) [Term_factor]
+                              ) [AddExpr_term]
+                            ) [Expr_add]
+                          ) [Designator_array]
+                        ) [FactorSub_designator]
+                      ) [Factor_sub]
+                    ) [Term_factor]
+                  ) [AddExpr_term]
+                ) [Expr_add]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+          ) [StatementList_more]
+          Statement_designator(
+            DesignatorStatement_assign(
+              Designator_var(
+               a
+              ) [Designator_var]
+              Expr_add(
+                AddExpr_term(
+                  Term_factor(
+                    Factor_sub(
+                      FactorSub_designator(
+                        Designator_array(
+                          Designator_var(
+                           niz
+                          ) [Designator_var]
+                          Expr_add(
+                            AddExpr_term(
+                              Term_factor(
+                                Factor_sub(
+                                  FactorSub_designator(
+                                    Designator_var(
+                                     c
+                                    ) [Designator_var]
+                                  ) [FactorSub_designator]
+                                ) [Factor_sub]
+                              ) [Term_factor]
+                            ) [AddExpr_term]
+                          ) [Expr_add]
+                        ) [Designator_array]
+                      ) [FactorSub_designator]
+                    ) [Factor_sub]
+                  ) [Term_factor]
+                ) [AddExpr_term]
+              ) [Expr_add]
+            ) [DesignatorStatement_assign]
+          ) [Statement_designator]
+        ) [StatementList_more]
+        Statement_designator(
+          DesignatorStatement_assign(
+            Designator_var(
+             a
+            ) [Designator_var]
+            Expr_add(
+              AddExpr_term(
+                Term_factor(
+                  Factor_sub(
+                    FactorSub_designator(
+                      Designator_length(
+                        Designator_var(
+                         a
+                        ) [Designator_var]
+                      ) [Designator_length]
+                    ) [FactorSub_designator]
+                  ) [Factor_sub]
+                ) [Term_factor]
+              ) [AddExpr_term]
+            ) [Expr_add]
+          ) [DesignatorStatement_assign]
+        ) [Statement_designator]
+      ) [StatementList_more]
+    ) [MethodDecl]
+  ) [MethodDeclList_more]
+) [Program]
+INFO  19:17:31,900 - =================================================
+INFO  19:17:31,902 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
+INFO  19:17:31,902 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  19:17:31,902 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  19:17:31,902 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  19:17:31,902 - Pretraga na 19(niz), nadjeno Var niz: Arr of int, 1, 0
+INFO  19:17:31,902 - Pretraga na 19(c), nadjeno Var c: char, 2, 0
+INFO  19:17:31,903 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  19:17:31,903 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  19:17:31,903 - =================================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog SemDesignator: notype, 0, 1 
+   Var a: int, 0, 0 
+   Var niz: Arr of int, 1, 0 
+   Var c: char, 2, 0 
+   Meth main: notype, 0, 0 
+
+
+
