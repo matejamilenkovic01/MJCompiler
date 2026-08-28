@@ -1,247 +1,107 @@
-INFO  19:17:33,853 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/program.mj
-INFO  19:17:33,861 - #2 program
-INFO  19:17:33,861 - #45 Macko
-INFO  19:17:33,861 - #45 int
-INFO  19:17:33,861 - #45 a
-INFO  19:17:33,861 - #36 ,
-INFO  19:17:33,861 - #45 b
-INFO  19:17:33,861 - #36 ,
-INFO  19:17:33,862 - #45 c
-INFO  19:17:33,862 - #34 ;
-INFO  19:17:33,862 - #43 {
-INFO  19:17:33,862 - #7 void
-INFO  19:17:33,862 - #45 main
-INFO  19:17:33,862 - #39 (
-INFO  19:17:33,862 - #40 )
-INFO  19:17:33,862 - #45 int
-INFO  19:17:33,862 - #45 a
-INFO  19:17:33,862 - #36 ,
-INFO  19:17:33,862 - #45 b
-INFO  19:17:33,862 - #41 [
-INFO  19:17:33,862 - #42 ]
-INFO  19:17:33,862 - #34 ;
-INFO  19:17:33,862 - #45 char
-INFO  19:17:33,862 - #45 eol
-INFO  19:17:33,862 - #34 ;
-INFO  19:17:33,863 - #43 {
-INFO  19:17:33,863 - #5 print
-INFO  19:17:33,863 - #39 (
-INFO  19:17:33,863 - #18 -
-INFO  19:17:33,863 - #46 3
-INFO  19:17:33,863 - #40 )
-INFO  19:17:33,863 - #34 ;
-INFO  19:17:33,863 - #44 }
-INFO  19:17:33,863 - #7 void
-INFO  19:17:33,863 - #45 m1
-INFO  19:17:33,863 - #39 (
-INFO  19:17:33,863 - #45 int
-INFO  19:17:33,863 - #45 fp1
-INFO  19:17:33,863 - #36 ,
-INFO  19:17:33,863 - #45 char
-INFO  19:17:33,863 - #45 fp2
-INFO  19:17:33,864 - #36 ,
-INFO  19:17:33,864 - #45 bool
-INFO  19:17:33,864 - #45 fp3
-INFO  19:17:33,864 - #40 )
-INFO  19:17:33,864 - #45 int
-INFO  19:17:33,864 - #45 a
-INFO  19:17:33,864 - #36 ,
-INFO  19:17:33,864 - #45 b
-INFO  19:17:33,864 - #41 [
-INFO  19:17:33,864 - #42 ]
-INFO  19:17:33,864 - #34 ;
-INFO  19:17:33,864 - #45 int
-INFO  19:17:33,864 - #45 x
-INFO  19:17:33,864 - #41 [
-INFO  19:17:33,864 - #42 ]
-INFO  19:17:33,864 - #36 ,
-INFO  19:17:33,864 - #45 y
-INFO  19:17:33,864 - #34 ;
-INFO  19:17:33,864 - #45 char
-INFO  19:17:33,864 - #45 eol
-INFO  19:17:33,864 - #34 ;
-INFO  19:17:33,864 - #43 {
-INFO  19:17:33,864 - #44 }
-INFO  19:17:33,864 - #44 }
-INFO  19:17:33,865 - Program(
+INFO  16:37:43,645 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/program.mj
+INFO  16:37:43,654 - #2 program
+INFO  16:37:43,654 - #45 Macko
+INFO  16:37:43,654 - #3 const
+INFO  16:37:43,654 - #45 int
+INFO  16:37:43,654 - #45 pi
+INFO  16:37:43,654 - #31 =
+INFO  16:37:43,654 - #46 3
+INFO  16:37:43,654 - #34 ;
+INFO  16:37:43,654 - #45 int
+INFO  16:37:43,655 - #45 x
+INFO  16:37:43,655 - #36 ,
+INFO  16:37:43,655 - #45 y
+INFO  16:37:43,655 - #41 [
+INFO  16:37:43,655 - #42 ]
+INFO  16:37:43,655 - #34 ;
+INFO  16:37:43,655 - #43 {
+INFO  16:37:43,655 - #7 void
+INFO  16:37:43,655 - #45 main
+INFO  16:37:43,655 - #39 (
+INFO  16:37:43,655 - #40 )
+INFO  16:37:43,656 - #43 {
+INFO  16:37:43,656 - #5 print
+INFO  16:37:43,656 - #39 (
+INFO  16:37:43,656 - #46 1
+INFO  16:37:43,656 - #40 )
+INFO  16:37:43,656 - #34 ;
+INFO  16:37:43,656 - #44 }
+INFO  16:37:43,656 - #44 }
+INFO  16:37:43,657 - Program(
   ProgramName(
    Macko
   ) [ProgramName]
   DeclList_var(
-    DeclList_epsilon(
-    ) [DeclList_epsilon]
+    DeclList_const(
+      DeclList_epsilon(
+      ) [DeclList_epsilon]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstItemList_one(
+          ConstItem(
+           pi
+            Constant_number(
+             3
+            ) [Constant_number]
+          ) [ConstItem]
+        ) [ConstItemList_one]
+      ) [ConstDecl]
+    ) [DeclList_const]
     VarDecl(
       Type(
        int
       ) [Type]
       VarItemList_more(
-        VarItemList_more(
-          VarItemList_one(
-            VarItem_var(
-             a
-            ) [VarItem_var]
-          ) [VarItemList_one]
+        VarItemList_one(
           VarItem_var(
-           b
+           x
           ) [VarItem_var]
-        ) [VarItemList_more]
-        VarItem_var(
-         c
-        ) [VarItem_var]
+        ) [VarItemList_one]
+        VarItem_array(
+         y
+        ) [VarItem_array]
       ) [VarItemList_more]
     ) [VarDecl]
   ) [DeclList_var]
   MethodDeclList_more(
-    MethodDeclList_more(
-      MethodDeclList_epsilon(
-      ) [MethodDeclList_epsilon]
-      MethodDecl(
-        MethodTypeName(
-          RetType_void(
-          ) [RetType_void]
-         main
-        ) [MethodTypeName]
-        FormParsOpt_epsilon(
-        ) [FormParsOpt_epsilon]
-        VarDeclListOpt_more(
-          VarDeclListOpt_more(
-            VarDeclListOpt_epsilon(
-            ) [VarDeclListOpt_epsilon]
-            VarDecl(
-              Type(
-               int
-              ) [Type]
-              VarItemList_more(
-                VarItemList_one(
-                  VarItem_var(
-                   a
-                  ) [VarItem_var]
-                ) [VarItemList_one]
-                VarItem_array(
-                 b
-                ) [VarItem_array]
-              ) [VarItemList_more]
-            ) [VarDecl]
-          ) [VarDeclListOpt_more]
-          VarDecl(
-            Type(
-             char
-            ) [Type]
-            VarItemList_one(
-              VarItem_var(
-               eol
-              ) [VarItem_var]
-            ) [VarItemList_one]
-          ) [VarDecl]
-        ) [VarDeclListOpt_more]
-        StatementList_more(
-          StatementList_epsilon(
-          ) [StatementList_epsilon]
-          Statement_print(
-            Expr_add(
-              AddExpr_term(
-                Term_factor(
-                  Factor_neg(
-                    FactorSub_number(
-                     3
-                    ) [FactorSub_number]
-                  ) [Factor_neg]
-                ) [Term_factor]
-              ) [AddExpr_term]
-            ) [Expr_add]
-            PrintWidthOpt_epsilon(
-            ) [PrintWidthOpt_epsilon]
-          ) [Statement_print]
-        ) [StatementList_more]
-      ) [MethodDecl]
-    ) [MethodDeclList_more]
+    MethodDeclList_epsilon(
+    ) [MethodDeclList_epsilon]
     MethodDecl(
       MethodTypeName(
         RetType_void(
         ) [RetType_void]
-       m1
+       main
       ) [MethodTypeName]
-      FormParsOpt_pars(
-        FormPars_more(
-          FormPars_more(
-            FormPars_one(
-              FormParDecl_var(
-                Type(
-                 int
-                ) [Type]
-               fp1
-              ) [FormParDecl_var]
-            ) [FormPars_one]
-            FormParDecl_var(
-              Type(
-               char
-              ) [Type]
-             fp2
-            ) [FormParDecl_var]
-          ) [FormPars_more]
-          FormParDecl_var(
-            Type(
-             bool
-            ) [Type]
-           fp3
-          ) [FormParDecl_var]
-        ) [FormPars_more]
-      ) [FormParsOpt_pars]
-      VarDeclListOpt_more(
-        VarDeclListOpt_more(
-          VarDeclListOpt_more(
-            VarDeclListOpt_epsilon(
-            ) [VarDeclListOpt_epsilon]
-            VarDecl(
-              Type(
-               int
-              ) [Type]
-              VarItemList_more(
-                VarItemList_one(
-                  VarItem_var(
-                   a
-                  ) [VarItem_var]
-                ) [VarItemList_one]
-                VarItem_array(
-                 b
-                ) [VarItem_array]
-              ) [VarItemList_more]
-            ) [VarDecl]
-          ) [VarDeclListOpt_more]
-          VarDecl(
-            Type(
-             int
-            ) [Type]
-            VarItemList_more(
-              VarItemList_one(
-                VarItem_array(
-                 x
-                ) [VarItem_array]
-              ) [VarItemList_one]
-              VarItem_var(
-               y
-              ) [VarItem_var]
-            ) [VarItemList_more]
-          ) [VarDecl]
-        ) [VarDeclListOpt_more]
-        VarDecl(
-          Type(
-           char
-          ) [Type]
-          VarItemList_one(
-            VarItem_var(
-             eol
-            ) [VarItem_var]
-          ) [VarItemList_one]
-        ) [VarDecl]
-      ) [VarDeclListOpt_more]
-      StatementList_epsilon(
-      ) [StatementList_epsilon]
+      FormParsOpt_epsilon(
+      ) [FormParsOpt_epsilon]
+      VarDeclListOpt_epsilon(
+      ) [VarDeclListOpt_epsilon]
+      StatementList_more(
+        StatementList_epsilon(
+        ) [StatementList_epsilon]
+        Statement_print(
+          Expr_add(
+            AddExpr_term(
+              Term_factor(
+                Factor_sub(
+                  FactorSub_number(
+                   1
+                  ) [FactorSub_number]
+                ) [Factor_sub]
+              ) [Term_factor]
+            ) [AddExpr_term]
+          ) [Expr_add]
+          PrintWidthOpt_epsilon(
+          ) [PrintWidthOpt_epsilon]
+        ) [Statement_print]
+      ) [StatementList_more]
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:33,865 - =================================================
-INFO  19:17:33,867 - =================================================
+INFO  16:37:43,657 - =================================================
+INFO  16:37:43,658 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -258,24 +118,11 @@ Meth len: int, 0, 1
 
 Type bool: bool, -1, -1 
 Prog Macko: notype, 0, 1 
-   Var a: int, 0, 0 
-   Var b: int, 1, 0 
-   Var c: int, 2, 0 
+   Con pi: int, 3, 0 
+   Var x: int, 0, 0 
+   Var y: Arr of int, 1, 0 
    Meth main: notype, 0, 0 
-      Var a: int, 0, 1 
-      Var b: Arr of int, 1, 1 
-      Var eol: char, 2, 1 
-
-   Meth m1: notype, 0, 3 
-      Var fp1: int, 0, 1 
-      Var fp2: char, 1, 1 
-      Var fp3: bool, 2, 1 
-      Var a: int, 3, 1 
-      Var b: Arr of int, 4, 1 
-      Var x: Arr of int, 5, 1 
-      Var y: int, 6, 1 
-      Var eol: char, 7, 1 
 
 
 
-INFO  19:17:33,867 - Parsiranje uspesno zavrseno!
+INFO  16:37:43,659 - Generisanje uspesno zavrseno!

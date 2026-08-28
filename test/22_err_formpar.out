@@ -1,50 +1,50 @@
-INFO  19:17:30,616 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/22_err_formpar.mj
-INFO  19:17:30,624 - #2 program
-INFO  19:17:30,624 - #45 GreskaFormalniParametar
-INFO  19:17:30,624 - #43 {
-INFO  19:17:30,624 - #7 void
-INFO  19:17:30,625 - #45 prva
-INFO  19:17:30,625 - #39 (
-INFO  19:17:30,625 - #45 int
-INFO  19:17:30,625 - #45 a
-INFO  19:17:30,625 - #36 ,
-INFO  19:17:30,625 - #46 5
-INFO  19:17:30,625 - #36 ,
-INFO  19:17:30,625 - #45 char
-INFO  19:17:30,625 - #45 c
-INFO  19:17:30,625 - #40 )
-INFO  19:17:30,626 - #43 {
-INFO  19:17:30,626 - #44 }
-INFO  19:17:30,626 - #7 void
-INFO  19:17:30,626 - #45 druga
-INFO  19:17:30,626 - #39 (
-INFO  19:17:30,626 - #45 int
-INFO  19:17:30,626 - #45 a
-INFO  19:17:30,626 - #36 ,
-INFO  19:17:30,626 - #45 int
-INFO  19:17:30,626 - #46 7
-INFO  19:17:30,626 - #40 )
-INFO  19:17:30,626 - #43 {
-INFO  19:17:30,626 - #44 }
-INFO  19:17:30,626 - #7 void
-INFO  19:17:30,626 - #45 ispravna
-INFO  19:17:30,626 - #39 (
-INFO  19:17:30,627 - #45 int
-INFO  19:17:30,627 - #45 a
-INFO  19:17:30,627 - #36 ,
-INFO  19:17:30,627 - #45 char
-INFO  19:17:30,627 - #45 b
-INFO  19:17:30,627 - #40 )
-INFO  19:17:30,627 - #43 {
-INFO  19:17:30,627 - #44 }
-INFO  19:17:30,627 - #7 void
-INFO  19:17:30,627 - #45 main
-INFO  19:17:30,627 - #39 (
-INFO  19:17:30,627 - #40 )
-INFO  19:17:30,627 - #43 {
-INFO  19:17:30,627 - #44 }
-INFO  19:17:30,627 - #44 }
-INFO  19:17:30,628 - Program(
+INFO  16:37:40,512 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/22_err_formpar.mj
+INFO  16:37:40,521 - #2 program
+INFO  16:37:40,521 - #45 GreskaFormalniParametar
+INFO  16:37:40,521 - #43 {
+INFO  16:37:40,521 - #7 void
+INFO  16:37:40,521 - #45 prva
+INFO  16:37:40,522 - #39 (
+INFO  16:37:40,522 - #45 int
+INFO  16:37:40,522 - #45 a
+INFO  16:37:40,522 - #36 ,
+INFO  16:37:40,522 - #46 5
+INFO  16:37:40,522 - #36 ,
+INFO  16:37:40,522 - #45 char
+INFO  16:37:40,522 - #45 c
+INFO  16:37:40,522 - #40 )
+INFO  16:37:40,523 - #43 {
+INFO  16:37:40,523 - #44 }
+INFO  16:37:40,523 - #7 void
+INFO  16:37:40,523 - #45 druga
+INFO  16:37:40,523 - #39 (
+INFO  16:37:40,523 - #45 int
+INFO  16:37:40,523 - #45 a
+INFO  16:37:40,523 - #36 ,
+INFO  16:37:40,523 - #45 int
+INFO  16:37:40,523 - #46 7
+INFO  16:37:40,523 - #40 )
+INFO  16:37:40,523 - #43 {
+INFO  16:37:40,523 - #44 }
+INFO  16:37:40,523 - #7 void
+INFO  16:37:40,523 - #45 ispravna
+INFO  16:37:40,523 - #39 (
+INFO  16:37:40,523 - #45 int
+INFO  16:37:40,524 - #45 a
+INFO  16:37:40,524 - #36 ,
+INFO  16:37:40,524 - #45 char
+INFO  16:37:40,524 - #45 b
+INFO  16:37:40,524 - #40 )
+INFO  16:37:40,524 - #43 {
+INFO  16:37:40,524 - #44 }
+INFO  16:37:40,524 - #7 void
+INFO  16:37:40,524 - #45 main
+INFO  16:37:40,524 - #39 (
+INFO  16:37:40,524 - #40 )
+INFO  16:37:40,524 - #43 {
+INFO  16:37:40,524 - #44 }
+INFO  16:37:40,524 - #44 }
+INFO  16:37:40,524 - Program(
   ProgramName(
    GreskaFormalniParametar
   ) [ProgramName]
@@ -161,8 +161,8 @@ INFO  19:17:30,628 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:30,628 - =================================================
-INFO  19:17:30,629 - =================================================
+INFO  16:37:40,524 - =================================================
+INFO  16:37:40,526 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

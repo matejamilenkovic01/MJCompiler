@@ -1,13 +1,13 @@
-ERROR 19:17:30,939 - 
+ERROR 16:37:40,809 - 
 Sintaksna greska na liniji 11
-ERROR 19:17:30,940 - Oporavak od greske u deklaraciji promenljive izvrsen do linije 12
-ERROR 19:17:30,941 - 
+ERROR 16:37:40,811 - Oporavak od greske u deklaraciji promenljive izvrsen do linije 12
+ERROR 16:37:40,811 - 
 Sintaksna greska na liniji 15
-ERROR 19:17:30,941 - Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije 19
-ERROR 19:17:30,942 - 
+ERROR 16:37:40,812 - Oporavak od greske u deklaraciji formalnog parametra izvrsen do linije 19
+ERROR 16:37:40,813 - 
 Sintaksna greska na liniji 23
-ERROR 19:17:30,942 - Oporavak od greske u uslovu if iskaza izvrsen do linije 23
-ERROR 19:17:30,943 - 
+ERROR 16:37:40,813 - Oporavak od greske u uslovu if iskaza izvrsen do linije 23
+ERROR 16:37:40,813 - 
 Sintaksna greska na liniji 25
-ERROR 19:17:30,943 - Oporavak od greske u iskazu izvrsen do linije 27
-ERROR 19:17:30,945 - Parsiranje NIJE uspesno zavrseno!
+ERROR 16:37:40,813 - Oporavak od greske u iskazu izvrsen do linije 27
+ERROR 16:37:40,816 - Parsiranje NIJE uspesno zavrseno!

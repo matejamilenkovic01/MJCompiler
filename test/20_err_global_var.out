@@ -1,32 +1,32 @@
-INFO  19:17:30,302 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/20_err_global_var.mj
-INFO  19:17:30,310 - #2 program
-INFO  19:17:30,310 - #45 GreskaGlobalnaPromenljiva
-INFO  19:17:30,311 - #45 int
-INFO  19:17:30,311 - #45 a
-INFO  19:17:30,311 - #36 ,
-INFO  19:17:30,311 - #46 5
-INFO  19:17:30,311 - #36 ,
-INFO  19:17:30,311 - #45 b
-INFO  19:17:30,311 - #34 ;
-INFO  19:17:30,311 - #45 int
-INFO  19:17:30,312 - #45 c
-INFO  19:17:30,312 - #36 ,
-INFO  19:17:30,312 - #45 d
-INFO  19:17:30,312 - #46 7
-INFO  19:17:30,312 - #46 8
-INFO  19:17:30,312 - #34 ;
-INFO  19:17:30,312 - #45 int
-INFO  19:17:30,312 - #45 ispravna
-INFO  19:17:30,312 - #34 ;
-INFO  19:17:30,312 - #43 {
-INFO  19:17:30,312 - #7 void
-INFO  19:17:30,312 - #45 main
-INFO  19:17:30,313 - #39 (
-INFO  19:17:30,313 - #40 )
-INFO  19:17:30,313 - #43 {
-INFO  19:17:30,313 - #44 }
-INFO  19:17:30,313 - #44 }
-INFO  19:17:30,313 - Program(
+INFO  16:37:40,229 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/20_err_global_var.mj
+INFO  16:37:40,237 - #2 program
+INFO  16:37:40,237 - #45 GreskaGlobalnaPromenljiva
+INFO  16:37:40,237 - #45 int
+INFO  16:37:40,238 - #45 a
+INFO  16:37:40,238 - #36 ,
+INFO  16:37:40,238 - #46 5
+INFO  16:37:40,238 - #36 ,
+INFO  16:37:40,238 - #45 b
+INFO  16:37:40,238 - #34 ;
+INFO  16:37:40,238 - #45 int
+INFO  16:37:40,239 - #45 c
+INFO  16:37:40,239 - #36 ,
+INFO  16:37:40,239 - #45 d
+INFO  16:37:40,239 - #46 7
+INFO  16:37:40,239 - #46 8
+INFO  16:37:40,239 - #34 ;
+INFO  16:37:40,239 - #45 int
+INFO  16:37:40,239 - #45 ispravna
+INFO  16:37:40,239 - #34 ;
+INFO  16:37:40,239 - #43 {
+INFO  16:37:40,239 - #7 void
+INFO  16:37:40,239 - #45 main
+INFO  16:37:40,239 - #39 (
+INFO  16:37:40,239 - #40 )
+INFO  16:37:40,239 - #43 {
+INFO  16:37:40,239 - #44 }
+INFO  16:37:40,240 - #44 }
+INFO  16:37:40,240 - Program(
   ProgramName(
    GreskaGlobalnaPromenljiva
   ) [ProgramName]
@@ -99,8 +99,8 @@ INFO  19:17:30,313 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:30,313 - =================================================
-INFO  19:17:30,315 - =================================================
+INFO  16:37:40,240 - =================================================
+INFO  16:37:40,242 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

@@ -39,6 +39,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	   bottom-up obilasku posecuje PRE tela petlje, a umanjuje u visit(Statement_for),
 	   koji se posecuje posle njega. Bez markera ForStart brojac ne bi radio. */
 	private int loopCnt = 0;
+
+	int nVars;
 	
 	
 	/* LOG MESSAGES */
@@ -104,6 +106,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	@Override
 	public void visit(Program program) {
+		nVars = Tab.currentScope().getnVars();
 		Tab.chainLocalSymbols(currentProgram);
 		Tab.closeScope();
 		
@@ -205,10 +208,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			/* Cvor se ne ubacuje u tabelu, ali se pravi odvojen Obj da currentMethod ne bi
 			   ostao null (formalni parametri ga koriste) i da se lokali druge definicije ne
 			   bi zakacili na prvu. */
-			currentMethod = new Obj(Obj.Meth, methodTypeName.getMethName(), currentType);
+			methodTypeName.obj = currentMethod = new Obj(Obj.Meth, methodTypeName.getMethName(), currentType);
 		}
 		else {
-			currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethName(), currentType);
+			methodTypeName.obj = currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethName(), currentType);
 		}
 		/* Opseg se otvara i u slucaju greske: visit(MethodDecl) ga bezuslovno zatvara, pa bi
 		   preskakanje openScope() zatvorilo opseg programa. */
@@ -921,7 +924,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (actParsOpt instanceof ActParsOpt_pars) {
 			collectActualParameters(((ActParsOpt_pars) actParsOpt).getActPars(), actualTypes);
 		}
-	}
+	} 
 
 	private void collectActualParameters(ActPars actPars, List<Struct> actualTypes) {
 		if (actPars instanceof ActPars_more) {

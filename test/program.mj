@@ -2,18 +2,13 @@
 
 program Macko
 
-int a, b, c;
+const int pi = 3;
+int x, y[];
 
 {
 
-	void main() int a, b[]; char eol; {
-	
-		print(-3);
-	
-	}
-	
-	void m1(int fp1, char fp2, bool fp3) int a, b[]; int x[], y; char eol; {
-	
+	void main() int a, b; char carr[]; {
+		print('c');
 	}
 
 }

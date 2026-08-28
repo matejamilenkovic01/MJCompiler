@@ -1,169 +1,169 @@
-INFO  19:17:30,138 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/14_lexical.mj
-INFO  19:17:30,146 - #2 program
-INFO  19:17:30,146 - #45 Leksika
-INFO  19:17:30,147 - #3 const
-INFO  19:17:30,147 - #45 int
-INFO  19:17:30,147 - #45 nula
-INFO  19:17:30,147 - #31 =
-INFO  19:17:30,147 - #46 0
-INFO  19:17:30,147 - #34 ;
-INFO  19:17:30,147 - #3 const
-INFO  19:17:30,147 - #45 int
-INFO  19:17:30,147 - #45 veliki
-INFO  19:17:30,148 - #31 =
-INFO  19:17:30,148 - #46 123456
-INFO  19:17:30,148 - #34 ;
-INFO  19:17:30,148 - #3 const
-INFO  19:17:30,148 - #45 char
-INFO  19:17:30,148 - #45 razmak
-INFO  19:17:30,148 - #31 =
-INFO  19:17:30,148 - #48  
-INFO  19:17:30,148 - #34 ;
-INFO  19:17:30,148 - #3 const
-INFO  19:17:30,148 - #45 char
-INFO  19:17:30,148 - #45 cifraKaoZnak
-INFO  19:17:30,148 - #31 =
-INFO  19:17:30,148 - #48 7
-INFO  19:17:30,148 - #34 ;
-INFO  19:17:30,148 - #3 const
-INFO  19:17:30,148 - #45 char
-INFO  19:17:30,148 - #45 velikoSlovo
-INFO  19:17:30,148 - #31 =
-INFO  19:17:30,148 - #48 Z
-INFO  19:17:30,148 - #34 ;
-INFO  19:17:30,148 - #3 const
-INFO  19:17:30,148 - #45 bool
-INFO  19:17:30,148 - #45 istina
-INFO  19:17:30,148 - #31 =
-INFO  19:17:30,148 - #47 1
-INFO  19:17:30,148 - #34 ;
-INFO  19:17:30,149 - #3 const
-INFO  19:17:30,149 - #45 bool
-INFO  19:17:30,149 - #45 laz
-INFO  19:17:30,149 - #31 =
-INFO  19:17:30,149 - #47 0
-INFO  19:17:30,149 - #34 ;
-INFO  19:17:30,149 - #45 int
-INFO  19:17:30,149 - #45 a
-INFO  19:17:30,149 - #36 ,
-INFO  19:17:30,149 - #45 A
-INFO  19:17:30,149 - #36 ,
-INFO  19:17:30,149 - #45 aA
-INFO  19:17:30,149 - #36 ,
-INFO  19:17:30,149 - #45 a1
-INFO  19:17:30,149 - #36 ,
-INFO  19:17:30,149 - #45 a_1
-INFO  19:17:30,149 - #36 ,
-INFO  19:17:30,149 - #45 a_b_c
-INFO  19:17:30,149 - #36 ,
-INFO  19:17:30,149 - #45 duguljastoImePromenljive
-INFO  19:17:30,149 - #34 ;
-INFO  19:17:30,149 - #43 {
-INFO  19:17:30,150 - #7 void
-INFO  19:17:30,150 - #45 main
-INFO  19:17:30,150 - #39 (
-INFO  19:17:30,150 - #40 )
-INFO  19:17:30,150 - #45 int
-INFO  19:17:30,150 - #45 r
-INFO  19:17:30,150 - #34 ;
-INFO  19:17:30,150 - #43 {
-INFO  19:17:30,150 - #45 r
-INFO  19:17:30,150 - #31 =
-INFO  19:17:30,150 - #46 1
-INFO  19:17:30,151 - #17 +
-INFO  19:17:30,151 - #46 2
-INFO  19:17:30,151 - #18 -
-INFO  19:17:30,151 - #46 3
-INFO  19:17:30,151 - #19 *
-INFO  19:17:30,151 - #46 4
-INFO  19:17:30,151 - #20 /
-INFO  19:17:30,151 - #46 5
-INFO  19:17:30,151 - #21 %
-INFO  19:17:30,151 - #46 6
-INFO  19:17:30,151 - #34 ;
-INFO  19:17:30,151 - #45 r
-INFO  19:17:30,152 - #31 =
-INFO  19:17:30,152 - #39 (
-INFO  19:17:30,152 - #46 1
-INFO  19:17:30,152 - #40 )
-INFO  19:17:30,152 - #34 ;
-INFO  19:17:30,152 - #45 r
-INFO  19:17:30,152 - #32 ++
-INFO  19:17:30,152 - #34 ;
-INFO  19:17:30,152 - #45 r
-INFO  19:17:30,152 - #33 --
-INFO  19:17:30,152 - #34 ;
-INFO  19:17:30,152 - #9 if
-INFO  19:17:30,152 - #39 (
-INFO  19:17:30,152 - #46 1
-INFO  19:17:30,152 - #22 ==
-INFO  19:17:30,152 - #46 1
-INFO  19:17:30,152 - #28 &&
-INFO  19:17:30,152 - #46 2
-INFO  19:17:30,152 - #23 !=
-INFO  19:17:30,152 - #46 3
-INFO  19:17:30,153 - #29 ||
-INFO  19:17:30,153 - #46 4
-INFO  19:17:30,153 - #26 <
-INFO  19:17:30,153 - #46 5
-INFO  19:17:30,153 - #28 &&
-INFO  19:17:30,153 - #46 6
-INFO  19:17:30,153 - #24 >
-INFO  19:17:30,153 - #46 7
-INFO  19:17:30,153 - #29 ||
-INFO  19:17:30,153 - #46 8
-INFO  19:17:30,153 - #27 <=
-INFO  19:17:30,153 - #46 9
-INFO  19:17:30,153 - #28 &&
-INFO  19:17:30,153 - #46 10
-INFO  19:17:30,153 - #25 >=
-INFO  19:17:30,153 - #46 11
-INFO  19:17:30,153 - #40 )
-INFO  19:17:30,153 - #45 r
-INFO  19:17:30,153 - #31 =
-INFO  19:17:30,153 - #46 1
-INFO  19:17:30,153 - #34 ;
-INFO  19:17:30,154 - #45 r
-INFO  19:17:30,154 - #31 =
-INFO  19:17:30,154 - #46 1
-INFO  19:17:30,154 - #26 <
-INFO  19:17:30,154 - #46 2
-INFO  19:17:30,154 - #38 ?
-INFO  19:17:30,154 - #46 3
-INFO  19:17:30,154 - #35 :
-INFO  19:17:30,154 - #46 4
-INFO  19:17:30,154 - #34 ;
-INFO  19:17:30,154 - #45 a
-INFO  19:17:30,154 - #31 =
-INFO  19:17:30,154 - #45 r
-INFO  19:17:30,154 - #34 ;
-INFO  19:17:30,154 - #45 A
-INFO  19:17:30,154 - #31 =
-INFO  19:17:30,154 - #45 r
-INFO  19:17:30,154 - #34 ;
-INFO  19:17:30,154 - #45 aA
-INFO  19:17:30,154 - #31 =
-INFO  19:17:30,154 - #45 r
-INFO  19:17:30,154 - #34 ;
-INFO  19:17:30,154 - #45 a1
-INFO  19:17:30,154 - #31 =
-INFO  19:17:30,154 - #45 r
-INFO  19:17:30,154 - #34 ;
-INFO  19:17:30,154 - #45 a_1
-INFO  19:17:30,154 - #31 =
-INFO  19:17:30,154 - #45 r
-INFO  19:17:30,154 - #34 ;
-INFO  19:17:30,154 - #45 a_b_c
-INFO  19:17:30,154 - #31 =
-INFO  19:17:30,155 - #45 r
-INFO  19:17:30,155 - #34 ;
-INFO  19:17:30,155 - #45 duguljastoImePromenljive
-INFO  19:17:30,155 - #31 =
-INFO  19:17:30,155 - #45 r
-INFO  19:17:30,155 - #34 ;
-INFO  19:17:30,155 - #44 }
-INFO  19:17:30,155 - #44 }
-INFO  19:17:30,156 - Program(
+INFO  16:37:40,076 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/14_lexical.mj
+INFO  16:37:40,084 - #2 program
+INFO  16:37:40,084 - #45 Leksika
+INFO  16:37:40,084 - #3 const
+INFO  16:37:40,084 - #45 int
+INFO  16:37:40,084 - #45 nula
+INFO  16:37:40,085 - #31 =
+INFO  16:37:40,085 - #46 0
+INFO  16:37:40,085 - #34 ;
+INFO  16:37:40,085 - #3 const
+INFO  16:37:40,085 - #45 int
+INFO  16:37:40,085 - #45 veliki
+INFO  16:37:40,085 - #31 =
+INFO  16:37:40,085 - #46 123456
+INFO  16:37:40,085 - #34 ;
+INFO  16:37:40,085 - #3 const
+INFO  16:37:40,085 - #45 char
+INFO  16:37:40,085 - #45 razmak
+INFO  16:37:40,085 - #31 =
+INFO  16:37:40,085 - #48  
+INFO  16:37:40,085 - #34 ;
+INFO  16:37:40,085 - #3 const
+INFO  16:37:40,085 - #45 char
+INFO  16:37:40,085 - #45 cifraKaoZnak
+INFO  16:37:40,085 - #31 =
+INFO  16:37:40,085 - #48 7
+INFO  16:37:40,085 - #34 ;
+INFO  16:37:40,085 - #3 const
+INFO  16:37:40,085 - #45 char
+INFO  16:37:40,086 - #45 velikoSlovo
+INFO  16:37:40,086 - #31 =
+INFO  16:37:40,086 - #48 Z
+INFO  16:37:40,086 - #34 ;
+INFO  16:37:40,086 - #3 const
+INFO  16:37:40,086 - #45 bool
+INFO  16:37:40,086 - #45 istina
+INFO  16:37:40,086 - #31 =
+INFO  16:37:40,086 - #47 1
+INFO  16:37:40,086 - #34 ;
+INFO  16:37:40,086 - #3 const
+INFO  16:37:40,086 - #45 bool
+INFO  16:37:40,086 - #45 laz
+INFO  16:37:40,086 - #31 =
+INFO  16:37:40,086 - #47 0
+INFO  16:37:40,086 - #34 ;
+INFO  16:37:40,086 - #45 int
+INFO  16:37:40,086 - #45 a
+INFO  16:37:40,086 - #36 ,
+INFO  16:37:40,086 - #45 A
+INFO  16:37:40,086 - #36 ,
+INFO  16:37:40,086 - #45 aA
+INFO  16:37:40,086 - #36 ,
+INFO  16:37:40,086 - #45 a1
+INFO  16:37:40,086 - #36 ,
+INFO  16:37:40,086 - #45 a_1
+INFO  16:37:40,086 - #36 ,
+INFO  16:37:40,087 - #45 a_b_c
+INFO  16:37:40,087 - #36 ,
+INFO  16:37:40,087 - #45 duguljastoImePromenljive
+INFO  16:37:40,087 - #34 ;
+INFO  16:37:40,087 - #43 {
+INFO  16:37:40,087 - #7 void
+INFO  16:37:40,087 - #45 main
+INFO  16:37:40,087 - #39 (
+INFO  16:37:40,087 - #40 )
+INFO  16:37:40,087 - #45 int
+INFO  16:37:40,087 - #45 r
+INFO  16:37:40,087 - #34 ;
+INFO  16:37:40,087 - #43 {
+INFO  16:37:40,088 - #45 r
+INFO  16:37:40,088 - #31 =
+INFO  16:37:40,088 - #46 1
+INFO  16:37:40,088 - #17 +
+INFO  16:37:40,088 - #46 2
+INFO  16:37:40,088 - #18 -
+INFO  16:37:40,088 - #46 3
+INFO  16:37:40,088 - #19 *
+INFO  16:37:40,088 - #46 4
+INFO  16:37:40,088 - #20 /
+INFO  16:37:40,088 - #46 5
+INFO  16:37:40,088 - #21 %
+INFO  16:37:40,088 - #46 6
+INFO  16:37:40,088 - #34 ;
+INFO  16:37:40,089 - #45 r
+INFO  16:37:40,089 - #31 =
+INFO  16:37:40,089 - #39 (
+INFO  16:37:40,089 - #46 1
+INFO  16:37:40,089 - #40 )
+INFO  16:37:40,089 - #34 ;
+INFO  16:37:40,089 - #45 r
+INFO  16:37:40,089 - #32 ++
+INFO  16:37:40,089 - #34 ;
+INFO  16:37:40,089 - #45 r
+INFO  16:37:40,089 - #33 --
+INFO  16:37:40,089 - #34 ;
+INFO  16:37:40,089 - #9 if
+INFO  16:37:40,089 - #39 (
+INFO  16:37:40,089 - #46 1
+INFO  16:37:40,089 - #22 ==
+INFO  16:37:40,089 - #46 1
+INFO  16:37:40,089 - #28 &&
+INFO  16:37:40,089 - #46 2
+INFO  16:37:40,089 - #23 !=
+INFO  16:37:40,089 - #46 3
+INFO  16:37:40,089 - #29 ||
+INFO  16:37:40,090 - #46 4
+INFO  16:37:40,090 - #26 <
+INFO  16:37:40,090 - #46 5
+INFO  16:37:40,090 - #28 &&
+INFO  16:37:40,090 - #46 6
+INFO  16:37:40,090 - #24 >
+INFO  16:37:40,090 - #46 7
+INFO  16:37:40,090 - #29 ||
+INFO  16:37:40,090 - #46 8
+INFO  16:37:40,090 - #27 <=
+INFO  16:37:40,090 - #46 9
+INFO  16:37:40,090 - #28 &&
+INFO  16:37:40,090 - #46 10
+INFO  16:37:40,090 - #25 >=
+INFO  16:37:40,090 - #46 11
+INFO  16:37:40,090 - #40 )
+INFO  16:37:40,090 - #45 r
+INFO  16:37:40,090 - #31 =
+INFO  16:37:40,090 - #46 1
+INFO  16:37:40,090 - #34 ;
+INFO  16:37:40,091 - #45 r
+INFO  16:37:40,091 - #31 =
+INFO  16:37:40,091 - #46 1
+INFO  16:37:40,091 - #26 <
+INFO  16:37:40,091 - #46 2
+INFO  16:37:40,091 - #38 ?
+INFO  16:37:40,091 - #46 3
+INFO  16:37:40,091 - #35 :
+INFO  16:37:40,091 - #46 4
+INFO  16:37:40,091 - #34 ;
+INFO  16:37:40,091 - #45 a
+INFO  16:37:40,091 - #31 =
+INFO  16:37:40,091 - #45 r
+INFO  16:37:40,091 - #34 ;
+INFO  16:37:40,091 - #45 A
+INFO  16:37:40,091 - #31 =
+INFO  16:37:40,091 - #45 r
+INFO  16:37:40,091 - #34 ;
+INFO  16:37:40,091 - #45 aA
+INFO  16:37:40,091 - #31 =
+INFO  16:37:40,091 - #45 r
+INFO  16:37:40,091 - #34 ;
+INFO  16:37:40,091 - #45 a1
+INFO  16:37:40,091 - #31 =
+INFO  16:37:40,091 - #45 r
+INFO  16:37:40,091 - #34 ;
+INFO  16:37:40,091 - #45 a_1
+INFO  16:37:40,091 - #31 =
+INFO  16:37:40,091 - #45 r
+INFO  16:37:40,091 - #34 ;
+INFO  16:37:40,091 - #45 a_b_c
+INFO  16:37:40,091 - #31 =
+INFO  16:37:40,091 - #45 r
+INFO  16:37:40,091 - #34 ;
+INFO  16:37:40,091 - #45 duguljastoImePromenljive
+INFO  16:37:40,091 - #31 =
+INFO  16:37:40,091 - #45 r
+INFO  16:37:40,091 - #34 ;
+INFO  16:37:40,091 - #44 }
+INFO  16:37:40,091 - #44 }
+INFO  16:37:40,092 - Program(
   ProgramName(
    Leksika
   ) [ProgramName]
@@ -850,28 +850,28 @@ INFO  19:17:30,156 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:30,156 - =================================================
-INFO  19:17:30,158 - Pretraga na 23(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 24(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 25(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 26(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 28(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 30(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 32(a), nadjeno Var a: int, 0, 0
-INFO  19:17:30,158 - Pretraga na 32(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 33(A), nadjeno Var A: int, 1, 0
-INFO  19:17:30,158 - Pretraga na 33(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 34(aA), nadjeno Var aA: int, 2, 0
-INFO  19:17:30,158 - Pretraga na 34(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 35(a1), nadjeno Var a1: int, 3, 0
-INFO  19:17:30,158 - Pretraga na 35(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 36(a_1), nadjeno Var a_1: int, 4, 0
-INFO  19:17:30,158 - Pretraga na 36(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 37(a_b_c), nadjeno Var a_b_c: int, 5, 0
-INFO  19:17:30,158 - Pretraga na 37(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,158 - Pretraga na 38(duguljastoImePromenljive), nadjeno Var duguljastoImePromenljive: int, 6, 0
-INFO  19:17:30,159 - Pretraga na 38(r), nadjeno Var r: int, 0, 1
-INFO  19:17:30,159 - =================================================
+INFO  16:37:40,093 - =================================================
+INFO  16:37:40,094 - Pretraga na 23(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,094 - Pretraga na 24(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,094 - Pretraga na 25(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,094 - Pretraga na 26(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,094 - Pretraga na 28(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,095 - Pretraga na 30(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,095 - Pretraga na 32(a), nadjeno Var a: int, 0, 0
+INFO  16:37:40,095 - Pretraga na 32(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,095 - Pretraga na 33(A), nadjeno Var A: int, 1, 0
+INFO  16:37:40,095 - Pretraga na 33(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,095 - Pretraga na 34(aA), nadjeno Var aA: int, 2, 0
+INFO  16:37:40,095 - Pretraga na 34(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,095 - Pretraga na 35(a1), nadjeno Var a1: int, 3, 0
+INFO  16:37:40,095 - Pretraga na 35(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,095 - Pretraga na 36(a_1), nadjeno Var a_1: int, 4, 0
+INFO  16:37:40,095 - Pretraga na 36(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,095 - Pretraga na 37(a_b_c), nadjeno Var a_b_c: int, 5, 0
+INFO  16:37:40,095 - Pretraga na 37(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,095 - Pretraga na 38(duguljastoImePromenljive), nadjeno Var duguljastoImePromenljive: int, 6, 0
+INFO  16:37:40,095 - Pretraga na 38(r), nadjeno Var r: int, 0, 1
+INFO  16:37:40,095 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -907,4 +907,4 @@ Prog Leksika: notype, 0, 1
 
 
 
-INFO  19:17:30,159 - Parsiranje uspesno zavrseno!
+INFO  16:37:40,096 - Generisanje uspesno zavrseno!

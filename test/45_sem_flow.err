@@ -1,6 +1,6 @@
-ERROR 19:17:32,660 - Semanticka greska: Metoda noReturn nije void, a nema iskaz return na liniji 14
-ERROR 19:17:32,660 - Semanticka greska: Metoda voidWithValue je void, pa return ne sme imati izraz na liniji 21
-ERROR 19:17:32,660 - Semanticka greska: Tip izraza u return-u ne odgovara povratnom tipu metode wrongType na liniji 26
-ERROR 19:17:32,660 - Semanticka greska: Iskaz break se ne nalazi unutar for petlje
-ERROR 19:17:32,660 - Semanticka greska: Iskaz continue se ne nalazi unutar for petlje
-ERROR 19:17:32,660 - Parsiranje NIJE uspesno zavrseno!
+ERROR 16:37:42,458 - Semanticka greska: Metoda noReturn nije void, a nema iskaz return na liniji 14
+ERROR 16:37:42,458 - Semanticka greska: Metoda voidWithValue je void, pa return ne sme imati izraz na liniji 21
+ERROR 16:37:42,458 - Semanticka greska: Tip izraza u return-u ne odgovara povratnom tipu metode wrongType na liniji 26
+ERROR 16:37:42,458 - Semanticka greska: Iskaz break se ne nalazi unutar for petlje
+ERROR 16:37:42,458 - Semanticka greska: Iskaz continue se ne nalazi unutar for petlje
+ERROR 16:37:42,459 - Parsiranje NIJE uspesno zavrseno!

@@ -1,15 +1,15 @@
-INFO  19:17:27,977 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/01_minimal.mj
-INFO  19:17:27,985 - #2 program
-INFO  19:17:27,985 - #45 Minimal
-INFO  19:17:27,985 - #43 {
-INFO  19:17:27,985 - #7 void
-INFO  19:17:27,985 - #45 main
-INFO  19:17:27,986 - #39 (
-INFO  19:17:27,986 - #40 )
-INFO  19:17:27,986 - #43 {
-INFO  19:17:27,986 - #44 }
-INFO  19:17:27,986 - #44 }
-INFO  19:17:27,986 - Program(
+INFO  16:37:38,080 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/01_minimal.mj
+INFO  16:37:38,088 - #2 program
+INFO  16:37:38,088 - #45 Minimal
+INFO  16:37:38,088 - #43 {
+INFO  16:37:38,089 - #7 void
+INFO  16:37:38,089 - #45 main
+INFO  16:37:38,089 - #39 (
+INFO  16:37:38,089 - #40 )
+INFO  16:37:38,089 - #43 {
+INFO  16:37:38,089 - #44 }
+INFO  16:37:38,089 - #44 }
+INFO  16:37:38,090 - Program(
   ProgramName(
    Minimal
   ) [ProgramName]
@@ -33,8 +33,8 @@ INFO  19:17:27,986 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:27,987 - =================================================
-INFO  19:17:27,989 - =================================================
+INFO  16:37:38,090 - =================================================
+INFO  16:37:38,091 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -55,4 +55,4 @@ Prog Minimal: notype, 0, 1
 
 
 
-INFO  19:17:27,989 - Parsiranje uspesno zavrseno!
+INFO  16:37:38,092 - Generisanje uspesno zavrseno!

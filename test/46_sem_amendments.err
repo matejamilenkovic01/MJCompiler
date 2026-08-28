@@ -1,6 +1,6 @@
-ERROR 19:17:32,813 - Semanticka greska: Rezultat funkcije findAny se dodeljuje simbolu a, koji nije promenljiva tipa bool na liniji 21
-ERROR 19:17:32,813 - Semanticka greska: Funkcija findAny se primenjuje na a, sto nije niz na liniji 22
-ERROR 19:17:32,813 - Semanticka greska: Izraz u findAny nije uporediv sa tipom elemenata niza niz na liniji 23
-ERROR 19:17:32,813 - Semanticka greska: Iterator c u map nije istog tipa kao elementi niza niz na liniji 25
-ERROR 19:17:32,813 - Semanticka greska: Funkcija map se primenjuje na a, sto nije niz na liniji 26
-ERROR 19:17:32,813 - Parsiranje NIJE uspesno zavrseno!
+ERROR 16:37:42,605 - Semanticka greska: Rezultat funkcije findAny se dodeljuje simbolu a, koji nije promenljiva tipa bool na liniji 21
+ERROR 16:37:42,605 - Semanticka greska: Funkcija findAny se primenjuje na a, sto nije niz na liniji 22
+ERROR 16:37:42,605 - Semanticka greska: Izraz u findAny nije uporediv sa tipom elemenata niza niz na liniji 23
+ERROR 16:37:42,605 - Semanticka greska: Iterator c u map nije istog tipa kao elementi niza niz na liniji 25
+ERROR 16:37:42,605 - Semanticka greska: Funkcija map se primenjuje na a, sto nije niz na liniji 26
+ERROR 16:37:42,605 - Parsiranje NIJE uspesno zavrseno!

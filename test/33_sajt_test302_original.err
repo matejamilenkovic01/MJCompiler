@@ -1,4 +1,4 @@
-ERROR 19:17:31,744 - 
+ERROR 16:37:41,585 - 
 Sintaksna greska na liniji 95
-ERROR 19:17:31,744 - Oporavak od greske u iskazu izvrsen do linije 95
-ERROR 19:17:31,753 - Parsiranje NIJE uspesno zavrseno!
+ERROR 16:37:41,586 - Oporavak od greske u iskazu izvrsen do linije 95
+ERROR 16:37:41,594 - Parsiranje NIJE uspesno zavrseno!

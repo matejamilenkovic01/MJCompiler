@@ -1,57 +1,57 @@
-INFO  19:17:32,036 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/41_sem_expr.mj
-INFO  19:17:32,046 - #2 program
-INFO  19:17:32,046 - #45 SemExpr
-INFO  19:17:32,046 - #45 int
-INFO  19:17:32,047 - #45 a
-INFO  19:17:32,047 - #34 ;
-INFO  19:17:32,047 - #45 char
-INFO  19:17:32,047 - #45 c
-INFO  19:17:32,047 - #34 ;
-INFO  19:17:32,047 - #45 bool
-INFO  19:17:32,047 - #45 b
-INFO  19:17:32,047 - #34 ;
-INFO  19:17:32,047 - #43 {
-INFO  19:17:32,047 - #7 void
-INFO  19:17:32,047 - #45 main
-INFO  19:17:32,047 - #39 (
-INFO  19:17:32,047 - #40 )
-INFO  19:17:32,048 - #43 {
-INFO  19:17:32,048 - #45 a
-INFO  19:17:32,048 - #31 =
-INFO  19:17:32,048 - #45 c
-INFO  19:17:32,048 - #19 *
-INFO  19:17:32,048 - #46 2
-INFO  19:17:32,048 - #34 ;
-INFO  19:17:32,048 - #45 a
-INFO  19:17:32,049 - #31 =
-INFO  19:17:32,049 - #45 b
-INFO  19:17:32,049 - #17 +
-INFO  19:17:32,049 - #46 1
-INFO  19:17:32,049 - #34 ;
-INFO  19:17:32,049 - #45 a
-INFO  19:17:32,049 - #31 =
-INFO  19:17:32,049 - #18 -
-INFO  19:17:32,049 - #45 c
-INFO  19:17:32,049 - #34 ;
-INFO  19:17:32,049 - #45 a
-INFO  19:17:32,049 - #31 =
-INFO  19:17:32,049 - #45 b
-INFO  19:17:32,049 - #38 ?
-INFO  19:17:32,049 - #46 1
-INFO  19:17:32,049 - #35 :
-INFO  19:17:32,049 - #45 c
-INFO  19:17:32,049 - #34 ;
-INFO  19:17:32,050 - #45 a
-INFO  19:17:32,050 - #31 =
-INFO  19:17:32,050 - #45 a
-INFO  19:17:32,050 - #38 ?
-INFO  19:17:32,050 - #46 1
-INFO  19:17:32,050 - #35 :
-INFO  19:17:32,050 - #46 2
-INFO  19:17:32,050 - #34 ;
-INFO  19:17:32,050 - #44 }
-INFO  19:17:32,050 - #44 }
-INFO  19:17:32,051 - Program(
+INFO  16:37:41,864 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/41_sem_expr.mj
+INFO  16:37:41,872 - #2 program
+INFO  16:37:41,872 - #45 SemExpr
+INFO  16:37:41,872 - #45 int
+INFO  16:37:41,873 - #45 a
+INFO  16:37:41,873 - #34 ;
+INFO  16:37:41,873 - #45 char
+INFO  16:37:41,873 - #45 c
+INFO  16:37:41,873 - #34 ;
+INFO  16:37:41,873 - #45 bool
+INFO  16:37:41,873 - #45 b
+INFO  16:37:41,873 - #34 ;
+INFO  16:37:41,873 - #43 {
+INFO  16:37:41,873 - #7 void
+INFO  16:37:41,873 - #45 main
+INFO  16:37:41,874 - #39 (
+INFO  16:37:41,874 - #40 )
+INFO  16:37:41,874 - #43 {
+INFO  16:37:41,874 - #45 a
+INFO  16:37:41,874 - #31 =
+INFO  16:37:41,874 - #45 c
+INFO  16:37:41,874 - #19 *
+INFO  16:37:41,874 - #46 2
+INFO  16:37:41,874 - #34 ;
+INFO  16:37:41,874 - #45 a
+INFO  16:37:41,874 - #31 =
+INFO  16:37:41,875 - #45 b
+INFO  16:37:41,875 - #17 +
+INFO  16:37:41,875 - #46 1
+INFO  16:37:41,875 - #34 ;
+INFO  16:37:41,875 - #45 a
+INFO  16:37:41,875 - #31 =
+INFO  16:37:41,875 - #18 -
+INFO  16:37:41,875 - #45 c
+INFO  16:37:41,875 - #34 ;
+INFO  16:37:41,875 - #45 a
+INFO  16:37:41,875 - #31 =
+INFO  16:37:41,875 - #45 b
+INFO  16:37:41,875 - #38 ?
+INFO  16:37:41,875 - #46 1
+INFO  16:37:41,875 - #35 :
+INFO  16:37:41,875 - #45 c
+INFO  16:37:41,875 - #34 ;
+INFO  16:37:41,875 - #45 a
+INFO  16:37:41,875 - #31 =
+INFO  16:37:41,875 - #45 a
+INFO  16:37:41,875 - #38 ?
+INFO  16:37:41,875 - #46 1
+INFO  16:37:41,875 - #35 :
+INFO  16:37:41,876 - #46 2
+INFO  16:37:41,876 - #34 ;
+INFO  16:37:41,876 - #44 }
+INFO  16:37:41,876 - #44 }
+INFO  16:37:41,876 - Program(
   ProgramName(
    SemExpr
   ) [ProgramName]
@@ -299,19 +299,19 @@ INFO  19:17:32,051 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:32,051 - =================================================
-INFO  19:17:32,052 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
-INFO  19:17:32,052 - Pretraga na 18(c), nadjeno Var c: char, 1, 0
-INFO  19:17:32,053 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
-INFO  19:17:32,053 - Pretraga na 19(b), nadjeno Var b: bool, 2, 0
-INFO  19:17:32,053 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  19:17:32,053 - Pretraga na 20(c), nadjeno Var c: char, 1, 0
-INFO  19:17:32,053 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
-INFO  19:17:32,053 - Pretraga na 21(b), nadjeno Var b: bool, 2, 0
-INFO  19:17:32,053 - Pretraga na 21(c), nadjeno Var c: char, 1, 0
-INFO  19:17:32,053 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
-INFO  19:17:32,053 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
-INFO  19:17:32,053 - =================================================
+INFO  16:37:41,876 - =================================================
+INFO  16:37:41,878 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  16:37:41,878 - Pretraga na 18(c), nadjeno Var c: char, 1, 0
+INFO  16:37:41,879 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  16:37:41,879 - Pretraga na 19(b), nadjeno Var b: bool, 2, 0
+INFO  16:37:41,879 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  16:37:41,879 - Pretraga na 20(c), nadjeno Var c: char, 1, 0
+INFO  16:37:41,879 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  16:37:41,879 - Pretraga na 21(b), nadjeno Var b: bool, 2, 0
+INFO  16:37:41,879 - Pretraga na 21(c), nadjeno Var c: char, 1, 0
+INFO  16:37:41,880 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  16:37:41,880 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  16:37:41,880 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

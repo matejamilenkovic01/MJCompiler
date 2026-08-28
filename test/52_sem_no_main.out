@@ -1,22 +1,22 @@
-INFO  19:17:33,703 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/52_sem_no_main.mj
-INFO  19:17:33,711 - #2 program
-INFO  19:17:33,711 - #45 SemBezMaina
-INFO  19:17:33,711 - #45 int
-INFO  19:17:33,712 - #45 a
-INFO  19:17:33,712 - #34 ;
-INFO  19:17:33,712 - #43 {
-INFO  19:17:33,712 - #7 void
-INFO  19:17:33,712 - #45 nijeMain
-INFO  19:17:33,712 - #39 (
-INFO  19:17:33,712 - #40 )
-INFO  19:17:33,712 - #43 {
-INFO  19:17:33,712 - #45 a
-INFO  19:17:33,713 - #31 =
-INFO  19:17:33,713 - #46 1
-INFO  19:17:33,713 - #34 ;
-INFO  19:17:33,713 - #44 }
-INFO  19:17:33,713 - #44 }
-INFO  19:17:33,713 - Program(
+INFO  16:37:43,499 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/52_sem_no_main.mj
+INFO  16:37:43,507 - #2 program
+INFO  16:37:43,507 - #45 SemBezMaina
+INFO  16:37:43,507 - #45 int
+INFO  16:37:43,507 - #45 a
+INFO  16:37:43,507 - #34 ;
+INFO  16:37:43,507 - #43 {
+INFO  16:37:43,507 - #7 void
+INFO  16:37:43,508 - #45 nijeMain
+INFO  16:37:43,508 - #39 (
+INFO  16:37:43,508 - #40 )
+INFO  16:37:43,508 - #43 {
+INFO  16:37:43,508 - #45 a
+INFO  16:37:43,508 - #31 =
+INFO  16:37:43,508 - #46 1
+INFO  16:37:43,508 - #34 ;
+INFO  16:37:43,508 - #44 }
+INFO  16:37:43,508 - #44 }
+INFO  16:37:43,509 - Program(
   ProgramName(
    SemBezMaina
   ) [ProgramName]
@@ -72,9 +72,9 @@ INFO  19:17:33,713 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:33,713 - =================================================
-INFO  19:17:33,715 - Pretraga na 12(a), nadjeno Var a: int, 0, 0
-INFO  19:17:33,716 - =================================================
+INFO  16:37:43,509 - =================================================
+INFO  16:37:43,511 - Pretraga na 12(a), nadjeno Var a: int, 0, 0
+INFO  16:37:43,511 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

@@ -1,230 +1,230 @@
-INFO  19:17:29,477 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/10_arrays.mj
-INFO  19:17:29,487 - #2 program
-INFO  19:17:29,487 - #45 Nizovi
-INFO  19:17:29,487 - #3 const
-INFO  19:17:29,488 - #45 int
-INFO  19:17:29,488 - #45 n
-INFO  19:17:29,488 - #31 =
-INFO  19:17:29,488 - #46 5
-INFO  19:17:29,488 - #34 ;
-INFO  19:17:29,488 - #45 int
-INFO  19:17:29,488 - #45 brojevi
-INFO  19:17:29,488 - #41 [
-INFO  19:17:29,488 - #42 ]
-INFO  19:17:29,488 - #36 ,
-INFO  19:17:29,488 - #45 kopija
-INFO  19:17:29,488 - #41 [
-INFO  19:17:29,488 - #42 ]
-INFO  19:17:29,488 - #34 ;
-INFO  19:17:29,488 - #45 char
-INFO  19:17:29,489 - #45 slova
-INFO  19:17:29,489 - #41 [
-INFO  19:17:29,489 - #42 ]
-INFO  19:17:29,489 - #34 ;
-INFO  19:17:29,489 - #45 bool
-INFO  19:17:29,489 - #45 zastavice
-INFO  19:17:29,489 - #41 [
-INFO  19:17:29,489 - #42 ]
-INFO  19:17:29,489 - #34 ;
-INFO  19:17:29,489 - #45 int
-INFO  19:17:29,489 - #45 i
-INFO  19:17:29,489 - #36 ,
-INFO  19:17:29,489 - #45 s
-INFO  19:17:29,489 - #34 ;
-INFO  19:17:29,489 - #43 {
-INFO  19:17:29,489 - #45 int
-INFO  19:17:29,489 - #45 zbir
-INFO  19:17:29,489 - #39 (
-INFO  19:17:29,490 - #45 int
-INFO  19:17:29,490 - #45 a
-INFO  19:17:29,490 - #41 [
-INFO  19:17:29,490 - #42 ]
-INFO  19:17:29,490 - #40 )
-INFO  19:17:29,490 - #45 int
-INFO  19:17:29,490 - #45 k
-INFO  19:17:29,490 - #36 ,
-INFO  19:17:29,490 - #45 r
-INFO  19:17:29,490 - #34 ;
-INFO  19:17:29,490 - #43 {
-INFO  19:17:29,490 - #45 r
-INFO  19:17:29,491 - #31 =
-INFO  19:17:29,491 - #46 0
-INFO  19:17:29,491 - #34 ;
-INFO  19:17:29,491 - #13 for
-INFO  19:17:29,491 - #39 (
-INFO  19:17:29,491 - #45 k
-INFO  19:17:29,491 - #31 =
-INFO  19:17:29,491 - #46 0
-INFO  19:17:29,491 - #34 ;
-INFO  19:17:29,491 - #45 k
-INFO  19:17:29,491 - #26 <
-INFO  19:17:29,491 - #45 a
-INFO  19:17:29,492 - #37 .
-INFO  19:17:29,492 - #14 length
-INFO  19:17:29,492 - #34 ;
-INFO  19:17:29,492 - #45 k
-INFO  19:17:29,492 - #32 ++
-INFO  19:17:29,492 - #40 )
-INFO  19:17:29,492 - #43 {
-INFO  19:17:29,492 - #45 r
-INFO  19:17:29,492 - #31 =
-INFO  19:17:29,492 - #45 r
-INFO  19:17:29,492 - #17 +
-INFO  19:17:29,492 - #45 a
-INFO  19:17:29,492 - #41 [
-INFO  19:17:29,492 - #45 k
-INFO  19:17:29,492 - #42 ]
-INFO  19:17:29,492 - #34 ;
-INFO  19:17:29,493 - #44 }
-INFO  19:17:29,493 - #8 return
-INFO  19:17:29,493 - #45 r
-INFO  19:17:29,493 - #34 ;
-INFO  19:17:29,493 - #44 }
-INFO  19:17:29,493 - #7 void
-INFO  19:17:29,493 - #45 main
-INFO  19:17:29,493 - #39 (
-INFO  19:17:29,493 - #40 )
-INFO  19:17:29,493 - #45 int
-INFO  19:17:29,493 - #45 indeksi
-INFO  19:17:29,493 - #41 [
-INFO  19:17:29,493 - #42 ]
-INFO  19:17:29,493 - #34 ;
-INFO  19:17:29,493 - #43 {
-INFO  19:17:29,494 - #45 brojevi
-INFO  19:17:29,494 - #31 =
-INFO  19:17:29,494 - #4 new
-INFO  19:17:29,494 - #45 int
-INFO  19:17:29,494 - #41 [
-INFO  19:17:29,494 - #45 n
-INFO  19:17:29,494 - #42 ]
-INFO  19:17:29,494 - #34 ;
-INFO  19:17:29,494 - #45 kopija
-INFO  19:17:29,494 - #31 =
-INFO  19:17:29,494 - #4 new
-INFO  19:17:29,494 - #45 int
-INFO  19:17:29,494 - #41 [
-INFO  19:17:29,494 - #45 n
-INFO  19:17:29,494 - #19 *
-INFO  19:17:29,494 - #46 2
-INFO  19:17:29,494 - #42 ]
-INFO  19:17:29,494 - #34 ;
-INFO  19:17:29,494 - #45 slova
-INFO  19:17:29,494 - #31 =
-INFO  19:17:29,494 - #4 new
-INFO  19:17:29,495 - #45 char
-INFO  19:17:29,495 - #41 [
-INFO  19:17:29,495 - #46 10
-INFO  19:17:29,495 - #42 ]
-INFO  19:17:29,495 - #34 ;
-INFO  19:17:29,495 - #45 zastavice
-INFO  19:17:29,495 - #31 =
-INFO  19:17:29,495 - #4 new
-INFO  19:17:29,495 - #45 bool
-INFO  19:17:29,495 - #41 [
-INFO  19:17:29,495 - #46 3
-INFO  19:17:29,495 - #42 ]
-INFO  19:17:29,495 - #34 ;
-INFO  19:17:29,495 - #45 indeksi
-INFO  19:17:29,495 - #31 =
-INFO  19:17:29,495 - #4 new
-INFO  19:17:29,495 - #45 int
-INFO  19:17:29,495 - #41 [
-INFO  19:17:29,495 - #45 n
-INFO  19:17:29,495 - #42 ]
-INFO  19:17:29,495 - #34 ;
-INFO  19:17:29,495 - #45 brojevi
-INFO  19:17:29,495 - #41 [
-INFO  19:17:29,495 - #46 0
-INFO  19:17:29,495 - #42 ]
-INFO  19:17:29,495 - #31 =
-INFO  19:17:29,495 - #46 1
-INFO  19:17:29,495 - #34 ;
-INFO  19:17:29,495 - #45 brojevi
-INFO  19:17:29,495 - #41 [
-INFO  19:17:29,495 - #46 1
-INFO  19:17:29,495 - #42 ]
-INFO  19:17:29,495 - #31 =
-INFO  19:17:29,495 - #45 brojevi
-INFO  19:17:29,496 - #41 [
-INFO  19:17:29,496 - #46 0
-INFO  19:17:29,496 - #42 ]
-INFO  19:17:29,496 - #17 +
-INFO  19:17:29,496 - #46 1
-INFO  19:17:29,496 - #34 ;
-INFO  19:17:29,496 - #45 slova
-INFO  19:17:29,496 - #41 [
-INFO  19:17:29,496 - #46 0
-INFO  19:17:29,496 - #42 ]
-INFO  19:17:29,496 - #31 =
-INFO  19:17:29,496 - #48 a
-INFO  19:17:29,496 - #34 ;
-INFO  19:17:29,496 - #45 zastavice
-INFO  19:17:29,496 - #41 [
-INFO  19:17:29,496 - #46 0
-INFO  19:17:29,496 - #42 ]
-INFO  19:17:29,496 - #31 =
-INFO  19:17:29,496 - #47 1
-INFO  19:17:29,496 - #34 ;
-INFO  19:17:29,496 - #45 i
-INFO  19:17:29,496 - #31 =
-INFO  19:17:29,496 - #46 0
-INFO  19:17:29,496 - #34 ;
-INFO  19:17:29,496 - #45 indeksi
-INFO  19:17:29,496 - #41 [
-INFO  19:17:29,496 - #45 i
-INFO  19:17:29,496 - #42 ]
-INFO  19:17:29,496 - #31 =
-INFO  19:17:29,496 - #46 2
-INFO  19:17:29,496 - #34 ;
-INFO  19:17:29,496 - #45 brojevi
-INFO  19:17:29,496 - #41 [
-INFO  19:17:29,496 - #45 indeksi
-INFO  19:17:29,496 - #41 [
-INFO  19:17:29,496 - #45 i
-INFO  19:17:29,496 - #42 ]
-INFO  19:17:29,496 - #42 ]
-INFO  19:17:29,496 - #31 =
-INFO  19:17:29,496 - #46 9
-INFO  19:17:29,496 - #34 ;
-INFO  19:17:29,496 - #45 brojevi
-INFO  19:17:29,497 - #41 [
-INFO  19:17:29,497 - #45 i
-INFO  19:17:29,497 - #17 +
-INFO  19:17:29,497 - #46 1
-INFO  19:17:29,497 - #42 ]
-INFO  19:17:29,497 - #31 =
-INFO  19:17:29,497 - #45 brojevi
-INFO  19:17:29,497 - #41 [
-INFO  19:17:29,497 - #45 i
-INFO  19:17:29,497 - #19 *
-INFO  19:17:29,497 - #46 2
-INFO  19:17:29,497 - #21 %
-INFO  19:17:29,497 - #45 n
-INFO  19:17:29,497 - #42 ]
-INFO  19:17:29,497 - #34 ;
-INFO  19:17:29,497 - #45 s
-INFO  19:17:29,497 - #31 =
-INFO  19:17:29,497 - #45 brojevi
-INFO  19:17:29,497 - #37 .
-INFO  19:17:29,497 - #14 length
-INFO  19:17:29,497 - #34 ;
-INFO  19:17:29,497 - #45 s
-INFO  19:17:29,497 - #31 =
-INFO  19:17:29,497 - #45 zbir
-INFO  19:17:29,497 - #39 (
-INFO  19:17:29,497 - #45 brojevi
-INFO  19:17:29,497 - #40 )
-INFO  19:17:29,497 - #34 ;
-INFO  19:17:29,497 - #5 print
-INFO  19:17:29,497 - #39 (
-INFO  19:17:29,497 - #45 brojevi
-INFO  19:17:29,497 - #37 .
-INFO  19:17:29,497 - #14 length
-INFO  19:17:29,497 - #40 )
-INFO  19:17:29,498 - #34 ;
-INFO  19:17:29,498 - #44 }
-INFO  19:17:29,498 - #44 }
-INFO  19:17:29,499 - Program(
+INFO  16:37:39,434 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/10_arrays.mj
+INFO  16:37:39,443 - #2 program
+INFO  16:37:39,444 - #45 Nizovi
+INFO  16:37:39,444 - #3 const
+INFO  16:37:39,444 - #45 int
+INFO  16:37:39,444 - #45 n
+INFO  16:37:39,444 - #31 =
+INFO  16:37:39,444 - #46 5
+INFO  16:37:39,444 - #34 ;
+INFO  16:37:39,444 - #45 int
+INFO  16:37:39,445 - #45 brojevi
+INFO  16:37:39,445 - #41 [
+INFO  16:37:39,445 - #42 ]
+INFO  16:37:39,445 - #36 ,
+INFO  16:37:39,445 - #45 kopija
+INFO  16:37:39,445 - #41 [
+INFO  16:37:39,445 - #42 ]
+INFO  16:37:39,445 - #34 ;
+INFO  16:37:39,445 - #45 char
+INFO  16:37:39,445 - #45 slova
+INFO  16:37:39,445 - #41 [
+INFO  16:37:39,445 - #42 ]
+INFO  16:37:39,445 - #34 ;
+INFO  16:37:39,445 - #45 bool
+INFO  16:37:39,445 - #45 zastavice
+INFO  16:37:39,445 - #41 [
+INFO  16:37:39,445 - #42 ]
+INFO  16:37:39,445 - #34 ;
+INFO  16:37:39,445 - #45 int
+INFO  16:37:39,445 - #45 i
+INFO  16:37:39,445 - #36 ,
+INFO  16:37:39,445 - #45 s
+INFO  16:37:39,445 - #34 ;
+INFO  16:37:39,446 - #43 {
+INFO  16:37:39,446 - #45 int
+INFO  16:37:39,446 - #45 zbir
+INFO  16:37:39,446 - #39 (
+INFO  16:37:39,446 - #45 int
+INFO  16:37:39,446 - #45 a
+INFO  16:37:39,446 - #41 [
+INFO  16:37:39,446 - #42 ]
+INFO  16:37:39,446 - #40 )
+INFO  16:37:39,446 - #45 int
+INFO  16:37:39,446 - #45 k
+INFO  16:37:39,446 - #36 ,
+INFO  16:37:39,446 - #45 r
+INFO  16:37:39,446 - #34 ;
+INFO  16:37:39,446 - #43 {
+INFO  16:37:39,446 - #45 r
+INFO  16:37:39,447 - #31 =
+INFO  16:37:39,447 - #46 0
+INFO  16:37:39,447 - #34 ;
+INFO  16:37:39,447 - #13 for
+INFO  16:37:39,447 - #39 (
+INFO  16:37:39,447 - #45 k
+INFO  16:37:39,447 - #31 =
+INFO  16:37:39,447 - #46 0
+INFO  16:37:39,447 - #34 ;
+INFO  16:37:39,447 - #45 k
+INFO  16:37:39,447 - #26 <
+INFO  16:37:39,447 - #45 a
+INFO  16:37:39,448 - #37 .
+INFO  16:37:39,448 - #14 length
+INFO  16:37:39,448 - #34 ;
+INFO  16:37:39,448 - #45 k
+INFO  16:37:39,448 - #32 ++
+INFO  16:37:39,448 - #40 )
+INFO  16:37:39,448 - #43 {
+INFO  16:37:39,448 - #45 r
+INFO  16:37:39,448 - #31 =
+INFO  16:37:39,448 - #45 r
+INFO  16:37:39,448 - #17 +
+INFO  16:37:39,448 - #45 a
+INFO  16:37:39,448 - #41 [
+INFO  16:37:39,448 - #45 k
+INFO  16:37:39,448 - #42 ]
+INFO  16:37:39,448 - #34 ;
+INFO  16:37:39,448 - #44 }
+INFO  16:37:39,448 - #8 return
+INFO  16:37:39,448 - #45 r
+INFO  16:37:39,448 - #34 ;
+INFO  16:37:39,449 - #44 }
+INFO  16:37:39,449 - #7 void
+INFO  16:37:39,449 - #45 main
+INFO  16:37:39,449 - #39 (
+INFO  16:37:39,449 - #40 )
+INFO  16:37:39,449 - #45 int
+INFO  16:37:39,449 - #45 indeksi
+INFO  16:37:39,449 - #41 [
+INFO  16:37:39,449 - #42 ]
+INFO  16:37:39,449 - #34 ;
+INFO  16:37:39,449 - #43 {
+INFO  16:37:39,449 - #45 brojevi
+INFO  16:37:39,449 - #31 =
+INFO  16:37:39,449 - #4 new
+INFO  16:37:39,449 - #45 int
+INFO  16:37:39,449 - #41 [
+INFO  16:37:39,449 - #45 n
+INFO  16:37:39,449 - #42 ]
+INFO  16:37:39,449 - #34 ;
+INFO  16:37:39,449 - #45 kopija
+INFO  16:37:39,449 - #31 =
+INFO  16:37:39,449 - #4 new
+INFO  16:37:39,449 - #45 int
+INFO  16:37:39,450 - #41 [
+INFO  16:37:39,450 - #45 n
+INFO  16:37:39,450 - #19 *
+INFO  16:37:39,450 - #46 2
+INFO  16:37:39,450 - #42 ]
+INFO  16:37:39,450 - #34 ;
+INFO  16:37:39,450 - #45 slova
+INFO  16:37:39,450 - #31 =
+INFO  16:37:39,450 - #4 new
+INFO  16:37:39,450 - #45 char
+INFO  16:37:39,450 - #41 [
+INFO  16:37:39,450 - #46 10
+INFO  16:37:39,450 - #42 ]
+INFO  16:37:39,450 - #34 ;
+INFO  16:37:39,450 - #45 zastavice
+INFO  16:37:39,450 - #31 =
+INFO  16:37:39,450 - #4 new
+INFO  16:37:39,450 - #45 bool
+INFO  16:37:39,450 - #41 [
+INFO  16:37:39,450 - #46 3
+INFO  16:37:39,450 - #42 ]
+INFO  16:37:39,450 - #34 ;
+INFO  16:37:39,450 - #45 indeksi
+INFO  16:37:39,450 - #31 =
+INFO  16:37:39,450 - #4 new
+INFO  16:37:39,450 - #45 int
+INFO  16:37:39,450 - #41 [
+INFO  16:37:39,450 - #45 n
+INFO  16:37:39,450 - #42 ]
+INFO  16:37:39,451 - #34 ;
+INFO  16:37:39,451 - #45 brojevi
+INFO  16:37:39,451 - #41 [
+INFO  16:37:39,451 - #46 0
+INFO  16:37:39,451 - #42 ]
+INFO  16:37:39,451 - #31 =
+INFO  16:37:39,451 - #46 1
+INFO  16:37:39,451 - #34 ;
+INFO  16:37:39,451 - #45 brojevi
+INFO  16:37:39,451 - #41 [
+INFO  16:37:39,451 - #46 1
+INFO  16:37:39,451 - #42 ]
+INFO  16:37:39,451 - #31 =
+INFO  16:37:39,451 - #45 brojevi
+INFO  16:37:39,451 - #41 [
+INFO  16:37:39,451 - #46 0
+INFO  16:37:39,451 - #42 ]
+INFO  16:37:39,451 - #17 +
+INFO  16:37:39,451 - #46 1
+INFO  16:37:39,451 - #34 ;
+INFO  16:37:39,451 - #45 slova
+INFO  16:37:39,451 - #41 [
+INFO  16:37:39,451 - #46 0
+INFO  16:37:39,451 - #42 ]
+INFO  16:37:39,451 - #31 =
+INFO  16:37:39,451 - #48 a
+INFO  16:37:39,451 - #34 ;
+INFO  16:37:39,451 - #45 zastavice
+INFO  16:37:39,451 - #41 [
+INFO  16:37:39,451 - #46 0
+INFO  16:37:39,451 - #42 ]
+INFO  16:37:39,451 - #31 =
+INFO  16:37:39,451 - #47 1
+INFO  16:37:39,451 - #34 ;
+INFO  16:37:39,451 - #45 i
+INFO  16:37:39,451 - #31 =
+INFO  16:37:39,451 - #46 0
+INFO  16:37:39,451 - #34 ;
+INFO  16:37:39,451 - #45 indeksi
+INFO  16:37:39,451 - #41 [
+INFO  16:37:39,451 - #45 i
+INFO  16:37:39,451 - #42 ]
+INFO  16:37:39,451 - #31 =
+INFO  16:37:39,452 - #46 2
+INFO  16:37:39,452 - #34 ;
+INFO  16:37:39,452 - #45 brojevi
+INFO  16:37:39,452 - #41 [
+INFO  16:37:39,452 - #45 indeksi
+INFO  16:37:39,452 - #41 [
+INFO  16:37:39,452 - #45 i
+INFO  16:37:39,452 - #42 ]
+INFO  16:37:39,452 - #42 ]
+INFO  16:37:39,452 - #31 =
+INFO  16:37:39,452 - #46 9
+INFO  16:37:39,452 - #34 ;
+INFO  16:37:39,452 - #45 brojevi
+INFO  16:37:39,452 - #41 [
+INFO  16:37:39,452 - #45 i
+INFO  16:37:39,452 - #17 +
+INFO  16:37:39,452 - #46 1
+INFO  16:37:39,452 - #42 ]
+INFO  16:37:39,452 - #31 =
+INFO  16:37:39,452 - #45 brojevi
+INFO  16:37:39,452 - #41 [
+INFO  16:37:39,452 - #45 i
+INFO  16:37:39,452 - #19 *
+INFO  16:37:39,452 - #46 2
+INFO  16:37:39,452 - #21 %
+INFO  16:37:39,452 - #45 n
+INFO  16:37:39,452 - #42 ]
+INFO  16:37:39,452 - #34 ;
+INFO  16:37:39,452 - #45 s
+INFO  16:37:39,452 - #31 =
+INFO  16:37:39,452 - #45 brojevi
+INFO  16:37:39,452 - #37 .
+INFO  16:37:39,452 - #14 length
+INFO  16:37:39,452 - #34 ;
+INFO  16:37:39,452 - #45 s
+INFO  16:37:39,452 - #31 =
+INFO  16:37:39,452 - #45 zbir
+INFO  16:37:39,452 - #39 (
+INFO  16:37:39,452 - #45 brojevi
+INFO  16:37:39,452 - #40 )
+INFO  16:37:39,452 - #34 ;
+INFO  16:37:39,452 - #5 print
+INFO  16:37:39,453 - #39 (
+INFO  16:37:39,453 - #45 brojevi
+INFO  16:37:39,453 - #37 .
+INFO  16:37:39,453 - #14 length
+INFO  16:37:39,453 - #40 )
+INFO  16:37:39,453 - #34 ;
+INFO  16:37:39,453 - #44 }
+INFO  16:37:39,453 - #44 }
+INFO  16:37:39,454 - Program(
   ProgramName(
    Nizovi
   ) [ProgramName]
@@ -1144,62 +1144,62 @@ INFO  19:17:29,499 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:29,499 - =================================================
-INFO  19:17:29,501 - Pretraga na 17(r), nadjeno Var r: int, 2, 1
-INFO  19:17:29,501 - Pretraga na 18(k), nadjeno Var k: int, 1, 1
-INFO  19:17:29,501 - Pretraga na 18(k), nadjeno Var k: int, 1, 1
-INFO  19:17:29,502 - Pretraga na 18(a), nadjeno Var a: Arr of int, 0, 1
-INFO  19:17:29,502 - Pretraga na 18(k), nadjeno Var k: int, 1, 1
-INFO  19:17:29,502 - Pretraga na 19(r), nadjeno Var r: int, 2, 1
-INFO  19:17:29,502 - Pretraga na 19(r), nadjeno Var r: int, 2, 1
-INFO  19:17:29,502 - Pretraga na 19(a), nadjeno Var a: Arr of int, 0, 1
-INFO  19:17:29,502 - Pretraga na 19(k), nadjeno Var k: int, 1, 1
-INFO  19:17:29,502 - Pretraga na 19(a), nadjeno Var a: Arr of int, 0, 1
-INFO  19:17:29,502 - Pretraga na 21(r), nadjeno Var r: int, 2, 1
-INFO  19:17:29,502 - Pretraga na 27(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,502 - Pretraga na 27(n), nadjeno Con n: int, 5, 0
-INFO  19:17:29,502 - Pretraga na 28(kopija), nadjeno Var kopija: Arr of int, 1, 0
-INFO  19:17:29,502 - Pretraga na 28(n), nadjeno Con n: int, 5, 0
-INFO  19:17:29,502 - Pretraga na 29(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  19:17:29,502 - Pretraga na 30(zastavice), nadjeno Var zastavice: Arr of bool, 3, 0
-INFO  19:17:29,502 - Pretraga na 31(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
-INFO  19:17:29,502 - Pretraga na 31(n), nadjeno Con n: int, 5, 0
-INFO  19:17:29,502 - Pretraga na 33(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,502 - Pretraga na 33(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,502 - Pretraga na 34(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,502 - Pretraga na 34(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,502 - Pretraga na 34(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,502 - Pretraga na 34(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,502 - Pretraga na 35(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  19:17:29,502 - Pretraga na 35(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  19:17:29,502 - Pretraga na 36(zastavice), nadjeno Var zastavice: Arr of bool, 3, 0
-INFO  19:17:29,503 - Pretraga na 36(zastavice), nadjeno Var zastavice: Arr of bool, 3, 0
-INFO  19:17:29,503 - Pretraga na 38(i), nadjeno Var i: int, 4, 0
-INFO  19:17:29,503 - Pretraga na 39(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
-INFO  19:17:29,503 - Pretraga na 39(i), nadjeno Var i: int, 4, 0
-INFO  19:17:29,503 - Pretraga na 39(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
-INFO  19:17:29,503 - Pretraga na 42(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,503 - Pretraga na 42(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
-INFO  19:17:29,503 - Pretraga na 42(i), nadjeno Var i: int, 4, 0
-INFO  19:17:29,503 - Pretraga na 42(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
-INFO  19:17:29,503 - Pretraga na 42(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,503 - Pretraga na 45(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,503 - Pretraga na 45(i), nadjeno Var i: int, 4, 0
-INFO  19:17:29,503 - Pretraga na 45(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,503 - Pretraga na 45(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,503 - Pretraga na 45(i), nadjeno Var i: int, 4, 0
-INFO  19:17:29,503 - Pretraga na 45(n), nadjeno Con n: int, 5, 0
-INFO  19:17:29,503 - Pretraga na 45(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,503 - Pretraga na 47(s), nadjeno Var s: int, 5, 0
-INFO  19:17:29,503 - Pretraga na 47(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,503 - Pretraga na 48(s), nadjeno Var s: int, 5, 0
-INFO  19:17:29,503 - Pretraga na 48(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,503 - Pretraga na 48(zbir), nadjeno Meth zbir: int, 0, 1 
+INFO  16:37:39,454 - =================================================
+INFO  16:37:39,456 - Pretraga na 17(r), nadjeno Var r: int, 2, 1
+INFO  16:37:39,456 - Pretraga na 18(k), nadjeno Var k: int, 1, 1
+INFO  16:37:39,456 - Pretraga na 18(k), nadjeno Var k: int, 1, 1
+INFO  16:37:39,456 - Pretraga na 18(a), nadjeno Var a: Arr of int, 0, 1
+INFO  16:37:39,456 - Pretraga na 18(k), nadjeno Var k: int, 1, 1
+INFO  16:37:39,456 - Pretraga na 19(r), nadjeno Var r: int, 2, 1
+INFO  16:37:39,456 - Pretraga na 19(r), nadjeno Var r: int, 2, 1
+INFO  16:37:39,456 - Pretraga na 19(a), nadjeno Var a: Arr of int, 0, 1
+INFO  16:37:39,456 - Pretraga na 19(k), nadjeno Var k: int, 1, 1
+INFO  16:37:39,456 - Pretraga na 19(a), nadjeno Var a: Arr of int, 0, 1
+INFO  16:37:39,457 - Pretraga na 21(r), nadjeno Var r: int, 2, 1
+INFO  16:37:39,457 - Pretraga na 27(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 27(n), nadjeno Con n: int, 5, 0
+INFO  16:37:39,457 - Pretraga na 28(kopija), nadjeno Var kopija: Arr of int, 1, 0
+INFO  16:37:39,457 - Pretraga na 28(n), nadjeno Con n: int, 5, 0
+INFO  16:37:39,457 - Pretraga na 29(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  16:37:39,457 - Pretraga na 30(zastavice), nadjeno Var zastavice: Arr of bool, 3, 0
+INFO  16:37:39,457 - Pretraga na 31(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
+INFO  16:37:39,457 - Pretraga na 31(n), nadjeno Con n: int, 5, 0
+INFO  16:37:39,457 - Pretraga na 33(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 33(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 34(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 34(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 34(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 34(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 35(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  16:37:39,457 - Pretraga na 35(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  16:37:39,457 - Pretraga na 36(zastavice), nadjeno Var zastavice: Arr of bool, 3, 0
+INFO  16:37:39,457 - Pretraga na 36(zastavice), nadjeno Var zastavice: Arr of bool, 3, 0
+INFO  16:37:39,457 - Pretraga na 38(i), nadjeno Var i: int, 4, 0
+INFO  16:37:39,457 - Pretraga na 39(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
+INFO  16:37:39,457 - Pretraga na 39(i), nadjeno Var i: int, 4, 0
+INFO  16:37:39,457 - Pretraga na 39(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
+INFO  16:37:39,457 - Pretraga na 42(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 42(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
+INFO  16:37:39,457 - Pretraga na 42(i), nadjeno Var i: int, 4, 0
+INFO  16:37:39,457 - Pretraga na 42(indeksi), nadjeno Var indeksi: Arr of int, 0, 1
+INFO  16:37:39,457 - Pretraga na 42(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 45(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 45(i), nadjeno Var i: int, 4, 0
+INFO  16:37:39,457 - Pretraga na 45(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 45(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 45(i), nadjeno Var i: int, 4, 0
+INFO  16:37:39,457 - Pretraga na 45(n), nadjeno Con n: int, 5, 0
+INFO  16:37:39,457 - Pretraga na 45(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 47(s), nadjeno Var s: int, 5, 0
+INFO  16:37:39,457 - Pretraga na 47(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,457 - Pretraga na 48(s), nadjeno Var s: int, 5, 0
+INFO  16:37:39,457 - Pretraga na 48(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,458 - Pretraga na 48(zbir), nadjeno Meth zbir: int, 0, 1 
    Var a: Arr of int, 0, 1 
    Var k: int, 1, 1 
    Var r: int, 2, 1
-INFO  19:17:29,503 - Pretraga na 50(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
-INFO  19:17:29,503 - =================================================
+INFO  16:37:39,458 - Pretraga na 50(brojevi), nadjeno Var brojevi: Arr of int, 0, 0
+INFO  16:37:39,458 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -1233,4 +1233,4 @@ Prog Nizovi: notype, 0, 1
 
 
 
-INFO  19:17:29,503 - Parsiranje uspesno zavrseno!
+INFO  16:37:39,458 - Generisanje uspesno zavrseno!

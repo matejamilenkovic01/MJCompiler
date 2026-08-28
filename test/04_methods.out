@@ -1,204 +1,204 @@
-INFO  19:17:28,451 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/04_methods.mj
-INFO  19:17:28,459 - #2 program
-INFO  19:17:28,459 - #45 Metode
-INFO  19:17:28,459 - #45 int
-INFO  19:17:28,459 - #45 g
-INFO  19:17:28,459 - #34 ;
-INFO  19:17:28,460 - #43 {
-INFO  19:17:28,460 - #7 void
-INFO  19:17:28,460 - #45 bezParametara
-INFO  19:17:28,460 - #39 (
-INFO  19:17:28,460 - #40 )
-INFO  19:17:28,460 - #43 {
-INFO  19:17:28,460 - #44 }
-INFO  19:17:28,461 - #7 void
-INFO  19:17:28,461 - #45 saParametrima
-INFO  19:17:28,461 - #39 (
-INFO  19:17:28,461 - #45 int
-INFO  19:17:28,461 - #45 a
-INFO  19:17:28,461 - #36 ,
-INFO  19:17:28,461 - #45 char
-INFO  19:17:28,461 - #45 b
-INFO  19:17:28,461 - #36 ,
-INFO  19:17:28,461 - #45 bool
-INFO  19:17:28,461 - #45 c
-INFO  19:17:28,461 - #40 )
-INFO  19:17:28,461 - #43 {
-INFO  19:17:28,461 - #44 }
-INFO  19:17:28,461 - #7 void
-INFO  19:17:28,461 - #45 saNizovima
-INFO  19:17:28,461 - #39 (
-INFO  19:17:28,461 - #45 int
-INFO  19:17:28,461 - #45 a
-INFO  19:17:28,461 - #41 [
-INFO  19:17:28,461 - #42 ]
-INFO  19:17:28,461 - #36 ,
-INFO  19:17:28,461 - #45 char
-INFO  19:17:28,462 - #45 b
-INFO  19:17:28,462 - #41 [
-INFO  19:17:28,462 - #42 ]
-INFO  19:17:28,462 - #36 ,
-INFO  19:17:28,462 - #45 bool
-INFO  19:17:28,462 - #45 c
-INFO  19:17:28,462 - #41 [
-INFO  19:17:28,462 - #42 ]
-INFO  19:17:28,462 - #40 )
-INFO  19:17:28,462 - #43 {
-INFO  19:17:28,462 - #44 }
-INFO  19:17:28,462 - #7 void
-INFO  19:17:28,462 - #45 mesano
-INFO  19:17:28,462 - #39 (
-INFO  19:17:28,462 - #45 int
-INFO  19:17:28,462 - #45 a
-INFO  19:17:28,462 - #36 ,
-INFO  19:17:28,462 - #45 int
-INFO  19:17:28,462 - #45 b
-INFO  19:17:28,462 - #41 [
-INFO  19:17:28,462 - #42 ]
-INFO  19:17:28,462 - #36 ,
-INFO  19:17:28,462 - #45 char
-INFO  19:17:28,462 - #45 c
-INFO  19:17:28,462 - #40 )
-INFO  19:17:28,462 - #43 {
-INFO  19:17:28,462 - #44 }
-INFO  19:17:28,462 - #45 int
-INFO  19:17:28,462 - #45 vratiBroj
-INFO  19:17:28,463 - #39 (
-INFO  19:17:28,463 - #40 )
-INFO  19:17:28,463 - #45 int
-INFO  19:17:28,463 - #45 lokalna
-INFO  19:17:28,463 - #34 ;
-INFO  19:17:28,463 - #43 {
-INFO  19:17:28,463 - #45 lokalna
-INFO  19:17:28,463 - #31 =
-INFO  19:17:28,463 - #46 5
-INFO  19:17:28,463 - #34 ;
-INFO  19:17:28,463 - #8 return
-INFO  19:17:28,463 - #45 lokalna
-INFO  19:17:28,463 - #34 ;
-INFO  19:17:28,463 - #44 }
-INFO  19:17:28,463 - #45 char
-INFO  19:17:28,463 - #45 vratiZnak
-INFO  19:17:28,463 - #39 (
-INFO  19:17:28,463 - #40 )
-INFO  19:17:28,463 - #43 {
-INFO  19:17:28,463 - #8 return
-INFO  19:17:28,463 - #48 q
-INFO  19:17:28,464 - #34 ;
-INFO  19:17:28,464 - #44 }
-INFO  19:17:28,464 - #45 bool
-INFO  19:17:28,464 - #45 vratiLogicku
-INFO  19:17:28,464 - #39 (
-INFO  19:17:28,464 - #40 )
-INFO  19:17:28,464 - #43 {
-INFO  19:17:28,464 - #8 return
-INFO  19:17:28,464 - #47 1
-INFO  19:17:28,464 - #34 ;
-INFO  19:17:28,464 - #44 }
-INFO  19:17:28,464 - #7 void
-INFO  19:17:28,464 - #45 praznoReturn
-INFO  19:17:28,464 - #39 (
-INFO  19:17:28,464 - #40 )
-INFO  19:17:28,464 - #43 {
-INFO  19:17:28,464 - #8 return
-INFO  19:17:28,464 - #34 ;
-INFO  19:17:28,464 - #44 }
-INFO  19:17:28,465 - #7 void
-INFO  19:17:28,465 - #45 lokalnePromenljive
-INFO  19:17:28,465 - #39 (
-INFO  19:17:28,465 - #40 )
-INFO  19:17:28,465 - #45 int
-INFO  19:17:28,465 - #45 a
-INFO  19:17:28,465 - #36 ,
-INFO  19:17:28,465 - #45 b
-INFO  19:17:28,465 - #41 [
-INFO  19:17:28,465 - #42 ]
-INFO  19:17:28,465 - #34 ;
-INFO  19:17:28,465 - #45 char
-INFO  19:17:28,465 - #45 c
-INFO  19:17:28,465 - #34 ;
-INFO  19:17:28,465 - #45 bool
-INFO  19:17:28,465 - #45 d
-INFO  19:17:28,465 - #34 ;
-INFO  19:17:28,465 - #43 {
-INFO  19:17:28,465 - #44 }
-INFO  19:17:28,465 - #45 int
-INFO  19:17:28,465 - #45 saberi
-INFO  19:17:28,465 - #39 (
-INFO  19:17:28,465 - #45 int
-INFO  19:17:28,465 - #45 a
-INFO  19:17:28,465 - #36 ,
-INFO  19:17:28,465 - #45 int
-INFO  19:17:28,465 - #45 b
-INFO  19:17:28,466 - #40 )
-INFO  19:17:28,466 - #43 {
-INFO  19:17:28,466 - #8 return
-INFO  19:17:28,466 - #45 a
-INFO  19:17:28,466 - #17 +
-INFO  19:17:28,466 - #45 b
-INFO  19:17:28,466 - #34 ;
-INFO  19:17:28,466 - #44 }
-INFO  19:17:28,466 - #7 void
-INFO  19:17:28,466 - #45 main
-INFO  19:17:28,466 - #39 (
-INFO  19:17:28,466 - #40 )
-INFO  19:17:28,466 - #45 int
-INFO  19:17:28,466 - #45 r
-INFO  19:17:28,466 - #34 ;
-INFO  19:17:28,466 - #43 {
-INFO  19:17:28,466 - #45 bezParametara
-INFO  19:17:28,466 - #39 (
-INFO  19:17:28,466 - #40 )
-INFO  19:17:28,466 - #34 ;
-INFO  19:17:28,466 - #45 saParametrima
-INFO  19:17:28,466 - #39 (
-INFO  19:17:28,467 - #46 1
-INFO  19:17:28,467 - #36 ,
-INFO  19:17:28,467 - #48 a
-INFO  19:17:28,467 - #36 ,
-INFO  19:17:28,467 - #47 1
-INFO  19:17:28,467 - #40 )
-INFO  19:17:28,467 - #34 ;
-INFO  19:17:28,467 - #45 praznoReturn
-INFO  19:17:28,467 - #39 (
-INFO  19:17:28,467 - #40 )
-INFO  19:17:28,467 - #34 ;
-INFO  19:17:28,467 - #45 r
-INFO  19:17:28,467 - #31 =
-INFO  19:17:28,467 - #45 vratiBroj
-INFO  19:17:28,467 - #39 (
-INFO  19:17:28,467 - #40 )
-INFO  19:17:28,467 - #34 ;
-INFO  19:17:28,467 - #45 r
-INFO  19:17:28,467 - #31 =
-INFO  19:17:28,467 - #45 saberi
-INFO  19:17:28,467 - #39 (
-INFO  19:17:28,467 - #46 1
-INFO  19:17:28,467 - #36 ,
-INFO  19:17:28,467 - #46 2
-INFO  19:17:28,467 - #40 )
-INFO  19:17:28,467 - #34 ;
-INFO  19:17:28,467 - #45 r
-INFO  19:17:28,467 - #31 =
-INFO  19:17:28,467 - #45 saberi
-INFO  19:17:28,467 - #39 (
-INFO  19:17:28,467 - #45 r
-INFO  19:17:28,467 - #36 ,
-INFO  19:17:28,467 - #45 saberi
-INFO  19:17:28,467 - #39 (
-INFO  19:17:28,467 - #46 3
-INFO  19:17:28,467 - #36 ,
-INFO  19:17:28,467 - #46 4
-INFO  19:17:28,468 - #40 )
-INFO  19:17:28,468 - #40 )
-INFO  19:17:28,468 - #34 ;
-INFO  19:17:28,468 - #45 g
-INFO  19:17:28,468 - #31 =
-INFO  19:17:28,468 - #45 r
-INFO  19:17:28,468 - #34 ;
-INFO  19:17:28,468 - #44 }
-INFO  19:17:28,468 - #44 }
-INFO  19:17:28,468 - Program(
+INFO  16:37:38,503 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/04_methods.mj
+INFO  16:37:38,512 - #2 program
+INFO  16:37:38,512 - #45 Metode
+INFO  16:37:38,512 - #45 int
+INFO  16:37:38,512 - #45 g
+INFO  16:37:38,512 - #34 ;
+INFO  16:37:38,512 - #43 {
+INFO  16:37:38,512 - #7 void
+INFO  16:37:38,513 - #45 bezParametara
+INFO  16:37:38,513 - #39 (
+INFO  16:37:38,513 - #40 )
+INFO  16:37:38,513 - #43 {
+INFO  16:37:38,513 - #44 }
+INFO  16:37:38,513 - #7 void
+INFO  16:37:38,513 - #45 saParametrima
+INFO  16:37:38,513 - #39 (
+INFO  16:37:38,513 - #45 int
+INFO  16:37:38,513 - #45 a
+INFO  16:37:38,513 - #36 ,
+INFO  16:37:38,514 - #45 char
+INFO  16:37:38,514 - #45 b
+INFO  16:37:38,514 - #36 ,
+INFO  16:37:38,514 - #45 bool
+INFO  16:37:38,514 - #45 c
+INFO  16:37:38,514 - #40 )
+INFO  16:37:38,514 - #43 {
+INFO  16:37:38,514 - #44 }
+INFO  16:37:38,514 - #7 void
+INFO  16:37:38,514 - #45 saNizovima
+INFO  16:37:38,514 - #39 (
+INFO  16:37:38,514 - #45 int
+INFO  16:37:38,514 - #45 a
+INFO  16:37:38,514 - #41 [
+INFO  16:37:38,514 - #42 ]
+INFO  16:37:38,514 - #36 ,
+INFO  16:37:38,514 - #45 char
+INFO  16:37:38,514 - #45 b
+INFO  16:37:38,514 - #41 [
+INFO  16:37:38,514 - #42 ]
+INFO  16:37:38,514 - #36 ,
+INFO  16:37:38,514 - #45 bool
+INFO  16:37:38,514 - #45 c
+INFO  16:37:38,514 - #41 [
+INFO  16:37:38,514 - #42 ]
+INFO  16:37:38,514 - #40 )
+INFO  16:37:38,514 - #43 {
+INFO  16:37:38,514 - #44 }
+INFO  16:37:38,514 - #7 void
+INFO  16:37:38,514 - #45 mesano
+INFO  16:37:38,514 - #39 (
+INFO  16:37:38,514 - #45 int
+INFO  16:37:38,514 - #45 a
+INFO  16:37:38,514 - #36 ,
+INFO  16:37:38,515 - #45 int
+INFO  16:37:38,515 - #45 b
+INFO  16:37:38,515 - #41 [
+INFO  16:37:38,515 - #42 ]
+INFO  16:37:38,515 - #36 ,
+INFO  16:37:38,515 - #45 char
+INFO  16:37:38,515 - #45 c
+INFO  16:37:38,515 - #40 )
+INFO  16:37:38,515 - #43 {
+INFO  16:37:38,515 - #44 }
+INFO  16:37:38,515 - #45 int
+INFO  16:37:38,515 - #45 vratiBroj
+INFO  16:37:38,515 - #39 (
+INFO  16:37:38,515 - #40 )
+INFO  16:37:38,515 - #45 int
+INFO  16:37:38,515 - #45 lokalna
+INFO  16:37:38,515 - #34 ;
+INFO  16:37:38,515 - #43 {
+INFO  16:37:38,515 - #45 lokalna
+INFO  16:37:38,515 - #31 =
+INFO  16:37:38,515 - #46 5
+INFO  16:37:38,515 - #34 ;
+INFO  16:37:38,516 - #8 return
+INFO  16:37:38,516 - #45 lokalna
+INFO  16:37:38,516 - #34 ;
+INFO  16:37:38,516 - #44 }
+INFO  16:37:38,516 - #45 char
+INFO  16:37:38,516 - #45 vratiZnak
+INFO  16:37:38,516 - #39 (
+INFO  16:37:38,516 - #40 )
+INFO  16:37:38,516 - #43 {
+INFO  16:37:38,516 - #8 return
+INFO  16:37:38,516 - #48 q
+INFO  16:37:38,516 - #34 ;
+INFO  16:37:38,516 - #44 }
+INFO  16:37:38,516 - #45 bool
+INFO  16:37:38,516 - #45 vratiLogicku
+INFO  16:37:38,516 - #39 (
+INFO  16:37:38,516 - #40 )
+INFO  16:37:38,516 - #43 {
+INFO  16:37:38,516 - #8 return
+INFO  16:37:38,516 - #47 1
+INFO  16:37:38,516 - #34 ;
+INFO  16:37:38,516 - #44 }
+INFO  16:37:38,516 - #7 void
+INFO  16:37:38,516 - #45 praznoReturn
+INFO  16:37:38,516 - #39 (
+INFO  16:37:38,516 - #40 )
+INFO  16:37:38,517 - #43 {
+INFO  16:37:38,517 - #8 return
+INFO  16:37:38,517 - #34 ;
+INFO  16:37:38,517 - #44 }
+INFO  16:37:38,517 - #7 void
+INFO  16:37:38,517 - #45 lokalnePromenljive
+INFO  16:37:38,517 - #39 (
+INFO  16:37:38,517 - #40 )
+INFO  16:37:38,517 - #45 int
+INFO  16:37:38,517 - #45 a
+INFO  16:37:38,517 - #36 ,
+INFO  16:37:38,517 - #45 b
+INFO  16:37:38,517 - #41 [
+INFO  16:37:38,517 - #42 ]
+INFO  16:37:38,517 - #34 ;
+INFO  16:37:38,517 - #45 char
+INFO  16:37:38,517 - #45 c
+INFO  16:37:38,517 - #34 ;
+INFO  16:37:38,517 - #45 bool
+INFO  16:37:38,517 - #45 d
+INFO  16:37:38,517 - #34 ;
+INFO  16:37:38,517 - #43 {
+INFO  16:37:38,517 - #44 }
+INFO  16:37:38,517 - #45 int
+INFO  16:37:38,517 - #45 saberi
+INFO  16:37:38,517 - #39 (
+INFO  16:37:38,517 - #45 int
+INFO  16:37:38,517 - #45 a
+INFO  16:37:38,517 - #36 ,
+INFO  16:37:38,517 - #45 int
+INFO  16:37:38,517 - #45 b
+INFO  16:37:38,517 - #40 )
+INFO  16:37:38,518 - #43 {
+INFO  16:37:38,518 - #8 return
+INFO  16:37:38,518 - #45 a
+INFO  16:37:38,518 - #17 +
+INFO  16:37:38,518 - #45 b
+INFO  16:37:38,518 - #34 ;
+INFO  16:37:38,518 - #44 }
+INFO  16:37:38,518 - #7 void
+INFO  16:37:38,518 - #45 main
+INFO  16:37:38,518 - #39 (
+INFO  16:37:38,518 - #40 )
+INFO  16:37:38,518 - #45 int
+INFO  16:37:38,518 - #45 r
+INFO  16:37:38,518 - #34 ;
+INFO  16:37:38,518 - #43 {
+INFO  16:37:38,518 - #45 bezParametara
+INFO  16:37:38,518 - #39 (
+INFO  16:37:38,518 - #40 )
+INFO  16:37:38,518 - #34 ;
+INFO  16:37:38,518 - #45 saParametrima
+INFO  16:37:38,518 - #39 (
+INFO  16:37:38,518 - #46 1
+INFO  16:37:38,518 - #36 ,
+INFO  16:37:38,518 - #48 a
+INFO  16:37:38,518 - #36 ,
+INFO  16:37:38,518 - #47 1
+INFO  16:37:38,518 - #40 )
+INFO  16:37:38,518 - #34 ;
+INFO  16:37:38,518 - #45 praznoReturn
+INFO  16:37:38,518 - #39 (
+INFO  16:37:38,519 - #40 )
+INFO  16:37:38,519 - #34 ;
+INFO  16:37:38,519 - #45 r
+INFO  16:37:38,519 - #31 =
+INFO  16:37:38,519 - #45 vratiBroj
+INFO  16:37:38,519 - #39 (
+INFO  16:37:38,519 - #40 )
+INFO  16:37:38,519 - #34 ;
+INFO  16:37:38,519 - #45 r
+INFO  16:37:38,519 - #31 =
+INFO  16:37:38,519 - #45 saberi
+INFO  16:37:38,519 - #39 (
+INFO  16:37:38,519 - #46 1
+INFO  16:37:38,519 - #36 ,
+INFO  16:37:38,519 - #46 2
+INFO  16:37:38,519 - #40 )
+INFO  16:37:38,519 - #34 ;
+INFO  16:37:38,519 - #45 r
+INFO  16:37:38,519 - #31 =
+INFO  16:37:38,519 - #45 saberi
+INFO  16:37:38,519 - #39 (
+INFO  16:37:38,519 - #45 r
+INFO  16:37:38,519 - #36 ,
+INFO  16:37:38,519 - #45 saberi
+INFO  16:37:38,519 - #39 (
+INFO  16:37:38,519 - #46 3
+INFO  16:37:38,519 - #36 ,
+INFO  16:37:38,519 - #46 4
+INFO  16:37:38,519 - #40 )
+INFO  16:37:38,519 - #40 )
+INFO  16:37:38,519 - #34 ;
+INFO  16:37:38,519 - #45 g
+INFO  16:37:38,519 - #31 =
+INFO  16:37:38,519 - #45 r
+INFO  16:37:38,519 - #34 ;
+INFO  16:37:38,519 - #44 }
+INFO  16:37:38,519 - #44 }
+INFO  16:37:38,520 - Program(
   ProgramName(
    Metode
   ) [ProgramName]
@@ -910,35 +910,35 @@ INFO  19:17:28,468 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:28,469 - =================================================
-INFO  19:17:28,471 - Pretraga na 30(lokalna), nadjeno Var lokalna: int, 0, 1
-INFO  19:17:28,471 - Pretraga na 31(lokalna), nadjeno Var lokalna: int, 0, 1
-INFO  19:17:28,471 - Pretraga na 58(a), nadjeno Var a: int, 0, 1
-INFO  19:17:28,471 - Pretraga na 58(b), nadjeno Var b: int, 1, 1
-INFO  19:17:28,471 - Pretraga na 64(bezParametara), nadjeno Meth bezParametara: notype, 0, 0
-INFO  19:17:28,471 - Pretraga na 65(saParametrima), nadjeno Meth saParametrima: notype, 0, 3 
+INFO  16:37:38,520 - =================================================
+INFO  16:37:38,522 - Pretraga na 30(lokalna), nadjeno Var lokalna: int, 0, 1
+INFO  16:37:38,522 - Pretraga na 31(lokalna), nadjeno Var lokalna: int, 0, 1
+INFO  16:37:38,522 - Pretraga na 58(a), nadjeno Var a: int, 0, 1
+INFO  16:37:38,522 - Pretraga na 58(b), nadjeno Var b: int, 1, 1
+INFO  16:37:38,522 - Pretraga na 64(bezParametara), nadjeno Meth bezParametara: notype, 0, 0
+INFO  16:37:38,522 - Pretraga na 65(saParametrima), nadjeno Meth saParametrima: notype, 0, 3 
    Var a: int, 0, 1 
    Var b: char, 1, 1 
    Var c: bool, 2, 1
-INFO  19:17:28,471 - Pretraga na 66(praznoReturn), nadjeno Meth praznoReturn: notype, 0, 0
-INFO  19:17:28,471 - Pretraga na 68(r), nadjeno Var r: int, 0, 1
-INFO  19:17:28,471 - Pretraga na 68(vratiBroj), nadjeno Meth vratiBroj: int, 0, 0 
+INFO  16:37:38,522 - Pretraga na 66(praznoReturn), nadjeno Meth praznoReturn: notype, 0, 0
+INFO  16:37:38,522 - Pretraga na 68(r), nadjeno Var r: int, 0, 1
+INFO  16:37:38,522 - Pretraga na 68(vratiBroj), nadjeno Meth vratiBroj: int, 0, 0 
    Var lokalna: int, 0, 1
-INFO  19:17:28,471 - Pretraga na 69(r), nadjeno Var r: int, 0, 1
-INFO  19:17:28,471 - Pretraga na 69(saberi), nadjeno Meth saberi: int, 0, 2 
+INFO  16:37:38,522 - Pretraga na 69(r), nadjeno Var r: int, 0, 1
+INFO  16:37:38,522 - Pretraga na 69(saberi), nadjeno Meth saberi: int, 0, 2 
    Var a: int, 0, 1 
    Var b: int, 1, 1
-INFO  19:17:28,471 - Pretraga na 70(r), nadjeno Var r: int, 0, 1
-INFO  19:17:28,471 - Pretraga na 70(r), nadjeno Var r: int, 0, 1
-INFO  19:17:28,471 - Pretraga na 70(saberi), nadjeno Meth saberi: int, 0, 2 
+INFO  16:37:38,522 - Pretraga na 70(r), nadjeno Var r: int, 0, 1
+INFO  16:37:38,522 - Pretraga na 70(r), nadjeno Var r: int, 0, 1
+INFO  16:37:38,522 - Pretraga na 70(saberi), nadjeno Meth saberi: int, 0, 2 
    Var a: int, 0, 1 
    Var b: int, 1, 1
-INFO  19:17:28,471 - Pretraga na 70(saberi), nadjeno Meth saberi: int, 0, 2 
+INFO  16:37:38,522 - Pretraga na 70(saberi), nadjeno Meth saberi: int, 0, 2 
    Var a: int, 0, 1 
    Var b: int, 1, 1
-INFO  19:17:28,471 - Pretraga na 72(g), nadjeno Var g: int, 0, 0
-INFO  19:17:28,471 - Pretraga na 72(r), nadjeno Var r: int, 0, 1
-INFO  19:17:28,471 - =================================================
+INFO  16:37:38,522 - Pretraga na 72(g), nadjeno Var g: int, 0, 0
+INFO  16:37:38,523 - Pretraga na 72(r), nadjeno Var r: int, 0, 1
+INFO  16:37:38,523 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -997,4 +997,4 @@ Prog Metode: notype, 0, 1
 
 
 
-INFO  19:17:28,472 - Parsiranje uspesno zavrseno!
+INFO  16:37:38,523 - Generisanje uspesno zavrseno!

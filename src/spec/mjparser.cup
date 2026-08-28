@@ -92,7 +92,7 @@ nonterminal Program, ProgramName, DeclList;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 nonterminal ConstDecl, ConstItemList, ConstItem, Constant;
 nonterminal VarDecl, VarItemList, VarItem;
-nonterminal MethodDeclList, MethodDecl, MethodTypeName, RetType;
+nonterminal MethodDeclList, MethodDecl, RetType;
 nonterminal FormParsOpt, FormPars, FormParDecl;
 nonterminal VarDeclListOpt;
 
@@ -110,7 +110,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, CondTerm, CondFact
 nonterminal Addop, Mulop;
 nonterminal PrintWidthOpt, ReturnExprOpt;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorSub, Term, AddExpr, Expr;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, MethodTypeName;
 
 
 /* Jedina dozvoljena precedence direktiva - resava dangling-else konflikt. */

@@ -35,6 +35,7 @@
 				<exclude name="SemanticAnalyzer.java"/><exclude/>
 				<exclude name="MyTab.java"/><exclude/>
 				<exclude name="MyDumpSymbolTableVisitor.java"/><exclude/>
+				<exclude name="CodeGenerator.java"/><exclude/>
 			</fileset>
 		</delete>
 	</target>
@@ -96,6 +97,34 @@
 				<!-- log4j.xml koji Compiler trazi preko classloader-a -->
 				<pathelement path="config"/>
 				<path refid="project.classpath"/>
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="disasm">
+		<java classname="rs.etf.pp1.mj.runtime.disasm" fork="true" dir="${basedir}">
+			<arg value="test/program.obj"/>
+			<classpath>
+				<pathelement location="lib/mj-runtime-1.1.jar"/>
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="runObj" depends="debugObj">
+		<java classname="rs.etf.pp1.mj.runtime.Run" fork="true" dir="${basedir}">
+			<arg value="test/program.obj"/>
+			<classpath>
+				<pathelement location="lib/mj-runtime-1.1.jar"/>
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="debugObj" depends="disasm">
+		<java classname="rs.etf.pp1.mj.runtime.Run" fork="true" dir="${basedir}">
+			<arg value="test/program.obj"/>
+			<arg value="-debug"/>
+			<classpath>
+				<pathelement location="lib/mj-runtime-1.1.jar"/>
 			</classpath>
 		</java>
 	</target>

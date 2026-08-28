@@ -1,137 +1,137 @@
-INFO  19:17:29,648 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/11_io.mj
-INFO  19:17:29,656 - #2 program
-INFO  19:17:29,656 - #45 UlazIzlaz
-INFO  19:17:29,656 - #45 int
-INFO  19:17:29,656 - #45 broj
-INFO  19:17:29,656 - #36 ,
-INFO  19:17:29,657 - #45 niz
-INFO  19:17:29,657 - #41 [
-INFO  19:17:29,657 - #42 ]
-INFO  19:17:29,657 - #34 ;
-INFO  19:17:29,657 - #45 char
-INFO  19:17:29,657 - #45 znak
-INFO  19:17:29,657 - #34 ;
-INFO  19:17:29,657 - #45 bool
-INFO  19:17:29,657 - #45 zastavica
-INFO  19:17:29,657 - #34 ;
-INFO  19:17:29,657 - #43 {
-INFO  19:17:29,657 - #7 void
-INFO  19:17:29,657 - #45 main
-INFO  19:17:29,657 - #39 (
-INFO  19:17:29,658 - #40 )
-INFO  19:17:29,658 - #43 {
-INFO  19:17:29,658 - #45 niz
-INFO  19:17:29,658 - #31 =
-INFO  19:17:29,658 - #4 new
-INFO  19:17:29,658 - #45 int
-INFO  19:17:29,658 - #41 [
-INFO  19:17:29,658 - #46 3
-INFO  19:17:29,658 - #42 ]
-INFO  19:17:29,658 - #34 ;
-INFO  19:17:29,659 - #6 read
-INFO  19:17:29,659 - #39 (
-INFO  19:17:29,659 - #45 broj
-INFO  19:17:29,659 - #40 )
-INFO  19:17:29,659 - #34 ;
-INFO  19:17:29,659 - #6 read
-INFO  19:17:29,659 - #39 (
-INFO  19:17:29,659 - #45 znak
-INFO  19:17:29,659 - #40 )
-INFO  19:17:29,659 - #34 ;
-INFO  19:17:29,659 - #6 read
-INFO  19:17:29,659 - #39 (
-INFO  19:17:29,659 - #45 zastavica
-INFO  19:17:29,659 - #40 )
-INFO  19:17:29,659 - #34 ;
-INFO  19:17:29,659 - #6 read
-INFO  19:17:29,659 - #39 (
-INFO  19:17:29,659 - #45 niz
-INFO  19:17:29,659 - #41 [
-INFO  19:17:29,659 - #46 0
-INFO  19:17:29,659 - #42 ]
-INFO  19:17:29,659 - #40 )
-INFO  19:17:29,659 - #34 ;
-INFO  19:17:29,659 - #5 print
-INFO  19:17:29,659 - #39 (
-INFO  19:17:29,659 - #45 broj
-INFO  19:17:29,659 - #40 )
-INFO  19:17:29,660 - #34 ;
-INFO  19:17:29,660 - #5 print
-INFO  19:17:29,660 - #39 (
-INFO  19:17:29,660 - #45 znak
-INFO  19:17:29,660 - #40 )
-INFO  19:17:29,660 - #34 ;
-INFO  19:17:29,660 - #5 print
-INFO  19:17:29,660 - #39 (
-INFO  19:17:29,660 - #45 zastavica
-INFO  19:17:29,660 - #40 )
-INFO  19:17:29,660 - #34 ;
-INFO  19:17:29,660 - #5 print
-INFO  19:17:29,660 - #39 (
-INFO  19:17:29,660 - #45 niz
-INFO  19:17:29,660 - #41 [
-INFO  19:17:29,660 - #46 0
-INFO  19:17:29,660 - #42 ]
-INFO  19:17:29,661 - #40 )
-INFO  19:17:29,661 - #34 ;
-INFO  19:17:29,661 - #5 print
-INFO  19:17:29,661 - #39 (
-INFO  19:17:29,661 - #45 broj
-INFO  19:17:29,661 - #36 ,
-INFO  19:17:29,661 - #46 5
-INFO  19:17:29,661 - #40 )
-INFO  19:17:29,661 - #34 ;
-INFO  19:17:29,661 - #5 print
-INFO  19:17:29,661 - #39 (
-INFO  19:17:29,661 - #45 znak
-INFO  19:17:29,661 - #36 ,
-INFO  19:17:29,661 - #46 2
-INFO  19:17:29,661 - #40 )
-INFO  19:17:29,661 - #34 ;
-INFO  19:17:29,661 - #5 print
-INFO  19:17:29,661 - #39 (
-INFO  19:17:29,661 - #45 niz
-INFO  19:17:29,661 - #41 [
-INFO  19:17:29,661 - #46 0
-INFO  19:17:29,661 - #42 ]
-INFO  19:17:29,661 - #36 ,
-INFO  19:17:29,661 - #46 10
-INFO  19:17:29,661 - #40 )
-INFO  19:17:29,661 - #34 ;
-INFO  19:17:29,661 - #5 print
-INFO  19:17:29,661 - #39 (
-INFO  19:17:29,661 - #45 broj
-INFO  19:17:29,661 - #17 +
-INFO  19:17:29,661 - #46 1
-INFO  19:17:29,662 - #40 )
-INFO  19:17:29,662 - #34 ;
-INFO  19:17:29,662 - #5 print
-INFO  19:17:29,662 - #39 (
-INFO  19:17:29,662 - #45 broj
-INFO  19:17:29,662 - #19 *
-INFO  19:17:29,662 - #46 2
-INFO  19:17:29,662 - #36 ,
-INFO  19:17:29,662 - #46 3
-INFO  19:17:29,662 - #40 )
-INFO  19:17:29,662 - #34 ;
-INFO  19:17:29,662 - #5 print
-INFO  19:17:29,662 - #39 (
-INFO  19:17:29,662 - #48 x
-INFO  19:17:29,663 - #40 )
-INFO  19:17:29,663 - #34 ;
-INFO  19:17:29,663 - #5 print
-INFO  19:17:29,663 - #39 (
-INFO  19:17:29,663 - #46 42
-INFO  19:17:29,663 - #40 )
-INFO  19:17:29,663 - #34 ;
-INFO  19:17:29,663 - #5 print
-INFO  19:17:29,663 - #39 (
-INFO  19:17:29,663 - #47 1
-INFO  19:17:29,663 - #40 )
-INFO  19:17:29,663 - #34 ;
-INFO  19:17:29,663 - #44 }
-INFO  19:17:29,663 - #44 }
-INFO  19:17:29,664 - Program(
+INFO  16:37:39,599 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/11_io.mj
+INFO  16:37:39,608 - #2 program
+INFO  16:37:39,608 - #45 UlazIzlaz
+INFO  16:37:39,608 - #45 int
+INFO  16:37:39,608 - #45 broj
+INFO  16:37:39,608 - #36 ,
+INFO  16:37:39,608 - #45 niz
+INFO  16:37:39,608 - #41 [
+INFO  16:37:39,608 - #42 ]
+INFO  16:37:39,608 - #34 ;
+INFO  16:37:39,609 - #45 char
+INFO  16:37:39,609 - #45 znak
+INFO  16:37:39,609 - #34 ;
+INFO  16:37:39,609 - #45 bool
+INFO  16:37:39,609 - #45 zastavica
+INFO  16:37:39,609 - #34 ;
+INFO  16:37:39,609 - #43 {
+INFO  16:37:39,609 - #7 void
+INFO  16:37:39,609 - #45 main
+INFO  16:37:39,609 - #39 (
+INFO  16:37:39,609 - #40 )
+INFO  16:37:39,609 - #43 {
+INFO  16:37:39,609 - #45 niz
+INFO  16:37:39,609 - #31 =
+INFO  16:37:39,610 - #4 new
+INFO  16:37:39,610 - #45 int
+INFO  16:37:39,610 - #41 [
+INFO  16:37:39,610 - #46 3
+INFO  16:37:39,610 - #42 ]
+INFO  16:37:39,610 - #34 ;
+INFO  16:37:39,610 - #6 read
+INFO  16:37:39,610 - #39 (
+INFO  16:37:39,610 - #45 broj
+INFO  16:37:39,610 - #40 )
+INFO  16:37:39,610 - #34 ;
+INFO  16:37:39,610 - #6 read
+INFO  16:37:39,610 - #39 (
+INFO  16:37:39,610 - #45 znak
+INFO  16:37:39,610 - #40 )
+INFO  16:37:39,610 - #34 ;
+INFO  16:37:39,610 - #6 read
+INFO  16:37:39,610 - #39 (
+INFO  16:37:39,610 - #45 zastavica
+INFO  16:37:39,610 - #40 )
+INFO  16:37:39,610 - #34 ;
+INFO  16:37:39,610 - #6 read
+INFO  16:37:39,610 - #39 (
+INFO  16:37:39,610 - #45 niz
+INFO  16:37:39,611 - #41 [
+INFO  16:37:39,611 - #46 0
+INFO  16:37:39,611 - #42 ]
+INFO  16:37:39,611 - #40 )
+INFO  16:37:39,611 - #34 ;
+INFO  16:37:39,611 - #5 print
+INFO  16:37:39,611 - #39 (
+INFO  16:37:39,611 - #45 broj
+INFO  16:37:39,611 - #40 )
+INFO  16:37:39,611 - #34 ;
+INFO  16:37:39,611 - #5 print
+INFO  16:37:39,611 - #39 (
+INFO  16:37:39,611 - #45 znak
+INFO  16:37:39,611 - #40 )
+INFO  16:37:39,611 - #34 ;
+INFO  16:37:39,611 - #5 print
+INFO  16:37:39,611 - #39 (
+INFO  16:37:39,611 - #45 zastavica
+INFO  16:37:39,611 - #40 )
+INFO  16:37:39,612 - #34 ;
+INFO  16:37:39,612 - #5 print
+INFO  16:37:39,612 - #39 (
+INFO  16:37:39,612 - #45 niz
+INFO  16:37:39,612 - #41 [
+INFO  16:37:39,612 - #46 0
+INFO  16:37:39,612 - #42 ]
+INFO  16:37:39,612 - #40 )
+INFO  16:37:39,612 - #34 ;
+INFO  16:37:39,612 - #5 print
+INFO  16:37:39,612 - #39 (
+INFO  16:37:39,612 - #45 broj
+INFO  16:37:39,612 - #36 ,
+INFO  16:37:39,612 - #46 5
+INFO  16:37:39,612 - #40 )
+INFO  16:37:39,612 - #34 ;
+INFO  16:37:39,612 - #5 print
+INFO  16:37:39,612 - #39 (
+INFO  16:37:39,612 - #45 znak
+INFO  16:37:39,612 - #36 ,
+INFO  16:37:39,612 - #46 2
+INFO  16:37:39,612 - #40 )
+INFO  16:37:39,612 - #34 ;
+INFO  16:37:39,612 - #5 print
+INFO  16:37:39,612 - #39 (
+INFO  16:37:39,612 - #45 niz
+INFO  16:37:39,612 - #41 [
+INFO  16:37:39,612 - #46 0
+INFO  16:37:39,612 - #42 ]
+INFO  16:37:39,612 - #36 ,
+INFO  16:37:39,612 - #46 10
+INFO  16:37:39,612 - #40 )
+INFO  16:37:39,612 - #34 ;
+INFO  16:37:39,612 - #5 print
+INFO  16:37:39,612 - #39 (
+INFO  16:37:39,612 - #45 broj
+INFO  16:37:39,612 - #17 +
+INFO  16:37:39,612 - #46 1
+INFO  16:37:39,613 - #40 )
+INFO  16:37:39,613 - #34 ;
+INFO  16:37:39,613 - #5 print
+INFO  16:37:39,613 - #39 (
+INFO  16:37:39,613 - #45 broj
+INFO  16:37:39,613 - #19 *
+INFO  16:37:39,613 - #46 2
+INFO  16:37:39,613 - #36 ,
+INFO  16:37:39,613 - #46 3
+INFO  16:37:39,613 - #40 )
+INFO  16:37:39,613 - #34 ;
+INFO  16:37:39,613 - #5 print
+INFO  16:37:39,613 - #39 (
+INFO  16:37:39,613 - #48 x
+INFO  16:37:39,613 - #40 )
+INFO  16:37:39,613 - #34 ;
+INFO  16:37:39,613 - #5 print
+INFO  16:37:39,613 - #39 (
+INFO  16:37:39,613 - #46 42
+INFO  16:37:39,613 - #40 )
+INFO  16:37:39,613 - #34 ;
+INFO  16:37:39,613 - #5 print
+INFO  16:37:39,613 - #39 (
+INFO  16:37:39,613 - #47 1
+INFO  16:37:39,614 - #40 )
+INFO  16:37:39,614 - #34 ;
+INFO  16:37:39,614 - #44 }
+INFO  16:37:39,614 - #44 }
+INFO  16:37:39,614 - Program(
   ProgramName(
    UlazIzlaz
   ) [ProgramName]
@@ -542,25 +542,25 @@ INFO  19:17:29,664 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  19:17:29,664 - =================================================
-INFO  19:17:29,666 - Pretraga na 13(niz), nadjeno Var niz: Arr of int, 1, 0
-INFO  19:17:29,666 - Pretraga na 15(broj), nadjeno Var broj: int, 0, 0
-INFO  19:17:29,666 - Pretraga na 16(znak), nadjeno Var znak: char, 2, 0
-INFO  19:17:29,666 - Pretraga na 17(zastavica), nadjeno Var zastavica: bool, 3, 0
-INFO  19:17:29,666 - Pretraga na 18(niz), nadjeno Var niz: Arr of int, 1, 0
-INFO  19:17:29,666 - Pretraga na 18(niz), nadjeno Var niz: Arr of int, 1, 0
-INFO  19:17:29,666 - Pretraga na 20(broj), nadjeno Var broj: int, 0, 0
-INFO  19:17:29,666 - Pretraga na 21(znak), nadjeno Var znak: char, 2, 0
-INFO  19:17:29,666 - Pretraga na 22(zastavica), nadjeno Var zastavica: bool, 3, 0
-INFO  19:17:29,666 - Pretraga na 23(niz), nadjeno Var niz: Arr of int, 1, 0
-INFO  19:17:29,666 - Pretraga na 23(niz), nadjeno Var niz: Arr of int, 1, 0
-INFO  19:17:29,666 - Pretraga na 26(broj), nadjeno Var broj: int, 0, 0
-INFO  19:17:29,666 - Pretraga na 27(znak), nadjeno Var znak: char, 2, 0
-INFO  19:17:29,666 - Pretraga na 28(niz), nadjeno Var niz: Arr of int, 1, 0
-INFO  19:17:29,666 - Pretraga na 28(niz), nadjeno Var niz: Arr of int, 1, 0
-INFO  19:17:29,666 - Pretraga na 31(broj), nadjeno Var broj: int, 0, 0
-INFO  19:17:29,666 - Pretraga na 32(broj), nadjeno Var broj: int, 0, 0
-INFO  19:17:29,666 - =================================================
+INFO  16:37:39,615 - =================================================
+INFO  16:37:39,616 - Pretraga na 13(niz), nadjeno Var niz: Arr of int, 1, 0
+INFO  16:37:39,616 - Pretraga na 15(broj), nadjeno Var broj: int, 0, 0
+INFO  16:37:39,616 - Pretraga na 16(znak), nadjeno Var znak: char, 2, 0
+INFO  16:37:39,616 - Pretraga na 17(zastavica), nadjeno Var zastavica: bool, 3, 0
+INFO  16:37:39,616 - Pretraga na 18(niz), nadjeno Var niz: Arr of int, 1, 0
+INFO  16:37:39,616 - Pretraga na 18(niz), nadjeno Var niz: Arr of int, 1, 0
+INFO  16:37:39,616 - Pretraga na 20(broj), nadjeno Var broj: int, 0, 0
+INFO  16:37:39,616 - Pretraga na 21(znak), nadjeno Var znak: char, 2, 0
+INFO  16:37:39,616 - Pretraga na 22(zastavica), nadjeno Var zastavica: bool, 3, 0
+INFO  16:37:39,616 - Pretraga na 23(niz), nadjeno Var niz: Arr of int, 1, 0
+INFO  16:37:39,616 - Pretraga na 23(niz), nadjeno Var niz: Arr of int, 1, 0
+INFO  16:37:39,616 - Pretraga na 26(broj), nadjeno Var broj: int, 0, 0
+INFO  16:37:39,616 - Pretraga na 27(znak), nadjeno Var znak: char, 2, 0
+INFO  16:37:39,616 - Pretraga na 28(niz), nadjeno Var niz: Arr of int, 1, 0
+INFO  16:37:39,616 - Pretraga na 28(niz), nadjeno Var niz: Arr of int, 1, 0
+INFO  16:37:39,616 - Pretraga na 31(broj), nadjeno Var broj: int, 0, 0
+INFO  16:37:39,616 - Pretraga na 32(broj), nadjeno Var broj: int, 0, 0
+INFO  16:37:39,616 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -585,4 +585,4 @@ Prog UlazIzlaz: notype, 0, 1
 
 
 
-INFO  19:17:29,666 - Parsiranje uspesno zavrseno!
+INFO  16:37:39,618 - Generisanje uspesno zavrseno!

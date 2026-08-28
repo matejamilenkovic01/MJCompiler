@@ -1,7 +1,7 @@
-ERROR 19:17:30,783 - 
+ERROR 16:37:40,671 - 
 Sintaksna greska na liniji 17
-ERROR 19:17:30,783 - Oporavak od greske u uslovu if iskaza izvrsen do linije 17
-ERROR 19:17:30,784 - 
+ERROR 16:37:40,671 - Oporavak od greske u uslovu if iskaza izvrsen do linije 17
+ERROR 16:37:40,671 - 
 Sintaksna greska na liniji 20
-ERROR 19:17:30,784 - Oporavak od greske u uslovu if iskaza izvrsen do linije 20
-ERROR 19:17:30,788 - Parsiranje NIJE uspesno zavrseno!
+ERROR 16:37:40,671 - Oporavak od greske u uslovu if iskaza izvrsen do linije 20
+ERROR 16:37:40,675 - Parsiranje NIJE uspesno zavrseno!
