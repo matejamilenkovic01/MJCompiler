@@ -1,311 +1,311 @@
-INFO  17:58:15,217 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/48_sem_ok_full.mj
-INFO  17:58:15,226 - #2 program
-INFO  17:58:15,226 - #45 SemOkFull
-INFO  17:58:15,226 - #3 const
-INFO  17:58:15,226 - #45 int
-INFO  17:58:15,226 - #45 velicina
-INFO  17:58:15,226 - #31 =
-INFO  17:58:15,226 - #46 5
-INFO  17:58:15,226 - #34 ;
-INFO  17:58:15,226 - #3 const
-INFO  17:58:15,226 - #45 char
-INFO  17:58:15,227 - #45 znak
-INFO  17:58:15,227 - #31 =
-INFO  17:58:15,227 - #48 x
-INFO  17:58:15,227 - #34 ;
-INFO  17:58:15,227 - #3 const
-INFO  17:58:15,227 - #45 bool
-INFO  17:58:15,227 - #45 istina
-INFO  17:58:15,227 - #31 =
-INFO  17:58:15,227 - #47 1
-INFO  17:58:15,227 - #34 ;
-INFO  17:58:15,227 - #45 int
-INFO  17:58:15,227 - #45 globalni
-INFO  17:58:15,227 - #34 ;
-INFO  17:58:15,227 - #45 int
-INFO  17:58:15,227 - #45 brojevi
-INFO  17:58:15,227 - #41 [
-INFO  17:58:15,227 - #42 ]
-INFO  17:58:15,227 - #34 ;
-INFO  17:58:15,227 - #45 int
-INFO  17:58:15,227 - #45 rezultat
-INFO  17:58:15,227 - #41 [
-INFO  17:58:15,227 - #42 ]
-INFO  17:58:15,227 - #34 ;
-INFO  17:58:15,227 - #45 bool
-INFO  17:58:15,228 - #45 nadjeno
-INFO  17:58:15,228 - #34 ;
-INFO  17:58:15,228 - #45 char
-INFO  17:58:15,228 - #45 slovo
-INFO  17:58:15,228 - #34 ;
-INFO  17:58:15,228 - #43 {
-INFO  17:58:15,228 - #45 int
-INFO  17:58:15,228 - #45 dvostruko
-INFO  17:58:15,228 - #39 (
-INFO  17:58:15,228 - #45 int
-INFO  17:58:15,228 - #45 x
-INFO  17:58:15,228 - #40 )
-INFO  17:58:15,228 - #43 {
-INFO  17:58:15,228 - #8 return
-INFO  17:58:15,228 - #45 x
-INFO  17:58:15,229 - #19 *
-INFO  17:58:15,229 - #46 2
-INFO  17:58:15,229 - #34 ;
-INFO  17:58:15,229 - #44 }
-INFO  17:58:15,229 - #45 int
-INFO  17:58:15,229 - #45 zbir
-INFO  17:58:15,229 - #39 (
-INFO  17:58:15,229 - #45 int
-INFO  17:58:15,229 - #45 niz
-INFO  17:58:15,229 - #41 [
-INFO  17:58:15,229 - #42 ]
-INFO  17:58:15,229 - #36 ,
-INFO  17:58:15,229 - #45 int
-INFO  17:58:15,229 - #45 duzina
-INFO  17:58:15,229 - #40 )
-INFO  17:58:15,230 - #45 int
-INFO  17:58:15,230 - #45 i
-INFO  17:58:15,230 - #36 ,
-INFO  17:58:15,230 - #45 s
-INFO  17:58:15,230 - #34 ;
-INFO  17:58:15,230 - #43 {
-INFO  17:58:15,230 - #45 s
-INFO  17:58:15,230 - #31 =
-INFO  17:58:15,230 - #46 0
-INFO  17:58:15,230 - #34 ;
-INFO  17:58:15,230 - #13 for
-INFO  17:58:15,230 - #39 (
-INFO  17:58:15,230 - #45 i
-INFO  17:58:15,230 - #31 =
-INFO  17:58:15,230 - #46 0
-INFO  17:58:15,230 - #34 ;
-INFO  17:58:15,230 - #45 i
-INFO  17:58:15,230 - #26 <
-INFO  17:58:15,230 - #45 duzina
-INFO  17:58:15,230 - #34 ;
-INFO  17:58:15,230 - #45 i
-INFO  17:58:15,230 - #32 ++
-INFO  17:58:15,230 - #40 )
-INFO  17:58:15,231 - #45 s
-INFO  17:58:15,231 - #31 =
-INFO  17:58:15,231 - #45 s
-INFO  17:58:15,231 - #17 +
-INFO  17:58:15,231 - #45 niz
-INFO  17:58:15,231 - #41 [
-INFO  17:58:15,231 - #45 i
-INFO  17:58:15,231 - #42 ]
-INFO  17:58:15,231 - #34 ;
-INFO  17:58:15,231 - #8 return
-INFO  17:58:15,231 - #45 s
-INFO  17:58:15,231 - #34 ;
-INFO  17:58:15,231 - #44 }
-INFO  17:58:15,231 - #7 void
-INFO  17:58:15,231 - #45 ispisi
-INFO  17:58:15,232 - #39 (
-INFO  17:58:15,232 - #45 int
-INFO  17:58:15,232 - #45 vrednost
-INFO  17:58:15,232 - #36 ,
-INFO  17:58:15,232 - #45 char
-INFO  17:58:15,232 - #45 oznaka
-INFO  17:58:15,232 - #40 )
-INFO  17:58:15,232 - #43 {
-INFO  17:58:15,232 - #5 print
-INFO  17:58:15,232 - #39 (
-INFO  17:58:15,232 - #45 oznaka
-INFO  17:58:15,232 - #40 )
-INFO  17:58:15,232 - #34 ;
-INFO  17:58:15,232 - #5 print
-INFO  17:58:15,232 - #39 (
-INFO  17:58:15,232 - #45 vrednost
-INFO  17:58:15,232 - #36 ,
-INFO  17:58:15,232 - #46 5
-INFO  17:58:15,232 - #40 )
-INFO  17:58:15,232 - #34 ;
-INFO  17:58:15,232 - #44 }
-INFO  17:58:15,232 - #7 void
-INFO  17:58:15,232 - #45 main
-INFO  17:58:15,232 - #39 (
-INFO  17:58:15,232 - #40 )
-INFO  17:58:15,232 - #45 int
-INFO  17:58:15,232 - #45 i
-INFO  17:58:15,232 - #36 ,
-INFO  17:58:15,233 - #45 j
-INFO  17:58:15,233 - #34 ;
-INFO  17:58:15,233 - #43 {
-INFO  17:58:15,233 - #45 brojevi
-INFO  17:58:15,233 - #31 =
-INFO  17:58:15,233 - #4 new
-INFO  17:58:15,233 - #45 int
-INFO  17:58:15,233 - #41 [
-INFO  17:58:15,233 - #45 velicina
-INFO  17:58:15,233 - #42 ]
-INFO  17:58:15,233 - #34 ;
-INFO  17:58:15,233 - #45 rezultat
-INFO  17:58:15,233 - #31 =
-INFO  17:58:15,233 - #4 new
-INFO  17:58:15,233 - #45 int
-INFO  17:58:15,233 - #41 [
-INFO  17:58:15,233 - #45 velicina
-INFO  17:58:15,233 - #42 ]
-INFO  17:58:15,233 - #34 ;
-INFO  17:58:15,233 - #13 for
-INFO  17:58:15,233 - #39 (
-INFO  17:58:15,233 - #45 i
-INFO  17:58:15,233 - #31 =
-INFO  17:58:15,233 - #46 0
-INFO  17:58:15,233 - #34 ;
-INFO  17:58:15,233 - #45 i
-INFO  17:58:15,233 - #26 <
-INFO  17:58:15,233 - #45 brojevi
-INFO  17:58:15,233 - #37 .
-INFO  17:58:15,233 - #14 length
-INFO  17:58:15,233 - #34 ;
-INFO  17:58:15,233 - #45 i
-INFO  17:58:15,233 - #32 ++
-INFO  17:58:15,233 - #40 )
-INFO  17:58:15,233 - #45 brojevi
-INFO  17:58:15,233 - #41 [
-INFO  17:58:15,233 - #45 i
-INFO  17:58:15,233 - #42 ]
-INFO  17:58:15,233 - #31 =
-INFO  17:58:15,233 - #45 i
-INFO  17:58:15,233 - #17 +
-INFO  17:58:15,233 - #46 1
-INFO  17:58:15,233 - #34 ;
-INFO  17:58:15,233 - #45 globalni
-INFO  17:58:15,233 - #31 =
-INFO  17:58:15,233 - #45 dvostruko
-INFO  17:58:15,234 - #39 (
-INFO  17:58:15,234 - #45 dvostruko
-INFO  17:58:15,234 - #39 (
-INFO  17:58:15,234 - #46 3
-INFO  17:58:15,234 - #40 )
-INFO  17:58:15,234 - #40 )
-INFO  17:58:15,234 - #34 ;
-INFO  17:58:15,234 - #45 globalni
-INFO  17:58:15,234 - #31 =
-INFO  17:58:15,234 - #45 zbir
-INFO  17:58:15,234 - #39 (
-INFO  17:58:15,234 - #45 brojevi
-INFO  17:58:15,234 - #36 ,
-INFO  17:58:15,234 - #45 brojevi
-INFO  17:58:15,234 - #37 .
-INFO  17:58:15,234 - #14 length
-INFO  17:58:15,234 - #40 )
-INFO  17:58:15,234 - #34 ;
-INFO  17:58:15,234 - #45 globalni
-INFO  17:58:15,234 - #31 =
-INFO  17:58:15,234 - #45 globalni
-INFO  17:58:15,234 - #24 >
-INFO  17:58:15,234 - #46 0
-INFO  17:58:15,234 - #28 &&
-INFO  17:58:15,234 - #45 istina
-INFO  17:58:15,234 - #29 ||
-INFO  17:58:15,234 - #47 0
-INFO  17:58:15,234 - #38 ?
-INFO  17:58:15,234 - #45 globalni
-INFO  17:58:15,234 - #35 :
-INFO  17:58:15,234 - #18 -
-INFO  17:58:15,235 - #45 globalni
-INFO  17:58:15,235 - #34 ;
-INFO  17:58:15,235 - #45 slovo
-INFO  17:58:15,235 - #31 =
-INFO  17:58:15,235 - #45 znak
-INFO  17:58:15,235 - #34 ;
-INFO  17:58:15,235 - #45 ispisi
-INFO  17:58:15,235 - #39 (
-INFO  17:58:15,235 - #45 globalni
-INFO  17:58:15,235 - #36 ,
-INFO  17:58:15,235 - #45 slovo
-INFO  17:58:15,235 - #40 )
-INFO  17:58:15,235 - #34 ;
-INFO  17:58:15,235 - #13 for
-INFO  17:58:15,235 - #39 (
-INFO  17:58:15,235 - #45 i
-INFO  17:58:15,235 - #31 =
-INFO  17:58:15,235 - #46 0
-INFO  17:58:15,235 - #34 ;
-INFO  17:58:15,235 - #45 i
-INFO  17:58:15,235 - #26 <
-INFO  17:58:15,235 - #45 velicina
-INFO  17:58:15,235 - #34 ;
-INFO  17:58:15,235 - #45 i
-INFO  17:58:15,235 - #32 ++
-INFO  17:58:15,235 - #40 )
-INFO  17:58:15,235 - #43 {
-INFO  17:58:15,235 - #13 for
-INFO  17:58:15,235 - #39 (
-INFO  17:58:15,235 - #45 j
-INFO  17:58:15,235 - #31 =
-INFO  17:58:15,235 - #46 0
-INFO  17:58:15,235 - #34 ;
-INFO  17:58:15,235 - #45 j
-INFO  17:58:15,235 - #26 <
-INFO  17:58:15,235 - #45 velicina
-INFO  17:58:15,235 - #34 ;
-INFO  17:58:15,235 - #45 j
-INFO  17:58:15,235 - #32 ++
-INFO  17:58:15,235 - #40 )
-INFO  17:58:15,235 - #43 {
-INFO  17:58:15,235 - #9 if
-INFO  17:58:15,235 - #39 (
-INFO  17:58:15,235 - #45 j
-INFO  17:58:15,235 - #22 ==
-INFO  17:58:15,235 - #46 2
-INFO  17:58:15,235 - #40 )
-INFO  17:58:15,235 - #12 continue
-INFO  17:58:15,236 - #34 ;
-INFO  17:58:15,236 - #9 if
-INFO  17:58:15,236 - #39 (
-INFO  17:58:15,236 - #45 j
-INFO  17:58:15,236 - #22 ==
-INFO  17:58:15,236 - #46 4
-INFO  17:58:15,236 - #40 )
-INFO  17:58:15,236 - #11 break
-INFO  17:58:15,236 - #34 ;
-INFO  17:58:15,236 - #45 globalni
-INFO  17:58:15,236 - #31 =
-INFO  17:58:15,236 - #45 globalni
-INFO  17:58:15,236 - #17 +
-INFO  17:58:15,236 - #45 j
-INFO  17:58:15,236 - #34 ;
-INFO  17:58:15,236 - #44 }
-INFO  17:58:15,236 - #44 }
-INFO  17:58:15,236 - #45 nadjeno
-INFO  17:58:15,236 - #31 =
-INFO  17:58:15,236 - #45 brojevi
-INFO  17:58:15,236 - #37 .
-INFO  17:58:15,236 - #15 findAny
-INFO  17:58:15,236 - #39 (
-INFO  17:58:15,236 - #46 3
-INFO  17:58:15,236 - #40 )
-INFO  17:58:15,236 - #34 ;
-INFO  17:58:15,236 - #45 rezultat
-INFO  17:58:15,236 - #31 =
-INFO  17:58:15,236 - #45 brojevi
-INFO  17:58:15,236 - #37 .
-INFO  17:58:15,236 - #16 map
-INFO  17:58:15,236 - #39 (
-INFO  17:58:15,236 - #45 i
-INFO  17:58:15,236 - #30 =>
-INFO  17:58:15,236 - #45 i
-INFO  17:58:15,236 - #19 *
-INFO  17:58:15,236 - #45 i
-INFO  17:58:15,236 - #40 )
-INFO  17:58:15,236 - #34 ;
-INFO  17:58:15,236 - #5 print
-INFO  17:58:15,236 - #39 (
-INFO  17:58:15,236 - #45 globalni
-INFO  17:58:15,237 - #40 )
-INFO  17:58:15,237 - #34 ;
-INFO  17:58:15,237 - #5 print
-INFO  17:58:15,237 - #39 (
-INFO  17:58:15,237 - #45 nadjeno
-INFO  17:58:15,237 - #40 )
-INFO  17:58:15,237 - #34 ;
-INFO  17:58:15,237 - #44 }
-INFO  17:58:15,237 - #44 }
-INFO  17:58:15,238 - Program(
+INFO  17:45:14,020 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/48_sem_ok_full.mj
+INFO  17:45:14,031 - #2 program
+INFO  17:45:14,032 - #45 SemOkFull
+INFO  17:45:14,032 - #3 const
+INFO  17:45:14,032 - #45 int
+INFO  17:45:14,032 - #45 velicina
+INFO  17:45:14,032 - #31 =
+INFO  17:45:14,032 - #46 5
+INFO  17:45:14,032 - #34 ;
+INFO  17:45:14,032 - #3 const
+INFO  17:45:14,033 - #45 char
+INFO  17:45:14,033 - #45 znak
+INFO  17:45:14,033 - #31 =
+INFO  17:45:14,033 - #48 x
+INFO  17:45:14,033 - #34 ;
+INFO  17:45:14,033 - #3 const
+INFO  17:45:14,033 - #45 bool
+INFO  17:45:14,033 - #45 istina
+INFO  17:45:14,033 - #31 =
+INFO  17:45:14,033 - #47 1
+INFO  17:45:14,033 - #34 ;
+INFO  17:45:14,033 - #45 int
+INFO  17:45:14,033 - #45 globalni
+INFO  17:45:14,033 - #34 ;
+INFO  17:45:14,033 - #45 int
+INFO  17:45:14,034 - #45 brojevi
+INFO  17:45:14,034 - #41 [
+INFO  17:45:14,034 - #42 ]
+INFO  17:45:14,034 - #34 ;
+INFO  17:45:14,034 - #45 int
+INFO  17:45:14,034 - #45 rezultat
+INFO  17:45:14,034 - #41 [
+INFO  17:45:14,034 - #42 ]
+INFO  17:45:14,034 - #34 ;
+INFO  17:45:14,034 - #45 bool
+INFO  17:45:14,034 - #45 nadjeno
+INFO  17:45:14,034 - #34 ;
+INFO  17:45:14,034 - #45 char
+INFO  17:45:14,034 - #45 slovo
+INFO  17:45:14,034 - #34 ;
+INFO  17:45:14,034 - #43 {
+INFO  17:45:14,034 - #45 int
+INFO  17:45:14,034 - #45 dvostruko
+INFO  17:45:14,034 - #39 (
+INFO  17:45:14,035 - #45 int
+INFO  17:45:14,035 - #45 x
+INFO  17:45:14,035 - #40 )
+INFO  17:45:14,035 - #43 {
+INFO  17:45:14,035 - #8 return
+INFO  17:45:14,035 - #45 x
+INFO  17:45:14,035 - #19 *
+INFO  17:45:14,035 - #46 2
+INFO  17:45:14,036 - #34 ;
+INFO  17:45:14,036 - #44 }
+INFO  17:45:14,036 - #45 int
+INFO  17:45:14,036 - #45 zbir
+INFO  17:45:14,036 - #39 (
+INFO  17:45:14,036 - #45 int
+INFO  17:45:14,036 - #45 niz
+INFO  17:45:14,036 - #41 [
+INFO  17:45:14,036 - #42 ]
+INFO  17:45:14,036 - #36 ,
+INFO  17:45:14,036 - #45 int
+INFO  17:45:14,036 - #45 duzina
+INFO  17:45:14,036 - #40 )
+INFO  17:45:14,036 - #45 int
+INFO  17:45:14,037 - #45 i
+INFO  17:45:14,037 - #36 ,
+INFO  17:45:14,037 - #45 s
+INFO  17:45:14,037 - #34 ;
+INFO  17:45:14,037 - #43 {
+INFO  17:45:14,037 - #45 s
+INFO  17:45:14,037 - #31 =
+INFO  17:45:14,037 - #46 0
+INFO  17:45:14,037 - #34 ;
+INFO  17:45:14,037 - #13 for
+INFO  17:45:14,037 - #39 (
+INFO  17:45:14,038 - #45 i
+INFO  17:45:14,038 - #31 =
+INFO  17:45:14,038 - #46 0
+INFO  17:45:14,038 - #34 ;
+INFO  17:45:14,038 - #45 i
+INFO  17:45:14,038 - #26 <
+INFO  17:45:14,038 - #45 duzina
+INFO  17:45:14,038 - #34 ;
+INFO  17:45:14,038 - #45 i
+INFO  17:45:14,038 - #32 ++
+INFO  17:45:14,038 - #40 )
+INFO  17:45:14,038 - #45 s
+INFO  17:45:14,039 - #31 =
+INFO  17:45:14,039 - #45 s
+INFO  17:45:14,039 - #17 +
+INFO  17:45:14,039 - #45 niz
+INFO  17:45:14,039 - #41 [
+INFO  17:45:14,039 - #45 i
+INFO  17:45:14,039 - #42 ]
+INFO  17:45:14,039 - #34 ;
+INFO  17:45:14,039 - #8 return
+INFO  17:45:14,039 - #45 s
+INFO  17:45:14,039 - #34 ;
+INFO  17:45:14,039 - #44 }
+INFO  17:45:14,039 - #7 void
+INFO  17:45:14,039 - #45 ispisi
+INFO  17:45:14,040 - #39 (
+INFO  17:45:14,040 - #45 int
+INFO  17:45:14,040 - #45 vrednost
+INFO  17:45:14,040 - #36 ,
+INFO  17:45:14,040 - #45 char
+INFO  17:45:14,040 - #45 oznaka
+INFO  17:45:14,040 - #40 )
+INFO  17:45:14,040 - #43 {
+INFO  17:45:14,040 - #5 print
+INFO  17:45:14,040 - #39 (
+INFO  17:45:14,040 - #45 oznaka
+INFO  17:45:14,040 - #40 )
+INFO  17:45:14,040 - #34 ;
+INFO  17:45:14,040 - #5 print
+INFO  17:45:14,040 - #39 (
+INFO  17:45:14,040 - #45 vrednost
+INFO  17:45:14,040 - #36 ,
+INFO  17:45:14,040 - #46 5
+INFO  17:45:14,040 - #40 )
+INFO  17:45:14,040 - #34 ;
+INFO  17:45:14,040 - #44 }
+INFO  17:45:14,040 - #7 void
+INFO  17:45:14,040 - #45 main
+INFO  17:45:14,040 - #39 (
+INFO  17:45:14,040 - #40 )
+INFO  17:45:14,041 - #45 int
+INFO  17:45:14,041 - #45 i
+INFO  17:45:14,041 - #36 ,
+INFO  17:45:14,041 - #45 j
+INFO  17:45:14,041 - #34 ;
+INFO  17:45:14,041 - #43 {
+INFO  17:45:14,041 - #45 brojevi
+INFO  17:45:14,041 - #31 =
+INFO  17:45:14,041 - #4 new
+INFO  17:45:14,041 - #45 int
+INFO  17:45:14,041 - #41 [
+INFO  17:45:14,041 - #45 velicina
+INFO  17:45:14,041 - #42 ]
+INFO  17:45:14,041 - #34 ;
+INFO  17:45:14,041 - #45 rezultat
+INFO  17:45:14,041 - #31 =
+INFO  17:45:14,041 - #4 new
+INFO  17:45:14,041 - #45 int
+INFO  17:45:14,041 - #41 [
+INFO  17:45:14,041 - #45 velicina
+INFO  17:45:14,041 - #42 ]
+INFO  17:45:14,041 - #34 ;
+INFO  17:45:14,041 - #13 for
+INFO  17:45:14,041 - #39 (
+INFO  17:45:14,041 - #45 i
+INFO  17:45:14,041 - #31 =
+INFO  17:45:14,041 - #46 0
+INFO  17:45:14,041 - #34 ;
+INFO  17:45:14,041 - #45 i
+INFO  17:45:14,042 - #26 <
+INFO  17:45:14,042 - #45 brojevi
+INFO  17:45:14,042 - #37 .
+INFO  17:45:14,042 - #14 length
+INFO  17:45:14,042 - #34 ;
+INFO  17:45:14,042 - #45 i
+INFO  17:45:14,042 - #32 ++
+INFO  17:45:14,042 - #40 )
+INFO  17:45:14,042 - #45 brojevi
+INFO  17:45:14,042 - #41 [
+INFO  17:45:14,042 - #45 i
+INFO  17:45:14,042 - #42 ]
+INFO  17:45:14,042 - #31 =
+INFO  17:45:14,042 - #45 i
+INFO  17:45:14,042 - #17 +
+INFO  17:45:14,042 - #46 1
+INFO  17:45:14,042 - #34 ;
+INFO  17:45:14,042 - #45 globalni
+INFO  17:45:14,042 - #31 =
+INFO  17:45:14,042 - #45 dvostruko
+INFO  17:45:14,042 - #39 (
+INFO  17:45:14,042 - #45 dvostruko
+INFO  17:45:14,042 - #39 (
+INFO  17:45:14,042 - #46 3
+INFO  17:45:14,042 - #40 )
+INFO  17:45:14,042 - #40 )
+INFO  17:45:14,042 - #34 ;
+INFO  17:45:14,042 - #45 globalni
+INFO  17:45:14,042 - #31 =
+INFO  17:45:14,042 - #45 zbir
+INFO  17:45:14,042 - #39 (
+INFO  17:45:14,042 - #45 brojevi
+INFO  17:45:14,043 - #36 ,
+INFO  17:45:14,043 - #45 brojevi
+INFO  17:45:14,043 - #37 .
+INFO  17:45:14,043 - #14 length
+INFO  17:45:14,043 - #40 )
+INFO  17:45:14,043 - #34 ;
+INFO  17:45:14,043 - #45 globalni
+INFO  17:45:14,043 - #31 =
+INFO  17:45:14,043 - #45 globalni
+INFO  17:45:14,043 - #24 >
+INFO  17:45:14,043 - #46 0
+INFO  17:45:14,043 - #28 &&
+INFO  17:45:14,043 - #45 istina
+INFO  17:45:14,043 - #29 ||
+INFO  17:45:14,043 - #47 0
+INFO  17:45:14,043 - #38 ?
+INFO  17:45:14,043 - #45 globalni
+INFO  17:45:14,043 - #35 :
+INFO  17:45:14,043 - #18 -
+INFO  17:45:14,043 - #45 globalni
+INFO  17:45:14,043 - #34 ;
+INFO  17:45:14,044 - #45 slovo
+INFO  17:45:14,044 - #31 =
+INFO  17:45:14,044 - #45 znak
+INFO  17:45:14,044 - #34 ;
+INFO  17:45:14,044 - #45 ispisi
+INFO  17:45:14,044 - #39 (
+INFO  17:45:14,044 - #45 globalni
+INFO  17:45:14,044 - #36 ,
+INFO  17:45:14,044 - #45 slovo
+INFO  17:45:14,044 - #40 )
+INFO  17:45:14,044 - #34 ;
+INFO  17:45:14,044 - #13 for
+INFO  17:45:14,044 - #39 (
+INFO  17:45:14,044 - #45 i
+INFO  17:45:14,044 - #31 =
+INFO  17:45:14,044 - #46 0
+INFO  17:45:14,044 - #34 ;
+INFO  17:45:14,044 - #45 i
+INFO  17:45:14,044 - #26 <
+INFO  17:45:14,044 - #45 velicina
+INFO  17:45:14,044 - #34 ;
+INFO  17:45:14,044 - #45 i
+INFO  17:45:14,044 - #32 ++
+INFO  17:45:14,044 - #40 )
+INFO  17:45:14,044 - #43 {
+INFO  17:45:14,044 - #13 for
+INFO  17:45:14,044 - #39 (
+INFO  17:45:14,044 - #45 j
+INFO  17:45:14,044 - #31 =
+INFO  17:45:14,044 - #46 0
+INFO  17:45:14,044 - #34 ;
+INFO  17:45:14,044 - #45 j
+INFO  17:45:14,044 - #26 <
+INFO  17:45:14,044 - #45 velicina
+INFO  17:45:14,044 - #34 ;
+INFO  17:45:14,044 - #45 j
+INFO  17:45:14,044 - #32 ++
+INFO  17:45:14,044 - #40 )
+INFO  17:45:14,044 - #43 {
+INFO  17:45:14,044 - #9 if
+INFO  17:45:14,044 - #39 (
+INFO  17:45:14,044 - #45 j
+INFO  17:45:14,044 - #22 ==
+INFO  17:45:14,044 - #46 2
+INFO  17:45:14,045 - #40 )
+INFO  17:45:14,045 - #12 continue
+INFO  17:45:14,045 - #34 ;
+INFO  17:45:14,045 - #9 if
+INFO  17:45:14,045 - #39 (
+INFO  17:45:14,045 - #45 j
+INFO  17:45:14,045 - #22 ==
+INFO  17:45:14,045 - #46 4
+INFO  17:45:14,045 - #40 )
+INFO  17:45:14,045 - #11 break
+INFO  17:45:14,045 - #34 ;
+INFO  17:45:14,045 - #45 globalni
+INFO  17:45:14,045 - #31 =
+INFO  17:45:14,045 - #45 globalni
+INFO  17:45:14,045 - #17 +
+INFO  17:45:14,045 - #45 j
+INFO  17:45:14,045 - #34 ;
+INFO  17:45:14,045 - #44 }
+INFO  17:45:14,045 - #44 }
+INFO  17:45:14,046 - #45 nadjeno
+INFO  17:45:14,046 - #31 =
+INFO  17:45:14,046 - #45 brojevi
+INFO  17:45:14,046 - #37 .
+INFO  17:45:14,046 - #15 findAny
+INFO  17:45:14,046 - #39 (
+INFO  17:45:14,046 - #46 3
+INFO  17:45:14,046 - #40 )
+INFO  17:45:14,046 - #34 ;
+INFO  17:45:14,046 - #45 rezultat
+INFO  17:45:14,046 - #31 =
+INFO  17:45:14,046 - #45 brojevi
+INFO  17:45:14,046 - #37 .
+INFO  17:45:14,046 - #16 map
+INFO  17:45:14,046 - #39 (
+INFO  17:45:14,046 - #45 i
+INFO  17:45:14,046 - #30 =>
+INFO  17:45:14,046 - #45 i
+INFO  17:45:14,046 - #19 *
+INFO  17:45:14,046 - #45 i
+INFO  17:45:14,046 - #40 )
+INFO  17:45:14,046 - #34 ;
+INFO  17:45:14,046 - #5 print
+INFO  17:45:14,046 - #39 (
+INFO  17:45:14,046 - #45 globalni
+INFO  17:45:14,046 - #40 )
+INFO  17:45:14,046 - #34 ;
+INFO  17:45:14,046 - #5 print
+INFO  17:45:14,046 - #39 (
+INFO  17:45:14,046 - #45 nadjeno
+INFO  17:45:14,046 - #40 )
+INFO  17:45:14,046 - #34 ;
+INFO  17:45:14,046 - #44 }
+INFO  17:45:14,046 - #44 }
+INFO  17:45:14,048 - Program(
   ProgramName(
    SemOkFull
   ) [ProgramName]
@@ -1566,80 +1566,80 @@ INFO  17:58:15,238 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:15,239 - =================================================
-INFO  17:58:15,240 - Pretraga na 22(x), nadjeno Var x: int, 0, 1
-INFO  17:58:15,241 - Pretraga na 28(s), nadjeno Var s: int, 3, 1
-INFO  17:58:15,241 - Pretraga na 29(i), nadjeno Var i: int, 2, 1
-INFO  17:58:15,241 - Pretraga na 29(i), nadjeno Var i: int, 2, 1
-INFO  17:58:15,241 - Pretraga na 29(duzina), nadjeno Var duzina: int, 1, 1
-INFO  17:58:15,241 - Pretraga na 29(i), nadjeno Var i: int, 2, 1
-INFO  17:58:15,241 - Pretraga na 30(s), nadjeno Var s: int, 3, 1
-INFO  17:58:15,241 - Pretraga na 30(s), nadjeno Var s: int, 3, 1
-INFO  17:58:15,241 - Pretraga na 30(niz), nadjeno Var niz: Arr of int, 0, 1
-INFO  17:58:15,241 - Pretraga na 30(i), nadjeno Var i: int, 2, 1
-INFO  17:58:15,241 - Pretraga na 30(niz), nadjeno Var niz: Arr of int, 0, 1
-INFO  17:58:15,241 - Pretraga na 31(s), nadjeno Var s: int, 3, 1
-INFO  17:58:15,241 - Pretraga na 36(oznaka), nadjeno Var oznaka: char, 1, 1
-INFO  17:58:15,241 - Pretraga na 37(vrednost), nadjeno Var vrednost: int, 0, 1
-INFO  17:58:15,241 - Pretraga na 43(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
-INFO  17:58:15,241 - Pretraga na 43(velicina), nadjeno Con velicina: int, 5, 0
-INFO  17:58:15,241 - Pretraga na 44(rezultat), nadjeno Var rezultat: Arr of int, 2, 0
-INFO  17:58:15,241 - Pretraga na 44(velicina), nadjeno Con velicina: int, 5, 0
-INFO  17:58:15,241 - Pretraga na 46(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,241 - Pretraga na 46(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,241 - Pretraga na 46(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
-INFO  17:58:15,241 - Pretraga na 46(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,241 - Pretraga na 47(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
-INFO  17:58:15,241 - Pretraga na 47(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,241 - Pretraga na 47(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
-INFO  17:58:15,241 - Pretraga na 47(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,241 - Pretraga na 50(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,241 - Pretraga na 50(dvostruko), nadjeno Meth dvostruko: int, 0, 1 
+INFO  17:45:14,049 - =================================================
+INFO  17:45:14,051 - Pretraga na 22(x), nadjeno Var x: int, 0, 1
+INFO  17:45:14,052 - Pretraga na 28(s), nadjeno Var s: int, 3, 1
+INFO  17:45:14,052 - Pretraga na 29(i), nadjeno Var i: int, 2, 1
+INFO  17:45:14,052 - Pretraga na 29(i), nadjeno Var i: int, 2, 1
+INFO  17:45:14,052 - Pretraga na 29(duzina), nadjeno Var duzina: int, 1, 1
+INFO  17:45:14,052 - Pretraga na 29(i), nadjeno Var i: int, 2, 1
+INFO  17:45:14,052 - Pretraga na 30(s), nadjeno Var s: int, 3, 1
+INFO  17:45:14,052 - Pretraga na 30(s), nadjeno Var s: int, 3, 1
+INFO  17:45:14,052 - Pretraga na 30(niz), nadjeno Var niz: Arr of int, 0, 1
+INFO  17:45:14,052 - Pretraga na 30(i), nadjeno Var i: int, 2, 1
+INFO  17:45:14,052 - Pretraga na 30(niz), nadjeno Var niz: Arr of int, 0, 1
+INFO  17:45:14,052 - Pretraga na 31(s), nadjeno Var s: int, 3, 1
+INFO  17:45:14,052 - Pretraga na 36(oznaka), nadjeno Var oznaka: char, 1, 1
+INFO  17:45:14,052 - Pretraga na 37(vrednost), nadjeno Var vrednost: int, 0, 1
+INFO  17:45:14,052 - Pretraga na 43(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
+INFO  17:45:14,052 - Pretraga na 43(velicina), nadjeno Con velicina: int, 5, 0
+INFO  17:45:14,052 - Pretraga na 44(rezultat), nadjeno Var rezultat: Arr of int, 2, 0
+INFO  17:45:14,052 - Pretraga na 44(velicina), nadjeno Con velicina: int, 5, 0
+INFO  17:45:14,052 - Pretraga na 46(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,052 - Pretraga na 46(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,052 - Pretraga na 46(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
+INFO  17:45:14,052 - Pretraga na 46(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,052 - Pretraga na 47(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
+INFO  17:45:14,052 - Pretraga na 47(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,052 - Pretraga na 47(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
+INFO  17:45:14,052 - Pretraga na 47(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,053 - Pretraga na 50(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,053 - Pretraga na 50(dvostruko), nadjeno Meth dvostruko: int, 0, 1 
    Var x: int, 0, 1
-INFO  17:58:15,241 - Pretraga na 50(dvostruko), nadjeno Meth dvostruko: int, 0, 1 
+INFO  17:45:14,053 - Pretraga na 50(dvostruko), nadjeno Meth dvostruko: int, 0, 1 
    Var x: int, 0, 1
-INFO  17:58:15,241 - Pretraga na 53(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,241 - Pretraga na 53(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
-INFO  17:58:15,241 - Pretraga na 53(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
-INFO  17:58:15,241 - Pretraga na 53(zbir), nadjeno Meth zbir: int, 0, 2 
+INFO  17:45:14,053 - Pretraga na 53(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,053 - Pretraga na 53(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
+INFO  17:45:14,053 - Pretraga na 53(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
+INFO  17:45:14,053 - Pretraga na 53(zbir), nadjeno Meth zbir: int, 0, 2 
    Var niz: Arr of int, 0, 1 
    Var duzina: int, 1, 1 
    Var i: int, 2, 1 
    Var s: int, 3, 1
-INFO  17:58:15,241 - Pretraga na 58(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,241 - Pretraga na 58(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,241 - Pretraga na 58(istina), nadjeno Con istina: bool, 1, 0
-INFO  17:58:15,241 - Pretraga na 58(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,241 - Pretraga na 58(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,241 - Pretraga na 60(slovo), nadjeno Var slovo: char, 4, 0
-INFO  17:58:15,241 - Pretraga na 60(znak), nadjeno Con znak: char, 120, 0
-INFO  17:58:15,241 - Pretraga na 61(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,242 - Pretraga na 61(slovo), nadjeno Var slovo: char, 4, 0
-INFO  17:58:15,242 - Pretraga na 61(ispisi), nadjeno Meth ispisi: notype, 0, 2 
+INFO  17:45:14,053 - Pretraga na 58(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,053 - Pretraga na 58(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,053 - Pretraga na 58(istina), nadjeno Con istina: bool, 1, 0
+INFO  17:45:14,053 - Pretraga na 58(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,053 - Pretraga na 58(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,053 - Pretraga na 60(slovo), nadjeno Var slovo: char, 4, 0
+INFO  17:45:14,053 - Pretraga na 60(znak), nadjeno Con znak: char, 120, 0
+INFO  17:45:14,053 - Pretraga na 61(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,053 - Pretraga na 61(slovo), nadjeno Var slovo: char, 4, 0
+INFO  17:45:14,053 - Pretraga na 61(ispisi), nadjeno Meth ispisi: notype, 0, 2 
    Var vrednost: int, 0, 1 
    Var oznaka: char, 1, 1
-INFO  17:58:15,242 - Pretraga na 64(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,242 - Pretraga na 64(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,242 - Pretraga na 64(velicina), nadjeno Con velicina: int, 5, 0
-INFO  17:58:15,242 - Pretraga na 64(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,242 - Pretraga na 65(j), nadjeno Var j: int, 1, 1
-INFO  17:58:15,242 - Pretraga na 65(j), nadjeno Var j: int, 1, 1
-INFO  17:58:15,242 - Pretraga na 65(velicina), nadjeno Con velicina: int, 5, 0
-INFO  17:58:15,242 - Pretraga na 65(j), nadjeno Var j: int, 1, 1
-INFO  17:58:15,242 - Pretraga na 66(j), nadjeno Var j: int, 1, 1
-INFO  17:58:15,242 - Pretraga na 67(j), nadjeno Var j: int, 1, 1
-INFO  17:58:15,242 - Pretraga na 68(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,242 - Pretraga na 68(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,242 - Pretraga na 68(j), nadjeno Var j: int, 1, 1
-INFO  17:58:15,242 - Pretraga na 73(nadjeno), nadjeno Var nadjeno: bool, 3, 0
-INFO  17:58:15,242 - Pretraga na 73(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
-INFO  17:58:15,242 - Pretraga na 74(rezultat), nadjeno Var rezultat: Arr of int, 2, 0
-INFO  17:58:15,242 - Pretraga na 74(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
-INFO  17:58:15,242 - Pretraga na 74(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,242 - Pretraga na 74(i), nadjeno Var i: int, 0, 1
-INFO  17:58:15,242 - Pretraga na 76(globalni), nadjeno Var globalni: int, 0, 0
-INFO  17:58:15,242 - Pretraga na 77(nadjeno), nadjeno Var nadjeno: bool, 3, 0
-INFO  17:58:15,242 - =================================================
+INFO  17:45:14,053 - Pretraga na 64(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,053 - Pretraga na 64(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,053 - Pretraga na 64(velicina), nadjeno Con velicina: int, 5, 0
+INFO  17:45:14,053 - Pretraga na 64(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,053 - Pretraga na 65(j), nadjeno Var j: int, 1, 1
+INFO  17:45:14,053 - Pretraga na 65(j), nadjeno Var j: int, 1, 1
+INFO  17:45:14,053 - Pretraga na 65(velicina), nadjeno Con velicina: int, 5, 0
+INFO  17:45:14,053 - Pretraga na 65(j), nadjeno Var j: int, 1, 1
+INFO  17:45:14,053 - Pretraga na 66(j), nadjeno Var j: int, 1, 1
+INFO  17:45:14,053 - Pretraga na 67(j), nadjeno Var j: int, 1, 1
+INFO  17:45:14,053 - Pretraga na 68(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,053 - Pretraga na 68(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,053 - Pretraga na 68(j), nadjeno Var j: int, 1, 1
+INFO  17:45:14,053 - Pretraga na 73(nadjeno), nadjeno Var nadjeno: bool, 3, 0
+INFO  17:45:14,053 - Pretraga na 73(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
+INFO  17:45:14,053 - Pretraga na 74(rezultat), nadjeno Var rezultat: Arr of int, 2, 0
+INFO  17:45:14,053 - Pretraga na 74(brojevi), nadjeno Var brojevi: Arr of int, 1, 0
+INFO  17:45:14,054 - Pretraga na 74(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,054 - Pretraga na 74(i), nadjeno Var i: int, 0, 1
+INFO  17:45:14,054 - Pretraga na 76(globalni), nadjeno Var globalni: int, 0, 0
+INFO  17:45:14,054 - Pretraga na 77(nadjeno), nadjeno Var nadjeno: bool, 3, 0
+INFO  17:45:14,054 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -1683,4 +1683,4 @@ Prog SemOkFull: notype, 0, 1
 
 
 
-INFO  17:58:15,243 - Generisanje uspesno zavrseno: test/48_sem_ok_full.obj
+INFO  17:45:14,056 - Generisanje uspesno zavrseno: test/48_sem_ok_full.obj

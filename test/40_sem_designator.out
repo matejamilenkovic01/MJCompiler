@@ -1,50 +1,50 @@
-INFO  17:58:14,019 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/40_sem_designator.mj
-INFO  17:58:14,027 - #2 program
-INFO  17:58:14,027 - #45 SemDesignator
-INFO  17:58:14,027 - #45 int
-INFO  17:58:14,028 - #45 a
-INFO  17:58:14,028 - #34 ;
-INFO  17:58:14,028 - #45 int
-INFO  17:58:14,028 - #45 niz
-INFO  17:58:14,028 - #41 [
-INFO  17:58:14,028 - #42 ]
-INFO  17:58:14,028 - #34 ;
-INFO  17:58:14,028 - #45 char
-INFO  17:58:14,028 - #45 c
-INFO  17:58:14,028 - #34 ;
-INFO  17:58:14,028 - #43 {
-INFO  17:58:14,028 - #7 void
-INFO  17:58:14,028 - #45 main
-INFO  17:58:14,028 - #39 (
-INFO  17:58:14,029 - #40 )
-INFO  17:58:14,029 - #43 {
-INFO  17:58:14,029 - #45 a
-INFO  17:58:14,029 - #31 =
-INFO  17:58:14,029 - #45 nepostojeci
-INFO  17:58:14,029 - #34 ;
-INFO  17:58:14,029 - #45 a
-INFO  17:58:14,029 - #31 =
-INFO  17:58:14,029 - #45 a
-INFO  17:58:14,029 - #41 [
-INFO  17:58:14,029 - #46 1
-INFO  17:58:14,029 - #42 ]
-INFO  17:58:14,029 - #34 ;
-INFO  17:58:14,029 - #45 a
-INFO  17:58:14,029 - #31 =
-INFO  17:58:14,029 - #45 niz
-INFO  17:58:14,029 - #41 [
-INFO  17:58:14,030 - #45 c
-INFO  17:58:14,030 - #42 ]
-INFO  17:58:14,030 - #34 ;
-INFO  17:58:14,030 - #45 a
-INFO  17:58:14,030 - #31 =
-INFO  17:58:14,030 - #45 a
-INFO  17:58:14,030 - #37 .
-INFO  17:58:14,030 - #14 length
-INFO  17:58:14,030 - #34 ;
-INFO  17:58:14,030 - #44 }
-INFO  17:58:14,030 - #44 }
-INFO  17:58:14,030 - Program(
+INFO  17:45:12,774 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/40_sem_designator.mj
+INFO  17:45:12,784 - #2 program
+INFO  17:45:12,784 - #45 SemDesignator
+INFO  17:45:12,785 - #45 int
+INFO  17:45:12,785 - #45 a
+INFO  17:45:12,785 - #34 ;
+INFO  17:45:12,785 - #45 int
+INFO  17:45:12,785 - #45 niz
+INFO  17:45:12,785 - #41 [
+INFO  17:45:12,785 - #42 ]
+INFO  17:45:12,785 - #34 ;
+INFO  17:45:12,785 - #45 char
+INFO  17:45:12,785 - #45 c
+INFO  17:45:12,786 - #34 ;
+INFO  17:45:12,786 - #43 {
+INFO  17:45:12,786 - #7 void
+INFO  17:45:12,786 - #45 main
+INFO  17:45:12,786 - #39 (
+INFO  17:45:12,786 - #40 )
+INFO  17:45:12,786 - #43 {
+INFO  17:45:12,786 - #45 a
+INFO  17:45:12,786 - #31 =
+INFO  17:45:12,786 - #45 nepostojeci
+INFO  17:45:12,786 - #34 ;
+INFO  17:45:12,787 - #45 a
+INFO  17:45:12,787 - #31 =
+INFO  17:45:12,787 - #45 a
+INFO  17:45:12,787 - #41 [
+INFO  17:45:12,787 - #46 1
+INFO  17:45:12,787 - #42 ]
+INFO  17:45:12,787 - #34 ;
+INFO  17:45:12,787 - #45 a
+INFO  17:45:12,787 - #31 =
+INFO  17:45:12,787 - #45 niz
+INFO  17:45:12,787 - #41 [
+INFO  17:45:12,787 - #45 c
+INFO  17:45:12,787 - #42 ]
+INFO  17:45:12,787 - #34 ;
+INFO  17:45:12,787 - #45 a
+INFO  17:45:12,787 - #31 =
+INFO  17:45:12,788 - #45 a
+INFO  17:45:12,788 - #37 .
+INFO  17:45:12,788 - #14 length
+INFO  17:45:12,788 - #34 ;
+INFO  17:45:12,788 - #44 }
+INFO  17:45:12,788 - #44 }
+INFO  17:45:12,788 - Program(
   ProgramName(
    SemDesignator
   ) [ProgramName]
@@ -222,16 +222,16 @@ INFO  17:58:14,030 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:14,031 - =================================================
-INFO  17:58:14,032 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,032 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,032 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,032 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,032 - Pretraga na 19(niz), nadjeno Var niz: Arr of int, 1, 0
-INFO  17:58:14,033 - Pretraga na 19(c), nadjeno Var c: char, 2, 0
-INFO  17:58:14,033 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,033 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,033 - =================================================
+INFO  17:45:12,789 - =================================================
+INFO  17:45:12,791 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
+INFO  17:45:12,792 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  17:45:12,792 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  17:45:12,792 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  17:45:12,792 - Pretraga na 19(niz), nadjeno Var niz: Arr of int, 1, 0
+INFO  17:45:12,792 - Pretraga na 19(c), nadjeno Var c: char, 2, 0
+INFO  17:45:12,792 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  17:45:12,792 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  17:45:12,792 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

@@ -1,76 +1,76 @@
-INFO  17:58:14,608 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/44_sem_call.mj
-INFO  17:58:14,617 - #2 program
-INFO  17:58:14,617 - #45 SemCall
-INFO  17:58:14,617 - #45 int
-INFO  17:58:14,617 - #45 a
-INFO  17:58:14,617 - #34 ;
-INFO  17:58:14,617 - #43 {
-INFO  17:58:14,617 - #45 int
-INFO  17:58:14,618 - #45 f
-INFO  17:58:14,618 - #39 (
-INFO  17:58:14,618 - #45 int
-INFO  17:58:14,618 - #45 x
-INFO  17:58:14,618 - #36 ,
-INFO  17:58:14,618 - #45 char
-INFO  17:58:14,618 - #45 y
-INFO  17:58:14,618 - #40 )
-INFO  17:58:14,618 - #43 {
-INFO  17:58:14,618 - #8 return
-INFO  17:58:14,618 - #46 1
-INFO  17:58:14,618 - #34 ;
-INFO  17:58:14,619 - #44 }
-INFO  17:58:14,619 - #7 void
-INFO  17:58:14,619 - #45 g
-INFO  17:58:14,619 - #39 (
-INFO  17:58:14,619 - #40 )
-INFO  17:58:14,619 - #43 {
-INFO  17:58:14,619 - #8 return
-INFO  17:58:14,619 - #34 ;
-INFO  17:58:14,619 - #44 }
-INFO  17:58:14,619 - #7 void
-INFO  17:58:14,619 - #45 main
-INFO  17:58:14,619 - #39 (
-INFO  17:58:14,619 - #40 )
-INFO  17:58:14,619 - #43 {
-INFO  17:58:14,619 - #45 a
-INFO  17:58:14,619 - #31 =
-INFO  17:58:14,619 - #45 f
-INFO  17:58:14,620 - #39 (
-INFO  17:58:14,620 - #46 1
-INFO  17:58:14,620 - #40 )
-INFO  17:58:14,620 - #34 ;
-INFO  17:58:14,620 - #45 a
-INFO  17:58:14,620 - #31 =
-INFO  17:58:14,620 - #45 f
-INFO  17:58:14,620 - #39 (
-INFO  17:58:14,620 - #46 1
-INFO  17:58:14,620 - #36 ,
-INFO  17:58:14,620 - #46 2
-INFO  17:58:14,620 - #40 )
-INFO  17:58:14,620 - #34 ;
-INFO  17:58:14,620 - #45 a
-INFO  17:58:14,620 - #31 =
-INFO  17:58:14,620 - #45 a
-INFO  17:58:14,620 - #39 (
-INFO  17:58:14,620 - #46 1
-INFO  17:58:14,620 - #40 )
-INFO  17:58:14,620 - #34 ;
-INFO  17:58:14,620 - #45 f
-INFO  17:58:14,620 - #39 (
-INFO  17:58:14,620 - #46 1
-INFO  17:58:14,620 - #36 ,
-INFO  17:58:14,620 - #48 c
-INFO  17:58:14,620 - #40 )
-INFO  17:58:14,621 - #34 ;
-INFO  17:58:14,621 - #45 a
-INFO  17:58:14,621 - #31 =
-INFO  17:58:14,621 - #45 g
-INFO  17:58:14,621 - #39 (
-INFO  17:58:14,621 - #40 )
-INFO  17:58:14,621 - #34 ;
-INFO  17:58:14,621 - #44 }
-INFO  17:58:14,621 - #44 }
-INFO  17:58:14,621 - Program(
+INFO  17:45:13,387 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/44_sem_call.mj
+INFO  17:45:13,398 - #2 program
+INFO  17:45:13,398 - #45 SemCall
+INFO  17:45:13,398 - #45 int
+INFO  17:45:13,399 - #45 a
+INFO  17:45:13,399 - #34 ;
+INFO  17:45:13,399 - #43 {
+INFO  17:45:13,399 - #45 int
+INFO  17:45:13,399 - #45 f
+INFO  17:45:13,399 - #39 (
+INFO  17:45:13,400 - #45 int
+INFO  17:45:13,400 - #45 x
+INFO  17:45:13,400 - #36 ,
+INFO  17:45:13,400 - #45 char
+INFO  17:45:13,400 - #45 y
+INFO  17:45:13,400 - #40 )
+INFO  17:45:13,400 - #43 {
+INFO  17:45:13,400 - #8 return
+INFO  17:45:13,400 - #46 1
+INFO  17:45:13,400 - #34 ;
+INFO  17:45:13,400 - #44 }
+INFO  17:45:13,401 - #7 void
+INFO  17:45:13,401 - #45 g
+INFO  17:45:13,401 - #39 (
+INFO  17:45:13,401 - #40 )
+INFO  17:45:13,401 - #43 {
+INFO  17:45:13,401 - #8 return
+INFO  17:45:13,401 - #34 ;
+INFO  17:45:13,401 - #44 }
+INFO  17:45:13,401 - #7 void
+INFO  17:45:13,401 - #45 main
+INFO  17:45:13,401 - #39 (
+INFO  17:45:13,401 - #40 )
+INFO  17:45:13,401 - #43 {
+INFO  17:45:13,401 - #45 a
+INFO  17:45:13,402 - #31 =
+INFO  17:45:13,402 - #45 f
+INFO  17:45:13,402 - #39 (
+INFO  17:45:13,402 - #46 1
+INFO  17:45:13,402 - #40 )
+INFO  17:45:13,402 - #34 ;
+INFO  17:45:13,402 - #45 a
+INFO  17:45:13,402 - #31 =
+INFO  17:45:13,402 - #45 f
+INFO  17:45:13,402 - #39 (
+INFO  17:45:13,402 - #46 1
+INFO  17:45:13,402 - #36 ,
+INFO  17:45:13,402 - #46 2
+INFO  17:45:13,402 - #40 )
+INFO  17:45:13,402 - #34 ;
+INFO  17:45:13,402 - #45 a
+INFO  17:45:13,402 - #31 =
+INFO  17:45:13,402 - #45 a
+INFO  17:45:13,402 - #39 (
+INFO  17:45:13,403 - #46 1
+INFO  17:45:13,403 - #40 )
+INFO  17:45:13,403 - #34 ;
+INFO  17:45:13,403 - #45 f
+INFO  17:45:13,403 - #39 (
+INFO  17:45:13,403 - #46 1
+INFO  17:45:13,403 - #36 ,
+INFO  17:45:13,403 - #48 c
+INFO  17:45:13,403 - #40 )
+INFO  17:45:13,403 - #34 ;
+INFO  17:45:13,403 - #45 a
+INFO  17:45:13,403 - #31 =
+INFO  17:45:13,403 - #45 g
+INFO  17:45:13,403 - #39 (
+INFO  17:45:13,403 - #40 )
+INFO  17:45:13,403 - #34 ;
+INFO  17:45:13,403 - #44 }
+INFO  17:45:13,403 - #44 }
+INFO  17:45:13,404 - Program(
   ProgramName(
    SemCall
   ) [ProgramName]
@@ -363,23 +363,23 @@ INFO  17:58:14,621 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:14,622 - =================================================
-INFO  17:58:14,623 - Pretraga na 24(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,623 - Pretraga na 24(f), nadjeno Meth f: int, 0, 2 
+INFO  17:45:13,404 - =================================================
+INFO  17:45:13,407 - Pretraga na 24(a), nadjeno Var a: int, 0, 0
+INFO  17:45:13,407 - Pretraga na 24(f), nadjeno Meth f: int, 0, 2 
    Var x: int, 0, 1 
    Var y: char, 1, 1
-INFO  17:58:14,623 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,623 - Pretraga na 25(f), nadjeno Meth f: int, 0, 2 
+INFO  17:45:13,407 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
+INFO  17:45:13,407 - Pretraga na 25(f), nadjeno Meth f: int, 0, 2 
    Var x: int, 0, 1 
    Var y: char, 1, 1
-INFO  17:58:14,623 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,623 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,624 - Pretraga na 27(f), nadjeno Meth f: int, 0, 2 
+INFO  17:45:13,407 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  17:45:13,407 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  17:45:13,407 - Pretraga na 27(f), nadjeno Meth f: int, 0, 2 
    Var x: int, 0, 1 
    Var y: char, 1, 1
-INFO  17:58:14,624 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
-INFO  17:58:14,624 - Pretraga na 28(g), nadjeno Meth g: notype, 0, 0
-INFO  17:58:14,624 - =================================================
+INFO  17:45:13,407 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  17:45:13,407 - Pretraga na 28(g), nadjeno Meth g: notype, 0, 0
+INFO  17:45:13,407 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

@@ -1,160 +1,160 @@
-INFO  17:58:11,139 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/07_ternary.mj
-INFO  17:58:11,147 - #2 program
-INFO  17:58:11,147 - #45 Ternarni
-INFO  17:58:11,147 - #45 int
-INFO  17:58:11,148 - #45 a
-INFO  17:58:11,148 - #36 ,
-INFO  17:58:11,148 - #45 b
-INFO  17:58:11,148 - #36 ,
-INFO  17:58:11,148 - #45 r
-INFO  17:58:11,148 - #34 ;
-INFO  17:58:11,148 - #45 bool
-INFO  17:58:11,148 - #45 p
-INFO  17:58:11,148 - #34 ;
-INFO  17:58:11,148 - #43 {
-INFO  17:58:11,148 - #7 void
-INFO  17:58:11,148 - #45 main
-INFO  17:58:11,148 - #39 (
-INFO  17:58:11,149 - #40 )
-INFO  17:58:11,149 - #43 {
-INFO  17:58:11,149 - #45 a
-INFO  17:58:11,149 - #31 =
-INFO  17:58:11,149 - #46 1
-INFO  17:58:11,149 - #34 ;
-INFO  17:58:11,149 - #45 b
-INFO  17:58:11,149 - #31 =
-INFO  17:58:11,149 - #46 2
-INFO  17:58:11,149 - #34 ;
-INFO  17:58:11,149 - #45 p
-INFO  17:58:11,149 - #31 =
-INFO  17:58:11,149 - #47 1
-INFO  17:58:11,150 - #34 ;
-INFO  17:58:11,150 - #45 r
-INFO  17:58:11,150 - #31 =
-INFO  17:58:11,150 - #45 a
-INFO  17:58:11,150 - #26 <
-INFO  17:58:11,150 - #45 b
-INFO  17:58:11,150 - #38 ?
-INFO  17:58:11,150 - #45 a
-INFO  17:58:11,150 - #35 :
-INFO  17:58:11,150 - #45 b
-INFO  17:58:11,150 - #34 ;
-INFO  17:58:11,150 - #45 r
-INFO  17:58:11,150 - #31 =
-INFO  17:58:11,150 - #45 p
-INFO  17:58:11,150 - #38 ?
-INFO  17:58:11,151 - #46 1
-INFO  17:58:11,151 - #35 :
-INFO  17:58:11,151 - #46 0
-INFO  17:58:11,151 - #34 ;
-INFO  17:58:11,151 - #45 r
-INFO  17:58:11,151 - #31 =
-INFO  17:58:11,151 - #45 a
-INFO  17:58:11,151 - #22 ==
-INFO  17:58:11,151 - #45 b
-INFO  17:58:11,151 - #38 ?
-INFO  17:58:11,151 - #45 a
-INFO  17:58:11,151 - #17 +
-INFO  17:58:11,151 - #46 1
-INFO  17:58:11,151 - #35 :
-INFO  17:58:11,151 - #45 b
-INFO  17:58:11,151 - #18 -
-INFO  17:58:11,151 - #46 1
-INFO  17:58:11,151 - #34 ;
-INFO  17:58:11,151 - #45 r
-INFO  17:58:11,151 - #31 =
-INFO  17:58:11,151 - #45 a
-INFO  17:58:11,152 - #26 <
-INFO  17:58:11,152 - #45 b
-INFO  17:58:11,152 - #28 &&
-INFO  17:58:11,152 - #45 p
-INFO  17:58:11,152 - #38 ?
-INFO  17:58:11,152 - #45 a
-INFO  17:58:11,152 - #35 :
-INFO  17:58:11,152 - #45 b
-INFO  17:58:11,152 - #34 ;
-INFO  17:58:11,152 - #45 r
-INFO  17:58:11,152 - #31 =
-INFO  17:58:11,152 - #45 a
-INFO  17:58:11,152 - #26 <
-INFO  17:58:11,152 - #45 b
-INFO  17:58:11,152 - #29 ||
-INFO  17:58:11,152 - #45 p
-INFO  17:58:11,152 - #38 ?
-INFO  17:58:11,152 - #45 a
-INFO  17:58:11,152 - #19 *
-INFO  17:58:11,152 - #46 2
-INFO  17:58:11,152 - #35 :
-INFO  17:58:11,152 - #45 b
-INFO  17:58:11,152 - #19 *
-INFO  17:58:11,152 - #46 2
-INFO  17:58:11,152 - #34 ;
-INFO  17:58:11,152 - #45 r
-INFO  17:58:11,152 - #31 =
-INFO  17:58:11,152 - #45 a
-INFO  17:58:11,152 - #26 <
-INFO  17:58:11,153 - #45 b
-INFO  17:58:11,153 - #38 ?
-INFO  17:58:11,153 - #39 (
-INFO  17:58:11,153 - #45 a
-INFO  17:58:11,153 - #26 <
-INFO  17:58:11,153 - #46 0
-INFO  17:58:11,153 - #38 ?
-INFO  17:58:11,153 - #46 0
-INFO  17:58:11,153 - #35 :
-INFO  17:58:11,153 - #45 a
-INFO  17:58:11,153 - #40 )
-INFO  17:58:11,153 - #35 :
-INFO  17:58:11,153 - #45 b
-INFO  17:58:11,153 - #34 ;
-INFO  17:58:11,153 - #45 r
-INFO  17:58:11,153 - #31 =
-INFO  17:58:11,153 - #45 a
-INFO  17:58:11,153 - #26 <
-INFO  17:58:11,153 - #45 b
-INFO  17:58:11,153 - #38 ?
-INFO  17:58:11,153 - #45 a
-INFO  17:58:11,153 - #26 <
-INFO  17:58:11,153 - #46 0
-INFO  17:58:11,153 - #38 ?
-INFO  17:58:11,153 - #46 0
-INFO  17:58:11,153 - #35 :
-INFO  17:58:11,153 - #45 a
-INFO  17:58:11,153 - #35 :
-INFO  17:58:11,153 - #45 b
-INFO  17:58:11,153 - #34 ;
-INFO  17:58:11,153 - #45 r
-INFO  17:58:11,153 - #31 =
-INFO  17:58:11,153 - #39 (
-INFO  17:58:11,153 - #45 a
-INFO  17:58:11,153 - #26 <
-INFO  17:58:11,154 - #45 b
-INFO  17:58:11,154 - #38 ?
-INFO  17:58:11,154 - #45 a
-INFO  17:58:11,154 - #35 :
-INFO  17:58:11,154 - #45 b
-INFO  17:58:11,154 - #40 )
-INFO  17:58:11,154 - #24 >
-INFO  17:58:11,154 - #46 0
-INFO  17:58:11,154 - #38 ?
-INFO  17:58:11,154 - #46 1
-INFO  17:58:11,154 - #35 :
-INFO  17:58:11,154 - #46 0
-INFO  17:58:11,154 - #34 ;
-INFO  17:58:11,154 - #5 print
-INFO  17:58:11,154 - #39 (
-INFO  17:58:11,154 - #45 a
-INFO  17:58:11,154 - #24 >
-INFO  17:58:11,154 - #46 0
-INFO  17:58:11,154 - #38 ?
-INFO  17:58:11,154 - #48 p
-INFO  17:58:11,154 - #35 :
-INFO  17:58:11,154 - #48 n
-INFO  17:58:11,154 - #40 )
-INFO  17:58:11,155 - #34 ;
-INFO  17:58:11,155 - #44 }
-INFO  17:58:11,155 - #44 }
-INFO  17:58:11,156 - Program(
+INFO  17:45:09,706 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/07_ternary.mj
+INFO  17:45:09,716 - #2 program
+INFO  17:45:09,717 - #45 Ternarni
+INFO  17:45:09,717 - #45 int
+INFO  17:45:09,717 - #45 a
+INFO  17:45:09,717 - #36 ,
+INFO  17:45:09,717 - #45 b
+INFO  17:45:09,717 - #36 ,
+INFO  17:45:09,717 - #45 r
+INFO  17:45:09,718 - #34 ;
+INFO  17:45:09,718 - #45 bool
+INFO  17:45:09,718 - #45 p
+INFO  17:45:09,718 - #34 ;
+INFO  17:45:09,718 - #43 {
+INFO  17:45:09,718 - #7 void
+INFO  17:45:09,718 - #45 main
+INFO  17:45:09,718 - #39 (
+INFO  17:45:09,718 - #40 )
+INFO  17:45:09,719 - #43 {
+INFO  17:45:09,719 - #45 a
+INFO  17:45:09,719 - #31 =
+INFO  17:45:09,719 - #46 1
+INFO  17:45:09,719 - #34 ;
+INFO  17:45:09,719 - #45 b
+INFO  17:45:09,719 - #31 =
+INFO  17:45:09,719 - #46 2
+INFO  17:45:09,719 - #34 ;
+INFO  17:45:09,719 - #45 p
+INFO  17:45:09,719 - #31 =
+INFO  17:45:09,719 - #47 1
+INFO  17:45:09,720 - #34 ;
+INFO  17:45:09,720 - #45 r
+INFO  17:45:09,720 - #31 =
+INFO  17:45:09,720 - #45 a
+INFO  17:45:09,720 - #26 <
+INFO  17:45:09,720 - #45 b
+INFO  17:45:09,720 - #38 ?
+INFO  17:45:09,720 - #45 a
+INFO  17:45:09,721 - #35 :
+INFO  17:45:09,721 - #45 b
+INFO  17:45:09,721 - #34 ;
+INFO  17:45:09,721 - #45 r
+INFO  17:45:09,721 - #31 =
+INFO  17:45:09,721 - #45 p
+INFO  17:45:09,721 - #38 ?
+INFO  17:45:09,721 - #46 1
+INFO  17:45:09,721 - #35 :
+INFO  17:45:09,721 - #46 0
+INFO  17:45:09,721 - #34 ;
+INFO  17:45:09,721 - #45 r
+INFO  17:45:09,722 - #31 =
+INFO  17:45:09,722 - #45 a
+INFO  17:45:09,722 - #22 ==
+INFO  17:45:09,722 - #45 b
+INFO  17:45:09,722 - #38 ?
+INFO  17:45:09,722 - #45 a
+INFO  17:45:09,722 - #17 +
+INFO  17:45:09,722 - #46 1
+INFO  17:45:09,722 - #35 :
+INFO  17:45:09,722 - #45 b
+INFO  17:45:09,722 - #18 -
+INFO  17:45:09,722 - #46 1
+INFO  17:45:09,722 - #34 ;
+INFO  17:45:09,723 - #45 r
+INFO  17:45:09,723 - #31 =
+INFO  17:45:09,723 - #45 a
+INFO  17:45:09,723 - #26 <
+INFO  17:45:09,723 - #45 b
+INFO  17:45:09,723 - #28 &&
+INFO  17:45:09,723 - #45 p
+INFO  17:45:09,723 - #38 ?
+INFO  17:45:09,723 - #45 a
+INFO  17:45:09,723 - #35 :
+INFO  17:45:09,723 - #45 b
+INFO  17:45:09,723 - #34 ;
+INFO  17:45:09,723 - #45 r
+INFO  17:45:09,723 - #31 =
+INFO  17:45:09,723 - #45 a
+INFO  17:45:09,723 - #26 <
+INFO  17:45:09,723 - #45 b
+INFO  17:45:09,723 - #29 ||
+INFO  17:45:09,723 - #45 p
+INFO  17:45:09,723 - #38 ?
+INFO  17:45:09,723 - #45 a
+INFO  17:45:09,723 - #19 *
+INFO  17:45:09,724 - #46 2
+INFO  17:45:09,724 - #35 :
+INFO  17:45:09,724 - #45 b
+INFO  17:45:09,724 - #19 *
+INFO  17:45:09,724 - #46 2
+INFO  17:45:09,724 - #34 ;
+INFO  17:45:09,724 - #45 r
+INFO  17:45:09,724 - #31 =
+INFO  17:45:09,724 - #45 a
+INFO  17:45:09,724 - #26 <
+INFO  17:45:09,724 - #45 b
+INFO  17:45:09,724 - #38 ?
+INFO  17:45:09,724 - #39 (
+INFO  17:45:09,724 - #45 a
+INFO  17:45:09,724 - #26 <
+INFO  17:45:09,724 - #46 0
+INFO  17:45:09,724 - #38 ?
+INFO  17:45:09,724 - #46 0
+INFO  17:45:09,724 - #35 :
+INFO  17:45:09,725 - #45 a
+INFO  17:45:09,725 - #40 )
+INFO  17:45:09,725 - #35 :
+INFO  17:45:09,725 - #45 b
+INFO  17:45:09,725 - #34 ;
+INFO  17:45:09,725 - #45 r
+INFO  17:45:09,725 - #31 =
+INFO  17:45:09,725 - #45 a
+INFO  17:45:09,725 - #26 <
+INFO  17:45:09,725 - #45 b
+INFO  17:45:09,725 - #38 ?
+INFO  17:45:09,725 - #45 a
+INFO  17:45:09,725 - #26 <
+INFO  17:45:09,725 - #46 0
+INFO  17:45:09,725 - #38 ?
+INFO  17:45:09,725 - #46 0
+INFO  17:45:09,725 - #35 :
+INFO  17:45:09,725 - #45 a
+INFO  17:45:09,725 - #35 :
+INFO  17:45:09,725 - #45 b
+INFO  17:45:09,725 - #34 ;
+INFO  17:45:09,725 - #45 r
+INFO  17:45:09,725 - #31 =
+INFO  17:45:09,725 - #39 (
+INFO  17:45:09,726 - #45 a
+INFO  17:45:09,726 - #26 <
+INFO  17:45:09,726 - #45 b
+INFO  17:45:09,726 - #38 ?
+INFO  17:45:09,726 - #45 a
+INFO  17:45:09,726 - #35 :
+INFO  17:45:09,726 - #45 b
+INFO  17:45:09,726 - #40 )
+INFO  17:45:09,726 - #24 >
+INFO  17:45:09,726 - #46 0
+INFO  17:45:09,726 - #38 ?
+INFO  17:45:09,726 - #46 1
+INFO  17:45:09,726 - #35 :
+INFO  17:45:09,726 - #46 0
+INFO  17:45:09,726 - #34 ;
+INFO  17:45:09,726 - #5 print
+INFO  17:45:09,726 - #39 (
+INFO  17:45:09,726 - #45 a
+INFO  17:45:09,726 - #24 >
+INFO  17:45:09,726 - #46 0
+INFO  17:45:09,726 - #38 ?
+INFO  17:45:09,726 - #48 p
+INFO  17:45:09,726 - #35 :
+INFO  17:45:09,726 - #48 n
+INFO  17:45:09,726 - #40 )
+INFO  17:45:09,727 - #34 ;
+INFO  17:45:09,727 - #44 }
+INFO  17:45:09,727 - #44 }
+INFO  17:45:09,728 - Program(
   ProgramName(
    Ternarni
   ) [ProgramName]
@@ -1110,53 +1110,53 @@ INFO  17:58:11,156 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:11,156 - =================================================
-INFO  17:58:11,158 - Pretraga na 14(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 15(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 16(p), nadjeno Var p: bool, 3, 0
-INFO  17:58:11,158 - Pretraga na 18(r), nadjeno Var r: int, 2, 0
-INFO  17:58:11,158 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 18(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 18(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 19(r), nadjeno Var r: int, 2, 0
-INFO  17:58:11,158 - Pretraga na 19(p), nadjeno Var p: bool, 3, 0
-INFO  17:58:11,158 - Pretraga na 20(r), nadjeno Var r: int, 2, 0
-INFO  17:58:11,158 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 20(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 20(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 21(r), nadjeno Var r: int, 2, 0
-INFO  17:58:11,158 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 21(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 21(p), nadjeno Var p: bool, 3, 0
-INFO  17:58:11,158 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 21(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 22(r), nadjeno Var r: int, 2, 0
-INFO  17:58:11,158 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 22(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 22(p), nadjeno Var p: bool, 3, 0
-INFO  17:58:11,158 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 22(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 25(r), nadjeno Var r: int, 2, 0
-INFO  17:58:11,158 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,158 - Pretraga na 25(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,158 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,159 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,159 - Pretraga na 25(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,159 - Pretraga na 26(r), nadjeno Var r: int, 2, 0
-INFO  17:58:11,159 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,159 - Pretraga na 26(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,159 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,159 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,159 - Pretraga na 26(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,159 - Pretraga na 29(r), nadjeno Var r: int, 2, 0
-INFO  17:58:11,159 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,159 - Pretraga na 29(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,159 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,159 - Pretraga na 29(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,159 - Pretraga na 31(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,159 - =================================================
+INFO  17:45:09,729 - =================================================
+INFO  17:45:09,731 - Pretraga na 14(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,731 - Pretraga na 15(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,731 - Pretraga na 16(p), nadjeno Var p: bool, 3, 0
+INFO  17:45:09,731 - Pretraga na 18(r), nadjeno Var r: int, 2, 0
+INFO  17:45:09,731 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,731 - Pretraga na 18(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,732 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 18(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,732 - Pretraga na 19(r), nadjeno Var r: int, 2, 0
+INFO  17:45:09,732 - Pretraga na 19(p), nadjeno Var p: bool, 3, 0
+INFO  17:45:09,732 - Pretraga na 20(r), nadjeno Var r: int, 2, 0
+INFO  17:45:09,732 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 20(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,732 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 20(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,732 - Pretraga na 21(r), nadjeno Var r: int, 2, 0
+INFO  17:45:09,732 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 21(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,732 - Pretraga na 21(p), nadjeno Var p: bool, 3, 0
+INFO  17:45:09,732 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 21(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,732 - Pretraga na 22(r), nadjeno Var r: int, 2, 0
+INFO  17:45:09,732 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 22(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,732 - Pretraga na 22(p), nadjeno Var p: bool, 3, 0
+INFO  17:45:09,732 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 22(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,732 - Pretraga na 25(r), nadjeno Var r: int, 2, 0
+INFO  17:45:09,732 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 25(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,732 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,732 - Pretraga na 25(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,733 - Pretraga na 26(r), nadjeno Var r: int, 2, 0
+INFO  17:45:09,733 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,733 - Pretraga na 26(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,733 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,733 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,733 - Pretraga na 26(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,733 - Pretraga na 29(r), nadjeno Var r: int, 2, 0
+INFO  17:45:09,733 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,733 - Pretraga na 29(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,733 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,733 - Pretraga na 29(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,733 - Pretraga na 31(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,733 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -1181,4 +1181,4 @@ Prog Ternarni: notype, 0, 1
 
 
 
-INFO  17:58:11,160 - Generisanje uspesno zavrseno: test/07_ternary.obj
+INFO  17:45:09,735 - Generisanje uspesno zavrseno: test/07_ternary.obj

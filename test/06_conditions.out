@@ -1,195 +1,195 @@
-INFO  17:58:10,992 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/06_conditions.mj
-INFO  17:58:11,000 - #2 program
-INFO  17:58:11,000 - #45 Uslovi
-INFO  17:58:11,000 - #45 int
-INFO  17:58:11,001 - #45 a
-INFO  17:58:11,001 - #36 ,
-INFO  17:58:11,001 - #45 b
-INFO  17:58:11,001 - #34 ;
-INFO  17:58:11,001 - #45 bool
-INFO  17:58:11,001 - #45 p
-INFO  17:58:11,001 - #36 ,
-INFO  17:58:11,001 - #45 q
-INFO  17:58:11,001 - #34 ;
-INFO  17:58:11,001 - #43 {
-INFO  17:58:11,001 - #7 void
-INFO  17:58:11,001 - #45 main
-INFO  17:58:11,001 - #39 (
-INFO  17:58:11,002 - #40 )
-INFO  17:58:11,002 - #43 {
-INFO  17:58:11,003 - #45 a
-INFO  17:58:11,003 - #31 =
-INFO  17:58:11,003 - #46 1
-INFO  17:58:11,003 - #34 ;
-INFO  17:58:11,003 - #45 b
-INFO  17:58:11,003 - #31 =
-INFO  17:58:11,003 - #46 2
-INFO  17:58:11,003 - #34 ;
-INFO  17:58:11,003 - #45 p
-INFO  17:58:11,003 - #31 =
-INFO  17:58:11,003 - #47 1
-INFO  17:58:11,003 - #34 ;
-INFO  17:58:11,003 - #45 q
-INFO  17:58:11,003 - #31 =
-INFO  17:58:11,003 - #47 0
-INFO  17:58:11,003 - #34 ;
-INFO  17:58:11,003 - #9 if
-INFO  17:58:11,003 - #39 (
-INFO  17:58:11,003 - #45 a
-INFO  17:58:11,003 - #22 ==
-INFO  17:58:11,003 - #45 b
-INFO  17:58:11,004 - #40 )
-INFO  17:58:11,004 - #45 a
-INFO  17:58:11,004 - #31 =
-INFO  17:58:11,004 - #46 0
-INFO  17:58:11,004 - #34 ;
-INFO  17:58:11,004 - #9 if
-INFO  17:58:11,004 - #39 (
-INFO  17:58:11,004 - #45 a
-INFO  17:58:11,004 - #23 !=
-INFO  17:58:11,004 - #45 b
-INFO  17:58:11,004 - #40 )
-INFO  17:58:11,004 - #45 a
-INFO  17:58:11,004 - #31 =
-INFO  17:58:11,004 - #46 0
-INFO  17:58:11,004 - #34 ;
-INFO  17:58:11,004 - #9 if
-INFO  17:58:11,004 - #39 (
-INFO  17:58:11,004 - #45 a
-INFO  17:58:11,005 - #24 >
-INFO  17:58:11,005 - #45 b
-INFO  17:58:11,005 - #40 )
-INFO  17:58:11,005 - #45 a
-INFO  17:58:11,005 - #31 =
-INFO  17:58:11,005 - #46 0
-INFO  17:58:11,005 - #34 ;
-INFO  17:58:11,005 - #9 if
-INFO  17:58:11,005 - #39 (
-INFO  17:58:11,005 - #45 a
-INFO  17:58:11,005 - #25 >=
-INFO  17:58:11,005 - #45 b
-INFO  17:58:11,005 - #40 )
-INFO  17:58:11,005 - #45 a
-INFO  17:58:11,005 - #31 =
-INFO  17:58:11,005 - #46 0
-INFO  17:58:11,005 - #34 ;
-INFO  17:58:11,006 - #9 if
-INFO  17:58:11,006 - #39 (
-INFO  17:58:11,006 - #45 a
-INFO  17:58:11,006 - #26 <
-INFO  17:58:11,006 - #45 b
-INFO  17:58:11,006 - #40 )
-INFO  17:58:11,006 - #45 a
-INFO  17:58:11,006 - #31 =
-INFO  17:58:11,006 - #46 0
-INFO  17:58:11,006 - #34 ;
-INFO  17:58:11,006 - #9 if
-INFO  17:58:11,006 - #39 (
-INFO  17:58:11,006 - #45 a
-INFO  17:58:11,006 - #27 <=
-INFO  17:58:11,006 - #45 b
-INFO  17:58:11,006 - #40 )
-INFO  17:58:11,006 - #45 a
-INFO  17:58:11,006 - #31 =
-INFO  17:58:11,006 - #46 0
-INFO  17:58:11,006 - #34 ;
-INFO  17:58:11,006 - #9 if
-INFO  17:58:11,006 - #39 (
-INFO  17:58:11,006 - #45 p
-INFO  17:58:11,006 - #40 )
-INFO  17:58:11,007 - #45 a
-INFO  17:58:11,007 - #31 =
-INFO  17:58:11,007 - #46 0
-INFO  17:58:11,007 - #34 ;
-INFO  17:58:11,007 - #9 if
-INFO  17:58:11,007 - #39 (
-INFO  17:58:11,007 - #45 p
-INFO  17:58:11,007 - #28 &&
-INFO  17:58:11,007 - #45 q
-INFO  17:58:11,007 - #40 )
-INFO  17:58:11,007 - #45 a
-INFO  17:58:11,007 - #31 =
-INFO  17:58:11,007 - #46 0
-INFO  17:58:11,007 - #34 ;
-INFO  17:58:11,007 - #9 if
-INFO  17:58:11,007 - #39 (
-INFO  17:58:11,007 - #45 p
-INFO  17:58:11,007 - #29 ||
-INFO  17:58:11,007 - #45 q
-INFO  17:58:11,007 - #40 )
-INFO  17:58:11,007 - #45 a
-INFO  17:58:11,007 - #31 =
-INFO  17:58:11,007 - #46 0
-INFO  17:58:11,007 - #34 ;
-INFO  17:58:11,007 - #9 if
-INFO  17:58:11,007 - #39 (
-INFO  17:58:11,007 - #45 p
-INFO  17:58:11,007 - #28 &&
-INFO  17:58:11,007 - #45 q
-INFO  17:58:11,007 - #29 ||
-INFO  17:58:11,007 - #45 a
-INFO  17:58:11,007 - #26 <
-INFO  17:58:11,008 - #45 b
-INFO  17:58:11,008 - #40 )
-INFO  17:58:11,008 - #45 a
-INFO  17:58:11,008 - #31 =
-INFO  17:58:11,008 - #46 0
-INFO  17:58:11,008 - #34 ;
-INFO  17:58:11,008 - #9 if
-INFO  17:58:11,008 - #39 (
-INFO  17:58:11,008 - #45 a
-INFO  17:58:11,008 - #26 <
-INFO  17:58:11,008 - #45 b
-INFO  17:58:11,008 - #28 &&
-INFO  17:58:11,008 - #45 b
-INFO  17:58:11,008 - #24 >
-INFO  17:58:11,008 - #45 a
-INFO  17:58:11,008 - #29 ||
-INFO  17:58:11,008 - #45 p
-INFO  17:58:11,008 - #28 &&
-INFO  17:58:11,008 - #45 q
-INFO  17:58:11,008 - #40 )
-INFO  17:58:11,008 - #45 a
-INFO  17:58:11,008 - #31 =
-INFO  17:58:11,008 - #46 0
-INFO  17:58:11,008 - #34 ;
-INFO  17:58:11,008 - #9 if
-INFO  17:58:11,008 - #39 (
-INFO  17:58:11,008 - #39 (
-INFO  17:58:11,008 - #45 a
-INFO  17:58:11,008 - #17 +
-INFO  17:58:11,008 - #46 1
-INFO  17:58:11,008 - #40 )
-INFO  17:58:11,008 - #19 *
-INFO  17:58:11,008 - #46 2
-INFO  17:58:11,009 - #27 <=
-INFO  17:58:11,009 - #45 b
-INFO  17:58:11,009 - #18 -
-INFO  17:58:11,009 - #46 3
-INFO  17:58:11,009 - #40 )
-INFO  17:58:11,009 - #45 a
-INFO  17:58:11,009 - #31 =
-INFO  17:58:11,009 - #46 0
-INFO  17:58:11,009 - #34 ;
-INFO  17:58:11,009 - #9 if
-INFO  17:58:11,009 - #39 (
-INFO  17:58:11,009 - #45 p
-INFO  17:58:11,009 - #28 &&
-INFO  17:58:11,009 - #45 q
-INFO  17:58:11,009 - #28 &&
-INFO  17:58:11,009 - #45 p
-INFO  17:58:11,009 - #29 ||
-INFO  17:58:11,009 - #45 q
-INFO  17:58:11,009 - #29 ||
-INFO  17:58:11,009 - #45 p
-INFO  17:58:11,009 - #40 )
-INFO  17:58:11,009 - #45 a
-INFO  17:58:11,009 - #31 =
-INFO  17:58:11,009 - #46 0
-INFO  17:58:11,009 - #34 ;
-INFO  17:58:11,009 - #44 }
-INFO  17:58:11,009 - #44 }
-INFO  17:58:11,011 - Program(
+INFO  17:45:09,558 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/06_conditions.mj
+INFO  17:45:09,569 - #2 program
+INFO  17:45:09,569 - #45 Uslovi
+INFO  17:45:09,569 - #45 int
+INFO  17:45:09,569 - #45 a
+INFO  17:45:09,570 - #36 ,
+INFO  17:45:09,570 - #45 b
+INFO  17:45:09,570 - #34 ;
+INFO  17:45:09,570 - #45 bool
+INFO  17:45:09,570 - #45 p
+INFO  17:45:09,570 - #36 ,
+INFO  17:45:09,570 - #45 q
+INFO  17:45:09,570 - #34 ;
+INFO  17:45:09,570 - #43 {
+INFO  17:45:09,570 - #7 void
+INFO  17:45:09,570 - #45 main
+INFO  17:45:09,570 - #39 (
+INFO  17:45:09,571 - #40 )
+INFO  17:45:09,571 - #43 {
+INFO  17:45:09,571 - #45 a
+INFO  17:45:09,571 - #31 =
+INFO  17:45:09,571 - #46 1
+INFO  17:45:09,571 - #34 ;
+INFO  17:45:09,571 - #45 b
+INFO  17:45:09,571 - #31 =
+INFO  17:45:09,571 - #46 2
+INFO  17:45:09,572 - #34 ;
+INFO  17:45:09,572 - #45 p
+INFO  17:45:09,572 - #31 =
+INFO  17:45:09,572 - #47 1
+INFO  17:45:09,572 - #34 ;
+INFO  17:45:09,572 - #45 q
+INFO  17:45:09,572 - #31 =
+INFO  17:45:09,572 - #47 0
+INFO  17:45:09,572 - #34 ;
+INFO  17:45:09,572 - #9 if
+INFO  17:45:09,572 - #39 (
+INFO  17:45:09,572 - #45 a
+INFO  17:45:09,572 - #22 ==
+INFO  17:45:09,572 - #45 b
+INFO  17:45:09,572 - #40 )
+INFO  17:45:09,573 - #45 a
+INFO  17:45:09,573 - #31 =
+INFO  17:45:09,573 - #46 0
+INFO  17:45:09,573 - #34 ;
+INFO  17:45:09,573 - #9 if
+INFO  17:45:09,573 - #39 (
+INFO  17:45:09,573 - #45 a
+INFO  17:45:09,573 - #23 !=
+INFO  17:45:09,573 - #45 b
+INFO  17:45:09,573 - #40 )
+INFO  17:45:09,573 - #45 a
+INFO  17:45:09,573 - #31 =
+INFO  17:45:09,573 - #46 0
+INFO  17:45:09,573 - #34 ;
+INFO  17:45:09,573 - #9 if
+INFO  17:45:09,573 - #39 (
+INFO  17:45:09,573 - #45 a
+INFO  17:45:09,573 - #24 >
+INFO  17:45:09,573 - #45 b
+INFO  17:45:09,574 - #40 )
+INFO  17:45:09,574 - #45 a
+INFO  17:45:09,574 - #31 =
+INFO  17:45:09,574 - #46 0
+INFO  17:45:09,574 - #34 ;
+INFO  17:45:09,574 - #9 if
+INFO  17:45:09,574 - #39 (
+INFO  17:45:09,574 - #45 a
+INFO  17:45:09,574 - #25 >=
+INFO  17:45:09,574 - #45 b
+INFO  17:45:09,574 - #40 )
+INFO  17:45:09,574 - #45 a
+INFO  17:45:09,574 - #31 =
+INFO  17:45:09,574 - #46 0
+INFO  17:45:09,575 - #34 ;
+INFO  17:45:09,575 - #9 if
+INFO  17:45:09,575 - #39 (
+INFO  17:45:09,575 - #45 a
+INFO  17:45:09,575 - #26 <
+INFO  17:45:09,575 - #45 b
+INFO  17:45:09,575 - #40 )
+INFO  17:45:09,575 - #45 a
+INFO  17:45:09,575 - #31 =
+INFO  17:45:09,575 - #46 0
+INFO  17:45:09,575 - #34 ;
+INFO  17:45:09,575 - #9 if
+INFO  17:45:09,575 - #39 (
+INFO  17:45:09,575 - #45 a
+INFO  17:45:09,575 - #27 <=
+INFO  17:45:09,576 - #45 b
+INFO  17:45:09,576 - #40 )
+INFO  17:45:09,576 - #45 a
+INFO  17:45:09,576 - #31 =
+INFO  17:45:09,576 - #46 0
+INFO  17:45:09,576 - #34 ;
+INFO  17:45:09,576 - #9 if
+INFO  17:45:09,576 - #39 (
+INFO  17:45:09,576 - #45 p
+INFO  17:45:09,576 - #40 )
+INFO  17:45:09,576 - #45 a
+INFO  17:45:09,576 - #31 =
+INFO  17:45:09,576 - #46 0
+INFO  17:45:09,576 - #34 ;
+INFO  17:45:09,576 - #9 if
+INFO  17:45:09,576 - #39 (
+INFO  17:45:09,576 - #45 p
+INFO  17:45:09,576 - #28 &&
+INFO  17:45:09,576 - #45 q
+INFO  17:45:09,576 - #40 )
+INFO  17:45:09,576 - #45 a
+INFO  17:45:09,576 - #31 =
+INFO  17:45:09,577 - #46 0
+INFO  17:45:09,577 - #34 ;
+INFO  17:45:09,577 - #9 if
+INFO  17:45:09,577 - #39 (
+INFO  17:45:09,577 - #45 p
+INFO  17:45:09,577 - #29 ||
+INFO  17:45:09,577 - #45 q
+INFO  17:45:09,577 - #40 )
+INFO  17:45:09,577 - #45 a
+INFO  17:45:09,577 - #31 =
+INFO  17:45:09,577 - #46 0
+INFO  17:45:09,577 - #34 ;
+INFO  17:45:09,577 - #9 if
+INFO  17:45:09,577 - #39 (
+INFO  17:45:09,577 - #45 p
+INFO  17:45:09,577 - #28 &&
+INFO  17:45:09,577 - #45 q
+INFO  17:45:09,577 - #29 ||
+INFO  17:45:09,577 - #45 a
+INFO  17:45:09,577 - #26 <
+INFO  17:45:09,577 - #45 b
+INFO  17:45:09,577 - #40 )
+INFO  17:45:09,577 - #45 a
+INFO  17:45:09,577 - #31 =
+INFO  17:45:09,577 - #46 0
+INFO  17:45:09,577 - #34 ;
+INFO  17:45:09,577 - #9 if
+INFO  17:45:09,577 - #39 (
+INFO  17:45:09,577 - #45 a
+INFO  17:45:09,577 - #26 <
+INFO  17:45:09,578 - #45 b
+INFO  17:45:09,578 - #28 &&
+INFO  17:45:09,578 - #45 b
+INFO  17:45:09,578 - #24 >
+INFO  17:45:09,578 - #45 a
+INFO  17:45:09,578 - #29 ||
+INFO  17:45:09,578 - #45 p
+INFO  17:45:09,578 - #28 &&
+INFO  17:45:09,578 - #45 q
+INFO  17:45:09,578 - #40 )
+INFO  17:45:09,578 - #45 a
+INFO  17:45:09,578 - #31 =
+INFO  17:45:09,578 - #46 0
+INFO  17:45:09,578 - #34 ;
+INFO  17:45:09,578 - #9 if
+INFO  17:45:09,578 - #39 (
+INFO  17:45:09,578 - #39 (
+INFO  17:45:09,578 - #45 a
+INFO  17:45:09,578 - #17 +
+INFO  17:45:09,578 - #46 1
+INFO  17:45:09,578 - #40 )
+INFO  17:45:09,578 - #19 *
+INFO  17:45:09,578 - #46 2
+INFO  17:45:09,579 - #27 <=
+INFO  17:45:09,579 - #45 b
+INFO  17:45:09,579 - #18 -
+INFO  17:45:09,579 - #46 3
+INFO  17:45:09,579 - #40 )
+INFO  17:45:09,579 - #45 a
+INFO  17:45:09,579 - #31 =
+INFO  17:45:09,579 - #46 0
+INFO  17:45:09,579 - #34 ;
+INFO  17:45:09,579 - #9 if
+INFO  17:45:09,579 - #39 (
+INFO  17:45:09,579 - #45 p
+INFO  17:45:09,579 - #28 &&
+INFO  17:45:09,579 - #45 q
+INFO  17:45:09,579 - #28 &&
+INFO  17:45:09,579 - #45 p
+INFO  17:45:09,579 - #29 ||
+INFO  17:45:09,579 - #45 q
+INFO  17:45:09,579 - #29 ||
+INFO  17:45:09,579 - #45 p
+INFO  17:45:09,579 - #40 )
+INFO  17:45:09,579 - #45 a
+INFO  17:45:09,579 - #31 =
+INFO  17:45:09,579 - #46 0
+INFO  17:45:09,579 - #34 ;
+INFO  17:45:09,579 - #44 }
+INFO  17:45:09,580 - #44 }
+INFO  17:45:09,581 - Program(
   ProgramName(
    Uslovi
   ) [ProgramName]
@@ -1206,59 +1206,59 @@ INFO  17:58:11,011 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:11,011 - =================================================
-INFO  17:58:11,013 - Pretraga na 12(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,013 - Pretraga na 13(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,013 - Pretraga na 14(p), nadjeno Var p: bool, 2, 0
-INFO  17:58:11,013 - Pretraga na 15(q), nadjeno Var q: bool, 3, 0
-INFO  17:58:11,013 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,013 - Pretraga na 17(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,013 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,013 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,013 - Pretraga na 18(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,013 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,013 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 19(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,014 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 20(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,014 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 21(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,014 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 22(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,014 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 24(p), nadjeno Var p: bool, 2, 0
-INFO  17:58:11,014 - Pretraga na 24(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 25(p), nadjeno Var p: bool, 2, 0
-INFO  17:58:11,014 - Pretraga na 25(q), nadjeno Var q: bool, 3, 0
-INFO  17:58:11,014 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 26(p), nadjeno Var p: bool, 2, 0
-INFO  17:58:11,014 - Pretraga na 26(q), nadjeno Var q: bool, 3, 0
-INFO  17:58:11,014 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 27(p), nadjeno Var p: bool, 2, 0
-INFO  17:58:11,014 - Pretraga na 27(q), nadjeno Var q: bool, 3, 0
-INFO  17:58:11,014 - Pretraga na 27(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 27(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,014 - Pretraga na 27(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,014 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,014 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 28(p), nadjeno Var p: bool, 2, 0
-INFO  17:58:11,014 - Pretraga na 28(q), nadjeno Var q: bool, 3, 0
-INFO  17:58:11,014 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 29(b), nadjeno Var b: int, 1, 0
-INFO  17:58:11,014 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - Pretraga na 30(p), nadjeno Var p: bool, 2, 0
-INFO  17:58:11,014 - Pretraga na 30(q), nadjeno Var q: bool, 3, 0
-INFO  17:58:11,014 - Pretraga na 30(p), nadjeno Var p: bool, 2, 0
-INFO  17:58:11,014 - Pretraga na 30(q), nadjeno Var q: bool, 3, 0
-INFO  17:58:11,014 - Pretraga na 30(p), nadjeno Var p: bool, 2, 0
-INFO  17:58:11,014 - Pretraga na 30(a), nadjeno Var a: int, 0, 0
-INFO  17:58:11,014 - =================================================
+INFO  17:45:09,582 - =================================================
+INFO  17:45:09,585 - Pretraga na 12(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 13(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,585 - Pretraga na 14(p), nadjeno Var p: bool, 2, 0
+INFO  17:45:09,585 - Pretraga na 15(q), nadjeno Var q: bool, 3, 0
+INFO  17:45:09,585 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 17(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,585 - Pretraga na 17(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 18(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,585 - Pretraga na 18(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 19(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,585 - Pretraga na 19(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 20(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,585 - Pretraga na 20(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 21(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,585 - Pretraga na 21(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 22(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,585 - Pretraga na 22(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 24(p), nadjeno Var p: bool, 2, 0
+INFO  17:45:09,585 - Pretraga na 24(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 25(p), nadjeno Var p: bool, 2, 0
+INFO  17:45:09,585 - Pretraga na 25(q), nadjeno Var q: bool, 3, 0
+INFO  17:45:09,585 - Pretraga na 25(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 26(p), nadjeno Var p: bool, 2, 0
+INFO  17:45:09,585 - Pretraga na 26(q), nadjeno Var q: bool, 3, 0
+INFO  17:45:09,585 - Pretraga na 26(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,585 - Pretraga na 27(p), nadjeno Var p: bool, 2, 0
+INFO  17:45:09,585 - Pretraga na 27(q), nadjeno Var q: bool, 3, 0
+INFO  17:45:09,586 - Pretraga na 27(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,586 - Pretraga na 27(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,586 - Pretraga na 27(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,586 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,586 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,586 - Pretraga na 28(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,586 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,586 - Pretraga na 28(p), nadjeno Var p: bool, 2, 0
+INFO  17:45:09,586 - Pretraga na 28(q), nadjeno Var q: bool, 3, 0
+INFO  17:45:09,586 - Pretraga na 28(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,586 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,586 - Pretraga na 29(b), nadjeno Var b: int, 1, 0
+INFO  17:45:09,586 - Pretraga na 29(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,586 - Pretraga na 30(p), nadjeno Var p: bool, 2, 0
+INFO  17:45:09,586 - Pretraga na 30(q), nadjeno Var q: bool, 3, 0
+INFO  17:45:09,586 - Pretraga na 30(p), nadjeno Var p: bool, 2, 0
+INFO  17:45:09,586 - Pretraga na 30(q), nadjeno Var q: bool, 3, 0
+INFO  17:45:09,586 - Pretraga na 30(p), nadjeno Var p: bool, 2, 0
+INFO  17:45:09,586 - Pretraga na 30(a), nadjeno Var a: int, 0, 0
+INFO  17:45:09,586 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -1283,4 +1283,4 @@ Prog Uslovi: notype, 0, 1
 
 
 
-INFO  17:58:11,016 - Generisanje uspesno zavrseno: test/06_conditions.obj
+INFO  17:45:09,588 - Generisanje uspesno zavrseno: test/06_conditions.obj

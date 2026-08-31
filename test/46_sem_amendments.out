@@ -1,107 +1,107 @@
-INFO  17:58:14,896 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/46_sem_amendments.mj
-INFO  17:58:14,905 - #2 program
-INFO  17:58:14,905 - #45 SemAmendments
-INFO  17:58:14,905 - #45 int
-INFO  17:58:14,905 - #45 niz
-INFO  17:58:14,905 - #41 [
-INFO  17:58:14,905 - #42 ]
-INFO  17:58:14,906 - #34 ;
-INFO  17:58:14,906 - #45 int
-INFO  17:58:14,906 - #45 rez
-INFO  17:58:14,906 - #41 [
-INFO  17:58:14,906 - #42 ]
-INFO  17:58:14,906 - #34 ;
-INFO  17:58:14,906 - #45 bool
-INFO  17:58:14,906 - #45 b
-INFO  17:58:14,906 - #34 ;
-INFO  17:58:14,906 - #45 int
-INFO  17:58:14,906 - #45 a
-INFO  17:58:14,906 - #34 ;
-INFO  17:58:14,906 - #45 char
-INFO  17:58:14,906 - #45 c
-INFO  17:58:14,906 - #34 ;
-INFO  17:58:14,906 - #43 {
-INFO  17:58:14,906 - #7 void
-INFO  17:58:14,906 - #45 main
-INFO  17:58:14,906 - #39 (
-INFO  17:58:14,907 - #40 )
-INFO  17:58:14,907 - #43 {
-INFO  17:58:14,907 - #45 b
-INFO  17:58:14,907 - #31 =
-INFO  17:58:14,907 - #45 niz
-INFO  17:58:14,907 - #37 .
-INFO  17:58:14,907 - #15 findAny
-INFO  17:58:14,907 - #39 (
-INFO  17:58:14,907 - #46 1
-INFO  17:58:14,907 - #40 )
-INFO  17:58:14,907 - #34 ;
-INFO  17:58:14,907 - #45 a
-INFO  17:58:14,907 - #31 =
-INFO  17:58:14,907 - #45 niz
-INFO  17:58:14,907 - #37 .
-INFO  17:58:14,907 - #15 findAny
-INFO  17:58:14,907 - #39 (
-INFO  17:58:14,908 - #46 1
-INFO  17:58:14,908 - #40 )
-INFO  17:58:14,908 - #34 ;
-INFO  17:58:14,908 - #45 b
-INFO  17:58:14,908 - #31 =
-INFO  17:58:14,908 - #45 a
-INFO  17:58:14,908 - #37 .
-INFO  17:58:14,908 - #15 findAny
-INFO  17:58:14,908 - #39 (
-INFO  17:58:14,908 - #46 1
-INFO  17:58:14,908 - #40 )
-INFO  17:58:14,908 - #34 ;
-INFO  17:58:14,908 - #45 b
-INFO  17:58:14,908 - #31 =
-INFO  17:58:14,908 - #45 niz
-INFO  17:58:14,908 - #37 .
-INFO  17:58:14,908 - #15 findAny
-INFO  17:58:14,908 - #39 (
-INFO  17:58:14,908 - #48 c
-INFO  17:58:14,908 - #40 )
-INFO  17:58:14,908 - #34 ;
-INFO  17:58:14,908 - #45 rez
-INFO  17:58:14,908 - #31 =
-INFO  17:58:14,908 - #45 niz
-INFO  17:58:14,908 - #37 .
-INFO  17:58:14,908 - #16 map
-INFO  17:58:14,908 - #39 (
-INFO  17:58:14,908 - #45 a
-INFO  17:58:14,908 - #30 =>
-INFO  17:58:14,908 - #45 a
-INFO  17:58:14,908 - #19 *
-INFO  17:58:14,909 - #46 2
-INFO  17:58:14,909 - #40 )
-INFO  17:58:14,909 - #34 ;
-INFO  17:58:14,909 - #45 rez
-INFO  17:58:14,909 - #31 =
-INFO  17:58:14,909 - #45 niz
-INFO  17:58:14,909 - #37 .
-INFO  17:58:14,909 - #16 map
-INFO  17:58:14,909 - #39 (
-INFO  17:58:14,909 - #45 c
-INFO  17:58:14,909 - #30 =>
-INFO  17:58:14,909 - #45 a
-INFO  17:58:14,909 - #19 *
-INFO  17:58:14,909 - #46 2
-INFO  17:58:14,909 - #40 )
-INFO  17:58:14,909 - #34 ;
-INFO  17:58:14,909 - #45 rez
-INFO  17:58:14,909 - #31 =
-INFO  17:58:14,909 - #45 a
-INFO  17:58:14,909 - #37 .
-INFO  17:58:14,909 - #16 map
-INFO  17:58:14,909 - #39 (
-INFO  17:58:14,909 - #45 a
-INFO  17:58:14,909 - #30 =>
-INFO  17:58:14,909 - #45 a
-INFO  17:58:14,909 - #40 )
-INFO  17:58:14,909 - #34 ;
-INFO  17:58:14,909 - #44 }
-INFO  17:58:14,909 - #44 }
-INFO  17:58:14,910 - Program(
+INFO  17:45:13,685 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/46_sem_amendments.mj
+INFO  17:45:13,696 - #2 program
+INFO  17:45:13,696 - #45 SemAmendments
+INFO  17:45:13,696 - #45 int
+INFO  17:45:13,697 - #45 niz
+INFO  17:45:13,697 - #41 [
+INFO  17:45:13,697 - #42 ]
+INFO  17:45:13,697 - #34 ;
+INFO  17:45:13,697 - #45 int
+INFO  17:45:13,697 - #45 rez
+INFO  17:45:13,697 - #41 [
+INFO  17:45:13,697 - #42 ]
+INFO  17:45:13,697 - #34 ;
+INFO  17:45:13,697 - #45 bool
+INFO  17:45:13,697 - #45 b
+INFO  17:45:13,698 - #34 ;
+INFO  17:45:13,698 - #45 int
+INFO  17:45:13,698 - #45 a
+INFO  17:45:13,698 - #34 ;
+INFO  17:45:13,698 - #45 char
+INFO  17:45:13,698 - #45 c
+INFO  17:45:13,698 - #34 ;
+INFO  17:45:13,698 - #43 {
+INFO  17:45:13,698 - #7 void
+INFO  17:45:13,698 - #45 main
+INFO  17:45:13,698 - #39 (
+INFO  17:45:13,699 - #40 )
+INFO  17:45:13,699 - #43 {
+INFO  17:45:13,699 - #45 b
+INFO  17:45:13,699 - #31 =
+INFO  17:45:13,699 - #45 niz
+INFO  17:45:13,699 - #37 .
+INFO  17:45:13,699 - #15 findAny
+INFO  17:45:13,699 - #39 (
+INFO  17:45:13,699 - #46 1
+INFO  17:45:13,699 - #40 )
+INFO  17:45:13,700 - #34 ;
+INFO  17:45:13,700 - #45 a
+INFO  17:45:13,700 - #31 =
+INFO  17:45:13,700 - #45 niz
+INFO  17:45:13,700 - #37 .
+INFO  17:45:13,700 - #15 findAny
+INFO  17:45:13,700 - #39 (
+INFO  17:45:13,700 - #46 1
+INFO  17:45:13,700 - #40 )
+INFO  17:45:13,700 - #34 ;
+INFO  17:45:13,700 - #45 b
+INFO  17:45:13,700 - #31 =
+INFO  17:45:13,700 - #45 a
+INFO  17:45:13,700 - #37 .
+INFO  17:45:13,700 - #15 findAny
+INFO  17:45:13,700 - #39 (
+INFO  17:45:13,700 - #46 1
+INFO  17:45:13,700 - #40 )
+INFO  17:45:13,700 - #34 ;
+INFO  17:45:13,700 - #45 b
+INFO  17:45:13,701 - #31 =
+INFO  17:45:13,701 - #45 niz
+INFO  17:45:13,701 - #37 .
+INFO  17:45:13,701 - #15 findAny
+INFO  17:45:13,701 - #39 (
+INFO  17:45:13,701 - #48 c
+INFO  17:45:13,701 - #40 )
+INFO  17:45:13,701 - #34 ;
+INFO  17:45:13,701 - #45 rez
+INFO  17:45:13,701 - #31 =
+INFO  17:45:13,701 - #45 niz
+INFO  17:45:13,701 - #37 .
+INFO  17:45:13,701 - #16 map
+INFO  17:45:13,701 - #39 (
+INFO  17:45:13,701 - #45 a
+INFO  17:45:13,701 - #30 =>
+INFO  17:45:13,701 - #45 a
+INFO  17:45:13,701 - #19 *
+INFO  17:45:13,701 - #46 2
+INFO  17:45:13,702 - #40 )
+INFO  17:45:13,702 - #34 ;
+INFO  17:45:13,702 - #45 rez
+INFO  17:45:13,702 - #31 =
+INFO  17:45:13,702 - #45 niz
+INFO  17:45:13,702 - #37 .
+INFO  17:45:13,702 - #16 map
+INFO  17:45:13,702 - #39 (
+INFO  17:45:13,702 - #45 c
+INFO  17:45:13,702 - #30 =>
+INFO  17:45:13,702 - #45 a
+INFO  17:45:13,703 - #19 *
+INFO  17:45:13,703 - #46 2
+INFO  17:45:13,703 - #40 )
+INFO  17:45:13,703 - #34 ;
+INFO  17:45:13,703 - #45 rez
+INFO  17:45:13,703 - #31 =
+INFO  17:45:13,703 - #45 a
+INFO  17:45:13,703 - #37 .
+INFO  17:45:13,703 - #16 map
+INFO  17:45:13,703 - #39 (
+INFO  17:45:13,703 - #45 a
+INFO  17:45:13,703 - #30 =>
+INFO  17:45:13,703 - #45 a
+INFO  17:45:13,703 - #40 )
+INFO  17:45:13,703 - #34 ;
+INFO  17:45:13,703 - #44 }
+INFO  17:45:13,703 - #44 }
+INFO  17:45:13,704 - Program(
   ProgramName(
    SemAmendments
   ) [ProgramName]
@@ -365,25 +365,25 @@ INFO  17:58:14,910 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:14,910 - =================================================
-INFO  17:58:14,912 - Pretraga na 20(b), nadjeno Var b: bool, 2, 0
-INFO  17:58:14,912 - Pretraga na 20(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:14,912 - Pretraga na 21(a), nadjeno Var a: int, 3, 0
-INFO  17:58:14,912 - Pretraga na 21(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:14,912 - Pretraga na 22(b), nadjeno Var b: bool, 2, 0
-INFO  17:58:14,912 - Pretraga na 22(a), nadjeno Var a: int, 3, 0
-INFO  17:58:14,912 - Pretraga na 23(b), nadjeno Var b: bool, 2, 0
-INFO  17:58:14,912 - Pretraga na 23(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:14,912 - Pretraga na 24(rez), nadjeno Var rez: Arr of int, 1, 0
-INFO  17:58:14,912 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:14,912 - Pretraga na 24(a), nadjeno Var a: int, 3, 0
-INFO  17:58:14,912 - Pretraga na 25(rez), nadjeno Var rez: Arr of int, 1, 0
-INFO  17:58:14,912 - Pretraga na 25(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:14,912 - Pretraga na 25(a), nadjeno Var a: int, 3, 0
-INFO  17:58:14,912 - Pretraga na 26(rez), nadjeno Var rez: Arr of int, 1, 0
-INFO  17:58:14,912 - Pretraga na 26(a), nadjeno Var a: int, 3, 0
-INFO  17:58:14,912 - Pretraga na 26(a), nadjeno Var a: int, 3, 0
-INFO  17:58:14,912 - =================================================
+INFO  17:45:13,704 - =================================================
+INFO  17:45:13,706 - Pretraga na 20(b), nadjeno Var b: bool, 2, 0
+INFO  17:45:13,706 - Pretraga na 20(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:13,706 - Pretraga na 21(a), nadjeno Var a: int, 3, 0
+INFO  17:45:13,706 - Pretraga na 21(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:13,706 - Pretraga na 22(b), nadjeno Var b: bool, 2, 0
+INFO  17:45:13,707 - Pretraga na 22(a), nadjeno Var a: int, 3, 0
+INFO  17:45:13,707 - Pretraga na 23(b), nadjeno Var b: bool, 2, 0
+INFO  17:45:13,707 - Pretraga na 23(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:13,707 - Pretraga na 24(rez), nadjeno Var rez: Arr of int, 1, 0
+INFO  17:45:13,707 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:13,707 - Pretraga na 24(a), nadjeno Var a: int, 3, 0
+INFO  17:45:13,707 - Pretraga na 25(rez), nadjeno Var rez: Arr of int, 1, 0
+INFO  17:45:13,707 - Pretraga na 25(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:13,707 - Pretraga na 25(a), nadjeno Var a: int, 3, 0
+INFO  17:45:13,707 - Pretraga na 26(rez), nadjeno Var rez: Arr of int, 1, 0
+INFO  17:45:13,707 - Pretraga na 26(a), nadjeno Var a: int, 3, 0
+INFO  17:45:13,707 - Pretraga na 26(a), nadjeno Var a: int, 3, 0
+INFO  17:45:13,707 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 

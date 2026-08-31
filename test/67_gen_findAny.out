@@ -1,293 +1,293 @@
-INFO  17:58:17,330 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/67_gen_findAny.mj
-INFO  17:58:17,339 - #2 program
-INFO  17:58:17,339 - #45 GenFindAny
-INFO  17:58:17,339 - #45 int
-INFO  17:58:17,339 - #45 niz
-INFO  17:58:17,339 - #41 [
-INFO  17:58:17,339 - #42 ]
-INFO  17:58:17,339 - #36 ,
-INFO  17:58:17,339 - #45 i
-INFO  17:58:17,339 - #34 ;
-INFO  17:58:17,339 - #45 char
-INFO  17:58:17,340 - #45 slova
-INFO  17:58:17,340 - #41 [
-INFO  17:58:17,340 - #42 ]
-INFO  17:58:17,340 - #34 ;
-INFO  17:58:17,340 - #45 bool
-INFO  17:58:17,340 - #45 zastave
-INFO  17:58:17,340 - #41 [
-INFO  17:58:17,340 - #42 ]
-INFO  17:58:17,340 - #34 ;
-INFO  17:58:17,340 - #45 bool
-INFO  17:58:17,340 - #45 naso
-INFO  17:58:17,340 - #36 ,
-INFO  17:58:17,340 - #45 nasoNiz
-INFO  17:58:17,340 - #41 [
-INFO  17:58:17,340 - #42 ]
-INFO  17:58:17,340 - #34 ;
-INFO  17:58:17,340 - #43 {
-INFO  17:58:17,340 - #7 void
-INFO  17:58:17,340 - #45 main
-INFO  17:58:17,340 - #39 (
-INFO  17:58:17,340 - #40 )
-INFO  17:58:17,341 - #45 bool
-INFO  17:58:17,341 - #45 lokalni
-INFO  17:58:17,341 - #34 ;
-INFO  17:58:17,341 - #43 {
-INFO  17:58:17,341 - #45 niz
-INFO  17:58:17,341 - #31 =
-INFO  17:58:17,341 - #4 new
-INFO  17:58:17,341 - #45 int
-INFO  17:58:17,341 - #41 [
-INFO  17:58:17,341 - #46 5
-INFO  17:58:17,341 - #42 ]
-INFO  17:58:17,341 - #34 ;
-INFO  17:58:17,341 - #13 for
-INFO  17:58:17,341 - #39 (
-INFO  17:58:17,341 - #45 i
-INFO  17:58:17,342 - #31 =
-INFO  17:58:17,342 - #46 0
-INFO  17:58:17,342 - #34 ;
-INFO  17:58:17,342 - #45 i
-INFO  17:58:17,342 - #26 <
-INFO  17:58:17,342 - #46 5
-INFO  17:58:17,342 - #34 ;
-INFO  17:58:17,342 - #45 i
-INFO  17:58:17,342 - #32 ++
-INFO  17:58:17,342 - #40 )
-INFO  17:58:17,342 - #45 niz
-INFO  17:58:17,342 - #41 [
-INFO  17:58:17,342 - #45 i
-INFO  17:58:17,342 - #42 ]
-INFO  17:58:17,342 - #31 =
-INFO  17:58:17,342 - #45 i
-INFO  17:58:17,342 - #19 *
-INFO  17:58:17,342 - #46 2
-INFO  17:58:17,343 - #34 ;
-INFO  17:58:17,343 - #45 naso
-INFO  17:58:17,343 - #31 =
-INFO  17:58:17,343 - #45 niz
-INFO  17:58:17,343 - #37 .
-INFO  17:58:17,343 - #15 findAny
-INFO  17:58:17,343 - #39 (
-INFO  17:58:17,343 - #46 6
-INFO  17:58:17,343 - #40 )
-INFO  17:58:17,343 - #34 ;
-INFO  17:58:17,343 - #5 print
-INFO  17:58:17,343 - #39 (
-INFO  17:58:17,343 - #45 naso
-INFO  17:58:17,343 - #40 )
-INFO  17:58:17,343 - #34 ;
-INFO  17:58:17,343 - #5 print
-INFO  17:58:17,343 - #39 (
-INFO  17:58:17,343 - #45 eol
-INFO  17:58:17,343 - #40 )
-INFO  17:58:17,343 - #34 ;
-INFO  17:58:17,343 - #45 naso
-INFO  17:58:17,343 - #31 =
-INFO  17:58:17,343 - #45 niz
-INFO  17:58:17,343 - #37 .
-INFO  17:58:17,343 - #15 findAny
-INFO  17:58:17,343 - #39 (
-INFO  17:58:17,343 - #46 7
-INFO  17:58:17,343 - #40 )
-INFO  17:58:17,344 - #34 ;
-INFO  17:58:17,344 - #5 print
-INFO  17:58:17,344 - #39 (
-INFO  17:58:17,344 - #45 naso
-INFO  17:58:17,344 - #40 )
-INFO  17:58:17,344 - #34 ;
-INFO  17:58:17,344 - #5 print
-INFO  17:58:17,344 - #39 (
-INFO  17:58:17,344 - #45 eol
-INFO  17:58:17,344 - #40 )
-INFO  17:58:17,344 - #34 ;
-INFO  17:58:17,344 - #45 naso
-INFO  17:58:17,344 - #31 =
-INFO  17:58:17,344 - #45 niz
-INFO  17:58:17,344 - #37 .
-INFO  17:58:17,344 - #15 findAny
-INFO  17:58:17,344 - #39 (
-INFO  17:58:17,344 - #46 0
-INFO  17:58:17,344 - #40 )
-INFO  17:58:17,344 - #34 ;
-INFO  17:58:17,344 - #5 print
-INFO  17:58:17,344 - #39 (
-INFO  17:58:17,344 - #45 naso
-INFO  17:58:17,344 - #40 )
-INFO  17:58:17,344 - #34 ;
-INFO  17:58:17,344 - #5 print
-INFO  17:58:17,344 - #39 (
-INFO  17:58:17,344 - #45 eol
-INFO  17:58:17,344 - #40 )
-INFO  17:58:17,344 - #34 ;
-INFO  17:58:17,344 - #45 naso
-INFO  17:58:17,345 - #31 =
-INFO  17:58:17,345 - #45 niz
-INFO  17:58:17,345 - #37 .
-INFO  17:58:17,345 - #15 findAny
-INFO  17:58:17,345 - #39 (
-INFO  17:58:17,345 - #46 8
-INFO  17:58:17,345 - #40 )
-INFO  17:58:17,345 - #34 ;
-INFO  17:58:17,345 - #5 print
-INFO  17:58:17,345 - #39 (
-INFO  17:58:17,345 - #45 naso
-INFO  17:58:17,345 - #40 )
-INFO  17:58:17,345 - #34 ;
-INFO  17:58:17,345 - #5 print
-INFO  17:58:17,345 - #39 (
-INFO  17:58:17,345 - #45 eol
-INFO  17:58:17,345 - #40 )
-INFO  17:58:17,345 - #34 ;
-INFO  17:58:17,345 - #45 slova
-INFO  17:58:17,345 - #31 =
-INFO  17:58:17,345 - #4 new
-INFO  17:58:17,345 - #45 char
-INFO  17:58:17,345 - #41 [
-INFO  17:58:17,345 - #46 3
-INFO  17:58:17,345 - #42 ]
-INFO  17:58:17,345 - #34 ;
-INFO  17:58:17,345 - #45 slova
-INFO  17:58:17,345 - #41 [
-INFO  17:58:17,345 - #46 0
-INFO  17:58:17,345 - #42 ]
-INFO  17:58:17,345 - #31 =
-INFO  17:58:17,345 - #48 a
-INFO  17:58:17,345 - #34 ;
-INFO  17:58:17,345 - #45 slova
-INFO  17:58:17,345 - #41 [
-INFO  17:58:17,345 - #46 1
-INFO  17:58:17,345 - #42 ]
-INFO  17:58:17,345 - #31 =
-INFO  17:58:17,345 - #48 b
-INFO  17:58:17,345 - #34 ;
-INFO  17:58:17,346 - #45 slova
-INFO  17:58:17,346 - #41 [
-INFO  17:58:17,346 - #46 2
-INFO  17:58:17,346 - #42 ]
-INFO  17:58:17,346 - #31 =
-INFO  17:58:17,346 - #48 c
-INFO  17:58:17,346 - #34 ;
-INFO  17:58:17,346 - #45 naso
-INFO  17:58:17,346 - #31 =
-INFO  17:58:17,346 - #45 slova
-INFO  17:58:17,346 - #37 .
-INFO  17:58:17,346 - #15 findAny
-INFO  17:58:17,346 - #39 (
-INFO  17:58:17,346 - #48 b
-INFO  17:58:17,346 - #40 )
-INFO  17:58:17,346 - #34 ;
-INFO  17:58:17,346 - #5 print
-INFO  17:58:17,346 - #39 (
-INFO  17:58:17,346 - #45 naso
-INFO  17:58:17,346 - #40 )
-INFO  17:58:17,346 - #34 ;
-INFO  17:58:17,346 - #5 print
-INFO  17:58:17,346 - #39 (
-INFO  17:58:17,346 - #45 eol
-INFO  17:58:17,346 - #40 )
-INFO  17:58:17,346 - #34 ;
-INFO  17:58:17,346 - #45 naso
-INFO  17:58:17,346 - #31 =
-INFO  17:58:17,346 - #45 slova
-INFO  17:58:17,346 - #37 .
-INFO  17:58:17,346 - #15 findAny
-INFO  17:58:17,346 - #39 (
-INFO  17:58:17,346 - #48 z
-INFO  17:58:17,346 - #40 )
-INFO  17:58:17,346 - #34 ;
-INFO  17:58:17,346 - #5 print
-INFO  17:58:17,346 - #39 (
-INFO  17:58:17,346 - #45 naso
-INFO  17:58:17,346 - #40 )
-INFO  17:58:17,346 - #34 ;
-INFO  17:58:17,346 - #5 print
-INFO  17:58:17,346 - #39 (
-INFO  17:58:17,346 - #45 eol
-INFO  17:58:17,346 - #40 )
-INFO  17:58:17,346 - #34 ;
-INFO  17:58:17,346 - #45 nasoNiz
-INFO  17:58:17,346 - #31 =
-INFO  17:58:17,346 - #4 new
-INFO  17:58:17,346 - #45 bool
-INFO  17:58:17,346 - #41 [
-INFO  17:58:17,347 - #46 2
-INFO  17:58:17,347 - #42 ]
-INFO  17:58:17,347 - #34 ;
-INFO  17:58:17,347 - #45 i
-INFO  17:58:17,347 - #31 =
-INFO  17:58:17,347 - #46 1
-INFO  17:58:17,347 - #34 ;
-INFO  17:58:17,347 - #45 nasoNiz
-INFO  17:58:17,347 - #41 [
-INFO  17:58:17,347 - #45 i
-INFO  17:58:17,347 - #42 ]
-INFO  17:58:17,347 - #31 =
-INFO  17:58:17,347 - #45 niz
-INFO  17:58:17,347 - #37 .
-INFO  17:58:17,347 - #15 findAny
-INFO  17:58:17,347 - #39 (
-INFO  17:58:17,347 - #46 4
-INFO  17:58:17,347 - #40 )
-INFO  17:58:17,347 - #34 ;
-INFO  17:58:17,347 - #5 print
-INFO  17:58:17,347 - #39 (
-INFO  17:58:17,347 - #45 nasoNiz
-INFO  17:58:17,347 - #41 [
-INFO  17:58:17,347 - #46 1
-INFO  17:58:17,347 - #42 ]
-INFO  17:58:17,347 - #40 )
-INFO  17:58:17,347 - #34 ;
-INFO  17:58:17,347 - #5 print
-INFO  17:58:17,347 - #39 (
-INFO  17:58:17,347 - #45 eol
-INFO  17:58:17,347 - #40 )
-INFO  17:58:17,347 - #34 ;
-INFO  17:58:17,347 - #45 zastave
-INFO  17:58:17,347 - #31 =
-INFO  17:58:17,347 - #4 new
-INFO  17:58:17,347 - #45 bool
-INFO  17:58:17,347 - #41 [
-INFO  17:58:17,347 - #46 2
-INFO  17:58:17,347 - #42 ]
-INFO  17:58:17,347 - #34 ;
-INFO  17:58:17,347 - #45 zastave
-INFO  17:58:17,347 - #41 [
-INFO  17:58:17,347 - #46 0
-INFO  17:58:17,347 - #42 ]
-INFO  17:58:17,347 - #31 =
-INFO  17:58:17,347 - #47 0
-INFO  17:58:17,347 - #34 ;
-INFO  17:58:17,347 - #45 zastave
-INFO  17:58:17,348 - #41 [
-INFO  17:58:17,348 - #46 1
-INFO  17:58:17,348 - #42 ]
-INFO  17:58:17,348 - #31 =
-INFO  17:58:17,348 - #47 0
-INFO  17:58:17,348 - #34 ;
-INFO  17:58:17,348 - #45 lokalni
-INFO  17:58:17,348 - #31 =
-INFO  17:58:17,348 - #45 zastave
-INFO  17:58:17,348 - #37 .
-INFO  17:58:17,348 - #15 findAny
-INFO  17:58:17,348 - #39 (
-INFO  17:58:17,348 - #47 1
-INFO  17:58:17,348 - #40 )
-INFO  17:58:17,348 - #34 ;
-INFO  17:58:17,348 - #5 print
-INFO  17:58:17,348 - #39 (
-INFO  17:58:17,348 - #45 lokalni
-INFO  17:58:17,348 - #40 )
-INFO  17:58:17,348 - #34 ;
-INFO  17:58:17,348 - #5 print
-INFO  17:58:17,348 - #39 (
-INFO  17:58:17,348 - #45 eol
-INFO  17:58:17,348 - #40 )
-INFO  17:58:17,348 - #34 ;
-INFO  17:58:17,348 - #44 }
-INFO  17:58:17,348 - #44 }
-INFO  17:58:17,350 - Program(
+INFO  17:45:16,253 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/67_gen_findAny.mj
+INFO  17:45:16,263 - #2 program
+INFO  17:45:16,263 - #45 GenFindAny
+INFO  17:45:16,263 - #45 int
+INFO  17:45:16,264 - #45 niz
+INFO  17:45:16,264 - #41 [
+INFO  17:45:16,264 - #42 ]
+INFO  17:45:16,264 - #36 ,
+INFO  17:45:16,264 - #45 i
+INFO  17:45:16,264 - #34 ;
+INFO  17:45:16,264 - #45 char
+INFO  17:45:16,264 - #45 slova
+INFO  17:45:16,264 - #41 [
+INFO  17:45:16,264 - #42 ]
+INFO  17:45:16,264 - #34 ;
+INFO  17:45:16,265 - #45 bool
+INFO  17:45:16,265 - #45 zastave
+INFO  17:45:16,265 - #41 [
+INFO  17:45:16,265 - #42 ]
+INFO  17:45:16,265 - #34 ;
+INFO  17:45:16,265 - #45 bool
+INFO  17:45:16,265 - #45 naso
+INFO  17:45:16,265 - #36 ,
+INFO  17:45:16,265 - #45 nasoNiz
+INFO  17:45:16,265 - #41 [
+INFO  17:45:16,265 - #42 ]
+INFO  17:45:16,265 - #34 ;
+INFO  17:45:16,265 - #43 {
+INFO  17:45:16,265 - #7 void
+INFO  17:45:16,265 - #45 main
+INFO  17:45:16,266 - #39 (
+INFO  17:45:16,266 - #40 )
+INFO  17:45:16,266 - #45 bool
+INFO  17:45:16,266 - #45 lokalni
+INFO  17:45:16,266 - #34 ;
+INFO  17:45:16,266 - #43 {
+INFO  17:45:16,266 - #45 niz
+INFO  17:45:16,266 - #31 =
+INFO  17:45:16,266 - #4 new
+INFO  17:45:16,266 - #45 int
+INFO  17:45:16,266 - #41 [
+INFO  17:45:16,266 - #46 5
+INFO  17:45:16,267 - #42 ]
+INFO  17:45:16,267 - #34 ;
+INFO  17:45:16,267 - #13 for
+INFO  17:45:16,267 - #39 (
+INFO  17:45:16,267 - #45 i
+INFO  17:45:16,267 - #31 =
+INFO  17:45:16,267 - #46 0
+INFO  17:45:16,267 - #34 ;
+INFO  17:45:16,267 - #45 i
+INFO  17:45:16,267 - #26 <
+INFO  17:45:16,267 - #46 5
+INFO  17:45:16,268 - #34 ;
+INFO  17:45:16,268 - #45 i
+INFO  17:45:16,268 - #32 ++
+INFO  17:45:16,268 - #40 )
+INFO  17:45:16,268 - #45 niz
+INFO  17:45:16,268 - #41 [
+INFO  17:45:16,268 - #45 i
+INFO  17:45:16,268 - #42 ]
+INFO  17:45:16,268 - #31 =
+INFO  17:45:16,268 - #45 i
+INFO  17:45:16,268 - #19 *
+INFO  17:45:16,268 - #46 2
+INFO  17:45:16,268 - #34 ;
+INFO  17:45:16,268 - #45 naso
+INFO  17:45:16,269 - #31 =
+INFO  17:45:16,269 - #45 niz
+INFO  17:45:16,269 - #37 .
+INFO  17:45:16,269 - #15 findAny
+INFO  17:45:16,269 - #39 (
+INFO  17:45:16,269 - #46 6
+INFO  17:45:16,269 - #40 )
+INFO  17:45:16,269 - #34 ;
+INFO  17:45:16,269 - #5 print
+INFO  17:45:16,269 - #39 (
+INFO  17:45:16,269 - #45 naso
+INFO  17:45:16,269 - #40 )
+INFO  17:45:16,270 - #34 ;
+INFO  17:45:16,270 - #5 print
+INFO  17:45:16,270 - #39 (
+INFO  17:45:16,270 - #45 eol
+INFO  17:45:16,270 - #40 )
+INFO  17:45:16,270 - #34 ;
+INFO  17:45:16,270 - #45 naso
+INFO  17:45:16,270 - #31 =
+INFO  17:45:16,270 - #45 niz
+INFO  17:45:16,270 - #37 .
+INFO  17:45:16,270 - #15 findAny
+INFO  17:45:16,270 - #39 (
+INFO  17:45:16,270 - #46 7
+INFO  17:45:16,270 - #40 )
+INFO  17:45:16,270 - #34 ;
+INFO  17:45:16,270 - #5 print
+INFO  17:45:16,270 - #39 (
+INFO  17:45:16,270 - #45 naso
+INFO  17:45:16,270 - #40 )
+INFO  17:45:16,270 - #34 ;
+INFO  17:45:16,270 - #5 print
+INFO  17:45:16,270 - #39 (
+INFO  17:45:16,270 - #45 eol
+INFO  17:45:16,270 - #40 )
+INFO  17:45:16,271 - #34 ;
+INFO  17:45:16,271 - #45 naso
+INFO  17:45:16,271 - #31 =
+INFO  17:45:16,271 - #45 niz
+INFO  17:45:16,271 - #37 .
+INFO  17:45:16,271 - #15 findAny
+INFO  17:45:16,271 - #39 (
+INFO  17:45:16,271 - #46 0
+INFO  17:45:16,271 - #40 )
+INFO  17:45:16,271 - #34 ;
+INFO  17:45:16,271 - #5 print
+INFO  17:45:16,271 - #39 (
+INFO  17:45:16,271 - #45 naso
+INFO  17:45:16,271 - #40 )
+INFO  17:45:16,271 - #34 ;
+INFO  17:45:16,271 - #5 print
+INFO  17:45:16,271 - #39 (
+INFO  17:45:16,271 - #45 eol
+INFO  17:45:16,271 - #40 )
+INFO  17:45:16,271 - #34 ;
+INFO  17:45:16,271 - #45 naso
+INFO  17:45:16,271 - #31 =
+INFO  17:45:16,271 - #45 niz
+INFO  17:45:16,271 - #37 .
+INFO  17:45:16,271 - #15 findAny
+INFO  17:45:16,271 - #39 (
+INFO  17:45:16,271 - #46 8
+INFO  17:45:16,271 - #40 )
+INFO  17:45:16,271 - #34 ;
+INFO  17:45:16,271 - #5 print
+INFO  17:45:16,272 - #39 (
+INFO  17:45:16,272 - #45 naso
+INFO  17:45:16,272 - #40 )
+INFO  17:45:16,272 - #34 ;
+INFO  17:45:16,272 - #5 print
+INFO  17:45:16,272 - #39 (
+INFO  17:45:16,272 - #45 eol
+INFO  17:45:16,272 - #40 )
+INFO  17:45:16,272 - #34 ;
+INFO  17:45:16,272 - #45 slova
+INFO  17:45:16,272 - #31 =
+INFO  17:45:16,272 - #4 new
+INFO  17:45:16,272 - #45 char
+INFO  17:45:16,272 - #41 [
+INFO  17:45:16,272 - #46 3
+INFO  17:45:16,272 - #42 ]
+INFO  17:45:16,272 - #34 ;
+INFO  17:45:16,272 - #45 slova
+INFO  17:45:16,272 - #41 [
+INFO  17:45:16,272 - #46 0
+INFO  17:45:16,272 - #42 ]
+INFO  17:45:16,272 - #31 =
+INFO  17:45:16,272 - #48 a
+INFO  17:45:16,272 - #34 ;
+INFO  17:45:16,272 - #45 slova
+INFO  17:45:16,272 - #41 [
+INFO  17:45:16,272 - #46 1
+INFO  17:45:16,272 - #42 ]
+INFO  17:45:16,272 - #31 =
+INFO  17:45:16,272 - #48 b
+INFO  17:45:16,272 - #34 ;
+INFO  17:45:16,273 - #45 slova
+INFO  17:45:16,273 - #41 [
+INFO  17:45:16,273 - #46 2
+INFO  17:45:16,273 - #42 ]
+INFO  17:45:16,273 - #31 =
+INFO  17:45:16,273 - #48 c
+INFO  17:45:16,273 - #34 ;
+INFO  17:45:16,273 - #45 naso
+INFO  17:45:16,273 - #31 =
+INFO  17:45:16,273 - #45 slova
+INFO  17:45:16,273 - #37 .
+INFO  17:45:16,273 - #15 findAny
+INFO  17:45:16,273 - #39 (
+INFO  17:45:16,273 - #48 b
+INFO  17:45:16,273 - #40 )
+INFO  17:45:16,273 - #34 ;
+INFO  17:45:16,273 - #5 print
+INFO  17:45:16,273 - #39 (
+INFO  17:45:16,273 - #45 naso
+INFO  17:45:16,273 - #40 )
+INFO  17:45:16,273 - #34 ;
+INFO  17:45:16,273 - #5 print
+INFO  17:45:16,273 - #39 (
+INFO  17:45:16,273 - #45 eol
+INFO  17:45:16,273 - #40 )
+INFO  17:45:16,273 - #34 ;
+INFO  17:45:16,273 - #45 naso
+INFO  17:45:16,273 - #31 =
+INFO  17:45:16,273 - #45 slova
+INFO  17:45:16,273 - #37 .
+INFO  17:45:16,273 - #15 findAny
+INFO  17:45:16,273 - #39 (
+INFO  17:45:16,273 - #48 z
+INFO  17:45:16,273 - #40 )
+INFO  17:45:16,273 - #34 ;
+INFO  17:45:16,273 - #5 print
+INFO  17:45:16,273 - #39 (
+INFO  17:45:16,273 - #45 naso
+INFO  17:45:16,273 - #40 )
+INFO  17:45:16,273 - #34 ;
+INFO  17:45:16,274 - #5 print
+INFO  17:45:16,274 - #39 (
+INFO  17:45:16,274 - #45 eol
+INFO  17:45:16,274 - #40 )
+INFO  17:45:16,274 - #34 ;
+INFO  17:45:16,274 - #45 nasoNiz
+INFO  17:45:16,274 - #31 =
+INFO  17:45:16,274 - #4 new
+INFO  17:45:16,274 - #45 bool
+INFO  17:45:16,274 - #41 [
+INFO  17:45:16,274 - #46 2
+INFO  17:45:16,274 - #42 ]
+INFO  17:45:16,274 - #34 ;
+INFO  17:45:16,274 - #45 i
+INFO  17:45:16,274 - #31 =
+INFO  17:45:16,274 - #46 1
+INFO  17:45:16,274 - #34 ;
+INFO  17:45:16,274 - #45 nasoNiz
+INFO  17:45:16,274 - #41 [
+INFO  17:45:16,274 - #45 i
+INFO  17:45:16,274 - #42 ]
+INFO  17:45:16,274 - #31 =
+INFO  17:45:16,274 - #45 niz
+INFO  17:45:16,274 - #37 .
+INFO  17:45:16,274 - #15 findAny
+INFO  17:45:16,274 - #39 (
+INFO  17:45:16,274 - #46 4
+INFO  17:45:16,274 - #40 )
+INFO  17:45:16,274 - #34 ;
+INFO  17:45:16,274 - #5 print
+INFO  17:45:16,274 - #39 (
+INFO  17:45:16,274 - #45 nasoNiz
+INFO  17:45:16,274 - #41 [
+INFO  17:45:16,274 - #46 1
+INFO  17:45:16,274 - #42 ]
+INFO  17:45:16,274 - #40 )
+INFO  17:45:16,274 - #34 ;
+INFO  17:45:16,274 - #5 print
+INFO  17:45:16,274 - #39 (
+INFO  17:45:16,274 - #45 eol
+INFO  17:45:16,274 - #40 )
+INFO  17:45:16,274 - #34 ;
+INFO  17:45:16,274 - #45 zastave
+INFO  17:45:16,274 - #31 =
+INFO  17:45:16,274 - #4 new
+INFO  17:45:16,274 - #45 bool
+INFO  17:45:16,275 - #41 [
+INFO  17:45:16,275 - #46 2
+INFO  17:45:16,275 - #42 ]
+INFO  17:45:16,275 - #34 ;
+INFO  17:45:16,276 - #45 zastave
+INFO  17:45:16,276 - #41 [
+INFO  17:45:16,276 - #46 0
+INFO  17:45:16,276 - #42 ]
+INFO  17:45:16,276 - #31 =
+INFO  17:45:16,276 - #47 0
+INFO  17:45:16,276 - #34 ;
+INFO  17:45:16,276 - #45 zastave
+INFO  17:45:16,276 - #41 [
+INFO  17:45:16,276 - #46 1
+INFO  17:45:16,276 - #42 ]
+INFO  17:45:16,276 - #31 =
+INFO  17:45:16,276 - #47 0
+INFO  17:45:16,276 - #34 ;
+INFO  17:45:16,276 - #45 lokalni
+INFO  17:45:16,276 - #31 =
+INFO  17:45:16,276 - #45 zastave
+INFO  17:45:16,276 - #37 .
+INFO  17:45:16,276 - #15 findAny
+INFO  17:45:16,276 - #39 (
+INFO  17:45:16,276 - #47 1
+INFO  17:45:16,276 - #40 )
+INFO  17:45:16,276 - #34 ;
+INFO  17:45:16,276 - #5 print
+INFO  17:45:16,276 - #39 (
+INFO  17:45:16,276 - #45 lokalni
+INFO  17:45:16,276 - #40 )
+INFO  17:45:16,277 - #34 ;
+INFO  17:45:16,277 - #5 print
+INFO  17:45:16,277 - #39 (
+INFO  17:45:16,277 - #45 eol
+INFO  17:45:16,277 - #40 )
+INFO  17:45:16,277 - #34 ;
+INFO  17:45:16,277 - #44 }
+INFO  17:45:16,277 - #44 }
+INFO  17:45:16,279 - Program(
   ProgramName(
    GenFindAny
   ) [ProgramName]
@@ -1303,65 +1303,65 @@ INFO  17:58:17,350 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:17,350 - =================================================
-INFO  17:58:17,352 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,352 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
-INFO  17:58:17,352 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
-INFO  17:58:17,352 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
-INFO  17:58:17,352 - Pretraga na 25(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,352 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
-INFO  17:58:17,352 - Pretraga na 25(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,352 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
-INFO  17:58:17,352 - Pretraga na 27(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,352 - Pretraga na 27(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,352 - Pretraga na 27(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,352 - Pretraga na 27(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,352 - Pretraga na 28(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,352 - Pretraga na 28(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,352 - Pretraga na 28(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,352 - Pretraga na 28(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,352 - Pretraga na 29(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,352 - Pretraga na 29(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,353 - Pretraga na 29(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,353 - Pretraga na 29(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,353 - Pretraga na 30(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,353 - Pretraga na 30(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,353 - Pretraga na 30(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,353 - Pretraga na 30(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,353 - Pretraga na 32(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  17:58:17,353 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  17:58:17,353 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  17:58:17,353 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  17:58:17,353 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  17:58:17,353 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  17:58:17,353 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  17:58:17,353 - Pretraga na 34(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,353 - Pretraga na 34(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  17:58:17,353 - Pretraga na 34(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,353 - Pretraga na 34(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,353 - Pretraga na 35(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,353 - Pretraga na 35(slova), nadjeno Var slova: Arr of char, 2, 0
-INFO  17:58:17,353 - Pretraga na 35(naso), nadjeno Var naso: bool, 4, 0
-INFO  17:58:17,353 - Pretraga na 35(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,353 - Pretraga na 38(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
-INFO  17:58:17,353 - Pretraga na 39(i), nadjeno Var i: int, 1, 0
-INFO  17:58:17,353 - Pretraga na 40(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
-INFO  17:58:17,353 - Pretraga na 40(i), nadjeno Var i: int, 1, 0
-INFO  17:58:17,353 - Pretraga na 40(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
-INFO  17:58:17,353 - Pretraga na 40(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,353 - Pretraga na 41(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
-INFO  17:58:17,353 - Pretraga na 41(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
-INFO  17:58:17,353 - Pretraga na 41(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,353 - Pretraga na 44(zastave), nadjeno Var zastave: Arr of bool, 3, 0
-INFO  17:58:17,353 - Pretraga na 45(zastave), nadjeno Var zastave: Arr of bool, 3, 0
-INFO  17:58:17,353 - Pretraga na 45(zastave), nadjeno Var zastave: Arr of bool, 3, 0
-INFO  17:58:17,353 - Pretraga na 45(zastave), nadjeno Var zastave: Arr of bool, 3, 0
-INFO  17:58:17,353 - Pretraga na 45(zastave), nadjeno Var zastave: Arr of bool, 3, 0
-INFO  17:58:17,353 - Pretraga na 46(lokalni), nadjeno Var lokalni: bool, 0, 1
-INFO  17:58:17,353 - Pretraga na 46(zastave), nadjeno Var zastave: Arr of bool, 3, 0
-INFO  17:58:17,353 - Pretraga na 47(lokalni), nadjeno Var lokalni: bool, 0, 1
-INFO  17:58:17,353 - Pretraga na 47(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,353 - =================================================
+INFO  17:45:16,280 - =================================================
+INFO  17:45:16,295 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,295 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
+INFO  17:45:16,295 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
+INFO  17:45:16,295 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
+INFO  17:45:16,295 - Pretraga na 25(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,295 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
+INFO  17:45:16,295 - Pretraga na 25(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,295 - Pretraga na 25(i), nadjeno Var i: int, 1, 0
+INFO  17:45:16,295 - Pretraga na 27(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,295 - Pretraga na 27(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,295 - Pretraga na 27(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,295 - Pretraga na 27(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,295 - Pretraga na 28(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,295 - Pretraga na 28(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,295 - Pretraga na 28(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,295 - Pretraga na 28(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,295 - Pretraga na 29(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,295 - Pretraga na 29(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,295 - Pretraga na 29(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,295 - Pretraga na 29(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,295 - Pretraga na 30(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,295 - Pretraga na 30(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,295 - Pretraga na 30(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,295 - Pretraga na 30(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,295 - Pretraga na 32(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:45:16,295 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:45:16,295 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:45:16,296 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:45:16,296 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:45:16,296 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:45:16,296 - Pretraga na 33(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:45:16,296 - Pretraga na 34(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,296 - Pretraga na 34(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:45:16,296 - Pretraga na 34(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,296 - Pretraga na 34(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,296 - Pretraga na 35(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,296 - Pretraga na 35(slova), nadjeno Var slova: Arr of char, 2, 0
+INFO  17:45:16,296 - Pretraga na 35(naso), nadjeno Var naso: bool, 4, 0
+INFO  17:45:16,296 - Pretraga na 35(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,296 - Pretraga na 38(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
+INFO  17:45:16,296 - Pretraga na 39(i), nadjeno Var i: int, 1, 0
+INFO  17:45:16,296 - Pretraga na 40(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
+INFO  17:45:16,296 - Pretraga na 40(i), nadjeno Var i: int, 1, 0
+INFO  17:45:16,296 - Pretraga na 40(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
+INFO  17:45:16,296 - Pretraga na 40(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,296 - Pretraga na 41(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
+INFO  17:45:16,296 - Pretraga na 41(nasoNiz), nadjeno Var nasoNiz: Arr of bool, 5, 0
+INFO  17:45:16,296 - Pretraga na 41(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,296 - Pretraga na 44(zastave), nadjeno Var zastave: Arr of bool, 3, 0
+INFO  17:45:16,296 - Pretraga na 45(zastave), nadjeno Var zastave: Arr of bool, 3, 0
+INFO  17:45:16,296 - Pretraga na 45(zastave), nadjeno Var zastave: Arr of bool, 3, 0
+INFO  17:45:16,296 - Pretraga na 45(zastave), nadjeno Var zastave: Arr of bool, 3, 0
+INFO  17:45:16,296 - Pretraga na 45(zastave), nadjeno Var zastave: Arr of bool, 3, 0
+INFO  17:45:16,296 - Pretraga na 46(lokalni), nadjeno Var lokalni: bool, 0, 1
+INFO  17:45:16,296 - Pretraga na 46(zastave), nadjeno Var zastave: Arr of bool, 3, 0
+INFO  17:45:16,296 - Pretraga na 47(lokalni), nadjeno Var lokalni: bool, 0, 1
+INFO  17:45:16,296 - Pretraga na 47(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,296 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -1389,4 +1389,4 @@ Prog GenFindAny: notype, 0, 1
 
 
 
-INFO  17:58:17,355 - Generisanje uspesno zavrseno: test/67_gen_findAny.obj
+INFO  17:45:16,300 - Generisanje uspesno zavrseno: test/67_gen_findAny.obj

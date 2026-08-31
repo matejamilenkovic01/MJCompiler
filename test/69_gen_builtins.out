@@ -1,131 +1,131 @@
-INFO  17:58:17,722 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/69_gen_builtins.mj
-INFO  17:58:17,730 - #2 program
-INFO  17:58:17,730 - #45 GenUgradjene
-INFO  17:58:17,731 - #45 int
-INFO  17:58:17,731 - #45 niz
-INFO  17:58:17,731 - #41 [
-INFO  17:58:17,731 - #42 ]
-INFO  17:58:17,731 - #34 ;
-INFO  17:58:17,731 - #45 char
-INFO  17:58:17,731 - #45 c
-INFO  17:58:17,731 - #34 ;
-INFO  17:58:17,731 - #43 {
-INFO  17:58:17,731 - #7 void
-INFO  17:58:17,731 - #45 main
-INFO  17:58:17,731 - #39 (
-INFO  17:58:17,732 - #40 )
-INFO  17:58:17,732 - #43 {
-INFO  17:58:17,732 - #45 niz
-INFO  17:58:17,732 - #31 =
-INFO  17:58:17,732 - #4 new
-INFO  17:58:17,732 - #45 int
-INFO  17:58:17,732 - #41 [
-INFO  17:58:17,732 - #46 4
-INFO  17:58:17,732 - #42 ]
-INFO  17:58:17,732 - #34 ;
-INFO  17:58:17,732 - #5 print
-INFO  17:58:17,732 - #39 (
-INFO  17:58:17,732 - #45 ord
-INFO  17:58:17,732 - #39 (
-INFO  17:58:17,732 - #48 A
-INFO  17:58:17,732 - #40 )
-INFO  17:58:17,732 - #40 )
-INFO  17:58:17,733 - #34 ;
-INFO  17:58:17,733 - #5 print
-INFO  17:58:17,733 - #39 (
-INFO  17:58:17,733 - #45 eol
-INFO  17:58:17,733 - #40 )
-INFO  17:58:17,733 - #34 ;
-INFO  17:58:17,733 - #5 print
-INFO  17:58:17,733 - #39 (
-INFO  17:58:17,733 - #45 chr
-INFO  17:58:17,733 - #39 (
-INFO  17:58:17,733 - #46 66
-INFO  17:58:17,733 - #40 )
-INFO  17:58:17,733 - #40 )
-INFO  17:58:17,733 - #34 ;
-INFO  17:58:17,733 - #5 print
-INFO  17:58:17,733 - #39 (
-INFO  17:58:17,733 - #45 eol
-INFO  17:58:17,733 - #40 )
-INFO  17:58:17,733 - #34 ;
-INFO  17:58:17,733 - #5 print
-INFO  17:58:17,733 - #39 (
-INFO  17:58:17,733 - #45 len
-INFO  17:58:17,733 - #39 (
-INFO  17:58:17,733 - #45 niz
-INFO  17:58:17,733 - #40 )
-INFO  17:58:17,733 - #40 )
-INFO  17:58:17,733 - #34 ;
-INFO  17:58:17,733 - #5 print
-INFO  17:58:17,733 - #39 (
-INFO  17:58:17,733 - #45 eol
-INFO  17:58:17,734 - #40 )
-INFO  17:58:17,734 - #34 ;
-INFO  17:58:17,734 - #5 print
-INFO  17:58:17,734 - #39 (
-INFO  17:58:17,734 - #45 niz
-INFO  17:58:17,734 - #37 .
-INFO  17:58:17,734 - #14 length
-INFO  17:58:17,734 - #40 )
-INFO  17:58:17,734 - #34 ;
-INFO  17:58:17,734 - #5 print
-INFO  17:58:17,734 - #39 (
-INFO  17:58:17,734 - #45 eol
-INFO  17:58:17,734 - #40 )
-INFO  17:58:17,734 - #34 ;
-INFO  17:58:17,734 - #5 print
-INFO  17:58:17,734 - #39 (
-INFO  17:58:17,734 - #45 ord
-INFO  17:58:17,734 - #39 (
-INFO  17:58:17,734 - #45 chr
-INFO  17:58:17,734 - #39 (
-INFO  17:58:17,734 - #46 67
-INFO  17:58:17,734 - #40 )
-INFO  17:58:17,734 - #40 )
-INFO  17:58:17,734 - #40 )
-INFO  17:58:17,734 - #34 ;
-INFO  17:58:17,734 - #5 print
-INFO  17:58:17,734 - #39 (
-INFO  17:58:17,734 - #45 eol
-INFO  17:58:17,734 - #40 )
-INFO  17:58:17,734 - #34 ;
-INFO  17:58:17,734 - #45 c
-INFO  17:58:17,734 - #31 =
-INFO  17:58:17,734 - #48 a
-INFO  17:58:17,734 - #34 ;
-INFO  17:58:17,734 - #5 print
-INFO  17:58:17,734 - #39 (
-INFO  17:58:17,734 - #45 ord
-INFO  17:58:17,735 - #39 (
-INFO  17:58:17,735 - #45 c
-INFO  17:58:17,735 - #40 )
-INFO  17:58:17,735 - #40 )
-INFO  17:58:17,735 - #34 ;
-INFO  17:58:17,735 - #5 print
-INFO  17:58:17,735 - #39 (
-INFO  17:58:17,735 - #45 eol
-INFO  17:58:17,735 - #40 )
-INFO  17:58:17,735 - #34 ;
-INFO  17:58:17,735 - #5 print
-INFO  17:58:17,735 - #39 (
-INFO  17:58:17,735 - #45 chr
-INFO  17:58:17,735 - #39 (
-INFO  17:58:17,735 - #45 ord
-INFO  17:58:17,735 - #39 (
-INFO  17:58:17,735 - #45 c
-INFO  17:58:17,735 - #40 )
-INFO  17:58:17,735 - #40 )
-INFO  17:58:17,735 - #40 )
-INFO  17:58:17,735 - #34 ;
-INFO  17:58:17,735 - #5 print
-INFO  17:58:17,735 - #39 (
-INFO  17:58:17,735 - #45 eol
-INFO  17:58:17,735 - #40 )
-INFO  17:58:17,735 - #34 ;
-INFO  17:58:17,735 - #44 }
-INFO  17:58:17,735 - #44 }
-INFO  17:58:17,736 - Program(
+INFO  17:45:16,688 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/69_gen_builtins.mj
+INFO  17:45:16,699 - #2 program
+INFO  17:45:16,699 - #45 GenUgradjene
+INFO  17:45:16,699 - #45 int
+INFO  17:45:16,699 - #45 niz
+INFO  17:45:16,700 - #41 [
+INFO  17:45:16,700 - #42 ]
+INFO  17:45:16,700 - #34 ;
+INFO  17:45:16,700 - #45 char
+INFO  17:45:16,700 - #45 c
+INFO  17:45:16,700 - #34 ;
+INFO  17:45:16,700 - #43 {
+INFO  17:45:16,700 - #7 void
+INFO  17:45:16,700 - #45 main
+INFO  17:45:16,700 - #39 (
+INFO  17:45:16,700 - #40 )
+INFO  17:45:16,701 - #43 {
+INFO  17:45:16,701 - #45 niz
+INFO  17:45:16,701 - #31 =
+INFO  17:45:16,701 - #4 new
+INFO  17:45:16,701 - #45 int
+INFO  17:45:16,701 - #41 [
+INFO  17:45:16,701 - #46 4
+INFO  17:45:16,701 - #42 ]
+INFO  17:45:16,701 - #34 ;
+INFO  17:45:16,701 - #5 print
+INFO  17:45:16,702 - #39 (
+INFO  17:45:16,702 - #45 ord
+INFO  17:45:16,702 - #39 (
+INFO  17:45:16,702 - #48 A
+INFO  17:45:16,702 - #40 )
+INFO  17:45:16,702 - #40 )
+INFO  17:45:16,702 - #34 ;
+INFO  17:45:16,702 - #5 print
+INFO  17:45:16,702 - #39 (
+INFO  17:45:16,702 - #45 eol
+INFO  17:45:16,702 - #40 )
+INFO  17:45:16,702 - #34 ;
+INFO  17:45:16,702 - #5 print
+INFO  17:45:16,702 - #39 (
+INFO  17:45:16,702 - #45 chr
+INFO  17:45:16,702 - #39 (
+INFO  17:45:16,702 - #46 66
+INFO  17:45:16,702 - #40 )
+INFO  17:45:16,703 - #40 )
+INFO  17:45:16,703 - #34 ;
+INFO  17:45:16,703 - #5 print
+INFO  17:45:16,703 - #39 (
+INFO  17:45:16,703 - #45 eol
+INFO  17:45:16,703 - #40 )
+INFO  17:45:16,703 - #34 ;
+INFO  17:45:16,703 - #5 print
+INFO  17:45:16,703 - #39 (
+INFO  17:45:16,703 - #45 len
+INFO  17:45:16,703 - #39 (
+INFO  17:45:16,703 - #45 niz
+INFO  17:45:16,703 - #40 )
+INFO  17:45:16,703 - #40 )
+INFO  17:45:16,703 - #34 ;
+INFO  17:45:16,703 - #5 print
+INFO  17:45:16,703 - #39 (
+INFO  17:45:16,703 - #45 eol
+INFO  17:45:16,703 - #40 )
+INFO  17:45:16,703 - #34 ;
+INFO  17:45:16,703 - #5 print
+INFO  17:45:16,703 - #39 (
+INFO  17:45:16,703 - #45 niz
+INFO  17:45:16,703 - #37 .
+INFO  17:45:16,703 - #14 length
+INFO  17:45:16,704 - #40 )
+INFO  17:45:16,704 - #34 ;
+INFO  17:45:16,704 - #5 print
+INFO  17:45:16,704 - #39 (
+INFO  17:45:16,704 - #45 eol
+INFO  17:45:16,704 - #40 )
+INFO  17:45:16,704 - #34 ;
+INFO  17:45:16,704 - #5 print
+INFO  17:45:16,704 - #39 (
+INFO  17:45:16,704 - #45 ord
+INFO  17:45:16,704 - #39 (
+INFO  17:45:16,704 - #45 chr
+INFO  17:45:16,704 - #39 (
+INFO  17:45:16,704 - #46 67
+INFO  17:45:16,704 - #40 )
+INFO  17:45:16,704 - #40 )
+INFO  17:45:16,704 - #40 )
+INFO  17:45:16,704 - #34 ;
+INFO  17:45:16,704 - #5 print
+INFO  17:45:16,704 - #39 (
+INFO  17:45:16,704 - #45 eol
+INFO  17:45:16,704 - #40 )
+INFO  17:45:16,704 - #34 ;
+INFO  17:45:16,704 - #45 c
+INFO  17:45:16,705 - #31 =
+INFO  17:45:16,705 - #48 a
+INFO  17:45:16,705 - #34 ;
+INFO  17:45:16,705 - #5 print
+INFO  17:45:16,705 - #39 (
+INFO  17:45:16,705 - #45 ord
+INFO  17:45:16,705 - #39 (
+INFO  17:45:16,705 - #45 c
+INFO  17:45:16,705 - #40 )
+INFO  17:45:16,705 - #40 )
+INFO  17:45:16,705 - #34 ;
+INFO  17:45:16,705 - #5 print
+INFO  17:45:16,705 - #39 (
+INFO  17:45:16,705 - #45 eol
+INFO  17:45:16,705 - #40 )
+INFO  17:45:16,705 - #34 ;
+INFO  17:45:16,705 - #5 print
+INFO  17:45:16,705 - #39 (
+INFO  17:45:16,705 - #45 chr
+INFO  17:45:16,705 - #39 (
+INFO  17:45:16,705 - #45 ord
+INFO  17:45:16,705 - #39 (
+INFO  17:45:16,705 - #45 c
+INFO  17:45:16,705 - #40 )
+INFO  17:45:16,705 - #40 )
+INFO  17:45:16,705 - #40 )
+INFO  17:45:16,705 - #34 ;
+INFO  17:45:16,706 - #5 print
+INFO  17:45:16,706 - #39 (
+INFO  17:45:16,706 - #45 eol
+INFO  17:45:16,706 - #40 )
+INFO  17:45:16,706 - #34 ;
+INFO  17:45:16,706 - #44 }
+INFO  17:45:16,706 - #44 }
+INFO  17:45:16,707 - Program(
   ProgramName(
    GenUgradjene
   ) [ProgramName]
@@ -624,37 +624,37 @@ INFO  17:58:17,736 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:17,736 - =================================================
-INFO  17:58:17,738 - Pretraga na 19(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,738 - Pretraga na 21(ord), nadjeno Meth ord: int, 0, 1 
+INFO  17:45:16,707 - =================================================
+INFO  17:45:16,710 - Pretraga na 19(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,710 - Pretraga na 21(ord), nadjeno Meth ord: int, 0, 1 
    Var ch: char, 0, 1
-INFO  17:58:17,738 - Pretraga na 21(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,738 - Pretraga na 22(chr), nadjeno Meth chr: char, 0, 1 
+INFO  17:45:16,710 - Pretraga na 21(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,710 - Pretraga na 22(chr), nadjeno Meth chr: char, 0, 1 
    Var i: int, 0, 1
-INFO  17:58:17,738 - Pretraga na 22(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,738 - Pretraga na 23(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,738 - Pretraga na 23(len), nadjeno Meth len: int, 0, 1 
+INFO  17:45:16,710 - Pretraga na 22(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,710 - Pretraga na 23(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,710 - Pretraga na 23(len), nadjeno Meth len: int, 0, 1 
    Var arr: Arr of notype, 0, 1
-INFO  17:58:17,738 - Pretraga na 23(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,738 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 0, 0
-INFO  17:58:17,738 - Pretraga na 24(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,738 - Pretraga na 25(chr), nadjeno Meth chr: char, 0, 1 
+INFO  17:45:16,710 - Pretraga na 23(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,710 - Pretraga na 24(niz), nadjeno Var niz: Arr of int, 0, 0
+INFO  17:45:16,710 - Pretraga na 24(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,710 - Pretraga na 25(chr), nadjeno Meth chr: char, 0, 1 
    Var i: int, 0, 1
-INFO  17:58:17,739 - Pretraga na 25(ord), nadjeno Meth ord: int, 0, 1 
+INFO  17:45:16,710 - Pretraga na 25(ord), nadjeno Meth ord: int, 0, 1 
    Var ch: char, 0, 1
-INFO  17:58:17,739 - Pretraga na 25(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,739 - Pretraga na 26(c), nadjeno Var c: char, 1, 0
-INFO  17:58:17,739 - Pretraga na 27(c), nadjeno Var c: char, 1, 0
-INFO  17:58:17,739 - Pretraga na 27(ord), nadjeno Meth ord: int, 0, 1 
+INFO  17:45:16,710 - Pretraga na 25(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,711 - Pretraga na 26(c), nadjeno Var c: char, 1, 0
+INFO  17:45:16,711 - Pretraga na 27(c), nadjeno Var c: char, 1, 0
+INFO  17:45:16,711 - Pretraga na 27(ord), nadjeno Meth ord: int, 0, 1 
    Var ch: char, 0, 1
-INFO  17:58:17,739 - Pretraga na 27(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,739 - Pretraga na 28(c), nadjeno Var c: char, 1, 0
-INFO  17:58:17,739 - Pretraga na 28(ord), nadjeno Meth ord: int, 0, 1 
+INFO  17:45:16,711 - Pretraga na 27(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,711 - Pretraga na 28(c), nadjeno Var c: char, 1, 0
+INFO  17:45:16,711 - Pretraga na 28(ord), nadjeno Meth ord: int, 0, 1 
    Var ch: char, 0, 1
-INFO  17:58:17,739 - Pretraga na 28(chr), nadjeno Meth chr: char, 0, 1 
+INFO  17:45:16,711 - Pretraga na 28(chr), nadjeno Meth chr: char, 0, 1 
    Var i: int, 0, 1
-INFO  17:58:17,739 - Pretraga na 28(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:17,739 - =================================================
+INFO  17:45:16,711 - Pretraga na 28(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:16,711 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -677,4 +677,4 @@ Prog GenUgradjene: notype, 0, 1
 
 
 
-INFO  17:58:17,740 - Generisanje uspesno zavrseno: test/69_gen_builtins.obj
+INFO  17:45:16,712 - Generisanje uspesno zavrseno: test/69_gen_builtins.obj

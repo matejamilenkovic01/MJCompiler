@@ -1,43 +1,43 @@
-INFO  17:58:18,101 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/program.mj
-INFO  17:58:18,109 - #2 program
-INFO  17:58:18,109 - #45 Macko
-INFO  17:58:18,109 - #3 const
-INFO  17:58:18,110 - #45 int
-INFO  17:58:18,110 - #45 pi
-INFO  17:58:18,110 - #31 =
-INFO  17:58:18,110 - #46 3
-INFO  17:58:18,110 - #34 ;
-INFO  17:58:18,110 - #45 int
-INFO  17:58:18,110 - #45 x
-INFO  17:58:18,110 - #36 ,
-INFO  17:58:18,110 - #45 y
-INFO  17:58:18,110 - #41 [
-INFO  17:58:18,110 - #42 ]
-INFO  17:58:18,110 - #34 ;
-INFO  17:58:18,110 - #43 {
-INFO  17:58:18,111 - #7 void
-INFO  17:58:18,111 - #45 main
-INFO  17:58:18,111 - #39 (
-INFO  17:58:18,111 - #40 )
-INFO  17:58:18,111 - #45 int
-INFO  17:58:18,111 - #45 a
-INFO  17:58:18,111 - #36 ,
-INFO  17:58:18,111 - #45 b
-INFO  17:58:18,111 - #34 ;
-INFO  17:58:18,111 - #45 char
-INFO  17:58:18,111 - #45 carr
-INFO  17:58:18,111 - #41 [
-INFO  17:58:18,111 - #42 ]
-INFO  17:58:18,111 - #34 ;
-INFO  17:58:18,111 - #43 {
-INFO  17:58:18,111 - #5 print
-INFO  17:58:18,111 - #39 (
-INFO  17:58:18,112 - #48 c
-INFO  17:58:18,112 - #40 )
-INFO  17:58:18,112 - #34 ;
-INFO  17:58:18,112 - #44 }
-INFO  17:58:18,112 - #44 }
-INFO  17:58:18,112 - Program(
+INFO  17:45:17,325 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/program.mj
+INFO  17:45:17,336 - #2 program
+INFO  17:45:17,336 - #45 Macko
+INFO  17:45:17,336 - #3 const
+INFO  17:45:17,336 - #45 int
+INFO  17:45:17,336 - #45 pi
+INFO  17:45:17,336 - #31 =
+INFO  17:45:17,336 - #46 3
+INFO  17:45:17,336 - #34 ;
+INFO  17:45:17,337 - #45 int
+INFO  17:45:17,337 - #45 x
+INFO  17:45:17,337 - #36 ,
+INFO  17:45:17,337 - #45 y
+INFO  17:45:17,337 - #41 [
+INFO  17:45:17,337 - #42 ]
+INFO  17:45:17,337 - #34 ;
+INFO  17:45:17,337 - #43 {
+INFO  17:45:17,337 - #7 void
+INFO  17:45:17,337 - #45 main
+INFO  17:45:17,338 - #39 (
+INFO  17:45:17,338 - #40 )
+INFO  17:45:17,338 - #45 int
+INFO  17:45:17,338 - #45 a
+INFO  17:45:17,338 - #36 ,
+INFO  17:45:17,338 - #45 b
+INFO  17:45:17,338 - #34 ;
+INFO  17:45:17,338 - #45 char
+INFO  17:45:17,338 - #45 carr
+INFO  17:45:17,338 - #41 [
+INFO  17:45:17,338 - #42 ]
+INFO  17:45:17,339 - #34 ;
+INFO  17:45:17,339 - #43 {
+INFO  17:45:17,339 - #5 print
+INFO  17:45:17,339 - #39 (
+INFO  17:45:17,339 - #48 c
+INFO  17:45:17,339 - #40 )
+INFO  17:45:17,339 - #34 ;
+INFO  17:45:17,339 - #44 }
+INFO  17:45:17,339 - #44 }
+INFO  17:45:17,340 - Program(
   ProgramName(
    Macko
   ) [ProgramName]
@@ -139,8 +139,8 @@ INFO  17:58:18,112 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:18,112 - =================================================
-INFO  17:58:18,114 - =================================================
+INFO  17:45:17,340 - =================================================
+INFO  17:45:17,343 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -167,4 +167,4 @@ Prog Macko: notype, 0, 1
 
 
 
-INFO  17:58:18,115 - Generisanje uspesno zavrseno: test/program.obj
+INFO  17:45:17,344 - Generisanje uspesno zavrseno: test/program.obj

@@ -1,0 +1,1746 @@
+================================================================================
+ MJCompiler - PRIPREMA ZA ODBRANU
+ Kompajler za MikroJavu, PP1, ETF, 2025/2026. Ciljani nivo: B (30 poena).
+
+ Sadrzaj:
+   DEO I    Kako projekat radi, od pocetka do kraja
+   DEO II   Faza 1: leksicka analiza     - zahtev -> gde -> zasto
+   DEO III  Faza 2: sintaksna analiza    - zahtev -> gde -> zasto
+   DEO IV   Faza 3: semanticka analiza   - zahtev -> gde -> zasto
+   DEO V    Faza 4: generisanje koda     - teorija MJVM-a + zahtev -> gde -> zasto
+              V.1 memorijske oblasti      V.6 markeri i backpatching
+              V.2 stek masina             V.7 uslovi, grananja, petlje
+              V.3 klasa Code              V.8 radni lokali
+              V.4 adrese i level          V.9 kompletan disasembliran primer
+              V.5 zahtevi jedan po jedan
+   DEO VI   Amandmani (findAny, map) kroz sve cetiri faze
+   DEO VII  Build, testovi, isporuka
+   DEO VIII Pitanja koja se ocekuju na odbrani
+   DEO IX   Pet modifikacija za vezbanje
+================================================================================
+
+
+
+################################################################################
+ DEO I - KAKO PROJEKAT RADI, OD POCETKA DO KRAJA
+################################################################################
+
+Ulaz je tekstualni fajl na MikroJavi (test/*.mj). Izlaz je .obj fajl - bajtkod
+koji izvrsava MikroJava virtuelna masina. Izmedju su cetiri faze.
+
+
+ 1. LEKSICKA ANALIZA (skener)
+ ----------------------------
+ Tekst je za racunar samo niz karaktera. Skener ga grupise u TOKENE: "program"
+ je jedan token, "abc" je token IDENT sa vrednoscu "abc", "123" je token NUMBER
+ sa vrednoscu 123. Beline i komentari se bacaju. Svaki token nosi liniju i
+ kolonu na kojoj je nadjen - ta pozicija ce kasnije zavrsiti kao broj linije u
+ poruci o gresci, kroz sve tri naredne faze.
+
+ Skener se ne pise rucno. Pise se .flex specifikacija (regularni izrazi ->
+ akcije), a alat JFlex od nje pravi Java klasu Yylex.
+
+
+ 2. SINTAKSNA ANALIZA (parser)
+ -----------------------------
+ Parser proverava da li niz tokena cini gramaticki ispravan program, i usput
+ gradi APSTRAKTNO SINTAKSNO STABLO (AST) - strukturu u kojoj je program
+ predstavljen kao stablo objekata umesto kao ravan niz tokena.
+
+ Vazno: lekser i parser se PREPLICU. Ne postoji "prvo se sve leksira pa se onda
+ parsira". Parser vuce token po token pozivom next_token(), po potrebi.
+
+ Parser je LALR(1), radi ODOZDO NAVISE: gura tokene na stek i, kada vrh steka
+ odgovara desnoj strani neke produkcije, redukuje je u levu stranu. Na svakoj
+ redukciji nastaje po jedan AST cvor. Koren (Program) nastaje poslednji.
+
+ Ni parser se ne pise rucno. Pise se .cup gramatika, a alat AST-CUP od nje
+ pravi: parser (MJParser.java), tabelu tokena (sym.java) i po jednu Java klasu
+ za SVAKU produkciju u paketu ast/ (kod nas ~139 klasa).
+
+ Ako program ima sintaksnu gresku, parser je prijavi, OPORAVI SE i nastavi -
+ da bi se u jednom prolazu prijavilo vise gresaka, a ne samo prva.
+
+
+ 3. SEMANTICKA ANALIZA
+ ---------------------
+ Stablo je sada sintaksno ispravno, ali "int x; x = 'a' + true;" je i dalje
+ besmislica. Semanticka analiza obilazi stablo i proverava KONTEKSTNE USLOVE:
+ da li je ime deklarisano, da li se tipovi slazu, da li main postoji i da li je
+ void bez argumenata, itd.
+
+ Usput puni TABELU SIMBOLA - recnik koji za svako ime pamti sta je (Var, Con,
+ Meth, Type), kog je tipa i na kojoj je adresi. Tabela je organizovana u
+ OPSEGE (scope): univerzalni opseg (int, char, bool, ord, chr, len...), pa
+ opseg programa (globali), pa po jedan opseg za svaku metodu (parametri +
+ lokali). Ulaskom u metodu se opseg otvara, izlaskom zatvara.
+
+ Obilazak se radi VIZITOR obrascem: klasa SemanticAnalyzer nasledjuje
+ generisanu VisitorAdaptor i redefinise metodu visit(X) za svaki tip cvora koji
+ je nama zanimljiv. Obilazak je bottom-up - dete se poseti pre roditelja - pa
+ kada dodje red na roditelja, deca su vec izracunala svoje tipove.
+
+ Podaci se prenose kroz stablo preko dva polja koja AST-CUP generise na
+ cvorovima:
+     .struct   tip izraza  (na cvorovima deklarisanim kao Struct u .cup)
+     .obj      simbol      (na cvorovima deklarisanim kao Obj u .cup)
+
+
+ 4. GENERISANJE KODA
+ -------------------
+ Isti bottom-up obilazak stabla, druga klasa (CodeGenerator), ali sada se umesto
+ provera EMITUJU INSTRUKCIJE. Klasa Code iz mj-runtime jara je bafer bajtova sa
+ brojacem Code.pc; Code.put(...) upisuje instrukciju i pomera pc.
+
+ MJVM je STEK MASINA: instrukcije nemaju registre, nego rade nad stekom
+ operanada. "a + b" postaje: ucitaj a (na stek), ucitaj b (na stek), add
+ (skini dva, saberi, vrati jedan).
+
+ Na kraju Compiler upise zaglavlje (velicina koda, broj globalnih reci, adresa
+ main-a) i sve to snimi u .obj fajl.
+
+
+ 5. IZVRSAVANJE
+ --------------
+ MJVM ucita .obj, rezervise staticku zonu za globale, skoci na mainPc i
+ interpretira instrukcije. Memorija ima cetiri zone:
+     Code        instrukcije
+     StaticData  globalne promenljive
+     Heap        nizovi i objekti (niz pocinje skrivenom reci sa duzinom)
+     ProcStack   aktivacioni zapisi metoda (parametri + lokali)
+     ExprStack   operandi; izmedju dve instrukcije je normalno prazan
+
+
+ SVE ZAJEDNO, NA JEDNOM PRIMERU
+ ------------------------------
+    izvorni kod:   print(a + 1);
+
+    faza 1:        PRINT LPAREN IDENT(a) PLUS NUMBER(1) RPAREN SEMI
+    faza 2:        Statement_print( Expr_add( AddExpr_addop(
+                       AddExpr_term(...Designator_var "a"),
+                       Addop_plus,
+                       Term_factor(...FactorSub_number 1) )), PrintWidthOpt_epsilon )
+    faza 3:        "a" nadjen u tabeli simbola, tip int; 1 je int;
+                   int+int = int; print trazi int/char/bool -> u redu
+    faza 4:        getstatic 0    (ucitaj a)
+                   const_1        (ucitaj 1)
+                   add
+                   const_0        (sirina ispisa)
+                   print
+    izvrsavanje:   MJVM ispise vrednost
+
+
+ KO SE PISE RUCNO, A STA SE GENERISE
+ -----------------------------------
+ RUCNO (samo ovo):
+     src/spec/mjlexer.flex                   regularni izrazi -> tokeni
+     src/spec/mjparser.cup                   gramatika
+     src/rs/ac/bg/etf/pp1/SemanticAnalyzer.java
+     src/rs/ac/bg/etf/pp1/CodeGenerator.java
+     src/rs/ac/bg/etf/pp1/MyTab.java                 (prosirenje tabele simbola)
+     src/rs/ac/bg/etf/pp1/MyDumpSymbolTableVisitor.java
+     test/rs/ac/bg/etf/pp1/Compiler.java             (glavni program)
+     test/rs/ac/bg/etf/pp1/TestRunner.java           (pokretac testova)
+     test/*.mj                                       (testovi)
+
+ GENERISE SE (brise se pri svakom buildu, nikad ne diraj rucno):
+     Yylex.java, MJParser.java, sym.java, ast/*.java, mjparser_astbuild.cup
+
+ Compiler.java i TestRunner.java su namerno u test/ folderu: build brise sve iz
+ src/rs/ac/bg/etf/pp1/ (osim util/), pa bi ih inace obrisao.
+
+
+
+################################################################################
+ DEO II - FAZA 1: LEKSICKA ANALIZA
+################################################################################
+
+Fajl: src/spec/mjlexer.flex (104 linije). Alat: JFlex.jar -> Yylex.java.
+
+ZAHTEV IZ POSTAVKE                       GDE JE                        ZASTO TAKO
+--------------------------------------------------------------------------------
+Specifikacija u src/spec/mjlexer.flex,   mjlexer.flex:2                Trazeno doslovno; grader trazi tacnu putanju i paket.
+generisana klasa u paketu
+rs.ac.bg.etf.pp1
+
+Standardni CUP interfejs prema           mjlexer.flex:22 (%cup)        %cup direktiva kaze JFlex-u da generise next_token()
+parseru, token se vraca pozivom                                        koji vraca java_cup.runtime.Symbol - tacno ono sto
+next_token()                                                           parser ocekuje.
+
+Preskakanje belina                       mjlexer.flex:34-40            Postavka nabraja tacno: ' ', \b, \t, \r, \n, \f.
+(\t \r \n ' ' \b \f)                                                   Svako pravilo ima praznu akciju - token se ne vraca,
+                                                                       skener samo nastavi dalje.
+
+Komentari se preskacu                    mjlexer.flex:26, 91-95        "//" prebacuje skener u posebno stanje COMMENT
+                                                                       (%xstate). U tom stanju se svaki karakter guta, a
+                                                                       novi red vraca u YYINITIAL. Moglo je i jednim
+                                                                       regularnim izrazom, ali stanje je citljivije i lakse
+                                                                       se prosiruje na blok-komentare.
+
+Kljucne reci                             mjlexer.flex:42-59            Stoje PRE pravila za identifikator (linija 101).
+                                                                       JFlex kod istog najduzeg poklapanja bira pravilo koje
+                                                                       je NAVEDENO PRVO - da je ident bio iznad, "program"
+                                                                       bi se prepoznao kao obican identifikator.
+
+Operatori                                mjlexer.flex:61-88            Isto pravilo najduzeg poklapanja resava "=" vs "==":
+                                                                       za ulaz "==" JFlex uzima duze poklapanje bez obzira
+                                                                       na redosled. Zato je "==" bezbedno.
+
+Konstante: numConst, charConst,          mjlexer.flex:97-100           Vrednost se pakuje u Symbol: Integer za broj,
+boolConst                                                              Character za znak (uzima se yytext().charAt(1), tj.
+                                                                       sadrzaj izmedju apostrofa), a boolConst se odmah
+                                                                       prevodi u 1/0 - da faza 4 moze da ga ucita kao
+                                                                       obicnu celobrojnu konstantu.
+
+Identifikatori                           mjlexer.flex:101              [MJ]: letter {letter | digit | "_"}. Prvo mora biti
+                                                                       slovo, pa je zato ([a-z]|[A-Z]) pa tek onda klasa sa
+                                                                       cifrom i donjom crtom.
+
+Pozicija tokena (linija, kolona)         mjlexer.flex:11-18, 22-24     %line i %column ukljucuju brojace. Pomocna metoda
+                                                                       new_symbol pakuje yyline+1 (JFlex broji od nule, a
+                                                                       ljudi od jedan) i yycolumn u Symbol. Ta pozicija je
+                                                                       jedini izvor broja linije u SVIM kasnijim porukama.
+
+Leksicka greska: ispisati neprepoznati   mjlexer.flex:103              Pravilo "." na samom kraju hvata sve sto nijedno
+tekst + liniju + kolonu, pa NASTAVITI                                  prethodno pravilo nije uhvatilo. Ispis ide na
+                                                                       System.err (postavka: greske na stderr), token se ne
+                                                                       vraca, pa parser ni ne primeti da je nesto bilo.
+
+NAPOMENA KOJU TREBA ZNATI: leksicka greska ne dize nikakvu zastavicu. p.errorDetected
+ostaje false, pa prevodilac za "int x@;" ispise gresku ali prevede program kao da je
+"int x;". Postavka izricito trazi samo "ispisati i nastaviti", pa je ovo u skladu sa
+njom - ali ako te pitaju, ovo je svesna odluka, a ne previd.
+
+
+
+################################################################################
+ DEO III - FAZA 2: SINTAKSNA ANALIZA
+################################################################################
+
+Fajl: src/spec/mjparser.cup (510 linija). Alat: cup_v10k.jar (AST-CUP).
+
+
+ III.1  KAKO PARSER RADI (za teorijska pitanja)
+ ----------------------------------------------
+ Pri buildu CUP izracuna LALR(1) automat i upise ga u MJParser.java kao spakovane
+ nizove brojeva (_action_table, _reduce_table, _production_table). U vreme
+ izvrsavanja se nista ne racuna - samo se gleda u tabelu:
+
+     akcija = _action_table[stanje][sledeci token]
+
+ Cetiri ishoda:
+     shift    gurni token na stek, procitaj sledeci
+     reduce   skini desnu stranu sa steka, NAPRAVI AST CVOR, gurni levu stranu
+     accept   sve redukovano do Program, lookahead je EOF -> gotovo
+     prazno   nema akcije -> SINTAKSNA GRESKA
+
+ Odlucuje PAR (stanje, lookahead), ne stanje samo. Reduce NE trosi token - nad
+ istim lookahead-om se moze desiti vise redukcija zaredom, pa tek onda shift.
+
+ ZASTO JE KONFLIKT FATALAN: celija tabele drzi jednu vrednost. Shift/reduce
+ konflikt znaci da bi u istu celiju trebalo upisati i shift i reduce - CUP tada
+ odbija da generise tabelu. Direktiva precedence ne menja gramatiku, samo kaze
+ CUP-u koju od dve akcije da upise.
+
+
+ III.2  KAKO NASTAJE STABLO
+ --------------------------
+ CVOR NASTAJE ISKLJUCIVO NA REDUCE. Shift nikad ne pravi cvor.
+ Broj cvorova u stablu = broj izvrsenih redukcija.
+
+ Lanac od leksera do polja u klasi:
+
+     mjlexer.flex     new_symbol(sym.IDENT, yytext())   -> value="Macko", left=3
+          v
+     mjparser.cup     ProgramName ::= (ProgramName) IDENT:progName
+          v
+     MJParser.java    RESULT = new ProgramName(progName);
+                      RESULT.setLine(progNameleft);
+          v
+     ast/ProgramName.java     class ProgramName { String progName; }
+          v
+     faza 3           programName.getProgName()  ->  "Macko"
+
+ Odatle dva pravila koja su vazila pri pisanju gramatike:
+   - svaka produkcija ima JEDINSTVENO ime -> od njega nastaje ime Java klase
+   - labele se stavljaju na TERMINALE (IDENT:name) -> postaju polja klase koja
+     kasnije faze citaju. Na neterminalima su nepotrebne, jer AST-CUP dete ionako
+     ubacuje kao polje.
+
+
+ III.3  ZAHTEVI IZ POSTAVKE
+ --------------------------
+
+ZAHTEV                                   GDE JE                        ZASTO TAKO
+--------------------------------------------------------------------------------
+Gramatika po [MJ], neterminali imenovani mjparser.cup:88-116           Imena su doslovno iz [MJ] A.2 (Program, ConstDecl,
+kako propisuje specifikacija                                           VarDecl, MethodDecl, Statement, Condition, CondTerm,
+                                                                       CondFact, Expr, Term, Factor, Designator...).
+                                                                       Sopstveni neterminali su dodati samo gde je [MJ]
+                                                                       koristio {} i [] zapis (liste i opcioni delovi):
+                                                                       ConstItemList, VarItemList, StatementList,
+                                                                       FormParsOpt, ActParsOpt, ForInitOpt/CondOpt/StepOpt,
+                                                                       PrintWidthOpt, ReturnExprOpt - CUP ne poznaje EBNF,
+                                                                       pa se ponavljanje mora napisati kao leva rekurzija,
+                                                                       a opcioni deo kao smena sa epsilon granom.
+
+Svaka produkcija ima jedinstveno ime     svuda, u zagradama:           Bez toga AST-CUP ne moze da generise klasu.
+                                         (DeclList_const) itd.         Konvencija u fajlu: Neterminal_varijanta.
+
+Nijedna precedence direktiva osim        mjparser.cup:120              Dangling else: za "if(a) if(b) S1 else S2" postoji
+"precedence left ELSE;"                                                shift/reduce konflikt (da li else pripada
+                                                                       unutrasnjem ili spoljasnjem if-u). "precedence left
+                                                                       ELSE" kaze CUP-u da izabere shift, pa se else
+                                                                       vezuje za NAJBLIZI if - kao u Javi. Ovo je jedina
+                                                                       precedence direktiva u fajlu.
+
+Nema akcija {: :} osim za greske         mjparser.cup:182, 235,        Cetiri {: :} bloka u celom fajlu, i sva cetiri samo
+                                         276, 292                      zovu parser.report_error. Nikakva semantika ni
+                                                                       generisanje koda nisu u gramatici.
+
+U code sekciju parsera samo pomocne      mjparser.cup:7-54             Polje lastTokenLine + metoda lastTokenLine() sluze
+metode za prijavu gresaka                                              iskljucivo za poruke: terminal "error" nema
+                                                                       upotrebljivu poziciju u izvornom kodu, pa se linija
+                                                                       cita iz poslednjeg procitanog tokena (postavlja se u
+                                                                       "scan with" bloku, linija 61-68). Ovo NE utice na
+                                                                       semantiku ni na kod, pa je dozvoljeno.
+
+Poruka o gresci sadrzi broj linije i     mjparser.cup:30-44            syntax_error() -> report_error("Sintaksna greska")
+nedvosmislen opis                                                      + " na liniji N" iz Symbol.left. Ide u log (log4j),
+                                                                       koji je konfigurisan da greske salje na stderr.
+
+Ispis AST-a preko toString() nad         Compiler.java:94              log.info(prog.toString("")). AST-CUP generise
+korenom, pri uspesnom parsiranju                                       toString() na svakoj klasi cvora.
+
+Putanja ulaznog fajla kao prvi           Compiler.java:54-55           arg[0] = .mj ulaz, arg[1] = .obj izlaz, kako trazi
+argument komandne linije                                               postavka (drugi argument je zahtev faze 4).
+
+
+ III.4  OPORAVAK OD GRESAKA
+ --------------------------
+ Postavka trazi tacno cetiri mesta za nivo B (dva iz A + dva iz B). Sva cetiri su
+ implementirana:
+
+  NIVO   JEZICKI ELEMENT                 SMENA U .cup            GUTA DO
+  --------------------------------------------------------------------------------
+  A      definicija globalne promenljive VarItem_err (:181)      "," ili ";"
+  A      konstrukcija iskaza dodele      Statement_err (:275)    ";"
+  B      deklaracija formalnog parametra FormParDecl_err (:234)  "," ili ")"
+  B      logicki izraz unutar if         IfCondition_err (:291)  ")"
+
+ KAKO CUP RADI OPORAVAK (ovo se pita):
+   1. prazna celija u tabeli -> greska detektovana
+   2. poziva se syntax_error()  -> "Sintaksna greska na liniji N"
+   3. parser SKIDA stanja sa steka dok ne nadje ono koje ima shift akciju nad
+      terminalom "error"; ako takvog nema, greska je FATALNA
+   4. gurne "error" na stek
+   5. ODBACUJE ulazne tokene dok ne naidje na onaj kojim sme da nastavi
+   6. redukuje error produkciju -> nastaje cvor -> izvrsi se nasa akcija
+      -> "Oporavak od greske ... izvrsen do linije M"
+
+ Zato svaka oporavljena greska daje DVE linije na stderr. "error" je TERMINAL -
+ shift-uje se kao token.
+
+ "Guta do ','" ne pise se nigde eksplicitno - to je posledica MESTA gde je error
+ smena stavljena. VarItem_err je alternativa VarItem-a unutar VarItemList-a, koji
+ je razdvojen zarezima i zavrsen tackom-zarezom, pa su "," i ";" jedini tokeni
+ kojima parser moze da nastavi. Isto vazi i za ostala tri mesta.
+
+ ZASTO JE IfCondition IZDVOJEN U SVOJ NETERMINAL (a nije napisana smena
+ "IF LPAREN error RPAREN Statement"): dva razloga, oba su u komentaru na
+ mjparser.cup:279-288.
+   1. AST-CUP dodaje sopstvenu labelu poslednjem neterminalu u smeni. Ako se
+      smena zavrsava neterminalom iza koga stoji {: :} blok, labela se generise
+      POSLE akcije i dobija se Java kod koji se ne kompajlira. Ovako se akcija
+      nalazi u smeni koja se zavrsava sa "error", sto je bezbedno.
+   2. Nema potrebe za duplim if smenama (sa i bez else) - obe koriste isti
+      IfCondition, pa se posle oporavka else grana i dalje uredno parsira.
+
+ POSLEDICA KORAKA 3: skidanje steka baca vec izgradjena podstabla, pa posle
+ oporavka stablo ima vecu rupu nego sama greska. To je normalno - oporavak sluzi
+ da se parsiranje nastavi, ne da pogodi nameru programera. Zbog toga se semanticka
+ analiza uopste i ne pokrece kada je bilo sintaksnih gresaka (Compiler.java:109).
+
+
+ III.5  ODLUKE U GRAMATICI (ovo se skoro sigurno pita)
+ -----------------------------------------------------
+
+ (a) AddExpr kao poseban neterminal                    [.cup:433-441]
+     [MJ] ima: Expr = ["-"] Term {Addop Term} | Condition "?" Expr ":" Expr,
+     i CondFact = Expr [Relop Expr]. Ako CondFact uzima Expr, onda vazi
+     Expr => Condition => CondTerm => CondFact => Expr - ciklus jedinicnih smena,
+     sto gramatiku cini beskonacno dvosmislenom. Zato je aritmeticki deo izdvojen
+     u AddExpr, a Expr je samo "AddExpr ili ternarni".
+
+ (b) CondFact uzima AddExpr, ne Expr                   [.cup:404-406]
+     Inace je "a ? b : c ? d : e" dvosmisleno: moze se citati i kao
+     "(a?b:c) ? d : e" i kao "a ? (b : c?d:e)" -> shift/reduce konflikt.
+     Izrazajnost se ne gubi: ternarni izraz u uslovu se pise sa zagradama,
+     npr. if ((a ? b : c) == 1).
+
+ (c) Assignop nije neterminal, "=" je ugradjen u smenu [.cup:356-362]
+     Da je Assignop neterminal, u stanju posle "=" bi nad lookahead-om IDENT
+     istovremeno postojali reduce (Assignop ::= "=" .) i shift (Designator iz
+     findAny/map smena) -> konflikt. Ovako odluke nema.
+
+ (d) Unarni minus je na nivou Faktora, ne ispred Term-a [.cup:460-481]
+     Dva razloga:
+       - citljivost stabla: uz "MINUS Term" bi "-3 * 2" dalo -(3*2), dakle
+         negacija bi obuhvatila ceo proizvod; ovako se odnosi na tacno jedan
+         faktor.
+       - varijanta "Factor ::= Unary FactorSub" sa "Unary ::= MINUS | epsilon"
+         obara LALR(1): epsilon smena bi morala da se redukuje pre nego sto se
+         vidi IDENT, a u stanju posle "Designator ASSIGN" parser tada jos ne zna
+         da li sledi Expr (dodela) ili Designator (findAny/map). CUP javlja:
+             between Unary ::= (*)  and  Designator ::= (*) IDENT  under IDENT
+     Posledica: gramatika prihvata i "a + -b", sto je NADSKUP [MJ] zapisa.
+     Nijedan ispravan program se ne odbija, pa je to prihvatljivo.
+
+ (e) MethodTypeName odvojen od MethodDecl              [.cup:199-201]
+     Da bi faza 3 mogla da otvori opseg metode PRE obrade formalnih parametara.
+     Da je sve u jednoj smeni, cvor MethodDecl bi se posetio tek posle
+     parametara, pa bi parametri upali u opseg programa.
+
+ (f) Marker neterminali, svi oblika "X ::= TERMINAL"   [.cup:295-327]
+     ForStart ::= FOR, ElseMark ::= ELSE, TernQ ::= QUESTION, TernC ::= COLON,
+     MapArrow ::= ARROW. Postoje samo da bi kasnije faze imale cvor koji se
+     poseti TACNO IZMEDJU dva podstabla (detaljno u DELU V). Nijedan nema
+     epsilon varijantu - iz istog razloga kao pod (d).
+
+ (g) Nivo C je izostavljen
+     Nema klasa, nasledjivanja, this, niza objekata, enuma (amandman ih uklanja).
+     Zato Designator ima samo ".length" (a ne ".ident"), a FactorSub samo
+     "new Type [Expr]" (a ne "new Type").
+
+
+
+################################################################################
+ DEO IV - FAZA 3: SEMANTICKA ANALIZA
+################################################################################
+
+Fajlovi: SemanticAnalyzer.java (948 linija), MyTab.java, MyDumpSymbolTableVisitor.java
+
+
+ IV.1  OPSTI ZAHTEVI IZ POSTAVKE
+ -------------------------------
+
+ZAHTEV                                   GDE JE                        ZASTO TAKO
+--------------------------------------------------------------------------------
+Klasa SemanticAnalyzer u paketu          SemanticAnalyzer.java:14      Trazeno doslovno. VisitorAdaptor je generisana klasa
+rs.ac.bg.etf.pp1, prosiruje                                            sa praznim visit() metodama za sve tipove cvorova;
+VisitorAdaptor                                                         redefinisu se samo one koje nas zanimaju - ostale
+                                                                       tiho prolaze.
+
+Pokrece se u Compiler.main posle         Compiler.java:108-111         prog.traverseBottomUp(sa) - obilazak u kome se dete
+sintaksne analize, prosledjivanjem                                     poseti pre roditelja. Zato roditelj, kad dodje na
+objekta korenu stabla                                                  red, moze da procita .struct i .obj svoje dece.
+
+Koristi se symboltable-1-1.jar,          MyTab.java (ceo)              Tab.init() u univerzalni opseg ubacuje samo int,
+jar se NE dira - prosiruje se                                          char, eol, null, chr, ord, len. Tip "bool" iz [MJ]
+iskljucivo izvodjenjem klasa                                           NIJE predefinisan, a treba nam. Zato MyTab extends
+                                                                       Tab, sa statickim poljem boolType i sopstvenim
+                                                                       init() koji posle Tab.init() doda "bool" u
+                                                                       currentScope (koji je tada univerzalni opseg).
+                                                                       Compiler zove MyTab.init(), ne Tab.init().
+
+Metoda tsdump() u klasi Compiler,        Compiler.java:45-47,          Zove Tab.dump(new MyDumpSymbolTableVisitor()).
+poziva se po zavrsetku semantickog       poziv na 115                  Vizitor iz jara ne poznaje Struct.Bool, pa bi
+prolaza                                                                "bool x;" ispisao kao "Var x: , 0, 1" - prazno
+                                                                       mesto umesto tipa. MyDumpSymbolTableVisitor pokriva
+                                                                       samo ta dva slucaja (bool i "Arr of bool"), sve
+                                                                       ostalo prosledjuje na super. Opet: jar se ne dira,
+                                                                       samo se izvodi klasa (polje output je protected -
+                                                                       to je predvidjena tacka prosirenja).
+
+
+ IV.2  DETEKTOVANJE UPOTREBE SIMBOLA
+ -----------------------------------
+ Postavka trazi format (Prilog 2): linija + naziv simbola + ispis objektnog cvora
+ iz tabele simbola. Sve tri stvari daje report_detection (SemanticAnalyzer:90):
+
+     Pretraga na 9(x), nadjeno Var x: int, 0, 1
+
+ Ispis cvora se NE formatira rucno, nego se uzima od MyDumpSymbolTableVisitor-a -
+ da bi bio identican onom iz tsdump(), ukljucujuci i tip bool. Ide na log.info
+ (stdout), jer po postavci na stderr idu samo greske.
+
+  NIVO   STA SE DETEKTUJE                GDE SE POZIVA report_detection
+  --------------------------------------------------------------------------------
+  A      simbolicke konstante            SemanticAnalyzer:346 (visit Designator_var,
+  A      globalne promenljive             uslov kind == Obj.Con || kind == Obj.Var)
+  A      lokalne promenljive
+  B      koriscenje formalnog argumenta   isto mesto - formalni parametri su takodje
+                                          Obj.Var, pa ih ista provera hvata
+  B      pristup elementu niza            SemanticAnalyzer:378 (visit Designator_array)
+  B      poziv globalne funkcije          SemanticAnalyzer:439 (FactorSub_call) i
+                                          SemanticAnalyzer:673 (DesignatorStatement_call)
+
+ ZASTO SE METODA NE PRIJAVLJUJE u visit(Designator_var), nego na mestu poziva:
+ postavka trazi detekciju "globalne funkcije (pozivi)", dakle poziv, a ne golo
+ pominjanje imena. Zato je u Designator_var uslov ogranicen na Con i Var.
+
+ ZASTO SE ZA ELEMENT NIZA PRIJAVLJUJE arrObj (sam niz), a ne sinteticki Elem cvor:
+ postavka trazi ispis objektnog cvora IZ TABELE SIMBOLA, a Elem cvor je nas
+ privremeni objekat koga u tabeli nema.
+
+
+ IV.3  KONTEKSTNI USLOVI IZ [MJ] A.4
+ -----------------------------------
+ Redom kako ih navodi specifikacija:
+
+ OPSTI USLOVI
+  [MJ] uslov                              gde                          napomena
+  --------------------------------------------------------------------------------
+  Ime mora biti deklarisano pre           SemanticAnalyzer:322         visit(Designator_var): MyTab.find vraca noObj ->
+  koriscenja                              (visit Designator_var)       "Pristup nedefinisanom simbolu".
+
+  Ime ne sme biti deklarisano vise puta   :133 (ConstItem)             Razlika u pretrazi je namerna:
+  u istom opsegu                          :171 (VarItem_var)             - globali (currentMethod == null): Tab.find, koji
+                                          :190 (VarItem_array)             gleda i spoljasnje opsege
+                                          :210 (MethodTypeName)          - lokali: Tab.currentScope().findSymbol, koji
+                                          :254/:271 (FormParDecl)          gleda SAMO tekuci opseg
+                                                                       Zasto: lokalna promenljiva SME da zaklanja globalnu
+                                                                       ("int x;" globalno i "int x;" u metodi je legalno),
+                                                                       ali dva "int x;" u istoj metodi nisu.
+
+  Mora postojati main, void, bez          :115-131 (visit Program)     Cuva se ceo Obj cvor (polje mainMethod), a ne samo
+  argumenata                                                           zastavica - trebaju nam i tip i broj parametara.
+                                                                       Broj formalnih argumenata se drzi u Obj.getLevel(),
+                                                                       koji uvecava visit(FormParDecl_*) (:266, :283).
+                                                                       Provera je u visit(Program), jer se tek tada zna
+                                                                       da li main uopste postoji.
+
+ PO SMENAMA
+  [MJ] smena i uslov                                       gde u SemanticAnalyzer.java
+  --------------------------------------------------------------------------------
+  ConstDecl - tip konstante mora biti ekvivalentan Type    :133  visit(ConstItem), provera
+                                                                 constantType.assignableTo(currentType)
+  Type = ident - ident mora oznacavati tip podataka        :289  visit(Type): dve odvojene poruke - "nepostojeci tip"
+                                                                 (nema ga u tabeli) i "neadekvatan tip" (postoji, ali
+                                                                 nije Obj.Type, npr. "x y;" gde je x promenljiva)
+  MethodDecl - ako metoda nije void, mora imati return     :247  visit(MethodDecl). [MJ] ovo opisuje kao proveru u
+                                                                 vreme izvrsavanja, ali se prijavljuje ovde - ranije
+                                                                 otkrivena greska; tako radi i referentna imp.
+  Designator = Designator "[" Expr "]"                     :351  visit(Designator_array): niz? indeks int? Rezultat je
+    - Designator mora biti niz; Expr mora biti int                sinteticki Obj.Elem cvor cijim tipom postaje tip
+                                                                 elementa, pa se dalje ponasa kao obicna promenljiva.
+  Designator = Designator "." length - mora biti niz       :382  visit(Designator_length). Rezultat je Obj.Con, a ne
+                                                                 Obj.Var - namerno: length je samo za citanje, pa ga
+                                                                 provera "u sta se sme upisivati" automatski odbija
+                                                                 kao odrediste dodele ili inkrementa.
+  DesignatorStatement = Designator "=" Expr                :628  visit(DesignatorStatement_assign): isAssignableTarget
+    - Designator mora biti promenljiva/element/polje             (Var, Elem ili Fld) + Expr.assignableTo(tip cilja)
+    - Expr mora biti kompatibilan pri dodeli
+  DesignatorStatement = Designator "++" | "--"             :646/:652 -> checkIncDecTarget (:866): ista provera vrste
+    - promenljiva/element/polje, i mora biti int                 simbola + obavezan tip int
+  DesignatorStatement = Designator "(" [ActPars] ")"       :658  visit(DesignatorStatement_call): mora biti Obj.Meth
+    - Designator mora oznacavati globalnu funkciju
+  ActPars - isti broj argumenata, tip svakog stvarnog      :891  checkActualParameters. Broj formalnih se cita iz
+    kompatibilan pri dodeli sa formalnim na toj poziciji         methObj.getLevel(). Tipovi se citaju iz lokalnih
+                                                                 simbola metode - parametri su prvih getLevel() po
+                                                                 redu umetanja (tabela koristi LinkedHashMap, pa je
+                                                                 redosled ocuvan). fpPos se NE moze koristiti jer je
+                                                                 svim parametrima postavljen na 1.
+                                                                 Za REKURZIVNI poziv se citaju iz Tab.currentScope(),
+                                                                 jer se lokali ulancavaju tek u visit(MethodDecl).
+  break - samo unutar for petlje                           :749  brojac loopCnt; uvecava ga visit(ForStart) (:739),
+  continue - samo unutar for petlje                        :756  umanjuje visit(Statement_for) (:744). Marker
+                                                                 ForStart postoji upravo zato: bottom-up obilazak bi
+                                                                 inace telo petlje posetio PRE cvora Statement_for,
+                                                                 pa brojac ne bi radio.
+  read(Designator) - promenljiva/element/polje,            :679  visit(Statement_read), preko isAssignableTarget +
+    tipa int, char ili bool                                      isBuiltInType (:310)
+  print(Expr) - Expr tipa int, char ili bool               :697  visit(Statement_print)
+  return [Expr] - tip Expr ekvivalentan povratnom tipu;    :704  visit(Statement_return). Tri slucaja: nema Expr a
+    ako Expr nedostaje metoda mora biti void;                    metoda nije void; ima Expr a metoda je void; tipovi
+    ne sme postojati van tela metode                             se ne slazu. Cetvrti (van metode) preko currentMethod
+                                                                 == null - u praksi nedostizno, jer gramatika ne
+                                                                 dozvoljava iskaz van metode, ali je jeftino.
+  if (Condition) - Condition mora biti bool                :611  visit(IfCondition_cond)
+  for - Condition mora biti bool                           :619  visit(ForCondOpt_cond)
+  CondFact = Expr Relop Expr - tipovi kompatibilni;        :551  visit(CondFact_relop). Provera na referentne tipove
+    uz nizove i klase samo == i !=                               ide preko left.isRefType(), pa se gleda konkretna
+                                                                 klasa Relop cvora (Relop_eq / Relop_neq).
+  Expr = "-" Term - Term mora biti int                     :467  visit(Factor_neg)
+  Expr = Expr Addop Term - oba int                         :503  visit(AddExpr_addop)
+  Term = Term Mulop Factor - oba int                       :485  visit(Term_mulop)
+  Expr = Condition "?" Expr ":" Expr                       :521  visit(Expr_ternary). Dve provere: uslov je bool, i
+    - drugi i treci izraz istog tipa                             grane su istog tipa.
+  Factor = Designator "(" [ActPars] ")" - mora biti        :425  visit(FactorSub_call)
+    globalna funkcija
+  Factor = "new" Type "[" Expr "]" - Expr mora biti int    :445  visit(FactorSub_newArray)
+  CondFact = Expr (bez relopa) - mora biti bool            :541  visit(CondFact_expr). Ovo nije doslovno u [MJ] (tamo
+                                                                 CondFact uvek ima Relop), ali gramatika dozvoljava
+                                                                 "if (b)", pa uslov mora biti bool.
+
+ IZBEGAVANJE LAVINE GRESAKA: kada je greska vec prijavljena nize u stablu, cvor
+ dobija MyTab.noObj odnosno noType, a roditelji na to reaguju tihim izlaskom
+ (npr. :354, :385, :630). Bez toga bi jedna nedeklarisana promenljiva izazvala
+ desetak poruka.
+
+ ZASTO SE SEMANTICKA ANALIZA NE POKRECE KAD JE BILO SINTAKSNIH GRESAKA
+ (Compiler.java:100-111): oporavak ostavlja nepotpuna podstabla - IfCondition_err
+ nema Condition, VarItem_err nema ime - pa bi provere ili pucale na null ili
+ prijavljivale lazne greske. Postavka to ne trazi izricito, ali isti obrazac
+ nastavlja i dalje: generisanje koda se po postavci pokrece tek nad stablom koje
+ je "zadovoljilo uslove semanticke provere".
+
+
+
+################################################################################
+ DEO V - FAZA 4: GENERISANJE KODA
+################################################################################
+
+Fajl: CodeGenerator.java (781 linija). Biblioteka: mj-runtime-1.1.jar.
+Kompletan primer sa disasembliranim kodom je na kraju dela (V.9).
+
+
+================================================================================
+ V.1  TEORIJA: MEMORIJSKE OBLASTI MJVM-a
+================================================================================
+
+MJVM ima PET odvojenih memorijskih oblasti. Nisu to "delovi jedne memorije" -
+svaka je zaseban niz, sa sopstvenim adresiranjem, i svaka ima svoje instrukcije.
+Prva stvar koju treba razumeti je da nijedna instrukcija ne radi nad dve oblasti
+"slobodno": svaki par (oblast, operacija) ima tacno svoje instrukcije.
+
+ 1) CODE - niz BAJTOVA
+    Sadrzi instrukcije svih metoda. Registar pc je indeks instrukcije koja se
+    trenutno izvrsava. Registar mainPc je adresa metode main.
+    Ovo je JEDINA oblast koju kompajler stvarno gradi.
+
+ 2) STATICDATA - niz RECI (32 bita)
+    Globalne promenljive glavnog programa. Adresa promenljive je indeks u tom
+    nizu (0, 1, 2, ...). Velicina se ne racuna u run-time - stoji u zaglavlju
+    .obj fajla kao dataSize.
+
+ 3) HEAP - niz RECI
+    Dinamicki alocirani nizovi i objekti. Registar free pokazuje na pocetak
+    slobodnog dela; blokovi se alociraju sekvencijalno i NIKAD se ne oslobadjaju
+    (nema sakupljanja djubreta). Tri detalja koja se pitaju:
+      - niz pocinje "nevidljivom" recju koja sadrzi njegovu duzinu; zato
+        arraylength samo procita rec na koju referenca pokazuje
+      - nizovi ciji su elementi tipa char su nizovi BAJTOVA, ne reci; zato
+        postoje posebne instrukcije baload/bastore
+      - pokazivaci su BAJT OFSETI u heap-u; zato instrukcije rade pop()/4
+
+ 4) PROCSTACK - niz RECI
+    Aktivacioni zapisi pozvanih metoda. Svaki zapis je niz lokalnih promenljivih,
+    svaka jedna rec, adresirane indeksom (0, 1, 2, ...). Uz to:
+      ra  povratna adresa
+      dl  dinamicka veza - pokazivac na zapis pozivaoca
+      fp  pokazivac na tekuci zapis
+      sp  vrh steka
+    Novi zapis se inicijalizuje nulama.
+
+ 5) EXPRSTACK - stek operanada
+    Ovde se racuna. Svaka instrukcija uzima operande sa vrha i ostavlja rezultat.
+    KLJUCNO SVOJSTVO: ExprStack je PRAZAN posle svake MikroJava naredbe. Ako ti
+    posle nekog iskaza ostane vrednost na njemu, generisao si pogresan kod - i
+    to je najcesca greska u fazi 4.
+    Preko njega se prosledjuju i argumenti metoda (skida ih enter pozvane
+    metode) i povratna vrednost (ostavlja je pozvana metoda pozivaocu).
+
+ Svi podaci - globalni, lokalni, i oni na heap-u - inicijalizuju se nulom.
+
+
+ KO POPUNJAVA KOJU, I KADA
+ -------------------------
+ Ovo je sustina pitanja "kada koju citamo, kada kojom manipulisemo". Razlika je
+ izmedju VREMENA PREVODJENJA (mi, u CodeGenerator-u) i VREMENA IZVRSAVANJA (VM).
+
+  OBLAST       KOMPAJLER (faza 4) RADI                 VM RADI (run-time)
+  ------------------------------------------------------------------------------
+  Code         GRADI JE, bajt po bajt, kroz Code.put.  Samo je cita. pc se krece
+               Code.pc je "dokle sam stigao".          kroz nju.
+               Ovo je jedini nas pravi izlaz.
+
+  StaticData   NE upisuje u nju nista. Odredjuje       Alocira je pri startu,
+               samo NJENU VELICINU (Code.dataSize)     velicine dataSize reci,
+               i ADRESE (indekse) globala - a i to     napunjenu nulama. Cita i
+               ne racuna sam, nego ih dodeljuje        pise je preko getstatic /
+               tabela simbola iz faze 3.               putstatic.
+
+  Heap         NIKAD je ne dodiruje i ne zna nista     Pravi nizove kada naidje
+               o njoj. Samo emituje newarray i         na newarray. Cita i pise
+               aload/astore.                           preko aload/astore/
+                                                       baload/bastore.
+
+  ProcStack    NE pravi zapise. Odredjuje samo         Pravi zapis na svaki
+               VELICINU zapisa, instrukcijom           enter, rusi ga na exit.
+               "enter <br.argumenata> <br.reci>".      Cita i pise preko
+                                                       load/store.
+
+  ExprStack    NIKAD ga ne vidi. "Programira" ga       Izvrsava taj redosled.
+               posredno - redosledom instrukcija       Posle svake naredbe mora
+               koje emituje.                           ostati prazan.
+
+ Zapamti recenicu: KOMPAJLER PISE SAMO U CODE. Sve ostale oblasti on samo
+ OPISUJE - velicinom i adresama - a pune se tek u vreme izvrsavanja.
+
+
+ KOJA INSTRUKCIJA DIRA KOJU OBLAST
+ ---------------------------------
+  StaticData (globali)    getstatic s   putstatic s
+  ProcStack  (lokali)     load b / load_n     store b / store_n
+  Heap - nizovi           newarray b, aload/astore, baload/bastore, arraylength
+  Heap - objekti (niv. C) new s, getfield s, putfield s
+  ExprStack - konstante   const_n, const_m1, const w
+  ExprStack - racun       add sub mul div rem neg shl shr
+  ExprStack - preuredjenje pop, dup, dup2, dup_x1, dup_x2
+  Code (tok)              jmp s, jcc s (eq ne lt le gt ge)
+  Code + ProcStack        call s, return, enter b1 b2, exit
+  Ulaz/izlaz              read, print, bread, bprint
+  Greska                  trap b
+
+ Uoci simetriju: za svaku oblast postoji par "procitaj / upisi", i svaki par ima
+ razlicite instrukcije. Zato Code.load(Obj) mora da zna VRSTU simbola da bi znao
+ koju instrukciju da emituje (vidi V.4).
+
+
+================================================================================
+ V.2  STEK MASINA - KAKO SE RACUNA
+================================================================================
+
+MJVM nema registre. Sve racunanje ide preko ExprStack-a: instrukcija skine svoje
+operande sa vrha i vrati rezultat na vrh. To je razlog zasto izraz mora da se
+emituje u POSTFIKSNOM redosledu - prvo operandi, pa operator.
+
+ Primer koji si trazio, add:
+     add:  ...,val1,val2  ->  ...,val1+val2       push(pop() + pop());
+ Dakle: skine dve reci sa vrha, sabere ih, vrati jednu. Stek je za jednu rec
+ plici nego pre.
+
+ Zato "2 + 3" nije "2 + 3" nego:
+     const_2      ExprStack: [2]
+     const_3      ExprStack: [2, 3]
+     add          ExprStack: [5]
+
+ Kod nekomutativnih operacija redosled je bitan, pa spec eksplicitno kaze kako:
+     sub:  push(-pop() + pop());          val1 - val2
+     div:  x = pop(); push(pop() / x);    val1 / val2
+     rem:  x = pop(); push(pop() % x);    val1 % val2
+ Prvo se skida DESNI operand (bio je gurnut poslednji). Zato je dovoljno da
+ emitujemo levi pa desni pa operator - i oduzimanje i deljenje ispadnu tacna.
+
+ Ovo direktno objasnjava zasto je obilazak stabla bottom-up bas ono sto nam
+ treba za izraze: deca (operandi) se poseCuju pre roditelja (operatora), pa se
+ kod emituje tacno u postfiksnom redosledu, sam od sebe:
+
+     visit(AddExpr_addop)  ->  Code.put(Code.add);      [CodeGenerator:291]
+     visit(Term_mulop)     ->  Code.put(Code.mul/div/rem);          [:279]
+
+ Ta dva visit-a su po jedna linija koda upravo zato sto su operandi vec
+ emitovani. Sva teskoca faze 4 je tamo gde bottom-up NIJE ono sto nam treba -
+ kod skokova (V.6).
+
+ Instrukcije za preuredjivanje steka postoje jer se ponekad ista vrednost trosi
+ dvaput:
+     pop     ...,val            -> ...              odbaci vrh
+     dup     ...,val            -> ...,val,val      udvoji vrh
+     dup2    ...,v1,v2          -> ...,v1,v2,v1,v2  udvoji dva sa vrha
+     dup_x1  ...,val2,val1      -> ...,val1,val2,val1
+     dup_x2  ...,v1,v2,v3       -> ...,v3,v1,v2,v3
+ U ovom projektu se koriste pop (odbacivanje povratne vrednosti) i dup2
+ (inkrement elementa niza). dup_x1/dup_x2 trebaju tek na nivou C.
+
+
+================================================================================
+ V.3  KLASA Code - NAS ALAT
+================================================================================
+
+Code (iz mj-runtime-1.1.jar) je bafer bajtova plus brojac. Nista pametnije.
+
+  POLJA
+  ------------------------------------------------------------------------------
+  Code.buf       byte[] - sam bafer u koji se upisuje kod
+  Code.pc        koliko je bajtova do sada upisano = adresa SLEDECE instrukcije.
+                 Ovo je centralna vrednost cele faze: svaka adresa skoka, svaka
+                 adresa metode i svaki backpatch se izrazavaju preko nje.
+  Code.dataSize  broj reci za StaticData - ide u zaglavlje .obj fajla
+  Code.mainPc    adresa metode main - ide u zaglavlje
+
+  METODE ZA UPIS
+  ------------------------------------------------------------------------------
+  put(x)         upise JEDAN bajt i uveca pc. Njome se emituje opcode i svaki
+                 jednobajtni operand.
+  put2(x)        upise DVA bajta (short). Operandi skokova, getstatic/putstatic
+                 i getfield su dvobajtni.
+  put4(x)        upise CETIRI bajta (rec). Koristi je const i zaglavlje.
+  put2(pos, x)   upise dva bajta na ZADATU poziciju pos, pa vrati pc gde je bio.
+                 Ovo je mehanizam backpatchinga - jedini nacin da se naknadno
+                 promeni vec emitovan kod.
+  get(pos), get2(pos)   citanje iz bafera; nama nisu potrebne
+
+  METODE VISEG NIVOA (rade posao umesto nas)
+  ------------------------------------------------------------------------------
+  loadConst(n)   emituje NAJKRACI oblik za konstantu n:
+                     0 <= n <= 5   ->  const_n  (1 bajt)
+                     n == -1       ->  const_m1 (1 bajt)
+                     inace         ->  const n  (5 bajtova)
+                 Zato u disasemblu vidis "const_3" a ne "const 3".
+
+  load(Obj o)    emituje CITANJE simbola. Bira instrukciju po vrsti simbola -
+                 detaljno u V.4.
+  store(Obj o)   emituje UPIS u simbol. Isto biranje.
+
+  putJump(adr)   bezuslovni skok na POZNATU adresu (skok unazad).
+                 Implementacija: put(jmp); put2(adr - pc + 1);
+                 Operand je RELATIVAN u odnosu na pocetak instrukcije skoka.
+
+  putFalseJump(op, adr)
+                 uslovni skok. VAZNO I CESTO SE PITA: ova metoda INVERTUJE
+                 uslov. Implementacija: put(jcc + inverse[op]); put2(...)
+                 gde je inverse = {ne, eq, ge, gt, le, lt}.
+                 Dakle putFalseJump(Code.gt, 0) emituje instrukciju jle -
+                 skace kada uslov NIJE ispunjen. Zato se zove "false jump":
+                 propadanje kroz nju znaci da je uslov TACAN.
+
+  fixup(patchAdr)
+                 zakrpi operand na adresi patchAdr tako da skok vodi na TEKUCI
+                 pc. Implementacija: put2(patchAdr, pc - patchAdr + 1);
+
+  write(stream)  upise zaglavlje ("MJ", codeSize, dataSize, mainPc) pa kod.
+                 Zato se Code.dataSize i Code.mainPc MORAJU postaviti pre nje
+                 (Compiler.java:132-133).
+
+  ZASTO BAS "Code.pc - 2"
+  ------------------------------------------------------------------------------
+  Posle putJump(0) ili putFalseJump(op, 0) bafer izgleda ovako:
+
+        ... [opcode] [operand_hi] [operand_lo]
+                                               ^-- Code.pc je ovde
+
+  Operand je dvobajtni (put2), pa je njegov PRVI bajt na Code.pc - 2. Tu adresu
+  pamtimo da bismo je kasnije predali fixup-u. Otud pravilo: posle svakog skoka
+  sa rupom ODMAH zapamti Code.pc - 2, inace je skok izgubljen.
+
+
+================================================================================
+ V.4  ADRESE - KO IH DODELJUJE, I ZASTO Code.load ZNA STA DA EMITUJE
+================================================================================
+
+Ovo je deo koji se najcesce ne razume, a pola faze 4 pociva na njemu.
+
+Code.load(Obj o) je switch po o.getKind():
+
+     Obj.Con   ->  loadConst(o.getAdr())
+                   Konstanta nema memoriju - njena VREDNOST je upisana u polje
+                   adr. Zato faza 3 radi constItemObj.setAdr(constant)
+                   (SemanticAnalyzer:145).
+
+     Obj.Var   ->  ako je o.getLevel() == 0:  getstatic <adr>    (GLOBALNA)
+                   inace:                     load / load_n <adr> (LOKALNA)
+
+     Obj.Fld   ->  getfield <adr>             (nivo C)
+
+     Obj.Elem  ->  aload, ili baload ako je tip elementa char
+
+Code.store(Obj o) je isti switch, sa putstatic / store / putfield / astore.
+
+ DAKLE: razlika izmedju globalne i lokalne promenljive - dve potpuno razlicite
+ memorijske oblasti - svodi se na JEDAN broj u Obj cvoru: level.
+
+ KO POSTAVLJA level: tabela simbola, automatski, u Tab.insert:
+     new Obj(kind, name, type, 0, (currentLevel != 0) ? 1 : 0)
+
+ KO POSTAVLJA adr: takodje tabela simbola, u Scope.addToLocals:
+     if (kind == Obj.Var || kind == Obj.Fld) o.setAdr(nVars++);
+ Svaki opseg ima svoj brojac nVars, pa globali dobiju indekse 0,1,2... u
+ StaticData, a lokali 0,1,2... u aktivacionom zapisu. Mi te adrese NIKAD ne
+ racunamo rucno.
+
+ KAKO currentLevel ISPADNE TACAN (prati redom):
+     Tab.init()                  na kraju eksplicitno postavlja currentLevel = -1
+     visit(ProgramName)          openScope() -> currentLevel = 0
+                                 => globali dobijaju level 0 -> getstatic  <-- tacno
+     visit(MethodTypeName)       openScope() -> currentLevel = 1
+                                 => parametri i lokali dobijaju level 1
+                                    -> load/store  <-- tacno
+     visit(MethodDecl)           closeScope() -> nazad na 0
+
+ ZAMKA SA POLJEM level: za Obj.Meth to polje ZNACI NESTO DRUGO - broj formalnih
+ argumenata, koji mi sami upisujemo preko setLevel u visit(FormParDecl_*).
+ Isto polje, dva znacenja, u zavisnosti od vrste simbola. Ovo se pita.
+
+ ADRESE KOJE MI SAMI DODELJUJEMO (tabela simbola ih ne zna):
+     metode        methodObj.setAdr(Code.pc) u visit(MethodTypeName)  [:183]
+     ord/chr/len   isto, u generatePredeclaredMethods()                [:63]
+     konstante     constItemObj.setAdr(vrednost), jos u fazi 3
+
+
+================================================================================
+ V.5  ZAHTEVI FAZE 4, JEDAN PO JEDAN
+================================================================================
+
+Postavka za nivo A trazi generisanje koda za SVE smene koje nabraja, a nivo B
+dodaje kontrolne strukture, uslove i pozive. Idemo redom, sa stanjem ExprStack-a.
+Oznaka [...] je stanje steka POSLE navedene instrukcije.
+
+
+ (1) Factor := numConst | charConst | boolConst              [CodeGenerator:238-251]
+ --------------------------------------------------------------------------------
+     Emituje se samo Code.loadConst(vrednost).
+         const_n / const w        [..., vrednost]
+     boolConst je jos u lekseru pretvoren u 1/0, pa je ovde obican broj.
+     charConst je takodje broj - ASCII kod.
+
+ (2) Factor := Designator (citanje promenljive)                          [:253]
+ --------------------------------------------------------------------------------
+     Code.load(obj) - koja instrukcija, zavisi od vrste (V.4):
+         globalna:  getstatic 0    [..., g]
+         lokalna:   load_0         [..., a]
+         konstanta: const_5        [..., 5]
+
+     JEDAN IZUZETAK: ako je dete Designator_length, vrednost je VEC na steku
+     (ostavio ju je arraylength), pa se ucitavanje mora preskociti. Bez te
+     provere bi "a.length" ostavilo dve reci umesto jedne i stek bi se raspao.
+
+ (3) Designator := ident (samo po sebi)                                  [:220]
+ --------------------------------------------------------------------------------
+     NE EMITUJE NISTA. To je najvaznije pravilo u fazi 4.
+     Razlog: iz samog designatora se ne vidi da li ce se citati ili pisati.
+         "x = 5"   -> treba store
+         "y = x"   -> treba load
+     Zato odluku donosi onaj ko designator koristi, a ne designator sam.
+
+     IZUZETAK: ako je roditelj Designator_array ili Designator_length, referenca
+     na niz MORA na stek pre indeksa - a indeks je sledbenik u istoj smeni, pa
+     druge prilike nema. Tada se gleda roditelj i emituje Code.load.
+
+ (4) Designator := Designator "[" Expr "]"                        [:220 + Code.load]
+ --------------------------------------------------------------------------------
+     Citanje "niz[1]":
+         load_2       [niz]        referenca (bajt ofset u heap-u)
+         const_1      [niz, 1]
+         aload        [vrednost]   i=pop(); adr=pop()/4+1; push(heap[adr+i])
+     Upis "niz[1] = b":
+         load_2       [niz]
+         const_1      [niz, 1]
+         load_1       [niz, 1, b]
+         astore       []           val=pop(); i=pop(); adr=pop()/4+1
+     Uoci: aload/astore ne dobijaju adresu kao operand - sve tri vrednosti su na
+     steku. Zato je redosled gurnutog presudan, i zato Designator_var mora da
+     ucita referencu pre nego sto se pocne racunati indeks.
+     Za char nizove Code.load/store sami biraju baload/bastore.
+
+ (5) Designator := Designator "." "length"                               [:228]
+ --------------------------------------------------------------------------------
+         load_2       [niz]
+         arraylength  [duzina]     adr=pop(); push(heap[adr])
+     Radi zato sto niz na heap-u pocinje nevidljivom recju sa duzinom.
+
+ (6) Factor := "new" Type "[" Expr "]"                                   [:267]
+ --------------------------------------------------------------------------------
+     Velicina je vec na steku (Expr je dete), pa se emituje samo:
+         newarray 1   [referenca]   1 = elementi su reci, 0 = bajtovi (char)
+     n=pop(); alocira se niz; inicijalizuje nulama; push(adr).
+
+ (7) Expr := Term {Addop Term} i Term := Factor {Mulop Factor}     [:291, :279]
+ --------------------------------------------------------------------------------
+     Po jedna instrukcija, jer su operandi vec emitovani (V.2):
+         add / sub          za + i -
+         mul / div / rem    za *, / i %
+     "g + a * 3":
+         getstatic 0  [g]
+         load_0       [g, a]
+         const_3      [g, a, 3]
+         mul          [g, a*3]
+         add          [g + a*3]
+
+ (8) Expr := "-" Term (unarni minus)                                     [:274]
+ --------------------------------------------------------------------------------
+         neg          [..., -val]   push(-pop())
+
+ (9) DesignatorStatement := Designator "=" Expr                          [:569]
+ --------------------------------------------------------------------------------
+     Vrednost izraza je vec na steku, pa se emituje samo Code.store(obj):
+         store_1 / putstatic 0 / astore
+     Posle toga je ExprStack PRAZAN - kako i mora biti posle naredbe.
+
+ (10) DesignatorStatement := Designator "++" | "--"                [:574, :587]
+ --------------------------------------------------------------------------------
+     Za obicnu promenljivu je trivijalno:
+         load_0  [a]  const_1  [a,1]  add  [a+1]  store_0  []
+
+     Za ELEMENT NIZA je zamka: i citanje i upis trose par (referenca, indeks),
+     a par je na steku samo jednom. Resenje je dup2:
+         load_2   [niz]
+         const_1  [niz, 1]         <- ovo je ostavio Designator_array
+         dup2     [niz, 1, niz, 1]
+         aload    [niz, 1, val]
+         const_1  [niz, 1, val, 1]
+         add      [niz, 1, val+1]
+         astore   []
+     Zato emitIncDec (:587) emituje dup2 samo kada je kind == Obj.Elem.
+
+ (11) Statement := "print" "(" Expr [, numConst] ")" ";"                 [:615]
+ --------------------------------------------------------------------------------
+     Ovo je primer koji si trazio. Instrukcija print je definisana kao:
+         print:  ...,val,width  ->  ...      width = pop(); writeInt(pop(), width)
+     Dakle prvo skida SIRINU, pa tek onda vrednost. Znaci sirina mora biti
+     gurnuta POSLEDNJA:
+         load_1     [b]          vrednost izraza (emitovao ga je Expr)
+         const_0    [b, 0]       sirina; 0 ako nije navedena
+         print      []           ispise i isprazni stek
+     Ako je tip char, emituje se bprint umesto print.
+
+ (12) Statement := "read" "(" Designator ")" ";"                         [:608]
+ --------------------------------------------------------------------------------
+     Obrnut smer:
+         read       [procitano]  readInt(x); push(x)
+         store_0    []
+     bread za char.
+
+ (13) MethodDecl - ulaz i izlaz iz metode                          [:180, :202]
+ --------------------------------------------------------------------------------
+     Na MethodTypeName (koji se poseti PRE tela):
+         methodObj.setAdr(Code.pc)      zapamti adresu za buduce pozive
+         enter <br. formalnih> <ukupno reci>
+     enter radi: PUSH(fp); fp=sp; sp += lsize; sve nule; pa skida argumente sa
+     ExprStack-a u local[psize-1] ... local[0].
+     Zato pozivalac samo gurne argumente na ExprStack i zaboravi ih.
+
+     Na MethodDecl (posle tela):
+         exit          sp = fp; fp = POP()
+         return        pc = POP()
+     Emituju se BEZUSLOVNO, da bi radile i void metode i pad kroz kraj tela.
+     Za metodu koja se zavrsava return-om je to nedostizan kod - bezopasno.
+
+     Broj reci = broj lokalnih simbola + SCRATCH_SLOTS (V.8).
+
+ (14) Statement := "return" [Expr] ";"                                   [:625]
+ --------------------------------------------------------------------------------
+         exit
+         return
+     Vrednost je, ako je ima, vec na steku - i tu ostaje. Tako je pozivalac
+     dobija, jer exit ne dira ExprStack.
+
+ (15) Poziv metode: Designator "(" [ActPars] ")"          [:159, :262, :598]
+ --------------------------------------------------------------------------------
+     Argumenti su vec na steku (svaki ActPars je Expr, koji se emituje sam).
+         call <pomeraj>
+     Operand je POMERAJ u odnosu na adresu same instrukcije:
+         pomeraj = adresaMetode - adresaInstrukcijeCall
+
+     PROBLEM: metoda moze biti pozvana pre nego sto je generisana, pa joj se
+     adresa jos ne zna. RESENJE: emituje se nula, a poziv se upamti u dve
+     paralelne liste (callPatchAddr, callPatchObj) i sve se zakrpi zajedno u
+     visit(Program) (:167), kada su sve adrese poznate:
+         Code.put2(operandAddr, obj.getAdr() - (operandAddr - 1));
+     operandAddr - 1 je adresa samog opcode-a call.
+
+     KAO IZRAZ (FactorSub_call, :262): povratna vrednost ostaje na steku i
+     koristi je okolni izraz.
+     KAO ISKAZ (DesignatorStatement_call, :598): ako metoda nije void, rezultat
+     se MORA odbaciti sa pop - inace bi ostao na steku i prekrsio pravilo da je
+     ExprStack prazan posle naredbe.
+
+ (16) Predefinisane metode ord, chr, len                                  [:63]
+ --------------------------------------------------------------------------------
+     Tab.init() ih ubacuje u tabelu simbola, ali BEZ TELA - telo mora da
+     generise kompajler. Generisu se prve, u konstruktoru generatora, pre bilo
+     kog korisnickog koda, i adrese im se upisuju u tabelu da bi ih call nasao.
+         ord i chr:   enter 1 1 / load_0 / exit / return
+                      (na nivou bajtkoda su identicne - obe samo vrate argument,
+                       jer je char ionako broj)
+         len:         enter 1 1 / load_0 / arraylength / exit / return
+
+ (17) Uslovi: Condition, CondTerm, CondFact                    [:336-:408]
+ --------------------------------------------------------------------------------
+     Detaljno u V.7 - to je najtezi deo faze.
+
+ (18) if / if-else                                              [:415-:437]
+ (19) Ternarni operator                                         [:445-:460]
+ (20) for, break, continue                                      [:482-:562]
+ --------------------------------------------------------------------------------
+     Sve tri koriste iste alate (markeri + backpatching) - vidi V.6 i V.7.
+
+ (21) Zaglavlje .obj fajla                              [Compiler.java:129-140]
+ --------------------------------------------------------------------------------
+     Ovo se lako zaboravi, a bez toga program ne radi. Postavka trazi izvrsni
+     .obj, a njegovo zaglavlje ima cetiri stavke:
+         "MJ"        2 bajta, potpis
+         codeSize    4 bajta, velicina koda - Code.write ga sam izracuna iz pc
+         dataSize    4 bajta, broj reci za globale - MI ga postavljamo
+         mainPc      4 bajta, adresa main-a - MI ga postavljamo
+
+     dataSize se cita iz faze 3 (sa.nVars), koja ga je zapamtila PRE
+     zatvaranja opsega programa (SemanticAnalyzer:116). Posle closeScope() taj
+     podatak vise ne postoji - to je klasicna zamka.
+     mainPc se pamti u visit(MethodTypeName) kada je ime metode "main" (:189).
+
+
+================================================================================
+ V.6  DVE PREPREKE I DVA ALATA
+================================================================================
+
+Obilazak je bottom-up: kod nekog cvora se emituje POSLE koda sve njegove dece.
+Za izraze je to tacno ono sto treba (V.2). Za skokove nije, i odatle sve tesko.
+
+ PREPREKA 1: kod treba emitovati IZMEDJU dva podstabla.
+   Kod "if (C) S1 else S2" skok preko else grane stoji izmedju S1 i S2. Ali
+   cvor Statement_ifElse se poseti tek POSLE obe grane - tada je prekasno, kod
+   S1 i S2 bi se vec nasao jedan za drugim, bez skoka izmedju.
+
+   ALAT: MARKER NETERMINAL - produkcija oblika "X ::= TERMINAL" ciji je jedini
+   posao da postoji cvor koji se poseti tacno na tom mestu.
+
+       ForStart ::= FOR       pre zaglavlja petlje (i za break/continue u fazi 3)
+       ElseMark ::= ELSE      izmedju then i else grane
+       TernQ    ::= QUESTION  izmedju uslova i prve grane ternarnog
+       TernC    ::= COLON     izmedju prve i druge grane ternarnog
+       MapArrow ::= ARROW     pre tela map-a, otvara telo petlje
+
+   KADA TREBA MARKER: kada izmedju dva dela smene mora da stoji kod, a cvora tu
+   nema. KADA NE TREBA: kada cvor vec postoji - zato for petlja ne trazi marker
+   za zaglavlje, jer su ForInitOpt, ForCondOpt i ForStepOpt pravi cvorovi
+   (zajedno sa epsilon varijantama), pa daju hook na sve cetiri granice.
+
+   ZASTO MARKERI NEMAJU EPSILON VARIJANTU: epsilon smena bi morala da se
+   redukuje pre nego sto parser vidi sledeci token, sto obara LALR(1) - to se
+   vec jednom desilo pri pokusaju "Unary ::= MINUS | epsilon" (vidi DEO III.5d).
+
+ PREPREKA 2: skok se emituje pre nego sto se zna adresa odredista.
+   ALAT: BACKPATCHING.
+       1. emituj skok sa nulom u operandu:   Code.putJump(0)
+       2. odmah zapamti adresu operanda:     int adr = Code.pc - 2;
+       3. kada odrediste stigne, zakrpi:     Code.fixup(adr);
+   Ako je odrediste vec poznato (skok UNAZAD), backpatching ne treba - koristi
+   se Code.putJump(poznataAdresa) direktno.
+
+
+================================================================================
+ V.7  USLOVI, GRANANJA I PETLJE
+================================================================================
+
+ SEMA KRATKOG SPAJANJA
+ ---------------------
+ Uslov ne ostavlja vrednost na steku. Umesto toga ostavlja DVE LISTE SKOKOVA -
+ one koji vode na "tacno" i one koji vode na "netacno". Pravila:
+
+   svaki CondFact  emituje skok koji se izvrsava kada je fact NETACAN;
+                   propadanje kroz njega znaci da je fact tacan       [:336, :342]
+   kraj CondTerm-a propadanje znaci da je ceo term (lanac &&) tacan -> emituje
+                   se skok na TACNO, a netacni skokovi tog terma se krpe OVDE,
+                   sto je pocetak sledeceg terma                        [:367]
+   kraj Condition  propadanje znaci da su svi termovi (lanac ||) netacni ->
+                   emituje se skok na NETACNO, a tacni skokovi se krpe OVDE,
+                   sto je pocetak grane za tacan slucaj                 [:398]
+
+ "Kraj CondTerm-a" se prepoznaje po roditelju: term je zavrsen samo ako NIJE
+ levi operand nekog && (:368).
+
+ CondFact bez relopa (:342) je izraz tipa bool - tacan je kada nije nula:
+     const_0      [b, 0]
+     jne <rupa>   []           putFalseJump(Code.ne, 0)
+
+ ZASTO SU LISTE U MAPAMA KLJUCEVANIM AST CVOROM (:317-318), a ne u jednom
+ deljivom steku: ternarni operator moze da se ugnezdi unutar uslova, npr.
+ "a && (b ? c : d) > 0" - unutrasnja Condition bi tada potrosila skokove
+ spoljasnje. Kljucevanjem po cvoru svaki uslov ima svoje liste.
+
+ RASPOREDI KOJE TREBA ZNATI NAPAMET
+ ----------------------------------
+   if (C) S                       if (C) S1 else S2
+     <C>   netacno -> kraj          <C>   netacno -> else
+     <S>                            <S1>
+   kraj:                            jmp kraj
+                                  else:
+                                    <S2>
+                                  kraj:
+
+   C ? E1 : E2                    for (I; C; K) S
+     <C>   netacno -> else          <I>
+     <E1>                         uslov: <C>   netacno -> kraj
+     jmp kraj                             jmp telo
+   else:                          korak: <K>
+     <E2>                                jmp uslov
+   kraj:                          telo:  <S>
+                                         jmp korak
+                                  kraj:
+
+ ZASTO JE FOR "IZVRNUT": korak se u izvornom kodu pise PRE tela, a izvrsava se
+ POSLE njega. Posto se kod emituje redom kojim se cita, korak zavrsi pre tela,
+ pa se pravi redosled uspostavlja skokovima.
+     continue skace na "korak" - adresa je poznata pre tela, pa se emituje
+              direktno sa putJump                                       [:560]
+     break    skace na "kraj" - jos nije poznat, pa ide u listu za krpljenje
+                                                                        [:554]
+ Struktura LoopFrame (:482) drzi te adrese, a stek okvira (:490) omogucava
+ ugnezdene petlje - svaki break/continue pogadja NAJBLIZU petlju, jer se uvek
+ gleda loops.peek().
+
+ Ternarni operator koristi isti closeCondition kao if, samo sto se na krajevima
+ grana nalaze vrednosti, a ne naredbe - pa posle njega na steku ostaje tacno
+ jedna rec, bez obzira koja je grana izvrsena.
+
+
+================================================================================
+ V.8  RADNI LOKALI (SCRATCH)
+================================================================================
+
+findAny i map traze medjurezultate koji zive kroz celu iteraciju - brojac,
+trazenu vrednost, rezultat. Zato se u svakoj metodi u "enter" rezervise
+SCRATCH_SLOTS (=3) reci IZNAD pravih lokala; prvi slobodan indeks je
+scratchBase = broj lokalnih simbola metode (:190).
+
+ ZASTO RADNI LOKALI, A NE ZONGLIRANJE STEKOM: findAny sme da zatekne referencu i
+ indeks odredista vec na ExprStack-u, npr. kod "nadjeno[i] = niz.findAny(x)".
+ Petlja onda ne sme da dira ono sto je ispod nje, pa mora da radi po strani.
+
+ loadLocal/storeLocal (:96, :105) biraju kraci oblik instrukcije za indekse 0-3
+ (load_n + i), a dugi za vece (load, i). Oba oblika pokriva test
+ 70_gen_scratch.mj.
+
+ ZAMKA: u fazi 4 se Tab.find NE SME koristiti za korisnicke simbole. Faza 3 je
+ zatvorila i opseg programa i sve opsege metoda, pa Tab.find vidi jos samo
+ univerzalni opseg i za svaki korisnicki simbol vraca noObj. Simboli se citaju
+ iz ulancanih lista: findVar (:125) gleda prvo lokale tekuce metode, pa globale
+ sa cvora programa - isti redosled koji je vazio i u fazi 3. Cvor programa se
+ zato prosledjuje konstruktoru generatora (Compiler.java:126).
+
+
+================================================================================
+ V.9  KOMPLETAN PRIMER - OD IZVORNOG KODA DO BAJTKODA
+================================================================================
+
+Test test/90_demo_odbrana.mj, disasembliran stvarnim alatom (disasm iz
+mj-runtime jara). Ispis programa je "11111".
+
+   program Demo
+     int g;                       <- globalna, StaticData[0]
+   {
+     void main()
+       int a; int b; int niz[];   <- lokalne, aktivacioni zapis [0], [1], [2]
+     {
+       g = 5;  a = 2;  b = g + a * 3;  print(b);
+       niz = new int[3];  niz[1] = b;  print(niz[1]);
+       if (b > 10) print(1); else print(0);
+     }
+   }
+
+ ZAGLAVLJE:  codeSize=72   dataSize=1   mainPC=13
+   dataSize=1 jer postoji tacno jedna globalna promenljiva (g).
+   mainPC=13 jer su pre main-a generisane predefinisane metode.
+
+   0: enter 1 1      \
+   3: load_0          |  ord i chr - dele isti kod, obe samo vrate argument
+   4: exit            |  (adrese 0 i 0 upisane su u tabelu simbola)
+   5: return         /
+   6: enter 1 1      \
+   9: load_0          |  len - vrati argument pa arraylength
+  10: arraylength     |
+  11: exit            |
+  12: return         /
+
+  13: enter 0 6       main: 0 formalnih argumenata, 6 reci u zapisu
+                      (3 prave lokalne + 3 radne = SCRATCH_SLOTS)
+
+                      --- g = 5;  g je GLOBALNA -> putstatic
+  16: const_5         [5]
+  17: putstatic 0     []
+
+                      --- a = 2;  a je LOKALNA, adr 0 -> store_0
+  20: const_2         [2]
+  21: store_0         []
+
+                      --- b = g + a * 3;   postfiksni redosled
+  22: getstatic 0     [g]
+  25: load_0          [g, a]
+  26: const_3         [g, a, 3]
+  27: mul             [g, a*3]
+  28: add             [g + a*3]
+  29: store_1         []            b je lokalna, adr 1
+
+                      --- print(b);   sirina ide POSLE vrednosti
+  30: load_1          [b]
+  31: const_0         [b, 0]
+  32: print           []
+
+                      --- niz = new int[3];
+  33: const_3         [3]           velicina
+  34: newarray 1      [ref]         1 = elementi su reci
+  36: store_2         []
+
+                      --- niz[1] = b;   referenca, indeks, vrednost, pa astore
+  37: load_2          [ref]
+  38: const_1         [ref, 1]
+  39: load_1          [ref, 1, b]
+  40: astore          []
+
+                      --- print(niz[1]);
+  41: load_2          [ref]
+  42: const_1         [ref, 1]
+  43: aload           [vrednost]
+  44: const_0         [vrednost, 0]
+  45: print           []
+
+                      --- if (b > 10) print(1); else print(0);
+  46: load_1          [b]
+  47: const 10        [b, 10]       10 > 5, pa dugi oblik (5 bajtova)
+  52: jle 6 (=58)     []            putFalseJump INVERTUJE gt u le:
+                                    skace kada uslov NIJE ispunjen
+  55: jmp 6 (=61)                   kraj CondTerm-a: term je tacan -> na THEN
+  58: jmp 9 (=67)                   kraj Condition: netacno -> na ELSE
+                                    (adresa 58 je bila rupa, zakrpljena kasnije)
+  61: const_1         [1]           THEN grana: print(1)
+  62: const_0         [1, 0]
+  63: print           []
+  64: jmp 6 (=70)                   preskoci else - emitovao ga je ElseMark
+  67: const_0         [0]           ELSE grana: print(0)
+  68: const_0         [0, 0]
+  69: print           []
+  70: exit                          kraj main-a
+  71: return
+
+ STA SE VIDI IZ OVOG PRIMERA
+ ---------------------------
+ - g i a su obe "obicne promenljive" u izvornom kodu, a daju potpuno razlicite
+   instrukcije (putstatic vs store_0) - zato sto su u razlicitim memorijskim
+   oblastima. Odluku donosi Code.store po polju level (V.4).
+ - Aritmetika je cist postfiks, bez ijednog skoka.
+ - Uslov "b > 10" daje TRI skoka (52, 55, 58), iako bi optimalan kod imao jedan.
+   To je cena opste seme kratkog spajanja, koja mora da radi i za
+   "a && b || c && d". Nije greska - samo nije optimizovano. Ako te pitaju,
+   odgovor je: sema je jednoobrazna i uvek tacna, a optimizacija skokova nije
+   trazena postavkom.
+ - Posle svake naredbe je ExprStack prazan. Prati kolonu sa stanjem steka -
+   svaki red koji se zavrsava sa [] je kraj jedne naredbe.
+
+ KAKO OVO SAM DA PROVERIS
+ ------------------------
+     ant disasmOne -Dmj=test/90_demo_odbrana.mj     prevedi pa ispisi bajtkod
+     ant runOne    -Dmj=test/90_demo_odbrana.mj     prevedi pa pokreni
+ Kada nesto ne radi u fazi 4, disasm je prvi alat - skoro uvek se odmah vidi da
+ je stek ostao neprazan ili da skok vodi na pogresnu adresu.
+
+
+################################################################################
+ DEO VI - AMANDMANI, KROZ SVE CETIRI FAZE
+################################################################################
+
+Amandman (IzmeneIDopuneNaPostavkuProjekta.pdf) menja postavku ovako:
+   - enumi se NE implementiraju
+   - nivo A dobija findAny
+   - nivoi B i C gube switch/case, a dobijaju map
+
+Ove dve smene su rucno dodate produkcije - nema ih u stampanim [MJ] tabelama.
+
+
+ VI.1  findAny (NIVO A)
+ ----------------------
+ Statement := Designator "=" Designator "." "findAny" "(" Expr ")" ";"
+   - desni Designator mora oznacavati 1-D niz ugradjenog tipa
+   - levi Designator mora oznacavati promenljivu tipa bool
+   - iterira od prvog do poslednjeg elementa
+   - rezultat je true akko postoji element koji odgovara vrednosti Expr
+
+  FAZA   GDE                              STA
+  --------------------------------------------------------------------------------
+  1      mjlexer.flex:58                  "findAny" je token FINDANY. Tretiran je kao
+                                          kljucna rec, isto kao sto [MJ] tretira
+                                          "length" - iako se pojavljuje samo iza
+                                          tacke. Prostije nego kontekstno razlikovanje
+                                          u gramatici, a jedina cena je da se
+                                          "findAny" ne moze koristiti kao ime
+                                          promenljive, sto amandman ionako ne trazi.
+  2      mjparser.cup:251                 Smena Statement_findAny, doslovno prepisana
+                                          iz amandmana. Bez akcija.
+  3      SemanticAnalyzer:775             visit(Statement_findAny): checkBuiltInArray
+                                          nad desnim designatorom, provera da je levi
+                                          upisiv i tipa bool, plus provera da je Expr
+                                          uporediv sa tipom elementa. Ta treca provera
+                                          nije doslovno u amandmanu, ali sledi iz
+                                          "element koji po vrednosti odgovara rezultatu
+                                          izraza Expr" - poredjenje ima smisla samo ako
+                                          su tipovi uporedivi.
+  4      CodeGenerator:646                Petlja preko tri radna lokala:
+                                            s0 = trazena vrednost (vec na steku)
+                                            s1 = indeks
+                                            s2 = rezultat
+                                          Struktura: uporedi indeks sa arraylength ->
+                                          izadji; ucitaj element, uporedi sa s0 ->
+                                          ako je jednako postavi s2=1 i izadji iz
+                                          petlje; inace inkrementiraj indeks i vrati
+                                          se. Na kraju s2 -> store u odrediste.
+                                          Izlazak cim se nadje poklapanje nije trazen,
+                                          ali je ispravan i brzi.
+  test   test/12_findAny.mj (parsiranje), test/46_sem_amendments.mj (semantika),
+         test/67_gen_findAny.mj (izvrsavanje, sa ocekivanim ispisom)
+
+
+ VI.2  map (NIVO B)
+ ------------------
+ Statement := Designator "=" Designator "." "map" "(" ident "=>" Expr ")" ";"
+   - Designator mora oznacavati 1-D niz ugradjenog tipa (nivo B)
+   - ident mora biti lokalna ili globalna promenljiva istog tipa kao elementi niza
+   - rezultat je novi niz iste duzine; novi niz mora prethodno biti deklarisan
+
+  FAZA   GDE                              STA
+  --------------------------------------------------------------------------------
+  1      mjlexer.flex:59, :74             Tokeni MAP i ARROW ("=>"). ARROW je nov
+                                          operator, ne postoji u [MJ].
+  2      mjparser.cup:254                 Smena Statement_map. Sadrzi marker MapArrow
+                                          izmedju imena iteratora i Expr - vidi fazu 4.
+  3      SemanticAnalyzer:808             visit(Statement_map). Amandman pominje
+                                          "Designator" u jednini, ali smena ima dva.
+                                          Uslov za niz se primenjuje na OBA: desni je
+                                          niz kroz koji se iterira, a levi je "novi
+                                          niz" koji po poslednjoj stavci amandmana
+                                          mora biti prethodno deklarisan - dakle i on
+                                          je niz. Iterator se trazi kroz MyTab.find
+                                          (mora biti Obj.Var, tipa elementa ulaznog
+                                          niza), a tip Expr mora biti kompatibilan sa
+                                          tipom elementa izlaznog niza.
+  4      CodeGenerator:720 (MapArrow)     ZASTO MARKER: telo (Expr) se racuna jednom po
+         CodeGenerator:766 (Statement_map) elementu, pa mora da bude UNUTAR petlje.
+                                          Posto se kod emituje redom kojim se cita,
+                                          zaglavlje petlje se emituje na markeru
+                                          MapArrow (dakle PRE Expr), a rep petlje na
+                                          samom iskazu (POSLE Expr).
+                                          MapArrow emituje: nov niz duzine ulaznog ->
+                                          store u odrediste; indeks=0; pocetak petlje;
+                                          uporedi sa arraylength -> izadji; iterator =
+                                          ulazni[i]; pa gurne referencu i indeks
+                                          odredista na stek. To poslednje je namerno:
+                                          posle koda tela na vrhu steka bude
+                                          [niz, indeks, vrednost] - tacno ono sto
+                                          astore ocekuje.
+                                          Statement_map emituje: astore, inkrement
+                                          indeksa, skok nazad, fixup izlaza.
+  test   test/13_map.mj, test/46_sem_amendments.mj, test/68_gen_map.mj
+
+
+
+################################################################################
+ DEO VII - BUILD, TESTOVI, ISPORUKA
+################################################################################
+
+ BUILD (Ant, build.xml)
+ ----------------------
+     ant clean       brise bin/ i .class
+     ant jdkinfo     ispise na kom JDK-u Ant radi
+     ant test        pokrene ceo lanac + testove
+
+ Lanac koji se izvrsi:
+     delete     -> obrise generisani kod iz src/rs/ac/bg/etf/pp1/ (osim util/)
+     lexerGen   -> JFlex procita .flex, napravi Yylex.java
+     parserGen  -> cup_v10k procita .cup, napravi parser + sym + ast klase
+     repackage  -> zameni "src.rs.ac.bg.etf.pp1.ast" -> "rs.ac.bg.etf.pp1.ast"
+                   (posledica nacina na koji AST-CUP prima -ast argument)
+     compile    -> javac sve u bin/
+     test       -> pokrene TestRunner
+
+ Pojedinacno:
+     ant runOne     -Dmj=test/68_gen_map.mj       prevedi pa pokreni
+     ant disasmOne  -Dmj=test/63_gen_flow.mj      prevedi pa ispisi bajtkod
+
+ Build je generacijski. Ako se pojave cudne greske o klasama kojih nema ili koje
+ se ne slazu - prvo "ant clean". Stale generisane klase su najcesci uzrok.
+
+ ZAMKA SA JDK 8: postoje DVA nezavisna prevodioca i oba moraju biti na 1.8 -
+ Ant-ov javac (build.xml, release="8") i Eclipse JDT builder
+ (.settings/org.eclipse.jdt.core.prefs). Sam Ant proces ostaje na novijoj Javi
+ (Eclipse-ov Ant trazi 11+) i to je u redu. Ispravnost se dokazuje ODSUSTVOM
+ upozorenja "bootstrap class path not set". release="8" je bolje od source/target
+ jer ogranicava i standardnu biblioteku - inace bi npr. "abc".isBlank() (Java 11)
+ prosao kod kuce, a pukao na laboratorijskoj masini.
+
+
+ TESTOVI
+ -------
+ TestRunner za svaki test/*.mj pokrece NOV proces (java Compiler <in.mj> <out.obj>),
+ preusmerava stdout u .out i stderr u .err (isto kao ">izlaz.out 2>izlaz.err" iz
+ postavke), pa uporedi sa ocekivanjem koje stoji kao komentar u samom .mj fajlu:
+
+     // EXPECT: OK                      bez ijedne greske, izlazni kod 0
+     // EXPECT: SYNTAX>=2 RECOVERY>=2   minimalni brojevi
+     // EXPECT: SEMANTIC>=3
+     // EXPECT-ERR: deo poruke koji se mora pojaviti na stderr
+     // OUT: ocekivani red ispisa programa (testovi faze 4)
+
+ Zaseban proces po testu: pravo razdvojen stdout/stderr i nema curenja log4j
+ stanja izmedju testova.
+
+ Izlazni kodovi Compiler-a: 0 cisto, 1 greske prijavljene ali oporavljeno,
+ 2 parsiranje prekinuto, 3 los poziv.
+
+ SKUP TESTOVA:
+     01-14   ispravni programi, pokrivaju sve produkcije nivoa A i B
+     20-25   neispravni: 4 mesta oporavka + kombinacija + leksicke greske
+     30-33   zvanicni testovi sa sajta (301, 302, 302-original, 303)
+     40-52   semanticke greske po kategorijama + ispravni programi
+     60-70   generisanje koda; svaki ima "// OUT:" redove sa ocekivanim ispisom
+     90      demo primer koji je u DELU V.9 disasembliran red po red
+     program.mj  radna datoteka
+
+ Testovi 60-70 i 30-32 su jedini koji stvarno dokazuju fazu 4: prevodjenje bez
+ gresaka samo po sebi ne dokazuje da generisani kod radi.
+
+
+ STA POSTAVKA JOS TRAZI ZA ISPORUKU
+ ----------------------------------
+     [ ] MJProjekat.docx u korenu: naslovna strana, kratak opis zadatka, komande
+         za generisanje/prevodjenje/pokretanje/testiranje, kratak opis test
+         primera, kratak opis novouvedenih klasa
+     [ ] jar arhive alata (AST-CUP, JFlex) predate uz resenje
+     [ ] .flex, .cup, svi generisani i rucno pisani .java, i .class fajlovi
+     [ ] test fajlovi sa ekstenzijom .MJ (postavka pise velikim slovima; kod nas
+         je .mj - proveriti da li lab masina razlikuje velicinu slova)
+
+
+
+################################################################################
+ DEO VIII - PITANJA KOJA SE OCEKUJU NA ODBRANI
+################################################################################
+
+ O ALATIMA I FAZAMA
+ ------------------
+ P: Zasto se lekser i parser ne pisu rucno?
+ O: Oba su mehanicki izvodljiva iz specifikacije - regularni izrazi daju konacan
+    automat, LALR gramatika daje potisni automat. Alat to izracuna bez greske i
+    bez rada.
+
+ P: Da li se prvo zavrsi leksicka pa krene sintaksna analiza?
+ O: Ne, preplicu se. Parser vuce token po token pozivom next_token(). Ako parser
+    stane, ostatak fajla se nikad ne procita.
+
+ P: Kada tacno nastaje AST cvor?
+ O: Iskljucivo na redukciji. Broj cvorova = broj redukcija. Koren nastaje
+    poslednji, neposredno pre accept.
+
+ P: Sta je LALR(1) i zasto je konflikt fatalan?
+ O: Parsiranje odozdo navise sa jednim tokenom unapred, vodjeno tabelom
+    (stanje, lookahead) -> akcija. Celija drzi jednu vrednost, pa se u nju ne
+    mogu upisati i shift i reduce - CUP tada odbija da generise parser.
+
+ P: Zasto je dozvoljena bas "precedence left ELSE"?
+ O: Jer ne menja gramatiku ni jezik, samo bira jednu od dve akcije u tacno jednoj
+    celiji: else se vezuje za najblizi if.
+
+ P: Kako se prenose podaci kroz stablo?
+ O: Preko polja koja AST-CUP generise na cvorovima: .struct (tip izraza) i .obj
+    (simbol). U .cup se to kaze deklaracijom neterminala sa tipom, npr.
+    "nonterminal Struct Expr;" (mjparser.cup:112-116).
+
+ P: Zasto je obilazak bottom-up?
+ O: Da bi roditelj, kad dodje na red, vec imao izracunate tipove i simbole svoje
+    dece. To je i uzrok obe glavne teskoce u fazi 4 (marker neterminali i
+    backpatching).
+
+ O SEMANTICI
+ -----------
+ P: Zasto MyTab, a ne direktno Tab?
+ O: Jer Tab.init() ne ubacuje tip "bool", a [MJ] ga trazi. Jar se ne sme dirati,
+    pa se prosiruje izvodjenjem klase.
+
+ P: Zasto se za globale koristi Tab.find, a za lokale currentScope().findSymbol?
+ O: Lokalna promenljiva sme da zaklanja globalnu, ali dve iste u istom opsegu ne
+    smeju. Tab.find gleda sve opsege, findSymbol samo tekuci.
+
+ P: Gde se cuva broj formalnih argumenata metode?
+ O: U Obj.getLevel(); uvecava ga visit(FormParDecl_*). Koristi se i za proveru da
+    main nema argumente, i za proveru broja stvarnih argumenata pri pozivu.
+
+ P: Zasto length daje Obj.Con, a element niza Obj.Elem?
+ O: Con jer je length samo za citanje - tako ga provera "sme li se upisivati"
+    automatski odbija kao odrediste. Elem jer element niza jeste upisiv, a tip mu
+    je tip elementa, pa se dalje ponasa kao obicna promenljiva.
+
+ O GENERISANJU KODA
+ ------------------
+ P: Sta je backpatching i zasto je potreban?
+ O: Skok se cesto emituje pre nego sto se zna adresa odredista. Upise se nula,
+    zapamti adresa operanda (Code.pc - 2), pa se kasnije Code.fixup pozove kada
+    je odrediste stiglo.
+
+ P: Sta je marker neterminal i kada je potreban?
+ O: Produkcija oblika "X ::= TERMINAL" ciji je jedini posao da postoji cvor koji
+    se poseti IZMEDJU dva podstabla. Potreban je kada tu mora da se emituje kod,
+    a cvora nema (else grana, grane ternarnog, telo map-a).
+
+ P: Zasto marker nema epsilon varijantu?
+ O: Epsilon smena bi trazila redukciju pre nego sto parser vidi sledeci token,
+    sto obara LALR(1) svojstvo - to se vec jednom desilo kod pokusaja
+    "Unary ::= MINUS | epsilon".
+
+ P: Zasto se u fazi 4 ne sme koristiti Tab.find?
+ O: Faza 3 je zatvorila sve opsege, pa Tab.find vidi jos samo univerzalni opseg.
+    Simboli se citaju iz ulancanih lista (Obj.getLocalSymbols) metode i programa.
+
+ P: Kako se resava poziv metode koja jos nije generisana?
+ O: Operand call-a je pomeraj u odnosu na adresu instrukcije. Svi pozivi se pamte
+    i krpe zajedno u visit(Program), kada su sve adrese poznate.
+
+ P: Sta su radni lokali i zasto postoje?
+ O: Tri dodatne reci koje se rezervisu u svakoj metodi iznad njenih pravih lokala.
+    findAny i map ih koriste za brojac i medjurezultate, jer petlja ne sme da dira
+    ono sto se vec nalazi ispod na steku operanada.
+
+ P: Koje memorijske oblasti ima MJVM i koju od njih kompajler stvarno gradi?
+ O: Pet: Code, StaticData, Heap, ProcStack, ExprStack. Kompajler pise SAMO u
+    Code. Ostale samo opisuje - StaticData velicinom (dataSize) i adresama,
+    ProcStack velicinom zapisa (enter), Heap nikako, ExprStack posredno,
+    redosledom instrukcija. Sve one nastaju tek u vreme izvrsavanja.
+
+ P: Zasto se izraz emituje u postfiksnom redosledu?
+ O: Jer je MJVM stek masina - instrukcija uzima operande sa vrha ExprStack-a.
+    "2+3" je const_2, const_3, add. Bottom-up obilazak stabla to daje sam od
+    sebe: deca (operandi) se posete pre roditelja (operatora).
+
+ P: Sta tacno radi instrukcija add?
+ O: Skine dve reci sa vrha ExprStack-a, sabere ih i vrati jednu: push(pop()+pop()).
+    Stek je posle nje za jednu rec plici.
+
+ P: Zasto kod print-a sirina ide na stek POSLE vrednosti?
+ O: Jer je instrukcija definisana kao width=pop(); writeInt(pop(), width) -
+    prvo skida sirinu. Znaci sirina mora biti gurnuta poslednja.
+
+ P: Kako Code.load zna da li da emituje getstatic ili load?
+ O: Po polju level u Obj cvoru: level==0 znaci globalna (getstatic), inace
+    lokalna (load). Level postavlja tabela simbola automatski, u Tab.insert, na
+    osnovu currentLevel - a on ispadne tacan jer Tab.init() zavrsava sa
+    currentLevel = -1, pa opseg programa dobije 0 a opseg metode 1.
+
+ P: Ko dodeljuje adrese promenljivima?
+ O: Tabela simbola, u Scope.addToLocals: svaki Var/Fld dobije adr = nVars++ u
+    svom opsegu. Mi adrese racunamo samo za metode (setAdr(Code.pc)) i za
+    konstante (setAdr(vrednost), jos u fazi 3).
+
+ P: Zasto Designator_var sam po sebi ne emituje nista?
+ O: Jer se iz designatora ne vidi da li ce se citati ili pisati - "x = 5" trazi
+    store, "y = x" trazi load. Odluku donosi onaj ko ga koristi. Izuzetak je
+    kada je roditelj Designator_array ili _length: tada referenca na niz mora na
+    stek pre indeksa, pa se emituje load.
+
+ P: Zasto "a[i]++" trazi dup2?
+ O: Jer i aload i astore trose par (referenca, indeks), a par je na steku samo
+    jednom. dup2 ga udvoji pre citanja.
+
+ P: Zasto putFalseJump emituje suprotnu instrukciju od one koju trazis?
+ O: Jer je namerno tako - putFalseJump(gt, 0) emituje jle. Skok se izvrsava kada
+    uslov NIJE ispunjen, pa propadanje kroz njega znaci da je uslov tacan. Cela
+    sema kratkog spajanja pociva na toj konvenciji.
+
+ P: Zasto Code.pc - 2, a ne Code.pc - 1?
+ O: Jer je operand skoka dvobajtni (put2), pa je njegov prvi bajt dva bajta
+    ispod tekuceg pc.
+
+ SLABE TACKE PROJEKTA (bolje da ih ti pomenes nego oni)
+ ------------------------------------------------------
+ - Leksicka greska ne obara prevodjenje: p.errorDetected ostaje false, pa se
+   "int x@;" prevede kao "int x;". Postavka trazi samo "ispisati i nastaviti".
+ - Gramatika prihvata "a + -b", sto je nadskup [MJ] zapisa. Nijedan ispravan
+   program se ne odbija.
+ - Ternarni izraz u uslovu mora u zagrade: if ((a ? b : c) == 1). Posledica
+   odluke da CondFact uzima AddExpr, cime se uklanja dvosmislenost.
+ - Provera "metoda koja nije void mora imati return" je staticka, iako je [MJ]
+   opisuje kao proveru u vreme izvrsavanja. Ne proverava se da li je return na
+   svakoj putanji, samo da postoji bar jedan.
+ - Nivo C nije radjen (klase, nasledjivanje, VFT).
+
+
+
+################################################################################
+ DEO IX - PET MODIFIKACIJA ZA VEZBANJE
+################################################################################
+
+Sve su end-to-end: leksika -> gramatika -> semantika -> generisanje koda.
+Redom su, otprilike, od najlakse ka najtezoj.
+
+Za svaku vazi isti postupak i isti kriterijum "gotovo je":
+   1. dodaj token(e) u mjlexer.flex
+   2. dodaj terminal(e) i smenu(e) u mjparser.cup - proveri da CUP ne javi konflikt
+   3. dodaj visit() u SemanticAnalyzer.java za kontekstne uslove
+   4. dodaj visit() u CodeGenerator.java
+   5. napisi .mj test sa "// EXPECT: OK" i "// OUT:" redovima, pa "ant test"
+GOTOVO JE kada test prolazi i kada "ant disasmOne" pokaze ocekivani bajtkod.
+
+Radi ih pod satom - na odbrani imas ograniceno vreme i nema AI alata.
+
+
+ MODIFIKACIJA 1 - do-while petlja
+ --------------------------------
+ Dodati iskaz:
+     Statement := "do" Statement "while" "(" Condition ")" ";"
+ Telo se izvrsava bar jednom, pa se proverava uslov; dok je uslov tacan, ponavlja
+ se. break i continue moraju da rade unutar nje - continue skace na proveru
+ uslova, break izlazi iz petlje.
+
+ Na sta obratiti paznju:
+   - break/continue provera u fazi 3 mora da vazi i za ovu petlju
+   - u fazi 4 je telo PRE uslova, sto je jednostavnije nego kod for-a: nema
+     izvrtanja, ali skok unazad ide na pocetak tela
+   - treba ti tacka u kojoj pamtis adresu pocetka tela, PRE tela
+
+
+ MODIFIKACIJA 2 - operator stepenovanja "**"
+ -------------------------------------------
+ Dodati binarni operator "**" sa vecim prioritetom od * / %, levo asocijativan,
+ nad celim brojevima: "2 ** 3 ** 2" = (2**3)**2 = 64.
+     Factor := Factor "**" <nesto> | <nesto>
+ (sam odluci gde tacno u hijerarhiji Expr/Term/Factor stoji, tako da prioritet
+ bude ispravan BEZ precedence direktive)
+
+ Na sta obratiti paznju:
+   - prioritet se u LALR gramatici pravi slojevima neterminala, ne direktivama;
+     precedence je zabranjen
+   - MJVM nema instrukciju za stepenovanje - moras da generises petlju
+   - eksponent je izraz, ne konstanta, pa se ne moze razviti u vreme prevodjenja;
+     trebace ti radni lokali (vidi SCRATCH_SLOTS)
+   - definisi ponasanje za eksponent 0 i za negativan eksponent
+
+
+ MODIFIKACIJA 3 - foreach petlja
+ -------------------------------
+ Dodati iskaz:
+     Statement := "foreach" "(" ident ":" Designator ")" Statement
+ Designator mora oznacavati niz; ident mora biti prethodno deklarisana
+ promenljiva istog tipa kao elementi niza. U svakoj iteraciji ident dobija
+ vrednost tekuceg elementa, od prvog do poslednjeg. break i continue rade.
+
+ Na sta obratiti paznju:
+   - ovo je najblize map-u, pa pogledaj kako map resava iterator - ali ovde telo
+     nije izraz nego Statement, i nema izlaznog niza
+   - ident je goli identifikator bez svog Designator cvora; kako ces mu doci do
+     Obj cvora u fazi 4? (vidi findVar i objasnjenje uz njega)
+   - potreban ti je marker neterminal - gde tacno i zasto?
+   - continue mora da skoci na inkrement indeksa, ne na pocetak tela
+
+
+ MODIFIKACIJA 4 - iskaz "swap"
+ -----------------------------
+ Dodati iskaz:
+     Statement := "swap" "(" Designator "," Designator ")" ";"
+ Zamenjuje vrednosti dva designatora. Oba moraju biti upisiva (promenljiva ili
+ element niza) i istog tipa. Mora da radi i za "swap(a[i], a[j])", i za
+ "swap(x, a[i])".
+
+ Na sta obratiti paznju:
+   - ovo je vezba iz steka operanada, ne iz skokova
+   - kada je designator element niza, Code.load trosi par (referenca, indeks) -
+     kako da ga procitas, a da ti par ostane za store? (vidi emitIncDec i dup2)
+   - redosled na steku mora biti tacan pre svakog astore
+   - probaj prvo verziju preko radnih lokala, pa tek onda cistiju verziju
+
+
+ MODIFIKACIJA 5 - "countIf" u stilu amandmana
+ --------------------------------------------
+ Dodati iskaz, po uzoru na findAny i map:
+     Statement := Designator "=" Designator "." "countIf" "(" ident "=>" Condition ")" ";"
+ Desni Designator je 1-D niz ugradjenog tipa. ident je prethodno deklarisana
+ promenljiva tipa elementa niza. Za svaki element se ident postavi na taj element
+ i izracuna Condition; rezultat je broj elemenata za koje je uslov tacan. Levi
+ Designator mora biti promenljiva tipa int.
+ Primer: "n = niz.countIf(e => e > 5 && e % 2 == 0);"
+
+ Na sta obratiti paznju:
+   - ovo spaja sve: iterator kao kod map-a, brojac kao kod findAny, i uslov koji
+     se generise po semi kratkog spajanja
+   - Condition u fazi 4 ostavlja skokove, ne vrednost na steku - kako od uslova
+     dobiti "+1 ili +0"? (pogledaj closeCondition i kako ga koristi TernQ)
+   - koliko radnih lokala ti treba, i da li ih ima dovoljno?
+   - pazi da ugnezdeni uslov ("&&" i "||" zajedno) i dalje radi
+
+================================================================================

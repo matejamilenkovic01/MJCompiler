@@ -1,65 +1,65 @@
-INFO  17:58:10,411 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/02_const_decl.mj
-INFO  17:58:10,420 - #2 program
-INFO  17:58:10,420 - #45 Konstante
-INFO  17:58:10,420 - #3 const
-INFO  17:58:10,420 - #45 int
-INFO  17:58:10,420 - #45 jedan
-INFO  17:58:10,420 - #31 =
-INFO  17:58:10,420 - #46 1
-INFO  17:58:10,420 - #34 ;
-INFO  17:58:10,420 - #3 const
-INFO  17:58:10,421 - #45 int
-INFO  17:58:10,421 - #45 a
-INFO  17:58:10,421 - #31 =
-INFO  17:58:10,421 - #46 10
-INFO  17:58:10,421 - #36 ,
-INFO  17:58:10,421 - #45 b
-INFO  17:58:10,421 - #31 =
-INFO  17:58:10,421 - #46 20
-INFO  17:58:10,421 - #36 ,
-INFO  17:58:10,421 - #45 c
-INFO  17:58:10,421 - #31 =
-INFO  17:58:10,421 - #46 30
-INFO  17:58:10,421 - #34 ;
-INFO  17:58:10,421 - #3 const
-INFO  17:58:10,421 - #45 char
-INFO  17:58:10,421 - #45 slovo
-INFO  17:58:10,421 - #31 =
-INFO  17:58:10,421 - #48 x
-INFO  17:58:10,421 - #34 ;
-INFO  17:58:10,421 - #3 const
-INFO  17:58:10,421 - #45 char
-INFO  17:58:10,421 - #45 razmak
-INFO  17:58:10,421 - #31 =
-INFO  17:58:10,421 - #48  
-INFO  17:58:10,421 - #34 ;
-INFO  17:58:10,421 - #3 const
-INFO  17:58:10,422 - #45 char
-INFO  17:58:10,422 - #45 cifraKaoZnak
-INFO  17:58:10,422 - #31 =
-INFO  17:58:10,422 - #48 7
-INFO  17:58:10,422 - #34 ;
-INFO  17:58:10,422 - #3 const
-INFO  17:58:10,422 - #45 bool
-INFO  17:58:10,422 - #45 tacno
-INFO  17:58:10,422 - #31 =
-INFO  17:58:10,422 - #47 1
-INFO  17:58:10,422 - #34 ;
-INFO  17:58:10,422 - #3 const
-INFO  17:58:10,422 - #45 bool
-INFO  17:58:10,422 - #45 netacno
-INFO  17:58:10,422 - #31 =
-INFO  17:58:10,422 - #47 0
-INFO  17:58:10,422 - #34 ;
-INFO  17:58:10,422 - #43 {
-INFO  17:58:10,422 - #7 void
-INFO  17:58:10,422 - #45 main
-INFO  17:58:10,422 - #39 (
-INFO  17:58:10,422 - #40 )
-INFO  17:58:10,423 - #43 {
-INFO  17:58:10,423 - #44 }
-INFO  17:58:10,423 - #44 }
-INFO  17:58:10,423 - Program(
+INFO  17:45:08,979 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/02_const_decl.mj
+INFO  17:45:08,990 - #2 program
+INFO  17:45:08,990 - #45 Konstante
+INFO  17:45:08,990 - #3 const
+INFO  17:45:08,990 - #45 int
+INFO  17:45:08,990 - #45 jedan
+INFO  17:45:08,991 - #31 =
+INFO  17:45:08,991 - #46 1
+INFO  17:45:08,991 - #34 ;
+INFO  17:45:08,991 - #3 const
+INFO  17:45:08,992 - #45 int
+INFO  17:45:08,992 - #45 a
+INFO  17:45:08,992 - #31 =
+INFO  17:45:08,992 - #46 10
+INFO  17:45:08,992 - #36 ,
+INFO  17:45:08,992 - #45 b
+INFO  17:45:08,992 - #31 =
+INFO  17:45:08,992 - #46 20
+INFO  17:45:08,992 - #36 ,
+INFO  17:45:08,992 - #45 c
+INFO  17:45:08,992 - #31 =
+INFO  17:45:08,992 - #46 30
+INFO  17:45:08,992 - #34 ;
+INFO  17:45:08,992 - #3 const
+INFO  17:45:08,992 - #45 char
+INFO  17:45:08,992 - #45 slovo
+INFO  17:45:08,992 - #31 =
+INFO  17:45:08,992 - #48 x
+INFO  17:45:08,992 - #34 ;
+INFO  17:45:08,993 - #3 const
+INFO  17:45:08,993 - #45 char
+INFO  17:45:08,993 - #45 razmak
+INFO  17:45:08,993 - #31 =
+INFO  17:45:08,993 - #48  
+INFO  17:45:08,993 - #34 ;
+INFO  17:45:08,993 - #3 const
+INFO  17:45:08,993 - #45 char
+INFO  17:45:08,993 - #45 cifraKaoZnak
+INFO  17:45:08,993 - #31 =
+INFO  17:45:08,993 - #48 7
+INFO  17:45:08,993 - #34 ;
+INFO  17:45:08,993 - #3 const
+INFO  17:45:08,993 - #45 bool
+INFO  17:45:08,993 - #45 tacno
+INFO  17:45:08,993 - #31 =
+INFO  17:45:08,993 - #47 1
+INFO  17:45:08,993 - #34 ;
+INFO  17:45:08,993 - #3 const
+INFO  17:45:08,993 - #45 bool
+INFO  17:45:08,993 - #45 netacno
+INFO  17:45:08,993 - #31 =
+INFO  17:45:08,993 - #47 0
+INFO  17:45:08,993 - #34 ;
+INFO  17:45:08,994 - #43 {
+INFO  17:45:08,994 - #7 void
+INFO  17:45:08,994 - #45 main
+INFO  17:45:08,994 - #39 (
+INFO  17:45:08,994 - #40 )
+INFO  17:45:08,994 - #43 {
+INFO  17:45:08,994 - #44 }
+INFO  17:45:08,994 - #44 }
+INFO  17:45:08,995 - Program(
   ProgramName(
    Konstante
   ) [ProgramName]
@@ -204,8 +204,8 @@ INFO  17:58:10,423 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:10,423 - =================================================
-INFO  17:58:10,425 - =================================================
+INFO  17:45:08,995 - =================================================
+INFO  17:45:08,998 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -235,4 +235,4 @@ Prog Konstante: notype, 0, 1
 
 
 
-INFO  17:58:10,426 - Generisanje uspesno zavrseno: test/02_const_decl.obj
+INFO  17:45:09,000 - Generisanje uspesno zavrseno: test/02_const_decl.obj

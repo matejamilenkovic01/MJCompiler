@@ -1,310 +1,310 @@
-INFO  17:58:16,005 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/60_gen_expressions.mj
-INFO  17:58:16,014 - #2 program
-INFO  17:58:16,014 - #45 GenIzrazi
-INFO  17:58:16,014 - #3 const
-INFO  17:58:16,014 - #45 int
-INFO  17:58:16,014 - #45 deset
-INFO  17:58:16,014 - #31 =
-INFO  17:58:16,014 - #46 10
-INFO  17:58:16,014 - #34 ;
-INFO  17:58:16,014 - #3 const
-INFO  17:58:16,014 - #45 char
-INFO  17:58:16,014 - #45 slovo
-INFO  17:58:16,014 - #31 =
-INFO  17:58:16,014 - #48 k
-INFO  17:58:16,014 - #34 ;
-INFO  17:58:16,015 - #3 const
-INFO  17:58:16,015 - #45 bool
-INFO  17:58:16,015 - #45 tacno
-INFO  17:58:16,015 - #31 =
-INFO  17:58:16,015 - #47 1
-INFO  17:58:16,015 - #34 ;
-INFO  17:58:16,015 - #45 int
-INFO  17:58:16,015 - #45 a
-INFO  17:58:16,015 - #36 ,
-INFO  17:58:16,015 - #45 b
-INFO  17:58:16,015 - #36 ,
-INFO  17:58:16,015 - #45 c
-INFO  17:58:16,015 - #34 ;
-INFO  17:58:16,015 - #45 char
-INFO  17:58:16,015 - #45 ch
-INFO  17:58:16,015 - #34 ;
-INFO  17:58:16,015 - #45 bool
-INFO  17:58:16,015 - #45 bo
-INFO  17:58:16,015 - #34 ;
-INFO  17:58:16,015 - #43 {
-INFO  17:58:16,015 - #7 void
-INFO  17:58:16,015 - #45 main
-INFO  17:58:16,015 - #39 (
-INFO  17:58:16,016 - #40 )
-INFO  17:58:16,016 - #45 int
-INFO  17:58:16,016 - #45 t
-INFO  17:58:16,016 - #34 ;
-INFO  17:58:16,016 - #43 {
-INFO  17:58:16,016 - #45 a
-INFO  17:58:16,016 - #31 =
-INFO  17:58:16,016 - #46 7
-INFO  17:58:16,016 - #34 ;
-INFO  17:58:16,016 - #45 b
-INFO  17:58:16,016 - #31 =
-INFO  17:58:16,016 - #46 3
-INFO  17:58:16,016 - #34 ;
-INFO  17:58:16,016 - #5 print
-INFO  17:58:16,016 - #39 (
-INFO  17:58:16,017 - #45 a
-INFO  17:58:16,017 - #17 +
-INFO  17:58:16,017 - #45 b
-INFO  17:58:16,017 - #40 )
-INFO  17:58:16,017 - #34 ;
-INFO  17:58:16,017 - #5 print
-INFO  17:58:16,017 - #39 (
-INFO  17:58:16,017 - #45 eol
-INFO  17:58:16,017 - #40 )
-INFO  17:58:16,017 - #34 ;
-INFO  17:58:16,017 - #5 print
-INFO  17:58:16,017 - #39 (
-INFO  17:58:16,017 - #45 a
-INFO  17:58:16,017 - #18 -
-INFO  17:58:16,017 - #45 b
-INFO  17:58:16,017 - #40 )
-INFO  17:58:16,017 - #34 ;
-INFO  17:58:16,017 - #5 print
-INFO  17:58:16,017 - #39 (
-INFO  17:58:16,017 - #45 eol
-INFO  17:58:16,017 - #40 )
-INFO  17:58:16,017 - #34 ;
-INFO  17:58:16,017 - #5 print
-INFO  17:58:16,017 - #39 (
-INFO  17:58:16,018 - #45 a
-INFO  17:58:16,018 - #19 *
-INFO  17:58:16,018 - #45 b
-INFO  17:58:16,018 - #40 )
-INFO  17:58:16,018 - #34 ;
-INFO  17:58:16,018 - #5 print
-INFO  17:58:16,018 - #39 (
-INFO  17:58:16,018 - #45 eol
-INFO  17:58:16,018 - #40 )
-INFO  17:58:16,018 - #34 ;
-INFO  17:58:16,018 - #5 print
-INFO  17:58:16,018 - #39 (
-INFO  17:58:16,018 - #45 a
-INFO  17:58:16,018 - #20 /
-INFO  17:58:16,018 - #45 b
-INFO  17:58:16,018 - #40 )
-INFO  17:58:16,018 - #34 ;
-INFO  17:58:16,018 - #5 print
-INFO  17:58:16,018 - #39 (
-INFO  17:58:16,018 - #45 eol
-INFO  17:58:16,018 - #40 )
-INFO  17:58:16,018 - #34 ;
-INFO  17:58:16,018 - #5 print
-INFO  17:58:16,018 - #39 (
-INFO  17:58:16,018 - #45 a
-INFO  17:58:16,018 - #21 %
-INFO  17:58:16,018 - #45 b
-INFO  17:58:16,019 - #40 )
-INFO  17:58:16,019 - #34 ;
-INFO  17:58:16,019 - #5 print
-INFO  17:58:16,019 - #39 (
-INFO  17:58:16,019 - #45 eol
-INFO  17:58:16,019 - #40 )
-INFO  17:58:16,019 - #34 ;
-INFO  17:58:16,019 - #5 print
-INFO  17:58:16,019 - #39 (
-INFO  17:58:16,019 - #18 -
-INFO  17:58:16,019 - #45 a
-INFO  17:58:16,019 - #40 )
-INFO  17:58:16,019 - #34 ;
-INFO  17:58:16,019 - #5 print
-INFO  17:58:16,019 - #39 (
-INFO  17:58:16,019 - #45 eol
-INFO  17:58:16,019 - #40 )
-INFO  17:58:16,019 - #34 ;
-INFO  17:58:16,019 - #5 print
-INFO  17:58:16,019 - #39 (
-INFO  17:58:16,019 - #45 a
-INFO  17:58:16,019 - #17 +
-INFO  17:58:16,019 - #45 b
-INFO  17:58:16,019 - #19 *
-INFO  17:58:16,019 - #46 2
-INFO  17:58:16,019 - #40 )
-INFO  17:58:16,019 - #34 ;
-INFO  17:58:16,019 - #5 print
-INFO  17:58:16,019 - #39 (
-INFO  17:58:16,019 - #45 eol
-INFO  17:58:16,019 - #40 )
-INFO  17:58:16,019 - #34 ;
-INFO  17:58:16,019 - #5 print
-INFO  17:58:16,019 - #39 (
-INFO  17:58:16,019 - #39 (
-INFO  17:58:16,019 - #45 a
-INFO  17:58:16,019 - #17 +
-INFO  17:58:16,020 - #45 b
-INFO  17:58:16,020 - #40 )
-INFO  17:58:16,020 - #19 *
-INFO  17:58:16,020 - #46 2
-INFO  17:58:16,020 - #40 )
-INFO  17:58:16,020 - #34 ;
-INFO  17:58:16,020 - #5 print
-INFO  17:58:16,020 - #39 (
-INFO  17:58:16,020 - #45 eol
-INFO  17:58:16,020 - #40 )
-INFO  17:58:16,020 - #34 ;
-INFO  17:58:16,020 - #5 print
-INFO  17:58:16,020 - #39 (
-INFO  17:58:16,020 - #45 a
-INFO  17:58:16,020 - #18 -
-INFO  17:58:16,020 - #45 b
-INFO  17:58:16,020 - #18 -
-INFO  17:58:16,020 - #46 1
-INFO  17:58:16,020 - #40 )
-INFO  17:58:16,020 - #34 ;
-INFO  17:58:16,020 - #5 print
-INFO  17:58:16,020 - #39 (
-INFO  17:58:16,020 - #45 eol
-INFO  17:58:16,020 - #40 )
-INFO  17:58:16,020 - #34 ;
-INFO  17:58:16,020 - #5 print
-INFO  17:58:16,020 - #39 (
-INFO  17:58:16,020 - #46 20
-INFO  17:58:16,020 - #20 /
-INFO  17:58:16,020 - #46 4
-INFO  17:58:16,020 - #20 /
-INFO  17:58:16,020 - #46 5
-INFO  17:58:16,020 - #40 )
-INFO  17:58:16,020 - #34 ;
-INFO  17:58:16,020 - #5 print
-INFO  17:58:16,020 - #39 (
-INFO  17:58:16,020 - #45 eol
-INFO  17:58:16,020 - #40 )
-INFO  17:58:16,020 - #34 ;
-INFO  17:58:16,020 - #5 print
-INFO  17:58:16,020 - #39 (
-INFO  17:58:16,020 - #18 -
-INFO  17:58:16,020 - #39 (
-INFO  17:58:16,020 - #45 a
-INFO  17:58:16,020 - #17 +
-INFO  17:58:16,020 - #45 b
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #34 ;
-INFO  17:58:16,021 - #5 print
-INFO  17:58:16,021 - #39 (
-INFO  17:58:16,021 - #45 eol
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #34 ;
-INFO  17:58:16,021 - #5 print
-INFO  17:58:16,021 - #39 (
-INFO  17:58:16,021 - #45 a
-INFO  17:58:16,021 - #19 *
-INFO  17:58:16,021 - #18 -
-INFO  17:58:16,021 - #45 b
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #34 ;
-INFO  17:58:16,021 - #5 print
-INFO  17:58:16,021 - #39 (
-INFO  17:58:16,021 - #45 eol
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #34 ;
-INFO  17:58:16,021 - #5 print
-INFO  17:58:16,021 - #39 (
-INFO  17:58:16,021 - #45 deset
-INFO  17:58:16,021 - #17 +
-INFO  17:58:16,021 - #46 1
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #34 ;
-INFO  17:58:16,021 - #5 print
-INFO  17:58:16,021 - #39 (
-INFO  17:58:16,021 - #45 eol
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #34 ;
-INFO  17:58:16,021 - #5 print
-INFO  17:58:16,021 - #39 (
-INFO  17:58:16,021 - #45 slovo
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #34 ;
-INFO  17:58:16,021 - #5 print
-INFO  17:58:16,021 - #39 (
-INFO  17:58:16,021 - #45 eol
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #34 ;
-INFO  17:58:16,021 - #5 print
-INFO  17:58:16,021 - #39 (
-INFO  17:58:16,021 - #45 tacno
-INFO  17:58:16,021 - #40 )
-INFO  17:58:16,021 - #34 ;
-INFO  17:58:16,021 - #5 print
-INFO  17:58:16,021 - #39 (
-INFO  17:58:16,022 - #45 eol
-INFO  17:58:16,022 - #40 )
-INFO  17:58:16,022 - #34 ;
-INFO  17:58:16,022 - #45 t
-INFO  17:58:16,022 - #31 =
-INFO  17:58:16,022 - #45 deset
-INFO  17:58:16,022 - #19 *
-INFO  17:58:16,022 - #46 2
-INFO  17:58:16,022 - #18 -
-INFO  17:58:16,022 - #45 a
-INFO  17:58:16,022 - #21 %
-INFO  17:58:16,022 - #46 4
-INFO  17:58:16,022 - #34 ;
-INFO  17:58:16,022 - #5 print
-INFO  17:58:16,022 - #39 (
-INFO  17:58:16,022 - #45 t
-INFO  17:58:16,022 - #40 )
-INFO  17:58:16,022 - #34 ;
-INFO  17:58:16,022 - #5 print
-INFO  17:58:16,022 - #39 (
-INFO  17:58:16,022 - #45 eol
-INFO  17:58:16,022 - #40 )
-INFO  17:58:16,022 - #34 ;
-INFO  17:58:16,022 - #45 c
-INFO  17:58:16,022 - #31 =
-INFO  17:58:16,022 - #46 0
-INFO  17:58:16,022 - #18 -
-INFO  17:58:16,022 - #46 100
-INFO  17:58:16,022 - #34 ;
-INFO  17:58:16,022 - #5 print
-INFO  17:58:16,022 - #39 (
-INFO  17:58:16,022 - #45 c
-INFO  17:58:16,022 - #40 )
-INFO  17:58:16,022 - #34 ;
-INFO  17:58:16,022 - #5 print
-INFO  17:58:16,022 - #39 (
-INFO  17:58:16,022 - #45 eol
-INFO  17:58:16,022 - #40 )
-INFO  17:58:16,022 - #34 ;
-INFO  17:58:16,022 - #45 ch
-INFO  17:58:16,022 - #31 =
-INFO  17:58:16,022 - #48 A
-INFO  17:58:16,022 - #34 ;
-INFO  17:58:16,022 - #5 print
-INFO  17:58:16,022 - #39 (
-INFO  17:58:16,022 - #45 ch
-INFO  17:58:16,022 - #40 )
-INFO  17:58:16,022 - #34 ;
-INFO  17:58:16,022 - #5 print
-INFO  17:58:16,022 - #39 (
-INFO  17:58:16,023 - #45 eol
-INFO  17:58:16,023 - #40 )
-INFO  17:58:16,023 - #34 ;
-INFO  17:58:16,023 - #45 bo
-INFO  17:58:16,023 - #31 =
-INFO  17:58:16,023 - #47 0
-INFO  17:58:16,023 - #34 ;
-INFO  17:58:16,023 - #5 print
-INFO  17:58:16,023 - #39 (
-INFO  17:58:16,023 - #45 bo
-INFO  17:58:16,023 - #40 )
-INFO  17:58:16,023 - #34 ;
-INFO  17:58:16,023 - #5 print
-INFO  17:58:16,023 - #39 (
-INFO  17:58:16,023 - #45 eol
-INFO  17:58:16,023 - #40 )
-INFO  17:58:16,023 - #34 ;
-INFO  17:58:16,023 - #44 }
-INFO  17:58:16,023 - #44 }
-INFO  17:58:16,025 - Program(
+INFO  17:45:14,787 - Compiling source file: /Users/matejamilenkovic/eclipse-workspace/MJCompiler/test/60_gen_expressions.mj
+INFO  17:45:14,798 - #2 program
+INFO  17:45:14,798 - #45 GenIzrazi
+INFO  17:45:14,798 - #3 const
+INFO  17:45:14,798 - #45 int
+INFO  17:45:14,798 - #45 deset
+INFO  17:45:14,799 - #31 =
+INFO  17:45:14,799 - #46 10
+INFO  17:45:14,799 - #34 ;
+INFO  17:45:14,799 - #3 const
+INFO  17:45:14,799 - #45 char
+INFO  17:45:14,799 - #45 slovo
+INFO  17:45:14,799 - #31 =
+INFO  17:45:14,799 - #48 k
+INFO  17:45:14,799 - #34 ;
+INFO  17:45:14,799 - #3 const
+INFO  17:45:14,800 - #45 bool
+INFO  17:45:14,800 - #45 tacno
+INFO  17:45:14,800 - #31 =
+INFO  17:45:14,800 - #47 1
+INFO  17:45:14,800 - #34 ;
+INFO  17:45:14,800 - #45 int
+INFO  17:45:14,800 - #45 a
+INFO  17:45:14,800 - #36 ,
+INFO  17:45:14,800 - #45 b
+INFO  17:45:14,800 - #36 ,
+INFO  17:45:14,800 - #45 c
+INFO  17:45:14,800 - #34 ;
+INFO  17:45:14,800 - #45 char
+INFO  17:45:14,800 - #45 ch
+INFO  17:45:14,800 - #34 ;
+INFO  17:45:14,800 - #45 bool
+INFO  17:45:14,801 - #45 bo
+INFO  17:45:14,801 - #34 ;
+INFO  17:45:14,801 - #43 {
+INFO  17:45:14,801 - #7 void
+INFO  17:45:14,801 - #45 main
+INFO  17:45:14,801 - #39 (
+INFO  17:45:14,801 - #40 )
+INFO  17:45:14,801 - #45 int
+INFO  17:45:14,801 - #45 t
+INFO  17:45:14,801 - #34 ;
+INFO  17:45:14,801 - #43 {
+INFO  17:45:14,801 - #45 a
+INFO  17:45:14,802 - #31 =
+INFO  17:45:14,802 - #46 7
+INFO  17:45:14,802 - #34 ;
+INFO  17:45:14,802 - #45 b
+INFO  17:45:14,802 - #31 =
+INFO  17:45:14,802 - #46 3
+INFO  17:45:14,802 - #34 ;
+INFO  17:45:14,802 - #5 print
+INFO  17:45:14,802 - #39 (
+INFO  17:45:14,802 - #45 a
+INFO  17:45:14,802 - #17 +
+INFO  17:45:14,802 - #45 b
+INFO  17:45:14,803 - #40 )
+INFO  17:45:14,803 - #34 ;
+INFO  17:45:14,803 - #5 print
+INFO  17:45:14,803 - #39 (
+INFO  17:45:14,803 - #45 eol
+INFO  17:45:14,803 - #40 )
+INFO  17:45:14,803 - #34 ;
+INFO  17:45:14,803 - #5 print
+INFO  17:45:14,803 - #39 (
+INFO  17:45:14,803 - #45 a
+INFO  17:45:14,803 - #18 -
+INFO  17:45:14,803 - #45 b
+INFO  17:45:14,804 - #40 )
+INFO  17:45:14,804 - #34 ;
+INFO  17:45:14,804 - #5 print
+INFO  17:45:14,804 - #39 (
+INFO  17:45:14,804 - #45 eol
+INFO  17:45:14,804 - #40 )
+INFO  17:45:14,804 - #34 ;
+INFO  17:45:14,804 - #5 print
+INFO  17:45:14,804 - #39 (
+INFO  17:45:14,804 - #45 a
+INFO  17:45:14,804 - #19 *
+INFO  17:45:14,804 - #45 b
+INFO  17:45:14,804 - #40 )
+INFO  17:45:14,805 - #34 ;
+INFO  17:45:14,805 - #5 print
+INFO  17:45:14,805 - #39 (
+INFO  17:45:14,805 - #45 eol
+INFO  17:45:14,805 - #40 )
+INFO  17:45:14,805 - #34 ;
+INFO  17:45:14,805 - #5 print
+INFO  17:45:14,805 - #39 (
+INFO  17:45:14,805 - #45 a
+INFO  17:45:14,805 - #20 /
+INFO  17:45:14,805 - #45 b
+INFO  17:45:14,805 - #40 )
+INFO  17:45:14,805 - #34 ;
+INFO  17:45:14,805 - #5 print
+INFO  17:45:14,805 - #39 (
+INFO  17:45:14,805 - #45 eol
+INFO  17:45:14,805 - #40 )
+INFO  17:45:14,805 - #34 ;
+INFO  17:45:14,805 - #5 print
+INFO  17:45:14,805 - #39 (
+INFO  17:45:14,805 - #45 a
+INFO  17:45:14,806 - #21 %
+INFO  17:45:14,806 - #45 b
+INFO  17:45:14,806 - #40 )
+INFO  17:45:14,806 - #34 ;
+INFO  17:45:14,806 - #5 print
+INFO  17:45:14,806 - #39 (
+INFO  17:45:14,806 - #45 eol
+INFO  17:45:14,806 - #40 )
+INFO  17:45:14,806 - #34 ;
+INFO  17:45:14,806 - #5 print
+INFO  17:45:14,806 - #39 (
+INFO  17:45:14,806 - #18 -
+INFO  17:45:14,806 - #45 a
+INFO  17:45:14,806 - #40 )
+INFO  17:45:14,806 - #34 ;
+INFO  17:45:14,806 - #5 print
+INFO  17:45:14,806 - #39 (
+INFO  17:45:14,806 - #45 eol
+INFO  17:45:14,806 - #40 )
+INFO  17:45:14,806 - #34 ;
+INFO  17:45:14,806 - #5 print
+INFO  17:45:14,806 - #39 (
+INFO  17:45:14,806 - #45 a
+INFO  17:45:14,806 - #17 +
+INFO  17:45:14,806 - #45 b
+INFO  17:45:14,806 - #19 *
+INFO  17:45:14,807 - #46 2
+INFO  17:45:14,807 - #40 )
+INFO  17:45:14,807 - #34 ;
+INFO  17:45:14,807 - #5 print
+INFO  17:45:14,807 - #39 (
+INFO  17:45:14,807 - #45 eol
+INFO  17:45:14,807 - #40 )
+INFO  17:45:14,807 - #34 ;
+INFO  17:45:14,807 - #5 print
+INFO  17:45:14,807 - #39 (
+INFO  17:45:14,807 - #39 (
+INFO  17:45:14,807 - #45 a
+INFO  17:45:14,807 - #17 +
+INFO  17:45:14,807 - #45 b
+INFO  17:45:14,807 - #40 )
+INFO  17:45:14,807 - #19 *
+INFO  17:45:14,807 - #46 2
+INFO  17:45:14,807 - #40 )
+INFO  17:45:14,807 - #34 ;
+INFO  17:45:14,807 - #5 print
+INFO  17:45:14,807 - #39 (
+INFO  17:45:14,807 - #45 eol
+INFO  17:45:14,807 - #40 )
+INFO  17:45:14,807 - #34 ;
+INFO  17:45:14,807 - #5 print
+INFO  17:45:14,807 - #39 (
+INFO  17:45:14,807 - #45 a
+INFO  17:45:14,807 - #18 -
+INFO  17:45:14,807 - #45 b
+INFO  17:45:14,807 - #18 -
+INFO  17:45:14,808 - #46 1
+INFO  17:45:14,808 - #40 )
+INFO  17:45:14,808 - #34 ;
+INFO  17:45:14,808 - #5 print
+INFO  17:45:14,808 - #39 (
+INFO  17:45:14,808 - #45 eol
+INFO  17:45:14,808 - #40 )
+INFO  17:45:14,808 - #34 ;
+INFO  17:45:14,808 - #5 print
+INFO  17:45:14,808 - #39 (
+INFO  17:45:14,808 - #46 20
+INFO  17:45:14,808 - #20 /
+INFO  17:45:14,808 - #46 4
+INFO  17:45:14,808 - #20 /
+INFO  17:45:14,808 - #46 5
+INFO  17:45:14,808 - #40 )
+INFO  17:45:14,808 - #34 ;
+INFO  17:45:14,808 - #5 print
+INFO  17:45:14,808 - #39 (
+INFO  17:45:14,808 - #45 eol
+INFO  17:45:14,808 - #40 )
+INFO  17:45:14,808 - #34 ;
+INFO  17:45:14,808 - #5 print
+INFO  17:45:14,808 - #39 (
+INFO  17:45:14,808 - #18 -
+INFO  17:45:14,808 - #39 (
+INFO  17:45:14,808 - #45 a
+INFO  17:45:14,808 - #17 +
+INFO  17:45:14,808 - #45 b
+INFO  17:45:14,808 - #40 )
+INFO  17:45:14,808 - #40 )
+INFO  17:45:14,808 - #34 ;
+INFO  17:45:14,808 - #5 print
+INFO  17:45:14,808 - #39 (
+INFO  17:45:14,808 - #45 eol
+INFO  17:45:14,808 - #40 )
+INFO  17:45:14,808 - #34 ;
+INFO  17:45:14,809 - #5 print
+INFO  17:45:14,809 - #39 (
+INFO  17:45:14,809 - #45 a
+INFO  17:45:14,809 - #19 *
+INFO  17:45:14,809 - #18 -
+INFO  17:45:14,809 - #45 b
+INFO  17:45:14,809 - #40 )
+INFO  17:45:14,809 - #34 ;
+INFO  17:45:14,809 - #5 print
+INFO  17:45:14,809 - #39 (
+INFO  17:45:14,809 - #45 eol
+INFO  17:45:14,809 - #40 )
+INFO  17:45:14,809 - #34 ;
+INFO  17:45:14,809 - #5 print
+INFO  17:45:14,809 - #39 (
+INFO  17:45:14,809 - #45 deset
+INFO  17:45:14,809 - #17 +
+INFO  17:45:14,809 - #46 1
+INFO  17:45:14,809 - #40 )
+INFO  17:45:14,809 - #34 ;
+INFO  17:45:14,809 - #5 print
+INFO  17:45:14,809 - #39 (
+INFO  17:45:14,809 - #45 eol
+INFO  17:45:14,809 - #40 )
+INFO  17:45:14,809 - #34 ;
+INFO  17:45:14,809 - #5 print
+INFO  17:45:14,809 - #39 (
+INFO  17:45:14,809 - #45 slovo
+INFO  17:45:14,809 - #40 )
+INFO  17:45:14,809 - #34 ;
+INFO  17:45:14,809 - #5 print
+INFO  17:45:14,809 - #39 (
+INFO  17:45:14,809 - #45 eol
+INFO  17:45:14,809 - #40 )
+INFO  17:45:14,809 - #34 ;
+INFO  17:45:14,809 - #5 print
+INFO  17:45:14,809 - #39 (
+INFO  17:45:14,809 - #45 tacno
+INFO  17:45:14,809 - #40 )
+INFO  17:45:14,809 - #34 ;
+INFO  17:45:14,809 - #5 print
+INFO  17:45:14,809 - #39 (
+INFO  17:45:14,809 - #45 eol
+INFO  17:45:14,809 - #40 )
+INFO  17:45:14,809 - #34 ;
+INFO  17:45:14,810 - #45 t
+INFO  17:45:14,810 - #31 =
+INFO  17:45:14,810 - #45 deset
+INFO  17:45:14,810 - #19 *
+INFO  17:45:14,810 - #46 2
+INFO  17:45:14,810 - #18 -
+INFO  17:45:14,810 - #45 a
+INFO  17:45:14,810 - #21 %
+INFO  17:45:14,810 - #46 4
+INFO  17:45:14,810 - #34 ;
+INFO  17:45:14,810 - #5 print
+INFO  17:45:14,810 - #39 (
+INFO  17:45:14,810 - #45 t
+INFO  17:45:14,810 - #40 )
+INFO  17:45:14,810 - #34 ;
+INFO  17:45:14,810 - #5 print
+INFO  17:45:14,810 - #39 (
+INFO  17:45:14,810 - #45 eol
+INFO  17:45:14,811 - #40 )
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,811 - #45 c
+INFO  17:45:14,811 - #31 =
+INFO  17:45:14,811 - #46 0
+INFO  17:45:14,811 - #18 -
+INFO  17:45:14,811 - #46 100
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,811 - #5 print
+INFO  17:45:14,811 - #39 (
+INFO  17:45:14,811 - #45 c
+INFO  17:45:14,811 - #40 )
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,811 - #5 print
+INFO  17:45:14,811 - #39 (
+INFO  17:45:14,811 - #45 eol
+INFO  17:45:14,811 - #40 )
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,811 - #45 ch
+INFO  17:45:14,811 - #31 =
+INFO  17:45:14,811 - #48 A
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,811 - #5 print
+INFO  17:45:14,811 - #39 (
+INFO  17:45:14,811 - #45 ch
+INFO  17:45:14,811 - #40 )
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,811 - #5 print
+INFO  17:45:14,811 - #39 (
+INFO  17:45:14,811 - #45 eol
+INFO  17:45:14,811 - #40 )
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,811 - #45 bo
+INFO  17:45:14,811 - #31 =
+INFO  17:45:14,811 - #47 0
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,811 - #5 print
+INFO  17:45:14,811 - #39 (
+INFO  17:45:14,811 - #45 bo
+INFO  17:45:14,811 - #40 )
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,811 - #5 print
+INFO  17:45:14,811 - #39 (
+INFO  17:45:14,811 - #45 eol
+INFO  17:45:14,811 - #40 )
+INFO  17:45:14,811 - #34 ;
+INFO  17:45:14,812 - #44 }
+INFO  17:45:14,812 - #44 }
+INFO  17:45:14,815 - Program(
   ProgramName(
    GenIzrazi
   ) [ProgramName]
@@ -1515,63 +1515,63 @@ INFO  17:58:16,025 - Program(
     ) [MethodDecl]
   ) [MethodDeclList_more]
 ) [Program]
-INFO  17:58:16,026 - =================================================
-INFO  17:58:16,028 - Pretraga na 37(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 38(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,028 - Pretraga na 40(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 40(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,028 - Pretraga na 40(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,028 - Pretraga na 41(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 41(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,028 - Pretraga na 41(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,028 - Pretraga na 42(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 42(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,028 - Pretraga na 42(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,028 - Pretraga na 43(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 43(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,028 - Pretraga na 43(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,028 - Pretraga na 44(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 44(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,028 - Pretraga na 44(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,028 - Pretraga na 45(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 45(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,028 - Pretraga na 48(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 48(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,028 - Pretraga na 48(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,028 - Pretraga na 49(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 49(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,028 - Pretraga na 49(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,028 - Pretraga na 50(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,028 - Pretraga na 50(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,028 - Pretraga na 50(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,028 - Pretraga na 51(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - Pretraga na 52(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,029 - Pretraga na 52(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,029 - Pretraga na 52(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - Pretraga na 53(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,029 - Pretraga na 53(b), nadjeno Var b: int, 1, 0
-INFO  17:58:16,029 - Pretraga na 53(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - Pretraga na 56(deset), nadjeno Con deset: int, 10, 0
-INFO  17:58:16,029 - Pretraga na 56(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - Pretraga na 57(slovo), nadjeno Con slovo: char, 107, 0
-INFO  17:58:16,029 - Pretraga na 57(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - Pretraga na 58(tacno), nadjeno Con tacno: bool, 1, 0
-INFO  17:58:16,029 - Pretraga na 58(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - Pretraga na 60(t), nadjeno Var t: int, 0, 1
-INFO  17:58:16,029 - Pretraga na 60(deset), nadjeno Con deset: int, 10, 0
-INFO  17:58:16,029 - Pretraga na 60(a), nadjeno Var a: int, 0, 0
-INFO  17:58:16,029 - Pretraga na 61(t), nadjeno Var t: int, 0, 1
-INFO  17:58:16,029 - Pretraga na 61(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - Pretraga na 63(c), nadjeno Var c: int, 2, 0
-INFO  17:58:16,029 - Pretraga na 64(c), nadjeno Var c: int, 2, 0
-INFO  17:58:16,029 - Pretraga na 64(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - Pretraga na 65(ch), nadjeno Var ch: char, 3, 0
-INFO  17:58:16,029 - Pretraga na 66(ch), nadjeno Var ch: char, 3, 0
-INFO  17:58:16,029 - Pretraga na 66(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - Pretraga na 67(bo), nadjeno Var bo: bool, 4, 0
-INFO  17:58:16,029 - Pretraga na 68(bo), nadjeno Var bo: bool, 4, 0
-INFO  17:58:16,029 - Pretraga na 68(eol), nadjeno Con eol: char, 10, 0
-INFO  17:58:16,029 - =================================================
+INFO  17:45:14,816 - =================================================
+INFO  17:45:14,818 - Pretraga na 37(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,818 - Pretraga na 38(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,818 - Pretraga na 40(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,818 - Pretraga na 40(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 40(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 41(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 41(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 41(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 42(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 42(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 42(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 43(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 43(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 43(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 44(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 44(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 44(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 45(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 45(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 48(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 48(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 48(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 49(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 49(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 49(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 50(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 50(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 50(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 51(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 52(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 52(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 52(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,819 - Pretraga na 53(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,819 - Pretraga na 53(b), nadjeno Var b: int, 1, 0
+INFO  17:45:14,819 - Pretraga na 53(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,820 - Pretraga na 56(deset), nadjeno Con deset: int, 10, 0
+INFO  17:45:14,820 - Pretraga na 56(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,820 - Pretraga na 57(slovo), nadjeno Con slovo: char, 107, 0
+INFO  17:45:14,820 - Pretraga na 57(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,820 - Pretraga na 58(tacno), nadjeno Con tacno: bool, 1, 0
+INFO  17:45:14,820 - Pretraga na 58(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,820 - Pretraga na 60(t), nadjeno Var t: int, 0, 1
+INFO  17:45:14,820 - Pretraga na 60(deset), nadjeno Con deset: int, 10, 0
+INFO  17:45:14,820 - Pretraga na 60(a), nadjeno Var a: int, 0, 0
+INFO  17:45:14,820 - Pretraga na 61(t), nadjeno Var t: int, 0, 1
+INFO  17:45:14,820 - Pretraga na 61(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,820 - Pretraga na 63(c), nadjeno Var c: int, 2, 0
+INFO  17:45:14,820 - Pretraga na 64(c), nadjeno Var c: int, 2, 0
+INFO  17:45:14,820 - Pretraga na 64(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,820 - Pretraga na 65(ch), nadjeno Var ch: char, 3, 0
+INFO  17:45:14,820 - Pretraga na 66(ch), nadjeno Var ch: char, 3, 0
+INFO  17:45:14,820 - Pretraga na 66(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,820 - Pretraga na 67(bo), nadjeno Var bo: bool, 4, 0
+INFO  17:45:14,820 - Pretraga na 68(bo), nadjeno Var bo: bool, 4, 0
+INFO  17:45:14,820 - Pretraga na 68(eol), nadjeno Con eol: char, 10, 0
+INFO  17:45:14,820 - =================================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -1601,4 +1601,4 @@ Prog GenIzrazi: notype, 0, 1
 
 
 
-INFO  17:58:16,030 - Generisanje uspesno zavrseno: test/60_gen_expressions.obj
+INFO  17:45:14,823 - Generisanje uspesno zavrseno: test/60_gen_expressions.obj
